@@ -35,4 +35,4 @@ The existence of the URI strategy facilitates uptake as implementations and tool
 | ---- | -------- | ----- | ---- | ------- | ----- | 
 | October 11 |    | 14h - 16h | CFWB | tbd. | |
 | November 8 |    |  | BOSA | Marc Bruyland - <marc.bruyland@bosa.fgov.be> | |
-| November 22 |   |  | Informatie Vlaanderen | Raf Buyle - <raf.buyle@kb.vlaanderen.be> | |
+| November 22 | <ul><li>Ellipsgebouw - Room 0.A11</li><li>Address: Koning Albert II-laan 35, 1030 Brussel</li><li>Directions: http://bit.ly/directions-ellips </li></ul> | 14h - 16h  | Informatie Vlaanderen | Raf Buyle - <raf.buyle@kb.vlaanderen.be> | http://bit.ly/registration-link-wg |
