@@ -33,6 +33,6 @@ The existence of the URI strategy facilitates uptake as implementations and tool
 
 | Date | Location | Start - End | Lead | Contact | Register | 
 | ---- | -------- | ----- | ---- | ------- | ----- | 
-| October 11 |    | 14h - 16h | CFWB | tbd. | |
+| October 11 | <ul><li>Espace 27 septembre - Salle Alphonse Demoulin, Local 0 E 039</li><li>Address: Boulevard Léopold II 48, 1080 Molenbeek-Saint-Jean</li><li>Directions: http://bit.ly/directions-espace</li></ul> | 14h - 16h | CFWB | Thierry Brouwer - <Thierry.BROUWER@cfwb.be> | see contact. |
 | November 8 |    |  | BOSA | Marc Bruyland - <marc.bruyland@bosa.fgov.be> | |
 | November 22 | <ul><li>Ellipsgebouw - Room 0.A11</li><li>Address: Koning Albert II-laan 35, 1030 Brussel</li><li>Directions: http://bit.ly/directions-ellips </li></ul> | 14h - 16h  | Informatie Vlaanderen | Raf Buyle - <raf.buyle@kb.vlaanderen.be> | http://bit.ly/registration-link-wg |
