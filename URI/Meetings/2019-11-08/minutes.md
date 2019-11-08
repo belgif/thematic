@@ -25,6 +25,7 @@ Where: FPS BOSA DG DT, WTC3
 
 ## Questions
 
+### ID
 Structure: http(s)://(domain)/id/(concept)/(id)
 
 What domain should we use for URIs / "redirect proxy" ?
@@ -36,6 +37,18 @@ What level of detail in concept ?
 Who manages concepts and IDs ?
 - Based on existing identifiers in "authentic source"
 - Must be unique, and remain unique over time (no re-use / recycling of identifiers)
+
+### Taxonomies etc
+
+Structure: http(s)://(domain)/(x)/(list)/(id)
+
+What should (x) be: resource ? auth ? ...
+
+W3C SKOS for publication of taxonomies, lists etc
+
+### Vocabularies (semantic markup)
+
+Structure: http(s)://(domain)/ns/vocabulary#class
 
 ## Next meeting
 
