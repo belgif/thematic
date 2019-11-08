@@ -23,6 +23,20 @@ Where: FPS BOSA DG DT, WTC3
 
 ## Notes
 
+## Questions
+
+Structure: http(s)://(domain)/id/(concept)/(id)
+
+What domain should we use for URIs / "redirect proxy" ?
+- Business owner must guarantee that it will remain exactly the same and available
+
+What level of detail in concept ?
+- E.g. instead of "company" it might be better to use "organization"
+
+Who manages concepts and IDs ?
+- Based on existing identifiers in "authentic source"
+- Must be unique, and remain unique over time (no re-use / recycling of identifiers)
+
 ## Next meeting
 
 When: 2019-11-22 14:00 - 16:00
