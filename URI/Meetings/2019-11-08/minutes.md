@@ -70,4 +70,5 @@ When: 2019-11-22 14:00 - 16:00
 Where: InformatieVlaanderen, [Ellips Building](https://www.vlaanderen.be/vlaamse-overheid/gebouwen/ellipsgebouw), Koning Albert II-laan 35 1030 Brussel
 
 ## Actions
-- [ ] action 1: 
+- [ ] All: check that the right people (experts) are attending the thematic meeting
+- [ ] FPS BOSA and InformatieVlaanderen: create a full draft that can be reviewed by the other members
