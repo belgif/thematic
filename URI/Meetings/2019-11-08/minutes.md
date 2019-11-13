@@ -5,16 +5,16 @@ When: 2019-11-08 14:00 - 16:00
 Where: FPS BOSA DG DT, WTC3
 
 ## Invitees and Attendees
-- [ ] BCED
+- [X] BCED (EnsembleSimplifions)
 - [X] BRIC (CIRB/CIBG)
 - [ ] BRPS (GOB/SPRB)
 - [ ] BruLocalis
+- [X] CBE (FPS Economy - KBO/BCE)
 - [ ] CBSS (KSZ/BCSS)
 - [X] CFWB
 - [ ] DGOV (Ostbelgien)
 - [ ] eHealth
 - [X] FPS BOSA DG DT
-- [X] FPS Economy - KBO/BCE
 - [ ] FPS Finance
 - [ ] IMIO
 - [X] InformatieVlaanderen
