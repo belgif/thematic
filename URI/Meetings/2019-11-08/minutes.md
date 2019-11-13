@@ -71,4 +71,5 @@ Where: InformatieVlaanderen, [Ellips Building](https://www.vlaanderen.be/vlaamse
 
 ## Actions
 - [ ] All: check that the right people (experts) are attending the thematic meeting
+- [ ] All: review the [concept of URIs and linked data presentation](https://github.com/belgif/thematic/blob/master/URI/Meetings/2019-10-11/iceg_uri_workinggroup_20191011_v_1_02.pptx?raw=true), and let BOSA/InformatieVlaanderen know if there are questions, things that are not clear
 - [ ] FPS BOSA and InformatieVlaanderen: create a full draft that can be reviewed by the other members
