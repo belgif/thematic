@@ -23,13 +23,18 @@ Where: FPS BOSA DG DT, WTC3
 
 ## Notes
 
-## Questions
+InformatieVlaanderen presented (again) the [concept of URIs and linked data](https://github.com/belgif/thematic/blob/master/URI/Meetings/2019-10-11/iceg_uri_workinggroup_20191011_v_1_02.pptx?raw=true).
 
-### ID
+## General questions on the URI
+
+### URI structure for general ID
 Structure: http(s)://(domain)/id/(concept)/(id)
 
+The idea is that the URI (the ID) remains stable, and redirects to the page/resource with the data (so the location of this page/resource can change)
+
 What domain should we use for URIs / "redirect proxy" ?
-- Business owner must guarantee that it will remain exactly the same and available
+- Perhaps belgif.be (not belgium.be) could be used
+- (Business) owner must guarantee that it will remain exactly the same and available for "eternity"
 
 What level of detail in concept ?
 - E.g. instead of "company" it might be better to use "organization"
@@ -37,18 +42,26 @@ What level of detail in concept ?
 Who manages concepts and IDs ?
 - Based on existing identifiers in "authentic source"
 - Must be unique, and remain unique over time (no re-use / recycling of identifiers)
+- Often based on a English abbreviation (doesn't matter for a machine, but looks nice for human experts)
 
-### Taxonomies etc
+### URI structure for taxonomies (code lists, thesauri etc)
 
 Structure: http(s)://(domain)/(x)/(list)/(id)
 
-What should (x) be: resource ? auth ? ...
+What should (x) be: resource ? auth ?
+- There are several conventions in place (e.g vocab.belgif.be/auth), most important is to come up with a (very limited) list of conventions.
 
-W3C SKOS for publication of taxonomies, lists etc
+Format to actually publish those taxonomies ?
+- [W3C SKOS](https://www.w3.org/2004/02/skos/intro) for publication of taxonomies, lists etc in machine readable form. This is also used by the [EU Publication Office](https://op.europa.eu/en/web/eu-vocabularies/authority-tables), in addition to human readable pages.
 
-### Vocabularies (semantic markup)
+### URI structure for vocabularies (semantic markup)
 
-Structure: http(s)://(domain)/ns/vocabulary#class
+Structure: http(s)://(domain)/ns/vocabulary#Class and http(s)://(domain)/ns/vocabulary#property
+- Generally the '#' notation is used, so that vocabularies are all on the same "page" (retrieved using only one HTTP GET)
+- Classes start with an uppercase, in English
+- properties start with a lowercase, in English
+- Formats to use: RDF Schema and/or OWL
+
 
 ## Next meeting
 
