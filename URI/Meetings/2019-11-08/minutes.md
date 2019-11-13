@@ -4,7 +4,7 @@ When: 2019-11-08 14:00 - 16:00
 
 Where: FPS BOSA DG DT, WTC3
 
-## Attendees
+## Invitees and Attendees
 - [ ] BCED
 - [X] BRIC (CIRB/CIBG)
 - [ ] BRPS (GOB/SPRB)
