@@ -101,7 +101,7 @@ Every public service or organisation is free to develop a policy according to th
 
 The example below shows the composition of a URI, containing a domain, namespace and a reference.
 
-TODO: insert image
+![URI architecture](https://github.com/belgif/thematic/blob/master/URI/images/uri_architecture.PNG)
 
 In the example above:
 *	The domain: example.com 
