@@ -4,7 +4,6 @@
 
 * [About](#about)
   * [Revision history](#revision-history)
-  * [Authors](#authors)
 * [Management summary](#management-summary)
 * [Introduction](#introduction)
   * [Resource](#resource)
@@ -19,7 +18,6 @@
 * [Exceptions](#exceptions)
 * [The URI standard compliancy checklist](#the-uri-standard-compliancy-checklist)
 * [Word list](#word-list)
-* [List of symbols used in the URI pattern](#list-of-symbols-used-in-the-uri-pattern)
 
 ## About
 
@@ -270,13 +268,3 @@ URL	| Uniform Resource Locator
 URN	| Uniform Resource Name
 UUID	| Universally Unique Identifier
 W3C	| World Wide Web Consortium
-
-## List of symbols used in the URI pattern
-
-Symbol | Meaning
------- | -------
-{ } |	URI parameter
-( )	| Selector to indicate a section within an URI pattern
-\*	| 0 or multiple times the foregoing section
-\+	| 1 or multiple times the foregoing section
-\?	| 0 or once the foregoing section
