@@ -56,7 +56,7 @@ The aim is to make a distinction between the representation on the web and the a
 
 **Concept**: This term represents the category of the resource (e.g. by means of a hierarchical classification). 
 The _resource-category_ obtains its meaning in the context of a domain and should be interpreted as follows: 
-{_resource_} is (a) {_concept_}-{_type_} (e.g. **.../id/waterway/schelde** is a **waterway-identification**) 
+{_resource_} is (a) {_concept_}-{_type_}
 
 **Reference**: refers to one particular instance of a resource and is formed by the following sub-pattern: 
 {_reference-basis_}(/{_reference-version_})?
@@ -100,7 +100,7 @@ E.g. the report of a meeting is a document (= the report) describing a non-infor
 
 ### URIs
 
-A URI is a formal way to refer to a resource. The most known format of a URI is a URL, which can be seen as an equivalent of a web 
+A URI is a formal way to refer to a resource. The most well-known format of a URI is a URL, which can be seen as an equivalent of a web 
 address. A URL is a URI that makes use of the well-known HTTP URI scheme. Every URL is a URI (of an existing resource on the web).
 
 To retrieve the resource, a URI must be ‘resolvable’. This is achieved by a service that interprets the requested URI, and replies either with a description of the content or refers to another service that can describe this URI. All resources should be uniquely identifiable.
@@ -161,7 +161,6 @@ follows a classification which contains at least the following terms to make a c
 1.	**doc**: _document_ is a representation on the web or a description of real-world objects or abstract concepts. It deals with general descriptive information (web documents).
 1.	**ns**: _namespace_ of a taxonomy, ontology or vocabulary.
 
-The parts in bold – the abbreviations – must be used as the ‘{type} component’ in the URI pattern. 
 Additional types are possible and should be implemented following the agreed guidelines that apply to the domain.
 
 **Rule 4.1**: The URI of a non-information resource with type _id_ is required to refer with redirections (303 HTTPredirect  or #id fragment identifier ) 
@@ -185,11 +184,9 @@ Overlaps with terms used for type and reuse of the terms from the domain name ar
 
 **Examples**
 
-* id/waterway/schelde 
+*id/waterway/schelde 
 *id/school/s_7838483 
-*id/address/9039439430 id/property+45a-750bk-ZB85h-dz385 
-*~~http://www. waterweg en.be/id/waterweg/schelde~~
-*http://www. waterweg en.be/id/rivier/schelde
+*id/address/9039439430
 
 ### Reference
 
@@ -201,10 +198,7 @@ The {_reference_} element can appear multiple times to create a hierarchical str
 The _reference-basis_ is the part of the reference that refers to the resource. 
 The _reference-version_ is the version of this resource that is managed. 
 There should always be a _reference-basis_ in the reference, but not always a _reference-version_. 
-The standard says nothing about how these components are implemented. 
-The interpretation of the _reference-basis_ and -_version_ is organisation dependent (but also data management dependent) and the 
-potential URI guidelines within organisations will clarify how these terms are implemented. 
-Rule 7 thus leaves the choice open to use only the _reference-basis_ or both the _reference-basis_ and _the reference-version_.
+The interpretation of the _reference-basis_ and -_version_ is organisation dependent (but also data management dependent).
 
 ## Exceptions
 
