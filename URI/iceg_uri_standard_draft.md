@@ -31,10 +31,6 @@ Revision | Date | Contributor(s) | Comments
 0.8      | 23/03/2017 | L. De Vocht<br>M. Van Compernolle | Processing final feedback of public working groups
 0.9      | x/11/2019 | M. Bruyland<br>B. Hanssens<br>L. Dhondt<br>O-P. Bakasanda<br>Thierry Brouwer<br>R. Buyle<br>D. Van Lancker<br>B. Van Nuffelen | Document proposal as candidate recommendation
 
-**Note of the authors**
-*	Explanation of the used symbols can be found in the back of this document
-*	This document focuses on the guidelines for defining the URIs and illustrates the exceptions.
-
 ## Management summary
 
 This document describes the ICEG URI standard for the disclosure of resources, information and data, by the Belgian Federal State, the Regions and Communities. A checklist is included at the end of this document, which can be used as a self-evaluation instrument for the evaluation of URIs.
@@ -42,17 +38,20 @@ This document describes the ICEG URI standard for the disclosure of resources, i
 The standard defines the minimal requirements  to which the authorities should comply in order to disclose resources in a 
 uniform manner via the web. In addition, this document describes how ‘Uniform Resource Identifiers’ (URIs) should be defined in order 
 to identify these resources in a persistent way. This enables back-office systems to evolve while the URI remains stable. 
+
 This document also applies to data disclosed via services, but does not necessarily apply to the services themselves, given that 
-persistence for services is hard to realise and it is inefficient. All persistent URIs must be formed according the following pattern: 
+persistence for services is hard to realise and it is inefficient. 
+
+All persistent URIs must be formed according the following pattern: 
 ```
 http(s)://{domain}/{type}/{concept}(/{reference})* 
 ```
 
 The parameters are placed between **{}**; __*__ indicates ‘0 or multiple times’; **()** indicates a group.
 
-**Domain**: This part of the URI pattern is formed by the hostname and is possibly preceded by a _subdomain_. 
+**Domain**: This part of the URI pattern is formed by the hostname and may be preceded by a _subdomain_. 
 The guidelines concerning the management of subdomains are outside the scope of the URI standard but are part of the guidelines for the 
-application of the URI standard. Domains must use neutral, organization-independent and timeless terms to cope with changes of names. 
+application of the URI standard. Domains must use neutral, organization-independent and timeless terms to remain persistent. 
 
 **Type**: This term describes the nature of the underlying resource. For the _type_, as part of the URI pattern, a classification is proposed with at least the following terms: **id** (_identification_), **doc** (_document_) and **ns** (_namespace_). 
 The aim is to make a distinction between the representation on the web and the actual concept or object in the real world.
@@ -68,9 +67,7 @@ The _resource-category_ obtains its meaning in the context of a domain and shoul
 
 In the digital society, it is expected from governments to disclose databases with public sector information over the web between 
 governments and third parties following a widely supported methodology. To ensure structured and identifiable processes, for both
-computer, machines and humans, URIs provide a solution. To ensure a common understanding, we will first clarify the following concepts: 
-_resource_, _domain name_, _namespace_ and _URIs_. Furthermore, this document describes the minimum requirements a persistent URI should 
-comply with in order to be resolvable by the World Wide Web (=web). In this way, it will work anywhere in the world.
+computer, machines and humans, URIs provide a solution.
 
 Note that there are no language or content guidelines to which the terms, as part of the URI, must comply. 
 Every public service or organisation is free to develop a policy according to their own needs, to develop agreements and document these.
@@ -89,7 +86,7 @@ Type, concept and reference are explained more in detail in Chapter 4.
 
 The term ‘resource’ was first introduced to refer to specialized pages and content within a website (URL), 
 more specifically to the destinations of URLs (e.g. the contact page of the website of a company), but later the definition was 
-expanded to cover everything to which a URI can refer  (e.g. the address with the geolocation in Google Maps from the same contact page).
+expanded to cover everything to which a URI can refer to (e.g. the address with the geolocation in Google Maps from the same contact page).
 
 For a clear understanding of these terms, we distinguish two groups of resources: information resources and non-information resources.
 * __Information Resources__: objects that (may) have a digital representation, such as
@@ -106,26 +103,19 @@ E.g. the report of a meeting is a document (= the report) describing a non-infor
 ### URIs
 
 A URI is a formal way to refer to a resource. The most known format of a URI is a URL, which can be seen as an equivalent of a web 
-address. An URL is a URI that makes use of the well-known HTTP URI scheme. Every URL is a URI (of an existing resource on the web).
+address. A URL is a URI that makes use of the well-known HTTP URI scheme. Every URL is a URI (of an existing resource on the web).
 
-Further, in this standard, it will turn out that a URI must be ‘resolvable’ to be able to retrieve the resource. 
-This is achieved by a service that interprets the requested URI, and replies either with a description of the content or refers to 
-another service that can describe this URI. All resources should be uniquely identifiable.
+To retrieve the resource, a URI must be ‘resolvable’. This is achieved by a service that interprets the requested URI, and replies either with a description of the content or refers to another service that can describe this URI. All resources should be uniquely identifiable.
 
 ### Domain name
 
-A domain name (or domain) is a name in the Domain Name System (DNS), used for the identification of computers such as web servers, 
-services and applications. The domain name is needed to retrieve things on the web provided via computers. 
-This term of the URI pattern is formed by the host name, possibly preceded by a subdomain.
+This term of the URI pattern is formed by the DNS host name, possibly preceded by a subdomain.
   
 ## Namespaces
  
-Namespaces are a way to define, among others, concepts and variables and to categorize them in order to be unique in the group they belong to. 
-They are constructed based on a domain name, to which one or more additional clarifying terms can be added.
- 
-It is very common to define a namespace via the HTTP(S) URI scheme. The HTTP(S) URI scheme is a particular scheme format to shape a 
-Uniform Resource Identifier (in short, URI  ). This format is very popular as URIs are managed by a certain organization, thus they 
-are well differentiated among each other.
+Namespaces are a way to define, among others, concepts and variables and to categorize them in order to be unique in the group they belong to.
+
+It is very common to define a namespace via the HTTP(S) URI scheme, which is managed by organization in a decentralized way.
 
 The table below  shows the difference between the construction of a URI based on a domain name and a namespace, each time for the 
 example ‘data’, ‘service’, ‘non-information resource’ and ‘ontology’.
@@ -142,33 +132,25 @@ Document | Page describing the Atomium, a monument in Brussels | dbpedia.org | h
 
 In order to define the basic concepts of the URI standard - namespaces, identifiers, versions - in a uniform manner, a number of guidelines should be followed. 
 
-The context and the source for these guidelines on which the guidelines are based or inspired are always mentioned.
-
 **Rule 1**: the HTTPS or HTTP URI scheme must be used as the basis for the definition of the URIs.<br><br>
-Rule 1 is based on international Internet standards and practices. The Request for Comments (RFC recommendations) of the 
-Internet Engineering Taskforce (IETF) recommend the URIs to follow  the HTTPS  or HTTP scheme . These URIs can be requested via the
-HTTP(S) GET protocol . In recent years, there is a growing consensus within various standardisation communities regarding the use of 
-HTTPS or the HTTP URI scheme  (OGC, INSPIRE, W3C). The HTTPS or HTTP URI scheme  is one of the possible URI schemes allowed by 
-IANA (Internet Assigned Number Authority).
-
+Although it is only one of the possible URI schemes allowed by IANA, there is a growing consensus within various standardisation communities (OGC, INSPIRE, W3C) to use the HTTP(S) URI scheme.
 The pattern for forming the URI is based on the guidelines from INSPIRE and ISA.
 
 **Rule 2**: All URIs must be defined following this pattern:
 ```
 http(s)://{domain}/{type}/{concept}(/{reference})*
 ```
-This convention has the advantage that URIs can be defined consistently. It is important that the URIs are described in a formal way, 
-hence the following guidelines: 
+This convention has the advantage that URIs can be defined consistently.
 * __Rule 2.1__: {domain}, {type} and {concept} are mandatory parts of the URI
-* __Rule 2.2__: References are optional and there can be more than one depending on the situation. 
+* __Rule 2.2__: References are optional, and there can be more than one depending on the situation. 
 * __Rule 2.3__: The basic combination {domain}/{type}/{concept} in the absence of a (/{reference})* may only refer to one resource ( =unique on the web) and must be invariable (since {reference} is optional).
 * __Rule 2.4__: The (/{reference})* in combination with {domain}/{type}/{concept} must be unique and constant on the web. This means that once the {reference} is assigned, the reference itself as well as the semantic description of the resource cannot be changed.
 
 ### Domain
 
-**Rule 3**: The name of the domain and all potential subdomains, must all be independent of the organisation, product, brand and time. 
+**Rule 3**: The name of the domain and all potential subdomains, must be independent of the organisation, product, brand and time. 
 
-The domain cannot contain a name that may seize to exist. After all, we want to avoid using a name in the domain name that can disappear or go out of use, because the domain name as a whole must always keep on existing to maintain persistence.
+The domain cannot contain a name that may seize to exist, since it must remain persistent.
 
 ### Type
 
@@ -230,7 +212,7 @@ Rule 7 thus leaves the choice open to use only the _reference-basis_ or both the
 
 One **can** (but is not obliged to) deviate from the rules in the following situations:
 1. When it comes to **services**, the guidelines are not applicable, although they are strictly speaking a resource. If the data coming from services must be persistent, they have to follow all the rules from the URI standard. Therefore it makes little sense for services that are disclosing data, to additionally enforce persistence and/or enforce the rules. Moreover, persistence for existing services is not evident: existing services can possibly not be adapted anymore to the URI standard, or existing URIs can already be constructed in a well-considered manner (according to their own rules). For new services and services currently in development, it makes little sense to enforce persistence and the guidelines. After all, in these cases where persistence is required, the disclosed data already have to comply with the rules from the URI standard.
-1. HTTPS or HTTP URIs that are already published (**legacy**)and were created with the aim to be persistent, must remain preserved. This does not mean that it is allowed for legacy-systems to produce new, nonconforming URIs. The only goal of this exception is to guarantee the persistence of the URIs already in use by third parties
+1. HTTPS or HTTP URIs that are already published (**legacy**) and were created with the aim to be persistent, must remain preserved. This does not mean that it is allowed for legacy-systems to produce new, nonconforming URIs. The only goal of this exception is to guarantee the persistence of the URIs already in use by third parties
 1. Components with type ‘**ns**’ may use fragment identifiers  in order to define all terms from one particular vocabulary into one web document, each in their namespace. The fragment identifier component of the URI allows adding an indirect identification after the ‘**#**’ of the resource described in the corresponding resource identified before the ‘**#**’. 
  
 
@@ -248,16 +230,8 @@ It is prohibited to produce URIs following both the redirect and the hash manner
 
 ## The URI standard compliancy checklist
 
-This section describes a framework to evaluate URIs. A URI is 100% compliant with the URI standard if all questions can be answered with ‘yes’.
-
----
-**NOTE**
-
-PRECHECK: In case the URIs are provided via a legacy service that guarantees the persistence via the domain and uses the http(s) 
-protocol, then the existing URIs should not be compliant with the following checklist. This checklist can help to gain insights into
-how to improve the format of URIs. All other and new URIs should follow this checklist
-
----
+This section describes a framework to evaluate URIs. A URI is 100% compliant with the URI standard if all questions can be answered with ‘yes’. In case the URIs are provided via a legacy service that guarantees the persistence via the domain and uses the http(s) 
+protocol, then the existing URIs should not be compliant with the following checklist.
 
 **Rules**
 * Does the URI scheme make use of the http(s) protocol?
@@ -266,7 +240,6 @@ how to improve the format of URIs. All other and new URIs should follow this che
 **Domain**
 * Is the existing (sub)domain name independent of **organization**, **product**, **brand** or **time**?
 * Is the domain name guaranteed persistent: can it be guaranteed that the domain name will last forever and will never change?
-
 
 **Type**
 * Is the **{type}** included as part of the URI pattern **AND** is there at least a distinction between representation, the actual object/concept and a term belonging to a vocabulary, thesaurus or ontology?
