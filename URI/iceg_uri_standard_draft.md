@@ -64,8 +64,7 @@ The _resource-category_ obtains its meaning in the context of a domain and shoul
 ## Introduction
 
 In the digital society, it is expected from governments to disclose databases with public sector information over the web between 
-governments and third parties following a widely supported methodology. To ensure structured and identifiable processes, for both
-computer, machines and humans, URIs provide a solution.
+governments and third parties following a widely supported methodology. To ensure structured and identifiable processes, for both machines and humans, URIs provide a solution.
 
 Note that there are no language or content guidelines to which the terms, as part of the URI, must comply. 
 Every public service or organisation is free to develop a policy according to their own needs, to develop agreements and document these.
