@@ -15,6 +15,7 @@
   * [Type](#type)
   * [Concept](#concept)
   * [Reference](#reference)
+  * [Fragment identifiers](#fragement_identifiers)
 * [Exceptions](#exceptions)
 * [The URI standard compliancy checklist](#the-uri-standard-compliancy-checklist)
 * [References](#references)
@@ -184,19 +185,23 @@ The _reference-version_ is the version of this resource that is managed.
 There should always be a _reference-basis_ in the reference, but not always a _reference-version_. 
 The interpretation of the _reference-basis_ and -_version_ is organisation dependent (but also data management dependent).
 
+### Fragment identifiers
+
+Components with type **ns** may use fragment identifiers in order to define all terms from one particular controlled list of vocabulary into one single web document. The fragment identifier component of the URI allows adding an indirect identification after the ‘**#**’ of the resource described in the corresponding resource identified before the ‘**#**’. 
+
+Example:
+
+* _/ns/artefact_ - Refers to the namespace in which the artefacts are described 
+* _/ns/artefact#Relic_ - Refers to the specific term in which the fragment identifier Relic is used in order to refer to it within the namespace _ns/artefact_
+* _/ns/artefact#Relic_ is an alternative for _/ns/artefact/Relic_, which (i) exists on its own; or 
+(ii) executes a 303- redirect to the namespace _/ns/artefact_ or (iii) redirects to a document describing e.g. _/doc/artefact/Relic_
+
+
 ## Exceptions
 
 One **can** deviate from the rules in the following situations:
 1. When it comes to **services**: if the data coming from services must be persistent, they have to follow all the rules from the URI standard. Therefore it makes little sense for services that are disclosing data, to additionally enforce persistence and/or enforce the rules. Moreover, persistence for existing services is not evident: existing services may not be adapted anymore to the URI standard, or existing URIs can already be constructed in a well-considered manner.
 1. HTTPS or HTTP URIs that are already published (**legacy**) and were created with the aim to be persistent, must remain preserved. This does not mean that it is allowed for legacy-systems to produce new, nonconforming URIs. The only goal of this exception is to guarantee the persistence of the URIs already in use by third parties
-1. Components with type **ns** may use fragment identifiers  in order to define all terms from one particular vocabulary into one web document, each in their namespace. The fragment identifier component of the URI allows adding an indirect identification after the ‘**#**’ of the resource described in the corresponding resource identified before the ‘**#**’. 
-
-**Example: fragment identifier**
-
-* _/ns/artefact_ - Refers to the namespace in which the artefacts are described 
-* _/ns/artefact#Relic_ - Refers to the specific term in which the fragment identifier Relic is used in order to refer to it within the namespace _ns/artefact_
-* _/ns/artefact#Relic_ is an alternative for _/ns/artefact/Relic_ that (i) exists on its own; or 
-(ii) executes a 303- redirect to the namespace _/ns/artefact_ or (iii) redirects to a document describing e.g. _/doc/artefact/Relic_
 
 **Note** An alternative way of guideline 4.2 to make the distinction between _id/doc_ is by introducing a fragment identifier. When a user resolves this URI, the fragment identifier will be ignored as part of the HTTP protocol. This approach can only be used in the case of sufficient reasons not to follow the recommended approach of rule 4.2. In this case, the {type} doc is used in the URI structure instead of id, and the URI must be followed by the fragmented identifier ‘#id’. 
 It is prohibited to produce URIs following both the redirect and the hash manner for resources of the same type.
