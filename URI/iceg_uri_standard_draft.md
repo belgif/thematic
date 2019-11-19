@@ -9,13 +9,13 @@
   * [Resource](#resource)
   * [URIs](#uris)
   * [Domain name](#domain-name)
-  * [Namespace](#namespaces)
+  * [Namespaces](#namespaces)
 * [Rules](#rules)
   * [Domain](#domain)
   * [Type](#type)
   * [Concept](#concept)
   * [Reference](#reference)
-  * [Fragment identifiers](#fragement_identifiers)
+  * [Fragment identifiers](#fragement-identifiers)
 * [Exceptions](#exceptions)
 * [The URI standard compliancy checklist](#the-uri-standard-compliancy-checklist)
 * [References](#references)
@@ -109,7 +109,7 @@ To retrieve the resource, a URI must be ‘resolvable’. This is achieved by a 
 
 This term of the URI pattern is formed by the [DNS](#DNS) host name, possibly preceded by a subdomain.
   
-## Namespaces
+### Namespaces
  
 Namespaces are a way to define, among others, concepts and variables and to categorize them in order to be unique in the group they belong to. It is very common to define a namespace via the HTTP(S) URI scheme, and to be managed by organization in a decentralized way.
 
