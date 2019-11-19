@@ -29,22 +29,7 @@ Current status: draft
 Revision | Date | Contributor(s) | Comments
 -------- | ---- | -------------- | --------
 0.8      | 23/03/2017 | L. De Vocht<br>M. Van Compernolle | Processing final feedback of public working groups
-0.9      | 22/11/2019 | M. Bruyland<br>B. Hanssens<br>L. Dhondt<br>O-P. Bakasanda<br>Thierry Brouwer<br>R. Buyle<br>D. Van Lancker<br>B. Van Nuffelen | Document proposal as candidate recommendation
-
-### Authors
-
-The authors of the Flemish URI standard can be found [here](https://joinup.ec.europa.eu/sites/default/files/document/2018-03/URI_Standard_Flanders_v0.9_EN.pdf)
-
-Name | Role | Organization
----- | ---- | ------------
-Marc Bruyland | Author | BOSA
-Bart Hanssens | Author | BOSA
-Liesbeth Dhondt | Author | BOSA
-Olivier-Pascal Bakasanda | Author | Communauté Française
-Thierry Brouwer | Author | Communauté Française
-Raf Buyle | Author | Informatie Vlaanderen
-Dwight Van Lancker | Author | Informatie Vlaanderen
-Bert Van Nuffelen | Author | Informatie Vlaanderen
+0.9      | x/11/2019 | M. Bruyland<br>B. Hanssens<br>L. Dhondt<br>O-P. Bakasanda<br>Thierry Brouwer<br>R. Buyle<br>D. Van Lancker<br>B. Van Nuffelen | Document proposal as candidate recommendation
 
 **Note of the authors**
 *	Explanation of the used symbols can be found in the back of this document
@@ -52,17 +37,9 @@ Bert Van Nuffelen | Author | Informatie Vlaanderen
 
 ## Management summary
 
-This document describes the Flemish URI standard for the disclosure of resources, information and data, by the Flemish authorities and 
-has been specified by Information Flanders. A checklist is included at the end of this document, which can be used as a self-evaluation 
-instrument for the evaluation of URIs.
+This document describes the ICEG URI standard for the disclosure of resources, information and data, by the Belgian Federal State, the Regions and Communities. A checklist is included at the end of this document, which can be used as a self-evaluation instrument for the evaluation of URIs.
 
-The guidelines concerning the governance of persistent URIs were developed in the context of the Open Standards for Linked Organizations 
-program (OSLO²). OSLO² is an interoperability program in the Region of Flanders. The program brings together expertise from different 
-business domains and governmental levels, independent of a specific thematic project. The Flemish Government developed a domain model 
-in line with international standards including ISA and INSPIRE  enriched by data extensions to comply with the local context. 
-The formal specification is published at data.vlaanderen.be.
-
-The standard defines the minimal requirements  to which the Flemish authorities should comply in order to disclose resources in a 
+The standard defines the minimal requirements  to which the authorities should comply in order to disclose resources in a 
 uniform manner via the web. In addition, this document describes how ‘Uniform Resource Identifiers’ (URIs) should be defined in order 
 to identify these resources in a persistent way. This enables back-office systems to evolve while the URI remains stable. 
 This document also applies to data disclosed via services, but does not necessarily apply to the services themselves, given that 
@@ -77,8 +54,7 @@ The parameters are placed between **{}**; __*__ indicates ‘0 or multiple times
 The guidelines concerning the management of subdomains are outside the scope of the URI standard but are part of the guidelines for the 
 application of the URI standard. Domains must use neutral, organization-independent and timeless terms to cope with changes of names. 
 
-**Type**: This term describes the nature of the underlying resource. For the _type_, as part of the URI pattern, a classification is proposed 
-with at least the following terms: **id** (_identification_), **doc** (_document_) and **ns** (_namespace_). 
+**Type**: This term describes the nature of the underlying resource. For the _type_, as part of the URI pattern, a classification is proposed with at least the following terms: **id** (_identification_), **doc** (_document_) and **ns** (_namespace_). 
 The aim is to make a distinction between the representation on the web and the actual concept or object in the real world.
 
 **Concept**: This term represents the category of the resource (e.g. by means of a hierarchical classification). 
@@ -93,7 +69,7 @@ The _resource-category_ obtains its meaning in the context of a domain and shoul
 In the digital society, it is expected from governments to disclose databases with public sector information over the web between 
 governments and third parties following a widely supported methodology. To ensure structured and identifiable processes, for both
 computer, machines and humans, URIs provide a solution. To ensure a common understanding, we will first clarify the following concepts: 
-_resource_, _domain name_, _namespace_ and _URIs_. Furthermore, this document describes the minimum requirements a persistent Flemish URI should 
+_resource_, _domain name_, _namespace_ and _URIs_. Furthermore, this document describes the minimum requirements a persistent URI should 
 comply with in order to be resolvable by the World Wide Web (=web). In this way, it will work anywhere in the world.
 
 Note that there are no language or content guidelines to which the terms, as part of the URI, must comply. 
@@ -331,24 +307,3 @@ Symbol | Meaning
 \*	| 0 or multiple times the foregoing section
 \+	| 1 or multiple times the foregoing section
 \?	| 0 or once the foregoing section
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  
-  
-  
-  
-  
-  
