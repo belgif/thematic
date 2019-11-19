@@ -31,10 +31,10 @@ Revision | Date | Contributor(s) | Comments
 
 ## Management summary
 
-This document describes the ICEG URI standard for the disclosure of resources, information and data, by the Belgian Federal State, the Regions and Communities. A checklist is included at the end of this document, which can be used as a self-evaluation instrument for the evaluation of URIs.
+This document describes the ICEG standard for the publication of resources, information and data, by the Belgian Federal State, the Regions and Communities. A checklist is included at the end of this document, which can be used as a self-evaluation instrument for the evaluation of URIs.
 
-The standard defines the minimal requirements  to which the authorities should comply in order to disclose resources in a 
-uniform manner via the web. In addition, this document describes how ‘Uniform Resource Identifiers’ ([URIs](#URI)) should be defined in order 
+The standard defines the minimal requirements to which the authorities should comply in order to disclose resources in a 
+uniform manner via the web. It describes how ‘Uniform Resource Identifiers’ ([URIs](#URI)) should be defined in order 
 to identify these resources in a persistent way. This enables back-office systems to evolve while the URI remains stable. 
 
 This document also applies to data disclosed via services, but does not necessarily apply to the services themselves, given that 
@@ -48,8 +48,7 @@ http(s)://{domain}/{type}/{concept}(/{reference})*
 The parameters are placed between **{}**; __*__ indicates ‘0 or multiple times’; **()** indicates a group.
 
 **Domain**: This part of the URI pattern is formed by the hostname and may be preceded by a _subdomain_. 
-The guidelines concerning the management of subdomains are outside the scope of the URI standard but are part of the guidelines for the 
-application of the URI standard. Domains must use neutral, organization-independent and timeless terms to remain persistent. 
+The guidelines concerning the management of subdomains are outside the scope of this document. Domains must use neutral, organization-independent and timeless terms to remain persistent. 
 
 **Type**: This term describes the nature of the underlying resource. For the _type_, as part of the URI pattern, a classification is proposed with at least the following terms: **id** (_identification_), **doc** (_document_) and **ns** (_namespace_). 
 The aim is to make a distinction between the representation on the web and the actual concept or object in the real world.
@@ -78,15 +77,15 @@ In the example above:
 *	The domain: example.com 
 *	The namespace: http://example.com/id/organisation/
 *	The URI: http://example.com/id/organisation/894556644566-0765433 
-Type, concept and reference are explained more in detail in Chapter 4.
+* Type, concept and reference are explained more in detail in Chapter 4.
 
 ### Resource
 
 The term ‘resource’ was first introduced to refer to specialized pages and content within a website ([URL](#URL)), 
-more specifically to the destinations of URLs (e.g. the contact page of the website of a company), but later the definition was 
+more specifically to the destinations of URLs (e.g. the contact page on a website), but later o, the definition was 
 expanded to cover everything to which a URI can refer to (e.g. the address with the geolocation in Google Maps from the same contact page).
 
-For a clear understanding of these terms, we distinguish two groups of resources: information resources and non-information resources.
+Two groups of resources are distinguished: information resources and non-information resources.
 * __Information Resources__: objects that (may) have a digital representation, such as
   * __Data__: representation of objects or things stored in any electronic format on a storage medium;
   * (web)-__services__: allow access to data, taking actions with data (= modifying the data. (web)- services are services that enable a 
@@ -96,14 +95,14 @@ For a clear understanding of these terms, we distinguish two groups of resources
 * **Non-information resources**: things, objects or events from the ‘real’ world without representation on a computer, but for which 
 the description can have a representation on a machine. The description of non-information resources are included in **documents**.
 
-E.g. the report of a meeting is a document (= the report) describing a non-information resource (= the meeting).
+Example: the report of a meeting is a document (= the report) describing a non-information resource (= the meeting).
 
 ### URIs
 
-A URI is a formal way to refer to a resource. The most well-known format of a URI is a URL, which can be seen as an equivalent of a web 
-address. A URL is a URI that makes use of the well-known HTTP URI scheme. Every URL is a URI (of an existing resource on the web).
+A URI is a formal way to refer to a resource. The most well-known form of a URI is a URL, which can be seen as an equivalent of a web 
+address. A URL is a URI that makes use of the well-known HTTP URI scheme, so every URL is a URI (of an existing resource on the web).
 
-To retrieve the resource, a URI must be ‘resolvable’. This is achieved by a service that interprets the requested URI, and replies either with a description of the content or refers to another service that can describe this URI. All resources should be uniquely identifiable.
+To retrieve the resource, a URI must be ‘resolvable’. This is achieved by a service that interprets the requested URI, and either replies with a description of the content, or refers to another service that can describe this URI. All resources should be uniquely identifiable.
 
 ### Domain name
 
@@ -111,24 +110,17 @@ This term of the URI pattern is formed by the [DNS](#DNS) host name, possibly pr
   
 ## Namespaces
  
-Namespaces are a way to define, among others, concepts and variables and to categorize them in order to be unique in the group they belong to.
+Namespaces are a way to define, among others, concepts and variables and to categorize them in order to be unique in the group they belong to. It is very common to define a namespace via the HTTP(S) URI scheme, and to be managed by organization in a decentralized way.
 
-It is very common to define a namespace via the HTTP(S) URI scheme, which is managed by organization in a decentralized way.
+Example:
 
-The table below  shows the difference between the construction of a URI based on a domain name and a namespace, each time for the 
-example ‘data’, ‘service’, ‘non-information resource’ and ‘ontology’.
- 
-Type of resource | Description | Domain name | Namespace | URI
----------------- | ----------- | ----------- | --------- | ----
-Data | List of institutions of the EU in Brussels | demo.thedatatank.com | http://demo.thedatatank.com/brussels | http://demo.thedatatank.com/brussels/european_institutions
-Service | Flemish Open Data Portal | opendata.flanders.be | https://opendata.flanders.be/ | http://opendata.flanders.be/dataset?q=%7bsearchterm%7d
-Non-information resource | The Atomium, a monument in Brussels | dbpedia.org | http://dbpedia.org/resource | http://dbpedia.org/resource/Atomium
-Ontology | The ‘Organization’ ontology | www.w3.org | http://www.w3.org/ns/org# | http://www.w3.org/ns/org#Organization 
-Document | Page describing the Atomium, a monument in Brussels | dbpedia.org | http://dbpedia.org/page/ | http://dbpedia.org/page/Atomium
+| Description | Domain name | Namespace | URI |
+| ----------- | ----------- | --------- | --- |
+| Page describing the Atomium, a monument in Brussels | dbpedia.org | http://dbpedia.org/page/ | http://dbpedia.org/page/Atomium |
 
 ## Rules 
 
-In order to define the basic concepts of the URI standard - namespaces, identifiers, versions - in a uniform manner, a number of guidelines should be followed. 
+In order to define the basic concepts of the URI standard - namespaces, identifiers, versions - in a uniform manner, a number of guidelines must be followed. 
 
 **Rule 1**: the HTTPS or HTTP URI scheme must be used as the basis for the definition of the URIs.<br><br>
 Although it is only one of the possible URI schemes allowed by [IANA](#IANA), there is a growing consensus within various standardisation communities ([OGC](#OGC), [INSPIRE](#INSPIRE), [W3C](#W3C)) to use the HTTP(S) URI scheme.
@@ -147,7 +139,6 @@ This convention has the advantage that URIs can be defined consistently.
 ### Domain
 
 **Rule 3**: The name of the domain and all potential subdomains, must be independent of the organisation, product, brand and time. 
-
 The domain cannot contain a name that may seize to exist, since it must remain persistent.
 
 ### Type
@@ -163,18 +154,15 @@ follows a classification which contains at least the following terms to make a c
 
 Additional types are possible and should be implemented following the agreed guidelines that apply to the domain.
 
-**Rule 4.1**: The URI of a non-information resource with type _id_ is required to refer with redirections (303 HTTPredirect  or #id fragment identifier ) 
-to a digital web representation with the type _doc_.
+**Rule 4.1**: The URI of a non-information resource with type _id_ is required to refer with redirections (303 HTTPredirect  or #id fragment identifier ) to a digital web representation with the type _doc_.
 
-**Examples**
+Examples:
 * **id/waterway/schelde** – is an identifier for the real world object ‘Schelde’. 
-This object cannot exist on the web, but it can be referred to from other applications or data.<br><br>
-**Remark**: : if the waterway (real world object) ‘Schelde’ ever changes its name or would no longer exist, its URI must remain by either referring to the old object ‘Schelde’ or by referring to the same object with the new name. 
+This object cannot exist on the web, but it can be referred to from other applications or data. If the waterway (real world object) ‘Schelde’ ever changes its name or would no longer exist, its URI must remain by either referring to the old object ‘Schelde’ or by referring to the same object with the new name. 
 * **doc/waterway/schelde**
   * refers to a document (e.g. HTML page) containing an explanation about the river ‘Schelde’. This document can have structured data, but this is not a requirement.
   * describes meta-information such as the history, versions, source, and details of the actions made on all representations of {type}//waterway/schelde. 
-* **ns/waterway** - is the namespace that can be used in the vocabulary dealing with waterways.<br><br>
-E.g. ns/waterway#depth or ns/waterway/depth refers to the term depth from the namespace ns/waterway and serves to indicate the depth of the waterways.
+* **ns/waterway** - is the namespace that can be used in the vocabulary dealing with waterways. E.g. ns/waterway#depth or ns/waterway/depth refers to the term depth from the namespace ns/waterway and serves to indicate the depth of the waterways.
 
 ### Concept
 
@@ -182,11 +170,7 @@ E.g. ns/waterway#depth or ns/waterway/depth refers to the term depth from the na
 The categorization can be done by means of an agreed (hierarchical) classification or list, but this is not mandatory. 
 Overlaps with terms used for type and reuse of the terms from the domain name are not allowed.
 
-**Examples**
-
-*id/waterway/schelde 
-*id/school/s_7838483 
-*id/address/9039439430
+Example: id/address/9039439430
 
 ### Reference
 
@@ -202,11 +186,10 @@ The interpretation of the _reference-basis_ and -_version_ is organisation depen
 
 ## Exceptions
 
-One **can** (but is not obliged to) deviate from the rules in the following situations:
-1. When it comes to **services**, the guidelines are not applicable, although they are strictly speaking a resource. If the data coming from services must be persistent, they have to follow all the rules from the URI standard. Therefore it makes little sense for services that are disclosing data, to additionally enforce persistence and/or enforce the rules. Moreover, persistence for existing services is not evident: existing services can possibly not be adapted anymore to the URI standard, or existing URIs can already be constructed in a well-considered manner (according to their own rules). For new services and services currently in development, it makes little sense to enforce persistence and the guidelines. After all, in these cases where persistence is required, the disclosed data already have to comply with the rules from the URI standard.
+One **can** deviate from the rules in the following situations:
+1. When it comes to **services**: if the data coming from services must be persistent, they have to follow all the rules from the URI standard. Therefore it makes little sense for services that are disclosing data, to additionally enforce persistence and/or enforce the rules. Moreover, persistence for existing services is not evident: existing services may not be adapted anymore to the URI standard, or existing URIs can already be constructed in a well-considered manner.
 1. HTTPS or HTTP URIs that are already published (**legacy**) and were created with the aim to be persistent, must remain preserved. This does not mean that it is allowed for legacy-systems to produce new, nonconforming URIs. The only goal of this exception is to guarantee the persistence of the URIs already in use by third parties
-1. Components with type ‘**ns**’ may use fragment identifiers  in order to define all terms from one particular vocabulary into one web document, each in their namespace. The fragment identifier component of the URI allows adding an indirect identification after the ‘**#**’ of the resource described in the corresponding resource identified before the ‘**#**’. 
- 
+1. Components with type **ns** may use fragment identifiers  in order to define all terms from one particular vocabulary into one web document, each in their namespace. The fragment identifier component of the URI allows adding an indirect identification after the ‘**#**’ of the resource described in the corresponding resource identified before the ‘**#**’. 
 
 **Example: fragment identifier**
 
@@ -215,14 +198,12 @@ One **can** (but is not obliged to) deviate from the rules in the following situ
 * _/ns/artefact#Relic_ is an alternative for _/ns/artefact/Relic_ that (i) exists on its own; or 
 (ii) executes a 303- redirect to the namespace _/ns/artefact_ or (iii) redirects to a document describing e.g. _/doc/artefact/Relic_
 
-**Note** An alternative way of guideline 4.2 to make the distinction between _id/doc_ is by introducing a fragment identifier 
-(the part after the square bracket ‘[‘ or hash ‘#’ in the URI). When a user resolves this URI, the fragment identifier will be ignored 
-(as part of the HTTP protocol) and will request another resource. This other resource represents the information resource. This approach can only be used in the case of sufficient reasons not to follow the recommended approach of rule 4.2. In this case, the {type} doc is used in the URI structure instead of id, and the URI must be followed by the fragmented identifier ‘#id’. 
+**Note** An alternative way of guideline 4.2 to make the distinction between _id/doc_ is by introducing a fragment identifier. When a user resolves this URI, the fragment identifier will be ignored as part of the HTTP protocol. This approach can only be used in the case of sufficient reasons not to follow the recommended approach of rule 4.2. In this case, the {type} doc is used in the URI structure instead of id, and the URI must be followed by the fragmented identifier ‘#id’. 
 It is prohibited to produce URIs following both the redirect and the hash manner for resources of the same type.
 
 ## The URI standard compliancy checklist
 
-This section describes a framework to evaluate URIs. A URI is 100% compliant with the URI standard if all questions can be answered with ‘yes’. In case the URIs are provided via a legacy service that guarantees the persistence via the domain and uses the http(s) 
+This section describes a framework to evaluate URIs. A URI is compliant with the URI standard if all questions can be answered with ‘yes’. In case the URIs are provided via a legacy service that guarantees the persistence via the domain and uses the http(s) 
 protocol, then the existing URIs should not be compliant with the following checklist.
 
 **Rules**
