@@ -51,7 +51,7 @@ The parameters are placed between **{}**; __*__ indicates ‘0 or multiple times
 **Domain**: This part of the URI pattern is formed by the hostname and may be preceded by a _subdomain_. 
 The guidelines concerning the management of subdomains are outside the scope of this document. Domains must use neutral, organization-independent and timeless terms to remain persistent. 
 
-**Type**: This term describes the nature of the underlying resource. For the _type_, as part of the URI pattern, a classification is proposed with at least the following terms: **id** (_identification_), **doc** (_document_) and **ns** (_namespace_). 
+**Type**: This term describes the nature of the underlying resource. For the _type_, as part of the URI pattern, a classification is proposed with at least the following terms: **id** (_identification_), **doc** (_document_), **auth** (_authority tables_) and **ns** (_namespace_). 
 The aim is to make a distinction between the representation on the web and the actual concept or object in the real world.
 
 **Concept**: This term represents the category of the resource (e.g. by means of a hierarchical classification). 
@@ -152,6 +152,7 @@ follows a classification which contains at least the following terms to make a c
 1.	**id**: _identifier_ is a reference to an object from the real world or an abstract concept;
 1.	**doc**: _document_ is a representation on the web or a description of real-world objects or abstract concepts. It deals with general descriptive information (web documents).
 1.	**ns**: _namespace_ of a taxonomy, ontology or vocabulary.
+1. **auth**: _authority tables_ alternative for _ns_, for authoritive controlled lists, taxonomies, thesauri (but not for ontologies)
 
 Additional types are possible and should be implemented following the agreed guidelines that apply to the domain.
 
@@ -221,7 +222,7 @@ protocol, then the existing URIs should not be compliant with the following chec
 
 **Type**
 * Is the **{type}** included as part of the URI pattern **AND** is there at least a distinction between representation, the actual object/concept and a term belonging to a vocabulary, thesaurus or ontology?
-* Does the **{type}** of all URIs in the domain and subdomain follow the same strict classification including at least **id**, **doc** and **ns**?
+* Does the **{type}** of all URIs in the domain and subdomain follow the same strict classification including at least **id**, **doc**, **auth** and **ns**?
 
 **Concept** 
 * Is the **{concept}** as part of the URI pattern unique, meaning that there is no literal overlap with the terms appearing in the domain, type or references?
