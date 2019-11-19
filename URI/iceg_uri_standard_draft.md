@@ -248,7 +248,7 @@ It is prohibited to produce URIs following both the redirect and the hash manner
 
 ## The URI standard compliancy checklist
 
-This section describes a framework to evaluate URIs. A URI is 100% compliant with the Flemish URI standard if all questions can be answered with ‘yes’.
+This section describes a framework to evaluate URIs. A URI is 100% compliant with the URI standard if all questions can be answered with ‘yes’.
 
 ---
 **NOTE**
