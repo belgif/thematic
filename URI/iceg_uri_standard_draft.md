@@ -17,7 +17,7 @@
   * [Reference](#reference)
 * [Exceptions](#exceptions)
 * [The URI standard compliancy checklist](#the-uri-standard-compliancy-checklist)
-* [Word list](#word-list)
+* [References](#references)
 
 ## About
 
@@ -34,7 +34,7 @@ Revision | Date | Contributor(s) | Comments
 This document describes the ICEG URI standard for the disclosure of resources, information and data, by the Belgian Federal State, the Regions and Communities. A checklist is included at the end of this document, which can be used as a self-evaluation instrument for the evaluation of URIs.
 
 The standard defines the minimal requirements  to which the authorities should comply in order to disclose resources in a 
-uniform manner via the web. In addition, this document describes how ‘Uniform Resource Identifiers’ (URIs) should be defined in order 
+uniform manner via the web. In addition, this document describes how ‘Uniform Resource Identifiers’ ([URIs](#URI)) should be defined in order 
 to identify these resources in a persistent way. This enables back-office systems to evolve while the URI remains stable. 
 
 This document also applies to data disclosed via services, but does not necessarily apply to the services themselves, given that 
@@ -82,7 +82,7 @@ Type, concept and reference are explained more in detail in Chapter 4.
 
 ### Resource
 
-The term ‘resource’ was first introduced to refer to specialized pages and content within a website (URL), 
+The term ‘resource’ was first introduced to refer to specialized pages and content within a website ([URL](#URL)), 
 more specifically to the destinations of URLs (e.g. the contact page of the website of a company), but later the definition was 
 expanded to cover everything to which a URI can refer to (e.g. the address with the geolocation in Google Maps from the same contact page).
 
@@ -107,7 +107,7 @@ To retrieve the resource, a URI must be ‘resolvable’. This is achieved by a 
 
 ### Domain name
 
-This term of the URI pattern is formed by the DNS host name, possibly preceded by a subdomain.
+This term of the URI pattern is formed by the [DNS](#DNS) host name, possibly preceded by a subdomain.
   
 ## Namespaces
  
@@ -131,8 +131,8 @@ Document | Page describing the Atomium, a monument in Brussels | dbpedia.org | h
 In order to define the basic concepts of the URI standard - namespaces, identifiers, versions - in a uniform manner, a number of guidelines should be followed. 
 
 **Rule 1**: the HTTPS or HTTP URI scheme must be used as the basis for the definition of the URIs.<br><br>
-Although it is only one of the possible URI schemes allowed by IANA, there is a growing consensus within various standardisation communities (OGC, INSPIRE, W3C) to use the HTTP(S) URI scheme.
-The pattern for forming the URI is based on the guidelines from INSPIRE and ISA.
+Although it is only one of the possible URI schemes allowed by [IANA](#IANA), there is a growing consensus within various standardisation communities ([OGC](#OGC), [INSPIRE](#INSPIRE), [W3C](#W3C)) to use the HTTP(S) URI scheme.
+The pattern for forming the URI is based on the guidelines from INSPIRE and [ISA](#ISA).
 
 **Rule 2**: All URIs must be defined following this pattern:
 ```
@@ -246,19 +246,15 @@ protocol, then the existing URIs should not be compliant with the following chec
 * Can the **{reference}** be completed in one of the following ways: {reference-basis} or {reference-basis}/{reference-version}?
 * Is the assigned **{reference}** persistent and is the whole in combination with {domain}/{type}/{concept} unique on the web?
 
-## Word list
+## References
 
-Term | Definition
----- | ----------
-IANA | 	Internet Assigned Numbers Authority
-ISO | International Standard Organisation
-LOD |	Linked Open Data
-OGC	| Open Geospatial Consortium
-RDF	| Resource Description Framework
-REST | Representational State Transfer
-UML	| Unified Modelling Language
-URI	| Uniform Resource Identifier
-URL	| Uniform Resource Locator
-URN	| Uniform Resource Name
-UUID	| Universally Unique Identifier
-W3C	| World Wide Web Consortium
+- <a name="DNS">[DNS]</a> [Domain Name System](https://tools.ietf.org/html/rfc1035)
+- <a name="IANA">[IANA]</a> [Internet Assigned Numbers Authority](https://www.iana.org/)
+- <a name="IETF">[IETF]</a> [Internet Engineering Task Force](https://www.ietf.org/)
+- <a name="INSPIRE">[INSPIRE]</a> [EU Directive on geospatial data infrastructure](https://inspire.ec.europa.eu/)
+- <a name="ISA">[ISA]</a> [EU programme on Interoperability Solution for Administrations](https://ec.europa.eu/isa2/home_en)
+- <a name="ISO">[ISO]</a> [International Standard Organisation](https://www.iso.org/)
+- <a name="OGC">[OGC]</a>	[Open Geospatial Consortium](https://www.opengeospatial.org/)
+- <a name="URI">[URI]</a> [Uniform Resource Identifier](https://tools.ietf.org/html/rfc3986)
+- <a name="URL">[URL]</a> [Uniform Resource Locator](https://tools.ietf.org/html/rfc1738)
+- <a name="W3C">[W3C]</a> [World Wide Web Consortium](https://www.w3.org/)
