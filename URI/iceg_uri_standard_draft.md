@@ -88,12 +88,10 @@ expanded to cover everything to which a URI can refer to (e.g. the address with 
 Two groups of resources are distinguished: information resources and non-information resources.
 * __Information Resources__: objects that (may) have a digital representation, such as
   * __Data__: representation of objects or things stored in any electronic format on a storage medium;
-  * (web)-__services__: allow access to data, taking actions with data (= modifying the data. (web)- services are services that enable a 
-  machine to provide access to data and allow to perform actions on and with the data;
-  * **Ontologies** (or vocabularies): terms, their definitions and the relationship between the terms to describe data;
+  * (web-)__services__: allow access to data, taking actions with data (= modifying them). (web-)services are services that enable a machine to provide access to data and allow to perform actions on and with the data;
+  * **Ontologies** (or vocabularies): contain terms, their definitions and the relationship between the terms to describe data;
   * **Documents**: describing (non)-information resources on the web;
-* **Non-information resources**: things, objects or events from the ‘real’ world without representation on a computer, but for which 
-the description can have a representation on a machine. The description of non-information resources are included in **documents**.
+* **Non-information resources**: things, objects or events from the ‘real’ world without representation on a computer, but for which the description can have a representation on a machine. The description of non-information resources are included in **documents**.
 
 Example: the report of a meeting is a document (= the report) describing a non-information resource (= the meeting).
 
