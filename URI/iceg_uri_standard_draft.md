@@ -59,7 +59,7 @@ The _resource-category_ obtains its meaning in the context of a domain and shoul
 {_resource_} is (a) {_concept_}-{_type_}
 
 **Reference**: refers to one particular instance of a resource and is formed by the following sub-pattern: 
-{_reference-basis_}(/{_reference-version_})?
+{_reference-basis_}(/{_reference-version_})*
 
 ## Introduction
 
