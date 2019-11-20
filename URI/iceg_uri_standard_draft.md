@@ -1,4 +1,4 @@
-# ICEG URI standard
+# URI standard for all Belgian government bodies (Federal + Regional)
 
 ## Contents
 
@@ -137,7 +137,7 @@ This convention has the advantage that URIs can be defined consistently.
 ### Domain
 
 **Rule 3**: The name of the domain and all potential subdomains, must be independent of the organisation, product, brand and time. 
-The domain cannot contain a name that may seize to exist, since it must remain persistent.
+The domain cannot contain a name that may ceaseTitle to exist, since it must remain persistent.
 
 ### Type
 
