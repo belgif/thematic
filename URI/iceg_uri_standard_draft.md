@@ -82,7 +82,7 @@ In the example above:
 ### Resource
 
 The term ‘resource’ was first introduced to refer to specialized pages and content within a website ([URL](#URL)), 
-more specifically to the destinations of URLs (e.g. the contact page on a website), but later o, the definition was 
+more specifically to the destinations of URLs (e.g. the contact page on a website), but later on, the definition was 
 expanded to cover everything to which a URI can refer to (e.g. the address with the geolocation in Google Maps from the same contact page).
 
 Two groups of resources are distinguished: information resources and non-information resources.
@@ -108,7 +108,7 @@ This term of the URI pattern is formed by the [DNS](#DNS) host name, possibly pr
   
 ### Namespaces
  
-Namespaces are a way to define, among others, concepts and variables and to categorize them in order to be unique in the group they belong to. It is very common to define a namespace via the HTTP(S) URI scheme, and to be managed by organization in a decentralized way.
+Namespaces are a way to define, among others, concepts and variables and to categorize them in order to be unique in the group they belong to. It is very common to define a namespace via the HTTP(S) URI scheme.
 
 Example:
 
@@ -137,7 +137,7 @@ This convention has the advantage that URIs can be defined consistently.
 ### Domain
 
 **Rule 3**: The name of the domain and all potential subdomains, must be independent of the organisation, product, brand and time. 
-The domain cannot contain a name that may ceaseTitle to exist, since it must remain persistent.
+The domain cannot contain a name that may cease to exist, since it must remain persistent.
 
 ### Type
 
@@ -159,7 +159,7 @@ Examples:
 This object cannot exist on the web, but it can be referred to from other applications or data. If the waterway (real world object) ‘Schelde’ ever changes its name or would no longer exist, its URI must remain by either referring to the old object ‘Schelde’ or by referring to the same object with the new name. 
 * **doc/waterway/schelde**
   * refers to a document (e.g. HTML page) containing an explanation about the river ‘Schelde’. This document can have structured data, but this is not a requirement.
-  * describes meta-information such as the history, versions, source, and details of the actions made on all representations of {type}//waterway/schelde. 
+  * describes meta-information such as the history, versions, source, and details of the actions made on all representations of {type}/waterway/schelde. 
 * **ns/waterway** - is the namespace that can be used in the vocabulary dealing with waterways. E.g. ns/waterway#depth or ns/waterway/depth refers to the term depth from the namespace ns/waterway and serves to indicate the depth of the waterways.
 
 ### Concept
@@ -168,7 +168,7 @@ This object cannot exist on the web, but it can be referred to from other applic
 The categorization can be done by means of an agreed (hierarchical) classification or list, but this is not mandatory. 
 Overlaps with terms used for type and reuse of the terms from the domain name are not allowed.
 
-Example: id/address/9039439430
+Example: id/address/9039439430 (concept in this example is address)
 
 ### Reference
 
@@ -184,7 +184,7 @@ The interpretation of the _reference-basis_ and -_version_ is organisation depen
 
 ### Fragment identifiers
 
-Components with type **ns** may use fragment identifiers in order to define all terms from one particular controlled list of vocabulary into one single web document. The fragment identifier component of the URI allows adding an indirect identification after the ‘**#**’ of the resource described in the corresponding resource identified before the ‘**#**’. 
+Components with type **ns** may use fragment identifiers in order to define all terms from a particular vocabulary into one single web document. The fragment identifier component of the URI allows adding an indirect identification after the ‘**#**’ of the resource described in the corresponding resource identified before the ‘**#**’. 
 
 Example:
 
