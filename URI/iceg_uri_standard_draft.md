@@ -190,8 +190,10 @@ Example:
 
 * _/ns/artefact_ - Refers to the namespace in which the artefacts are described 
 * _/ns/artefact#Relic_ - Refers to the specific term in which the fragment identifier Relic is used in order to refer to it within the namespace _ns/artefact_
-* _/ns/artefact#Relic_ is an alternative for _/ns/artefact/Relic_, which (i) exists on its own; or 
-(ii) executes a 303- redirect to the namespace _/ns/artefact_ or (iii) redirects to a document describing e.g. _/doc/artefact/Relic_
+* _/ns/artefact#Relic_ is an alternative for _/ns/artefact/Relic_
+  * it exists on its own; or 
+  * it executes a 303- redirect to the namespace _/ns/artefact_; or 
+  * it redirects to a document describing e.g. _/doc/artefact/Relic_
 
 
 ## Exceptions
