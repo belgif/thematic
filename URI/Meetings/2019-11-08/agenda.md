@@ -1,7 +1,7 @@
 # Agenda
 
 * Roll call
-* Review meeting previous meeting
+* Review minutes previous meeting
 * Feedback / questions on URI
 * Next steps
 * Varia
