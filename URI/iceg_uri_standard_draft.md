@@ -212,7 +212,7 @@ protocol, then the existing URIs should not be compliant with the following chec
 
 **Rules**
 * Does the URI scheme make use of the http(s) protocol?
-* Does the URI scheme follow the structure: {_domain_}/{_type_}/{_concept_}(/{_reference_})*?
+* Does the URI scheme follow the structure: {_domain_}/{_type_}/{_concept_}(/{_reference_})* ?
 
 **Domain**
 * Is the existing (sub)domain name independent of **organization**, **product**, **brand** or **time**?
@@ -228,7 +228,7 @@ protocol, then the existing URIs should not be compliant with the following chec
 **Reference**
 * Except in the type **“ns”**, no fragment identifiers are used.
 * Does (/{**reference**}) as part of the URI pattern refer to one particular instance of a resource?
-* Can the **{reference}** be completed in one of the following ways: {reference-basis} or {reference-basis}/{reference-version}?
+* Can the **{reference}** be completed in one of the following ways: {reference-basis} or {reference-basis}/{reference-version} ?
 * Is the assigned **{reference}** persistent and is the whole in combination with {domain}/{type}/{concept} unique on the web?
 
 ## References
