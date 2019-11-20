@@ -152,7 +152,7 @@ follows a classification which contains at least the following terms to make a c
 
 Additional types are possible and should be implemented following the agreed guidelines that apply to the domain.
 
-**Rule 4.1**: The URI of a non-information resource with type _id_ is required to refer with redirections (303 HTTPredirect  or #id fragment identifier ) to a digital web representation with the type _doc_.
+**Rule 4.1**: The URI of a non-information resource with type _id_ is required to refer with redirections (via a 303 HTTPredirect) to a digital web representation with the type _doc_.
 
 Examples:
 * **id/waterway/schelde** – is an identifier for the real world object ‘Schelde’. 
