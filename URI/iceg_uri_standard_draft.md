@@ -67,6 +67,7 @@ The _resource-category_ obtains its meaning in the context of a domain and shoul
 In the digital society, it is expected from governments to disclose databases with public sector information over the web between 
 governments and third parties following a widely supported methodology. To ensure structured and identifiable processes, for both machines and humans, URIs provide a solution.
 
+
 Note that there are no language or content guidelines to which the terms, as part of the URI, must comply. 
 Every public service or organisation is free to develop a policy according to their own needs, to develop agreements and document these.
 
@@ -124,16 +125,17 @@ Example:
 In order to define the basic concepts of the URI standard - namespaces, identifiers, versions - in a uniform manner, a number of guidelines must be followed. 
 
 **Rule 1**: the HTTPS or HTTP URI scheme must be used as the basis for the definition of the URIs.<br><br>
-Although it is only one of the possible URI schemes allowed by [IANA](#IANA), there is a growing consensus within various standardisation communities ([OGC](#OGC), [INSPIRE](#INSPIRE), [W3C](#W3C)) to use the HTTP(S) URI scheme.
-The pattern for forming the URI is based on the guidelines from INSPIRE and [ISA](#ISA).
+Although it is only one of the possible URI schemes allowed by [IANA](#IANA), there is a growing consensus within various standardisation communities ([OGC](#OGC), [INSPIRE](#INSPIRE), [W3C](#W3C)) to use the HTTP(S) URI scheme. 
+From all possible schemes, HTTP(S) is the most universal applied scheme with support for dereferencing. Dereferencing an identifier is the process which returns information about the entity the identifier describes.    
 
-**HTTPS is the preferred protocol. New applications should use HTTPS for their URIs. HTTP forwarding to HTTPS may be enabled, but the identifier URI will be HTTPS.**
+**Rule 1.1**: HTTPS is the recommended scheme. New applications should use HTTPS for their URIs. HTTP forwarding to HTTPS may be enabled for a domain to support users, but the to-be-used and shared identifier URI is the HTTPS based. URIs which only difference in the usage of the scheme, namely HTTP and HTTPS, should identify the same entity.    
 
 
 **Rule 2**: All URIs must be defined following this pattern:
 ```
 http(s)://{domain}/{type}/{concept}(/{reference})*
 ```
+The pattern for forming the URI is based on the guidelines from [INSPIRE](#INSPIRE) and [ISA](#ISA).
 This convention has the advantage that URIs can be defined consistently.
 * __Rule 2.1__: {domain}, {type} and {concept} are mandatory parts of the URI
 * __Rule 2.2__: References are optional, and there can be more than one depending on the situation. 
@@ -148,7 +150,7 @@ The domain cannot contain a name that may cease to exist, since it must remain p
 ### Type
 
 **Rule 4**: the {type} as part of the URI pattern is mandatory and is the main classification for resources. The {type} makes a distinction between 
-(1) the actual object/concept, (2) the digital or web-representation and/or (3) a term belonging to a vocabulary or ontology.
+(1) the actual object/concept, (2) the digital or web-representation and/or (3)/(4) a term belonging to a vocabulary or ontology.
 
 The {type} as part of the URI pattern says something about the nature of the resource description and 
 follows a classification which contains at least the following terms to make a clear distinction.
@@ -158,12 +160,10 @@ follows a classification which contains at least the following terms to make a c
 1. **auth**: _namespace_ for codelists or taxonomies
 
 Additional types are possible and should be implemented following the agreed guidelines that apply to the domain. 
-**These additional types cannot replace one the 4 categories described above.**
-
-~~**Rule 4.1**: The URI of a non-information resource with type _id_ is required to refer with redirections (via a 303 HTTPredirect) to a digital web representation with the type _doc_.~~
+These additional types cannot replace one the four categories described above. The types _ns_ and _auth_ are special cases which could be supported by the _id_ & _doc_ types, but are commonly used in a slightly different way. To support the current existing practices they are supported by dedicated types. 
 
 **Rule 5**: 
-A URI for an _identifier_ should provide digital web representations via redirections. The recommended approach is to redirect a URI with type _id_ via a 303 HTTPredirect to a URI with the type _doc_.  
+A URI for an _identifier_ should provide digital web representations via redirections. I.e. identifiers are _dereferenceable_. The recommended approach is to redirect a URI with type _id_ via a 303 HTTPredirect to a URI with the type _doc_.  
 
 
 Examples:
