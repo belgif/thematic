@@ -167,12 +167,12 @@ A URI for an _identifier_ should provide digital web representations via redirec
 
 
 Examples:
-* **https://data.belgif.be/id/waterway/8399104101108100101** – is an identifier for the real world object ‘Schelde’ or 'Escaut'. 
-This object cannot exist on the web, but it can be referred to from other applications or data. If the waterway (real world object) ‘Schelde’ ever changes its name or would no longer exist, its URI must remain by either referring to the old object 'Escaut'/‘Schelde’ or by referring to the same object with the new name. 
+* **https://data.belgif.be/id/waterway/8399104101108100101** – is an identifier for the real world object ‘Schelde’ or ‘Escaut’. 
+This object cannot exist on the web, but it can be referred to from other applications or data. If the waterway (real world object) ‘Schelde’/‘Escaut’ ever changes its name or would no longer exist, its URI must remain by either referring to the old object ‘Escaut’/‘Schelde’ or by referring to the same object with the new name. 
 * **https://data.belgif.be/doc/waterway/8399104101108100101**
   * refers to a document (e.g. HTML page) containing an explanation about the river ‘Schelde’/'Escaut'. This document can have structured data, but this is not a requirement.
   * describes meta-information such as the history, versions, source, and details of the actions made on all representations of {type}/waterway/8399104101108100101. 
-* **https://data.belgif.be/ns/waterway** - is the namespace that can be used in the vocabulary dealing with waterways. E.g. ns/waterway#depth or ns/waterway/depth refers to the term depth from the namespace ns/waterway and serves to indicate the depth of the waterways.
+* **https://data.belgif.be/ns/waterway** - is the namespace that can be used in the vocabulary dealing with waterways. E.g. ns/waterway#depth refers to the term depth from the namespace ns/waterway and serves to indicate the depth of the waterways.
 
 ### Concept
 
@@ -180,7 +180,10 @@ This object cannot exist on the web, but it can be referred to from other applic
 The categorization can be done by means of an agreed (hierarchical) classification or list, but this is not mandatory. 
 Overlaps with terms used for type and reuse of the terms from the domain name are not allowed.
 
-Example: id/address/9039439430 (concept in this example is address)
+Example: The concept in this example is waterway.
+```
+https://data.belgif.be/id/waterway/8399104101108100101
+``` 
 
 ### Reference
 
@@ -203,36 +206,36 @@ All persistent URIs with type ns must be formed according the following pattern:
 http(s)://{domain}/ns/{concept}(/{reference})*(#{fragment})? 
 ```
 
-Example:
+Examples:
 
-* _/ns/artefact_ - Refers to the namespace in which the artefacts are described 
-* _/ns/artefact/Relic_ - Refers to either a subnamespace Relic in the namespace artefact or a specific identifier in the namespace artefact. In the latter case, a redirect to the document representing the digitial representation must be foreseen.  
-* _/ns/artefact#Relic_ - 
-  * identifies the notion Relic in the namespace /ns/artifact; 
-  * the digital representation of the namespace /ns/artifact contains the digital representation of the identifier /ns/artifact#Relict 
-* _/ns/artefact/Relic#vase_ - 
+* _/ns/artefact_ - refers to the namespace in which the artefacts are described
+* _/ns/artefact#Relic_ - identifies the notion Relic in the namespace _/ns/artifact_; The digital representation of the namespace _/ns/artifact_ contains the digital representation of the identifier _/ns/artifact#Relic_. 
+
+* _/ns/artefact/Relic_ - refers either to a subnamespace _/Relic_ in the namespace _/ns/artefact_ or to a specific identifier in the namespace _/ns/artefact_. 
+  * In the latter case, a redirect to the document representing the digitial representation of the identifier _/ns/artefact/Relic_ must be foreseen.  
+  * In the first case, fragment identifiers can be used to identify notions as _/ns/artefact/Relic#vase_. 
 
 
 
 ## Scope & Exceptions
-### REST Service URLs 
+### REST service URLs are out of scope
 
 When it comes to **services**: if the data coming from services must be persistent, the data entities have to follow all the rules from the URI standard. It makes little sense for services that are disclosing data, to additionally enforce persistence and/or enforce the rules. Moreover, persistence for existing services is not evident: existing services may not be adapted anymore and therefore blocking evolution in the data service offering. 
 
 Examples:
-* https://inspire.bosa.gov.be/api/v1/waterway/8399104101108100101 is a REST API URL to retrieve information about a waterway.
-* https://data.belgif.be/id/waterway/8399104101108100101 is the identifier of a waterway.
-For the first one the URI standard is not applicable, for the second it is. The first, however, will refer in its payload to the waterway using the persistent identifier similar to the one presented in the second example. 
+* __https://inspire.bosa.gov.be/api/v1/waterway/8399104101108100101__ is a REST API URL to retrieve information about a waterway.
+* __https://data.belgif.be/id/waterway/8399104101108100101__ is the identifier of a waterway.
+The URI standard is not applicable for the first, for the second it is. The first, however, will refer in its payload to the waterway using the persistent identifier similar to the one presented in the second example. 
 
 ### Other exceptions
 One **can** deviate from the rules in the following situations:
 1. HTTPS or HTTP URIs that are already published (**legacy**) and were created with the aim to be persistent, must remain preserved. This does not mean that it is allowed for legacy-systems to produce new, nonconforming URIs. The only goal of this exception is to guarantee the persistence of the URIs already in use by third parties. 
 1. An alternative way to make the distinction between {type} _id/doc_ is by introducing a fragment identifier. When a user resolves this URI, the fragment identifier will be ignored as part of the HTTP protocol. This approach can only be used in the case of sufficient reasons not to follow the recommended approach of rule 5. In this case, the {type} doc is used in the URI structure instead of id, and the URI must be followed by the fragment identifier ‘#id’. It is prohibited to produce URIs following both the redirect and the hash manner for resources of the same type.
 
-### beyond the scope of this document
-1. guidelines on versioning 
-1. guidelines on identifier management
-1. guidelines on category management
+### Beyond the scope of this document
+This document has described the representation and processing rules for persistent identifiers. However the actual creation and maintenance of persistent identifiers requires decisions in the area of identifier management, versioning, category management, etc.
+Guidelines on these topics are beyond the scope of this document. 
+
 
 ## The URI standard compliancy checklist
 
@@ -249,7 +252,7 @@ protocol, then the existing URIs should not be compliant with the following chec
 
 **Type**
 * Is the **{type}** included as part of the URI pattern **AND** is there at least a distinction between representation, the actual object/concept and a term belonging to a vocabulary, thesaurus or ontology?
-* Does the **{type}** of all URIs in the domain and subdomain follow the same strict classification including at least **id**, **doc** and **ns**?
+* Does the **{type}** of all URIs in the domain and subdomain follow the same strict classification including at least **id**, **doc**, **ns** and **auth**?
 
 **Concept** 
 * Is the **{concept}** as part of the URI pattern unique, meaning that there is no literal overlap with the terms appearing in the domain, type or references?
