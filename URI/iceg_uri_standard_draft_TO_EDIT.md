@@ -126,9 +126,9 @@ In order to define the basic concepts of the URI standard - namespaces, identifi
 
 **Rule 1**: the HTTPS or HTTP URI scheme must be used as the basis for the definition of the URIs.<br><br>
 Although it is only one of the possible URI schemes allowed by [IANA](#IANA), there is a growing consensus within various standardisation communities ([OGC](#OGC), [INSPIRE](#INSPIRE), [W3C](#W3C)) to use the HTTP(S) URI scheme. 
-From all possible schemes, HTTP(S) is the most universal applied scheme with support for dereferencing. Dereferencing an identifier is the process which returns information about the entity the identifier describes.    
+From all possible schemes, HTTP(S) is the most universal applied scheme with support for dereferencing. Dereferencing an identifier is the process which returns information about the resource the identifier describes.    
 
-**Rule 1.1**: HTTPS is the recommended scheme. New applications should use HTTPS for their URIs. HTTP forwarding to HTTPS may be enabled for a domain to support users, but the to-be-used and shared identifier URI is the HTTPS based. URIs which only difference in the usage of the scheme, namely HTTP and HTTPS, should identify the same entity.    
+**Rule 1.1**: HTTPS is the recommended scheme. New applications should use HTTPS for their URIs. HTTP forwarding to HTTPS may be enabled for a domain to support users, but the to-be-used and shared identifier URI is the HTTPS based. URIs which only difference in the usage of the scheme, namely HTTP and HTTPS, should identify the same resource.    
 
 
 **Rule 2**: All URIs must be defined following this pattern:
@@ -149,15 +149,14 @@ The domain cannot contain a name that may cease to exist, since it must remain p
 
 ### Type
 
-**Rule 4**: the {type} as part of the URI pattern is mandatory and is the main classification for resources. The {type} makes a distinction between 
-(1) the actual object/concept, (2) the digital or web-representation and/or (3)/(4) a term belonging to a vocabulary or ontology.
+**Rule 4**: the {type} as part of the URI pattern is mandatory and it highlights the nature of a resource. The {type} makes a distinction between 
+(1) the actual object/concept, (2) the digital or web-representation and (3)/(4) a term belonging to a vocabulary, ontology or codelist. 
 
-The {type} as part of the URI pattern says something about the nature of the resource description and 
-follows a classification which contains at least the following terms to make a clear distinction.
+The following terms for {type} are used to implement the classification:
 1.	**id**: _identifier_ is a reference to an object from the real world or an abstract concept;
-1.	**doc**: _document_ is a representation on the web or a description of real-world objects or abstract concepts. It deals with general descriptive information (web documents).
-1.	**ns**: _namespace_ for ontologies or vocabularies.
-1. **auth**: _namespace_ for codelists or taxonomies
+1.	**doc**: _document_ is a representation on the web or a description of real-world objects or abstract concepts. It deals with general descriptive information (web documents);
+1.	**ns**: _namespace_ for ontologies or vocabularies;
+1. **auth**: _namespace_ for codelists or taxonomies.
 
 Additional types are possible and should be implemented following the agreed guidelines that apply to the domain. 
 These additional types cannot replace one the four categories described above. The types _ns_ and _auth_ are special cases which could be supported by the _id_ & _doc_ types, but are commonly used in a slightly different way. To support the current existing practices they are supported by dedicated types. 
@@ -173,6 +172,7 @@ This object cannot exist on the web, but it can be referred to from other applic
   * refers to a document (e.g. HTML page) containing an explanation about the river ‘Schelde’/'Escaut'. This document can have structured data, but this is not a requirement.
   * describes meta-information such as the history, versions, source, and details of the actions made on all representations of {type}/waterway/8399104101108100101. 
 * **https://data.belgif.be/ns/waterway** - is the namespace that can be used in the vocabulary dealing with waterways. E.g. ns/waterway#depth refers to the term depth from the namespace ns/waterway and serves to indicate the depth of the waterways.
+* **https://data.belgif.be/auth/transportmeans/waterway** - waterway is a code in the conceptscheme transportmeans.
 
 ### Concept
 
@@ -180,10 +180,12 @@ This object cannot exist on the web, but it can be referred to from other applic
 The categorization can be done by means of an agreed (hierarchical) classification or list, but this is not mandatory. 
 Overlaps with terms used for type and reuse of the terms from the domain name are not allowed.
 
+
 Example: The concept in this example is waterway.
 ```
 https://data.belgif.be/id/waterway/8399104101108100101
 ``` 
+
 
 ### Reference
 
@@ -199,11 +201,11 @@ The interpretation of the _reference-basis_ and -_version_ is organisation depen
 
 ### Fragment identifiers
 
-Components with type **ns** may use fragment identifiers in order to define all terms from a particular vocabulary into one single web document. The fragment identifier component of the URI allows adding an indirect identification after the ‘**#**’ of the resource described in the corresponding resource identified before the ‘**#**’. 
+URIs with type **ns** may use fragment identifiers in order to define all terms from a particular vocabulary into one single web document. The fragment identifier component of the URI allows adding an indirect identification after the ‘**#**’ of the resource described in the corresponding resource identified before the ‘**#**’. 
 
 All persistent URIs with type ns must be formed according the following pattern: 
 ```
-http(s)://{domain}/ns/{concept}(/{reference})*(#{fragment})? 
+http(s)://{domain}/ns/{concept}(/{reference})*(#{fragment})
 ```
 
 Examples:
@@ -225,7 +227,7 @@ When it comes to **services**: if the data coming from services must be persiste
 Examples:
 * __https://inspire.bosa.gov.be/api/v1/waterway/8399104101108100101__ is a REST API URL to retrieve information about a waterway.
 * __https://data.belgif.be/id/waterway/8399104101108100101__ is the identifier of a waterway.
-The URI standard is not applicable for the first, for the second it is. The first, however, will refer in its payload to the waterway using the persistent identifier similar to the one presented in the second example. 
+This URI standard is not applicable for the first, for the second it is. The first, however, will refer in its payload to the waterway using the persistent identifier similar to the one presented in the second example. 
 
 ### Other exceptions
 One **can** deviate from the rules in the following situations:
@@ -244,7 +246,8 @@ protocol, then the existing URIs should not be compliant with the following chec
 
 **Rules**
 * Does the URI scheme make use of the http(s) protocol?
-* Does the URI scheme follow the structure: {_domain_}/{_type_}/{_concept_}(/{_reference_})* ?
+* Does the URI scheme follow the structure: {_domain_}/{_type_}/{_concept_}(/{_reference_})* for type different from _ns_?
+* Does the URI scheme follow the structure: {_domain_}/ns/{_concept_}(/{_reference_})*(#fragment) ?
 
 **Domain**
 * Is the existing (sub)domain name independent of **organization**, **product**, **brand** or **time**?
@@ -259,7 +262,7 @@ protocol, then the existing URIs should not be compliant with the following chec
 
 **Reference**
 * Except in the type **“ns”**, no fragment identifiers are used.
-* Does (/{**reference**}) as part of the URI pattern refer to one particular instance of a resource?
+* Does (/{**reference**}) as part of the URI pattern refer to one particular resource?
 * Can the **{reference}** be completed in one of the following ways: {reference-basis} or {reference-basis}/{reference-version} ?
 * Is the assigned **{reference}** persistent and is the whole in combination with {domain}/{type}/{concept} unique on the web?
 
