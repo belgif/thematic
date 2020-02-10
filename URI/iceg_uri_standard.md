@@ -179,6 +179,7 @@ This object cannot exist on the web, but it can be referred to from other applic
 
 **Rule 6**: The {_concept_}, as mandatory part of the URI pattern, represents the category of the resource. 
 The categorization can be done by means of an agreed (hierarchical) classification or list, but this is not mandatory. 
+It is, however, recommended to use meaningful names to give some indication abou the real-world object that is referred to by the identifier.
 Overlaps with terms used for type and reuse of the terms from the domain name are not allowed.
 
 Example: The concept in this example is waterway.
