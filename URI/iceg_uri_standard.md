@@ -30,6 +30,7 @@ Revision | Date | Contributor(s) | Comments
 0.8      | 23/03/2017 | L. De Vocht<br>M. Van Compernolle | Processing final feedback of public working groups
 0.9      | x/11/2019 | M. Bruyland<br>B. Hanssens<br>L. Dhondt<br>O-P. Bakasanda<br>Thierry Brouwer<br>R. Buyle<br>D. Van Lancker<br>B. Van Nuffelen | Document proposal as candidate recommendation
 0.10     | 04/11/2019 | B. Van Nuffelen, D. Van Lancker | address issues raised in working group 
+0.11     | 10/02/2020 | B. Hanssens | address remaining issues
 
 ## Management summary
 
@@ -52,7 +53,7 @@ The parameters are placed between **{}**; __*__ indicates ‘0 or multiple times
 **Domain**: This part of the URI pattern is formed by the hostname and may be preceded by a _subdomain_. 
 The guidelines concerning the management of subdomains are outside the scope of this document. Domains must use neutral, organization-independent and timeless terms to remain persistent. 
 
-**Type**: This term describes the nature of the underlying resource. For the _type_, as part of the URI pattern, a classification is proposed with at least the following terms: **id** (_identification_), **doc** (_document_) and **ns** (_namespace_). 
+**Type**: This term describes the nature of the underlying resource. For the _type_, as part of the URI pattern, a classification is proposed with at least the following terms: **id** (_identification_), **doc** (_document_), **auth** (_authority tables_) and **ns** (_namespace_). 
 The aim is to make a distinction between the representation on the web and the actual concept or object in the real world.
 
 **Concept**: This term represents the category of the resource (e.g. by means of a hierarchical classification). 
@@ -157,7 +158,7 @@ follows a classification which contains at least the following terms to make a c
 1.	**id**: _identifier_ is a reference to an object from the real world or an abstract concept;
 1.	**doc**: _document_ is a representation on the web or a description of real-world objects or abstract concepts. It deals with general descriptive information (web documents).
 1.	**ns**: _namespace_ for ontologies or vocabularies.
-1. **auth**: _namespace_ for codelists or taxonomies
+1. 	**auth**: _namespace_ for codelists or taxonomies
 
 Additional types are possible and should be implemented following the agreed guidelines that apply to the domain. 
 These additional types cannot replace one the four categories described above. The types _ns_ and _auth_ are special cases which could be supported by the _id_ & _doc_ types, but are commonly used in a slightly different way. To support the current existing practices they are supported by dedicated types. 
