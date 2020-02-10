@@ -1,4 +1,4 @@
-# URI standard for all Belgian government bodies (Federal + Regional)
+# ICEG-standard for URI's in data
 
 ## Contents
 
