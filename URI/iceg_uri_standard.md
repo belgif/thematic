@@ -168,8 +168,12 @@ Additional types are possible and should be implemented following the agreed gui
 These additional types cannot replace one the four categories described above. The types _ns_ and _auth_ are special cases which could be supported by the _id_ & _doc_ types, but are commonly used in a slightly different way. To support the current existing practices they are supported by dedicated types. 
 
 **Rule 5**: 
-A URI for an _identifier_ should provide digital web representations via redirections. I.e. identifiers are _dereferenceable_. The recommended approach is to redirect a URI with type _id_ via a 303 HTTPredirect to a URI with the type _doc_.  
+Identifiers should be _dereferenceable_, i.e. a URI for an _identifier_ should provide at least one digital web representation.
+The _recommended_ approach is to redirect a URI with type _id_ via a HTTP 303 HTTP ‘See other’ redirect to a URI with the type _doc_ (which may be part of another domain).
+though this may not be always deemed practical or feasible (e.g. a redirect to a legacy representation where the URI might not include a type _doc_, 
+or not redirecting for thesauri terms could be an acceptable approach).
 
+If multiple digital web representations exist (e.g. HTML and RDF/XML), HTTP Content Negotiation should be used to return the most appropriate representation (which may be part of different domains).
 
 Examples:
 * **https://data.belgif.be/id/waterway/8399104101108100101** – is an identifier for the real world object ‘Schelde’ or ‘Escaut’. 
@@ -178,6 +182,7 @@ This object cannot exist on the web, but it can be referred to from other applic
   * refers to a document (e.g. HTML page) containing an explanation about the river ‘Schelde’/'Escaut'. This document can have structured data, but this is not a requirement.
   * describes meta-information such as the history, versions, source, and details of the actions made on all representations of {type}/waterway/8399104101108100101. 
 * **https://data.belgif.be/ns/waterway** - is the namespace that can be used in the vocabulary dealing with waterways. E.g. ns/waterway#depth refers to the term depth from the namespace ns/waterway and serves to indicate the depth of the waterways.
+
 
 ### Concept
 
