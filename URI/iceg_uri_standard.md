@@ -28,13 +28,14 @@ Current status: draft
 Revision | Date | Contributor(s) | Comments
 -------- | ---- | -------------- | --------
 0.8      | 23/03/2017 | L. De Vocht<br>M. Van Compernolle | Processing final feedback of public working groups
-0.9      | x/11/2019 | M. Bruyland<br>B. Hanssens<br>L. Dhondt<br>O-P. Bakasanda<br>Thierry Brouwer<br>R. Buyle<br>D. Van Lancker<br>B. Van Nuffelen | Document proposal as candidate recommendation
+0.9      | 02/11/2019 | M. Bruyland, B. Hanssens, L. Dhondt, O-P. Bakasanda, Thierry Brouwer, R. Buyle, D. Van Lancker, B. Van Nuffelen | Document proposal as candidate recommendation
 0.10     | 04/11/2019 | B. Van Nuffelen, D. Van Lancker | address issues raised in working group 
-0.11     | 10/02/2020 | B. Hanssens | address remaining issues
+0.11     | 10/02/2020 | B. Hanssens, B. Van Nuffelen | address remaining issues
 
 ## Management summary
 
-This document describes the ICEG standard for the publication of resources, information and data, by the Belgian Federal State, the Regions and Communities. A checklist is included at the end of this document, which can be used as a self-evaluation instrument for the evaluation of URIs.
+This document describes the ICEG standard for the publication of resources, information and data, by the Belgian Federal State, the Regions and Communities. 
+A checklist is included at the end of this document, which can be used as a self-evaluation instrument for the evaluation of URIs.
 
 The standard defines the minimal requirements to which the authorities should comply in order to disclose resources in a 
 uniform manner via the web. It describes how ‘Uniform Resource Identifiers’ ([URIs](#URI)) should be defined in order 
@@ -45,7 +46,7 @@ persistence for services is hard to realise and it is inefficient.
 
 All persistent URIs must be formed according the following pattern: 
 ```
-http(s)://{domain}/{type}/{concept}(/{reference})* 
+http(s)://{domain}/{type}/{concept}(/{reference})*(#{fragment})
 ```
 
 The parameters are placed between **{}**; __*__ indicates ‘0 or multiple times’; **()** indicates a group.
@@ -62,6 +63,9 @@ The _resource-category_ obtains its meaning in the context of a domain and shoul
 
 **Reference**: refers to one particular instance of a resource and is formed by the following sub-pattern: 
 {_reference-basis_}(/{_reference-version_})*
+
+**Fragment**: a local identifier within a namespace. The usage of fragments is restricted to the case [described below](#fragment-identifiers)
+
 
 ## Introduction
 
