@@ -1,4 +1,4 @@
-# ICEG-standard for URI's in data
+# ICEG-standard for URIs in data
 
 ## Contents
 
