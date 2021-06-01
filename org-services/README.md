@@ -17,7 +17,7 @@ Anyone who would like to contribute to a standard for the exchange of data for p
  
 Practical
 For this process, we plan a business workshop and 4 thematic workshops. All workshops proceed virtually via Microsoft Teams.
-U can register by filling out this form. At the end you will be able to download a calendar invite (.ics) with all the meeting invites.
+You can register by filling out this form. At the end you will be able to download a calendar invite (.ics) with all the meeting invites.
  
 - Business workshop on June 17 2021 from 9:00 to 12:00 OR 13:00 to 16:00
 - First thematic workshop on July 12 2021 from 9:00 to 12:00 OR 13:00 to 16:00
