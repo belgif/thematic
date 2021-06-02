@@ -25,4 +25,4 @@ You can register by filling out this form. At the end you will be able to downlo
 - Third thematic workshop on September 9 2021 from 9:00 to 12:00 OR 13:00 to 16:00
 - Fourth thematic workshop on October 7 2021 from 9:00 to 12:00 OR 13:00 to 16:00
  
-Click on this link to register to the workshops.
+Click on this [link](https://ghentunipss.eu.qualtrics.com/jfe/form/SV_06wtzGyuCLCx7AW) to register to the workshops.
