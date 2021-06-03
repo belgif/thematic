@@ -19,10 +19,10 @@ Anyone who would like to contribute to a standard for the exchange of data for p
 For this process, we plan a business workshop and 4 thematic workshops. All workshops proceed virtually via Microsoft Teams.
 You can register by filling out this form. At the end you will be able to download a calendar invite (.ics) with all the meeting invites.
  
-- Business workshop on June 17 2021 from 9:00 to 12:00 OR 13:00 to 16:00
-- First thematic workshop on July 12 2021 from 9:00 to 12:00 OR 13:00 to 16:00
-- Second thematic workshop on August 12 2021 from 9:00 to 12:00 OR 13:00 to 16:00
-- Third thematic workshop on September 9 2021 from 9:00 to 12:00 OR 13:00 to 16:00
-- Fourth thematic workshop on October 7 2021 from 9:00 to 12:00 OR 13:00 to 16:00
+- Business workshop on June 17 2021 from 9:00 to 12:00
+- First thematic workshop on July 12 2021 from 9:00 to 12:00
+- Second thematic workshop on August 12 2021 from 9:00 to 12:00
+- Third thematic workshop on September 9 2021 from 9:00 to 12:00
+- Fourth thematic workshop on October 7 2021 from 9:00 to 12:00
  
 Click on this [link](https://ghentunipss.eu.qualtrics.com/jfe/form/SV_06wtzGyuCLCx7AW) to register to the workshops.
