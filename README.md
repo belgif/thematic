@@ -31,3 +31,12 @@ U can register by filling out this form. At the end you will be able to download
 More information can be found on [this page](https://github.com/belgif/thematic/blob/master/org-services/Working%20group%20charter%20ICEG%20Public%20organisation%20and%20public%20services.docx).
 
 Register for the working groups [via this link](https://ghentunipss.eu.qualtrics.com/jfe/form/SV_06wtzGyuCLCx7AW).
+
+## Specifications
+
+The draft versions of the models are available as: 
+
+- [HTML as a specification - Public services](https://belgif.github.io/thematic/models/public%20services/index_en.html)
+- [HTML as a specification - Public organization](https://belgif.github.io/thematic/models/public%20organisation/index_en.html) 
+
+If you have any comments on specifications, please open an issue from [here](https://github.com/belgif/thematic/issues).
