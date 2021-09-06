@@ -1,0 +1,10 @@
+{
+  "@context": {
+    "EnterYourTranslationHere": "https://www.rfc-editor.org/rfc/rfc6350.html#section-6.4.2",
+    "EnterYourTranslationHere.enterYourTranslationHere": {
+      "@container": "@set",
+      "@id": "https://schema.org/openingHours",
+      "@type": "@id"
+    }
+  }
+}

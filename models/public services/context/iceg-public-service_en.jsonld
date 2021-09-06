@@ -45,18 +45,13 @@
       "@id": "http://www.w3.org/ns/locn#thoroughfare",
       "@type": "@id"
     },
-    "Agent": "http://xmlns.com/foaf/0.1/Agent",
-    "Agent.identifier": {
+    "AgentProfile": "http://purl.org/dc/terms/Agent",
+    "AgentProfile.identifier": {
       "@id": "http://purl.org/dc/terms/identifier",
       "@type": "@id"
     },
-    "Agent.name": {
+    "AgentProfile.name": {
       "@id": "http://purl.org/dc/terms/title",
-      "@type": "@id"
-    },
-    "Agent.playsRole": {
-      "@container": "@set",
-      "@id": "http://data.europa.eu/m8g/playsRole",
       "@type": "@id"
     },
     "BusinessEvent": "https://data.europa.eu/m8g/BusinessEvent",
@@ -130,40 +125,7 @@
       "@id": "https://data.europa.eu/m8g/value",
       "@type": "http://www.w3.org/2001/XMLSchema#double"
     },
-    "CriterionRequirement": "https://data.europa.eu/m8g/Requirement",
-    "CriterionRequirement.description": {
-      "@id": "https://data.europa.eu/m8g/description",
-      "@type": "@id"
-    },
-    "CriterionRequirement.hasQualifiedRelation": {
-      "@container": "@set",
-      "@id": "https://data.europa.eu/m8g/hasQualifiedRelation",
-      "@type": "@id"
-    },
-    "CriterionRequirement.hasRequirement": {
-      "@container": "@set",
-      "@id": "https://data.europa.eu/m8g/hasRequirement",
-      "@type": "@id"
-    },
-    "CriterionRequirement.hasSupportingEvidence": {
-      "@container": "@set",
-      "@id": "https://data.europa.eu/m8g/hasSupportingEvidence",
-      "@type": "@id"
-    },
-    "CriterionRequirement.identifier": {
-      "@id": "http://purl.org/dc/terms/identifier",
-      "@type": "@id"
-    },
-    "CriterionRequirement.name": {
-      "@id": "http://purl.org/dc/terms/title",
-      "@type": "@id"
-    },
-    "CriterionRequirement.type": {
-      "@container": "@set",
-      "@id": "http://purl.org/dc/terms/type",
-      "@type": "@id"
-    },
-    "Dataset": "http://fixme.com#Dataset",
+    "Dataset": "https://data.europa.eu/m8g/Dataset",
     "Dataset.description": {
       "@container": "@set",
       "@id": "http://purl.org/dc/terms/description",
@@ -212,8 +174,21 @@
       "@id": "https://data.europa.eu/m8g/country",
       "@type": "@id"
     },
+    "Evidence.isUsedAs": {
+      "@id": "https://data.europa.eu/m8g/isUsedAs",
+      "@type": "@id"
+    },
+    "Evidence.language": {
+      "@id": "https://data.europa.eu/m8g/language",
+      "@type": "@id"
+    },
+    "Evidence.supportsRequirement": {
+      "@container": "@set",
+      "@id": "https://data.europa.eu/m8g/supportsRequirement",
+      "@type": "@id"
+    },
     "Evidence.type": {
-      "@id": "http://purl.org/dc/terms/type",
+      "@id": "https://data.europa.eu/m8g/type",
       "@type": "@id"
     },
     "LegalResource": "http://data.europa.eu/eli/ontology#LegalResource",
@@ -233,6 +208,11 @@
     "Output": "https://data.europa.eu/m8g/Output",
     "Output.description": {
       "@id": "http://purl.org/dc/terms/description",
+      "@type": "@id"
+    },
+    "Output.hasLegalResources": {
+      "@container": "@set",
+      "@id": "TODO",
       "@type": "@id"
     },
     "Output.identifier": {
@@ -267,34 +247,44 @@
       "@type": "@id"
     },
     "Phone": "https://data.europa.eu/m8g/Phone",
-    "PublicOrganisation": "https://data.europa.eu/m8g/PublicOrganisation",
-    "PublicOrganisation.description": {
+    "Profile": "http://purl.org/dc/terms/AgentClass",
+    "Profile.playsRole": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/m8g/playsRole",
+      "@type": "@id"
+    },
+    "PublicOrganization": "https://data.europa.eu/m8g/PublicOrganization",
+    "PublicOrganization.description": {
       "@id": "https://data.europa.eu/m8g/description",
       "@type": "@id"
     },
-    "PublicOrganisation.hasAddress": {
+    "PublicOrganization.hasAddress": {
       "@container": "@set",
       "@id": "https://data.europa.eu/m8g/hasAddress",
       "@type": "@id"
     },
-    "PublicOrganisation.identifier": {
+    "PublicOrganization.identifier": {
       "@id": "https://data.europa.eu/m8g/identifier",
       "@type": "@id"
     },
-    "PublicOrganisation.playsRole": {
+    "PublicOrganization.playsRole": {
       "@container": "@set",
       "@id": "https://data.europa.eu/m8g/playsRole",
       "@type": "@id"
     },
-    "PublicOrganisation.preferredLabel": {
+    "PublicOrganization.preferredLabel": {
       "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
       "@type": "@id"
     },
-    "PublicOrganisation.spatial": {
+    "PublicOrganization.spatial": {
       "@id": "http://purl.org/dc/terms/spatial",
       "@type": "@id"
     },
     "PublicService": "http://purl.org/vocab/cpsv#PublicService",
+    "PublicService.alternativeLabel": {
+      "@id": "http://fixme.com#alternativeName",
+      "@type": "@id"
+    },
     "PublicService.description": {
       "@id": "http://purl.org/dc/terms/description",
       "@type": "@id"
@@ -404,6 +394,44 @@
       "@id": "http://purl.org/dc/terms/type",
       "@type": "@id"
     },
+    "Requirement": "https://data.europa.eu/m8g/Requirement",
+    "Requirement.description": {
+      "@id": "https://data.europa.eu/m8g/description",
+      "@type": "@id"
+    },
+    "Requirement.hasQualifiedRelation": {
+      "@container": "@set",
+      "@id": "https://data.europa.eu/m8g/hasQualifiedRelation",
+      "@type": "@id"
+    },
+    "Requirement.hasRequirement": {
+      "@container": "@set",
+      "@id": "https://data.europa.eu/m8g/hasRequirement",
+      "@type": "@id"
+    },
+    "Requirement.hasSupportingEvidence": {
+      "@container": "@set",
+      "@id": "https://data.europa.eu/m8g/hasSupportingEvidence",
+      "@type": "@id"
+    },
+    "Requirement.identifier": {
+      "@id": "http://purl.org/dc/terms/identifier",
+      "@type": "@id"
+    },
+    "Requirement.isRequirementOf": {
+      "@container": "@set",
+      "@id": "https://data.europa.eu/m8g/isRequirementOf",
+      "@type": "@id"
+    },
+    "Requirement.name": {
+      "@id": "http://purl.org/dc/terms/title",
+      "@type": "@id"
+    },
+    "Requirement.type": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/type",
+      "@type": "@id"
+    },
     "Rule": "http://purl.org/vocab/cpsv#Rule",
     "Rule.description": {
       "@id": "http://purl.org/dc/terms/description",
@@ -427,12 +455,8 @@
       "@id": "http://purl.org/dc/terms/title",
       "@type": "@id"
     },
-    "Rule.type": {
-      "@id": "http://purl.org/dc/terms/type",
-      "@type": "@id"
-    },
-    "Vcard: Email": "https://data.europa.eu/m8g/vcard: Email",
-    "Vcard: Phone": "https://data.europa.eu/m8g/vcard: Phone",
+    "VcardEmail": "https://www.rfc-editor.org/rfc/rfc6350.html#section-6.4.2",
+    "VcardPhone": "https://www.rfc-editor.org/rfc/rfc6350.html#section-6.4.1",
     "Website": "https://data.europa.eu/m8g/Website"
   }
 }
