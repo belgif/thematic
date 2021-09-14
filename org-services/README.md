@@ -1,4 +1,4 @@
-# ICEG Public Organisation and Public Services
+# ICEG Public Organisation and Public Service
 
 ## Context
 Via this initiative, the various stakeholders wish to semantically model the different data flows and standardize the structure of the data for the subject public organisation (Any organization that is defined as being part of the public sector by a legal framework at any level) and public services. We start from terms defined for these entities in existing standards at regional and federal level.
@@ -26,3 +26,12 @@ You can register by filling out this form. At the end you will be able to downlo
 - Fourth thematic workshop on October 7 2021 from 9:00 to 12:00
  
 Click on this [link](https://ghentunipss.eu.qualtrics.com/jfe/form/SV_06wtzGyuCLCx7AW) to register to the workshops.
+
+## Recordings 
+The workshops that already took place were recorded and can be accessed on the youtube channel of FOD BOSA
+
+- [Business workshop](https://www.youtube.com/watch?v=NDgRTAVVy48&list=PLbeal6jKXh6djATaiQUE4-iHL73jdhV_c&index=2&t=260s)
+- [First thematic workshop](https://www.youtube.com/watch?v=lHOkbaiPI2w&list=PLbeal6jKXh6djATaiQUE4-iHL73jdhV_c&index=3&t=3s)
+- [Second thematic workshop](https://www.youtube.com/watch?v=t_WfujjuG-s&list=PLbeal6jKXh6djATaiQUE4-iHL73jdhV_c&index=4&t=6s)
+- [Fourth thematic workshop](https://www.youtube.com/watch?v=u4cbURiGFps&list=PLbeal6jKXh6djATaiQUE4-iHL73jdhV_c&index=5&t=5s)
+
