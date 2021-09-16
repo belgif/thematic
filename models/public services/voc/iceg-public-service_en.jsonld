@@ -44,103 +44,67 @@
   "issued": "TODO",
   "navigation": {},
   "publication-state": "Working Draft",
-  "publication-date": "2021-09-01",
+  "publication-date": "2021-09-16",
   "classes": [
     {
-      "@id": "https://data.europa.eu/m8g/Email",
+      "@id": "https://data.europa.eu/m8g/ChannelPreference",
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "definition": {
-        "en": "Work in progress"
+        "en": "This class describes the relationship between Channel and Purpose. For instance, a Channel can be preferred for a Purpose and depreciated for another one (exp: you can introduce you tax declaration in paper but you're not encouraged to do so)."
       },
-      "parents": [
-        "https://data.europa.eu/m8g/Channel",
-        "https://www.rfc-editor.org/rfc/rfc6350.html#section-6.4.2"
-      ]
+      "parents": []
     },
     {
-      "@id": "https://data.europa.eu/m8g/OfflineChannel",
+      "@id": "https://data.europa.eu/m8g/Purpose",
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "definition": {
-        "en": "Work in progress"
+        "en": "This class represents any concepts that can be used to specify the purpose of the Channel and which relates to the Channel through the properties has Channel and has preferred channel."
       },
-      "parents": [
-        "https://data.europa.eu/m8g/Channel"
-      ]
-    },
-    {
-      "@id": "https://data.europa.eu/m8g/OtherElectronicChannel",
-      "@type": "http://www.w3.org/2002/07/owl#Class",
-      "definition": {
-        "en": "Work in progress"
+      "usage": {
+        "en": "This class has been added because different channels serve different purposes : information, activation of the service, assistance, appeal, \r\n\r\nMore specifically:\r\n\r\nEach channel could serve several purposes.\r\n \r\nEach purpose can have one or more preferred channels, and one or more \"deprecated\" channels (ex. you can introduce you tax declaration in paper but you're not encouraged to do so)"
       },
-      "parents": [
-        "https://data.europa.eu/m8g/Channel"
-      ]
-    },
-    {
-      "@id": "https://data.europa.eu/m8g/Phone",
-      "@type": "http://www.w3.org/2002/07/owl#Class",
-      "definition": {
-        "en": "Work in progress"
-      },
-      "parents": [
-        "https://data.europa.eu/m8g/Channel",
-        "https://www.rfc-editor.org/rfc/rfc6350.html#section-6.4.1"
-      ]
-    },
-    {
-      "@id": "https://data.europa.eu/m8g/Website",
-      "@type": "http://www.w3.org/2002/07/owl#Class",
-      "definition": {
-        "en": "Work in progress"
-      },
-      "parents": [
-        "https://data.europa.eu/m8g/Channel"
-      ]
+      "parents": []
     }
   ],
   "externals": [
     {
       "name": null,
-      "@id": "https://data.europa.eu/m8g/Email",
+      "@id": "https://data.europa.eu/m8g/ChannelPreference",
       "@type": "rdfs:Class"
     },
     {
       "name": null,
-      "@id": "https://data.europa.eu/m8g/OfflineChannel",
-      "@type": "rdfs:Class"
-    },
-    {
-      "name": null,
-      "@id": "https://data.europa.eu/m8g/OtherElectronicChannel",
-      "@type": "rdfs:Class"
-    },
-    {
-      "name": null,
-      "@id": "https://data.europa.eu/m8g/Phone",
-      "@type": "rdfs:Class"
-    },
-    {
-      "name": null,
-      "@id": "https://data.europa.eu/m8g/Website",
+      "@id": "https://data.europa.eu/m8g/Purpose",
       "@type": "rdfs:Class"
     }
   ],
   "properties": [
     {
-      "@id": "https://data.europa.eu/m8g/accessReference",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "definition": {
-        "en": "Work in progress"
-      },
+      "@id": "https://data.europa.eu/m8g/ChannelPreference.channel",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "domain": [
         {
-          "uri": "https://data.europa.eu/m8g/OtherElectronicChannel"
+          "uri": "https://data.europa.eu/m8g/ChannelPreference"
         }
       ],
       "range": [
         {
-          "uri": "http://www.w3.org/2001/XMLSchema#string"
+          "uri": "https://data.europa.eu/m8g/Channel"
+        }
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "https://data.europa.eu/m8g/ChannelPreference.purpose",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "domain": [
+        {
+          "uri": "https://data.europa.eu/m8g/ChannelPreference"
+        }
+      ],
+      "range": [
+        {
+          "uri": "https://data.europa.eu/m8g/Purpose"
         }
       ],
       "generalization": []
@@ -149,7 +113,12 @@
   "externalproperties": [
     {
       "name": null,
-      "@id": "https://data.europa.eu/m8g/accessReference",
+      "@id": "https://data.europa.eu/m8g/ChannelPreference.channel",
+      "@type": "rdf:Property"
+    },
+    {
+      "name": null,
+      "@id": "https://data.europa.eu/m8g/ChannelPreference.purpose",
       "@type": "rdf:Property"
     }
   ],

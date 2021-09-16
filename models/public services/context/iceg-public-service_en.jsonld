@@ -45,13 +45,18 @@
       "@id": "http://www.w3.org/ns/locn#thoroughfare",
       "@type": "@id"
     },
-    "AgentProfile": "http://purl.org/dc/terms/Agent",
-    "AgentProfile.identifier": {
+    "Agent": "http://xmlns.com/foaf/0.1/Agent",
+    "Agent.identifier": {
       "@id": "http://purl.org/dc/terms/identifier",
       "@type": "@id"
     },
-    "AgentProfile.name": {
+    "Agent.name": {
       "@id": "http://purl.org/dc/terms/title",
+      "@type": "@id"
+    },
+    "Agent.playsRole": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/m8g/playsRole",
       "@type": "@id"
     },
     "BusinessEvent": "https://data.europa.eu/m8g/BusinessEvent",
@@ -59,14 +64,6 @@
     "Channel.availabilityRestriction": {
       "@id": "https://schema.org/hoursAvailable",
       "@type": "@id"
-    },
-    "Channel.channelContact": {
-      "@id": "https://data.europa.eu/m8g/channelContact",
-      "@type": "@id"
-    },
-    "Channel.date": {
-      "@id": "https://data.europa.eu/m8g/date",
-      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "Channel.description": {
       "@id": "https://data.europa.eu/m8g/description",
@@ -95,6 +92,23 @@
       "@id": "http://purl.org/dc/terms/type",
       "@type": "@id"
     },
+    "ChannelPreference": "https://data.europa.eu/m8g/ChannelPreference",
+    "ChannelPreference.Channel": {
+      "@id": "https://data.europa.eu/m8g/ChannelPreference.channel",
+      "@type": "@id"
+    },
+    "ChannelPreference.Purpose": {
+      "@id": "https://data.europa.eu/m8g/ChannelPreference.purpose",
+      "@type": "@id"
+    },
+    "Collection": "http://fixme.com#Collection",
+    "Collection.member": {
+      "@container": "@set",
+      "@id": "http://fixme.com#member",
+      "@type": "@id"
+    },
+    "Concept": "http://fixme.com#Concept",
+    "ContactPoint": "http://fixme.com#ContactPoint",
     "Cost": "https://data.europa.eu/m8g/Cost",
     "Cost.costBreakdown": {
       "@id": "https://data.europa.eu/m8g/costBreakdown",
@@ -145,7 +159,6 @@
       "@id": "http://purl.org/dc/terms/title",
       "@type": "@id"
     },
-    "Email": "https://data.europa.eu/m8g/Email",
     "Event": "https://data.europa.eu/m8g/Event",
     "Event.description": {
       "@id": "http://purl.org/dc/terms/description",
@@ -170,25 +183,47 @@
       "@type": "@id"
     },
     "Evidence": "https://data.europa.eu/m8g/Evidence",
+    "Evidence.confidentialityLevelType": {
+      "@id": "https://semiceu.github.io/CCCEV/releases/2.00/#Evidence%3Aconfidentiality%20level%20type",
+      "@type": "@id"
+    },
     "Evidence.country": {
       "@id": "https://data.europa.eu/m8g/country",
       "@type": "@id"
     },
-    "Evidence.isUsedAs": {
-      "@id": "https://data.europa.eu/m8g/isUsedAs",
+    "Evidence.isAbout": {
+      "@container": "@set",
+      "@id": "https://semiceu.github.io/CCCEV/releases/2.00/#Evidence%3Ais%20about",
+      "@type": "@id"
+    },
+    "Evidence.isCreatedBy": {
+      "@container": "@set",
+      "@id": "https://semiceu.github.io/CCCEV/releases/2.00/#Evidence%3Ais%20created%20by",
+      "@type": "@id"
+    },
+    "Evidence.isIssuedBy": {
+      "@container": "@set",
+      "@id": "https://semiceu.github.io/CCCEV/releases/2.00/#Evidence%3Ais%20issued%20by",
       "@type": "@id"
     },
     "Evidence.language": {
+      "@container": "@set",
       "@id": "https://data.europa.eu/m8g/language",
       "@type": "@id"
     },
     "Evidence.supportsRequirement": {
       "@container": "@set",
-      "@id": "https://data.europa.eu/m8g/supportsRequirement",
+      "@id": "https://semiceu.github.io/CCCEV/releases/2.00/#Evidence%3Asupports%20requirement",
       "@type": "@id"
     },
     "Evidence.type": {
       "@id": "https://data.europa.eu/m8g/type",
+      "@type": "@id"
+    },
+    "Group": "http://xmlns.com/foaf/spec/#term_Group",
+    "Group.member": {
+      "@container": "@set",
+      "@id": "http://xmlns.com/foaf/spec/#term_member",
       "@type": "@id"
     },
     "LegalResource": "http://data.europa.eu/eli/ontology#LegalResource",
@@ -198,13 +233,7 @@
       "@type": "@id"
     },
     "LifeEvent": "https://data.europa.eu/m8g/LifeEvent",
-    "OfflineChannel": "https://data.europa.eu/m8g/OfflineChannel",
     "OpeningHoursSpecification": "https://schema.org/OpeningHoursSpecfication",
-    "OtherElectronicChannel": "https://data.europa.eu/m8g/OtherElectronicChannel",
-    "OtherElectronicChannel.accessReference": {
-      "@id": "https://data.europa.eu/m8g/accessReference",
-      "@type": "http://www.w3.org/2001/XMLSchema#string"
-    },
     "Output": "https://data.europa.eu/m8g/Output",
     "Output.description": {
       "@id": "http://purl.org/dc/terms/description",
@@ -217,6 +246,11 @@
     },
     "Output.identifier": {
       "@id": "http://purl.org/dc/terms/identifier",
+      "@type": "@id"
+    },
+    "Output.isOutput": {
+      "@container": "@set",
+      "@id": "https://data.europa.eu/m8g/isEvidence",
       "@type": "@id"
     },
     "Output.name": {
@@ -246,30 +280,18 @@
       "@id": "https://data.europa.eu/m8g/role",
       "@type": "@id"
     },
-    "Phone": "https://data.europa.eu/m8g/Phone",
-    "Profile": "http://purl.org/dc/terms/AgentClass",
-    "Profile.playsRole": {
-      "@container": "@set",
-      "@id": "http://data.europa.eu/m8g/playsRole",
-      "@type": "@id"
-    },
-    "PublicOrganization": "https://data.europa.eu/m8g/PublicOrganization",
+    "PublicOrganization": "https://semiceu.github.io/CPOV/releases/2.00/#Public%20Organization",
     "PublicOrganization.description": {
-      "@id": "https://data.europa.eu/m8g/description",
+      "@id": "https://semiceu.github.io/CPOV/releases/2.00/#Public%20Organization%3Adescription",
       "@type": "@id"
     },
     "PublicOrganization.hasAddress": {
       "@container": "@set",
-      "@id": "https://data.europa.eu/m8g/hasAddress",
+      "@id": "https://semiceu.github.io/CPOV/releases/2.00/#Public%20Organization%3Aaddress",
       "@type": "@id"
     },
     "PublicOrganization.identifier": {
-      "@id": "https://data.europa.eu/m8g/identifier",
-      "@type": "@id"
-    },
-    "PublicOrganization.playsRole": {
-      "@container": "@set",
-      "@id": "https://data.europa.eu/m8g/playsRole",
+      "@id": "https://semiceu.github.io/CPOV/releases/2.00/#Public%20Organization%3Aidentifier",
       "@type": "@id"
     },
     "PublicOrganization.preferredLabel": {
@@ -281,10 +303,6 @@
       "@type": "@id"
     },
     "PublicService": "http://purl.org/vocab/cpsv#PublicService",
-    "PublicService.alternativeLabel": {
-      "@id": "http://fixme.com#alternativeName",
-      "@type": "@id"
-    },
     "PublicService.description": {
       "@id": "http://purl.org/dc/terms/description",
       "@type": "@id"
@@ -297,6 +315,16 @@
     "PublicService.hasChannel": {
       "@container": "@set",
       "@id": "http://data.europa.eu/m8g/hasChannel",
+      "@type": "@id"
+    },
+    "PublicService.hasCompetentAuthority": {
+      "@container": "@set",
+      "@id": "http://fixme.com#hasCompetentAuthority",
+      "@type": "@id"
+    },
+    "PublicService.hasContactPoint": {
+      "@container": "@set",
+      "@id": "http://fixme.com#hasContactPoint",
       "@type": "@id"
     },
     "PublicService.hasCost": {
@@ -323,6 +351,11 @@
       "@id": "http://purl.org/dc/terms/identifier",
       "@type": "@id"
     },
+    "PublicService.isClassifiedBy": {
+      "@container": "@set",
+      "@id": "http://fixme.com#isClassifiedBy",
+      "@type": "@id"
+    },
     "PublicService.isDescribedAt": {
       "@container": "@set",
       "@id": "http://data.europa.eu/m8g/isDescribedAt",
@@ -344,10 +377,12 @@
       "@type": "@id"
     },
     "PublicService.lifecycleStatus": {
+      "@container": "@set",
       "@id": "http://fixme.com#lifecycleStatus",
       "@type": "@id"
     },
     "PublicService.name": {
+      "@container": "@set",
       "@id": "http://purl.org/dc/terms/title",
       "@type": "@id"
     },
@@ -394,24 +429,25 @@
       "@id": "http://purl.org/dc/terms/type",
       "@type": "@id"
     },
+    "Purpose": "https://data.europa.eu/m8g/Purpose",
     "Requirement": "https://data.europa.eu/m8g/Requirement",
     "Requirement.description": {
-      "@id": "https://data.europa.eu/m8g/description",
+      "@id": "https://semiceu.github.io/CCCEV/releases/2.00/#Requirement%3Adescription",
       "@type": "@id"
     },
     "Requirement.hasQualifiedRelation": {
       "@container": "@set",
-      "@id": "https://data.europa.eu/m8g/hasQualifiedRelation",
+      "@id": "https://semiceu.github.io/CCCEV/releases/2.00/#Requirement%3Ahas%20qualified%20relation",
       "@type": "@id"
     },
     "Requirement.hasRequirement": {
       "@container": "@set",
-      "@id": "https://data.europa.eu/m8g/hasRequirement",
+      "@id": "https://semiceu.github.io/CCCEV/releases/2.00/#Requirement%3Ahas%20requirement",
       "@type": "@id"
     },
     "Requirement.hasSupportingEvidence": {
       "@container": "@set",
-      "@id": "https://data.europa.eu/m8g/hasSupportingEvidence",
+      "@id": "https://semiceu.github.io/CCCEV/releases/2.00/#Requirement%3Ahas%20supporting%20evidence",
       "@type": "@id"
     },
     "Requirement.identifier": {
@@ -454,9 +490,6 @@
     "Rule.name": {
       "@id": "http://purl.org/dc/terms/title",
       "@type": "@id"
-    },
-    "VcardEmail": "https://www.rfc-editor.org/rfc/rfc6350.html#section-6.4.2",
-    "VcardPhone": "https://www.rfc-editor.org/rfc/rfc6350.html#section-6.4.1",
-    "Website": "https://data.europa.eu/m8g/Website"
+    }
   }
 }

@@ -44,103 +44,67 @@
   "issued": "TODO",
   "navigation": {},
   "publication-state": "Working Draft",
-  "publication-date": "2021-09-01",
+  "publication-date": "2021-09-16",
   "classes": [
     {
-      "@id": "https://data.europa.eu/m8g/Email",
+      "@id": "https://data.europa.eu/m8g/ChannelPreference",
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "definition": {
         "de": "A translation has yet to be added"
       },
-      "parents": [
-        "https://data.europa.eu/m8g/Channel",
-        "https://www.rfc-editor.org/rfc/rfc6350.html#section-6.4.2"
-      ]
+      "parents": []
     },
     {
-      "@id": "https://data.europa.eu/m8g/OfflineChannel",
+      "@id": "https://data.europa.eu/m8g/Purpose",
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "definition": {
         "de": "A translation has yet to be added"
       },
-      "parents": [
-        "https://data.europa.eu/m8g/Channel"
-      ]
-    },
-    {
-      "@id": "https://data.europa.eu/m8g/OtherElectronicChannel",
-      "@type": "http://www.w3.org/2002/07/owl#Class",
-      "definition": {
+      "usage": {
         "de": "A translation has yet to be added"
       },
-      "parents": [
-        "https://data.europa.eu/m8g/Channel"
-      ]
-    },
-    {
-      "@id": "https://data.europa.eu/m8g/Phone",
-      "@type": "http://www.w3.org/2002/07/owl#Class",
-      "definition": {
-        "de": "A translation has yet to be added"
-      },
-      "parents": [
-        "https://data.europa.eu/m8g/Channel",
-        "https://www.rfc-editor.org/rfc/rfc6350.html#section-6.4.1"
-      ]
-    },
-    {
-      "@id": "https://data.europa.eu/m8g/Website",
-      "@type": "http://www.w3.org/2002/07/owl#Class",
-      "definition": {
-        "de": "A translation has yet to be added"
-      },
-      "parents": [
-        "https://data.europa.eu/m8g/Channel"
-      ]
+      "parents": []
     }
   ],
   "externals": [
     {
       "name": null,
-      "@id": "https://data.europa.eu/m8g/Email",
+      "@id": "https://data.europa.eu/m8g/ChannelPreference",
       "@type": "rdfs:Class"
     },
     {
       "name": null,
-      "@id": "https://data.europa.eu/m8g/OfflineChannel",
-      "@type": "rdfs:Class"
-    },
-    {
-      "name": null,
-      "@id": "https://data.europa.eu/m8g/OtherElectronicChannel",
-      "@type": "rdfs:Class"
-    },
-    {
-      "name": null,
-      "@id": "https://data.europa.eu/m8g/Phone",
-      "@type": "rdfs:Class"
-    },
-    {
-      "name": null,
-      "@id": "https://data.europa.eu/m8g/Website",
+      "@id": "https://data.europa.eu/m8g/Purpose",
       "@type": "rdfs:Class"
     }
   ],
   "properties": [
     {
-      "@id": "https://data.europa.eu/m8g/accessReference",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "definition": {
-        "de": "A translation has yet to be added"
-      },
+      "@id": "https://data.europa.eu/m8g/ChannelPreference.channel",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "domain": [
         {
-          "uri": "https://data.europa.eu/m8g/OtherElectronicChannel"
+          "uri": "https://data.europa.eu/m8g/ChannelPreference"
         }
       ],
       "range": [
         {
-          "uri": "http://www.w3.org/2001/XMLSchema#string"
+          "uri": "https://data.europa.eu/m8g/Channel"
+        }
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "https://data.europa.eu/m8g/ChannelPreference.purpose",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "domain": [
+        {
+          "uri": "https://data.europa.eu/m8g/ChannelPreference"
+        }
+      ],
+      "range": [
+        {
+          "uri": "https://data.europa.eu/m8g/Purpose"
         }
       ],
       "generalization": []
@@ -149,7 +113,12 @@
   "externalproperties": [
     {
       "name": null,
-      "@id": "https://data.europa.eu/m8g/accessReference",
+      "@id": "https://data.europa.eu/m8g/ChannelPreference.channel",
+      "@type": "rdf:Property"
+    },
+    {
+      "name": null,
+      "@id": "https://data.europa.eu/m8g/ChannelPreference.purpose",
       "@type": "rdf:Property"
     }
   ],

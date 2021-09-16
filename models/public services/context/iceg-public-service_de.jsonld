@@ -1,9 +1,21 @@
 {
   "@context": {
-    "EnterYourTranslationHere": "https://www.rfc-editor.org/rfc/rfc6350.html#section-6.4.2",
+    "EnterYourTranslationHere": "https://semiceu.github.io/CPOV/releases/2.00/#Public%20Organization",
+    "EnterYourTranslationHere.Channel": {
+      "@id": "https://data.europa.eu/m8g/ChannelPreference.channel",
+      "@type": "@id"
+    },
+    "EnterYourTranslationHere.Purpose": {
+      "@id": "https://data.europa.eu/m8g/ChannelPreference.purpose",
+      "@type": "@id"
+    },
     "EnterYourTranslationHere.enterYourTranslationHere": {
+      "@id": "https://semiceu.github.io/CPOV/releases/2.00/#Public%20Organization%3Aidentifier",
+      "@type": "@id"
+    },
+    "EnterYourTranslationHere.hasContactPoint": {
       "@container": "@set",
-      "@id": "https://schema.org/openingHours",
+      "@id": "http://fixme.com#hasContactPoint",
       "@type": "@id"
     }
   }
