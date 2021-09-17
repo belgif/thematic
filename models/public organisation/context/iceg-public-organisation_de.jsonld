@@ -10,10 +10,6 @@
       "@id": "http://fixme.com#hasSite",
       "@type": "@id"
     },
-    "EnterYourTranslationHere.identifier": {
-      "@id": "https://data.europa.eu/m8g/identifier",
-      "@type": "@id"
-    },
     "EnterYourTranslationHere.role": {
       "@container": "@set",
       "@id": "http://fixme.com#role",

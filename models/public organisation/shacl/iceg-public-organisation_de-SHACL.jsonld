@@ -89,28 +89,6 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "sh:class": "http://fixme.com#Code",
-          "sh:definition": {
-            "de": "Enter your translation here"
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "de": "Enter your translation here"
-          },
-          "sh:path": "https://data.europa.eu/m8g/Type"
-        },
-        {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-          "sh:definition": {
-            "de": "Enter your translation here"
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "de": "Enter your translation here"
-          },
-          "sh:path": "http://www.w3.org/2004/02/skos/core#altLabel"
-        },
-        {
           "sh:class": "http://www.w3.org/ns/org#OrganizationalUnit",
           "sh:definition": {
             "de": "Enter your translation here"
@@ -126,11 +104,10 @@
             "de": "Enter your translation here"
           },
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
             "de": "Enter your translation here"
           },
-          "sh:path": "http://www.w3.org/2004/02/skos/core#prefLabel"
+          "sh:path": "https://data.europa.eu/m8g/legalForm"
         },
         {
           "sh:class": "http://data.europa.eu/88u/dataset/atu-type",
@@ -560,18 +537,6 @@
             "de": "Enter your translation here"
           },
           "sh:path": "http://www.w3.org/ns/prov#startedAtTime"
-        },
-        {
-          "sh:class": "http://fixme.com#Code",
-          "sh:definition": {
-            "de": "Enter your translation here"
-          },
-          "sh:maxCount": "1",
-          "sh:minCount": "1",
-          "sh:name": {
-            "de": "Enter your translation here"
-          },
-          "sh:path": "http://fixme.com#type"
         }
       ],
       "sh:targetClass": "http://www.w3.org/ns/org#ChangeEvent"
@@ -600,6 +565,27 @@
       "sh:closed": false,
       "sh:property": [
         {
+          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:definition": {
+            "de": "Enter your translation here"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "de": "Enter your translation here"
+          },
+          "sh:path": "http://www.w3.org/2004/02/skos/core#altLabel"
+        },
+        {
+          "sh:class": "http://fixme.com#Code",
+          "sh:definition": {
+            "de": "Enter your translation here"
+          },
+          "sh:name": {
+            "de": "Enter your translation here"
+          },
+          "sh:path": "http://fixme.com#authorizations"
+        },
+        {
           "sh:class": "http://www.w3.org/ns/org#ChangeEvent",
           "sh:definition": {
             "de": "Enter your translation here"
@@ -608,6 +594,17 @@
             "de": "Enter your translation here"
           },
           "sh:path": "http://www.w3.org/ns/org#changedBy"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:definition": {
+            "de": "Enter your translation here"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "de": "Enter your translation here"
+          },
+          "sh:path": "http://fixme.com#companyNumber"
         },
         {
           "sh:class": "https://schema.org/ContactPoint",
@@ -620,7 +617,21 @@
           "sh:path": "https://schema.org/contactPoint"
         },
         {
+          "sh:class": "http://fixme.com#Code",
+          "sh:definition": {
+            "de": "Enter your translation here"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "de": "Enter your translation here"
+          },
+          "sh:path": "http://fixme.com#deregistration"
+        },
+        {
           "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:definition": {
+            "de": "Enter your translation here"
+          },
           "sh:maxCount": "1",
           "sh:name": {
             "de": "Enter your translation here"
@@ -678,6 +689,16 @@
           "sh:path": "http://fixme.com#identifier"
         },
         {
+          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:definition": {
+            "de": "Enter your translation here"
+          },
+          "sh:name": {
+            "de": "Enter your translation here"
+          },
+          "sh:path": "http://fixme.com#linkToDatabase"
+        },
+        {
           "sh:class": "https://schema.org/ImageObject",
           "sh:definition": {
             "de": "Enter your translation here"
@@ -708,6 +729,18 @@
           "sh:path": "http://www.w3.org/1999/xhtml/vocab#next"
         },
         {
+          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:definition": {
+            "de": "Enter your translation here"
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "de": "Enter your translation here"
+          },
+          "sh:path": "http://www.w3.org/2004/02/skos/core#prefLabel"
+        },
+        {
           "sh:class": "http://www.w3.org/ns/org#organization",
           "sh:definition": {
             "de": "Enter your translation here"
@@ -726,6 +759,25 @@
             "de": "Enter your translation here"
           },
           "sh:path": "http://www.w3.org/ns/org#resultedFrom"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "sh:maxCount": "1",
+          "sh:name": {
+            "de": "Enter your translation here"
+          },
+          "sh:path": "http://fixme.com#startDateOfThisData"
+        },
+        {
+          "sh:class": "http://fixme.com#Code",
+          "sh:definition": {
+            "de": "Enter your translation here"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "de": "Enter your translation here"
+          },
+          "sh:path": "http://fixme.com#status"
         },
         {
           "sh:class": "http://www.w3.org/ns/org#organization",
@@ -827,7 +879,13 @@
         },
         {
           "sh:class": "http://www.w3.org/ns/adms#Identifier",
+          "sh:definition": {
+            "de": "Enter your translation here"
+          },
           "sh:maxCount": "1",
+          "sh:name": {
+            "de": "Enter your translation here"
+          },
           "sh:path": "https://data.europa.eu/m8g/identifier"
         },
         {

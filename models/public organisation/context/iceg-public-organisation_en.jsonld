@@ -78,10 +78,6 @@
       "@id": "http://www.w3.org/ns/prov#startedAtTime",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
-    "ChangeEvent.type": {
-      "@id": "http://fixme.com#type",
-      "@type": "@id"
-    },
     "ContactPoint": "https://schema.org/ContactPoint",
     "ContactPoint.availabilityRestriction": {
       "@id": "http://schema.org/hoursAvailable",
@@ -183,14 +179,31 @@
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "Organization": "http://www.w3.org/ns/org#organization",
+    "Organization.alternativeLabel": {
+      "@id": "http://www.w3.org/2004/02/skos/core#altLabel",
+      "@type": "@id"
+    },
+    "Organization.authorizations": {
+      "@container": "@set",
+      "@id": "http://fixme.com#authorizations",
+      "@type": "@id"
+    },
     "Organization.changedBy": {
       "@container": "@set",
       "@id": "http://www.w3.org/ns/org#changedBy",
       "@type": "@id"
     },
+    "Organization.companyNumber": {
+      "@id": "http://fixme.com#companyNumber",
+      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    },
     "Organization.contactPoint": {
       "@container": "@set",
       "@id": "https://schema.org/contactPoint",
+      "@type": "@id"
+    },
+    "Organization.deregistration": {
+      "@id": "http://fixme.com#deregistration",
       "@type": "@id"
     },
     "Organization.description": {
@@ -226,6 +239,11 @@
       "@id": "http://fixme.com#identifier",
       "@type": "@id"
     },
+    "Organization.linkToDatabase": {
+      "@container": "@set",
+      "@id": "http://fixme.com#linkToDatabase",
+      "@type": "@id"
+    },
     "Organization.logo": {
       "@container": "@set",
       "@id": "https://schema.org/logo",
@@ -241,6 +259,10 @@
       "@id": "http://www.w3.org/1999/xhtml/vocab#next",
       "@type": "@id"
     },
+    "Organization.preferredLabel": {
+      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+      "@type": "@id"
+    },
     "Organization.prev": {
       "@container": "@set",
       "@id": "http://www.w3.org/1999/xhtml/vocab#prev",
@@ -249,6 +271,14 @@
     "Organization.resultedFrom": {
       "@container": "@set",
       "@id": "http://www.w3.org/ns/org#resultedFrom",
+      "@type": "@id"
+    },
+    "Organization.startDateOfThisData": {
+      "@id": "http://fixme.com#startDateOfThisData",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Organization.status": {
+      "@id": "http://fixme.com#status",
       "@type": "@id"
     },
     "Organization.subOrganizationOf": {
@@ -291,6 +321,11 @@
       "@id": "http://xmlns.com/foaf/0.1/givenName",
       "@type": "@id"
     },
+    "Person.hasMember": {
+      "@container": "@set",
+      "@id": "TODO",
+      "@type": "@id"
+    },
     "Person.identifier": {
       "@id": "https://data.europa.eu/m8g/identifier",
       "@type": "@id"
@@ -301,11 +336,6 @@
     },
     "Person.title": {
       "@id": "https://data.europa.eu/m8g/title",
-      "@type": "@id"
-    },
-    "Person.todo": {
-      "@container": "@set",
-      "@id": "TODO",
       "@type": "@id"
     },
     "Post": "http://fixme.com#Post",
@@ -320,26 +350,18 @@
       "@type": "@id"
     },
     "PublicOrganization": "http://data.europa.eu/m8g/PublicOrganisation",
-    "PublicOrganization.alternativeLabel": {
-      "@id": "http://www.w3.org/2004/02/skos/core#altLabel",
-      "@type": "@id"
-    },
     "PublicOrganization.hasUnit": {
       "@container": "@set",
       "@id": "http://www.w3.org/ns/org#hasUnit",
       "@type": "@id"
     },
-    "PublicOrganization.preferredLabel": {
-      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "PublicOrganization.legalForm": {
+      "@id": "https://data.europa.eu/m8g/legalForm",
       "@type": "@id"
     },
     "PublicOrganization.spatial": {
       "@container": "@set",
       "@id": "http://purl.org/dc/terms/spatial",
-      "@type": "@id"
-    },
-    "PublicOrganization.type": {
-      "@id": "https://data.europa.eu/m8g/Type",
       "@type": "@id"
     },
     "Role": "http://fixme.com#Role",
