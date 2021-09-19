@@ -165,10 +165,6 @@
           "sh:path": "http://fixme.com#hasCompetentAuthority"
         },
         {
-          "sh:class": "https://semiceu.github.io/CPOV/releases/2.00/#Public%20Organization",
-          "sh:path": "http://fixme.com#hasContactPoint"
-        },
-        {
           "sh:class": "http://fixme.com#ContactPoint",
           "sh:definition": {
             "en": "A contact point for the service is almost always helpful. The value of this property, the contact information itself, should be provided using schema:ContactPoint. Note that the contact information should be relevant to the Public Service which may not be the same as contact information for the Competent Authority or any Participant."
@@ -176,6 +172,10 @@
           "sh:name": {
             "en": "has contact point"
           },
+          "sh:path": "http://fixme.com#hasContactPoint"
+        },
+        {
+          "sh:class": "https://semiceu.github.io/CPOV/releases/2.00/#Public%20Organization",
           "sh:path": "http://fixme.com#hasContactPoint"
         },
         {

@@ -165,10 +165,6 @@
           "sh:path": "http://fixme.com#hasCompetentAuthority"
         },
         {
-          "sh:class": "https://semiceu.github.io/CPOV/releases/2.00/#Public%20Organization",
-          "sh:path": "http://fixme.com#hasContactPoint"
-        },
-        {
           "sh:class": "http://fixme.com#ContactPoint",
           "sh:definition": {
             "de": "Enter your translation here"
@@ -176,6 +172,10 @@
           "sh:name": {
             "de": "Enter your translation here"
           },
+          "sh:path": "http://fixme.com#hasContactPoint"
+        },
+        {
+          "sh:class": "https://semiceu.github.io/CPOV/releases/2.00/#Public%20Organization",
           "sh:path": "http://fixme.com#hasContactPoint"
         },
         {
