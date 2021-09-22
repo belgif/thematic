@@ -429,7 +429,12 @@
       "@id": "http://purl.org/dc/terms/type",
       "@type": "@id"
     },
-    "Purpose": "https://data.europa.eu/m8g/Purpose",
+    "Purpose": "https://catalogue-of-services-isa.github.io/SDG-search-service-model/releases/v1.00/#Webpage%3Atype",
+    "Purpose.type": {
+      "@container": "@set",
+      "@id": "https://data.europa.eu/m8g/type",
+      "@type": "@id"
+    },
     "Requirement": "https://data.europa.eu/m8g/Requirement",
     "Requirement.description": {
       "@id": "https://semiceu.github.io/CCCEV/releases/2.00/#Requirement%3Adescription",

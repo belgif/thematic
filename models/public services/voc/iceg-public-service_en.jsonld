@@ -53,28 +53,12 @@
         "en": "This class describes the relationship between Channel and Purpose. For instance, a Channel can be preferred for a Purpose and depreciated for another one (exp: you can introduce you tax declaration in paper but you're not encouraged to do so)."
       },
       "parents": []
-    },
-    {
-      "@id": "https://data.europa.eu/m8g/Purpose",
-      "@type": "http://www.w3.org/2002/07/owl#Class",
-      "definition": {
-        "en": "This class represents any concepts that can be used to specify the purpose of the Channel and which relates to the Channel through the properties has Channel and has preferred channel."
-      },
-      "usage": {
-        "en": "This class has been added because different channels serve different purposes : information, activation of the service, assistance, appeal, \r\n\r\nMore specifically:\r\n\r\nEach channel could serve several purposes.\r\n \r\nEach purpose can have one or more preferred channels, and one or more \"deprecated\" channels (ex. you can introduce you tax declaration in paper but you're not encouraged to do so)"
-      },
-      "parents": []
     }
   ],
   "externals": [
     {
       "name": null,
       "@id": "https://data.europa.eu/m8g/ChannelPreference",
-      "@type": "rdfs:Class"
-    },
-    {
-      "name": null,
-      "@id": "https://data.europa.eu/m8g/Purpose",
       "@type": "rdfs:Class"
     }
   ],
@@ -104,7 +88,28 @@
       ],
       "range": [
         {
-          "uri": "https://data.europa.eu/m8g/Purpose"
+          "uri": "https://catalogue-of-services-isa.github.io/SDG-search-service-model/releases/v1.00/#Webpage%3Atype"
+        }
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "https://data.europa.eu/m8g/type",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "definition": {
+        "en": "The type of purpose related to the Channel."
+      },
+      "usage": {
+        "en": "This attribute can at least be of two types to be compliant with the SDG:\r\n- information \r\n- procedure\r\n\r\nIt can also be other types like:\r\n- assistance"
+      },
+      "domain": [
+        {
+          "uri": "https://catalogue-of-services-isa.github.io/SDG-search-service-model/releases/v1.00/#Webpage%3Atype"
+        }
+      ],
+      "range": [
+        {
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
         }
       ],
       "generalization": []
@@ -119,6 +124,11 @@
     {
       "name": null,
       "@id": "https://data.europa.eu/m8g/ChannelPreference.purpose",
+      "@type": "rdf:Property"
+    },
+    {
+      "name": null,
+      "@id": "https://data.europa.eu/m8g/type",
       "@type": "rdf:Property"
     }
   ],

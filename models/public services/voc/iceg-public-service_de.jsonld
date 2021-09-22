@@ -53,28 +53,12 @@
         "de": "A translation has yet to be added"
       },
       "parents": []
-    },
-    {
-      "@id": "https://data.europa.eu/m8g/Purpose",
-      "@type": "http://www.w3.org/2002/07/owl#Class",
-      "definition": {
-        "de": "A translation has yet to be added"
-      },
-      "usage": {
-        "de": "A translation has yet to be added"
-      },
-      "parents": []
     }
   ],
   "externals": [
     {
       "name": null,
       "@id": "https://data.europa.eu/m8g/ChannelPreference",
-      "@type": "rdfs:Class"
-    },
-    {
-      "name": null,
-      "@id": "https://data.europa.eu/m8g/Purpose",
       "@type": "rdfs:Class"
     }
   ],
@@ -104,7 +88,28 @@
       ],
       "range": [
         {
-          "uri": "https://data.europa.eu/m8g/Purpose"
+          "uri": "https://catalogue-of-services-isa.github.io/SDG-search-service-model/releases/v1.00/#Webpage%3Atype"
+        }
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "https://data.europa.eu/m8g/type",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "definition": {
+        "de": "A translation has yet to be added"
+      },
+      "usage": {
+        "de": "A translation has yet to be added"
+      },
+      "domain": [
+        {
+          "uri": "https://catalogue-of-services-isa.github.io/SDG-search-service-model/releases/v1.00/#Webpage%3Atype"
+        }
+      ],
+      "range": [
+        {
+          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
         }
       ],
       "generalization": []
@@ -119,6 +124,11 @@
     {
       "name": null,
       "@id": "https://data.europa.eu/m8g/ChannelPreference.purpose",
+      "@type": "rdf:Property"
+    },
+    {
+      "name": null,
+      "@id": "https://data.europa.eu/m8g/type",
       "@type": "rdf:Property"
     }
   ],

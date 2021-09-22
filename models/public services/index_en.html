@@ -121,7 +121,7 @@
               <div class="head" role="metainfo" id="metainfo">
               <dl>
               <dt>Source</dt><dd><a href="https://github.com/SEMICeu/TODO/tree/master/releases/2.00">https://github.com/SEMICeu/TODO/tree/master/releases/2.00</a></dd>
-              <!--<dt>Changelog</dt><dd><a href="https://github.com/bertvannuffelen/semiceuthema/blob/bf97696226b8a8f29a13a6b32241eb4f06e40146/CHANGELOG">https://github.com/bertvannuffelen/semiceuthema/blob/bf97696226b8a8f29a13a6b32241eb4f06e40146/CHANGELOG</a></dd>-->
+              <!--<dt>Changelog</dt><dd><a href="https://github.com/bertvannuffelen/semiceuthema/blob/38ce8dd0f6dcf258d55140c00c9d6717e62ea71a/CHANGELOG">https://github.com/bertvannuffelen/semiceuthema/blob/38ce8dd0f6dcf258d55140c00c9d6717e62ea71a/CHANGELOG</a></dd>-->
               <dt>Feedback</dt><dd><a href="TBD">TBD</a></dd>
               <!--<dt>Registry of standards</dt><dd><a href="TODO">TODO</a></dd>-->
 
@@ -2945,7 +2945,7 @@ N.B. The spatial restriction is not meant to be used to describe eligibility or 
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Purpose"><a href="https://data.europa.eu/m8g/Purpose" data-toggle="tooltip" data-content="https://data.europa.eu/m8g/Purpose" data-placement="right">Purpose</a></h3>
+              <h3 class="h3" id="Purpose"><a href="https://catalogue-of-services-isa.github.io/SDG-search-service-model/releases/v1.00/#Webpage%3Atype" data-toggle="tooltip" data-content="https://catalogue-of-services-isa.github.io/SDG-search-service-model/releases/v1.00/#Webpage%3Atype" data-placement="right">Purpose</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Description</dt><dd>This class represents any concepts that can be used to specify the purpose of the Channel and which relates to the Channel through the properties has Channel and has preferred channel.</dd>
@@ -2960,12 +2960,57 @@ Each purpose can have one or more preferred channels, and one or more "deprecate
                     
 		    
                     <dt>Properties</dt>
-		    
-                    <dd>No properties have been defined for this entity.</dd>
+		     
+                    <dd>For this entity the following properties are defined:
+                      <a href="#Purpose%3Atype">type</a>.</dd>
                     
                   </dl>
                 </div>
-		
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Property</th>
+                        <th class="data-table__header-title--sortable">Expected Range</th>
+			<th class="data-table__header-title--sortable">Cardinality</th>
+                        <th class="data-table__header-title--sortable">Description</th>
+                        <th class="data-table__header-title--sortable">Usage</th>
+                        <th class="data-table__header-title--sortable">Codelist</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="Purpose%3Atype" typeof="rdfs:Property" resource="https://data.europa.eu/m8g/type">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.europa.eu/m8g/type" data-toggle="tooltip" data-content="https://data.europa.eu/m8g/type" data-placement="right">
+                            type</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2004/02/skos/core#Concept" data-toggle="tooltip" data-content="http://www.w3.org/2004/02/skos/core#Concept" data-placement="right">Code</a>
+                            
+                          
+                        </td>
+			<td>0..*</td>
+                        <td property="rdfs:comment">The type of purpose related to the Channel.</td>
+                        <td property="skos:scopeNote">This attribute can at least be of two types to be compliant with the SDG:
+- information 
+- procedure
+
+It can also be other types like:
+- assistance</td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
             </div>
             
               <div class="region region--no-space-top">
