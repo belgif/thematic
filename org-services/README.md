@@ -35,7 +35,7 @@ The workshops that already took place were recorded and can be accessed on the y
 - [Business workshop](https://www.youtube.com/watch?v=NDgRTAVVy48&list=PLbeal6jKXh6djATaiQUE4-iHL73jdhV_c&index=2&t=260s)
 - [First thematic workshop](https://www.youtube.com/watch?v=lHOkbaiPI2w&list=PLbeal6jKXh6djATaiQUE4-iHL73jdhV_c&index=3&t=3s)
 - [Second thematic workshop](https://www.youtube.com/watch?v=t_WfujjuG-s&list=PLbeal6jKXh6djATaiQUE4-iHL73jdhV_c&index=4&t=6s)
-- [Fourth thematic workshop](https://www.youtube.com/watch?v=u4cbURiGFps&list=PLbeal6jKXh6djATaiQUE4-iHL73jdhV_c&index=5&t=5s)
+- [Third thematic workshop](https://www.youtube.com/watch?v=u4cbURiGFps&list=PLbeal6jKXh6djATaiQUE4-iHL73jdhV_c&index=5&t=5s)
 
 ## Specifications
 
