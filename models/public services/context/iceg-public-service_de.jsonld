@@ -12,11 +12,6 @@
     "EnterYourTranslationHere.enterYourTranslationHere": {
       "@id": "https://semiceu.github.io/CPOV/releases/2.00/#Public%20Organization%3Aidentifier",
       "@type": "@id"
-    },
-    "EnterYourTranslationHere.hasContactPoint": {
-      "@container": "@set",
-      "@id": "http://fixme.com#hasContactPoint",
-      "@type": "@id"
     }
   }
 }

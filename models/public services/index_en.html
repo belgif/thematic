@@ -121,7 +121,7 @@
               <div class="head" role="metainfo" id="metainfo">
               <dl>
               <dt>Source</dt><dd><a href="https://github.com/SEMICeu/TODO/tree/master/releases/2.00">https://github.com/SEMICeu/TODO/tree/master/releases/2.00</a></dd>
-              <!--<dt>Changelog</dt><dd><a href="https://github.com/bertvannuffelen/semiceuthema/blob/38ce8dd0f6dcf258d55140c00c9d6717e62ea71a/CHANGELOG">https://github.com/bertvannuffelen/semiceuthema/blob/38ce8dd0f6dcf258d55140c00c9d6717e62ea71a/CHANGELOG</a></dd>-->
+              <!--<dt>Changelog</dt><dd><a href="https://github.com/bertvannuffelen/semiceuthema/blob/7f321962fdf77affe427db69269158dd26660095/CHANGELOG">https://github.com/bertvannuffelen/semiceuthema/blob/7f321962fdf77affe427db69269158dd26660095/CHANGELOG</a></dd>-->
               <dt>Feedback</dt><dd><a href="TBD">TBD</a></dd>
               <!--<dt>Registry of standards</dt><dd><a href="TODO">TODO</a></dd>-->
 
@@ -664,7 +664,7 @@ In other words, a Business Event groups together a number of public services tha
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Channel"><a href="https://data.europa.eu/m8g/Channel" data-toggle="tooltip" data-content="https://data.europa.eu/m8g/Channel" data-placement="right">Channel</a></h3>
+              <h3 class="h3" id="Channel"><a href="http://fixme.com#Channel" data-toggle="tooltip" data-content="http://fixme.com#Channel" data-placement="right">Channel</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Description</dt><dd>The Channel class represents the medium through which an Agent provides, uses or interacts in another way with a Public Service. Typical examples include online services, phone, walk-in centres etc.</dd>
@@ -719,10 +719,10 @@ In other words, a Business Event groups together a number of public services tha
                         <td></td>
                       </tr>
                     
-                      <tr id="Channel%3ADescription" typeof="rdfs:Property" resource="https://data.europa.eu/m8g/description">
+                      <tr id="Channel%3ADescription" typeof="rdfs:Property" resource="http://fixme.com#description">
                         <td>
                           <code property="rdfs:label">
-                            <a href="https://data.europa.eu/m8g/description" data-toggle="tooltip" data-content="https://data.europa.eu/m8g/description" data-placement="right">
+                            <a href="http://fixme.com#description" data-toggle="tooltip" data-content="http://fixme.com#description" data-placement="right">
                             Description</a>
                           </code>
                         </td>
@@ -1206,7 +1206,7 @@ The cost breakdown property is not to be confused with the description property 
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Dataset"><a href="https://data.europa.eu/m8g/Dataset" data-toggle="tooltip" data-content="https://data.europa.eu/m8g/Dataset" data-placement="right">Dataset</a></h3>
+              <h3 class="h3" id="Dataset"><a href="http://fixme.com#Dataset" data-toggle="tooltip" data-content="http://fixme.com#Dataset" data-placement="right">Dataset</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Description</dt><dd>The class describes all the metadata related to a public service. These metadata can be displayed on a regional public service portal and/or a national eGovernment portal.</dd>
@@ -1491,6 +1491,7 @@ In some cases, the Output of one service will be Evidence for another service. S
                       <a href="#Evidence%3ACountry">Country</a>, 
                       <a href="#Evidence%3Ais%20about">is about</a>, 
                       <a href="#Evidence%3Ais%20created%20by">is created by</a>, 
+                      <a href="#Evidence%3Ais%20evidence">is evidence</a>, 
                       <a href="#Evidence%3Ais%20issued%20by">is issued by</a>, 
                       <a href="#Evidence%3ALanguage">Language</a>, 
                       <a href="#Evidence%3Asupports%20Requirement">Supports Requirement</a>, 
@@ -1590,6 +1591,28 @@ In some cases, the Output of one service will be Evidence for another service. S
                         </td>
 			<td>0..*</td>
                         <td property="rdfs:comment">The Agent that produces the Evidence.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Evidence%3Ais%20evidence" typeof="rdfs:Property" resource="https://data.europa.eu/m8g/isEvidence">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.europa.eu/m8g/isEvidence" data-toggle="tooltip" data-content="https://data.europa.eu/m8g/isEvidence" data-placement="right">
+                            is evidence</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Output" data-placement="right">Output</a>
+			    
+                          
+                        </td>
+			<td>0..*</td>
+                        <td property="rdfs:comment">This property describes the case where an Output is considered as one or multiple Evidence. 
+This property might be used when a Public Service consumes its own Output as Evidence.
+</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -1863,8 +1886,7 @@ schema:validThrough "2017-01-02T09:00Z".
                       <a href="#Output%3Adescription">description</a>, 
                       <a href="#Output%3Ahas%20Legal%20Resources">Has Legal Resources</a>, 
                       <a href="#Output%3Aidentifier">identifier</a>, 
-                      <a href="#Output%3AisOutput">isOutput</a>, 
-                      <a href="#Output%3AisOutput">isOutput</a>, 
+                      <a href="#Output%3Ais%20output">is output</a>, 
                       <a href="#Output%3Aname">name</a>, 
                       <a href="#Output%3AresponseTime">responseTime</a>, 
                       <a href="#Output%3Atype">type</a>.</dd>
@@ -1947,11 +1969,11 @@ schema:validThrough "2017-01-02T09:00Z".
                         <td></td>
                       </tr>
                     
-                      <tr id="Output%3AisOutput" typeof="rdfs:Property" resource="https://data.europa.eu/m8g/isEvidence">
+                      <tr id="Output%3Ais%20output" typeof="rdfs:Property" resource="https://data.europa.eu/m8g/isOutput">
                         <td>
                           <code property="rdfs:label">
-                            <a href="https://data.europa.eu/m8g/isEvidence" data-toggle="tooltip" data-content="https://data.europa.eu/m8g/isEvidence" data-placement="right">
-                            isOutput</a>
+                            <a href="https://data.europa.eu/m8g/isOutput" data-toggle="tooltip" data-content="https://data.europa.eu/m8g/isOutput" data-placement="right">
+                            is output</a>
                           </code>
                         </td>
                         <td>
@@ -1962,31 +1984,8 @@ schema:validThrough "2017-01-02T09:00Z".
                           
                         </td>
 			<td>0..*</td>
-                        <td property="rdfs:comment">NOTE $ea_notes=This property describes the case where an Evidence is considered as one or multiple Output. 
-This property might be used when a Public Service consumes its own Output as Evidence.
-</td>
-                        <td property="skos:scopeNote"></td>
-                        <td></td>
-                      </tr>
-                    
-                      <tr id="Output%3AisOutput" typeof="rdfs:Property" resource="https://data.europa.eu/m8g/isEvidence">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="https://data.europa.eu/m8g/isEvidence" data-toggle="tooltip" data-content="https://data.europa.eu/m8g/isEvidence" data-placement="right">
-                            isOutput</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			    
-			    <a href="#Evidence" data-placement="right">Evidence</a>
-			    
-                          
-                        </td>
-			<td>0..*</td>
-                        <td property="rdfs:comment">NOTE $ea_notes=This property describes the case where an Evidence is considered as one or multiple Output. 
-This property might be used when a Public Service consumes its own Output as Evidence.
-</td>
+                        <td property="rdfs:comment">This property describes the case where an Evidence is considered as one or multiple Output. 
+This property might be used when a Public Service consumes its own Output as Evidence.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -2318,7 +2317,6 @@ behalf, to businesses, citizens or others public administrations.</dd>
                     <dt>Properties</dt>
 		     
                     <dd>For this entity the following properties are defined:
-                      <a href="#Public%20Service%3A"></a>, 
                       <a href="#Public%20Service%3Adescription">description</a>, 
                       <a href="#Public%20Service%3Afollows">follows</a>, 
                       <a href="#Public%20Service%3Ahas%20channel">has channel</a>, 
@@ -2343,8 +2341,7 @@ behalf, to businesses, citizens or others public administrations.</dd>
                       <a href="#Public%20Service%3Asector">sector</a>, 
                       <a href="#Public%20Service%3Aspatial">spatial</a>, 
                       <a href="#Public%20Service%3Astatus">status</a>, 
-                      <a href="#Public%20Service%3Athematic%20area">thematic area</a>, 
-                      <a href="#Public%20Service%3Atype">type</a>.</dd>
+                      <a href="#Public%20Service%3Athematic%20area">thematic area</a>.</dd>
                     
                   </dl>
                 </div>
@@ -2363,26 +2360,6 @@ behalf, to businesses, citizens or others public administrations.</dd>
                     </thead>
 
                     <tbody class="supertype">
-                    
-                      <tr id="Public%20Service%3A" typeof="rdfs:Property" resource="http://fixme.com#hasContactPoint">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="http://fixme.com#hasContactPoint" data-toggle="tooltip" data-content="http://fixme.com#hasContactPoint" data-placement="right">
-                            </a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			    
-			    <a href="#Public Organization" data-placement="right">Public Organization</a>
-			    
-                          
-                        </td>
-			<td>0..*</td>
-                        <td property="rdfs:comment"></td>
-                        <td property="skos:scopeNote"></td>
-                        <td></td>
-                      </tr>
                     
                       <tr id="Public%20Service%3Adescription" typeof="rdfs:Property" resource="http://purl.org/dc/terms/description">
                         <td>
@@ -2914,26 +2891,6 @@ N.B. The spatial restriction is not meant to be used to describe eligibility or 
                         </td>
 			<td>0..*</td>
                         <td property="rdfs:comment">This property represents the Thematic Area of a Public Service as described in a controlled vocabulary, for instance social protection, health, recreation, culture and religion, family, traveling economic affairs, tax, staff, environment...</td>
-                        <td property="skos:scopeNote"></td>
-                        <td></td>
-                      </tr>
-                    
-                      <tr id="Public%20Service%3Atype" typeof="rdfs:Property" resource="http://purl.org/dc/terms/type">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="http://purl.org/dc/terms/type" data-toggle="tooltip" data-content="http://purl.org/dc/terms/type" data-placement="right">
-                            type</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			     
-			    <a href="http://www.w3.org/2004/02/skos/core#Concept" data-toggle="tooltip" data-content="http://www.w3.org/2004/02/skos/core#Concept" data-placement="right">Code</a>
-                            
-                          
-                        </td>
-			<td>0..*</td>
-                        <td property="rdfs:comment">This property represents the Type of a Public Service as described in a controlled vocabulary. For the indicating the Type, we are referring to the functions of government to indicate the purpose of a government activity, which the public service is intended for.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>

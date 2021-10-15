@@ -73,7 +73,7 @@
       ],
       "range": [
         {
-          "uri": "https://data.europa.eu/m8g/Channel"
+          "uri": "http://fixme.com#Channel"
         }
       ],
       "generalization": []

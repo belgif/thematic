@@ -45,7 +45,7 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "sh:class": "https://data.europa.eu/m8g/Channel",
+          "sh:class": "http://fixme.com#Channel",
           "sh:maxCount": "1",
           "sh:minCount": "1",
           "sh:path": "https://data.europa.eu/m8g/ChannelPreference.channel"
@@ -76,6 +76,90 @@
         }
       ],
       "sh:targetClass": "http://data.europa.eu/eli/ontology#LegalResource"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-public-service_en#ChannelShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "sh:class": "https://schema.org/OpeningHoursSpecfication",
+          "sh:definition": {
+            "en": "This property links a channel to information about when the channel is not available, overriding the general opening hours information. The details are provided using the Opening Hours Specification class."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "availability restriction"
+          },
+          "sh:path": "https://schema.org/hoursAvailable"
+        },
+        {
+          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:definition": {
+            "en": "This property represents a free text description of the Channel."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "Description"
+          },
+          "sh:path": "http://fixme.com#description"
+        },
+        {
+          "sh:class": "https://data.europa.eu/m8g/Requirement",
+          "sh:definition": {
+            "en": "In the majority of cases, the evidence required to use a Public Service will be independent of the channel through which the service is accessed. The Has Input property should normally be used to link a Public Service directly to one or more pieces of Evidence. However, where the type of Evidence required varies according to the channel used to access the Public Service, then the Has Input property may be used at the Channel level. For example, a digital signature may be\r\nrequired for an online channel, whereas a physical signature may be required for a face to face service provision.\r"
+          },
+          "sh:name": {
+            "en": "has input"
+          },
+          "sh:path": "http://purl.org/vocab/cpsv#hasInput"
+        },
+        {
+          "sh:class": "http://fixme.com#Identifier",
+          "sh:definition": {
+            "en": "This property represents an Identifier for the Channel."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "identifier"
+          },
+          "sh:path": "http://purl.org/dc/terms/identifier"
+        },
+        {
+          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:definition": {
+            "en": "This property represents the normal opening hours of a channel."
+          },
+          "sh:name": {
+            "en": "opening hours"
+          },
+          "sh:path": "https://schema.org/openingHours"
+        },
+        {
+          "sh:class": "https://semiceu.github.io/CPOV/releases/2.00/#Public%20Organization",
+          "sh:definition": {
+            "en": "This property indicates the owner of a specific Channel through which a Public Service is being delivered."
+          },
+          "sh:name": {
+            "en": "owned by"
+          },
+          "sh:path": "http://data.europa.eu/m8g/ownedBy"
+        },
+        {
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:definition": {
+            "en": "This property represents the type of Channel as defined in a controlled vocabulary."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "type"
+          },
+          "sh:path": "http://purl.org/dc/terms/type"
+        }
+      ],
+      "sh:targetClass": "https://data.europa.eu/m8g/ChannelPreference.channel"
     },
     {
       "@id": "https://semiceu.github.io/shacl/iceg-public-service_en#CollectionShape",
@@ -110,6 +194,58 @@
       "sh:targetClass": "http://fixme.com#ContactPoint"
     },
     {
+      "@id": "https://semiceu.github.io/shacl/iceg-public-service_en#DatasetShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:definition": {
+            "en": "This property contains a free-text account of the Dataset. This property can be repeated for parallel language versions of the description."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "description"
+          },
+          "sh:path": "http://purl.org/dc/terms/description"
+        },
+        {
+          "sh:class": "http://fixme.com#Identifier",
+          "sh:definition": {
+            "en": "This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue."
+          },
+          "sh:name": {
+            "en": "identifier"
+          },
+          "sh:path": "http://purl.org/dc/terms/identifier"
+        },
+        {
+          "sh:class": "http://xmlns.com/foaf/0.1/Agent",
+          "sh:definition": {
+            "en": "This property represents the Publisher of the Public Service Dataset, i.e. an entity  (organisation) responsible for making the Public Service Dataset available."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "publisher"
+          },
+          "sh:path": "http://purl.org/dc/terms/publisher"
+        },
+        {
+          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:definition": {
+            "en": "This property contains a name given to the Dataset."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "title"
+          },
+          "sh:path": "http://purl.org/dc/terms/title"
+        }
+      ],
+      "sh:targetClass": "http://fixme.com#Dataset"
+    },
+    {
       "@id": "https://semiceu.github.io/shacl/iceg-public-service_en#PublicServiceShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
@@ -137,7 +273,7 @@
           "sh:path": "http://purl.org/vocab/cpsv#follows"
         },
         {
-          "sh:class": "https://data.europa.eu/m8g/Channel",
+          "sh:class": "http://fixme.com#Channel",
           "sh:definition": {
             "en": "This property links the Public Service to any Channel through which an Agent provides, uses or otherwise interacts with the Public Service, such as an online service, phone number or office."
           },
@@ -156,10 +292,6 @@
             "en": "has competent authority"
           },
           "sh:path": "http://fixme.com#hasCompetentAuthority"
-        },
-        {
-          "sh:class": "https://semiceu.github.io/CPOV/releases/2.00/#Public%20Organization",
-          "sh:path": "http://fixme.com#hasContactPoint"
         },
         {
           "sh:class": "http://fixme.com#ContactPoint",
@@ -234,7 +366,7 @@
           "sh:path": "http://fixme.com#isClassifiedBy"
         },
         {
-          "sh:class": "https://data.europa.eu/m8g/Dataset",
+          "sh:class": "http://fixme.com#Dataset",
           "sh:definition": {
             "en": "The Is Described At property links a Public Service to the Public Service Dataset(s) in which it is being described."
           },
@@ -375,16 +507,6 @@
             "en": "thematic area"
           },
           "sh:path": "http://fixme.com#thematicArea"
-        },
-        {
-          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
-          "sh:definition": {
-            "en": "This property represents the Type of a Public Service as described in a controlled vocabulary. For the indicating the Type, we are referring to the functions of government to indicate the purpose of a government activity, which the public service is intended for."
-          },
-          "sh:name": {
-            "en": "type"
-          },
-          "sh:path": "http://purl.org/dc/terms/type"
         }
       ],
       "sh:targetClass": "http://purl.org/vocab/cpsv#PublicService"
@@ -679,90 +801,6 @@
       "sh:targetClass": "https://data.europa.eu/m8g/BusinessEvent"
     },
     {
-      "@id": "https://semiceu.github.io/shacl/iceg-public-service_en#ChannelShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [
-        {
-          "sh:class": "https://schema.org/OpeningHoursSpecfication",
-          "sh:definition": {
-            "en": "This property links a channel to information about when the channel is not available, overriding the general opening hours information. The details are provided using the Opening Hours Specification class."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "availability restriction"
-          },
-          "sh:path": "https://schema.org/hoursAvailable"
-        },
-        {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-          "sh:definition": {
-            "en": "This property represents a free text description of the Channel."
-          },
-          "sh:maxCount": "1",
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "Description"
-          },
-          "sh:path": "https://data.europa.eu/m8g/description"
-        },
-        {
-          "sh:class": "https://data.europa.eu/m8g/Requirement",
-          "sh:definition": {
-            "en": "In the majority of cases, the evidence required to use a Public Service will be independent of the channel through which the service is accessed. The Has Input property should normally be used to link a Public Service directly to one or more pieces of Evidence. However, where the type of Evidence required varies according to the channel used to access the Public Service, then the Has Input property may be used at the Channel level. For example, a digital signature may be\r\nrequired for an online channel, whereas a physical signature may be required for a face to face service provision.\r"
-          },
-          "sh:name": {
-            "en": "has input"
-          },
-          "sh:path": "http://purl.org/vocab/cpsv#hasInput"
-        },
-        {
-          "sh:class": "http://fixme.com#Identifier",
-          "sh:definition": {
-            "en": "This property represents an Identifier for the Channel."
-          },
-          "sh:maxCount": "1",
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "identifier"
-          },
-          "sh:path": "http://purl.org/dc/terms/identifier"
-        },
-        {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-          "sh:definition": {
-            "en": "This property represents the normal opening hours of a channel."
-          },
-          "sh:name": {
-            "en": "opening hours"
-          },
-          "sh:path": "https://schema.org/openingHours"
-        },
-        {
-          "sh:class": "https://semiceu.github.io/CPOV/releases/2.00/#Public%20Organization",
-          "sh:definition": {
-            "en": "This property indicates the owner of a specific Channel through which a Public Service is being delivered."
-          },
-          "sh:name": {
-            "en": "owned by"
-          },
-          "sh:path": "http://data.europa.eu/m8g/ownedBy"
-        },
-        {
-          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
-          "sh:definition": {
-            "en": "This property represents the type of Channel as defined in a controlled vocabulary."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "type"
-          },
-          "sh:path": "http://purl.org/dc/terms/type"
-        }
-      ],
-      "sh:targetClass": "https://data.europa.eu/m8g/ChannelPreference.channel"
-    },
-    {
       "@id": "https://semiceu.github.io/shacl/iceg-public-service_en#CostShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
@@ -813,7 +851,7 @@
           "sh:path": "http://purl.org/dc/terms/identifier"
         },
         {
-          "sh:class": "https://data.europa.eu/m8g/Channel",
+          "sh:class": "http://fixme.com#Channel",
           "sh:definition": {
             "en": "Where the cost varies depending on the channel used, for example, if accessed through an online service cf. accessed at a physical location, the cost can be linked to the channel using the If Accessed Through property. "
           },
@@ -846,58 +884,6 @@
         }
       ],
       "sh:targetClass": "https://data.europa.eu/m8g/Cost"
-    },
-    {
-      "@id": "https://semiceu.github.io/shacl/iceg-public-service_en#DatasetShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [
-        {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-          "sh:definition": {
-            "en": "This property contains a free-text account of the Dataset. This property can be repeated for parallel language versions of the description."
-          },
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "description"
-          },
-          "sh:path": "http://purl.org/dc/terms/description"
-        },
-        {
-          "sh:class": "http://fixme.com#Identifier",
-          "sh:definition": {
-            "en": "This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue."
-          },
-          "sh:name": {
-            "en": "identifier"
-          },
-          "sh:path": "http://purl.org/dc/terms/identifier"
-        },
-        {
-          "sh:class": "http://xmlns.com/foaf/0.1/Agent",
-          "sh:definition": {
-            "en": "This property represents the Publisher of the Public Service Dataset, i.e. an entity  (organisation) responsible for making the Public Service Dataset available."
-          },
-          "sh:maxCount": "1",
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "publisher"
-          },
-          "sh:path": "http://purl.org/dc/terms/publisher"
-        },
-        {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-          "sh:definition": {
-            "en": "This property contains a name given to the Dataset."
-          },
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "title"
-          },
-          "sh:path": "http://purl.org/dc/terms/title"
-        }
-      ],
-      "sh:targetClass": "https://data.europa.eu/m8g/Dataset"
     },
     {
       "@id": "https://semiceu.github.io/shacl/iceg-public-service_en#EventShape",
@@ -1010,6 +996,16 @@
           "sh:path": "https://semiceu.github.io/CCCEV/releases/2.00/#Evidence%3Ais%20created%20by"
         },
         {
+          "sh:class": "https://data.europa.eu/m8g/Output",
+          "sh:definition": {
+            "en": "This property describes the case where an Output is considered as one or multiple Evidence. \r\nThis property might be used when a Public Service consumes its own Output as Evidence.\r\n"
+          },
+          "sh:name": {
+            "en": "is evidence"
+          },
+          "sh:path": "https://data.europa.eu/m8g/isEvidence"
+        },
+        {
           "sh:class": "http://xmlns.com/foaf/0.1/Agent",
           "sh:definition": {
             "en": "The legal authority responsible for an Evidence."
@@ -1098,22 +1094,12 @@
         {
           "sh:class": "https://data.europa.eu/m8g/Evidence",
           "sh:definition": {
-            "en": "NOTE $ea_notes=This property describes the case where an Evidence is considered as one or multiple Output. \r\nThis property might be used when a Public Service consumes its own Output as Evidence.\r\n"
+            "en": "This property describes the case where an Evidence is considered as one or multiple Output. \r\nThis property might be used when a Public Service consumes its own Output as Evidence."
           },
           "sh:name": {
-            "en": "isOutput"
+            "en": "is output"
           },
-          "sh:path": "https://data.europa.eu/m8g/isEvidence"
-        },
-        {
-          "sh:class": "https://data.europa.eu/m8g/Evidence",
-          "sh:definition": {
-            "en": "NOTE $ea_notes=This property describes the case where an Evidence is considered as one or multiple Output. \r\nThis property might be used when a Public Service consumes its own Output as Evidence.\r\n"
-          },
-          "sh:name": {
-            "en": "isOutput"
-          },
-          "sh:path": "https://data.europa.eu/m8g/isEvidence"
+          "sh:path": "https://data.europa.eu/m8g/isOutput"
         },
         {
           "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",

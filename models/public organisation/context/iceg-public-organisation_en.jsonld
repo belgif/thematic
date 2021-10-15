@@ -166,10 +166,6 @@
       "@id": "https://schema.org/dayOfWeek",
       "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
     },
-    "OpeningHoursSpecification.updateDataDate": {
-      "@id": "http://fixme.com#updateDataDate",
-      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
-    },
     "OpeningHoursSpecification.validFrom": {
       "@id": "https://schema.org/validFrom",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
@@ -319,11 +315,6 @@
     },
     "Person.givenName (forename)": {
       "@id": "http://xmlns.com/foaf/0.1/givenName",
-      "@type": "@id"
-    },
-    "Person.hasMember": {
-      "@container": "@set",
-      "@id": "TODO",
       "@type": "@id"
     },
     "Person.identifier": {

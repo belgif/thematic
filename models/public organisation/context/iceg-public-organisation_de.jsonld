@@ -4,16 +4,6 @@
     "EnterYourTranslationHere.enterYourTranslationHere": {
       "@id": "https://schema.org/validThrough",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
-    },
-    "EnterYourTranslationHere.hasSite": {
-      "@container": "@set",
-      "@id": "http://fixme.com#hasSite",
-      "@type": "@id"
-    },
-    "EnterYourTranslationHere.role": {
-      "@container": "@set",
-      "@id": "http://fixme.com#role",
-      "@type": "@id"
     }
   }
 }

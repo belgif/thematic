@@ -129,6 +129,9 @@
       "sh:property": [
         {
           "sh:class": "http://www.w3.org/ns/org#organization",
+          "sh:definition": {
+            "en": "Indicates the Organization whose post belongs to."
+          },
           "sh:name": {
             "en": "post in"
           },
@@ -136,7 +139,13 @@
         },
         {
           "sh:class": "http://fixme.com#Role",
+          "sh:definition": {
+            "en": "Indicates the Role that the Person plays in a Membership relationship with an Organization. Can also be used on a org:Post to indicate the role that any holder of the Post plays."
+          },
           "sh:minCount": "1",
+          "sh:name": {
+            "en": "role"
+          },
           "sh:path": "http://fixme.com#role"
         }
       ],
@@ -650,6 +659,9 @@
         },
         {
           "sh:class": "http://fixme.com#Post",
+          "sh:definition": {
+            "en": "Indicates the post that belongs to the Organization."
+          },
           "sh:name": {
             "en": "has post"
           },
@@ -658,6 +670,9 @@
         {
           "sh:class": "http://fixme.com#Site",
           "sh:minCount": "1",
+          "sh:name": {
+            "en": "has site"
+          },
           "sh:path": "http://fixme.com#hasSite"
         },
         {
@@ -762,6 +777,9 @@
         },
         {
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "sh:definition": {
+            "en": "\tThe date on which the Organization-related information was provided."
+          },
           "sh:maxCount": "1",
           "sh:name": {
             "en": "start date of this data"
@@ -889,16 +907,6 @@
           "sh:path": "https://data.europa.eu/m8g/identifier"
         },
         {
-          "sh:class": "http://www.w3.org/ns/org#organization",
-          "sh:definition": {
-            "en": "Indicates that Person is a member of the Organization with no indication of the nature of that membership or the role played"
-          },
-          "sh:name": {
-            "en": "has member"
-          },
-          "sh:path": "TODO"
-        },
-        {
           "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "en": "Name based on the given name of the Person's father."
@@ -1005,15 +1013,6 @@
             "en": "day of week"
           },
           "sh:path": "https://schema.org/dayOfWeek"
-        },
-        {
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
-          "sh:maxCount": "1",
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "update data date"
-          },
-          "sh:path": "http://fixme.com#updateDataDate"
         },
         {
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",

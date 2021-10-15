@@ -60,13 +60,13 @@
       "@type": "@id"
     },
     "BusinessEvent": "https://data.europa.eu/m8g/BusinessEvent",
-    "Channel": "https://data.europa.eu/m8g/Channel",
+    "Channel": "http://fixme.com#Channel",
     "Channel.availabilityRestriction": {
       "@id": "https://schema.org/hoursAvailable",
       "@type": "@id"
     },
     "Channel.description": {
-      "@id": "https://data.europa.eu/m8g/description",
+      "@id": "http://fixme.com#description",
       "@type": "@id"
     },
     "Channel.hasInput": {
@@ -139,7 +139,7 @@
       "@id": "https://data.europa.eu/m8g/value",
       "@type": "http://www.w3.org/2001/XMLSchema#double"
     },
-    "Dataset": "https://data.europa.eu/m8g/Dataset",
+    "Dataset": "http://fixme.com#Dataset",
     "Dataset.description": {
       "@container": "@set",
       "@id": "http://purl.org/dc/terms/description",
@@ -201,6 +201,11 @@
       "@id": "https://semiceu.github.io/CCCEV/releases/2.00/#Evidence%3Ais%20created%20by",
       "@type": "@id"
     },
+    "Evidence.isEvidence": {
+      "@container": "@set",
+      "@id": "https://data.europa.eu/m8g/isEvidence",
+      "@type": "@id"
+    },
     "Evidence.isIssuedBy": {
       "@container": "@set",
       "@id": "https://semiceu.github.io/CCCEV/releases/2.00/#Evidence%3Ais%20issued%20by",
@@ -250,7 +255,7 @@
     },
     "Output.isOutput": {
       "@container": "@set",
-      "@id": "https://data.europa.eu/m8g/isEvidence",
+      "@id": "https://data.europa.eu/m8g/isOutput",
       "@type": "@id"
     },
     "Output.name": {
@@ -422,11 +427,6 @@
     "PublicService.thematicArea": {
       "@container": "@set",
       "@id": "http://fixme.com#thematicArea",
-      "@type": "@id"
-    },
-    "PublicService.type": {
-      "@container": "@set",
-      "@id": "http://purl.org/dc/terms/type",
       "@type": "@id"
     },
     "Purpose": "https://catalogue-of-services-isa.github.io/SDG-search-service-model/releases/v1.00/#Webpage%3Atype",
