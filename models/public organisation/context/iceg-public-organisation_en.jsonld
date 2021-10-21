@@ -226,6 +226,11 @@
       "@id": "http://www.w3.org/ns/org#hasSubOrganization",
       "@type": "@id"
     },
+    "Organization.hasUnit": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/org#hasUnit",
+      "@type": "@id"
+    },
     "Organization.homepage": {
       "@container": "@set",
       "@id": "http://xmlns.com/foaf/0.1/homepage",
@@ -341,11 +346,6 @@
       "@type": "@id"
     },
     "PublicOrganization": "http://data.europa.eu/m8g/PublicOrganisation",
-    "PublicOrganization.hasUnit": {
-      "@container": "@set",
-      "@id": "http://www.w3.org/ns/org#hasUnit",
-      "@type": "@id"
-    },
     "PublicOrganization.legalForm": {
       "@id": "https://data.europa.eu/m8g/legalForm",
       "@type": "@id"

@@ -7,7 +7,7 @@
 
 <head>
    
-  <title>Public Organisation</title>
+  <title>Public Organization</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -64,7 +64,7 @@
               <div class="head" role="status" id="status">
               <dl>
               <dt>Status</dt><dd>Working Draft</dd>
-              <dt>Published at</dt><dd>2021-09-17</dd>
+              <dt>Published at</dt><dd>2021-10-21</dd>
               <dt>This version</dt><dd></dd>
               
               
@@ -121,7 +121,7 @@
               <div class="head" role="metainfo" id="metainfo">
               <dl>
               <dt>Source</dt><dd></dd>
-              <!--<dt>Changelog</dt><dd><a href="https://github.com/bertvannuffelen/semiceuthema/blob/7f321962fdf77affe427db69269158dd26660095/CHANGELOG">https://github.com/bertvannuffelen/semiceuthema/blob/7f321962fdf77affe427db69269158dd26660095/CHANGELOG</a></dd>-->
+              <!--<dt>Changelog</dt><dd><a href="https://github.com/bertvannuffelen/semiceuthema/blob/317c3ab4395656612600189d56923aea5619413d/CHANGELOG">https://github.com/bertvannuffelen/semiceuthema/blob/317c3ab4395656612600189d56923aea5619413d/CHANGELOG</a></dd>-->
               <dt>Feedback</dt><dd><a href="TBD">TBD</a></dd>
               <!--<dt>Registry of standards</dt><dd><a href="TODO">TODO</a></dd>-->
 
@@ -150,7 +150,18 @@
                 -->
                 
 <p>
-TBD
+The model presented below is an application profile of Core Public Organization Vocabulary (CPOV), built in the context of the ICEG thematic working group regrouping experts from the federal and regional level as well as communities. It was designed through a series of workshops and a final open consultation. 
+<br><br>
+The objective was to standardize the terms defined for public organizations at regional and federal level, starting from CPOV. It serves the purpose to make data accessible as linked open data and to define standard interfaces (APIs) to simplify collaboration and integration of the various services and tools. 
+<br><br>
+The Core Public Organization Vocabulary is designed to support the exchange of basic information about public organizations. Using the vocabulary – with sector- or country-specific information – will make it easier for institutions publishing data about public organizations. 
+<br><br>
+The Core Public Organization Vocabulary is designed to describe the organization itself. Whilst the vocabulary may support links to staff members other resources such as relevant legislation, policies and jurisdictional coverage, it will not describe those resources in detail.
+<br><br>
+As the name suggests, the vocabulary is not concerned with features associated with commercial entities such as shareholdings and ownership.
+<br><br>
+Whenever possible, the CPOV will reuse existing vocabularies to avoid defining new terms. As such, it reuses schema, org, foaf, core location, core person, amongst others. 
+
 </p>
 
             </div>
@@ -160,7 +171,7 @@ TBD
                 <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">Status of this document</h2>
                 
                 <p>
-                  This model has the status of Working Draft published on 2021-09-17.
+                  This model has the status of Working Draft published on 2021-10-21.
 	        </p>
                 
               </section>
@@ -178,10 +189,12 @@ TBD
               
               <p>
 <b>Provider requirements</b>
+<br>
 </p>
 <p>
 <b>Receiver requirements</b>
-</p>
+<br>
+		</p>
               
             </div>
             <div class="region region--no-space-top" id="overview">
@@ -885,7 +898,7 @@ representative of it, can be contacted.</td>
               <h3 class="h3" id="Document"><a href="http://xmlns.com/foaf/0.1/Document" data-toggle="tooltip" data-content="http://xmlns.com/foaf/0.1/Document" data-placement="right">Document</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
-                    <dt>Description</dt><dd></dd>
+                    <dt>Description</dt><dd>The Document class represents those things which are, broadly conceived, &#39;documents&#39;.</dd>
                     
 		    
                     <dt>Properties</dt>
@@ -1286,7 +1299,8 @@ representative of it, can be contacted.</td>
                   <dl>
                     <dt>Description</dt><dd>Legislation, policy, or policies lying behind the rules that govern a public service.</dd>
                     
-                    <dt>Usage</dt><dd>Instances of the Formal Framwork class are FRBR Expressions, i.e., concrete expressions of the more abstract concept of the piece of legislation or policy itself.
+                    <dt>Usage</dt><dd>Instances of the Formal Framwork class are FRBR (Functional Requirements
+for Bibliographic Records) Expressions, i.e., concrete expressions of the more abstract concept of the piece of legislation or policy itself.
 The European Council's invitation to introduce the European Legislation Identifier and portals such as legislation.gov.uk are relevant in this context. Adding '/data.xml' or /data.rdf' to any legislation URI on legislation.gov.uk will reveal how this can be done, for example http://www.legislation.gov.uk/uksi/2012/3170/contents/made{/data.rdf or /data.xml}.</dd>
                     
 		    
@@ -1460,6 +1474,7 @@ The European Council's invitation to introduce the European Legislation Identifi
                       <a href="#Organization%3Ahas%20post">has post</a>, 
                       <a href="#Organization%3Ahas%20site">has site</a>, 
                       <a href="#Organization%3Ahas%20sub%20organization">has sub organization</a>, 
+                      <a href="#Organization%3Ahas%20unit">has unit</a>, 
                       <a href="#Organization%3Ahomepage">homepage</a>, 
                       <a href="#Organization%3Aidentifier">identifier</a>, 
                       <a href="#Organization%3Alink%20to%20database">link to database</a>, 
@@ -1697,7 +1712,7 @@ the simple memberOf/hasMember properties.</td>
                           
                         </td>
 			<td>1..*</td>
-                        <td property="rdfs:comment"></td>
+                        <td property="rdfs:comment">Indicates a site at which the Organization has some presence even if only indirect (e.g. virtual office or a professional service which is acting as the registered address for a company).</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -1722,6 +1737,28 @@ Organizations, each of which has a specific identity that may be legally defined
 hasSubOrganization and subOrganizationOf properties express the relationships
 between Organizations in a hierarchical structure. </td>
                         <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Organization%3Ahas%20unit" typeof="rdfs:Property" resource="http://www.w3.org/ns/org#hasUnit">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://www.w3.org/ns/org#hasUnit" data-toggle="tooltip" data-content="http://www.w3.org/ns/org#hasUnit" data-placement="right">
+                            has unit</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Organizational Unit" data-placement="right">Organizational Unit</a>
+			    
+                          
+                        </td>
+			<td>0..*</td>
+                        <td property="rdfs:comment">The properties hasUnit and unitOf are used to link to operational departments within an Organization that may not generally exist in their own right.</td>
+                        <td property="skos:scopeNote">Organizations typically comprise many departments, units, teams etc. Each of these
+is modelled in the CPOV as a unit that is linked from the parent Organization with
+hasUnit and to the parent with unitOf.</td>
                         <td></td>
                       </tr>
                     
@@ -1760,7 +1797,7 @@ between Organizations in a hierarchical structure. </td>
                           
                         </td>
 			<td>0..1</td>
-                        <td property="rdfs:comment"></td>
+                        <td property="rdfs:comment">Many organizations are referred to by an acronym or some other identifier</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -1954,7 +1991,7 @@ to be captured and computed.</td>
                           
                         </td>
 			<td>0..1</td>
-                        <td property="rdfs:comment">entity status, e.g. active, closed, cancelled, identified
+                        <td property="rdfs:comment">Entity status, e.g. active, closed, cancelled, identified
 legal creation, stopped
 </td>
                         <td property="skos:scopeNote"></td>
@@ -2037,7 +2074,7 @@ between Organizations in a hierarchical structure. </td>
                         <td>
                           
 			    
-			    <a href="#Public Organization" data-placement="right">Public Organization</a>
+			    <a href="#Organization" data-placement="right">Organization</a>
 			    
                           
                         </td>
@@ -2063,7 +2100,7 @@ hasUnit and to the parent with unitOf.</td>
                     
                     <dt>Usage</dt><dd>The fact that a person in the context of Core Person Vocabulary cannot be imaginary makes person:Person a subclass of both foaf:Person and schema:Person which both cover imaginary characters as well as real people.
 
-The Person Class is a subclass of the more general 'Agent' class that encompasses organisations, legal entities, groups etc. - any entity that is able to carry out actions.</dd>
+The Person Class is a subclass of the more general 'Agent' class that encompasses organizations, legal entities, groups etc. - any entity that is able to carry out actions.</dd>
                     
 		     
 		    <dt>Subclass of<dt><dd>
@@ -2312,7 +2349,7 @@ Note that patronymic names refer to a father's given name, not the family name i
                           
                         </td>
 			<td>0..1</td>
-                        <td property="rdfs:comment"></td>
+                        <td property="rdfs:comment">A word or name that describes a person&#39;s job or status in a company or organization</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -2436,7 +2473,6 @@ by the State, regional or local authorities or by other bodies governed by publi
                     <dt>Properties</dt>
 		     
                     <dd>For this entity the following properties are defined:
-                      <a href="#Public%20Organization%3Ahas%20unit">has unit</a>, 
                       <a href="#Public%20Organization%3Alegal%20form">legal form</a>, 
                       <a href="#Public%20Organization%3Aspatial">spatial</a>.</dd>
                     
@@ -2457,28 +2493,6 @@ by the State, regional or local authorities or by other bodies governed by publi
                     </thead>
 
                     <tbody class="supertype">
-                    
-                      <tr id="Public%20Organization%3Ahas%20unit" typeof="rdfs:Property" resource="http://www.w3.org/ns/org#hasUnit">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="http://www.w3.org/ns/org#hasUnit" data-toggle="tooltip" data-content="http://www.w3.org/ns/org#hasUnit" data-placement="right">
-                            has unit</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			    
-			    <a href="#Organizational Unit" data-placement="right">Organizational Unit</a>
-			    
-                          
-                        </td>
-			<td>0..*</td>
-                        <td property="rdfs:comment">The properties hasUnit and unitOf are used to link to operational departments within an Organization that may not generally exist in their own right.</td>
-                        <td property="skos:scopeNote">Organizations typically comprise many departments, units, teams etc. Each of these
-is modelled in the CPOV as a unit that is linked from the parent Organization with
-hasUnit and to the parent with unitOf.</td>
-                        <td></td>
-                      </tr>
                     
                       <tr id="Public%20Organization%3Alegal%20form" typeof="rdfs:Property" resource="https://data.europa.eu/m8g/legalForm">
                         <td>

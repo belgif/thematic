@@ -89,16 +89,6 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "sh:class": "http://www.w3.org/ns/org#OrganizationalUnit",
-          "sh:definition": {
-            "en": "The properties hasUnit and unitOf are used to link to operational departments within an Organization that may not generally exist in their own right."
-          },
-          "sh:name": {
-            "en": "has unit"
-          },
-          "sh:path": "http://www.w3.org/ns/org#hasUnit"
-        },
-        {
           "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "en": "The type of entity as defined by the Belgian law"
@@ -556,7 +546,7 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "sh:class": "http://data.europa.eu/m8g/PublicOrganisation",
+          "sh:class": "http://www.w3.org/ns/org#organization",
           "sh:definition": {
             "en": "The properties hasUnit and unitOf are used to link to operational departments within an Organization that may not generally exist in their own right."
           },
@@ -669,6 +659,9 @@
         },
         {
           "sh:class": "http://fixme.com#Site",
+          "sh:definition": {
+            "en": "Indicates a site at which the Organization has some presence even if only indirect (e.g. virtual office or a professional service which is acting as the registered address for a company)."
+          },
           "sh:minCount": "1",
           "sh:name": {
             "en": "has site"
@@ -686,6 +679,16 @@
           "sh:path": "http://www.w3.org/ns/org#hasSubOrganization"
         },
         {
+          "sh:class": "http://www.w3.org/ns/org#OrganizationalUnit",
+          "sh:definition": {
+            "en": "The properties hasUnit and unitOf are used to link to operational departments within an Organization that may not generally exist in their own right."
+          },
+          "sh:name": {
+            "en": "has unit"
+          },
+          "sh:path": "http://www.w3.org/ns/org#hasUnit"
+        },
+        {
           "sh:class": "http://xmlns.com/foaf/0.1/Document",
           "sh:definition": {
             "en": "A property to link an Organization to its logo."
@@ -697,6 +700,9 @@
         },
         {
           "sh:class": "http://www.w3.org/ns/adms#Identifier",
+          "sh:definition": {
+            "en": "Many organizations are referred to by an acronym or some other identifier"
+          },
           "sh:maxCount": "1",
           "sh:name": {
             "en": "identifier"
@@ -789,7 +795,7 @@
         {
           "sh:class": "http://fixme.com#Code",
           "sh:definition": {
-            "en": "entity status, e.g. active, closed, cancelled, identified\r\nlegal creation, stopped\r\n"
+            "en": "Entity status, e.g. active, closed, cancelled, identified\r\nlegal creation, stopped\r\n"
           },
           "sh:maxCount": "1",
           "sh:name": {
@@ -919,6 +925,9 @@
         },
         {
           "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:definition": {
+            "en": "A word or name that describes a person's job or status in a company or organization"
+          },
           "sh:maxCount": "1",
           "sh:name": {
             "en": "title"
