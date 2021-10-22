@@ -83,7 +83,7 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "sh:class": "https://schema.org/OpeningHoursSpecfication",
+          "sh:class": "https://schema.org/OpeningHoursSpecification",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -91,7 +91,7 @@
           "sh:name": {
             "de": "Enter your translation here"
           },
-          "sh:path": "https://schema.org/hoursAvailable"
+          "sh:path": "http://schema.org/hoursAvailable"
         },
         {
           "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
@@ -104,16 +104,6 @@
             "de": "Enter your translation here"
           },
           "sh:path": "http://fixme.com#description"
-        },
-        {
-          "sh:class": "https://data.europa.eu/m8g/Requirement",
-          "sh:definition": {
-            "de": "Enter your translation here"
-          },
-          "sh:name": {
-            "de": "Enter your translation here"
-          },
-          "sh:path": "http://purl.org/vocab/cpsv#hasInput"
         },
         {
           "sh:class": "http://fixme.com#Identifier",
@@ -157,6 +147,16 @@
             "de": "Enter your translation here"
           },
           "sh:path": "http://purl.org/dc/terms/type"
+        },
+        {
+          "sh:class": "https://data.europa.eu/m8g/Evidence",
+          "sh:definition": {
+            "de": "Enter your translation here"
+          },
+          "sh:name": {
+            "de": "Enter your translation here"
+          },
+          "sh:path": "http://purl.org/vocab/cpsv#hasInput"
         }
       ],
       "sh:targetClass": "https://data.europa.eu/m8g/ChannelPreference.channel"
@@ -190,7 +190,52 @@
       "@id": "https://semiceu.github.io/shacl/iceg-public-service_de#ContactPointShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
-      "sh:property": [],
+      "sh:property": [
+        {
+          "sh:class": "https://schema.org/OpeningHoursSpecification",
+          "sh:definition": {
+            "de": "Enter your translation here"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "de": "Enter your translation here"
+          },
+          "sh:path": "http://schema.org/hoursAvailable"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "de": "Enter your translation here"
+          },
+          "sh:path": "https://schema.org/email"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:definition": {
+            "de": "Enter your translation here"
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "de": "Enter your translation here"
+          },
+          "sh:path": "https://schema.org/telephone"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:definition": {
+            "de": "Enter your translation here"
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "de": "Enter your translation here"
+          },
+          "sh:path": "https://schema.org/openingHours"
+        }
+      ],
       "sh:targetClass": "http://fixme.com#ContactPoint"
     },
     {
@@ -246,6 +291,26 @@
       "sh:targetClass": "http://fixme.com#Dataset"
     },
     {
+      "@id": "https://semiceu.github.io/shacl/iceg-public-service_de#SiteShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "sh:class": "http://www.w3.org/ns/locn#Address",
+          "sh:definition": {
+            "de": "Enter your translation here"
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "de": "Enter your translation here"
+          },
+          "sh:path": "http://w3.org/ns/locn#address"
+        }
+      ],
+      "sh:targetClass": "http://fixme.com#Site"
+    },
+    {
       "@id": "https://semiceu.github.io/shacl/iceg-public-service_de#PublicServiceShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
@@ -281,27 +346,6 @@
             "de": "Enter your translation here"
           },
           "sh:path": "http://data.europa.eu/m8g/hasChannel"
-        },
-        {
-          "sh:class": "https://semiceu.github.io/CPOV/releases/2.00/#Public%20Organization",
-          "sh:definition": {
-            "de": "Enter your translation here"
-          },
-          "sh:minCount": "1",
-          "sh:name": {
-            "de": "Enter your translation here"
-          },
-          "sh:path": "http://fixme.com#hasCompetentAuthority"
-        },
-        {
-          "sh:class": "http://fixme.com#ContactPoint",
-          "sh:definition": {
-            "de": "Enter your translation here"
-          },
-          "sh:name": {
-            "de": "Enter your translation here"
-          },
-          "sh:path": "http://fixme.com#hasContactPoint"
         },
         {
           "sh:class": "https://data.europa.eu/m8g/Cost",
@@ -1278,8 +1322,45 @@
       "@id": "https://semiceu.github.io/shacl/iceg-public-service_de#OpeningHoursSpecificationShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
-      "sh:property": [],
-      "sh:targetClass": "https://schema.org/OpeningHoursSpecfication"
+      "sh:property": [
+        {
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#anyURI",
+          "sh:definition": {
+            "de": "Enter your translation here"
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "de": "Enter your translation here"
+          },
+          "sh:path": "https://schema.org/dayOfWeek"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "sh:definition": {
+            "de": "Enter your translation here"
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "de": "Enter your translation here"
+          },
+          "sh:path": "https://schema.org/validFrom"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "sh:definition": {
+            "de": "Enter your translation here"
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "de": "Enter your translation here"
+          },
+          "sh:path": "https://schema.org/validThrough"
+        }
+      ],
+      "sh:targetClass": "https://schema.org/OpeningHoursSpecification"
     },
     {
       "@id": "https://semiceu.github.io/shacl/iceg-public-service_de#PublicOrganizationShape",
@@ -1287,38 +1368,15 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:class": "http://fixme.com#Site",
           "sh:definition": {
             "de": "Enter your translation here"
           },
-          "sh:maxCount": "1",
           "sh:minCount": "1",
           "sh:name": {
             "de": "Enter your translation here"
           },
-          "sh:path": "https://semiceu.github.io/CPOV/releases/2.00/#Public%20Organization%3Adescription"
-        },
-        {
-          "sh:class": "http://www.w3.org/ns/locn#Address",
-          "sh:definition": {
-            "de": "Enter your translation here"
-          },
-          "sh:name": {
-            "de": "Enter your translation here"
-          },
-          "sh:path": "https://semiceu.github.io/CPOV/releases/2.00/#Public%20Organization%3Aaddress"
-        },
-        {
-          "sh:class": "http://fixme.com#Identifier",
-          "sh:definition": {
-            "de": "Enter your translation here"
-          },
-          "sh:maxCount": "1",
-          "sh:minCount": "1",
-          "sh:name": {
-            "de": "Enter your translation here"
-          },
-          "sh:path": "https://semiceu.github.io/CPOV/releases/2.00/#Public%20Organization%3Aidentifier"
+          "sh:path": "http://fixme.com#hasSite"
         },
         {
           "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
@@ -1330,19 +1388,7 @@
           "sh:name": {
             "de": "Enter your translation here"
           },
-          "sh:path": "http://www.w3.org/2004/02/skos/core#prefLabel"
-        },
-        {
-          "sh:class": "http://purl.org/dc/terms/Location",
-          "sh:definition": {
-            "de": "Enter your translation here"
-          },
-          "sh:maxCount": "1",
-          "sh:minCount": "1",
-          "sh:name": {
-            "de": "Enter your translation here"
-          },
-          "sh:path": "http://purl.org/dc/terms/spatial"
+          "sh:path": "http://fixme.com#legalForm"
         }
       ],
       "sh:targetClass": "https://semiceu.github.io/CPOV/releases/2.00/#Public%20Organization"

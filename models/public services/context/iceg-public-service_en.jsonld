@@ -62,16 +62,11 @@
     "BusinessEvent": "https://data.europa.eu/m8g/BusinessEvent",
     "Channel": "http://fixme.com#Channel",
     "Channel.availabilityRestriction": {
-      "@id": "https://schema.org/hoursAvailable",
+      "@id": "http://schema.org/hoursAvailable",
       "@type": "@id"
     },
     "Channel.description": {
       "@id": "http://fixme.com#description",
-      "@type": "@id"
-    },
-    "Channel.hasInput": {
-      "@container": "@set",
-      "@id": "http://purl.org/vocab/cpsv#hasInput",
       "@type": "@id"
     },
     "Channel.identifier": {
@@ -92,6 +87,11 @@
       "@id": "http://purl.org/dc/terms/type",
       "@type": "@id"
     },
+    "Channel.viaChannel": {
+      "@container": "@set",
+      "@id": "http://purl.org/vocab/cpsv#hasInput",
+      "@type": "@id"
+    },
     "ChannelPreference": "https://data.europa.eu/m8g/ChannelPreference",
     "ChannelPreference.Channel": {
       "@id": "https://data.europa.eu/m8g/ChannelPreference.channel",
@@ -109,6 +109,22 @@
     },
     "Concept": "http://fixme.com#Concept",
     "ContactPoint": "http://fixme.com#ContactPoint",
+    "ContactPoint.availabilityRestriction": {
+      "@id": "http://schema.org/hoursAvailable",
+      "@type": "@id"
+    },
+    "ContactPoint.hasEmail": {
+      "@id": "https://schema.org/email",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "ContactPoint.hasTelephone": {
+      "@id": "https://schema.org/telephone",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "ContactPoint.openingHours": {
+      "@id": "https://schema.org/openingHours",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
     "Cost": "https://data.europa.eu/m8g/Cost",
     "Cost.costBreakdown": {
       "@id": "https://data.europa.eu/m8g/costBreakdown",
@@ -238,7 +254,19 @@
       "@type": "@id"
     },
     "LifeEvent": "https://data.europa.eu/m8g/LifeEvent",
-    "OpeningHoursSpecification": "https://schema.org/OpeningHoursSpecfication",
+    "OpeningHoursSpecification": "https://schema.org/OpeningHoursSpecification",
+    "OpeningHoursSpecification.dayOfWeek": {
+      "@id": "https://schema.org/dayOfWeek",
+      "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "OpeningHoursSpecification.validFrom": {
+      "@id": "https://schema.org/validFrom",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "OpeningHoursSpecification.validThrough": {
+      "@id": "https://schema.org/validThrough",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
     "Output": "https://data.europa.eu/m8g/Output",
     "Output.description": {
       "@id": "http://purl.org/dc/terms/description",
@@ -253,13 +281,13 @@
       "@id": "http://purl.org/dc/terms/identifier",
       "@type": "@id"
     },
-    "Output.isOutput": {
-      "@container": "@set",
-      "@id": "https://data.europa.eu/m8g/isOutput",
-      "@type": "@id"
-    },
     "Output.name": {
       "@id": "http://purl.org/dc/terms/title",
+      "@type": "@id"
+    },
+    "Output.provides": {
+      "@container": "@set",
+      "@id": "https://data.europa.eu/m8g/isOutput",
       "@type": "@id"
     },
     "Output.responseTime": {
@@ -286,25 +314,13 @@
       "@type": "@id"
     },
     "PublicOrganization": "https://semiceu.github.io/CPOV/releases/2.00/#Public%20Organization",
-    "PublicOrganization.description": {
-      "@id": "https://semiceu.github.io/CPOV/releases/2.00/#Public%20Organization%3Adescription",
-      "@type": "@id"
-    },
-    "PublicOrganization.hasAddress": {
+    "PublicOrganization.hasSite": {
       "@container": "@set",
-      "@id": "https://semiceu.github.io/CPOV/releases/2.00/#Public%20Organization%3Aaddress",
+      "@id": "http://fixme.com#hasSite",
       "@type": "@id"
     },
-    "PublicOrganization.identifier": {
-      "@id": "https://semiceu.github.io/CPOV/releases/2.00/#Public%20Organization%3Aidentifier",
-      "@type": "@id"
-    },
-    "PublicOrganization.preferredLabel": {
-      "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
-      "@type": "@id"
-    },
-    "PublicOrganization.spatial": {
-      "@id": "http://purl.org/dc/terms/spatial",
+    "PublicOrganization.legalForm": {
+      "@id": "http://fixme.com#legalForm",
       "@type": "@id"
     },
     "PublicService": "http://purl.org/vocab/cpsv#PublicService",
@@ -322,24 +338,9 @@
       "@id": "http://data.europa.eu/m8g/hasChannel",
       "@type": "@id"
     },
-    "PublicService.hasCompetentAuthority": {
-      "@container": "@set",
-      "@id": "http://fixme.com#hasCompetentAuthority",
-      "@type": "@id"
-    },
-    "PublicService.hasContactPoint": {
-      "@container": "@set",
-      "@id": "http://fixme.com#hasContactPoint",
-      "@type": "@id"
-    },
     "PublicService.hasCost": {
       "@container": "@set",
       "@id": "http://data.europa.eu/m8g/hasCost",
-      "@type": "@id"
-    },
-    "PublicService.hasCriterion": {
-      "@container": "@set",
-      "@id": "http://data.europa.eu/m8g/hasCompetentAuthority",
       "@type": "@id"
     },
     "PublicService.hasLegalResource": {
@@ -350,6 +351,11 @@
     "PublicService.hasParticipation": {
       "@container": "@set",
       "@id": "http://data.europa.eu/m8g/hasParticipation",
+      "@type": "@id"
+    },
+    "PublicService.hasRequirement": {
+      "@container": "@set",
+      "@id": "http://data.europa.eu/m8g/hasCompetentAuthority",
       "@type": "@id"
     },
     "PublicService.identifier": {
@@ -494,6 +500,11 @@
     },
     "Rule.name": {
       "@id": "http://purl.org/dc/terms/title",
+      "@type": "@id"
+    },
+    "Site": "http://fixme.com#Site",
+    "Site.address": {
+      "@id": "http://w3.org/ns/locn#address",
       "@type": "@id"
     }
   }

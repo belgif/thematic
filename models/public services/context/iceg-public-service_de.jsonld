@@ -10,7 +10,13 @@
       "@type": "@id"
     },
     "EnterYourTranslationHere.enterYourTranslationHere": {
-      "@id": "https://semiceu.github.io/CPOV/releases/2.00/#Public%20Organization%3Aidentifier",
+      "@container": "@set",
+      "@id": "https://semiceu.github.io/CCCEV/releases/2.00/#Requirement%3Ahas%20supporting%20evidence",
+      "@type": "@id"
+    },
+    "Site": "http://fixme.com#Site",
+    "Site.enterYourTranslationHere": {
+      "@id": "http://w3.org/ns/locn#address",
       "@type": "@id"
     }
   }
