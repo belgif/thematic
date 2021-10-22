@@ -65,7 +65,7 @@
               <dl>
               <dt>Status</dt><dd>Working Draft</dd>
               <dt>Published at</dt><dd>2021-10-22</dd>
-              <dt>This version</dt><dd></dd>
+              <dt>This version</dt><dd><br></dd>
               
               
               </dl>
@@ -120,8 +120,8 @@
 
               <div class="head" role="metainfo" id="metainfo">
               <dl>
-              <dt>Source</dt><dd></dd>
-              <!--<dt>Changelog</dt><dd><a href="https://github.com/bertvannuffelen/semiceuthema/blob/ae7577273a19f9b9b0ee69e9e8582a7210218af4/CHANGELOG">https://github.com/bertvannuffelen/semiceuthema/blob/ae7577273a19f9b9b0ee69e9e8582a7210218af4/CHANGELOG</a></dd>-->
+              <dt>Source</dt><dd><br></dd>
+              <!--<dt>Changelog</dt><dd><a href="https://github.com/bertvannuffelen/semiceuthema/blob/d7b4cfff0ce2628c60ecfb3f94c8d324a9aa7fbe/CHANGELOG">https://github.com/bertvannuffelen/semiceuthema/blob/d7b4cfff0ce2628c60ecfb3f94c8d324a9aa7fbe/CHANGELOG</a></dd>-->
               <dt>Feedback</dt><dd><a href="TBD">TBD</a></dd>
               <!--<dt>Registry of standards</dt><dd><a href="TODO">TODO</a></dd>-->
 
@@ -203,7 +203,6 @@ Whenever possible, the Core Public Service Vocabulary will reuse existing vocabu
                     <p>This document describes the usage of the following entities for a correct usage of the data model: 
                       <br />
                       |
-                      <a href="#"></a> |
                       <a href="#Address">Address</a> |
                       <a href="#Agent">Agent</a> |
                       <a href="#Business Event">Business Event</a> |
@@ -227,6 +226,7 @@ Whenever possible, the Core Public Service Vocabulary will reuse existing vocabu
                       <a href="#Purpose">Purpose</a> |
                       <a href="#Requirement">Requirement</a> |
                       <a href="#Rule">Rule</a> |
+                      <a href="#site">site</a> |
                     </p>
                   </div>
                   
@@ -242,64 +242,6 @@ Whenever possible, the Core Public Service Vocabulary will reuse existing vocabu
             </div>
             <div class="region region--no-space-top">
               <h2 class="h2">Entities</h2>
-            </div>
-            
-              <div class="region region--no-space-top">
-              <h3 class="h3" id=""><a href="http://fixme.com#Site" data-toggle="tooltip" data-content="http://fixme.com#Site" data-placement="right"></a></h3>
-                <div class="region region--no-space-top">
-                  <dl>
-                    <dt>Description</dt><dd></dd>
-                    
-		    
-                    <dt>Properties</dt>
-		     
-                    <dd>For this entity the following properties are defined:
-                      <a href="#%3Aaddress">address</a>.</dd>
-                    
-                  </dl>
-                </div>
-		 
-                <div class="u-table-overflow">
-                  <table class="data-table">
-                    <thead>
-                      <tr class="data-table__header">
-                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Property</th>
-                        <th class="data-table__header-title--sortable">Expected Range</th>
-			<th class="data-table__header-title--sortable">Cardinality</th>
-                        <th class="data-table__header-title--sortable">Description</th>
-                        <th class="data-table__header-title--sortable">Usage</th>
-                        <th class="data-table__header-title--sortable">Codelist</th>
-                      </tr>
-                    </thead>
-
-                    <tbody class="supertype">
-                    
-                      <tr id="%3Aaddress" typeof="rdfs:Property" resource="http://w3.org/ns/locn#address">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="http://w3.org/ns/locn#address" data-toggle="tooltip" data-content="http://w3.org/ns/locn#address" data-placement="right">
-                            address</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			    
-			    <a href="#Address" data-placement="right">Address</a>
-			    
-                          
-                        </td>
-			<td>1</td>
-                        <td property="rdfs:comment">A property to link an organization to its address.</td>
-                        <td property="skos:scopeNote">For consistency with INSPIRE,
-the Location Core Vocabulary's Address class should be used.
-</td>
-                        <td></td>
-                      </tr>
-                    
-                    </tbody>
-                  </table>
-                </div>
-      			  
             </div>
             
               <div class="region region--no-space-top">
@@ -712,7 +654,7 @@ The key difference between a locator and a locator name is that the latter is a 
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Business Event"><a href="https://data.europa.eu/m8g/BusinessEvent" data-toggle="tooltip" data-content="https://data.europa.eu/m8g/BusinessEvent" data-placement="right">Business Event</a></h3>
+              <h3 class="h3" id="Business Event"><a href="http://fixme.com#BusinessEvent" data-toggle="tooltip" data-content="http://fixme.com#BusinessEvent" data-placement="right">Business Event</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Description</dt><dd>This class represents a Business Event, which specialises Event. A Business Event is a specific situation or event in the lifecycle of a business that fulfils one or more needs or (legal) obligations of that business at this specific point in time. A Business Event requires a set of public services to be delivered and consumed in order for the associated business need(s) or obligation(s) to be fulfilled. Business Events are defined within the context of a particular Member State.
@@ -848,7 +790,8 @@ In other words, a Business Event groups together a number of public services tha
                         <td property="skos:scopeNote">The value should follow the flexible format defined for schema.org's opening hours property.
 Following that structure, days of the week are represented by two letter codes (Mo,Tu, We, Th, Fr, Sa, Su).  Lists should be comma separated (for example: Mo, We, Fr) and periods separated by a hyphen (for example: Mo-Fr).
 
-If it is appropriate to add opening hours then this follows the day so if a phone service is available 08:00-20:00 Monday to Saturday and 08:00-18:00 on Sundays that would be encoded as Mo-Sa 08:00-20:00, Su 08:00-18:00.</td>
+If it is appropriate to add opening hours then this follows the day so if a phone service is available 08:00-20:00 Monday to Saturday and 08:00-18:00 on Sundays that would be encoded as Mo-Sa 08:00-20:00, Su 08:00-18:00.
+</td>
                         <td></td>
                       </tr>
                     
@@ -908,7 +851,8 @@ If it is appropriate to add opening hours then this follows the day so if a phon
                         </td>
 			<td>0..*</td>
                         <td property="rdfs:comment">In the majority of cases, the evidence required to use a Public Service will be independent of the channel through which the service is accessed. The Has Input property should normally be used to link a Public Service directly to one or more pieces of Evidence. However, where the type of Evidence required varies according to the channel used to access the Public Service, then the Has Input property may be used at the Channel level. For example, a digital signature may be
-required for an online channel, whereas a physical signature may be required for a face to face service provision.</td>
+required for an online channel, whereas a physical signature may be required for a face to face service provision.
+</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -929,8 +873,8 @@ required for an online channel, whereas a physical signature may be required for
                     <dt>Properties</dt>
 		     
                     <dd>For this entity the following properties are defined:
-                      <a href="#Channel%20Preference%3A"></a>, 
-                      <a href="#Channel%20Preference%3A"></a>.</dd>
+                      <a href="#Channel%20Preference%3Ahas%20channel">has channel</a>,
+                      <a href="#Channel%20Preference%3Ahas%20purpose">has purpose</a>.</dd>
                     
                   </dl>
                 </div>
@@ -950,11 +894,11 @@ required for an online channel, whereas a physical signature may be required for
 
                     <tbody class="supertype">
                     
-                      <tr id="Channel%20Preference%3A" typeof="rdfs:Property" resource="https://data.europa.eu/m8g/ChannelPreference.channel">
+                      <tr id="Channel%20Preference%3Ahas%20channel" typeof="rdfs:Property" resource="https://data.europa.eu/m8g/ChannelPreference.channel">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://data.europa.eu/m8g/ChannelPreference.channel" data-toggle="tooltip" data-content="https://data.europa.eu/m8g/ChannelPreference.channel" data-placement="right">
-                            </a>
+                            has channel</a>
                           </code>
                         </td>
                         <td>
@@ -965,16 +909,16 @@ required for an online channel, whereas a physical signature may be required for
                           
                         </td>
 			<td>1</td>
-                        <td property="rdfs:comment"></td>
-                        <td property="skos:scopeNote"></td>
+                        <td property="rdfs:comment">This property describes the relationship between a purpose and a channel. </td>
+                        <td property="skos:scopeNote">Different channels serve different purposes : information, activation of the service, assistance, appeal, ...</td>
                         <td></td>
                       </tr>
                     
-                      <tr id="Channel%20Preference%3A" typeof="rdfs:Property" resource="https://data.europa.eu/m8g/ChannelPreference.purpose">
+                      <tr id="Channel%20Preference%3Ahas%20purpose" typeof="rdfs:Property" resource="https://data.europa.eu/m8g/ChannelPreference.purpose">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://data.europa.eu/m8g/ChannelPreference.purpose" data-toggle="tooltip" data-content="https://data.europa.eu/m8g/ChannelPreference.purpose" data-placement="right">
-                            </a>
+                            has purpose</a>
                           </code>
                         </td>
                         <td>
@@ -985,8 +929,8 @@ required for an online channel, whereas a physical signature may be required for
                           
                         </td>
 			<td>1</td>
-                        <td property="rdfs:comment"></td>
-                        <td property="skos:scopeNote"></td>
+                        <td property="rdfs:comment">This property describes the relationship between a purpose and a channel. </td>
+                        <td property="skos:scopeNote">Different channels serve different purposes : information, activation of the service, assistance, appeal, ...</td>
                         <td></td>
                       </tr>
                     
@@ -1143,8 +1087,9 @@ The Concept may or may not belong to (member) a certain Collection.
                             
                           
                         </td>
-			<td>1</td>
-                        <td property="rdfs:comment"></td>
+			<td>0..1</td>
+                        <td property="rdfs:comment">A property through which an e-mail address for the Public Organization, or a
+representative of it, can be contacted.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -1163,7 +1108,7 @@ The Concept may or may not belong to (member) a certain Collection.
                             
                           
                         </td>
-			<td>1</td>
+			<td>0..1</td>
                         <td property="rdfs:comment">A property through which a phone number for the Public Organization, or a representative of it, can be contacted.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
@@ -1183,7 +1128,7 @@ The Concept may or may not belong to (member) a certain Collection.
                             
                           
                         </td>
-			<td>1</td>
+			<td>0..1</td>
                         <td property="rdfs:comment">The value of this property is structured text that gives the hours at which the contact point is normally available.</td>
                         <td property="skos:scopeNote">Days are specified using two-letter combinations: Mo, Tu, We, Th, Fr, Sa, Su. For example, if the contact point is open Monday-Friday, 9 -5, the value of the openingHours property would be Mo-Fr 09:00-17:00. If the Contact Point is only available on Tuesday and Thursday between 6 and 8pm, the value would be Tu,Th 16:00-20:00.</td>
                         <td></td>
@@ -1205,7 +1150,7 @@ The Concept may or may not belong to (member) a certain Collection.
                     <dt>Properties</dt>
 		     
                     <dd>For this entity the following properties are defined:
-                      <a href="#Cost%3AcostBreakdown">costBreakdown</a>, 
+                      <a href="#Cost%3Acost%20breakdown">cost breakdown</a>, 
                       <a href="#Cost%3Acurrency">currency</a>, 
                       <a href="#Cost%3Adescription">description</a>, 
                       <a href="#Cost%3Aidentifier">identifier</a>, 
@@ -1231,11 +1176,11 @@ The Concept may or may not belong to (member) a certain Collection.
 
                     <tbody class="supertype">
                     
-                      <tr id="Cost%3AcostBreakdown" typeof="rdfs:Property" resource="https://data.europa.eu/m8g/costBreakdown">
+                      <tr id="Cost%3Acost%20breakdown" typeof="rdfs:Property" resource="https://data.europa.eu/m8g/costBreakdown">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://data.europa.eu/m8g/costBreakdown" data-toggle="tooltip" data-content="https://data.europa.eu/m8g/costBreakdown" data-placement="right">
-                            costBreakdown</a>
+                            cost breakdown</a>
                           </code>
                         </td>
                         <td>
@@ -1347,7 +1292,8 @@ The cost breakdown property is not to be confused with the description property 
                           
                         </td>
 			<td>0..*</td>
-                        <td property="rdfs:comment">This property links the Cost class with one or more instances of the Public Organization class. This property indicates which Public Organization is the Competent Authority for defining the costs associated with the delivery of a particular Public Service.</td>
+                        <td property="rdfs:comment">This property links the Cost class with one or more instances of the Public Organization class. This property indicates which Public Organization is the Competent Authority for defining the costs associated with the delivery of a particular Public Service.
+</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -1498,10 +1444,11 @@ The cost breakdown property is not to be confused with the description property 
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Event"><a href="https://data.europa.eu/m8g/Event" data-toggle="tooltip" data-content="https://data.europa.eu/m8g/Event" data-placement="right">Event</a></h3>
+              <h3 class="h3" id="Event"><a href="http://fixme.com#Event" data-toggle="tooltip" data-content="http://fixme.com#Event" data-placement="right">Event</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
-                    <dt>Description</dt><dd>This class represents an event that can be of any type that triggers, makes use of, or in some way is related to, a Public Service. It is not expected to be used directly, rather, one or other of its subclasses should be used. The properties of the class are, of course, inherited by those subclasses.
+                    <dt>Description</dt><dd>This class represents an event that can be of any type that triggers, makes use of, or in some way is related to, a Public Service. It is not expected to be used directly, rather, one or other of its subclasses should be used. The properties of the class are, of course, inherited by those subclasses.
+
 
 The Event class is used as a hook either to a single related Public Service, such as diagnosis of illness being related to application for sickness benefit ;
 or to a group of Public Services, such as all those related to the establishment of a new business.</dd>
@@ -1629,7 +1576,8 @@ or to a group of Public Services, such as all those related to the establishment
                           
                         </td>
 			<td>0..*</td>
-                        <td property="rdfs:comment">The type property links an Event to a controlled vocabulary of event types and it is the nature of those controlled vocabularies that is the major difference between a business event, such as creating the business in the first place and a life event, such as the birth of a child.</td>
+                        <td property="rdfs:comment">The type property links an Event to a controlled vocabulary of event types and it is the nature of those controlled vocabularies that is the major difference between a business event, such as creating the business in the first place and a life event, such as the birth of a child.
+</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -1650,7 +1598,8 @@ or to a group of Public Services, such as all those related to the establishment
 
 Evidence can be any resource - document, artefact - anything needed for executing the Public Service. In the context of Public Services, Evidence is usually administrative documents or completed application forms. A specific Public Service may require the presence of certain Evidence or combinations of Evidence in order to be delivered.
 
-In some cases, the Output of one service will be Evidence for another service. Such relationships should be described in the associated Rule(s).</dd>
+In some cases, the Output of one service will be Evidence for another service. Such relationships should be described in the associated Rule(s).
+</dd>
                     
 		     
 		    <dt>Subclass of<dt><dd>
@@ -1998,7 +1947,7 @@ While a Group has the characteristics of a Agent, it is also associated with a n
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Life Event"><a href="https://data.europa.eu/m8g/LifeEvent" data-toggle="tooltip" data-content="https://data.europa.eu/m8g/LifeEvent" data-placement="right">Life Event</a></h3>
+              <h3 class="h3" id="Life Event"><a href="http://fixme.com#LifeEvent" data-toggle="tooltip" data-content="http://fixme.com#LifeEvent" data-placement="right">Life Event</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Description</dt><dd>The Life Event class represents an important event or situations in a citizen&#39;s life where public services may be required. Note the scope: an individual will encounter any number of &#39;events&#39; in the general sense of the word. Within this model, the Life Event class only represents an event for which a Public Service is related. For example, a couple becoming engaged is not a  Life Event, getting married is, since only the latter has any relevance to public services.</dd>
@@ -2130,7 +2079,7 @@ While a Group has the characteristics of a Agent, it is also associated with a n
 		     
                     <dd>For this entity the following properties are defined:
                       <a href="#Output%3Adescription">description</a>, 
-                      <a href="#Output%3Ahas%20legal%20resources">has legal resources</a>, 
+                      <a href="#Output%3Ahas%20legal%20resource">has legal resource</a>, 
                       <a href="#Output%3Aidentifier">identifier</a>, 
                       <a href="#Output%3Aname">name</a>, 
                       <a href="#Output%3Aprovides">provides</a>, 
@@ -2175,11 +2124,11 @@ While a Group has the characteristics of a Agent, it is also associated with a n
                         <td></td>
                       </tr>
                     
-                      <tr id="Output%3Ahas%20legal%20resources" typeof="rdfs:Property" resource="TODO">
+                      <tr id="Output%3Ahas%20legal%20resource" typeof="rdfs:Property" resource="TODO">
                         <td>
                           <code property="rdfs:label">
                             <a href="TODO" data-toggle="tooltip" data-content="TODO" data-placement="right">
-                            has legal resources</a>
+                            has legal resource</a>
                           </code>
                         </td>
                         <td>
@@ -2190,7 +2139,7 @@ While a Group has the characteristics of a Agent, it is also associated with a n
                           
                         </td>
 			<td>0..*</td>
-                        <td property="rdfs:comment"></td>
+                        <td property="rdfs:comment">The Has Legal Resource property links an Output to a Legal Resource. It indicates the Legal Resource (e.g. legislation) to which the Output relates, operates or has its legal basis.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -2408,7 +2357,8 @@ this is an extension mechanism for the CSPV-AP, the controlled vocabulary should
                   <dl>
                     <dt>Description</dt><dd>Any Organization that is defined as being part of the public sector by a legal framework at any level.</dd>
                     
-                    <dt>Usage</dt><dd>Within this model the following properties are mandatory: preferred label and spatial. The value of the latter should be a URI from the Administrative Territorial Units Named Authority List maintained by the Publications Office's Metadata Registry.</dd>
+                    <dt>Usage</dt><dd>Within this model the following properties are mandatory: preferred label and spatial. The value of the latter should be a URI from the Administrative Territorial Units Named Authority List maintained by the Publications Office's Metadata Registry.
+</dd>
                     
 		    
                     <dt>Properties</dt>
@@ -2445,7 +2395,7 @@ this is an extension mechanism for the CSPV-AP, the controlled vocabulary should
                         <td>
                           
 			    
-			    <a href="#Site" data-placement="right">Site</a>
+			    <a href="#site" data-placement="right">site</a>
 			    
                           
                         </td>
@@ -2637,7 +2587,8 @@ behalf, to businesses, citizens or others public administrations.</dd>
                           
                         </td>
 			<td>0..*</td>
-                        <td property="rdfs:comment">The Has Legal Resource property links a Public Service to a Legal Resource. It indicates the Legal Resource (e.g. legislation) to which the Public Service relates, operates or has its legal basis.</td>
+                        <td property="rdfs:comment">The Has Legal Resource property links a Public Service to a Legal Resource. It indicates the Legal Resource (e.g. legislation) to which the Public Service relates, operates or has its legal basis.
+</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -2678,7 +2629,8 @@ behalf, to businesses, citizens or others public administrations.</dd>
                         </td>
 			<td>0..*</td>
                         <td property="rdfs:comment">The term Competent Authority is defined in the Services Directive (2006/123/EC) in the following way: &quot;Any body or authority which has a supervisory or regulatory role in a Member State in relation to service activities, including, in particular, administrative authorities,
-including courts acting as such, professional bodies, and those professional associations or other professional organisations which, in the exercise of their legal autonomy, regulate in a collective manner access to service activities or the exercise thereof.&quot;</td>
+including courts acting as such, professional bodies, and those professional associations or other professional organisations which, in the exercise of their legal autonomy, regulate in a collective manner access to service activities or the exercise thereof.&quot;
+</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -2799,7 +2751,8 @@ Public Services may be associated with a particular Event and, likewise, the sam
                           
                         </td>
 			<td>0..*</td>
-                        <td property="rdfs:comment">This property represents the language(s) in which the Public Service is available. This could be one language or multiple languages, for instance in countries with more than one official language. The possible values for this property are described in a controlled vocabulary. The recommended controlled vocabularies are listed in section 4.</td>
+                        <td property="rdfs:comment">This property represents the language(s) in which the Public Service is available. This could be one language or multiple languages, for instance in countries with more than one official language. The possible values for this property are described in a controlled vocabulary. The recommended controlled vocabularies are listed in section 4.
+</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -3312,7 +3265,8 @@ It can also be other types like:
 Instances of the Rule class are FRBR (Functional Requirements for Bibliographic Records) Expressions, that is, a concrete expression such
 as a document, of the more abstract concept of the rules themselves.This model does not envisage instances of the Rule class as machine-readable business rules.
 
-Detailed modelling of the rules related to Public Services is out of scope of this model.</dd>
+Detailed modelling of the rules related to Public Services is out of scope of this model.
+</dd>
                     
 		    
                     <dt>Properties</dt>
@@ -3440,6 +3394,64 @@ the Legal Resource under which the Rules are being defined (see section 3.16).</
 			<td>1</td>
                         <td property="rdfs:comment">This property represents the Name of the Rule.</td>
                         <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
+            </div>
+            
+              <div class="region region--no-space-top">
+              <h3 class="h3" id="site"><a href="http://fixme.com#Site" data-toggle="tooltip" data-content="http://fixme.com#Site" data-placement="right">site</a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Description</dt><dd>An office or other premise at which the organization is located. Many organizations are spread across multiple sites and many sites will host multiple locations.</dd>
+                    
+		    
+                    <dt>Properties</dt>
+		     
+                    <dd>For this entity the following properties are defined:
+                      <a href="#site%3Aaddress">address</a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Property</th>
+                        <th class="data-table__header-title--sortable">Expected Range</th>
+			<th class="data-table__header-title--sortable">Cardinality</th>
+                        <th class="data-table__header-title--sortable">Description</th>
+                        <th class="data-table__header-title--sortable">Usage</th>
+                        <th class="data-table__header-title--sortable">Codelist</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="site%3Aaddress" typeof="rdfs:Property" resource="http://w3.org/ns/locn#address">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://w3.org/ns/locn#address" data-toggle="tooltip" data-content="http://w3.org/ns/locn#address" data-placement="right">
+                            address</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Address" data-placement="right">Address</a>
+			    
+                          
+                        </td>
+			<td>1</td>
+                        <td property="rdfs:comment">A property to link an organization to its address.</td>
+                        <td property="skos:scopeNote">For consistency with INSPIRE,
+the Location Core Vocabulary's Address class should be used.
+</td>
                         <td></td>
                       </tr>
                     

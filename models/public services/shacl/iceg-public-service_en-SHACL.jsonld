@@ -78,6 +78,13 @@
       "sh:targetClass": "http://data.europa.eu/eli/ontology#LegalResource"
     },
     {
+      "@id": "https://semiceu.github.io/shacl/iceg-public-service_en#BusinessEventShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://fixme.com#BusinessEvent"
+    },
+    {
       "@id": "https://semiceu.github.io/shacl/iceg-public-service_en#ChannelShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
@@ -204,8 +211,10 @@
         },
         {
           "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:definition": {
+            "en": "A property through which an e-mail address for the Public Organization, or a\r\nrepresentative of it, can be contacted."
+          },
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
             "en": "has email"
           },
@@ -217,7 +226,6 @@
             "en": "A property through which a phone number for the Public Organization, or a representative of it, can be contacted."
           },
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
             "en": "has telephone"
           },
@@ -229,7 +237,6 @@
             "en": "The value of this property is structured text that gives the hours at which the contact point is normally available."
           },
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
             "en": "opening hours"
           },
@@ -289,6 +296,76 @@
         }
       ],
       "sh:targetClass": "http://fixme.com#Dataset"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-public-service_en#EventShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:definition": {
+            "en": "This property represents a free text description of the Event. The description is likely to be the text that a business or citizen sees for that specific Event when looking for relevant Public Services. Public administrations are therefore encouraged to include a reasonable level of detail in the description."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "description"
+          },
+          "sh:path": "http://purl.org/dc/terms/description"
+        },
+        {
+          "sh:class": "http://fixme.com#Identifier",
+          "sh:definition": {
+            "en": "This property represents an Identifier for the Event."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "identifier"
+          },
+          "sh:path": "http://purl.org/dc/terms/identifier"
+        },
+        {
+          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:definition": {
+            "en": "This property represents the Name (or title) of the Event."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "name"
+          },
+          "sh:path": "http://purl.org/dc/terms/title"
+        },
+        {
+          "sh:class": "http://purl.org/vocab/cpsv#PublicService",
+          "sh:definition": {
+            "en": "This property links an event directly to a public service that is related to it."
+          },
+          "sh:name": {
+            "en": "related service"
+          },
+          "sh:path": "http://purl.org/dc/terms/relation"
+        },
+        {
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:definition": {
+            "en": "The type property links an Event to a controlled vocabulary of event types and it is the nature of those controlled vocabularies that is the major difference between a business event, such as creating the business in the first place and a life event, such as the birth of a child.\r"
+          },
+          "sh:name": {
+            "en": "type"
+          },
+          "sh:path": "http://purl.org/dc/terms/type"
+        }
+      ],
+      "sh:targetClass": "http://fixme.com#Event"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-public-service_en#LifeEventShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://fixme.com#LifeEvent"
     },
     {
       "@id": "https://semiceu.github.io/shacl/iceg-public-service_en#SiteShape",
@@ -420,7 +497,7 @@
           "sh:path": "http://data.europa.eu/m8g/isDescribedAt"
         },
         {
-          "sh:class": "https://data.europa.eu/m8g/Event",
+          "sh:class": "http://fixme.com#Event",
           "sh:definition": {
             "en": "This property links the Public Service to the Event class. Several\r\nPublic Services may be associated with a particular Event and, likewise, the same Public Service may be associated with several different Events. "
           },
@@ -838,13 +915,6 @@
       "sh:targetClass": "https://data.europa.eu/m8g/ChannelPreference.purpose"
     },
     {
-      "@id": "https://semiceu.github.io/shacl/iceg-public-service_en#BusinessEventShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [],
-      "sh:targetClass": "https://data.europa.eu/m8g/BusinessEvent"
-    },
-    {
       "@id": "https://semiceu.github.io/shacl/iceg-public-service_en#CostShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
@@ -856,7 +926,7 @@
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "costBreakdown"
+            "en": "cost breakdown"
           },
           "sh:path": "https://data.europa.eu/m8g/costBreakdown"
         },
@@ -928,69 +998,6 @@
         }
       ],
       "sh:targetClass": "https://data.europa.eu/m8g/Cost"
-    },
-    {
-      "@id": "https://semiceu.github.io/shacl/iceg-public-service_en#EventShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [
-        {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-          "sh:definition": {
-            "en": "This property represents a free text description of the Event. The description is likely to be the text that a business or citizen sees for that specific Event when looking for relevant Public Services. Public administrations are therefore encouraged to include a reasonable level of detail in the description."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "description"
-          },
-          "sh:path": "http://purl.org/dc/terms/description"
-        },
-        {
-          "sh:class": "http://fixme.com#Identifier",
-          "sh:definition": {
-            "en": "This property represents an Identifier for the Event."
-          },
-          "sh:maxCount": "1",
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "identifier"
-          },
-          "sh:path": "http://purl.org/dc/terms/identifier"
-        },
-        {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-          "sh:definition": {
-            "en": "This property represents the Name (or title) of the Event."
-          },
-          "sh:maxCount": "1",
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "name"
-          },
-          "sh:path": "http://purl.org/dc/terms/title"
-        },
-        {
-          "sh:class": "http://purl.org/vocab/cpsv#PublicService",
-          "sh:definition": {
-            "en": "This property links an event directly to a public service that is related to it."
-          },
-          "sh:name": {
-            "en": "related service"
-          },
-          "sh:path": "http://purl.org/dc/terms/relation"
-        },
-        {
-          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
-          "sh:definition": {
-            "en": "The type property links an Event to a controlled vocabulary of event types and it is the nature of those controlled vocabularies that is the major difference between a business event, such as creating the business in the first place and a life event, such as the birth of a child.\r"
-          },
-          "sh:name": {
-            "en": "type"
-          },
-          "sh:path": "http://purl.org/dc/terms/type"
-        }
-      ],
-      "sh:targetClass": "https://data.europa.eu/m8g/Event"
     },
     {
       "@id": "https://semiceu.github.io/shacl/iceg-public-service_en#EvidenceShape",
@@ -1094,13 +1101,6 @@
       "sh:targetClass": "https://data.europa.eu/m8g/Evidence"
     },
     {
-      "@id": "https://semiceu.github.io/shacl/iceg-public-service_en#LifeEventShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [],
-      "sh:targetClass": "https://data.europa.eu/m8g/LifeEvent"
-    },
-    {
       "@id": "https://semiceu.github.io/shacl/iceg-public-service_en#OutputShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
@@ -1118,8 +1118,11 @@
         },
         {
           "sh:class": "http://data.europa.eu/eli/ontology#LegalResource",
+          "sh:definition": {
+            "en": "The Has Legal Resource property links an Output to a Legal Resource. It indicates the Legal Resource (e.g. legislation) to which the Output relates, operates or has its legal basis."
+          },
           "sh:name": {
-            "en": "has legal resources"
+            "en": "has legal resource"
           },
           "sh:path": "TODO"
         },

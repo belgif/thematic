@@ -59,7 +59,7 @@
       "@id": "http://data.europa.eu/m8g/playsRole",
       "@type": "@id"
     },
-    "BusinessEvent": "https://data.europa.eu/m8g/BusinessEvent",
+    "BusinessEvent": "http://fixme.com#BusinessEvent",
     "Channel": "http://fixme.com#Channel",
     "Channel.availabilityRestriction": {
       "@id": "http://schema.org/hoursAvailable",
@@ -175,7 +175,7 @@
       "@id": "http://purl.org/dc/terms/title",
       "@type": "@id"
     },
-    "Event": "https://data.europa.eu/m8g/Event",
+    "Event": "http://fixme.com#Event",
     "Event.description": {
       "@id": "http://purl.org/dc/terms/description",
       "@type": "@id"
@@ -253,7 +253,7 @@
       "@id": "http://purl.org/dc/terms/relation",
       "@type": "@id"
     },
-    "LifeEvent": "https://data.europa.eu/m8g/LifeEvent",
+    "LifeEvent": "http://fixme.com#LifeEvent",
     "OpeningHoursSpecification": "https://schema.org/OpeningHoursSpecification",
     "OpeningHoursSpecification.dayOfWeek": {
       "@id": "https://schema.org/dayOfWeek",
@@ -272,7 +272,7 @@
       "@id": "http://purl.org/dc/terms/description",
       "@type": "@id"
     },
-    "Output.hasLegalResources": {
+    "Output.hasLegalResource": {
       "@container": "@set",
       "@id": "TODO",
       "@type": "@id"
