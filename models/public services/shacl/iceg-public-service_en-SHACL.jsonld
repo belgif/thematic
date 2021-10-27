@@ -1299,7 +1299,7 @@
         {
           "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
-            "en": "This property represents the official Name of the Criterion Requirement."
+            "en": "This property represents the official Name of the Requirement."
           },
           "sh:maxCount": "1",
           "sh:minCount": "1",
