@@ -45,7 +45,7 @@
       "@id": "http://www.w3.org/ns/locn#thoroughfare",
       "@type": "@id"
     },
-    "AdministrativeTerritorialUnits": "http://semiceu.github.io/CPOV/releases/2.00/#Administrative%20Territorial%20Units",
+    "AdministrativeTerritorialUnits": "http://data.europa.eu/88u/dataset/atu-type",
     "AdministrativeTerritorialUnits.geometry": {
       "@id": "http://www.w3.org/ns/locn#geometry",
       "@type": "@id"
@@ -78,9 +78,9 @@
       "@id": "http://www.w3.org/ns/prov#startedAtTime",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
-    "ContactPoint": "http://schema.org/ContactPoint",
+    "ContactPoint": "https://schema.org/ContactPoint",
     "ContactPoint.availabilityRestriction": {
-      "@id": "http://schema.org/hoursAvailable",
+      "@id": "https://schema.org/hoursAvailable",
       "@type": "@id"
     },
     "ContactPoint.hasEmail": {
@@ -96,7 +96,7 @@
       "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
     "Document": "http://xmlns.com/foaf/0.1/Document",
-    "FoundationEvent": "http://semiceu.github.io/CPOV/releases/2.00/#Foundation%20Event",
+    "FoundationEvent": "http://data.europa.eu/m8g/FoundationEvent",
     "Geometry": "http://www.w3.org/ns/locn#Geometry",
     "Geometry.coordinates": {
       "@id": "http://data.europa.eu/m8g/coordinates",
@@ -126,31 +126,6 @@
       "@id": "http://www.opengis.net/ont/geosparql#asWKT",
       "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
-    "Identifier": "http://www.w3.org/ns/adms#Identifier",
-    "Identifier.dateOfIssue": {
-      "@id": "http://purl.org/dc/terms/issued",
-      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
-    },
-    "Identifier.identifier": {
-      "@id": "http://www.w3.org/2004/02/skos/core#notation",
-      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
-    },
-    "Identifier.issuingAuthorityName": {
-      "@id": "http://www.w3.org/ns/adms#schemeAgency",
-      "@type": "@id"
-    },
-    "Identifier.issuingAuthorityUri": {
-      "@id": "http://purl.org/dc/terms/creator",
-      "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
-    },
-    "Identifier.schemeName": {
-      "@id": "http://purl.org/dc/terms/conformsTo",
-      "@type": "@id"
-    },
-    "Identifier.schemeUri": {
-      "@id": "http://purl.org/dc/terms/conformsTo",
-      "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
-    },
     "ImageObject": "https://schema.org/ImageObject",
     "LegalResource": "http://data.europa.eu/eli/ontology#LegalResource",
     "LegalResource.implements": {
@@ -158,17 +133,17 @@
       "@id": "http://purl.org/vocab/cpsv#implements",
       "@type": "@id"
     },
-    "OpeningHoursSpecification": "http://schema.org/OpeningHoursSpecification",
+    "OpeningHoursSpecification": "https://schema.org/OpeningHoursSpecification",
     "OpeningHoursSpecification.dayOfWeek": {
-      "@id": "http://schema.org/dayOfWeek",
+      "@id": "https://schema.org/dayOfWeek",
       "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
     },
     "OpeningHoursSpecification.validFrom": {
-      "@id": "http://schema.org/validFrom",
+      "@id": "https://schema.org/validFrom",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "OpeningHoursSpecification.validThrough": {
-      "@id": "http://schema.org/validThrough",
+      "@id": "https://schema.org/validThrough",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "Organization": "http://www.w3.org/ns/org#organization",
@@ -192,7 +167,7 @@
     },
     "Organization.contactPoint": {
       "@container": "@set",
-      "@id": "http://schema.org/contactPoint",
+      "@id": "https://schema.org/contactPoint",
       "@type": "@id"
     },
     "Organization.description": {
@@ -231,10 +206,6 @@
     "Organization.homepage": {
       "@container": "@set",
       "@id": "http://xmlns.com/foaf/0.1/homepage",
-      "@type": "@id"
-    },
-    "Organization.identifier": {
-      "@id": "http://fixme.com#identifier",
       "@type": "@id"
     },
     "Organization.linksToDatabase": {
@@ -300,11 +271,11 @@
       "@type": "@id"
     },
     "Person.dateOfBirth": {
-      "@id": "http://schema.org/birthDate",
+      "@id": "https://schema.org/birthDate",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "Person.dateOfDeath": {
-      "@id": "http://schema.org/deathDate",
+      "@id": "https://schema.org/deathDate",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "Person.familyName (surname)": {
@@ -324,10 +295,6 @@
       "@id": "http://data.europa.eu/m8g/holds",
       "@type": "@id"
     },
-    "Person.identifier": {
-      "@id": "https://data.europa.eu/m8g/identifier",
-      "@type": "@id"
-    },
     "Person.memberOf": {
       "@container": "@set",
       "@id": "http://data.europa.eu/m8g/memberOf",
@@ -338,7 +305,7 @@
       "@type": "@id"
     },
     "Person.registeredAddress": {
-      "@id": "http://w3.org/ns/locn#address",
+      "@id": "http://www.w3.org/ns/locn#address",
       "@type": "@id"
     },
     "Person.title": {
@@ -356,7 +323,7 @@
       "@id": "http://www.w3.org/ns/org#role",
       "@type": "@id"
     },
-    "PublicOrganization": "http://www.w3.org/ns/org#organization",
+    "PublicOrganization": "http://data.europa.eu/m8g/PublicOrganisation",
     "PublicOrganization.legalForm": {
       "@id": "http://data.europa.eu/m8g/legalForm",
       "@type": "@id"
