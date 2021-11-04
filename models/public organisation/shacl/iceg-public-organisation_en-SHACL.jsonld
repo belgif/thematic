@@ -81,7 +81,7 @@
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],
-      "sh:targetClass": "http://data.europa.eu/m8g/FoundationEvent"
+      "sh:targetClass": "http://www.iceg.be/FoundationEvent"
     },
     {
       "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_en#PublicOrganizationShape",
@@ -97,7 +97,7 @@
           "sh:name": {
             "en": "legal form"
           },
-          "sh:path": "http://data.europa.eu/m8g/legalForm"
+          "sh:path": "http://www.iceg.be/PublicOrganization/LegalForm"
         },
         {
           "sh:class": "http://data.europa.eu/88u/dataset/atu-type",
@@ -110,7 +110,82 @@
           "sh:path": "http://purl.org/dc/terms/spatial"
         }
       ],
-      "sh:targetClass": "http://data.europa.eu/m8g/PublicOrganisation"
+      "sh:targetClass": "http://www.iceg.be/PublicOrganization"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_en#IdentifierShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "sh:definition": {
+            "en": "The date on which the Identifier was assigned."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "date of issue"
+          },
+          "sh:path": "http://purl.org/dc/terms/issued"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:definition": {
+            "en": "The value of this property is the Identifier itself."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "identifier"
+          },
+          "sh:path": "http://www.w3.org/2004/02/skos/core#notation"
+        },
+        {
+          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:definition": {
+            "en": "The name of the agency responsible for issuing the Identifier."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "issuing authority name"
+          },
+          "sh:path": "http://www.w3.org/ns/adms#schemeAgency"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#anyURI",
+          "sh:definition": {
+            "en": "The URI of the issuing authority."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "issuing authority URI"
+          },
+          "sh:path": "http://purl.org/dc/terms/creator"
+        },
+        {
+          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:definition": {
+            "en": "Name of the scheme used to construct the identifier."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "scheme name"
+          },
+          "sh:path": "http://purl.org/dc/terms/conformsTo"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#anyURI",
+          "sh:definition": {
+            "en": "URI of the scheme used to construct the identifier."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "scheme URI"
+          },
+          "sh:path": "http://purl.org/dc/terms/conformsTo"
+        }
+      ],
+      "sh:targetClass": "http://www.w3.org/ns/adms#Identifier"
     },
     {
       "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_en#AddressShape",
@@ -142,7 +217,7 @@
           "sh:path": "http://www.w3.org/ns/locn#addressID"
         },
         {
-          "sh:class": "http://fixme.com#Code",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
             "en": "The name or names of a unit of administration where a Member State has and/or exercises jurisdictional rights, for local, regional and national governance. Level 1 refers to the uppermost administrative unit for the address, almost always a country."
           },
@@ -266,7 +341,7 @@
           "sh:name": {
             "en": "coordinates"
           },
-          "sh:path": "http://data.europa.eu/m8g/coordinates"
+          "sh:path": "http://www.iceg.be/Geometry/Coordinates"
         },
         {
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#anyURI",
@@ -277,10 +352,10 @@
           "sh:name": {
             "en": "crs"
           },
-          "sh:path": "http://data.europa.eu/m8g/crs"
+          "sh:path": "http://www.iceg.be/Geometry/Crs"
         },
         {
-          "sh:class": "http://fixme.com#Code",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
             "en": "The geometry type, e.g. point, line or polygon."
           },
@@ -288,7 +363,7 @@
           "sh:name": {
             "en": "geometry type"
           },
-          "sh:path": "http://data.europa.eu/m8g/geometry"
+          "sh:path": "http://www.iceg.be/Geometry/GeometryType"
         },
         {
           "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
@@ -492,14 +567,14 @@
           "sh:path": "http://www.w3.org/2004/02/skos/core#altLabel"
         },
         {
-          "sh:class": "http://fixme.com#Code",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
             "en": "Certifications, licences or registrations that are of importance for third parties or whose publication is mandatory"
           },
           "sh:name": {
             "en": "certification"
           },
-          "sh:path": "http://data.europa.eu/m8g/certification"
+          "sh:path": "http://www.iceg.be/Organization/Certification"
         },
         {
           "sh:class": "http://www.w3.org/ns/org#ChangeEvent",
@@ -520,7 +595,7 @@
           "sh:name": {
             "en": "company registration number"
           },
-          "sh:path": "http://data.europa.eu/m8g/companyregistrationNumber"
+          "sh:path": "http://www.iceg.be/Organization/CompanyRegistrationNumber"
         },
         {
           "sh:class": "https://schema.org/ContactPoint",
@@ -541,10 +616,10 @@
           "sh:name": {
             "en": "description"
           },
-          "sh:path": "http://data.europa.eu/m8g/description"
+          "sh:path": "http://www.iceg.be/Organization/Description"
         },
         {
-          "sh:class": "http://fixme.com#Code",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
             "en": "Ex officio striking off of the entity for failure to submit their financial statements"
           },
@@ -552,7 +627,7 @@
           "sh:name": {
             "en": "ex officio striking off"
           },
-          "sh:path": "http://data.europa.eu/m8g/exOfficioStrikingOff"
+          "sh:path": "http://www.iceg.be/Organization/ExOfficioStrikingOff"
         },
         {
           "sh:class": "http://www.w3.org/ns/org#organization",
@@ -563,16 +638,6 @@
             "en": "has member"
           },
           "sh:path": "http://www.w3.org/ns/org#hasMember"
-        },
-        {
-          "sh:class": "http://www.w3.org/ns/person#Person",
-          "sh:definition": {
-            "en": "Indicates that Person is a member of the Organization with no indication of the nature of that membership or the role played"
-          },
-          "sh:name": {
-            "en": "has member"
-          },
-          "sh:path": "http://data.europa.eu/m8g/hasMember"
         },
         {
           "sh:class": "http://www.w3.org/ns/org#Post",
@@ -633,7 +698,7 @@
           "sh:name": {
             "en": "links to database"
           },
-          "sh:path": "http://data.europa.eu/m8g/linkToDatabase"
+          "sh:path": "http://www.iceg.be/Organization/LinksToTheDatabase"
         },
         {
           "sh:class": "https://schema.org/ImageObject",
@@ -706,10 +771,10 @@
           "sh:name": {
             "en": "start date of this data"
           },
-          "sh:path": "http://data.europa.eu/m8g/startDateOfData"
+          "sh:path": "http://www.iceg.be/Organization/StartDateOfThisData"
         },
         {
-          "sh:class": "http://fixme.com#Code",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
             "en": "Entity status, e.g. active, closed, cancelled, identified\r\nlegal creation, stopped"
           },
@@ -717,7 +782,7 @@
           "sh:name": {
             "en": "status"
           },
-          "sh:path": "http://data.europa.eu/m8g/status"
+          "sh:path": "http://www.iceg.be/Organization/Status"
         },
         {
           "sh:class": "http://www.w3.org/ns/org#organization",
@@ -818,27 +883,6 @@
           "sh:path": "http://xmlns.com/foaf/0.1/givenName"
         },
         {
-          "sh:class": "http://www.w3.org/ns/org#Post",
-          "sh:definition": {
-            "en": "Indicates a Post held by a Person."
-          },
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "holds"
-          },
-          "sh:path": "http://data.europa.eu/m8g/holds"
-        },
-        {
-          "sh:class": "http://www.w3.org/ns/org#organization",
-          "sh:definition": {
-            "en": "Indicates a Person who is a member of the subject Organization"
-          },
-          "sh:name": {
-            "en": "member of"
-          },
-          "sh:path": "http://data.europa.eu/m8g/memberOf"
-        },
-        {
           "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "en": "Name based on the given name of the Person's father."
@@ -850,17 +894,6 @@
           "sh:path": "http://www.w3.org/ns/person#patronymicName"
         },
         {
-          "sh:class": "http://www.w3.org/ns/locn#Address",
-          "sh:definition": {
-            "en": "The registered address of the Person."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "registered address"
-          },
-          "sh:path": "http://www.w3.org/ns/locn#address"
-        },
-        {
           "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "en": "A word or name that describes a person's job or status in a company or organization"
@@ -869,7 +902,7 @@
           "sh:name": {
             "en": "title"
           },
-          "sh:path": "http://data.europa.eu/m8g/title"
+          "sh:path": "http://www.iceg.be/Person/Title"
         }
       ],
       "sh:targetClass": "http://www.w3.org/ns/person#Person"
