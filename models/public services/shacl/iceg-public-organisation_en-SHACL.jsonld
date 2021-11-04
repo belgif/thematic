@@ -40,6 +40,25 @@
   "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_en",
   "shapes": [
     {
+      "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_en#AdministrativeTerritorialUnitsShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "sh:class": "http://www.w3.org/ns/locn#Geometry",
+          "sh:definition": {
+            "en": "The geometry relationship associates a Administrative Territorial Unit with the Geometry class."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "geometry"
+          },
+          "sh:path": "http://www.w3.org/ns/locn#geometry"
+        }
+      ],
+      "sh:targetClass": "http://data.europa.eu/88u/dataset/atu-type"
+    },
+    {
       "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_en#Legal ResourceShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
@@ -58,129 +77,40 @@
       "sh:targetClass": "http://data.europa.eu/eli/ontology#LegalResource"
     },
     {
-      "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_en#ContactPointShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [
-        {
-          "sh:class": "http://schema.org/OpeningHoursSpecification",
-          "sh:definition": {
-            "en": "The availability restriction property links a Contact Point to details of specific details of its opening hours that override the general case."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "availability restriction"
-          },
-          "sh:path": "http://schema.org/hoursAvailable"
-        },
-        {
-          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
-          "sh:definition": {
-            "en": "A property through which an e-mail address for the Public Organization, or a\r\nrepresentative of it, can be contacted."
-          },
-          "sh:maxCount": "1",
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "has email"
-          },
-          "sh:path": "https://schema.org/email"
-        },
-        {
-          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
-          "sh:definition": {
-            "en": "A property through which a phone number for the Public Organization, or a representative of it, can be contacted."
-          },
-          "sh:maxCount": "1",
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "has telephone"
-          },
-          "sh:path": "https://schema.org/telephone"
-        },
-        {
-          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
-          "sh:definition": {
-            "en": "The value of this property is structured text that gives the hours at which the contact point is normally available."
-          },
-          "sh:maxCount": "1",
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "opening hours"
-          },
-          "sh:path": "https://schema.org/openingHours"
-        }
-      ],
-      "sh:targetClass": "http://schema.org/ContactPoint"
-    },
-    {
-      "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_en#OpeningHoursSpecificationShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [
-        {
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#anyURI",
-          "sh:definition": {
-            "en": "The day of the week for which these opening hours are valid."
-          },
-          "sh:maxCount": "1",
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "day of week"
-          },
-          "sh:path": "http://schema.org/dayOfWeek"
-        },
-        {
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
-          "sh:definition": {
-            "en": "The date when the Opening Hours Specification becomes valid."
-          },
-          "sh:maxCount": "1",
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "valid from"
-          },
-          "sh:path": "http://schema.org/validFrom"
-        },
-        {
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
-          "sh:definition": {
-            "en": "The date after when the Opening Hours Specification is not valid."
-          },
-          "sh:maxCount": "1",
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "valid through"
-          },
-          "sh:path": "http://schema.org/validThrough"
-        }
-      ],
-      "sh:targetClass": "http://schema.org/OpeningHoursSpecification"
-    },
-    {
-      "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_en#AdministrativeTerritorialUnitsShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [
-        {
-          "sh:class": "http://www.w3.org/ns/locn#Geometry",
-          "sh:definition": {
-            "en": "The geometry relationship associates a Administrative Territorial Unit with the Geometry class."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "geometry"
-          },
-          "sh:path": "http://www.w3.org/ns/locn#geometry"
-        }
-      ],
-      "sh:targetClass": "http://semiceu.github.io/CPOV/releases/2.00/#Administrative%20Territorial%20Units"
-    },
-    {
       "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_en#FoundationEventShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],
-      "sh:targetClass": "http://semiceu.github.io/CPOV/releases/2.00/#Foundation%20Event"
+      "sh:targetClass": "http://www.iceg.be/FoundationEvent"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_en#PublicOrganizationShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:definition": {
+            "en": "The type of entity as defined by the Belgian law"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "legal form"
+          },
+          "sh:path": "http://www.iceg.be/PublicOrganization/LegalForm"
+        },
+        {
+          "sh:class": "http://data.europa.eu/88u/dataset/atu-type",
+          "sh:definition": {
+            "en": "This property links an Organization to the Administrative Region(s) that it covers."
+          },
+          "sh:name": {
+            "en": "spatial"
+          },
+          "sh:path": "http://purl.org/dc/terms/spatial"
+        }
+      ],
+      "sh:targetClass": "http://www.iceg.be/PublicOrganization"
     },
     {
       "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_en#IdentifierShape",
@@ -287,7 +217,7 @@
           "sh:path": "http://www.w3.org/ns/locn#addressID"
         },
         {
-          "sh:class": "http://fixme.com#Code",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
             "en": "The name or names of a unit of administration where a Member State has and/or exercises jurisdictional rights, for local, regional and national governance. Level 1 refers to the uppermost administrative unit for the address, almost always a country."
           },
@@ -411,7 +341,7 @@
           "sh:name": {
             "en": "coordinates"
           },
-          "sh:path": "http://data.europa.eu/m8g/coordinates"
+          "sh:path": "http://www.iceg.be/Geometry/Coordinates"
         },
         {
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#anyURI",
@@ -422,10 +352,10 @@
           "sh:name": {
             "en": "crs"
           },
-          "sh:path": "http://data.europa.eu/m8g/crs"
+          "sh:path": "http://www.iceg.be/Geometry/Crs"
         },
         {
-          "sh:class": "http://fixme.com#Code",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
             "en": "The geometry type, e.g. point, line or polygon."
           },
@@ -433,7 +363,7 @@
           "sh:name": {
             "en": "geometry type"
           },
-          "sh:path": "http://data.europa.eu/m8g/geometry"
+          "sh:path": "http://www.iceg.be/Geometry/GeometryType"
         },
         {
           "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
@@ -637,14 +567,14 @@
           "sh:path": "http://www.w3.org/2004/02/skos/core#altLabel"
         },
         {
-          "sh:class": "http://fixme.com#Code",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
             "en": "Certifications, licences or registrations that are of importance for third parties or whose publication is mandatory"
           },
           "sh:name": {
             "en": "certification"
           },
-          "sh:path": "http://data.europa.eu/m8g/certification"
+          "sh:path": "http://www.iceg.be/Organization/Certification"
         },
         {
           "sh:class": "http://www.w3.org/ns/org#ChangeEvent",
@@ -665,17 +595,17 @@
           "sh:name": {
             "en": "company registration number"
           },
-          "sh:path": "http://data.europa.eu/m8g/companyregistrationNumber"
+          "sh:path": "http://www.iceg.be/Organization/CompanyRegistrationNumber"
         },
         {
-          "sh:class": "http://schema.org/ContactPoint",
+          "sh:class": "https://schema.org/ContactPoint",
           "sh:definition": {
             "en": "The contact point property links to a Contact Point that provides contact\r\ninformation, in particular a phone number and e-mail address."
           },
           "sh:name": {
             "en": "contact point"
           },
-          "sh:path": "http://schema.org/contactPoint"
+          "sh:path": "https://schema.org/contactPoint"
         },
         {
           "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
@@ -686,10 +616,10 @@
           "sh:name": {
             "en": "description"
           },
-          "sh:path": "http://data.europa.eu/m8g/description"
+          "sh:path": "http://www.iceg.be/Organization/Description"
         },
         {
-          "sh:class": "http://fixme.com#Code",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
             "en": "Ex officio striking off of the entity for failure to submit their financial statements"
           },
@@ -697,7 +627,7 @@
           "sh:name": {
             "en": "ex officio striking off"
           },
-          "sh:path": "http://data.europa.eu/m8g/exOfficioStrikingOff"
+          "sh:path": "http://www.iceg.be/Organization/ExOfficioStrikingOff"
         },
         {
           "sh:class": "http://www.w3.org/ns/org#organization",
@@ -708,16 +638,6 @@
             "en": "has member"
           },
           "sh:path": "http://www.w3.org/ns/org#hasMember"
-        },
-        {
-          "sh:class": "http://www.w3.org/ns/person#Person",
-          "sh:definition": {
-            "en": "Indicates that Person is a member of the Organization with no indication of the nature of that membership or the role played"
-          },
-          "sh:name": {
-            "en": "has member"
-          },
-          "sh:path": "http://data.europa.eu/m8g/hasMember"
         },
         {
           "sh:class": "http://www.w3.org/ns/org#Post",
@@ -771,17 +691,6 @@
           "sh:path": "http://xmlns.com/foaf/0.1/homepage"
         },
         {
-          "sh:class": "http://www.w3.org/ns/adms#Identifier",
-          "sh:definition": {
-            "en": "Many organizations are referred to by an acronym or some other identifier"
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "identifier"
-          },
-          "sh:path": "http://fixme.com#identifier"
-        },
-        {
           "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "en": "Links to databases containing data not recorded in the CBE/KBO"
@@ -789,7 +698,7 @@
           "sh:name": {
             "en": "links to database"
           },
-          "sh:path": "http://data.europa.eu/m8g/linkToDatabase"
+          "sh:path": "http://www.iceg.be/Organization/LinksToTheDatabase"
         },
         {
           "sh:class": "https://schema.org/ImageObject",
@@ -862,10 +771,10 @@
           "sh:name": {
             "en": "start date of this data"
           },
-          "sh:path": "http://data.europa.eu/m8g/startDateOfData"
+          "sh:path": "http://www.iceg.be/Organization/StartDateOfThisData"
         },
         {
-          "sh:class": "http://fixme.com#Code",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
             "en": "Entity status, e.g. active, closed, cancelled, identified\r\nlegal creation, stopped"
           },
@@ -873,7 +782,7 @@
           "sh:name": {
             "en": "status"
           },
-          "sh:path": "http://data.europa.eu/m8g/status"
+          "sh:path": "http://www.iceg.be/Organization/Status"
         },
         {
           "sh:class": "http://www.w3.org/ns/org#organization",
@@ -884,35 +793,6 @@
             "en": "sub organization of"
           },
           "sh:path": "http://www.w3.org/ns/org#subOrganizationOf"
-        }
-      ],
-      "sh:targetClass": "http://www.w3.org/ns/org#organization"
-    },
-    {
-      "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_en#PublicOrganizationShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [
-        {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-          "sh:definition": {
-            "en": "The type of entity as defined by the Belgian law"
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "legal form"
-          },
-          "sh:path": "http://data.europa.eu/m8g/legalForm"
-        },
-        {
-          "sh:class": "http://semiceu.github.io/CPOV/releases/2.00/#Administrative%20Territorial%20Units",
-          "sh:definition": {
-            "en": "This property links an Organization to the Administrative Region(s) that it covers."
-          },
-          "sh:name": {
-            "en": "spatial"
-          },
-          "sh:path": "http://purl.org/dc/terms/spatial"
         }
       ],
       "sh:targetClass": "http://www.w3.org/ns/org#organization"
@@ -953,7 +833,7 @@
           "sh:name": {
             "en": "date of birth"
           },
-          "sh:path": "http://schema.org/birthDate"
+          "sh:path": "https://schema.org/birthDate"
         },
         {
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
@@ -964,7 +844,7 @@
           "sh:name": {
             "en": "date of death"
           },
-          "sh:path": "http://schema.org/deathDate"
+          "sh:path": "https://schema.org/deathDate"
         },
         {
           "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
@@ -1003,38 +883,6 @@
           "sh:path": "http://xmlns.com/foaf/0.1/givenName"
         },
         {
-          "sh:class": "http://www.w3.org/ns/org#Post",
-          "sh:definition": {
-            "en": "Indicates a Post held by a Person."
-          },
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "holds"
-          },
-          "sh:path": "http://data.europa.eu/m8g/holds"
-        },
-        {
-          "sh:class": "http://www.w3.org/ns/adms#Identifier",
-          "sh:definition": {
-            "en": "The identifier relation is used to link a Person to any formally issued Identifier for that Person."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "identifier"
-          },
-          "sh:path": "https://data.europa.eu/m8g/identifier"
-        },
-        {
-          "sh:class": "http://www.w3.org/ns/org#organization",
-          "sh:definition": {
-            "en": "Indicates a Person who is a member of the subject Organization"
-          },
-          "sh:name": {
-            "en": "member of"
-          },
-          "sh:path": "http://data.europa.eu/m8g/memberOf"
-        },
-        {
           "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "en": "Name based on the given name of the Person's father."
@@ -1046,17 +894,6 @@
           "sh:path": "http://www.w3.org/ns/person#patronymicName"
         },
         {
-          "sh:class": "http://www.w3.org/ns/locn#Address",
-          "sh:definition": {
-            "en": "The registered address of the Person."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "registered address"
-          },
-          "sh:path": "http://w3.org/ns/locn#address"
-        },
-        {
           "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "en": "A word or name that describes a person's job or status in a company or organization"
@@ -1065,7 +902,7 @@
           "sh:name": {
             "en": "title"
           },
-          "sh:path": "http://data.europa.eu/m8g/title"
+          "sh:path": "http://www.iceg.be/Person/Title"
         }
       ],
       "sh:targetClass": "http://www.w3.org/ns/person#Person"
@@ -1078,11 +915,110 @@
       "sh:targetClass": "http://xmlns.com/foaf/0.1/Document"
     },
     {
+      "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_en#ContactPointShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "sh:class": "https://schema.org/OpeningHoursSpecification",
+          "sh:definition": {
+            "en": "The availability restriction property links a Contact Point to details of specific details of its opening hours that override the general case."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "availability restriction"
+          },
+          "sh:path": "https://schema.org/hoursAvailable"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:definition": {
+            "en": "A property through which an e-mail address for the Public Organization, or a\r\nrepresentative of it, can be contacted."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "has email"
+          },
+          "sh:path": "https://schema.org/email"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:definition": {
+            "en": "A property through which a phone number for the Public Organization, or a representative of it, can be contacted."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "has telephone"
+          },
+          "sh:path": "https://schema.org/telephone"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:definition": {
+            "en": "The value of this property is structured text that gives the hours at which the contact point is normally available."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "opening hours"
+          },
+          "sh:path": "https://schema.org/openingHours"
+        }
+      ],
+      "sh:targetClass": "https://schema.org/ContactPoint"
+    },
+    {
       "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_en#ImageObjectShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],
       "sh:targetClass": "https://schema.org/ImageObject"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_en#OpeningHoursSpecificationShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#anyURI",
+          "sh:definition": {
+            "en": "The day of the week for which these opening hours are valid."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "day of week"
+          },
+          "sh:path": "https://schema.org/dayOfWeek"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "sh:definition": {
+            "en": "The date when the Opening Hours Specification becomes valid."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "valid from"
+          },
+          "sh:path": "https://schema.org/validFrom"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "sh:definition": {
+            "en": "The date after when the Opening Hours Specification is not valid."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "valid through"
+          },
+          "sh:path": "https://schema.org/validThrough"
+        }
+      ],
+      "sh:targetClass": "https://schema.org/OpeningHoursSpecification"
     },
     {
       "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_en#RoleShape",

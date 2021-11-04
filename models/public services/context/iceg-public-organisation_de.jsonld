@@ -2,8 +2,8 @@
   "@context": {
     "EnterYourTranslationHere": "https://www.w3.org/ns/org#role",
     "EnterYourTranslationHere.enterYourTranslationHere": {
-      "@id": "https://schema.org/telephone",
-      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+      "@id": "https://schema.org/validThrough",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     }
   }
 }

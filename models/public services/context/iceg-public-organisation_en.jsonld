@@ -45,7 +45,7 @@
       "@id": "http://www.w3.org/ns/locn#thoroughfare",
       "@type": "@id"
     },
-    "AdministrativeTerritorialUnits": "http://semiceu.github.io/CPOV/releases/2.00/#Administrative%20Territorial%20Units",
+    "AdministrativeTerritorialUnits": "http://data.europa.eu/88u/dataset/atu-type",
     "AdministrativeTerritorialUnits.geometry": {
       "@id": "http://www.w3.org/ns/locn#geometry",
       "@type": "@id"
@@ -78,9 +78,9 @@
       "@id": "http://www.w3.org/ns/prov#startedAtTime",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
-    "ContactPoint": "http://schema.org/ContactPoint",
+    "ContactPoint": "https://schema.org/ContactPoint",
     "ContactPoint.availabilityRestriction": {
-      "@id": "http://schema.org/hoursAvailable",
+      "@id": "https://schema.org/hoursAvailable",
       "@type": "@id"
     },
     "ContactPoint.hasEmail": {
@@ -96,18 +96,18 @@
       "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
     "Document": "http://xmlns.com/foaf/0.1/Document",
-    "FoundationEvent": "http://semiceu.github.io/CPOV/releases/2.00/#Foundation%20Event",
+    "FoundationEvent": "http://www.iceg.be/FoundationEvent",
     "Geometry": "http://www.w3.org/ns/locn#Geometry",
     "Geometry.coordinates": {
-      "@id": "http://data.europa.eu/m8g/coordinates",
+      "@id": "http://www.iceg.be/Geometry/Coordinates",
       "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
     "Geometry.crs": {
-      "@id": "http://data.europa.eu/m8g/crs",
+      "@id": "http://www.iceg.be/Geometry/Crs",
       "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
     },
     "Geometry.geometryType": {
-      "@id": "http://data.europa.eu/m8g/geometry",
+      "@id": "http://www.iceg.be/Geometry/GeometryType",
       "@type": "@id"
     },
     "Geometry.gml": {
@@ -158,17 +158,17 @@
       "@id": "http://purl.org/vocab/cpsv#implements",
       "@type": "@id"
     },
-    "OpeningHoursSpecification": "http://schema.org/OpeningHoursSpecification",
+    "OpeningHoursSpecification": "https://schema.org/OpeningHoursSpecification",
     "OpeningHoursSpecification.dayOfWeek": {
-      "@id": "http://schema.org/dayOfWeek",
+      "@id": "https://schema.org/dayOfWeek",
       "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
     },
     "OpeningHoursSpecification.validFrom": {
-      "@id": "http://schema.org/validFrom",
+      "@id": "https://schema.org/validFrom",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "OpeningHoursSpecification.validThrough": {
-      "@id": "http://schema.org/validThrough",
+      "@id": "https://schema.org/validThrough",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "Organization": "http://www.w3.org/ns/org#organization",
@@ -178,7 +178,7 @@
     },
     "Organization.certification": {
       "@container": "@set",
-      "@id": "http://data.europa.eu/m8g/certification",
+      "@id": "http://www.iceg.be/Organization/Certification",
       "@type": "@id"
     },
     "Organization.changedBy": {
@@ -187,20 +187,20 @@
       "@type": "@id"
     },
     "Organization.companyRegistrationNumber": {
-      "@id": "http://data.europa.eu/m8g/companyregistrationNumber",
+      "@id": "http://www.iceg.be/Organization/CompanyRegistrationNumber",
       "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
     "Organization.contactPoint": {
       "@container": "@set",
-      "@id": "http://schema.org/contactPoint",
+      "@id": "https://schema.org/contactPoint",
       "@type": "@id"
     },
     "Organization.description": {
-      "@id": "http://data.europa.eu/m8g/description",
+      "@id": "http://www.iceg.be/Organization/Description",
       "@type": "@id"
     },
     "Organization.exOfficioStrikingOff": {
-      "@id": "http://data.europa.eu/m8g/exOfficioStrikingOff",
+      "@id": "http://www.iceg.be/Organization/ExOfficioStrikingOff",
       "@type": "@id"
     },
     "Organization.hasMember": {
@@ -233,13 +233,9 @@
       "@id": "http://xmlns.com/foaf/0.1/homepage",
       "@type": "@id"
     },
-    "Organization.identifier": {
-      "@id": "http://fixme.com#identifier",
-      "@type": "@id"
-    },
     "Organization.linksToDatabase": {
       "@container": "@set",
-      "@id": "http://data.europa.eu/m8g/linkToDatabase",
+      "@id": "http://www.iceg.be/Organization/LinksToTheDatabase",
       "@type": "@id"
     },
     "Organization.logo": {
@@ -272,11 +268,11 @@
       "@type": "@id"
     },
     "Organization.startDateOfThisData": {
-      "@id": "http://data.europa.eu/m8g/startDateOfData",
+      "@id": "http://www.iceg.be/Organization/StartDateOfThisData",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "Organization.status": {
-      "@id": "http://data.europa.eu/m8g/status",
+      "@id": "http://www.iceg.be/Organization/Status",
       "@type": "@id"
     },
     "Organization.subOrganizationOf": {
@@ -300,11 +296,11 @@
       "@type": "@id"
     },
     "Person.dateOfBirth": {
-      "@id": "http://schema.org/birthDate",
+      "@id": "https://schema.org/birthDate",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "Person.dateOfDeath": {
-      "@id": "http://schema.org/deathDate",
+      "@id": "https://schema.org/deathDate",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "Person.familyName (surname)": {
@@ -319,30 +315,12 @@
       "@id": "http://xmlns.com/foaf/0.1/givenName",
       "@type": "@id"
     },
-    "Person.holds": {
-      "@container": "@set",
-      "@id": "http://data.europa.eu/m8g/holds",
-      "@type": "@id"
-    },
-    "Person.identifier": {
-      "@id": "https://data.europa.eu/m8g/identifier",
-      "@type": "@id"
-    },
-    "Person.memberOf": {
-      "@container": "@set",
-      "@id": "http://data.europa.eu/m8g/memberOf",
-      "@type": "@id"
-    },
     "Person.patronymicName": {
       "@id": "http://www.w3.org/ns/person#patronymicName",
       "@type": "@id"
     },
-    "Person.registeredAddress": {
-      "@id": "http://w3.org/ns/locn#address",
-      "@type": "@id"
-    },
     "Person.title": {
-      "@id": "http://data.europa.eu/m8g/title",
+      "@id": "http://www.iceg.be/Person/Title",
       "@type": "@id"
     },
     "Post": "http://www.w3.org/ns/org#Post",
@@ -356,9 +334,9 @@
       "@id": "http://www.w3.org/ns/org#role",
       "@type": "@id"
     },
-    "PublicOrganization": "http://www.w3.org/ns/org#organization",
+    "PublicOrganization": "http://www.iceg.be/PublicOrganization",
     "PublicOrganization.legalForm": {
-      "@id": "http://data.europa.eu/m8g/legalForm",
+      "@id": "http://www.iceg.be/PublicOrganization/LegalForm",
       "@type": "@id"
     },
     "PublicOrganization.spatial": {
