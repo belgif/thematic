@@ -47,33 +47,8 @@
   "publication-date": "2021-09-17",
   "classes": [],
   "externals": [],
-  "properties": [
-    {
-      "@id": "https://data.europa.eu/m8g/legalForm",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "definition": {
-        "en": "The type of entity as defined by the Belgian law"
-      },
-      "domain": [
-        {
-          "uri": "http://data.europa.eu/m8g/PublicOrganisation"
-        }
-      ],
-      "range": [
-        {
-          "uri": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-        }
-      ],
-      "generalization": []
-    }
-  ],
-  "externalproperties": [
-    {
-      "name": null,
-      "@id": "https://data.europa.eu/m8g/legalForm",
-      "@type": "rdf:Property"
-    }
-  ],
+  "properties": [],
+  "externalproperties": [],
   "@context": {
     "owl": "http://www.w3.org/2002/07/owl#",
     "void": "http://rdfs.org/ns/void#",
