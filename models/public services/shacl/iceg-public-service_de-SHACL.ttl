@@ -9,30 +9,30 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://semiceu.github.io/shacl/iceg-public-service_de> <https://semiceu.github.io/shacl/iceg-public-service_deshapes> <https://semiceu.github.io/shacl/iceg-public-service_de#ConceptShape>,
-    <https://semiceu.github.io/shacl/iceg-public-service_de#PublicOrganizationShape>,
-    <https://semiceu.github.io/shacl/iceg-public-service_de#PublicServiceShape>,
-    <https://semiceu.github.io/shacl/iceg-public-service_de#BusinessEventShape>,
-    <https://semiceu.github.io/shacl/iceg-public-service_de#GroupShape>,
+<https://semiceu.github.io/shacl/iceg-public-service_de> <https://semiceu.github.io/shacl/iceg-public-service_deshapes> <https://semiceu.github.io/shacl/iceg-public-service_de#DatasetShape>,
     <https://semiceu.github.io/shacl/iceg-public-service_de#ChannelShape>,
-    <https://semiceu.github.io/shacl/iceg-public-service_de#ChannelPreferenceShape>,
-    <https://semiceu.github.io/shacl/iceg-public-service_de#LegalResourceShape>,
-    <https://semiceu.github.io/shacl/iceg-public-service_de#EvidenceShape>,
-    <https://semiceu.github.io/shacl/iceg-public-service_de#EventShape>,
-    <https://semiceu.github.io/shacl/iceg-public-service_de#AgentShape>,
-    <https://semiceu.github.io/shacl/iceg-public-service_de#CollectionShape>,
-    <https://semiceu.github.io/shacl/iceg-public-service_de#CostShape>,
-    <https://semiceu.github.io/shacl/iceg-public-service_de#OutputShape>,
-    <https://semiceu.github.io/shacl/iceg-public-service_de#PurposeShape>,
-    <https://semiceu.github.io/shacl/iceg-public-service_de#ContactPointShape>,
-    <https://semiceu.github.io/shacl/iceg-public-service_de#AddressShape>,
     <https://semiceu.github.io/shacl/iceg-public-service_de#LifeEventShape>,
-    <https://semiceu.github.io/shacl/iceg-public-service_de#RuleShape>,
+    <https://semiceu.github.io/shacl/iceg-public-service_de#PublicOrganizationShape>,
+    <https://semiceu.github.io/shacl/iceg-public-service_de#CollectionShape>,
+    <https://semiceu.github.io/shacl/iceg-public-service_de#EventShape>,
+    <https://semiceu.github.io/shacl/iceg-public-service_de#EvidenceShape>,
     <https://semiceu.github.io/shacl/iceg-public-service_de#SiteShape>,
+    <https://semiceu.github.io/shacl/iceg-public-service_de#AddressShape>,
+    <https://semiceu.github.io/shacl/iceg-public-service_de#PublicServiceShape>,
+    <https://semiceu.github.io/shacl/iceg-public-service_de#LegalResourceShape>,
+    <https://semiceu.github.io/shacl/iceg-public-service_de#AgentShape>,
+    <https://semiceu.github.io/shacl/iceg-public-service_de#ChannelPreferenceShape>,
+    <https://semiceu.github.io/shacl/iceg-public-service_de#PurposeShape>,
+    <https://semiceu.github.io/shacl/iceg-public-service_de#BusinessEventShape>,
+    <https://semiceu.github.io/shacl/iceg-public-service_de#RequirementShape>,
     <https://semiceu.github.io/shacl/iceg-public-service_de#ParticipationShape>,
-    <https://semiceu.github.io/shacl/iceg-public-service_de#DatasetShape>,
+    <https://semiceu.github.io/shacl/iceg-public-service_de#ConceptShape>,
+    <https://semiceu.github.io/shacl/iceg-public-service_de#CostShape>,
+    <https://semiceu.github.io/shacl/iceg-public-service_de#ContactPointShape>,
+    <https://semiceu.github.io/shacl/iceg-public-service_de#RuleShape>,
     <https://semiceu.github.io/shacl/iceg-public-service_de#OpeningHoursSpecificationShape>,
-    <https://semiceu.github.io/shacl/iceg-public-service_de#RequirementShape> .
+    <https://semiceu.github.io/shacl/iceg-public-service_de#GroupShape>,
+    <https://semiceu.github.io/shacl/iceg-public-service_de#OutputShape> .
 
 <https://semiceu.github.io/shacl/iceg-public-service_de#AddressShape> a shacl:NodeShape;
   shacl:closed false;
@@ -42,49 +42,14 @@
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "Enter your translation here"@de;
-    shacl:path <http://www.w3.org/ns/locn#postCode>
+    shacl:path <http://www.w3.org/ns/locn#poBox>
   ], [
     shacl:class rdf:langString;
     shacl:definition "Enter your translation here"@de;
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "Enter your translation here"@de;
-    shacl:path <http://www.w3.org/ns/locn#locatorName>
-  ], [
-    shacl:class rdf:langString;
-    shacl:definition "Enter your translation here"@de;
-    shacl:maxCount 1;
-    shacl:minCount 1;
-    shacl:name "Enter your translation here"@de;
-    shacl:path <http://www.w3.org/ns/locn#adminUnitL2>
-  ], [
-    shacl:class skos:Concept;
-    shacl:definition "Enter your translation here"@de;
-    shacl:maxCount 1;
-    shacl:minCount 1;
-    shacl:name "Enter your translation here"@de;
-    shacl:path <http://www.w3.org/ns/locn#adminUnitL1>
-  ], [
-    shacl:class rdf:langString;
-    shacl:definition "Enter your translation here"@de;
-    shacl:maxCount 1;
-    shacl:minCount 1;
-    shacl:name "Enter your translation here"@de;
-    shacl:path <http://www.w3.org/ns/locn#addressArea>
-  ], [
-    shacl:class rdf:langString;
-    shacl:definition "Enter your translation here"@de;
-    shacl:maxCount 1;
-    shacl:minCount 1;
-    shacl:name "Enter your translation here"@de;
-    shacl:path <http://www.w3.org/ns/locn#thoroughfare>
-  ], [
-    shacl:datatype xsd:string;
-    shacl:definition "Enter your translation here"@de;
-    shacl:maxCount 1;
-    shacl:minCount 1;
-    shacl:name "Enter your translation here"@de;
-    shacl:path <http://www.w3.org/ns/locn#locatorDesignator>
+    shacl:path <http://www.w3.org/ns/locn#postName>
   ], [
     shacl:class rdf:langString;
     shacl:definition "Enter your translation here"@de;
@@ -98,7 +63,28 @@
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "Enter your translation here"@de;
-    shacl:path <http://www.w3.org/ns/locn#postName>
+    shacl:path <http://www.w3.org/ns/locn#adminUnitL2>
+  ], [
+    shacl:class rdf:langString;
+    shacl:definition "Enter your translation here"@de;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "Enter your translation here"@de;
+    shacl:path <http://www.w3.org/ns/locn#addressArea>
+  ], [
+    shacl:datatype xsd:string;
+    shacl:definition "Enter your translation here"@de;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "Enter your translation here"@de;
+    shacl:path <http://www.w3.org/ns/locn#postCode>
+  ], [
+    shacl:class rdf:langString;
+    shacl:definition "Enter your translation here"@de;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "Enter your translation here"@de;
+    shacl:path <http://www.w3.org/ns/locn#thoroughfare>
   ], [
     shacl:datatype xsd:string;
     shacl:definition "Enter your translation here"@de;
@@ -107,18 +93,39 @@
     shacl:name "Enter your translation here"@de;
     shacl:path <http://www.w3.org/ns/locn#addressID>
   ], [
+    shacl:class rdf:langString;
+    shacl:definition "Enter your translation here"@de;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "Enter your translation here"@de;
+    shacl:path <http://www.w3.org/ns/locn#locatorName>
+  ], [
+    shacl:class skos:Concept;
+    shacl:definition "Enter your translation here"@de;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "Enter your translation here"@de;
+    shacl:path <http://www.w3.org/ns/locn#adminUnitL1>
+  ], [
     shacl:datatype xsd:string;
     shacl:definition "Enter your translation here"@de;
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "Enter your translation here"@de;
-    shacl:path <http://www.w3.org/ns/locn#poBox>
+    shacl:path <http://www.w3.org/ns/locn#locatorDesignator>
   ];
   shacl:targetClass <http://www.w3.org/ns/locn#Address> .
 
 <https://semiceu.github.io/shacl/iceg-public-service_de#AgentShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property [
+    shacl:class <http://fixme.com#Identifier>;
+    shacl:definition "Enter your translation here"@de;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "Enter your translation here"@de;
+    shacl:path dc:identifier
+  ], [
     shacl:class <https://data.europa.eu/m8g/Participation>;
     shacl:definition "Enter your translation here"@de;
     shacl:name "Enter your translation here"@de;
@@ -130,13 +137,6 @@
     shacl:minCount 1;
     shacl:name "Enter your translation here"@de;
     shacl:path dc:title
-  ], [
-    shacl:class <http://fixme.com#Identifier>;
-    shacl:definition "Enter your translation here"@de;
-    shacl:maxCount 1;
-    shacl:minCount 1;
-    shacl:name "Enter your translation here"@de;
-    shacl:path dc:identifier
   ];
   shacl:targetClass foaf:Agent .
 
@@ -147,32 +147,42 @@
 <https://semiceu.github.io/shacl/iceg-public-service_de#ChannelPreferenceShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property [
-    shacl:class <http://fixme.com#Channel>;
-    shacl:maxCount 1;
-    shacl:minCount 1;
-    shacl:path <https://data.europa.eu/m8g/ChannelPreference.channel>
-  ], [
     shacl:class <https://catalogue-of-services-isa.github.io/SDG-search-service-model/releases/v1.00/#Webpage%3Atype>;
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:path <https://data.europa.eu/m8g/ChannelPreference.purpose>
+  ], [
+    shacl:class <http://fixme.com#Channel>;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:path <https://data.europa.eu/m8g/ChannelPreference.channel>
   ];
   shacl:targetClass <https://data.europa.eu/m8g/ChannelPreference> .
 
 <https://semiceu.github.io/shacl/iceg-public-service_de#ChannelShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property [
+    shacl:class skos:Concept;
+    shacl:definition "Enter your translation here"@de;
+    shacl:maxCount 1;
+    shacl:name "Enter your translation here"@de;
+    shacl:path dc:type
+  ], [
     shacl:class <https://data.europa.eu/m8g/Evidence>;
     shacl:definition "Enter your translation here"@de;
     shacl:name "Enter your translation here"@de;
     shacl:path <http://purl.org/vocab/cpsv#hasInput>
   ], [
-    shacl:class rdf:langString;
+    shacl:class <https://semiceu.github.io/CPOV/releases/2.00/#Public%20Organization>;
+    shacl:definition "Enter your translation here"@de;
+    shacl:name "Enter your translation here"@de;
+    shacl:path <http://data.europa.eu/m8g/ownedBy>
+  ], [
+    shacl:class schemas:OpeningHoursSpecification;
     shacl:definition "Enter your translation here"@de;
     shacl:maxCount 1;
-    shacl:minCount 1;
     shacl:name "Enter your translation here"@de;
-    shacl:path <http://fixme.com#description>
+    shacl:path schema:hoursAvailable
   ], [
     shacl:class <http://fixme.com#Identifier>;
     shacl:definition "Enter your translation here"@de;
@@ -181,27 +191,17 @@
     shacl:name "Enter your translation here"@de;
     shacl:path dc:identifier
   ], [
-    shacl:class <https://semiceu.github.io/CPOV/releases/2.00/#Public%20Organization>;
-    shacl:definition "Enter your translation here"@de;
-    shacl:name "Enter your translation here"@de;
-    shacl:path <http://data.europa.eu/m8g/ownedBy>
-  ], [
-    shacl:class skos:Concept;
-    shacl:definition "Enter your translation here"@de;
-    shacl:maxCount 1;
-    shacl:name "Enter your translation here"@de;
-    shacl:path dc:type
-  ], [
     shacl:class rdf:langString;
     shacl:definition "Enter your translation here"@de;
     shacl:name "Enter your translation here"@de;
     shacl:path schemas:openingHours
   ], [
-    shacl:class schemas:OpeningHoursSpecification;
+    shacl:class rdf:langString;
     shacl:definition "Enter your translation here"@de;
     shacl:maxCount 1;
+    shacl:minCount 1;
     shacl:name "Enter your translation here"@de;
-    shacl:path schema:hoursAvailable
+    shacl:path <http://fixme.com#description>
   ];
   shacl:targetClass <https://data.europa.eu/m8g/ChannelPreference.channel> .
 
@@ -228,12 +228,6 @@
     shacl:name "Enter your translation here"@de;
     shacl:path schemas:openingHours
   ], [
-    shacl:class schemas:OpeningHoursSpecification;
-    shacl:definition "Enter your translation here"@de;
-    shacl:maxCount 1;
-    shacl:name "Enter your translation here"@de;
-    shacl:path schema:hoursAvailable
-  ], [
     shacl:datatype rdfs:Literal;
     shacl:definition "Enter your translation here"@de;
     shacl:maxCount 1;
@@ -245,16 +239,24 @@
     shacl:maxCount 1;
     shacl:name "Enter your translation here"@de;
     shacl:path schemas:telephone
+  ], [
+    shacl:class schemas:OpeningHoursSpecification;
+    shacl:definition "Enter your translation here"@de;
+    shacl:maxCount 1;
+    shacl:name "Enter your translation here"@de;
+    shacl:path schema:hoursAvailable
   ];
   shacl:targetClass <http://fixme.com#ContactPoint> .
 
 <https://semiceu.github.io/shacl/iceg-public-service_de#CostShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property [
-    shacl:class <https://semiceu.github.io/CPOV/releases/2.00/#Public%20Organization>;
+    shacl:class <http://fixme.com#Identifier>;
     shacl:definition "Enter your translation here"@de;
+    shacl:maxCount 1;
+    shacl:minCount 1;
     shacl:name "Enter your translation here"@de;
-    shacl:path <http://data.europa.eu/m8g/isDefinedBy>
+    shacl:path dc:identifier
   ], [
     shacl:class skos:Concept;
     shacl:definition "Enter your translation here"@de;
@@ -262,18 +264,16 @@
     shacl:name "Enter your translation here"@de;
     shacl:path <https://data.europa.eu/m8g/currency>
   ], [
-    shacl:class <http://fixme.com#Channel>;
+    shacl:class rdf:langString;
     shacl:definition "Enter your translation here"@de;
     shacl:maxCount 1;
     shacl:name "Enter your translation here"@de;
-    shacl:path <http://data.europa.eu/m8g/ifAccessedThrough>
+    shacl:path <https://data.europa.eu/m8g/description>
   ], [
-    shacl:class <http://fixme.com#Identifier>;
+    shacl:class <https://semiceu.github.io/CPOV/releases/2.00/#Public%20Organization>;
     shacl:definition "Enter your translation here"@de;
-    shacl:maxCount 1;
-    shacl:minCount 1;
     shacl:name "Enter your translation here"@de;
-    shacl:path dc:identifier
+    shacl:path <http://data.europa.eu/m8g/isDefinedBy>
   ], [
     shacl:datatype xsd:double;
     shacl:definition "Enter your translation here"@de;
@@ -287,11 +287,11 @@
     shacl:name "Enter your translation here"@de;
     shacl:path <https://data.europa.eu/m8g/costBreakdown>
   ], [
-    shacl:class rdf:langString;
+    shacl:class <http://fixme.com#Channel>;
     shacl:definition "Enter your translation here"@de;
     shacl:maxCount 1;
     shacl:name "Enter your translation here"@de;
-    shacl:path <https://data.europa.eu/m8g/description>
+    shacl:path <http://data.europa.eu/m8g/ifAccessedThrough>
   ];
   shacl:targetClass <https://data.europa.eu/m8g/Cost> .
 
@@ -311,16 +311,16 @@
     shacl:name "Enter your translation here"@de;
     shacl:path dc:publisher
   ], [
+    shacl:class <http://fixme.com#Identifier>;
+    shacl:definition "Enter your translation here"@de;
+    shacl:name "Enter your translation here"@de;
+    shacl:path dc:identifier
+  ], [
     shacl:class rdf:langString;
     shacl:definition "Enter your translation here"@de;
     shacl:minCount 1;
     shacl:name "Enter your translation here"@de;
     shacl:path dc:title
-  ], [
-    shacl:class <http://fixme.com#Identifier>;
-    shacl:definition "Enter your translation here"@de;
-    shacl:name "Enter your translation here"@de;
-    shacl:path dc:identifier
   ];
   shacl:targetClass <http://fixme.com#Dataset> .
 
@@ -334,38 +334,45 @@
     shacl:name "Enter your translation here"@de;
     shacl:path dc:identifier
   ], [
-    shacl:class rdf:langString;
+    shacl:class <http://purl.org/vocab/cpsv#PublicService>;
     shacl:definition "Enter your translation here"@de;
-    shacl:maxCount 1;
-    shacl:minCount 1;
     shacl:name "Enter your translation here"@de;
-    shacl:path dc:title
+    shacl:path dc:relation
   ], [
     shacl:class skos:Concept;
     shacl:definition "Enter your translation here"@de;
     shacl:name "Enter your translation here"@de;
     shacl:path dc:type
   ], [
-    shacl:class <http://purl.org/vocab/cpsv#PublicService>;
-    shacl:definition "Enter your translation here"@de;
-    shacl:name "Enter your translation here"@de;
-    shacl:path dc:relation
-  ], [
     shacl:class rdf:langString;
     shacl:definition "Enter your translation here"@de;
     shacl:maxCount 1;
     shacl:name "Enter your translation here"@de;
     shacl:path dc:description
+  ], [
+    shacl:class rdf:langString;
+    shacl:definition "Enter your translation here"@de;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "Enter your translation here"@de;
+    shacl:path dc:title
   ];
   shacl:targetClass <http://fixme.com#Event> .
 
 <https://semiceu.github.io/shacl/iceg-public-service_de#EvidenceShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property [
-    shacl:class dc:LinguisticSystem;
+    shacl:class skos:Concept;
     shacl:definition "Enter your translation here"@de;
+    shacl:maxCount 1;
     shacl:name "Enter your translation here"@de;
-    shacl:path <https://data.europa.eu/m8g/language>
+    shacl:path <https://data.europa.eu/m8g/type>
+  ], [
+    shacl:class skos:Concept;
+    shacl:definition "Enter your translation here"@de;
+    shacl:maxCount 1;
+    shacl:name "Enter your translation here"@de;
+    shacl:path <https://semiceu.github.io/CCCEV/releases/2.00/#Evidence%3Aconfidentiality%20level%20type>
   ], [
     shacl:class <https://data.europa.eu/m8g/Requirement>;
     shacl:definition "Enter your translation here"@de;
@@ -380,12 +387,12 @@
     shacl:class foaf:Agent;
     shacl:definition "Enter your translation here"@de;
     shacl:name "Enter your translation here"@de;
-    shacl:path <https://semiceu.github.io/CCCEV/releases/2.00/#Evidence%3Ais%20issued%20by>
+    shacl:path <https://semiceu.github.io/CCCEV/releases/2.00/#Evidence%3Ais%20created%20by>
   ], [
-    shacl:class foaf:Agent;
+    shacl:class dc:LinguisticSystem;
     shacl:definition "Enter your translation here"@de;
     shacl:name "Enter your translation here"@de;
-    shacl:path <https://semiceu.github.io/CCCEV/releases/2.00/#Evidence%3Ais%20created%20by>
+    shacl:path <https://data.europa.eu/m8g/language>
   ], [
     shacl:class skos:Concept;
     shacl:definition "Enter your translation here"@de;
@@ -393,22 +400,15 @@
     shacl:name "Enter your translation here"@de;
     shacl:path <https://data.europa.eu/m8g/country>
   ], [
-    shacl:class skos:Concept;
+    shacl:class foaf:Agent;
     shacl:definition "Enter your translation here"@de;
-    shacl:maxCount 1;
     shacl:name "Enter your translation here"@de;
-    shacl:path <https://semiceu.github.io/CCCEV/releases/2.00/#Evidence%3Aconfidentiality%20level%20type>
+    shacl:path <https://semiceu.github.io/CCCEV/releases/2.00/#Evidence%3Ais%20issued%20by>
   ], [
     shacl:class <https://data.europa.eu/m8g/Output>;
     shacl:definition "Enter your translation here"@de;
     shacl:name "Enter your translation here"@de;
     shacl:path <https://data.europa.eu/m8g/isEvidence>
-  ], [
-    shacl:class skos:Concept;
-    shacl:definition "Enter your translation here"@de;
-    shacl:maxCount 1;
-    shacl:name "Enter your translation here"@de;
-    shacl:path <https://data.europa.eu/m8g/type>
   ];
   shacl:targetClass <https://data.europa.eu/m8g/Evidence> .
 
@@ -444,6 +444,13 @@
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "Enter your translation here"@de;
+    shacl:path schemas:validThrough
+  ], [
+    shacl:datatype xsd:dateTime;
+    shacl:definition "Enter your translation here"@de;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "Enter your translation here"@de;
     shacl:path schemas:validFrom
   ], [
     shacl:datatype xsd:anyURI;
@@ -452,24 +459,37 @@
     shacl:minCount 1;
     shacl:name "Enter your translation here"@de;
     shacl:path schemas:dayOfWeek
-  ], [
-    shacl:datatype xsd:dateTime;
-    shacl:definition "Enter your translation here"@de;
-    shacl:maxCount 1;
-    shacl:minCount 1;
-    shacl:name "Enter your translation here"@de;
-    shacl:path schemas:validThrough
   ];
   shacl:targetClass schemas:OpeningHoursSpecification .
 
 <https://semiceu.github.io/shacl/iceg-public-service_de#OutputShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property [
+    shacl:datatype xsd:duration;
+    shacl:definition "Enter your translation here"@de;
+    shacl:maxCount 1;
+    shacl:name "Enter your translation here"@de;
+    shacl:path <https://data.europa.eu/m8g/responseTime>
+  ], [
     shacl:class rdf:langString;
     shacl:definition "Enter your translation here"@de;
     shacl:maxCount 1;
     shacl:name "Enter your translation here"@de;
     shacl:path dc:description
+  ], [
+    shacl:class rdf:langString;
+    shacl:definition "Enter your translation here"@de;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "Enter your translation here"@de;
+    shacl:path dc:title
+  ], [
+    shacl:class <http://fixme.com#Identifier>;
+    shacl:definition "Enter your translation here"@de;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "Enter your translation here"@de;
+    shacl:path dc:identifier
   ], [
     shacl:class <https://data.europa.eu/m8g/Evidence>;
     shacl:definition "Enter your translation here"@de;
@@ -481,47 +501,27 @@
     shacl:name "Enter your translation here"@de;
     shacl:path dc:type
   ], [
-    shacl:datatype xsd:duration;
-    shacl:definition "Enter your translation here"@de;
-    shacl:maxCount 1;
-    shacl:name "Enter your translation here"@de;
-    shacl:path <https://data.europa.eu/m8g/responseTime>
-  ], [
-    shacl:class <http://fixme.com#Identifier>;
-    shacl:definition "Enter your translation here"@de;
-    shacl:maxCount 1;
-    shacl:minCount 1;
-    shacl:name "Enter your translation here"@de;
-    shacl:path dc:identifier
-  ], [
     shacl:class <http://data.europa.eu/eli/ontology#LegalResource>;
     shacl:definition "Enter your translation here"@de;
     shacl:name "Enter your translation here"@de
-  ], [
-    shacl:class rdf:langString;
-    shacl:definition "Enter your translation here"@de;
-    shacl:maxCount 1;
-    shacl:minCount 1;
-    shacl:name "Enter your translation here"@de;
-    shacl:path dc:title
   ];
   shacl:targetClass <https://data.europa.eu/m8g/Output> .
 
 <https://semiceu.github.io/shacl/iceg-public-service_de#ParticipationShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property [
+    shacl:class skos:Concept;
+    shacl:definition "Enter your translation here"@de;
+    shacl:minCount 1;
+    shacl:name "Enter your translation here"@de;
+    shacl:path <https://data.europa.eu/m8g/role>
+  ], [
     shacl:class <http://fixme.com#Identifier>;
     shacl:definition "Enter your translation here"@de;
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "Enter your translation here"@de;
     shacl:path dc:identifier
-  ], [
-    shacl:class skos:Concept;
-    shacl:definition "Enter your translation here"@de;
-    shacl:minCount 1;
-    shacl:name "Enter your translation here"@de;
-    shacl:path <https://data.europa.eu/m8g/role>
   ], [
     shacl:class rdf:langString;
     shacl:definition "Enter your translation here"@de;
@@ -553,35 +553,55 @@
 <https://semiceu.github.io/shacl/iceg-public-service_de#PublicServiceShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property [
-    shacl:class skos:Concept;
+    shacl:class <http://fixme.com#Dataset>;
     shacl:definition "Enter your translation here"@de;
     shacl:name "Enter your translation here"@de;
-    shacl:path <http://fixme.com#thematicArea>
+    shacl:path <http://data.europa.eu/m8g/isDescribedAt>
   ], [
-    shacl:class <http://fixme.com#Concept>;
+    shacl:class <http://purl.org/vocab/cpsv#PublicService>;
     shacl:definition "Enter your translation here"@de;
     shacl:name "Enter your translation here"@de;
-    shacl:path <http://fixme.com#isClassifiedBy>
+    shacl:path dc:requires
+  ], [
+    shacl:class <http://data.europa.eu/eli/ontology#LegalResource>;
+    shacl:definition "Enter your translation here"@de;
+    shacl:name "Enter your translation here"@de;
+    shacl:path <http://data.europa.eu/m8g/hasLegalResource>
+  ], [
+    shacl:class rdf:langString;
+    shacl:definition "Enter your translation here"@de;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "Enter your translation here"@de;
+    shacl:path dc:description
+  ], [
+    shacl:class <https://data.europa.eu/m8g/Cost>;
+    shacl:definition "Enter your translation here"@de;
+    shacl:name "Enter your translation here"@de;
+    shacl:path <http://data.europa.eu/m8g/hasCost>
   ], [
     shacl:class <https://data.europa.eu/m8g/Requirement>;
     shacl:definition "Enter your translation here"@de;
     shacl:name "Enter your translation here"@de;
     shacl:path <http://data.europa.eu/m8g/hasCompetentAuthority>
   ], [
-    shacl:class <http://fixme.com#Dataset>;
+    shacl:class <http://fixme.com#Identifier>;
     shacl:definition "Enter your translation here"@de;
+    shacl:maxCount 1;
+    shacl:minCount 1;
     shacl:name "Enter your translation here"@de;
-    shacl:path <http://data.europa.eu/m8g/isDescribedAt>
+    shacl:path dc:identifier
   ], [
-    shacl:class <http://purl.org/vocab/cpsv#Rule>;
+    shacl:class skos:Concept;
     shacl:definition "Enter your translation here"@de;
+    shacl:maxCount 1;
     shacl:name "Enter your translation here"@de;
-    shacl:path <http://purl.org/vocab/cpsv#follows>
+    shacl:path <http://www.w3.org/ns/adms#status>
   ], [
-    shacl:class <http://data.europa.eu/eli/ontology#LegalResource>;
+    shacl:class dc:LinguisticSystem;
     shacl:definition "Enter your translation here"@de;
     shacl:name "Enter your translation here"@de;
-    shacl:path <http://data.europa.eu/m8g/hasLegalResource>
+    shacl:path dc:LinguisticSystem
   ], [
     shacl:class <http://fixme.com#Channel>;
     shacl:definition "Enter your translation here"@de;
@@ -593,10 +613,30 @@
     shacl:name "Enter your translation here"@de;
     shacl:path dcat:keyword
   ], [
-    shacl:class <http://purl.org/vocab/cpsv#PublicService>;
+    shacl:class <http://fixme.com#Concept>;
     shacl:definition "Enter your translation here"@de;
     shacl:name "Enter your translation here"@de;
-    shacl:path dc:relation
+    shacl:path <http://fixme.com#isClassifiedBy>
+  ], [
+    shacl:class skos:Concept;
+    shacl:definition "Enter your translation here"@de;
+    shacl:name "Enter your translation here"@de;
+    shacl:path <http://fixme.com#sector>
+  ], [
+    shacl:class <http://fixme.com#Event>;
+    shacl:definition "Enter your translation here"@de;
+    shacl:name "Enter your translation here"@de;
+    shacl:path <http://data.europa.eu/m8g/isGroupedBy>
+  ], [
+    shacl:class <https://data.europa.eu/m8g/Participation>;
+    shacl:definition "Enter your translation here"@de;
+    shacl:name "Enter your translation here"@de;
+    shacl:path <http://data.europa.eu/m8g/hasParticipation>
+  ], [
+    shacl:class <http://purl.org/vocab/cpsv#Rule>;
+    shacl:definition "Enter your translation here"@de;
+    shacl:name "Enter your translation here"@de;
+    shacl:path <http://purl.org/vocab/cpsv#follows>
   ], [
     shacl:datatype xsd:duration;
     shacl:definition "Enter your translation here"@de;
@@ -604,55 +644,11 @@
     shacl:name "Enter your translation here"@de;
     shacl:path <http://fixme.com#processingTime>
   ], [
-    shacl:class <http://fixme.com#Identifier>;
-    shacl:definition "Enter your translation here"@de;
-    shacl:maxCount 1;
-    shacl:minCount 1;
-    shacl:name "Enter your translation here"@de;
-    shacl:path dc:identifier
-  ], [
-    shacl:class rdf:langString;
-    shacl:definition "Enter your translation here"@de;
-    shacl:maxCount 1;
-    shacl:minCount 1;
-    shacl:name "Enter your translation here"@de;
-    shacl:path dc:description
-  ], [
-    shacl:class <http://fixme.com#Event>;
-    shacl:definition "Enter your translation here"@de;
-    shacl:name "Enter your translation here"@de;
-    shacl:path <http://data.europa.eu/m8g/isGroupedBy>
-  ], [
-    shacl:class dc:Location;
-    shacl:definition "Enter your translation here"@de;
-    shacl:name "Enter your translation here"@de;
-    shacl:path dc:spatial
-  ], [
-    shacl:class dc:LinguisticSystem;
-    shacl:definition "Enter your translation here"@de;
-    shacl:name "Enter your translation here"@de;
-    shacl:path dc:LinguisticSystem
-  ], [
-    shacl:class <https://data.europa.eu/m8g/Cost>;
-    shacl:definition "Enter your translation here"@de;
-    shacl:name "Enter your translation here"@de;
-    shacl:path <http://data.europa.eu/m8g/hasCost>
-  ], [
     shacl:class rdf:langString;
     shacl:definition "Enter your translation here"@de;
     shacl:minCount 1;
     shacl:name "Enter your translation here"@de;
     shacl:path dc:title
-  ], [
-    shacl:class <https://data.europa.eu/m8g/Participation>;
-    shacl:definition "Enter your translation here"@de;
-    shacl:name "Enter your translation here"@de;
-    shacl:path <http://data.europa.eu/m8g/hasParticipation>
-  ], [
-    shacl:class <http://purl.org/vocab/cpsv#PublicService>;
-    shacl:definition "Enter your translation here"@de;
-    shacl:name "Enter your translation here"@de;
-    shacl:path dc:requires
   ], [
     shacl:class <https://data.europa.eu/m8g/Output>;
     shacl:definition "Enter your translation here"@de;
@@ -662,18 +658,22 @@
     shacl:class skos:Concept;
     shacl:definition "Enter your translation here"@de;
     shacl:name "Enter your translation here"@de;
+    shacl:path <http://fixme.com#thematicArea>
+  ], [
+    shacl:class dc:Location;
+    shacl:definition "Enter your translation here"@de;
+    shacl:name "Enter your translation here"@de;
+    shacl:path dc:spatial
+  ], [
+    shacl:class skos:Concept;
+    shacl:definition "Enter your translation here"@de;
+    shacl:name "Enter your translation here"@de;
     shacl:path <http://fixme.com#lifecycleStatus>
   ], [
-    shacl:class skos:Concept;
+    shacl:class <http://purl.org/vocab/cpsv#PublicService>;
     shacl:definition "Enter your translation here"@de;
     shacl:name "Enter your translation here"@de;
-    shacl:path <http://fixme.com#sector>
-  ], [
-    shacl:class skos:Concept;
-    shacl:definition "Enter your translation here"@de;
-    shacl:maxCount 1;
-    shacl:name "Enter your translation here"@de;
-    shacl:path <http://www.w3.org/ns/adms#status>
+    shacl:path dc:relation
   ];
   shacl:targetClass <http://purl.org/vocab/cpsv#PublicService> .
 
@@ -690,6 +690,20 @@
 <https://semiceu.github.io/shacl/iceg-public-service_de#RequirementShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property [
+    shacl:class rdf:langString;
+    shacl:definition "Enter your translation here"@de;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "Enter your translation here"@de;
+    shacl:path dc:title
+  ], [
+    shacl:class rdf:langString;
+    shacl:definition "Enter your translation here"@de;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "Enter your translation here"@de;
+    shacl:path <https://semiceu.github.io/CCCEV/releases/2.00/#Requirement%3Adescription>
+  ], [
     shacl:class <https://data.europa.eu/m8g/Evidence>;
     shacl:definition "Enter your translation here"@de;
     shacl:name "Enter your translation here"@de;
@@ -699,6 +713,16 @@
     shacl:definition "Enter your translation here"@de;
     shacl:name "Enter your translation here"@de;
     shacl:path <https://semiceu.github.io/CCCEV/releases/2.00/#Requirement%3Ahas%20requirement>
+  ], [
+    shacl:class <https://data.europa.eu/m8g/Requirement>;
+    shacl:definition "Enter your translation here"@de;
+    shacl:name "Enter your translation here"@de;
+    shacl:path <https://semiceu.github.io/CCCEV/releases/2.00/#Requirement%3Ahas%20qualified%20relation>
+  ], [
+    shacl:class <https://data.europa.eu/m8g/Requirement>;
+    shacl:definition "Enter your translation here"@de;
+    shacl:name "Enter your translation here"@de;
+    shacl:path <https://data.europa.eu/m8g/isRequirementOf>
   ], [
     shacl:class skos:Concept;
     shacl:definition "Enter your translation here"@de;
@@ -711,40 +735,23 @@
     shacl:minCount 1;
     shacl:name "Enter your translation here"@de;
     shacl:path dc:identifier
-  ], [
-    shacl:class <https://data.europa.eu/m8g/Requirement>;
-    shacl:definition "Enter your translation here"@de;
-    shacl:name "Enter your translation here"@de;
-    shacl:path <https://semiceu.github.io/CCCEV/releases/2.00/#Requirement%3Ahas%20qualified%20relation>
-  ], [
-    shacl:class rdf:langString;
-    shacl:definition "Enter your translation here"@de;
-    shacl:maxCount 1;
-    shacl:minCount 1;
-    shacl:name "Enter your translation here"@de;
-    shacl:path <https://semiceu.github.io/CCCEV/releases/2.00/#Requirement%3Adescription>
-  ], [
-    shacl:class <https://data.europa.eu/m8g/Requirement>;
-    shacl:definition "Enter your translation here"@de;
-    shacl:name "Enter your translation here"@de;
-    shacl:path <https://data.europa.eu/m8g/isRequirementOf>
-  ], [
-    shacl:class rdf:langString;
-    shacl:definition "Enter your translation here"@de;
-    shacl:maxCount 1;
-    shacl:minCount 1;
-    shacl:name "Enter your translation here"@de;
-    shacl:path dc:title
   ];
   shacl:targetClass <https://data.europa.eu/m8g/Requirement> .
 
 <https://semiceu.github.io/shacl/iceg-public-service_de#RuleShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property [
-    shacl:class dc:LinguisticSystem;
+    shacl:class rdf:langString;
+    shacl:definition "Enter your translation here"@de;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "Enter your translation here"@de;
+    shacl:path dc:description
+  ], [
+    shacl:class <http://data.europa.eu/eli/ontology#LegalResource>;
     shacl:definition "Enter your translation here"@de;
     shacl:name "Enter your translation here"@de;
-    shacl:path dc:language
+    shacl:path <http://purl.org/vocab/cpsv#implements>
   ], [
     shacl:class rdf:langString;
     shacl:definition "Enter your translation here"@de;
@@ -752,13 +759,6 @@
     shacl:minCount 1;
     shacl:name "Enter your translation here"@de;
     shacl:path dc:title
-  ], [
-    shacl:class rdf:langString;
-    shacl:definition "Enter your translation here"@de;
-    shacl:maxCount 1;
-    shacl:minCount 1;
-    shacl:name "Enter your translation here"@de;
-    shacl:path dc:description
   ], [
     shacl:class <http://fixme.com#Identifier>;
     shacl:definition "Enter your translation here"@de;
@@ -767,10 +767,10 @@
     shacl:name "Enter your translation here"@de;
     shacl:path dc:identifier
   ], [
-    shacl:class <http://data.europa.eu/eli/ontology#LegalResource>;
+    shacl:class dc:LinguisticSystem;
     shacl:definition "Enter your translation here"@de;
     shacl:name "Enter your translation here"@de;
-    shacl:path <http://purl.org/vocab/cpsv#implements>
+    shacl:path dc:language
   ];
   shacl:targetClass <http://purl.org/vocab/cpsv#Rule> .
 
