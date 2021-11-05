@@ -700,7 +700,7 @@
         {
           "sh:class": "http://xmlns.com/foaf/0.1/Document",
           "sh:definition": {
-            "en": "A property to link an Organization to its logo."
+            "en": "The homepage property relates something to a homepage about it."
           },
           "sh:name": {
             "en": "homepage"
