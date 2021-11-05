@@ -1,6 +1,6 @@
 {
   "@context": {
-    "EnterYourTranslationHere": "https://www.w3.org/ns/org#role",
+    "EnterYourTranslationHere": "https://schema.org/OpeningHoursSpecification",
     "EnterYourTranslationHere.enterYourTranslationHere": {
       "@id": "https://schema.org/validThrough",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"

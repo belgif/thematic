@@ -96,18 +96,18 @@
       "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
     "Document": "http://xmlns.com/foaf/0.1/Document",
-    "FoundationEvent": "http://www.iceg.be/FoundationEvent",
+    "FoundationEvent": "http://data.europa.eu/m8g/FoundationEvent",
     "Geometry": "http://www.w3.org/ns/locn#Geometry",
     "Geometry.coordinates": {
-      "@id": "http://www.iceg.be/Geometry/Coordinates",
+      "@id": "http://data.europa.eu/m8g/Geometry/Coordinates",
       "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
     "Geometry.crs": {
-      "@id": "http://www.iceg.be/Geometry/Crs",
+      "@id": "http://data.europa.eu/m8g/Geometry/Crs",
       "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
     },
     "Geometry.geometryType": {
-      "@id": "http://www.iceg.be/Geometry/GeometryType",
+      "@id": "http://data.europa.eu/m8g/Geometry/GeometryType",
       "@type": "@id"
     },
     "Geometry.gml": {
@@ -196,7 +196,7 @@
       "@type": "@id"
     },
     "Organization.description": {
-      "@id": "http://www.iceg.be/Organization/Description",
+      "@id": "http://purl.org/dc/terms/description",
       "@type": "@id"
     },
     "Organization.exOfficioStrikingOff": {
@@ -231,6 +231,10 @@
     "Organization.homepage": {
       "@container": "@set",
       "@id": "http://xmlns.com/foaf/0.1/homepage",
+      "@type": "@id"
+    },
+    "Organization.identifier": {
+      "@id": "http://www.iceg.be/Organization/Identifier",
       "@type": "@id"
     },
     "Organization.linksToDatabase": {
@@ -315,8 +319,27 @@
       "@id": "http://xmlns.com/foaf/0.1/givenName",
       "@type": "@id"
     },
+    "Person.holds": {
+      "@container": "@set",
+      "@id": "http://www.iceg.be/Organization/Holds",
+      "@type": "@id"
+    },
+    "Person.identifier": {
+      "@id": "http://www.iceg.be/Person/Identifier",
+      "@type": "@id"
+    },
+    "Person.memberOf": {
+      "@container": "@set",
+      "@id": "http://www.iceg.be/Person/MemberOf",
+      "@type": "@id"
+    },
     "Person.patronymicName": {
       "@id": "http://www.w3.org/ns/person#patronymicName",
+      "@type": "@id"
+    },
+    "Person.registeredAddress": {
+      "@container": "@set",
+      "@id": "http://www.w3.org/ns/locn#address",
       "@type": "@id"
     },
     "Person.title": {
@@ -344,7 +367,7 @@
       "@id": "http://purl.org/dc/terms/spatial",
       "@type": "@id"
     },
-    "Role": "https://www.w3.org/ns/org#role",
+    "Role": "http://www.w3.org/ns/org#Role",
     "Site": "http://www.w3.org/ns/org#Site",
     "Site.address": {
       "@id": "http://www.w3.org/ns/locn#address",
