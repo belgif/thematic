@@ -89,7 +89,7 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -97,7 +97,7 @@
           "sh:name": {
             "de": "Enter your translation here"
           },
-          "sh:path": "http://www.iceg.be/PublicOrganization/LegalForm"
+          "sh:path": "http://www.iceg.be/PublicOrganization.legalForm"
         },
         {
           "sh:class": "http://data.europa.eu/88u/dataset/atu-type",
@@ -141,7 +141,7 @@
           "sh:path": "http://www.w3.org/2004/02/skos/core#notation"
         },
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -163,7 +163,7 @@
           "sh:path": "http://purl.org/dc/terms/creator"
         },
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -193,7 +193,7 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -217,7 +217,7 @@
           "sh:path": "http://www.w3.org/ns/locn#addressID"
         },
         {
-          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:datatype": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -229,7 +229,7 @@
           "sh:path": "http://www.w3.org/ns/locn#adminUnitL1"
         },
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -241,7 +241,7 @@
           "sh:path": "http://www.w3.org/ns/locn#adminUnitL2"
         },
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -265,7 +265,7 @@
           "sh:path": "http://www.w3.org/ns/locn#locatorDesignator"
         },
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -301,7 +301,7 @@
           "sh:path": "http://www.w3.org/ns/locn#postCode"
         },
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -313,7 +313,7 @@
           "sh:path": "http://www.w3.org/ns/locn#postName"
         },
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -355,7 +355,7 @@
           "sh:path": "http://data.europa.eu/m8g/Geometry/Crs"
         },
         {
-          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:datatype": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -418,7 +418,7 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -563,7 +563,7 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -574,14 +574,14 @@
           "sh:path": "http://www.w3.org/2004/02/skos/core#altLabel"
         },
         {
-          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:datatype": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
             "de": "Enter your translation here"
           },
           "sh:name": {
             "de": "Enter your translation here"
           },
-          "sh:path": "http://www.iceg.be/Organization/Certification"
+          "sh:path": "http://www.iceg.be/Organization.certification"
         },
         {
           "sh:class": "http://www.w3.org/ns/org#ChangeEvent",
@@ -602,7 +602,7 @@
           "sh:name": {
             "de": "Enter your translation here"
           },
-          "sh:path": "http://www.iceg.be/Organization/CompanyRegistrationNumber"
+          "sh:path": "http://www.iceg.be/Organization.companyRegistrationNumber"
         },
         {
           "sh:class": "https://schema.org/ContactPoint",
@@ -615,7 +615,7 @@
           "sh:path": "https://schema.org/contactPoint"
         },
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -626,7 +626,7 @@
           "sh:path": "http://purl.org/dc/terms/description"
         },
         {
-          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:datatype": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -634,7 +634,17 @@
           "sh:name": {
             "de": "Enter your translation here"
           },
-          "sh:path": "http://www.iceg.be/Organization/ExOfficioStrikingOff"
+          "sh:path": "http://www.iceg.be/Organization.exOfficioStrikingOff"
+        },
+        {
+          "sh:class": "http://www.w3.org/ns/person#Person",
+          "sh:definition": {
+            "de": "Enter your translation here"
+          },
+          "sh:name": {
+            "de": "Enter your translation here"
+          },
+          "sh:path": "http://www.iceg.be/Organization.hasMember"
         },
         {
           "sh:class": "http://www.w3.org/ns/org#organization",
@@ -645,16 +655,6 @@
             "de": "Enter your translation here"
           },
           "sh:path": "http://www.w3.org/ns/org#hasMember"
-        },
-        {
-          "sh:class": "http://www.w3.org/ns/person#Person",
-          "sh:definition": {
-            "de": "Enter your translation here"
-          },
-          "sh:name": {
-            "de": "Enter your translation here"
-          },
-          "sh:path": "http://www.iceg.be/Organization/hasMember"
         },
         {
           "sh:class": "http://www.w3.org/ns/org#Post",
@@ -716,17 +716,17 @@
           "sh:name": {
             "de": "Enter your translation here"
           },
-          "sh:path": "http://www.iceg.be/Organization/Identifier"
+          "sh:path": "http://www.iceg.be/Organization.identifier"
         },
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
           "sh:name": {
             "de": "Enter your translation here"
           },
-          "sh:path": "http://www.iceg.be/Organization/LinksToTheDatabase"
+          "sh:path": "http://www.iceg.be/Organization.linksToDatabase"
         },
         {
           "sh:class": "https://schema.org/ImageObject",
@@ -759,7 +759,7 @@
           "sh:path": "http://www.w3.org/1999/xhtml/vocab#next"
         },
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -799,10 +799,10 @@
           "sh:name": {
             "de": "Enter your translation here"
           },
-          "sh:path": "http://www.iceg.be/Organization/StartDateOfThisData"
+          "sh:path": "http://www.iceg.be/Organization.startDateOfThisData"
         },
         {
-          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:datatype": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -810,7 +810,7 @@
           "sh:name": {
             "de": "Enter your translation here"
           },
-          "sh:path": "http://www.iceg.be/Organization/Status"
+          "sh:path": "http://www.iceg.be/Organization.status"
         },
         {
           "sh:class": "http://www.w3.org/ns/org#organization",
@@ -831,7 +831,7 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -842,7 +842,7 @@
           "sh:path": "http://purl.org/dc/terms/alternative"
         },
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -875,7 +875,7 @@
           "sh:path": "https://schema.org/deathDate"
         },
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -887,7 +887,7 @@
           "sh:path": "http://xmlns.com/foaf/0.1/familyName"
         },
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -899,7 +899,7 @@
           "sh:path": "http://xmlns.com/foaf/0.1/name"
         },
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -919,7 +919,7 @@
           "sh:name": {
             "de": "Enter your translation here"
           },
-          "sh:path": "http://www.iceg.be/Organization/Holds"
+          "sh:path": "http://www.iceg.be/Organization.holds"
         },
         {
           "sh:class": "http://www.w3.org/ns/adms#Identifier",
@@ -930,7 +930,7 @@
           "sh:name": {
             "de": "Enter your translation here"
           },
-          "sh:path": "http://www.iceg.be/Person/Identifier"
+          "sh:path": "http://www.iceg.be/Person.identifier"
         },
         {
           "sh:class": "http://www.w3.org/ns/org#organization",
@@ -940,10 +940,10 @@
           "sh:name": {
             "de": "Enter your translation here"
           },
-          "sh:path": "http://www.iceg.be/Person/MemberOf"
+          "sh:path": "http://www.iceg.be/Person.memberOf"
         },
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -958,13 +958,14 @@
           "sh:definition": {
             "de": "Enter your translation here"
           },
+          "sh:maxCount": "1",
           "sh:name": {
             "de": "Enter your translation here"
           },
           "sh:path": "http://www.w3.org/ns/locn#address"
         },
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -972,7 +973,7 @@
           "sh:name": {
             "de": "Enter your translation here"
           },
-          "sh:path": "http://www.iceg.be/Person/Title"
+          "sh:path": "http://xmlns.com/foaf/spec/#term_title"
         }
       ],
       "sh:targetClass": "http://www.w3.org/ns/person#Person"

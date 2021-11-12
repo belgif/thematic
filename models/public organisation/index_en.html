@@ -64,7 +64,7 @@
               <div class="head" role="status" id="status">
               <dl>
               <dt>Status</dt><dd>Working Draft</dd>
-              <dt>Published at</dt><dd>2021-11-05</dd>
+              <dt>Published at</dt><dd>2021-11-12</dd>
               <dt>This version</dt><dd><br></dd>
               
               
@@ -121,7 +121,7 @@
               <div class="head" role="metainfo" id="metainfo">
               <dl>
               <dt>Source</dt><dd><br></dd>
-              <!--<dt>Changelog</dt><dd><a href="https://github.com/bertvannuffelen/semiceuthema/blob/f5348cdc100936b87f4194795db2068668d7632b/CHANGELOG">https://github.com/bertvannuffelen/semiceuthema/blob/f5348cdc100936b87f4194795db2068668d7632b/CHANGELOG</a></dd>-->
+              <!--<dt>Changelog</dt><dd><a href="https://github.com/bertvannuffelen/semiceuthema/blob/5405089e1f60dc638e2f2279cfeb93b8b49ec114/CHANGELOG">https://github.com/bertvannuffelen/semiceuthema/blob/5405089e1f60dc638e2f2279cfeb93b8b49ec114/CHANGELOG</a></dd>-->
               <dt>Feedback</dt><dd><a href="TBD">TBD</a></dd>
               <!--<dt>Registry of standards</dt><dd><a href="TODO">TODO</a></dd>-->
 
@@ -171,7 +171,7 @@ Whenever possible, the CPOV will reuse existing vocabularies to avoid defining n
                 <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">Status of this document</h2>
                 
                 <p>
-                  This model has the status of Working Draft published on 2021-11-05.
+                  This model has the status of Working Draft published on 2021-11-12.
 	        </p>
                 
               </section>
@@ -499,8 +499,7 @@ The key difference between a locator and a locator name is that the latter is a 
                           
                         </td>
 			<td>1</td>
-                        <td property="rdfs:comment">The key postal division of the address, usually the city. (INSPIRE&#39;s definition is &quot;One or more names created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points.)
- For example, &quot;Paris&quot;.</td>
+                        <td property="rdfs:comment">The key postal division of the address, usually the city. (INSPIRE&#39;s definition is &quot;One or more names created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points.) For example, &quot;Paris&quot;.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -1527,10 +1526,10 @@ The European Council's invitation to introduce the European Legislation Identifi
                         <td></td>
                       </tr>
                     
-                      <tr id="Organization%3Acertification" typeof="rdfs:Property" resource="http://www.iceg.be/Organization/Certification">
+                      <tr id="Organization%3Acertification" typeof="rdfs:Property" resource="http://www.iceg.be/Organization.certification">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://www.iceg.be/Organization/Certification" data-toggle="tooltip" data-content="http://www.iceg.be/Organization/Certification" data-placement="right">
+                            <a href="http://www.iceg.be/Organization.certification" data-toggle="tooltip" data-content="http://www.iceg.be/Organization.certification" data-placement="right">
                             certification</a>
                           </code>
                         </td>
@@ -1567,10 +1566,10 @@ The European Council's invitation to introduce the European Legislation Identifi
                         <td></td>
                       </tr>
                     
-                      <tr id="Organization%3Acompany%20registration%20number" typeof="rdfs:Property" resource="http://www.iceg.be/Organization/CompanyRegistrationNumber">
+                      <tr id="Organization%3Acompany%20registration%20number" typeof="rdfs:Property" resource="http://www.iceg.be/Organization.companyRegistrationNumber">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://www.iceg.be/Organization/CompanyRegistrationNumber" data-toggle="tooltip" data-content="http://www.iceg.be/Organization/CompanyRegistrationNumber" data-placement="right">
+                            <a href="http://www.iceg.be/Organization.companyRegistrationNumber" data-toggle="tooltip" data-content="http://www.iceg.be/Organization.companyRegistrationNumber" data-placement="right">
                             company registration number</a>
                           </code>
                         </td>
@@ -1631,10 +1630,10 @@ information.</td>
                         <td></td>
                       </tr>
                     
-                      <tr id="Organization%3Aex%20officio%20striking%20off" typeof="rdfs:Property" resource="http://www.iceg.be/Organization/ExOfficioStrikingOff">
+                      <tr id="Organization%3Aex%20officio%20striking%20off" typeof="rdfs:Property" resource="http://www.iceg.be/Organization.exOfficioStrikingOff">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://www.iceg.be/Organization/ExOfficioStrikingOff" data-toggle="tooltip" data-content="http://www.iceg.be/Organization/ExOfficioStrikingOff" data-placement="right">
+                            <a href="http://www.iceg.be/Organization.exOfficioStrikingOff" data-toggle="tooltip" data-content="http://www.iceg.be/Organization.exOfficioStrikingOff" data-placement="right">
                             ex officio striking off</a>
                           </code>
                         </td>
@@ -1648,6 +1647,26 @@ information.</td>
 			<td>0..1</td>
                         <td property="rdfs:comment">Ex officio striking off of the entity for failure to submit their financial statements</td>
                         <td property="skos:scopeNote">Companies which have not complied with the obligation to deposit their annual accounts with the National Bank of Belgium for at least three consecutive accounting years can be struck off ex officio</td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Organization%3Ahas%20member" typeof="rdfs:Property" resource="http://www.iceg.be/Organization.hasMember">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://www.iceg.be/Organization.hasMember" data-toggle="tooltip" data-content="http://www.iceg.be/Organization.hasMember" data-placement="right">
+                            has member</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Person" data-placement="right">Person</a>
+			    
+                          
+                        </td>
+			<td>0..*</td>
+                        <td property="rdfs:comment">Indicates that Person is a member of the Organization with no indication of the nature of that membership or the role played</td>
+                        <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
                     
@@ -1675,26 +1694,6 @@ it possible to, for example, provide information about the period of time in whi
 Organization was a member of another, the level of membership etc. That more
 sophisticated model should be used where necessary and may be used in addition to
 the simple memberOf/hasMember properties.</td>
-                        <td></td>
-                      </tr>
-                    
-                      <tr id="Organization%3Ahas%20member" typeof="rdfs:Property" resource="http://www.iceg.be/Organization/hasMember">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="http://www.iceg.be/Organization/hasMember" data-toggle="tooltip" data-content="http://www.iceg.be/Organization/hasMember" data-placement="right">
-                            has member</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			    
-			    <a href="#Person" data-placement="right">Person</a>
-			    
-                          
-                        </td>
-			<td>0..*</td>
-                        <td property="rdfs:comment">Indicates that Person is a member of the Organization with no indication of the nature of that membership or the role played</td>
-                        <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
                     
@@ -1803,10 +1802,10 @@ hasUnit and to the parent with unitOf.</td>
                         <td></td>
                       </tr>
                     
-                      <tr id="Organization%3Aidentifier" typeof="rdfs:Property" resource="http://www.iceg.be/Organization/Identifier">
+                      <tr id="Organization%3Aidentifier" typeof="rdfs:Property" resource="http://www.iceg.be/Organization.identifier">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://www.iceg.be/Organization/Identifier" data-toggle="tooltip" data-content="http://www.iceg.be/Organization/Identifier" data-placement="right">
+                            <a href="http://www.iceg.be/Organization.identifier" data-toggle="tooltip" data-content="http://www.iceg.be/Organization.identifier" data-placement="right">
                             identifier</a>
                           </code>
                         </td>
@@ -1824,10 +1823,10 @@ hasUnit and to the parent with unitOf.</td>
                         <td></td>
                       </tr>
                     
-                      <tr id="Organization%3Alinks%20to%20database" typeof="rdfs:Property" resource="http://www.iceg.be/Organization/LinksToTheDatabase">
+                      <tr id="Organization%3Alinks%20to%20database" typeof="rdfs:Property" resource="http://www.iceg.be/Organization.linksToDatabase">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://www.iceg.be/Organization/LinksToTheDatabase" data-toggle="tooltip" data-content="http://www.iceg.be/Organization/LinksToTheDatabase" data-placement="right">
+                            <a href="http://www.iceg.be/Organization.linksToDatabase" data-toggle="tooltip" data-content="http://www.iceg.be/Organization.linksToDatabase" data-placement="right">
                             links to database</a>
                           </code>
                         </td>
@@ -1860,8 +1859,7 @@ hasUnit and to the parent with unitOf.</td>
                         </td>
 			<td>0..*</td>
                         <td property="rdfs:comment">A property to link an Organization to its logo.</td>
-                        <td property="skos:scopeNote">The value of this property can simply be the URL of the logo but it is better for developers if it links to an object that provides the URL of the image and essential metadata about it, notably its dimensions.
-</td>
+                        <td property="skos:scopeNote">The value of this property can simply be the URL of the logo but it is better for developers if it links to an object that provides the URL of the image and essential metadata about it, notably its dimensions.</td>
                         <td></td>
                       </tr>
                     
@@ -1978,10 +1976,10 @@ to be captured and computed.</td>
                         <td></td>
                       </tr>
                     
-                      <tr id="Organization%3Astart%20date%20of%20this%20data" typeof="rdfs:Property" resource="http://www.iceg.be/Organization/StartDateOfThisData">
+                      <tr id="Organization%3Astart%20date%20of%20this%20data" typeof="rdfs:Property" resource="http://www.iceg.be/Organization.startDateOfThisData">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://www.iceg.be/Organization/StartDateOfThisData" data-toggle="tooltip" data-content="http://www.iceg.be/Organization/StartDateOfThisData" data-placement="right">
+                            <a href="http://www.iceg.be/Organization.startDateOfThisData" data-toggle="tooltip" data-content="http://www.iceg.be/Organization.startDateOfThisData" data-placement="right">
                             start date of this data</a>
                           </code>
                         </td>
@@ -1998,10 +1996,10 @@ to be captured and computed.</td>
                         <td></td>
                       </tr>
                     
-                      <tr id="Organization%3Astatus" typeof="rdfs:Property" resource="http://www.iceg.be/Organization/Status">
+                      <tr id="Organization%3Astatus" typeof="rdfs:Property" resource="http://www.iceg.be/Organization.status">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://www.iceg.be/Organization/Status" data-toggle="tooltip" data-content="http://www.iceg.be/Organization/Status" data-placement="right">
+                            <a href="http://www.iceg.be/Organization.status" data-toggle="tooltip" data-content="http://www.iceg.be/Organization.status" data-placement="right">
                             status</a>
                           </code>
                         </td>
@@ -2054,8 +2052,7 @@ between Organizations in a hierarchical structure. </td>
                   <dl>
                     <dt>Description</dt><dd>An Organization such as a department or support unit which is part of some larger Organization and only has full recognition within the context of that Organization. In particular the unit would not be regarded as a legal entity in its own right.</dd>
                     
-                    <dt>Usage</dt><dd>Units can be large and complex, containing other Units. An alternative name is "Department". An Organizational Unit is in contrast to a suborganization that, although part of the larger Organization, may be legally distinct or otherwise enjoy a degree of autonomy.
-</dd>
+                    <dt>Usage</dt><dd>Units can be large and complex, containing other Units. An alternative name is "Department". An Organizational Unit is in contrast to a suborganization that, although part of the larger Organization, may be legally distinct or otherwise enjoy a degree of autonomy.</dd>
                     
 		     
 		    <dt>Subclass of<dt><dd>
@@ -2317,10 +2314,10 @@ A name usually sticks with a person for a long time period. In some European cou
                         <td></td>
                       </tr>
                     
-                      <tr id="Person%3Aholds" typeof="rdfs:Property" resource="http://www.iceg.be/Organization/Holds">
+                      <tr id="Person%3Aholds" typeof="rdfs:Property" resource="http://www.iceg.be/Organization.holds">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://www.iceg.be/Organization/Holds" data-toggle="tooltip" data-content="http://www.iceg.be/Organization/Holds" data-placement="right">
+                            <a href="http://www.iceg.be/Organization.holds" data-toggle="tooltip" data-content="http://www.iceg.be/Organization.holds" data-placement="right">
                             holds</a>
                           </code>
                         </td>
@@ -2337,10 +2334,10 @@ A name usually sticks with a person for a long time period. In some European cou
                         <td></td>
                       </tr>
                     
-                      <tr id="Person%3Aidentifier" typeof="rdfs:Property" resource="http://www.iceg.be/Person/Identifier">
+                      <tr id="Person%3Aidentifier" typeof="rdfs:Property" resource="http://www.iceg.be/Person.identifier">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://www.iceg.be/Person/Identifier" data-toggle="tooltip" data-content="http://www.iceg.be/Person/Identifier" data-placement="right">
+                            <a href="http://www.iceg.be/Person.identifier" data-toggle="tooltip" data-content="http://www.iceg.be/Person.identifier" data-placement="right">
                             identifier</a>
                           </code>
                         </td>
@@ -2357,10 +2354,10 @@ A name usually sticks with a person for a long time period. In some European cou
                         <td></td>
                       </tr>
                     
-                      <tr id="Person%3Amember%20of" typeof="rdfs:Property" resource="http://www.iceg.be/Person/MemberOf">
+                      <tr id="Person%3Amember%20of" typeof="rdfs:Property" resource="http://www.iceg.be/Person.memberOf">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://www.iceg.be/Person/MemberOf" data-toggle="tooltip" data-content="http://www.iceg.be/Person/MemberOf" data-placement="right">
+                            <a href="http://www.iceg.be/Person.memberOf" data-toggle="tooltip" data-content="http://www.iceg.be/Person.memberOf" data-placement="right">
                             member of</a>
                           </code>
                         </td>
@@ -2414,16 +2411,16 @@ Note that patronymic names refer to a father's given name, not the family name i
 			    
                           
                         </td>
-			<td></td>
+			<td>0..1</td>
                         <td property="rdfs:comment">The registered address of the Person.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
                     
-                      <tr id="Person%3Atitle" typeof="rdfs:Property" resource="http://www.iceg.be/Person/Title">
+                      <tr id="Person%3Atitle" typeof="rdfs:Property" resource="http://xmlns.com/foaf/spec/#term_title">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://www.iceg.be/Person/Title" data-toggle="tooltip" data-content="http://www.iceg.be/Person/Title" data-placement="right">
+                            <a href="http://xmlns.com/foaf/spec/#term_title" data-toggle="tooltip" data-content="http://xmlns.com/foaf/spec/#term_title" data-placement="right">
                             title</a>
                           </code>
                         </td>
@@ -2435,7 +2432,7 @@ Note that patronymic names refer to a father's given name, not the family name i
                           
                         </td>
 			<td>0..1</td>
-                        <td property="rdfs:comment">A word or name that describes a person&#39;s job or status in a company or organization</td>
+                        <td property="rdfs:comment">The approriate values for title are not formally constrained, and will vary across community and context. Values such as &#39;Mr&#39;, &#39;Mrs&#39;, &#39;Ms&#39;, &#39;Dr&#39; etc. are expected.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -2547,8 +2544,7 @@ character; and (b) having legal personality; and (c) financed, for the most part
 the State, or regional or local authorities, or other bodies governed by public law; or
 subject to management supervision by those bodies; or having an administrative,
 managerial or supervisory board, more than half of whose members are appointed
-by the State, regional or local authorities or by other bodies governed by public law".
-
+by the State, regional or local authorities or by other bodies governed by public law".
 </p></dd>
                     
 		     
@@ -2580,10 +2576,10 @@ by the State, regional or local authorities or by other bodies governed by publi
 
                     <tbody class="supertype">
                     
-                      <tr id="Public%20Organization%3Alegal%20form" typeof="rdfs:Property" resource="http://www.iceg.be/PublicOrganization/LegalForm">
+                      <tr id="Public%20Organization%3Alegal%20form" typeof="rdfs:Property" resource="http://www.iceg.be/PublicOrganization.legalForm">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://www.iceg.be/PublicOrganization/LegalForm" data-toggle="tooltip" data-content="http://www.iceg.be/PublicOrganization/LegalForm" data-placement="right">
+                            <a href="http://www.iceg.be/PublicOrganization.legalForm" data-toggle="tooltip" data-content="http://www.iceg.be/PublicOrganization.legalForm" data-placement="right">
                             legal form</a>
                           </code>
                         </td>
@@ -2742,7 +2738,7 @@ No changelog defined.
                 <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">JSON-LD context</h2>
                 (non-normative)
                 
-		<p>A reusable JSON-LD context definition for this Core Vocabulary is retrievable at: <a href="/thematic/models/public%20organisation/context/iceg-public-organisation_en.jsonld" target="_blank">/thematic/models/public%20organisation/context/iceg-public-organisation_en.jsonld</a></p>
+		<p>A reusable JSON-LD context definition for this Core Vocabulary is retrievable at: <a href="/thematic/models/public%20services/context/iceg-public-organisation_en.jsonld" target="_blank">/thematic/models/public%20services/context/iceg-public-organisation_en.jsonld</a></p>
                 
             </div>
 	    <!--
@@ -2750,7 +2746,7 @@ No changelog defined.
                 <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">SHACL template</h2>
                 (non-normative)
                 
-		<p>A reusable SHACL template for this Core Vocabulary is retrievable at: <a href="/doc/iceg/public-organisation/shacl/iceg-public-organisation_en-SHACL.ttl" target="_blank">/doc/iceg/public-organisation/shacl/iceg-public-organisation_en-SHACL.ttl</a></p>
+		<p>A reusable SHACL template for this Core Vocabulary is retrievable at: <a href="/thematic/models/public%20services/shacl/iceg-public-organisation_en-SHACL.ttl" target="_blank">/thematic/models/public%20services/shacl/iceg-public-organisation_en-SHACL.ttl</a></p>
                 
             </div>
 	    -->
