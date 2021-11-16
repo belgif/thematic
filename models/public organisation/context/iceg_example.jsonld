@@ -1,0 +1,161 @@
+{
+  "@context":  [ 
+   "https://raw.githubusercontent.com/belgif/thematic/master/models/public%20organisation/context/iceg-public-organisation_en.jsonld",
+   {"adms" : "http://www.w3.org/ns/adms#",
+    "cv" : "http://data.europa.eu/m8g/",
+	"dct": "http://purl.org/dc/terms/",
+    "ex1" : "http://www.example.com/",
+	"euodp" : "http://data.europa.eu/88u/dataset/",
+    "foaf" : "http://xmlns.com/foaf/0.1/",
+	"iceg" : "http://www.iceg.be/",
+    "locn": "http://www.w3.org/ns/locn#",
+    "org" : "http://www.w3.org/ns/org#",
+	"nal_atu" : "http://publications.europa.eu/resource/authority/atu/",
+	"nal_country" : "http://publications.europa.eu/resource/authority/country/",
+	"person" : "http://www.w3.org/ns/person#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema" : "https://schema.org/",
+    "skos" : "http://www.w3.org/2004/02/skos/core#",
+    "graph" : "@graph",
+    "id" : "@id",
+    "type" : "@type"
+   }
+  ],
+  "graph" : [ {
+    "id" : "ex1:organization_ParticipatiemaatschappijVlaanderen",
+    "type" : "Organization",
+	"Organization.alternativeLabel" : "P.M.V.",
+	"Organization.contactPoint" : "ex1:contactPoint_123",
+	"Organization.description" : "PMV is een doe- en durfbedrijf dat de toekomst van de Vlaamse economie vormgeeft. Zij financiert beloftevolle ondernemingen van bij de prille start tot en met de groei en internationalisering. Met en voor de overheid, en andere partners, realiseert zij projecten die belangrijk zijn voor de welvaart en het welzijn in Vlaanderen.",
+	"Organization.hasMember" : ["ex1:organization_BIOTECHFONDSVLAANDEREN","ex1:organization_PMVbeheer", "ex1:organization_LAKInvest"],
+    "Organization.hasPost" : ["ex1:post_Communicationmanager","ex1:post_revisor","ex1:post_Regeringsafgevaardige"],
+    "Organization.hasSite" : "ex1:site_123",
+    "Organization.homepage" : "http://www.pmv.eu",
+    "Organization.identifier" : "ex1:id_455777660",
+    "Organization.logo" : "https://www.mvovlaanderen.be/sites/default/files/organisaties/PMV_logo_RGB%20%28002%29.jpg",
+	"Organization.status" : "ex1:status_active",
+    "Organization.preferredLabel" : "ParticipatiemaatschappijVlaanderen"
+  },
+  {
+    "id" : "ex1:contactPoint_123",
+    "type" : "ContactPoint",
+    "ContactPoint.hasEmail" : "info@pmv.eu",
+	"ContactPoint.hasTelephone" : "02 229 52 30"
+  },
+  {
+    "id" : "ex1:organization_BIOTECHFONDSVLAANDEREN",
+    "type" : "Organization",
+    "Organization.preferredLabel" : "BIOTECH FONDS VLAANDEREN"
+  },
+  {
+    "id" : "ex1:organization_PMVbeheer",
+    "type" : "Organization",
+    "Organization.preferredLabel" : "PMV beheer"
+  },
+  {
+    "id" : "ex1:organization_LAKInvest",
+    "type" : "Organization",
+    "Organization.preferredLabel" : "LAK Invest"
+  },
+  {
+    "id" : "ex1:post_Communicationmanager",
+    "type" : "Post",
+    "Post.role" : "ex1:role_Communicationmanager",
+	"Post.postIn" : "ex1:organization_ParticipatiemaatschappijVlaanderen"
+  },
+  {
+    "id" : "ex1:role_Communicationmanager",
+    "type" : "Role"
+  },
+  {
+    "id" : "ex1:post_revisor",
+    "type" : "Post",
+    "Post.role" : "ex1:role_revisor"
+  },
+  {
+    "id" : "ex1:role_revisor",
+    "type" : "Role"
+  },
+  {
+    "id" : "ex1:post_Regeringsafgevaardige",
+    "type" : "Post",
+    "Post.role" : "ex1:role_Regeringsafgevaardige"
+  },
+  {
+    "id" : "ex1:role_Regeringsafgevaardige",
+    "type" : "Role"
+  },
+  {
+    "id" : "ex1:id_455777660",
+    "type" : "Identifier",
+    "Identifier.identifier" : "455777660",
+	"Identifier.dateOfIssue" : "1995-07-31T00:00:00",
+	"Identifier.issuingAuthorityName" : "CBE"
+  },
+  {
+    "id" : "https://www.mvovlaanderen.be/sites/default/files/organisaties/PMV_logo_RGB%20%28002%29.jpg",
+	"type" : "ImageObject"
+  },
+  {
+    "id" : "ex1:site_123",
+    "type" : "Site",
+    "Site.address" : "ex1:address_123"
+  },
+  {
+    "id" : "ex1:address_123",
+    "type" : "Address",
+	"Address.administrativeUnitLevel1 (country)" : "http://publications.europa.eu/resource/authority/country/BEL",
+	"Address.administrativeUnitLevel2 (country/region/state)" : "Brussels",
+    "Address.fullAddress" : "Oude Graanmarkt 63, 1000 Brussel",
+	"Address.postCode" : "1000",
+	"Address.postName (city)" : "Brussel",
+	"Address.thoroughfare" : "Oude Graanmarkt"
+  },
+  {
+    "id" : "http://www.pmv.eu",
+    "type" : "Document"
+  },
+  {
+	"id" : "ex1:publicorganization_123",
+    "type" : "PublicOrganization",
+	"Organization.hasUnit" : ["ex1:organizationalunit_Communicatie-enmanagementondersteuning","ex1:organizationalunit_Humanresources","ex1:organizationalunit_Juridischedienst"],
+	"PublicOrganization.legalForm" : "Naamloze vennootschap (NV)",
+	"PublicOrganization.spatial" : "http://publications.europa.eu/resource/authority/atu/BEL_PR_WVL"
+  },
+  {
+	"id" : "ex1:organizationalunit_Communicatie-enmanagementondersteuning",
+    "type" : "Organization",
+	"Organization.preferredLabel" : "Communicatie- en managementondersteuning"
+  },
+  {
+	"id" : "ex1:organizationalunit_Humanresources",
+    "type" : "Organization",
+	"Organization.preferredLabel" : "Human resources"
+  },
+  {
+	"id" : "ex1:organizationalunit_Juridischedienst",
+    "type" : "Organization",
+	"Organization.preferredLabel" : "Juridische dienst"
+  },
+  {
+	"id" : "nal_atu:BEL_PR_WVL",
+    "type" : "AdministrativeTerritorialUnits",
+	"AdministrativeTerritorialUnits.geometry" : "ex1:geometry_123"
+  },
+  {
+	"id" : "ex1:geometry_123",
+    "type" : "Geometry",
+	"Geometry.coordinates" : "0.848964, 4.345432",
+	"Geometry.geometryType" : "ex1:geometrytype_point"
+  },
+  {
+	"id" : "ex1:person_123",
+    "type" : "Person",
+	"Person.birthName" : "Frank Kindt",
+	"Person.familyName (surname)" : "Kindt",
+	"Person.fullName" : "FrankKindt",
+	"Person.givenName (forename)" : "Frank",
+	"Person.memberOf" : "ex1:organization_ParticipatiemaatschappijVlaanderen"
+  }
+ ]
+}
