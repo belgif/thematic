@@ -1,18 +1,9 @@
 {
   "@context": {
-    "EnterYourTranslationHere": "https://semiceu.github.io/CPOV/releases/2.00/#Public%20Organization",
-    "EnterYourTranslationHere.Channel": {
-      "@id": "https://data.europa.eu/m8g/ChannelPreference.channel",
-      "@type": "@id"
-    },
-    "EnterYourTranslationHere.Purpose": {
-      "@id": "https://data.europa.eu/m8g/ChannelPreference.purpose",
-      "@type": "@id"
-    },
+    "EnterYourTranslationHere": "purl.eu/ns/publicservice#Purpose",
     "EnterYourTranslationHere.enterYourTranslationHere": {
-      "@container": "@set",
-      "@id": "https://semiceu.github.io/CCCEV/releases/2.00/#Requirement%3Ahas%20supporting%20evidence",
-      "@type": "@id"
+      "@id": "purl.eu/ns/publicservice#responseTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#duration"
     }
   }
 }

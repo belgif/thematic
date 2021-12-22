@@ -95,19 +95,22 @@
       "@id": "https://schema.org/openingHours",
       "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
-    "Document": "http://xmlns.com/foaf/0.1/Document",
+    "ContactPoint.website": {
+      "@id": "http://schema.org/WebSite",
+      "@type": "http://schema.org/url"
+    },
     "FoundationEvent": "http://data.europa.eu/m8g/FoundationEvent",
     "Geometry": "http://www.w3.org/ns/locn#Geometry",
     "Geometry.coordinates": {
-      "@id": "http://data.europa.eu/m8g/Geometry/Coordinates",
+      "@id": "http://data.europa.eu/m8g/coordinates",
       "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
     "Geometry.crs": {
-      "@id": "http://data.europa.eu/m8g/Geometry/Crs",
+      "@id": "http://data.europa.eu/m8g/crs",
       "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
     },
     "Geometry.geometryType": {
-      "@id": "http://data.europa.eu/m8g/Geometry/GeometryType",
+      "@id": "http://data.europa.eu/m8g/geometryType",
       "@type": "http://www.w3.org/2004/02/skos/core#Concept"
     },
     "Geometry.gml": {
@@ -152,12 +155,6 @@
       "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
     },
     "ImageObject": "https://schema.org/ImageObject",
-    "LegalResource": "http://data.europa.eu/eli/ontology#LegalResource",
-    "LegalResource.implements": {
-      "@container": "@set",
-      "@id": "http://purl.org/vocab/cpsv#implements",
-      "@type": "@id"
-    },
     "OpeningHoursSpecification": "https://schema.org/OpeningHoursSpecification",
     "OpeningHoursSpecification.dayOfWeek": {
       "@id": "https://schema.org/dayOfWeek",
@@ -171,24 +168,20 @@
       "@id": "https://schema.org/validThrough",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
-    "Organization": "http://www.w3.org/ns/org#organization",
+    "Organization": "http://www.w3.org/ns/org#Organization",
     "Organization.alternativeLabel": {
       "@id": "http://www.w3.org/2004/02/skos/core#altLabel",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "Organization.certification": {
       "@container": "@set",
-      "@id": "http://www.iceg.be/Organization.certification",
+      "@id": "purl.eu/ns/publicorganization#certification",
       "@type": "http://www.w3.org/2004/02/skos/core#Concept"
     },
     "Organization.changedBy": {
       "@container": "@set",
       "@id": "http://www.w3.org/ns/org#changedBy",
       "@type": "@id"
-    },
-    "Organization.companyRegistrationNumber": {
-      "@id": "http://www.iceg.be/Organization.companyRegistrationNumber",
-      "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
     "Organization.contactPoint": {
       "@container": "@set",
@@ -200,7 +193,7 @@
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "Organization.exOfficioStrikingOff": {
-      "@id": "http://www.iceg.be/Organization.exOfficioStrikingOff",
+      "@id": "purl.eu/ns/publicorganization#exOfficioStrikingOff",
       "@type": "http://www.w3.org/2004/02/skos/core#Concept"
     },
     "Organization.hasMember": {
@@ -228,18 +221,13 @@
       "@id": "http://www.w3.org/ns/org#hasUnit",
       "@type": "@id"
     },
-    "Organization.homepage": {
-      "@container": "@set",
-      "@id": "http://xmlns.com/foaf/0.1/homepage",
-      "@type": "@id"
-    },
     "Organization.identifier": {
-      "@id": "http://www.iceg.be/Organization.identifier",
+      "@id": "https://www.w3.org/ns/adms#Identifier",
       "@type": "@id"
     },
     "Organization.linksToDatabase": {
       "@container": "@set",
-      "@id": "http://www.iceg.be/Organization.linksToDatabase",
+      "@id": "purl.eu/ns/publicorganization#linksToDatabase",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "Organization.logo": {
@@ -272,11 +260,11 @@
       "@type": "@id"
     },
     "Organization.startDateOfThisData": {
-      "@id": "http://www.iceg.be/Organization.startDateOfThisData",
+      "@id": "purl.eu/ns/publicorganization#startDateOfThisData",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "Organization.status": {
-      "@id": "http://www.iceg.be/Organization.status",
+      "@id": "purl.eu/ns/publicorganization#status",
       "@type": "http://www.w3.org/2004/02/skos/core#Concept"
     },
     "Organization.subOrganizationOf": {
@@ -321,16 +309,16 @@
     },
     "Person.holds": {
       "@container": "@set",
-      "@id": "http://www.iceg.be/Organization.holds",
+      "@id": "https://www.w3.org/ns/org#holds",
       "@type": "@id"
     },
     "Person.identifier": {
-      "@id": "http://www.iceg.be/Person.identifier",
+      "@id": "https://dublincore.org/specifications/dublin-core/dcmi-terms/#identifier",
       "@type": "@id"
     },
     "Person.memberOf": {
       "@container": "@set",
-      "@id": "http://www.iceg.be/Person.memberOf",
+      "@id": "https://schema.org/memberOf",
       "@type": "@id"
     },
     "Person.patronymicName": {
@@ -342,7 +330,7 @@
       "@type": "@id"
     },
     "Person.title": {
-      "@id": "http://xmlns.com/foaf/spec/#term_title",
+      "@id": "http://xmlns.com/foaf/0.1/title",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "Post": "http://www.w3.org/ns/org#Post",
@@ -356,14 +344,24 @@
       "@id": "http://www.w3.org/ns/org#role",
       "@type": "@id"
     },
-    "PublicOrganization": "http://www.iceg.be/PublicOrganization",
-    "PublicOrganization.legalForm": {
-      "@id": "http://www.iceg.be/PublicOrganization.legalForm",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-    },
-    "PublicOrganization.spatial": {
+    "PublicOrganization": "http://data.europa.eu/m8g/PublicOrganisation",
+    "PublicOrganization.jurisdiction": {
       "@container": "@set",
       "@id": "http://purl.org/dc/terms/spatial",
+      "@type": "@id"
+    },
+    "PublicOrganization.legalForm": {
+      "@id": "purl.eu/ns/publicorganization#legalForm",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "ReferenceFramework": "http://data.europa.eu/m8g/ReferenceFramework",
+    "ReferenceFramework.identifier": {
+      "@id": "http://purl.org/dc/terms/identifier",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "ReferenceFramework.implements": {
+      "@container": "@set",
+      "@id": "http://purl.org/vocab/cpsv#implements",
       "@type": "@id"
     },
     "Role": "http://www.w3.org/ns/org#Role",

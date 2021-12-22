@@ -2,8 +2,8 @@
   "@context": {
     "EnterYourTranslationHere": "https://schema.org/OpeningHoursSpecification",
     "EnterYourTranslationHere.enterYourTranslationHere": {
-      "@id": "https://schema.org/validThrough",
-      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+      "@id": "purl.eu/ns/publicorganization#status",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept"
     }
   }
 }

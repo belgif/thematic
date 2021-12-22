@@ -5,7 +5,7 @@
     "foaf:mbox": "mailto: contact@semic.eu",
     "foaf:name": "Semantic Interoperability Community (SEMIC)"
   },
-  "@id": "https://data.europa.eu/m8g",
+  "@id": "https://purl.eu/ns/publicservice",
   "@type": "http://www.w3.org/2002/07/owl#Ontology",
   "label": {
     "en": "iceg-public-service",
@@ -39,99 +39,16 @@
     }
   ],
   "contributors": [],
-  "baseURI": "https://data.europa.eu/m8g/",
+  "baseURI": "https://purl.eu/ns/publicservice#",
   "license": "https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic",
   "issued": "TODO",
   "navigation": {},
   "publication-state": "Working Draft",
-  "publication-date": "2021-10-22",
-  "classes": [
-    {
-      "@id": "https://data.europa.eu/m8g/ChannelPreference",
-      "@type": "http://www.w3.org/2002/07/owl#Class",
-      "definition": {
-        "en": "This class describes the relationship between Channel and Purpose. For instance, a Channel can be preferred for a Purpose and depreciated for another one (exp: you can introduce you tax declaration in paper but you're not encouraged to do so)."
-      },
-      "parents": []
-    }
-  ],
-  "externals": [
-    {
-      "name": null,
-      "@id": "https://data.europa.eu/m8g/ChannelPreference",
-      "@type": "rdfs:Class"
-    }
-  ],
-  "properties": [
-    {
-      "@id": "https://data.europa.eu/m8g/ChannelPreference.channel",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "domain": [
-        {
-          "uri": "https://data.europa.eu/m8g/ChannelPreference"
-        }
-      ],
-      "range": [
-        {
-          "uri": "http://fixme.com#Channel"
-        }
-      ],
-      "generalization": []
-    },
-    {
-      "@id": "https://data.europa.eu/m8g/ChannelPreference.purpose",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "domain": [
-        {
-          "uri": "https://data.europa.eu/m8g/ChannelPreference"
-        }
-      ],
-      "range": [
-        {
-          "uri": "https://catalogue-of-services-isa.github.io/SDG-search-service-model/releases/v1.00/#Webpage%3Atype"
-        }
-      ],
-      "generalization": []
-    },
-    {
-      "@id": "https://data.europa.eu/m8g/type",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "definition": {
-        "en": "The type of purpose related to the Channel."
-      },
-      "usage": {
-        "en": "This attribute can at least be of two types to be compliant with the SDG:\r\n- information \r\n- procedure\r\n\r\nIt can also be other types like:\r\n- assistance"
-      },
-      "domain": [
-        {
-          "uri": "https://catalogue-of-services-isa.github.io/SDG-search-service-model/releases/v1.00/#Webpage%3Atype"
-        }
-      ],
-      "range": [
-        {
-          "uri": "http://www.w3.org/2004/02/skos/core#Concept"
-        }
-      ],
-      "generalization": []
-    }
-  ],
-  "externalproperties": [
-    {
-      "name": null,
-      "@id": "https://data.europa.eu/m8g/ChannelPreference.channel",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": null,
-      "@id": "https://data.europa.eu/m8g/ChannelPreference.purpose",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": null,
-      "@id": "https://data.europa.eu/m8g/type",
-      "@type": "rdf:Property"
-    }
-  ],
+  "publication-date": "2021-12-22",
+  "classes": [],
+  "externals": [],
+  "properties": [],
+  "externalproperties": [],
   "@context": {
     "owl": "http://www.w3.org/2002/07/owl#",
     "void": "http://rdfs.org/ns/void#",

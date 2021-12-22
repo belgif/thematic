@@ -40,7 +40,7 @@
   "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_en",
   "shapes": [
     {
-      "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_en#AdministrativeTerritorialUnitsShape",
+      "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_en#AdministrativeTerritorialUnitShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
@@ -59,24 +59,6 @@
       "sh:targetClass": "http://data.europa.eu/88u/dataset/atu-type"
     },
     {
-      "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_en#Legal ResourceShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [
-        {
-          "sh:class": "http://www.w3.org/ns/org#ChangeEvent",
-          "sh:definition": {
-            "en": "The implements property links a Change Event to relevant legislation or policy documents i.e. the formal framework under which the Change Event is defined."
-          },
-          "sh:name": {
-            "en": "implements"
-          },
-          "sh:path": "http://purl.org/vocab/cpsv#implements"
-        }
-      ],
-      "sh:targetClass": "http://data.europa.eu/eli/ontology#LegalResource"
-    },
-    {
       "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_en#FoundationEventShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
@@ -89,6 +71,16 @@
       "sh:closed": false,
       "sh:property": [
         {
+          "sh:class": "http://data.europa.eu/88u/dataset/atu-type",
+          "sh:definition": {
+            "en": "This property links an Organization to the Administrative Region(s) that it covers."
+          },
+          "sh:name": {
+            "en": "jurisdiction"
+          },
+          "sh:path": "http://purl.org/dc/terms/spatial"
+        },
+        {
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "en": "The type of entity as defined by the Belgian law"
@@ -97,20 +89,40 @@
           "sh:name": {
             "en": "legal form"
           },
-          "sh:path": "http://www.iceg.be/PublicOrganization.legalForm"
-        },
-        {
-          "sh:class": "http://data.europa.eu/88u/dataset/atu-type",
-          "sh:definition": {
-            "en": "This property links an Organization to the Administrative Region(s) that it covers."
-          },
-          "sh:name": {
-            "en": "spatial"
-          },
-          "sh:path": "http://purl.org/dc/terms/spatial"
+          "sh:path": "purl.eu/ns/publicorganization#legalForm"
         }
       ],
-      "sh:targetClass": "http://www.iceg.be/PublicOrganization"
+      "sh:targetClass": "http://data.europa.eu/m8g/PublicOrganisation"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_en#ReferenceFrameworkShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:definition": {
+            "en": "An unambiguous reference to a Reference Framework."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "identifier"
+          },
+          "sh:path": "http://purl.org/dc/terms/identifier"
+        },
+        {
+          "sh:class": "http://www.w3.org/ns/org#ChangeEvent",
+          "sh:definition": {
+            "en": "The implements property links a Change Event to relevant legislation or policy documents i.e. the formal framework under which the Change Event is defined."
+          },
+          "sh:name": {
+            "en": "implements"
+          },
+          "sh:path": "http://purl.org/vocab/cpsv#implements"
+        }
+      ],
+      "sh:targetClass": "http://data.europa.eu/m8g/ReferenceFramework"
     },
     {
       "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_en#IdentifierShape",
@@ -198,7 +210,6 @@
             "en": "The name or names of a geographic area or locality that groups a number of addressable objects for addressing purposes, without being an administrative unit."
           },
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
             "en": "address area"
           },
@@ -210,7 +221,6 @@
             "en": "A globally unique identifier for each instance of an Address."
           },
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
             "en": "address ID"
           },
@@ -222,7 +232,6 @@
             "en": "The name or names of a unit of administration where a Member State has and/or exercises jurisdictional rights, for local, regional and national governance. Level 1 refers to the uppermost administrative unit for the address, almost always a country."
           },
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
             "en": "administrative unit level 1 (country)"
           },
@@ -234,7 +243,6 @@
             "en": "The name or names of a unit of administration where a Member State has and/or exercises jurisdictional rights, for local, regional and national governance. Level 2 referst to the region of the address, usually a county, state or other such area that typically encompasses several localities."
           },
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
             "en": "administrative unit level 2 (country/region/state)"
           },
@@ -246,7 +254,6 @@
             "en": "The complete address written as a formatted string."
           },
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
             "en": "full address"
           },
@@ -258,7 +265,6 @@
             "en": "A number or a sequence of characters which allows a user or an application to interpret, parse and format the locator within the relevant scope. A locator may include more locator designators."
           },
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
             "en": "locator designator"
           },
@@ -270,7 +276,6 @@
             "en": "Proper noun(s) applied to the real world entity identified by the locator."
           },
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
             "en": "locator name"
           },
@@ -282,7 +287,6 @@
             "en": "The Post Office Box number."
           },
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
             "en": "post office box"
           },
@@ -294,7 +298,6 @@
             "en": "The post/zip code of an address. (INSPIRE's definition is \"A code created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points.\")"
           },
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
             "en": "post code"
           },
@@ -306,7 +309,6 @@
             "en": "The key postal division of the address, usually the city. (INSPIRE's definition is \"One or more names created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points.)\r For example, \"Paris\"."
           },
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
             "en": "post name (city)"
           },
@@ -318,7 +320,6 @@
             "en": "An address component that represents the name or names of a passage or way through from one location to another. A thoroughfare is not necessarily a road, it might be a waterway or some other feature."
           },
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
             "en": "thoroughfare"
           },
@@ -341,7 +342,7 @@
           "sh:name": {
             "en": "coordinates"
           },
-          "sh:path": "http://data.europa.eu/m8g/Geometry/Coordinates"
+          "sh:path": "http://data.europa.eu/m8g/coordinates"
         },
         {
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#anyURI",
@@ -352,7 +353,7 @@
           "sh:name": {
             "en": "crs"
           },
-          "sh:path": "http://data.europa.eu/m8g/Geometry/Crs"
+          "sh:path": "http://data.europa.eu/m8g/crs"
         },
         {
           "sh:datatype": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -363,7 +364,7 @@
           "sh:name": {
             "en": "geometry type"
           },
-          "sh:path": "http://data.europa.eu/m8g/Geometry/GeometryType"
+          "sh:path": "http://data.europa.eu/m8g/geometryType"
         },
         {
           "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
@@ -440,7 +441,7 @@
           "sh:path": "http://www.w3.org/ns/prov#endedAtTime"
         },
         {
-          "sh:class": "http://data.europa.eu/eli/ontology#LegalResource",
+          "sh:class": "http://data.europa.eu/m8g/ReferenceFramework",
           "sh:definition": {
             "en": "The property hasFormalFramework links a Change Event or Foundation Event to a piece of legislation or a policy document that prompted the change."
           },
@@ -450,7 +451,7 @@
           "sh:path": "http://data.europa.eu/m8g/hasFormalFramework"
         },
         {
-          "sh:class": "http://www.w3.org/ns/org#organization",
+          "sh:class": "http://www.w3.org/ns/org#Organization",
           "sh:definition": {
             "en": "The original organization property links a Change Event to the Organization that existed before the change. Although the Foundation Event class is defined as a subclass of Change Event, it is inappropriate to use the original organization property with the Foundation Event class."
           },
@@ -460,7 +461,7 @@
           "sh:path": "http://www.w3.org/ns/org#originalOrganization"
         },
         {
-          "sh:class": "http://www.w3.org/ns/org#organization",
+          "sh:class": "http://www.w3.org/ns/org#Organization",
           "sh:definition": {
             "en": "This property links a Change Event or a Foundation Event to the Organization that resulted from it."
           },
@@ -484,12 +485,259 @@
       "sh:targetClass": "http://www.w3.org/ns/org#ChangeEvent"
     },
     {
+      "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_en#OrganizationShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:definition": {
+            "en": "In line with ORG and SKOS itself, an organization may have any number of alternative or informal names, irrespective of language."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "alternative label"
+          },
+          "sh:path": "http://www.w3.org/2004/02/skos/core#altLabel"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:definition": {
+            "en": "Certifications, licences or registrations that are of importance for third parties or whose publication is mandatory"
+          },
+          "sh:name": {
+            "en": "certification"
+          },
+          "sh:path": "purl.eu/ns/publicorganization#certification"
+        },
+        {
+          "sh:class": "http://www.w3.org/ns/org#ChangeEvent",
+          "sh:definition": {
+            "en": "The changed by organization property links an Organization to the Change Event that changed the Organization."
+          },
+          "sh:name": {
+            "en": "changed by"
+          },
+          "sh:path": "http://www.w3.org/ns/org#changedBy"
+        },
+        {
+          "sh:class": "https://schema.org/ContactPoint",
+          "sh:definition": {
+            "en": "The contact point property links to a Contact Point that provides contact\r\ninformation, in particular a phone number and e-mail address."
+          },
+          "sh:name": {
+            "en": "contact point"
+          },
+          "sh:path": "https://schema.org/contactPoint"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:definition": {
+            "en": "Statement or account giving the characteristics of the company."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "description"
+          },
+          "sh:path": "http://purl.org/dc/terms/description"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:definition": {
+            "en": "Ex officio striking off of the entity for failure to submit their financial statements"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "ex officio striking off"
+          },
+          "sh:path": "purl.eu/ns/publicorganization#exOfficioStrikingOff"
+        },
+        {
+          "sh:class": "http://www.w3.org/ns/org#Organization",
+          "sh:definition": {
+            "en": "One Organization may be a member of another without being a sub organization, i.e.\r\nthey are independent entities."
+          },
+          "sh:name": {
+            "en": "has member"
+          },
+          "sh:path": "http://www.w3.org/ns/org#hasMember"
+        },
+        {
+          "sh:class": "http://www.w3.org/ns/person#Person",
+          "sh:definition": {
+            "en": "Indicates that Person is a member of the Organization with no indication of the nature of that membership or the role played"
+          },
+          "sh:name": {
+            "en": "has member"
+          },
+          "sh:path": "http://www.iceg.be/Organization.hasMember"
+        },
+        {
+          "sh:class": "http://www.w3.org/ns/org#Post",
+          "sh:definition": {
+            "en": "Indicates the post that belongs to the Organization."
+          },
+          "sh:name": {
+            "en": "has post"
+          },
+          "sh:path": "http://www.w3.org/ns/org#hasPost"
+        },
+        {
+          "sh:class": "http://www.w3.org/ns/org#Site",
+          "sh:definition": {
+            "en": "Indicates a site at which the Organization has some presence even if only indirect (e.g. virtual office or a professional service which is acting as the registered address for a company)."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "has site"
+          },
+          "sh:path": "http://www.w3.org/ns/org#hasSite"
+        },
+        {
+          "sh:class": "http://www.w3.org/ns/org#Organization",
+          "sh:definition": {
+            "en": "Public Organizations are often large and complex and may be a collection of smaller\r\nOrganizations, each of which has a specific identity that may be legally defined. The\r\nhasSubOrganization and subOrganizationOf properties express the relationships\r\nbetween Organizations in a hierarchical structure. "
+          },
+          "sh:name": {
+            "en": "has sub organization"
+          },
+          "sh:path": "http://www.w3.org/ns/org#hasSubOrganization"
+        },
+        {
+          "sh:class": "http://www.w3.org/ns/org#OrganizationalUnit",
+          "sh:definition": {
+            "en": "The properties hasUnit and unitOf are used to link to operational departments within an Organization that may not generally exist in their own right."
+          },
+          "sh:name": {
+            "en": "has unit"
+          },
+          "sh:path": "http://www.w3.org/ns/org#hasUnit"
+        },
+        {
+          "sh:class": "http://www.w3.org/ns/adms#Identifier",
+          "sh:definition": {
+            "en": "Many organizations are referred to by an acronym or some other identifier\r\n"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "identifier"
+          },
+          "sh:path": "https://www.w3.org/ns/adms#Identifier"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:definition": {
+            "en": "Links to databases containing data not recorded in the CBE/KBO"
+          },
+          "sh:name": {
+            "en": "links to database"
+          },
+          "sh:path": "purl.eu/ns/publicorganization#linksToDatabase"
+        },
+        {
+          "sh:class": "https://schema.org/ImageObject",
+          "sh:definition": {
+            "en": "A property to link an Organization to its logo."
+          },
+          "sh:name": {
+            "en": "logo"
+          },
+          "sh:path": "https://schema.org/logo"
+        },
+        {
+          "sh:class": "http://www.w3.org/ns/org#Organization",
+          "sh:definition": {
+            "en": "One Organization may be a member of another without being a sub organization, i.e.\r\nthey are independent entities."
+          },
+          "sh:name": {
+            "en": "member of"
+          },
+          "sh:path": "http://www.w3.org/ns/org#memberOf"
+        },
+        {
+          "sh:class": "http://www.w3.org/ns/org#Organization",
+          "sh:definition": {
+            "en": "In some cases, it is necessary to be able to create an ordered sequence of\r\norganizations that precede and succeed each other. To support this, the CPOV\r\nincludes the well-known relationships of previous and next to allow such sequences\r\nto be captured and computed."
+          },
+          "sh:name": {
+            "en": "next"
+          },
+          "sh:path": "http://www.w3.org/1999/xhtml/vocab#next"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:definition": {
+            "en": "As defined in the ORG Ontology, a preferred label is used to provide the primary, legally recognised name of the organization"
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "preferred label"
+          },
+          "sh:path": "http://www.w3.org/2004/02/skos/core#prefLabel"
+        },
+        {
+          "sh:class": "http://www.w3.org/ns/org#Organization",
+          "sh:definition": {
+            "en": "In some cases, it is necessary to be able to create an ordered sequence of\r\norganizations that precede and succeed each other. To support this, the CPOV\r\nincludes the well-known relationships of previous and next to allow such sequences\r\nto be captured and computed."
+          },
+          "sh:name": {
+            "en": "prev"
+          },
+          "sh:path": "http://www.w3.org/1999/xhtml/vocab#prev"
+        },
+        {
+          "sh:class": "http://www.w3.org/ns/org#ChangeEvent",
+          "sh:definition": {
+            "en": "This property link an Organization to the Change Event it resulted from."
+          },
+          "sh:name": {
+            "en": "resulted from"
+          },
+          "sh:path": "http://www.w3.org/ns/org#resultedFrom"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "sh:definition": {
+            "en": "\tThe date on which the Organization-related information was provided."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "start date of this data"
+          },
+          "sh:path": "purl.eu/ns/publicorganization#startDateOfThisData"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:definition": {
+            "en": "Entity status, e.g. active, closed, cancelled, identified\r\nlegal creation, stopped"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "status"
+          },
+          "sh:path": "purl.eu/ns/publicorganization#status"
+        },
+        {
+          "sh:class": "http://www.w3.org/ns/org#Organization",
+          "sh:definition": {
+            "en": "Public Organizations are often large and complex and may be a collection of smaller\r\nOrganizations, each of which has a specific identity that may be legally defined. The\r\nhasSubOrganization and subOrganizationOf properties express the relationships\r\nbetween Organizations in a hierarchical structure. "
+          },
+          "sh:name": {
+            "en": "sub organization of"
+          },
+          "sh:path": "http://www.w3.org/ns/org#subOrganizationOf"
+        }
+      ],
+      "sh:targetClass": "http://www.w3.org/ns/org#Organization"
+    },
+    {
       "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_en#OrganizationalUnitShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
         {
-          "sh:class": "http://www.w3.org/ns/org#organization",
+          "sh:class": "http://www.w3.org/ns/org#Organization",
           "sh:definition": {
             "en": "The properties hasUnit and unitOf are used to link to operational departments within an Organization that may not generally exist in their own right."
           },
@@ -507,7 +755,7 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "sh:class": "http://www.w3.org/ns/org#organization",
+          "sh:class": "http://www.w3.org/ns/org#Organization",
           "sh:definition": {
             "en": "Indicates the Organization whose post belongs to."
           },
@@ -556,274 +804,6 @@
         }
       ],
       "sh:targetClass": "http://www.w3.org/ns/org#Site"
-    },
-    {
-      "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_en#OrganizationShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [
-        {
-          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-          "sh:definition": {
-            "en": "In line with ORG and SKOS itself, an organization may have any number of alternative or informal names, irrespective of language."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "alternative label"
-          },
-          "sh:path": "http://www.w3.org/2004/02/skos/core#altLabel"
-        },
-        {
-          "sh:datatype": "http://www.w3.org/2004/02/skos/core#Concept",
-          "sh:definition": {
-            "en": "Certifications, licences or registrations that are of importance for third parties or whose publication is mandatory"
-          },
-          "sh:name": {
-            "en": "certification"
-          },
-          "sh:path": "http://www.iceg.be/Organization.certification"
-        },
-        {
-          "sh:class": "http://www.w3.org/ns/org#ChangeEvent",
-          "sh:definition": {
-            "en": "The changed by organization property links an Organization to the Change Event that changed the Organization."
-          },
-          "sh:name": {
-            "en": "changed by"
-          },
-          "sh:path": "http://www.w3.org/ns/org#changedBy"
-        },
-        {
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
-          "sh:definition": {
-            "en": "Unique combination of numbers and, in some cases, letters to identify a company"
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "company registration number"
-          },
-          "sh:path": "http://www.iceg.be/Organization.companyRegistrationNumber"
-        },
-        {
-          "sh:class": "https://schema.org/ContactPoint",
-          "sh:definition": {
-            "en": "The contact point property links to a Contact Point that provides contact\r\ninformation, in particular a phone number and e-mail address."
-          },
-          "sh:name": {
-            "en": "contact point"
-          },
-          "sh:path": "https://schema.org/contactPoint"
-        },
-        {
-          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-          "sh:definition": {
-            "en": "Statement or account giving the characteristics of the company."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "description"
-          },
-          "sh:path": "http://purl.org/dc/terms/description"
-        },
-        {
-          "sh:datatype": "http://www.w3.org/2004/02/skos/core#Concept",
-          "sh:definition": {
-            "en": "Ex officio striking off of the entity for failure to submit their financial statements"
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "ex officio striking off"
-          },
-          "sh:path": "http://www.iceg.be/Organization.exOfficioStrikingOff"
-        },
-        {
-          "sh:class": "http://www.w3.org/ns/person#Person",
-          "sh:definition": {
-            "en": "Indicates that Person is a member of the Organization with no indication of the nature of that membership or the role played"
-          },
-          "sh:name": {
-            "en": "has member"
-          },
-          "sh:path": "http://www.iceg.be/Organization.hasMember"
-        },
-        {
-          "sh:class": "http://www.w3.org/ns/org#organization",
-          "sh:definition": {
-            "en": "One Organization may be a member of another without being a sub organization, i.e.\r\nthey are independent entities."
-          },
-          "sh:name": {
-            "en": "has member"
-          },
-          "sh:path": "http://www.w3.org/ns/org#hasMember"
-        },
-        {
-          "sh:class": "http://www.w3.org/ns/org#Post",
-          "sh:definition": {
-            "en": "Indicates the post that belongs to the Organization."
-          },
-          "sh:name": {
-            "en": "has post"
-          },
-          "sh:path": "http://www.w3.org/ns/org#hasPost"
-        },
-        {
-          "sh:class": "http://www.w3.org/ns/org#Site",
-          "sh:definition": {
-            "en": "Indicates a site at which the Organization has some presence even if only indirect (e.g. virtual office or a professional service which is acting as the registered address for a company)."
-          },
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "has site"
-          },
-          "sh:path": "http://www.w3.org/ns/org#hasSite"
-        },
-        {
-          "sh:class": "http://www.w3.org/ns/org#organization",
-          "sh:definition": {
-            "en": "Public Organizations are often large and complex and may be a collection of smaller\r\nOrganizations, each of which has a specific identity that may be legally defined. The\r\nhasSubOrganization and subOrganizationOf properties express the relationships\r\nbetween Organizations in a hierarchical structure. "
-          },
-          "sh:name": {
-            "en": "has sub organization"
-          },
-          "sh:path": "http://www.w3.org/ns/org#hasSubOrganization"
-        },
-        {
-          "sh:class": "http://www.w3.org/ns/org#OrganizationalUnit",
-          "sh:definition": {
-            "en": "The properties hasUnit and unitOf are used to link to operational departments within an Organization that may not generally exist in their own right."
-          },
-          "sh:name": {
-            "en": "has unit"
-          },
-          "sh:path": "http://www.w3.org/ns/org#hasUnit"
-        },
-        {
-          "sh:class": "http://xmlns.com/foaf/0.1/Document",
-          "sh:definition": {
-            "en": "The homepage property relates something to a homepage about it."
-          },
-          "sh:name": {
-            "en": "homepage"
-          },
-          "sh:path": "http://xmlns.com/foaf/0.1/homepage"
-        },
-        {
-          "sh:class": "http://www.w3.org/ns/adms#Identifier",
-          "sh:definition": {
-            "en": "Many organizations are referred to by an acronym or some other identifier\r\n"
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "identifier"
-          },
-          "sh:path": "http://www.iceg.be/Organization.identifier"
-        },
-        {
-          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-          "sh:definition": {
-            "en": "Links to databases containing data not recorded in the CBE/KBO"
-          },
-          "sh:name": {
-            "en": "links to database"
-          },
-          "sh:path": "http://www.iceg.be/Organization.linksToDatabase"
-        },
-        {
-          "sh:class": "https://schema.org/ImageObject",
-          "sh:definition": {
-            "en": "A property to link an Organization to its logo."
-          },
-          "sh:name": {
-            "en": "logo"
-          },
-          "sh:path": "https://schema.org/logo"
-        },
-        {
-          "sh:class": "http://www.w3.org/ns/org#organization",
-          "sh:definition": {
-            "en": "One Organization may be a member of another without being a sub organization, i.e.\r\nthey are independent entities."
-          },
-          "sh:name": {
-            "en": "member of"
-          },
-          "sh:path": "http://www.w3.org/ns/org#memberOf"
-        },
-        {
-          "sh:class": "http://www.w3.org/ns/org#organization",
-          "sh:definition": {
-            "en": "In some cases, it is necessary to be able to create an ordered sequence of\r\norganizations that precede and succeed each other. To support this, the CPOV\r\nincludes the well-known relationships of previous and next to allow such sequences\r\nto be captured and computed."
-          },
-          "sh:name": {
-            "en": "next"
-          },
-          "sh:path": "http://www.w3.org/1999/xhtml/vocab#next"
-        },
-        {
-          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-          "sh:definition": {
-            "en": "As defined in the ORG Ontology, a preferred label is used to provide the primary, legally recognised name of the organization"
-          },
-          "sh:maxCount": "1",
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "preferred label"
-          },
-          "sh:path": "http://www.w3.org/2004/02/skos/core#prefLabel"
-        },
-        {
-          "sh:class": "http://www.w3.org/ns/org#organization",
-          "sh:definition": {
-            "en": "In some cases, it is necessary to be able to create an ordered sequence of\r\norganizations that precede and succeed each other. To support this, the CPOV\r\nincludes the well-known relationships of previous and next to allow such sequences\r\nto be captured and computed."
-          },
-          "sh:name": {
-            "en": "prev"
-          },
-          "sh:path": "http://www.w3.org/1999/xhtml/vocab#prev"
-        },
-        {
-          "sh:class": "http://www.w3.org/ns/org#ChangeEvent",
-          "sh:definition": {
-            "en": "This property link an Organization to the Change Event it resulted from."
-          },
-          "sh:name": {
-            "en": "resulted from"
-          },
-          "sh:path": "http://www.w3.org/ns/org#resultedFrom"
-        },
-        {
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
-          "sh:definition": {
-            "en": "\tThe date on which the Organization-related information was provided."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "start date of this data"
-          },
-          "sh:path": "http://www.iceg.be/Organization.startDateOfThisData"
-        },
-        {
-          "sh:datatype": "http://www.w3.org/2004/02/skos/core#Concept",
-          "sh:definition": {
-            "en": "Entity status, e.g. active, closed, cancelled, identified\r\nlegal creation, stopped"
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "status"
-          },
-          "sh:path": "http://www.iceg.be/Organization.status"
-        },
-        {
-          "sh:class": "http://www.w3.org/ns/org#organization",
-          "sh:definition": {
-            "en": "Public Organizations are often large and complex and may be a collection of smaller\r\nOrganizations, each of which has a specific identity that may be legally defined. The\r\nhasSubOrganization and subOrganizationOf properties express the relationships\r\nbetween Organizations in a hierarchical structure. "
-          },
-          "sh:name": {
-            "en": "sub organization of"
-          },
-          "sh:path": "http://www.w3.org/ns/org#subOrganizationOf"
-        }
-      ],
-      "sh:targetClass": "http://www.w3.org/ns/org#organization"
     },
     {
       "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_en#PersonShape",
@@ -919,7 +899,7 @@
           "sh:name": {
             "en": "holds"
           },
-          "sh:path": "http://www.iceg.be/Organization.holds"
+          "sh:path": "https://www.w3.org/ns/org#holds"
         },
         {
           "sh:class": "http://www.w3.org/ns/adms#Identifier",
@@ -930,17 +910,17 @@
           "sh:name": {
             "en": "identifier"
           },
-          "sh:path": "http://www.iceg.be/Person.identifier"
+          "sh:path": "https://dublincore.org/specifications/dublin-core/dcmi-terms/#identifier"
         },
         {
-          "sh:class": "http://www.w3.org/ns/org#organization",
+          "sh:class": "http://www.w3.org/ns/org#Organization",
           "sh:definition": {
             "en": "Indicates a Person who is a member of the subject Organization"
           },
           "sh:name": {
             "en": "member of"
           },
-          "sh:path": "http://www.iceg.be/Person.memberOf"
+          "sh:path": "https://schema.org/memberOf"
         },
         {
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
@@ -973,17 +953,10 @@
           "sh:name": {
             "en": "title"
           },
-          "sh:path": "http://xmlns.com/foaf/spec/#term_title"
+          "sh:path": "http://xmlns.com/foaf/0.1/title"
         }
       ],
       "sh:targetClass": "http://www.w3.org/ns/person#Person"
-    },
-    {
-      "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_en#DocumentShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [],
-      "sh:targetClass": "http://xmlns.com/foaf/0.1/Document"
     },
     {
       "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_en#ContactPointShape",
@@ -1007,7 +980,6 @@
             "en": "A property through which an e-mail address for the Public Organization, or a\r\nrepresentative of it, can be contacted."
           },
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
             "en": "has email"
           },
@@ -1019,7 +991,6 @@
             "en": "A property through which a phone number for the Public Organization, or a representative of it, can be contacted."
           },
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
             "en": "has telephone"
           },
@@ -1031,11 +1002,21 @@
             "en": "The value of this property is structured text that gives the hours at which the contact point is normally available."
           },
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
             "en": "opening hours"
           },
           "sh:path": "https://schema.org/openingHours"
+        },
+        {
+          "sh:datatype": "http://schema.org/url",
+          "sh:definition": {
+            "en": "A WebSite is a set of related web pages and other items typically served from a single web domain and accessible via URLs."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "website"
+          },
+          "sh:path": "http://schema.org/WebSite"
         }
       ],
       "sh:targetClass": "https://schema.org/ContactPoint"
