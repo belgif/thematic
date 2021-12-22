@@ -40,7 +40,7 @@
   "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_de",
   "shapes": [
     {
-      "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_de#AdministrativeTerritorialUnitsShape",
+      "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_de#AdministrativeTerritorialUnitShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
@@ -59,10 +59,58 @@
       "sh:targetClass": "http://data.europa.eu/88u/dataset/atu-type"
     },
     {
-      "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_de#Legal ResourceShape",
+      "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_de#FoundationEventShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://data.europa.eu/m8g/FoundationEvent"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_de#PublicOrganizationShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
+        {
+          "sh:class": "http://data.europa.eu/88u/dataset/atu-type",
+          "sh:definition": {
+            "de": "Enter your translation here"
+          },
+          "sh:name": {
+            "de": "Enter your translation here"
+          },
+          "sh:path": "http://purl.org/dc/terms/spatial"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:definition": {
+            "de": "Enter your translation here"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "de": "Enter your translation here"
+          },
+          "sh:path": "purl.eu/ns/publicorganization#legalForm"
+        }
+      ],
+      "sh:targetClass": "http://data.europa.eu/m8g/PublicOrganisation"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_de#ReferenceFrameworkShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:definition": {
+            "de": "Enter your translation here"
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "de": "Enter your translation here"
+          },
+          "sh:path": "http://purl.org/dc/terms/identifier"
+        },
         {
           "sh:class": "http://www.w3.org/ns/org#ChangeEvent",
           "sh:definition": {
@@ -74,43 +122,7 @@
           "sh:path": "http://purl.org/vocab/cpsv#implements"
         }
       ],
-      "sh:targetClass": "http://data.europa.eu/eli/ontology#LegalResource"
-    },
-    {
-      "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_de#FoundationEventShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [],
-      "sh:targetClass": "http://www.iceg.be/FoundationEvent"
-    },
-    {
-      "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_de#PublicOrganizationShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [
-        {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-          "sh:definition": {
-            "de": "Enter your translation here"
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "de": "Enter your translation here"
-          },
-          "sh:path": "http://www.iceg.be/PublicOrganization/LegalForm"
-        },
-        {
-          "sh:class": "http://data.europa.eu/88u/dataset/atu-type",
-          "sh:definition": {
-            "de": "Enter your translation here"
-          },
-          "sh:name": {
-            "de": "Enter your translation here"
-          },
-          "sh:path": "http://purl.org/dc/terms/spatial"
-        }
-      ],
-      "sh:targetClass": "http://www.iceg.be/PublicOrganization"
+      "sh:targetClass": "http://data.europa.eu/m8g/ReferenceFramework"
     },
     {
       "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_de#IdentifierShape",
@@ -141,7 +153,7 @@
           "sh:path": "http://www.w3.org/2004/02/skos/core#notation"
         },
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -163,7 +175,7 @@
           "sh:path": "http://purl.org/dc/terms/creator"
         },
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -193,12 +205,11 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
             "de": "Enter your translation here"
           },
@@ -210,43 +221,39 @@
             "de": "Enter your translation here"
           },
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
             "de": "Enter your translation here"
           },
           "sh:path": "http://www.w3.org/ns/locn#addressID"
         },
         {
-          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:datatype": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
             "de": "Enter your translation here"
           },
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
             "de": "Enter your translation here"
           },
           "sh:path": "http://www.w3.org/ns/locn#adminUnitL1"
         },
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
             "de": "Enter your translation here"
           },
           "sh:path": "http://www.w3.org/ns/locn#adminUnitL2"
         },
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
             "de": "Enter your translation here"
           },
@@ -258,19 +265,17 @@
             "de": "Enter your translation here"
           },
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
             "de": "Enter your translation here"
           },
           "sh:path": "http://www.w3.org/ns/locn#locatorDesignator"
         },
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
             "de": "Enter your translation here"
           },
@@ -282,7 +287,6 @@
             "de": "Enter your translation here"
           },
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
             "de": "Enter your translation here"
           },
@@ -294,31 +298,28 @@
             "de": "Enter your translation here"
           },
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
             "de": "Enter your translation here"
           },
           "sh:path": "http://www.w3.org/ns/locn#postCode"
         },
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
             "de": "Enter your translation here"
           },
           "sh:path": "http://www.w3.org/ns/locn#postName"
         },
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
             "de": "Enter your translation here"
           },
@@ -341,7 +342,7 @@
           "sh:name": {
             "de": "Enter your translation here"
           },
-          "sh:path": "http://www.iceg.be/Geometry/Coordinates"
+          "sh:path": "http://data.europa.eu/m8g/coordinates"
         },
         {
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#anyURI",
@@ -352,10 +353,10 @@
           "sh:name": {
             "de": "Enter your translation here"
           },
-          "sh:path": "http://www.iceg.be/Geometry/Crs"
+          "sh:path": "http://data.europa.eu/m8g/crs"
         },
         {
-          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:datatype": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -363,7 +364,7 @@
           "sh:name": {
             "de": "Enter your translation here"
           },
-          "sh:path": "http://www.iceg.be/Geometry/GeometryType"
+          "sh:path": "http://data.europa.eu/m8g/geometryType"
         },
         {
           "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
@@ -418,7 +419,7 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -440,7 +441,7 @@
           "sh:path": "http://www.w3.org/ns/prov#endedAtTime"
         },
         {
-          "sh:class": "http://data.europa.eu/eli/ontology#LegalResource",
+          "sh:class": "http://data.europa.eu/m8g/ReferenceFramework",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -450,7 +451,7 @@
           "sh:path": "http://data.europa.eu/m8g/hasFormalFramework"
         },
         {
-          "sh:class": "http://www.w3.org/ns/org#organization",
+          "sh:class": "http://www.w3.org/ns/org#Organization",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -460,7 +461,7 @@
           "sh:path": "http://www.w3.org/ns/org#originalOrganization"
         },
         {
-          "sh:class": "http://www.w3.org/ns/org#organization",
+          "sh:class": "http://www.w3.org/ns/org#Organization",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -484,79 +485,12 @@
       "sh:targetClass": "http://www.w3.org/ns/org#ChangeEvent"
     },
     {
-      "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_de#OrganizationalUnitShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [
-        {
-          "sh:class": "http://www.w3.org/ns/org#organization",
-          "sh:definition": {
-            "de": "Enter your translation here"
-          },
-          "sh:name": {
-            "de": "Enter your translation here"
-          },
-          "sh:path": "http://www.w3.org/ns/org#unitOf"
-        }
-      ],
-      "sh:targetClass": "http://www.w3.org/ns/org#OrganizationalUnit"
-    },
-    {
-      "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_de#PostShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [
-        {
-          "sh:class": "http://www.w3.org/ns/org#organization",
-          "sh:definition": {
-            "de": "Enter your translation here"
-          },
-          "sh:name": {
-            "de": "Enter your translation here"
-          },
-          "sh:path": "http://www.w3.org/ns/org#postIn"
-        },
-        {
-          "sh:class": "https://www.w3.org/ns/org#role",
-          "sh:definition": {
-            "de": "Enter your translation here"
-          },
-          "sh:minCount": "1",
-          "sh:name": {
-            "de": "Enter your translation here"
-          },
-          "sh:path": "http://www.w3.org/ns/org#role"
-        }
-      ],
-      "sh:targetClass": "http://www.w3.org/ns/org#Post"
-    },
-    {
-      "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_de#SiteShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [
-        {
-          "sh:class": "http://www.w3.org/ns/locn#Address",
-          "sh:definition": {
-            "de": "Enter your translation here"
-          },
-          "sh:maxCount": "1",
-          "sh:minCount": "1",
-          "sh:name": {
-            "de": "Enter your translation here"
-          },
-          "sh:path": "http://www.w3.org/ns/locn#address"
-        }
-      ],
-      "sh:targetClass": "http://www.w3.org/ns/org#Site"
-    },
-    {
       "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_de#OrganizationShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -567,14 +501,14 @@
           "sh:path": "http://www.w3.org/2004/02/skos/core#altLabel"
         },
         {
-          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:datatype": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
             "de": "Enter your translation here"
           },
           "sh:name": {
             "de": "Enter your translation here"
           },
-          "sh:path": "http://www.iceg.be/Organization/Certification"
+          "sh:path": "purl.eu/ns/publicorganization#certification"
         },
         {
           "sh:class": "http://www.w3.org/ns/org#ChangeEvent",
@@ -587,17 +521,6 @@
           "sh:path": "http://www.w3.org/ns/org#changedBy"
         },
         {
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
-          "sh:definition": {
-            "de": "Enter your translation here"
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "de": "Enter your translation here"
-          },
-          "sh:path": "http://www.iceg.be/Organization/CompanyRegistrationNumber"
-        },
-        {
           "sh:class": "https://schema.org/ContactPoint",
           "sh:definition": {
             "de": "Enter your translation here"
@@ -608,7 +531,7 @@
           "sh:path": "https://schema.org/contactPoint"
         },
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -616,10 +539,10 @@
           "sh:name": {
             "de": "Enter your translation here"
           },
-          "sh:path": "http://www.iceg.be/Organization/Description"
+          "sh:path": "http://purl.org/dc/terms/description"
         },
         {
-          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:datatype": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -627,10 +550,10 @@
           "sh:name": {
             "de": "Enter your translation here"
           },
-          "sh:path": "http://www.iceg.be/Organization/ExOfficioStrikingOff"
+          "sh:path": "purl.eu/ns/publicorganization#exOfficioStrikingOff"
         },
         {
-          "sh:class": "http://www.w3.org/ns/org#organization",
+          "sh:class": "http://www.w3.org/ns/org#Organization",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -638,6 +561,16 @@
             "de": "Enter your translation here"
           },
           "sh:path": "http://www.w3.org/ns/org#hasMember"
+        },
+        {
+          "sh:class": "http://www.w3.org/ns/person#Person",
+          "sh:definition": {
+            "de": "Enter your translation here"
+          },
+          "sh:name": {
+            "de": "Enter your translation here"
+          },
+          "sh:path": "http://www.iceg.be/Organization.hasMember"
         },
         {
           "sh:class": "http://www.w3.org/ns/org#Post",
@@ -661,7 +594,7 @@
           "sh:path": "http://www.w3.org/ns/org#hasSite"
         },
         {
-          "sh:class": "http://www.w3.org/ns/org#organization",
+          "sh:class": "http://www.w3.org/ns/org#Organization",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -681,24 +614,25 @@
           "sh:path": "http://www.w3.org/ns/org#hasUnit"
         },
         {
-          "sh:class": "http://xmlns.com/foaf/0.1/Document",
+          "sh:class": "http://www.w3.org/ns/adms#Identifier",
           "sh:definition": {
             "de": "Enter your translation here"
           },
+          "sh:maxCount": "1",
           "sh:name": {
             "de": "Enter your translation here"
           },
-          "sh:path": "http://xmlns.com/foaf/0.1/homepage"
+          "sh:path": "https://www.w3.org/ns/adms#Identifier"
         },
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
           "sh:name": {
             "de": "Enter your translation here"
           },
-          "sh:path": "http://www.iceg.be/Organization/LinksToTheDatabase"
+          "sh:path": "purl.eu/ns/publicorganization#linksToDatabase"
         },
         {
           "sh:class": "https://schema.org/ImageObject",
@@ -711,7 +645,7 @@
           "sh:path": "https://schema.org/logo"
         },
         {
-          "sh:class": "http://www.w3.org/ns/org#organization",
+          "sh:class": "http://www.w3.org/ns/org#Organization",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -721,7 +655,7 @@
           "sh:path": "http://www.w3.org/ns/org#memberOf"
         },
         {
-          "sh:class": "http://www.w3.org/ns/org#organization",
+          "sh:class": "http://www.w3.org/ns/org#Organization",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -731,7 +665,7 @@
           "sh:path": "http://www.w3.org/1999/xhtml/vocab#next"
         },
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -743,7 +677,7 @@
           "sh:path": "http://www.w3.org/2004/02/skos/core#prefLabel"
         },
         {
-          "sh:class": "http://www.w3.org/ns/org#organization",
+          "sh:class": "http://www.w3.org/ns/org#Organization",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -771,10 +705,10 @@
           "sh:name": {
             "de": "Enter your translation here"
           },
-          "sh:path": "http://www.iceg.be/Organization/StartDateOfThisData"
+          "sh:path": "purl.eu/ns/publicorganization#startDateOfThisData"
         },
         {
-          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:datatype": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -782,10 +716,10 @@
           "sh:name": {
             "de": "Enter your translation here"
           },
-          "sh:path": "http://www.iceg.be/Organization/Status"
+          "sh:path": "purl.eu/ns/publicorganization#status"
         },
         {
-          "sh:class": "http://www.w3.org/ns/org#organization",
+          "sh:class": "http://www.w3.org/ns/org#Organization",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -795,7 +729,81 @@
           "sh:path": "http://www.w3.org/ns/org#subOrganizationOf"
         }
       ],
-      "sh:targetClass": "http://www.w3.org/ns/org#organization"
+      "sh:targetClass": "http://www.w3.org/ns/org#Organization"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_de#OrganizationalUnitShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "sh:class": "http://www.w3.org/ns/org#Organization",
+          "sh:definition": {
+            "de": "Enter your translation here"
+          },
+          "sh:name": {
+            "de": "Enter your translation here"
+          },
+          "sh:path": "http://www.w3.org/ns/org#unitOf"
+        }
+      ],
+      "sh:targetClass": "http://www.w3.org/ns/org#OrganizationalUnit"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_de#PostShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "sh:class": "http://www.w3.org/ns/org#Organization",
+          "sh:definition": {
+            "de": "Enter your translation here"
+          },
+          "sh:name": {
+            "de": "Enter your translation here"
+          },
+          "sh:path": "http://www.w3.org/ns/org#postIn"
+        },
+        {
+          "sh:class": "http://www.w3.org/ns/org#Role",
+          "sh:definition": {
+            "de": "Enter your translation here"
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "de": "Enter your translation here"
+          },
+          "sh:path": "http://www.w3.org/ns/org#role"
+        }
+      ],
+      "sh:targetClass": "http://www.w3.org/ns/org#Post"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_de#RoleShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://www.w3.org/ns/org#Role"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_de#SiteShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "sh:class": "http://www.w3.org/ns/locn#Address",
+          "sh:definition": {
+            "de": "Enter your translation here"
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "de": "Enter your translation here"
+          },
+          "sh:path": "http://www.w3.org/ns/locn#address"
+        }
+      ],
+      "sh:targetClass": "http://www.w3.org/ns/org#Site"
     },
     {
       "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_de#PersonShape",
@@ -803,7 +811,7 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -814,7 +822,7 @@
           "sh:path": "http://purl.org/dc/terms/alternative"
         },
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -847,7 +855,7 @@
           "sh:path": "https://schema.org/deathDate"
         },
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -859,7 +867,7 @@
           "sh:path": "http://xmlns.com/foaf/0.1/familyName"
         },
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -871,7 +879,7 @@
           "sh:path": "http://xmlns.com/foaf/0.1/name"
         },
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -883,7 +891,39 @@
           "sh:path": "http://xmlns.com/foaf/0.1/givenName"
         },
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:class": "http://www.w3.org/ns/org#Post",
+          "sh:definition": {
+            "de": "Enter your translation here"
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "de": "Enter your translation here"
+          },
+          "sh:path": "https://www.w3.org/ns/org#holds"
+        },
+        {
+          "sh:class": "http://www.w3.org/ns/adms#Identifier",
+          "sh:definition": {
+            "de": "Enter your translation here"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "de": "Enter your translation here"
+          },
+          "sh:path": "https://dublincore.org/specifications/dublin-core/dcmi-terms/#identifier"
+        },
+        {
+          "sh:class": "http://www.w3.org/ns/org#Organization",
+          "sh:definition": {
+            "de": "Enter your translation here"
+          },
+          "sh:name": {
+            "de": "Enter your translation here"
+          },
+          "sh:path": "https://schema.org/memberOf"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -894,7 +934,7 @@
           "sh:path": "http://www.w3.org/ns/person#patronymicName"
         },
         {
-          "sh:class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:class": "http://www.w3.org/ns/locn#Address",
           "sh:definition": {
             "de": "Enter your translation here"
           },
@@ -902,17 +942,21 @@
           "sh:name": {
             "de": "Enter your translation here"
           },
-          "sh:path": "http://www.iceg.be/Person/Title"
+          "sh:path": "http://www.w3.org/ns/locn#address"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:definition": {
+            "de": "Enter your translation here"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "de": "Enter your translation here"
+          },
+          "sh:path": "http://xmlns.com/foaf/0.1/title"
         }
       ],
       "sh:targetClass": "http://www.w3.org/ns/person#Person"
-    },
-    {
-      "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_de#DocumentShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [],
-      "sh:targetClass": "http://xmlns.com/foaf/0.1/Document"
     },
     {
       "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_de#ContactPointShape",
@@ -936,7 +980,6 @@
             "de": "Enter your translation here"
           },
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
             "de": "Enter your translation here"
           },
@@ -948,7 +991,6 @@
             "de": "Enter your translation here"
           },
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
             "de": "Enter your translation here"
           },
@@ -960,11 +1002,21 @@
             "de": "Enter your translation here"
           },
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
             "de": "Enter your translation here"
           },
           "sh:path": "https://schema.org/openingHours"
+        },
+        {
+          "sh:datatype": "http://schema.org/url",
+          "sh:definition": {
+            "de": "Enter your translation here"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "de": "Enter your translation here"
+          },
+          "sh:path": "http://schema.org/WebSite"
         }
       ],
       "sh:targetClass": "https://schema.org/ContactPoint"
@@ -1019,13 +1071,6 @@
         }
       ],
       "sh:targetClass": "https://schema.org/OpeningHoursSpecification"
-    },
-    {
-      "@id": "https://semiceu.github.io/shacl/iceg-public-organisation_de#RoleShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [],
-      "sh:targetClass": "https://www.w3.org/ns/org#role"
     }
   ]
 }

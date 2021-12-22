@@ -5,7 +5,7 @@
     "foaf:mbox": "mailto: contact@semic.eu",
     "foaf:name": "Semantic Interoperability Community (SEMIC)"
   },
-  "@id": "https://data.europa.eu/m8g",
+  "@id": "https://purl.eu/ns/publicorganization",
   "@type": "http://www.w3.org/2002/07/owl#Ontology",
   "label": {
     "en": "iceg-public-organisation",
@@ -39,12 +39,12 @@
     }
   ],
   "contributors": [],
-  "baseURI": "https://data.europa.eu/m8g/",
+  "baseURI": "https://purl.eu/ns/publicorganization#",
   "license": "https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic",
   "issued": "TODO",
   "navigation": {},
   "publication-state": "Working Draft",
-  "publication-date": "2021-09-17",
+  "publication-date": "2021-12-22",
   "classes": [],
   "externals": [],
   "properties": [],

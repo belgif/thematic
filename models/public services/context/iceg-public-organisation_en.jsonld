@@ -3,7 +3,7 @@
     "Address": "http://www.w3.org/ns/locn#Address",
     "Address.addressArea": {
       "@id": "http://www.w3.org/ns/locn#addressArea",
-      "@type": "@id"
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "Address.addressId": {
       "@id": "http://www.w3.org/ns/locn#addressID",
@@ -11,15 +11,15 @@
     },
     "Address.administrativeUnitLevel1 (country)": {
       "@id": "http://www.w3.org/ns/locn#adminUnitL1",
-      "@type": "@id"
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept"
     },
     "Address.administrativeUnitLevel2 (country/region/state)": {
       "@id": "http://www.w3.org/ns/locn#adminUnitL2",
-      "@type": "@id"
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "Address.fullAddress": {
       "@id": "http://www.w3.org/ns/locn#fullAddress",
-      "@type": "@id"
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "Address.locatorDesignator": {
       "@id": "http://www.w3.org/ns/locn#locatorDesignator",
@@ -27,7 +27,7 @@
     },
     "Address.locatorName": {
       "@id": "http://www.w3.org/ns/locn#locatorName",
-      "@type": "@id"
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "Address.postCode": {
       "@id": "http://www.w3.org/ns/locn#postCode",
@@ -35,7 +35,7 @@
     },
     "Address.postName (city)": {
       "@id": "http://www.w3.org/ns/locn#postName",
-      "@type": "@id"
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "Address.postOfficeBox": {
       "@id": "http://www.w3.org/ns/locn#poBox",
@@ -43,7 +43,7 @@
     },
     "Address.thoroughfare": {
       "@id": "http://www.w3.org/ns/locn#thoroughfare",
-      "@type": "@id"
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "AdministrativeTerritorialUnits": "http://data.europa.eu/88u/dataset/atu-type",
     "AdministrativeTerritorialUnits.geometry": {
@@ -53,7 +53,7 @@
     "ChangeEvent": "http://www.w3.org/ns/org#ChangeEvent",
     "ChangeEvent.description": {
       "@id": "http://purl.org/dc/terms/description",
-      "@type": "@id"
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "ChangeEvent.endedAtTime": {
       "@id": "http://www.w3.org/ns/prov#endedAtTime",
@@ -95,20 +95,23 @@
       "@id": "https://schema.org/openingHours",
       "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
-    "Document": "http://xmlns.com/foaf/0.1/Document",
-    "FoundationEvent": "http://www.iceg.be/FoundationEvent",
+    "ContactPoint.website": {
+      "@id": "http://schema.org/WebSite",
+      "@type": "http://schema.org/url"
+    },
+    "FoundationEvent": "http://data.europa.eu/m8g/FoundationEvent",
     "Geometry": "http://www.w3.org/ns/locn#Geometry",
     "Geometry.coordinates": {
-      "@id": "http://www.iceg.be/Geometry/Coordinates",
+      "@id": "http://data.europa.eu/m8g/coordinates",
       "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
     "Geometry.crs": {
-      "@id": "http://www.iceg.be/Geometry/Crs",
+      "@id": "http://data.europa.eu/m8g/crs",
       "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
     },
     "Geometry.geometryType": {
-      "@id": "http://www.iceg.be/Geometry/GeometryType",
-      "@type": "@id"
+      "@id": "http://data.europa.eu/m8g/geometryType",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept"
     },
     "Geometry.gml": {
       "@id": "http://www.opengis.net/ont/geosparql#asGML",
@@ -137,7 +140,7 @@
     },
     "Identifier.issuingAuthorityName": {
       "@id": "http://www.w3.org/ns/adms#schemeAgency",
-      "@type": "@id"
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "Identifier.issuingAuthorityUri": {
       "@id": "http://purl.org/dc/terms/creator",
@@ -145,19 +148,13 @@
     },
     "Identifier.schemeName": {
       "@id": "http://purl.org/dc/terms/conformsTo",
-      "@type": "@id"
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "Identifier.schemeUri": {
       "@id": "http://purl.org/dc/terms/conformsTo",
       "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
     },
     "ImageObject": "https://schema.org/ImageObject",
-    "LegalResource": "http://data.europa.eu/eli/ontology#LegalResource",
-    "LegalResource.implements": {
-      "@container": "@set",
-      "@id": "http://purl.org/vocab/cpsv#implements",
-      "@type": "@id"
-    },
     "OpeningHoursSpecification": "https://schema.org/OpeningHoursSpecification",
     "OpeningHoursSpecification.dayOfWeek": {
       "@id": "https://schema.org/dayOfWeek",
@@ -171,24 +168,20 @@
       "@id": "https://schema.org/validThrough",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
-    "Organization": "http://www.w3.org/ns/org#organization",
+    "Organization": "http://www.w3.org/ns/org#Organization",
     "Organization.alternativeLabel": {
       "@id": "http://www.w3.org/2004/02/skos/core#altLabel",
-      "@type": "@id"
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "Organization.certification": {
       "@container": "@set",
-      "@id": "http://www.iceg.be/Organization/Certification",
-      "@type": "@id"
+      "@id": "purl.eu/ns/publicorganization#certification",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept"
     },
     "Organization.changedBy": {
       "@container": "@set",
       "@id": "http://www.w3.org/ns/org#changedBy",
       "@type": "@id"
-    },
-    "Organization.companyRegistrationNumber": {
-      "@id": "http://www.iceg.be/Organization/CompanyRegistrationNumber",
-      "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
     "Organization.contactPoint": {
       "@container": "@set",
@@ -196,12 +189,12 @@
       "@type": "@id"
     },
     "Organization.description": {
-      "@id": "http://www.iceg.be/Organization/Description",
-      "@type": "@id"
+      "@id": "http://purl.org/dc/terms/description",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "Organization.exOfficioStrikingOff": {
-      "@id": "http://www.iceg.be/Organization/ExOfficioStrikingOff",
-      "@type": "@id"
+      "@id": "purl.eu/ns/publicorganization#exOfficioStrikingOff",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept"
     },
     "Organization.hasMember": {
       "@container": "@set",
@@ -228,15 +221,14 @@
       "@id": "http://www.w3.org/ns/org#hasUnit",
       "@type": "@id"
     },
-    "Organization.homepage": {
-      "@container": "@set",
-      "@id": "http://xmlns.com/foaf/0.1/homepage",
+    "Organization.identifier": {
+      "@id": "https://www.w3.org/ns/adms#Identifier",
       "@type": "@id"
     },
     "Organization.linksToDatabase": {
       "@container": "@set",
-      "@id": "http://www.iceg.be/Organization/LinksToTheDatabase",
-      "@type": "@id"
+      "@id": "purl.eu/ns/publicorganization#linksToDatabase",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "Organization.logo": {
       "@container": "@set",
@@ -255,7 +247,7 @@
     },
     "Organization.preferredLabel": {
       "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
-      "@type": "@id"
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "Organization.prev": {
       "@container": "@set",
@@ -268,12 +260,12 @@
       "@type": "@id"
     },
     "Organization.startDateOfThisData": {
-      "@id": "http://www.iceg.be/Organization/StartDateOfThisData",
+      "@id": "purl.eu/ns/publicorganization#startDateOfThisData",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "Organization.status": {
-      "@id": "http://www.iceg.be/Organization/Status",
-      "@type": "@id"
+      "@id": "purl.eu/ns/publicorganization#status",
+      "@type": "http://www.w3.org/2004/02/skos/core#Concept"
     },
     "Organization.subOrganizationOf": {
       "@container": "@set",
@@ -289,11 +281,11 @@
     "Person": "http://www.w3.org/ns/person#Person",
     "Person.alternativeName": {
       "@id": "http://purl.org/dc/terms/alternative",
-      "@type": "@id"
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "Person.birthName": {
       "@id": "http://www.w3.org/ns/person#birthName",
-      "@type": "@id"
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "Person.dateOfBirth": {
       "@id": "https://schema.org/birthDate",
@@ -305,23 +297,41 @@
     },
     "Person.familyName (surname)": {
       "@id": "http://xmlns.com/foaf/0.1/familyName",
-      "@type": "@id"
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "Person.fullName": {
       "@id": "http://xmlns.com/foaf/0.1/name",
-      "@type": "@id"
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "Person.givenName (forename)": {
       "@id": "http://xmlns.com/foaf/0.1/givenName",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "Person.holds": {
+      "@container": "@set",
+      "@id": "https://www.w3.org/ns/org#holds",
+      "@type": "@id"
+    },
+    "Person.identifier": {
+      "@id": "https://dublincore.org/specifications/dublin-core/dcmi-terms/#identifier",
+      "@type": "@id"
+    },
+    "Person.memberOf": {
+      "@container": "@set",
+      "@id": "https://schema.org/memberOf",
       "@type": "@id"
     },
     "Person.patronymicName": {
       "@id": "http://www.w3.org/ns/person#patronymicName",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "Person.registeredAddress": {
+      "@id": "http://www.w3.org/ns/locn#address",
       "@type": "@id"
     },
     "Person.title": {
-      "@id": "http://www.iceg.be/Person/Title",
-      "@type": "@id"
+      "@id": "http://xmlns.com/foaf/0.1/title",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "Post": "http://www.w3.org/ns/org#Post",
     "Post.postIn": {
@@ -334,17 +344,27 @@
       "@id": "http://www.w3.org/ns/org#role",
       "@type": "@id"
     },
-    "PublicOrganization": "http://www.iceg.be/PublicOrganization",
-    "PublicOrganization.legalForm": {
-      "@id": "http://www.iceg.be/PublicOrganization/LegalForm",
-      "@type": "@id"
-    },
-    "PublicOrganization.spatial": {
+    "PublicOrganization": "http://data.europa.eu/m8g/PublicOrganisation",
+    "PublicOrganization.jurisdiction": {
       "@container": "@set",
       "@id": "http://purl.org/dc/terms/spatial",
       "@type": "@id"
     },
-    "Role": "https://www.w3.org/ns/org#role",
+    "PublicOrganization.legalForm": {
+      "@id": "purl.eu/ns/publicorganization#legalForm",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "ReferenceFramework": "http://data.europa.eu/m8g/ReferenceFramework",
+    "ReferenceFramework.identifier": {
+      "@id": "http://purl.org/dc/terms/identifier",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "ReferenceFramework.implements": {
+      "@container": "@set",
+      "@id": "http://purl.org/vocab/cpsv#implements",
+      "@type": "@id"
+    },
+    "Role": "http://www.w3.org/ns/org#Role",
     "Site": "http://www.w3.org/ns/org#Site",
     "Site.address": {
       "@id": "http://www.w3.org/ns/locn#address",
