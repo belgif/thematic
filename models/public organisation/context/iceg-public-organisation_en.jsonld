@@ -175,7 +175,7 @@
     },
     "Organization.certification": {
       "@container": "@set",
-      "@id": "purl.eu/ns/publicorganization#certification",
+      "@id": "vocab.belgif.be/ns/publicorganization#certification",
       "@type": "http://www.w3.org/2004/02/skos/core#Concept"
     },
     "Organization.changedBy": {
@@ -193,7 +193,7 @@
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "Organization.exOfficioStrikingOff": {
-      "@id": "purl.eu/ns/publicorganization#exOfficioStrikingOff",
+      "@id": "vocab.belgif.be/ns/publicorganization#exOfficioStrikingOff",
       "@type": "http://www.w3.org/2004/02/skos/core#Concept"
     },
     "Organization.hasMember": {
@@ -227,7 +227,7 @@
     },
     "Organization.linksToDatabase": {
       "@container": "@set",
-      "@id": "purl.eu/ns/publicorganization#linksToDatabase",
+      "@id": "vocab.belgif.be/ns/publicorganization#linksToDatabase",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "Organization.logo": {
@@ -260,11 +260,11 @@
       "@type": "@id"
     },
     "Organization.startDateOfThisData": {
-      "@id": "purl.eu/ns/publicorganization#startDateOfThisData",
+      "@id": "vocab.belgif.be/ns/publicorganization#startDateOfThisData",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "Organization.status": {
-      "@id": "purl.eu/ns/publicorganization#status",
+      "@id": "vocab.belgif.be/ns/publicorganization#status",
       "@type": "http://www.w3.org/2004/02/skos/core#Concept"
     },
     "Organization.subOrganizationOf": {
@@ -351,7 +351,7 @@
       "@type": "@id"
     },
     "PublicOrganization.legalForm": {
-      "@id": "purl.eu/ns/publicorganization#legalForm",
+      "@id": "vocab.belgif.be/ns/publicorganization#legalForm",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "ReferenceFramework": "http://data.europa.eu/m8g/ReferenceFramework",

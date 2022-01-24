@@ -5,7 +5,7 @@
     "foaf:mbox": "mailto: contact@semic.eu",
     "foaf:name": "Semantic Interoperability Community (SEMIC)"
   },
-  "@id": "https://purl.eu/ns/publicorganization",
+  "@id": "https://vocab.belgif.be/ns/publicorganization",
   "@type": "http://www.w3.org/2002/07/owl#Ontology",
   "label": {
     "en": "iceg-public-organisation",
@@ -39,7 +39,7 @@
     }
   ],
   "contributors": [],
-  "baseURI": "https://purl.eu/ns/publicorganization#",
+  "baseURI": "https://vocab.belgif.be/ns/publicorganization#",
   "license": "https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic",
   "issued": "TODO",
   "navigation": {},

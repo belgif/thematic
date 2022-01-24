@@ -93,14 +93,14 @@
           "sh:path": "http://purl.org/dc/terms/description"
         },
         {
-          "sh:class": "purl.eu/ns/publicservice#Purpose",
+          "sh:class": "vocab.belgif.be/ns/publicservice#Purpose",
           "sh:definition": {
             "en": "This property describes the relationship between a purpose and a channel. "
           },
           "sh:name": {
             "en": "has purpose"
           },
-          "sh:path": "purl.eu/ns/publicservice#hasPurpose"
+          "sh:path": "vocab.belgif.be/ns/publicservice#hasPurpose"
         },
         {
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
@@ -161,7 +161,7 @@
           "sh:name": {
             "en": "cost breakdown"
           },
-          "sh:path": "purl.eu/ns/publicservice#costBreakdown"
+          "sh:path": "vocab.belgif.be/ns/publicservice#costBreakdown"
         },
         {
           "sh:datatype": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -307,7 +307,7 @@
           "sh:name": {
             "en": "comes from"
           },
-          "sh:path": "purl.eu/ns/publicservice#comesFrom"
+          "sh:path": "vocab.belgif.be/ns/publicservice#comesFrom"
         },
         {
           "sh:datatype": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -425,7 +425,7 @@
           "sh:name": {
             "en": "has legal resource"
           },
-          "sh:path": "purl.eu/ns/publicservice#hasLegalResource"
+          "sh:path": "vocab.belgif.be/ns/publicservice#hasLegalResource"
         },
         {
           "sh:datatype": "http://www.w3.org/ns/adms#Identifier",
@@ -444,7 +444,7 @@
           "sh:name": {
             "en": "is about"
           },
-          "sh:path": "purl.eu/ns/publicservice#isAbout"
+          "sh:path": "vocab.belgif.be/ns/publicservice#isAbout"
         },
         {
           "sh:class": "http://data.europa.eu/eli/ontology#LegalResource",
@@ -454,7 +454,7 @@
           "sh:name": {
             "en": "is legal resource"
           },
-          "sh:path": "purl.eu/ns/publicservice#isLegalResource"
+          "sh:path": "vocab.belgif.be/ns/publicservice#isLegalResource"
         },
         {
           "sh:class": "http://data.europa.eu/m8g/Evidence",
@@ -464,7 +464,7 @@
           "sh:name": {
             "en": "is used as"
           },
-          "sh:path": "purl.eu/ns/publicservice#isUsedAs"
+          "sh:path": "vocab.belgif.be/ns/publicservice#isUsedAs"
         },
         {
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
@@ -487,7 +487,7 @@
           "sh:name": {
             "en": "response time"
           },
-          "sh:path": "purl.eu/ns/publicservice#responseTime"
+          "sh:path": "vocab.belgif.be/ns/publicservice#responseTime"
         },
         {
           "sh:datatype": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -560,7 +560,7 @@
           "sh:name": {
             "en": "has channel"
           },
-          "sh:path": "purl.eu/ns/publicservice#hasChannel"
+          "sh:path": "vocab.belgif.be/ns/publicservice#hasChannel"
         },
         {
           "sh:class": "http://www.w3.org/ns/org#Site",
@@ -840,7 +840,7 @@
           "sh:name": {
             "en": "has preferred channel"
           },
-          "sh:path": "purl.eu/ns/publicservice#hasPreferredChannel"
+          "sh:path": "vocab.belgif.be/ns/publicservice#hasPreferredChannel"
         },
         {
           "sh:class": "http://data.europa.eu/m8g/Requirement",
@@ -850,7 +850,7 @@
           "sh:name": {
             "en": "has requirement"
           },
-          "sh:path": "purl.eu/ns/publicservice#hasRequirement"
+          "sh:path": "vocab.belgif.be/ns/publicservice#hasRequirement"
         },
         {
           "sh:datatype": "http://www.w3.org/ns/adms#Identifier",
@@ -922,7 +922,7 @@
           "sh:name": {
             "en": "lifecycle status"
           },
-          "sh:path": "purl.eu/ns/publicservice#lifecycleStatus"
+          "sh:path": "vocab.belgif.be/ns/publicservice#lifecycleStatus"
         },
         {
           "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
@@ -1461,10 +1461,10 @@
           "sh:name": {
             "en": "has channel"
           },
-          "sh:path": "purl.eu/ns/publicservice#hasChannel"
+          "sh:path": "vocab.belgif.be/ns/publicservice#hasChannel"
         }
       ],
-      "sh:targetClass": "purl.eu/ns/publicservice#Purpose"
+      "sh:targetClass": "vocab.belgif.be/ns/publicservice#Purpose"
     }
   ]
 }

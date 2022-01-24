@@ -1,0 +1,134 @@
+@prefix cpsv: <http://purl.org/vocab/cpsv#> .
+@prefix cv: <http://data.europa.eu/m8g/> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix iceg-ps: <http://vocab.belgif.be/ns/publicservice#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://vocab.belgif.be/ns/publicservice#> a owl:Ontology;
+  rdfs:comment "ICEG Public Service"@en, "ICEG Publieke Organisatie"@nl, "ICEG Service Public"@fr;
+  rdfs:label "ICEG-PS"@en, "ICEG-PS"@fr, "ICEG-PS"@nl;
+  owl:versionInfo "Draft 2022-01-21" .
+
+iceg-ps:hasPurpose a rdf:Property, owl:ObjectProperty;
+  rdfs:comment "Cette propriété décrit la relation entre un but et un canal."@fr, "Deze eigenschap beschrijft de relatie tussen een doel en een kanaal."@nl,
+    "This property describes the relationship between a purpose and a channel."@en;
+  rdfs:domain cv:Channel;
+  rdfs:isDefinedBy <http://vocab.belgif.be/ns/publicservice#>;
+  rdfs:label "a pour but"@fr, "has purpose"@en, "heeft doel"@nl;
+  rdfs:range iceg-ps:Purpose .
+
+iceg-ps:costBreakdown a rdf:Property, owl:DatatypeProperty;
+  rdfs:comment "De eigenschap kostenuitsplitsing geeft als vrije tekst weer hoe de kosten worden berekend."@nl,
+    "La propriété de ventilation du coût représente au moyen d'un champ libre comment le coût est calculé."@fr,
+    "The cost breakdown property represents as a free text how the cost is calculated."@en;
+  rdfs:domain cv:Cost;
+  rdfs:isDefinedBy <http://vocab.belgif.be/ns/publicservice#>;
+  rdfs:label "cost breakdown"@en, "kostenuitsplitsing"@nl, "ventilation des coûts"@fr;
+  rdfs:range rdf:langString .
+
+iceg-ps:comesFrom a rdf:Property, owl:ObjectProperty;
+  rdfs:comment "Cette propriété décrit le cas où une preuve est considérée comme un ou plusieurs \"Output(s)\". Cette propriété pourrait être utilisée lorsqu'un service public consomme son propre \"Output\" comme preuve"@fr,
+    "Deze eigenschap beschrijft het geval waarin een Bewijs wordt beschouwd als één of meer 'Output'. Deze eigenschap kan worden gebruikt wanneer een Overheidsdienst zijn eigen Output als Bewijsmateriaal gebruikt"@nl,
+    "This property describes the case where an Evidence is considered as one or multiple Output. This property might be used when a Public Service consumes its own Output as Evidence"@en;
+  rdfs:domain cv:Evidence;
+  rdfs:isDefinedBy <http://vocab.belgif.be/ns/publicservice#>;
+  rdfs:label "comes from"@en, "komt van"@nl, "vient de"@fr;
+  rdfs:range cv:Output .
+
+iceg-ps:hasLegalResource a rdf:Property, owl:ObjectProperty;
+  rdfs:comment "De eigenschap 'Heeft juridische bron' koppelt een output aan een juridische bron. Zij geeft aan op welke juridische bron (bv. wetgeving) de output betrekking heeft, functioneert of haar rechtsgrondslag heeft."@nl,
+    "La propriété \"a une ressource légale\" lie un \"Output\" à une ressource juridique. Elle indique la ressource juridique (par exemple, la législation) à laquelle \"l'Output\" se rapporte, fonctionne ou a sa base juridique."@fr,
+    "The Has Legal Resource property links an Output to a Legal Resource. It indicates the Legal Resource (e.g. legislation) to which the Output relates, operates or has its legal basis."@en;
+  rdfs:domain cv:Output;
+  rdfs:isDefinedBy <http://vocab.belgif.be/ns/publicservice#>;
+  rdfs:label "a une ressource légale"@fr, "has legal resource"@en, "heeft juridische bron"@nl;
+  rdfs:range eli:LegalResource .
+
+iceg-ps:isAbout a rdf:Property, owl:ObjectProperty;
+  rdfs:domain cv:Output;
+  rdfs:isDefinedBy <http://vocab.belgif.be/ns/publicservice#>;
+  rdfs:label "est à propos"@fr, "gaat over"@nl, "is about"@en;
+  rdfs:range foaf:Agent .
+
+iceg-ps:isLegalResource a rdf:Property, owl:ObjectProperty;
+  rdfs:comment "Cette propriété doit être utilisée si \"l'Output\" est une ou plusieurs ressources légales."@fr,
+    "Deze eigenschap moet worden gebruikt als de uitvoer een of meer juridische bronnen zijn"@nl,
+    "This property must be used if the Output is one or multiple legal resource"@en;
+  rdfs:domain cv:Output;
+  rdfs:isDefinedBy <http://vocab.belgif.be/ns/publicservice#>;
+  rdfs:label "est la ressource légale"@fr, "is een juridische bron"@nl, "is legal resource"@en;
+  rdfs:range eli:LegalResource .
+
+iceg-ps:isUsedAs a rdf:Property, owl:ObjectProperty;
+  rdfs:comment "Cette propriété décrit le cas où un \"Output\" est considérée comme une ou plusieurs preuves. Cette propriété peut être utilisée lorsqu'un service public consomme son propre \"Output\" comme preuve."@fr,
+    "Deze eigenschap beschrijft het geval waarin een Output als één of meer Bewijzen wordt beschouwd. Deze eigenschap kan worden gebruikt wanneer een Overheidsdienst zijn eigen Output als Bewijsmateriaal gebruikt."@nl,
+    "This property describes the case where an Output is considered as one or multiple Evidence. This property might be used when a Public Service consumes its own Output as Evidence."@en;
+  rdfs:domain cv:Output;
+  rdfs:isDefinedBy <http://vocab.belgif.be/ns/publicservice#>;
+  rdfs:label "est utilisé en tant que"@fr, "is used as"@en, "wordt gebruikt als"@nl;
+  rdfs:range cv:Evidence .
+
+iceg-ps:responseTime a rdf:Property, owl:DatatypeProperty;
+  rdfs:comment "De tijd die de overheidsdienst nodig heeft om de output te leveren, ervan uitgaande dat de begunstigde alle bewijsstukken heeft verstrekt."@nl,
+    "La durée nécessaire à la fonction publique de fournir l'Output étant donné que le bénéficiaire a fourni toutes les preuves."@fr,
+    "The duration necessary for the Public Service to deliver the Output given that the Beneficiary has provided all the Evidences."@en;
+  rdfs:domain cv:Output;
+  rdfs:isDefinedBy <http://vocab.belgif.be/ns/publicservice#>;
+  rdfs:label "response time"@en, "responstijd"@nl, "temps de réponse"@fr;
+  rdfs:range xsd:duration .
+
+iceg-ps:hasChannel a rdf:Property, owl:ObjectProperty;
+  rdfs:comment "Cette propriété indique le canal spécifique au travers duquel une organisation publique fournit un service publique."@fr,
+    "Deze eigenschap geeft het specifieke kanaal aan via hetwelk een Overheidsorganisatie een Overheidsdienst levert."@nl,
+    "This property indicates the specific Channel through which a Public Organization delivers a Public Service."@en;
+  rdfs:domain cv:PublicOrganisation;
+  rdfs:isDefinedBy <http://vocab.belgif.be/ns/publicservice#>;
+  rdfs:label "a pour canal"@fr, "has channel"@en, "heeft kanaal"@nl;
+  rdfs:range cv:Channel .
+
+iceg-ps:hasPreferredChannel a rdf:Property, owl:ObjectProperty;
+  rdfs:comment "Cette relation représente le canal préféré pour un service public spécifique."@fr,
+    "Deze relatie vertegenwoordigt het voorkeurskanaal voor een specifieke openbare dienst."@nl,
+    "This relationship represents the preferred channel for a specific Public Service."@en;
+  rdfs:domain cpsv:PublicService;
+  rdfs:isDefinedBy <http://vocab.belgif.be/ns/publicservice#>;
+  rdfs:label "a un canal préféré"@fr, "has preferred channel"@en, "heeft voorkeurskanaal"@nl;
+  rdfs:range cv:Channel .
+
+iceg-ps:hasRequirement a rdf:Property, owl:ObjectProperty;
+  rdfs:comment "De term bevoegde instantie wordt in de dienstenrichtlijn (2006/123/EG) als volgt gedefinieerd \"Elk orgaan of autoriteit dat in een lidstaat een toezichthoudende of regelgevende rol vervult ten aanzien van dienstenactiviteiten, met name bestuurlijke instanties, met inbegrip van rechterlijke instanties die als zodanig optreden, beroepsorden en de beroepsverenigingen en -organisaties of andere beroepsorganisaties die in de uitoefening van hun juridisch autonome bevoegdheden de toegang tot of de uitoefening van dienstenactiviteiten collectief reguleren\""@nl,
+    "Le terme \" autorité compétente \" est défini dans la directive sur les services (2006/123/CE) de la manière suivante : \"Tout organe ou autorité qui, dans un État membre, exerce une fonction de surveillance ou de réglementation des activités de services, y compris, notamment, les autorités administratives, y compris les juridictions agissant en tant que telles, les ordres professionnels, ainsi que les associations professionnelles ou autres organisations professionnelles qui, dans l'exercice de leur autonomie juridique, réglementent de manière collective l'accès aux activités de services ou leur exercice.\""@fr,
+    "The term Competent Authority is defined in the Services Directive (2006/123/EC) in the following way: \"Any body or authority which has a supervisory or regulatory role in a Member State in relation to service activities, including, in particular, administrative authorities, including courts acting as such, professional bodies, and those professional associations or other professional organisations which, in the exercise of their legal autonomy, regulate in a collective manner access to service activities or the exercise thereof.\""@en;
+  rdfs:domain cpsv:PublicService;
+  rdfs:isDefinedBy <http://vocab.belgif.be/ns/publicservice#>;
+  rdfs:label "a besoin"@fr, "has requirement"@en, "heeft vereiste"@nl;
+  rdfs:range cv:Requirement .
+
+iceg-ps:lifecycleStatus a rdf:Property, owl:ObjectProperty;
+  rdfs:comment "Cette propriété représente le statut dans le cycle de vie de la fonction publique (EXP: création, utilisation ou suppression d'une fonction publique). Cela ne fait pas référence au statut dans le processus de service public."@fr,
+    "Deze eigenschap vertegenwoordigt de status binnen de levenscyclus van de overheidsdienst (bv. creatie, gebruik of verwijdering van een overheidsdienst). Ze verwijst niet naar de status binnen het proces van de overheidsdienst."@nl,
+    "This property represents the status within the lifecycle of the public service (exp: creation, use or deletion of a Public Service). It doesn't refer to the status within the Public Service process."@en;
+  rdfs:domain cpsv:PublicService;
+  rdfs:isDefinedBy <http://vocab.belgif.be/ns/publicservice#>;
+  rdfs:label "levenscyclusstatus"@nl, "lifecycle status"@en, "statut de cycle de vie"@fr;
+  rdfs:range skos:Concept .
+
+iceg-ps:Purpose a rdfs:Class, owl:Class;
+  rdfs:comment "Cette classe représente tous les concepts pouvant être utilisés pour spécifier le but du canal et qui se rapporte au canal via les propriétés \"a pour canal\" et \"a un canal préféré\"."@fr,
+    "Deze klasse vertegenwoordigt alle concepten die kunnen worden gebruikt om het doel van het kanaal te specificeren en die betrekking hebben op het kanaal via de eigenschappen 'heeft kanaal' en 'heeft voorkeurskanaal'."@nl,
+    "This class represents any concepts that can be used to specify the purpose of the Channel and which relates to the Channel through the properties has Channel and has preferred channel."@en;
+  rdfs:isDefinedBy <http://vocab.belgif.be/ns/publicservice#>;
+  rdfs:label "But"@fr, "Doel"@nl, "Purpose"@en .
+
+iceg-ps:holdsChannel a rdf:Property, owl:ObjectProperty;
+  rdfs:comment "Cette propriété décrit la relation entre un but et un canal."@fr, "Deze eigenschap beschrijft de relatie tussen een doel en een kanaal."@nl,
+    "This property describes the relationship between a purpose and a channel."@en;
+  rdfs:domain iceg-ps:Purpose;
+  rdfs:isDefinedBy <http://vocab.belgif.be/ns/publicservice#>;
+  rdfs:label "a pour canal"@fr, "has channel"@en, "heeft kanaal"@nl;
+  rdfs:range cv:Channel .

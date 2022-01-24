@@ -89,7 +89,7 @@
           "sh:name": {
             "en": "legal form"
           },
-          "sh:path": "purl.eu/ns/publicorganization#legalForm"
+          "sh:path": "vocab.belgif.be/ns/publicorganization#legalForm"
         }
       ],
       "sh:targetClass": "http://data.europa.eu/m8g/PublicOrganisation"
@@ -508,7 +508,7 @@
           "sh:name": {
             "en": "certification"
           },
-          "sh:path": "purl.eu/ns/publicorganization#certification"
+          "sh:path": "vocab.belgif.be/ns/publicorganization#certification"
         },
         {
           "sh:class": "http://www.w3.org/ns/org#ChangeEvent",
@@ -550,7 +550,7 @@
           "sh:name": {
             "en": "ex officio striking off"
           },
-          "sh:path": "purl.eu/ns/publicorganization#exOfficioStrikingOff"
+          "sh:path": "vocab.belgif.be/ns/publicorganization#exOfficioStrikingOff"
         },
         {
           "sh:class": "http://www.w3.org/ns/org#Organization",
@@ -632,7 +632,7 @@
           "sh:name": {
             "en": "links to database"
           },
-          "sh:path": "purl.eu/ns/publicorganization#linksToDatabase"
+          "sh:path": "vocab.belgif.be/ns/publicorganization#linksToDatabase"
         },
         {
           "sh:class": "https://schema.org/ImageObject",
@@ -705,7 +705,7 @@
           "sh:name": {
             "en": "start date of this data"
           },
-          "sh:path": "purl.eu/ns/publicorganization#startDateOfThisData"
+          "sh:path": "vocab.belgif.be/ns/publicorganization#startDateOfThisData"
         },
         {
           "sh:datatype": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -716,7 +716,7 @@
           "sh:name": {
             "en": "status"
           },
-          "sh:path": "purl.eu/ns/publicorganization#status"
+          "sh:path": "vocab.belgif.be/ns/publicorganization#status"
         },
         {
           "sh:class": "http://www.w3.org/ns/org#Organization",

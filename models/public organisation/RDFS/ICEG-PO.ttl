@@ -1,0 +1,66 @@
+@prefix cv: <http://data.europa.eu/m8g/> .
+@prefix iceg-po: <http://vocab.belgif.be/ns/publicorganization#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://vocab.belgif.be/ns/publicorganization#> a owl:Ontology;
+  rdfs:comment "ICEG Organisation Publique"@fr, "ICEG Public Organization"@en, "ICEG Publieke Organisatie"@nl;
+  rdfs:label "ICEG-PO"@en, "ICEG-PO"@fr, "ICEG-PO"@nl;
+  owl:versionInfo "Draft 2022-01-21" .
+
+iceg-po:certification a rdf:Property, owl:ObjectProperty;
+  rdfs:comment "Certifications, licences or registrations that are of importance for third parties or whose publication is mandatory"@en,
+    "Erkenningen, vergunningen of registraties die belangrijk zijn voor derden of die verplicht kenbaar gemaakt moeten worden"@nl,
+    "agréments, autorisations ou licences ayant un intérêt pour des tiers ou soumis à publicité"@fr;
+  rdfs:domain org:Organization;
+  rdfs:isDefinedBy <http://vocab.belgif.be/ns/publicorganization#>;
+  rdfs:label "agréments, autorisations ou licences"@fr, "certification"@en, "erkenningen"@nl;
+  rdfs:range skos:Concept .
+
+iceg-po:exOfficioStrikingOff a rdf:Property, owl:ObjectProperty;
+  rdfs:comment "Ambtshalve doorhaling wegens niet-neerlegging van de jaarrekeningen"@nl,
+    "Ex officio striking off of the entity for failure to submit their financial statements"@en,
+    "radiation d’office à la suite du non-dépôt des comptes annuels"@fr;
+  rdfs:domain org:Organization;
+  rdfs:isDefinedBy <http://vocab.belgif.be/ns/publicorganization#>;
+  rdfs:label "ambtshalve doorhaling"@nl, "ex officio striking off"@en, "radiation d'office"@fr;
+  rdfs:range skos:Concept .
+
+iceg-po:linksToDatabase a rdf:Property, owl:DatatypeProperty;
+  rdfs:comment "Linken naar databanken van gegevens die niet opgenomen zijn in de KBO"@nl,
+    "Links to databases containing data not recorded in the CBE/KBO"@en, "liens vers les bases de données des informations qui ne sont pas reprises dans la BCE"@fr;
+  rdfs:domain org:Organization;
+  rdfs:isDefinedBy <http://vocab.belgif.be/ns/publicorganization#>;
+  rdfs:label "liens vers les bases de données"@fr, "linken naar databank"@nl, "links to database"@en;
+  rdfs:range rdf:langString .
+
+iceg-po:startDateOfThisData a rdf:Property, owl:DatatypeProperty;
+  rdfs:comment "De datum waarop de met de organisatie verband houdende informatie werd verstrekt."@nl,
+    "La date à laquelle les informations relatives à l'organisation ont été fournies."@fr,
+    "The date on which the Organization-related information was provided."@en;
+  rdfs:domain org:Organization;
+  rdfs:isDefinedBy <http://vocab.belgif.be/ns/publicorganization#>;
+  rdfs:label "begindatum van deze gegevens"@nl, "date de début de ces données."@fr,
+    "start date of this data"@en;
+  rdfs:range xsd:dateTime .
+
+iceg-po:status a rdf:Property, owl:ObjectProperty;
+  rdfs:comment "Entity status, e.g. active, closed, cancelled, identified legal creation, stopped"@en,
+    "Status van de entiteit, bv. actief, gesloten, geannuleerd, geïdentificeerde juridische oprichting, stopgezet"@nl,
+    "Statut de l'entité, par ex. actif, clôturé, annulé, création légale identifiée, arrêté"@fr;
+  rdfs:domain org:Organization;
+  rdfs:isDefinedBy <http://vocab.belgif.be/ns/publicorganization#>;
+  rdfs:label "status"@en, "status"@nl, "statut"@fr;
+  rdfs:range skos:Concept .
+
+iceg-po:legalForm a rdf:Property, owl:DatatypeProperty;
+  rdfs:comment "Het type entiteit zoals gedefinieerd door de Belgische wet"@nl, "Le type d'entité tel que défini par la loi belge"@fr,
+    "The type of entity as defined by the Belgian law"@en;
+  rdfs:domain cv:PublicOrganisation;
+  rdfs:isDefinedBy <http://vocab.belgif.be/ns/publicorganization#>;
+  rdfs:label "forme légale"@fr, "legal form"@en, "rechtsvorm"@nl;
+  rdfs:range rdf:langString .

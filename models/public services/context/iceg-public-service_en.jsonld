@@ -75,7 +75,7 @@
     },
     "Channel.hasPurpose": {
       "@container": "@set",
-      "@id": "purl.eu/ns/publicservice#hasPurpose",
+      "@id": "vocab.belgif.be/ns/publicservice#hasPurpose",
       "@type": "@id"
     },
     "Channel.identifier": {
@@ -131,7 +131,7 @@
     },
     "Cost": "http://data.europa.eu/m8g/Cost",
     "Cost.costBreakdown": {
-      "@id": "purl.eu/ns/publicservice#costBreakdown",
+      "@id": "vocab.belgif.be/ns/publicservice#costBreakdown",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "Cost.currency": {
@@ -185,7 +185,7 @@
     "Evidence": "http://data.europa.eu/m8g/Evidence",
     "Evidence.comesFrom": {
       "@container": "@set",
-      "@id": "purl.eu/ns/publicservice#comesFrom",
+      "@id": "vocab.belgif.be/ns/publicservice#comesFrom",
       "@type": "@id"
     },
     "Evidence.confidentialityLevelType": {
@@ -259,7 +259,7 @@
     },
     "Output.hasLegalResource": {
       "@container": "@set",
-      "@id": "purl.eu/ns/publicservice#hasLegalResource",
+      "@id": "vocab.belgif.be/ns/publicservice#hasLegalResource",
       "@type": "@id"
     },
     "Output.identifier": {
@@ -268,17 +268,17 @@
     },
     "Output.isAbout": {
       "@container": "@set",
-      "@id": "purl.eu/ns/publicservice#isAbout",
+      "@id": "vocab.belgif.be/ns/publicservice#isAbout",
       "@type": "@id"
     },
     "Output.isLegalResource": {
       "@container": "@set",
-      "@id": "purl.eu/ns/publicservice#isLegalResource",
+      "@id": "vocab.belgif.be/ns/publicservice#isLegalResource",
       "@type": "@id"
     },
     "Output.isUsedAs": {
       "@container": "@set",
-      "@id": "purl.eu/ns/publicservice#isUsedAs",
+      "@id": "vocab.belgif.be/ns/publicservice#isUsedAs",
       "@type": "@id"
     },
     "Output.name": {
@@ -286,7 +286,7 @@
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "Output.responseTime": {
-      "@id": "purl.eu/ns/publicservice#responseTime",
+      "@id": "vocab.belgif.be/ns/publicservice#responseTime",
       "@type": "http://www.w3.org/2001/XMLSchema#duration"
     },
     "Output.type": {
@@ -310,7 +310,7 @@
     "PublicOrganization": "http://data.europa.eu/m8g/PublicOrganisation",
     "PublicOrganization.hasChannel": {
       "@container": "@set",
-      "@id": "purl.eu/ns/publicservice#hasChannel",
+      "@id": "vocab.belgif.be/ns/publicservice#hasChannel",
       "@type": "@id"
     },
     "PublicOrganization.hasSite": {
@@ -364,12 +364,12 @@
     },
     "PublicService.hasPreferredChannel": {
       "@container": "@set",
-      "@id": "purl.eu/ns/publicservice#hasPreferredChannel",
+      "@id": "vocab.belgif.be/ns/publicservice#hasPreferredChannel",
       "@type": "@id"
     },
     "PublicService.hasRequirement": {
       "@container": "@set",
-      "@id": "purl.eu/ns/publicservice#hasRequirement",
+      "@id": "vocab.belgif.be/ns/publicservice#hasRequirement",
       "@type": "@id"
     },
     "PublicService.identifier": {
@@ -403,7 +403,7 @@
     },
     "PublicService.lifecycleStatus": {
       "@container": "@set",
-      "@id": "purl.eu/ns/publicservice#lifecycleStatus",
+      "@id": "vocab.belgif.be/ns/publicservice#lifecycleStatus",
       "@type": "http://www.w3.org/2004/02/skos/core#Concept"
     },
     "PublicService.name": {
@@ -469,10 +469,10 @@
       "@id": "http://purl.org/dc/terms/title",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
-    "Purpose": "purl.eu/ns/publicservice#Purpose",
+    "Purpose": "vocab.belgif.be/ns/publicservice#Purpose",
     "Purpose.hasChannel": {
       "@container": "@set",
-      "@id": "purl.eu/ns/publicservice#hasChannel",
+      "@id": "vocab.belgif.be/ns/publicservice#hasChannel",
       "@type": "@id"
     },
     "Requirement": "http://data.europa.eu/m8g/Requirement",

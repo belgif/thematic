@@ -10,44 +10,50 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://semiceu.github.io/shacl/iceg-public-service_en> <https://semiceu.github.io/shacl/iceg-public-service_enshapes> <https://semiceu.github.io/shacl/iceg-public-service_en#EvidenceShape>,
-    <https://semiceu.github.io/shacl/iceg-public-service_en#CollectionShape>,
-    <https://semiceu.github.io/shacl/iceg-public-service_en#ParticipationShape>,
+<https://semiceu.github.io/shacl/iceg-public-service_en> <https://semiceu.github.io/shacl/iceg-public-service_enshapes> <https://semiceu.github.io/shacl/iceg-public-service_en#LegalResourceShape>,
     <https://semiceu.github.io/shacl/iceg-public-service_en#BusinessEventShape>,
-    <https://semiceu.github.io/shacl/iceg-public-service_en#LegalResourceShape>,
-    <https://semiceu.github.io/shacl/iceg-public-service_en#SiteShape>,
-    <https://semiceu.github.io/shacl/iceg-public-service_en#PurposeShape>,
-    <https://semiceu.github.io/shacl/iceg-public-service_en#OutputShape>,
-    <https://semiceu.github.io/shacl/iceg-public-service_en#GroupShape>,
-    <https://semiceu.github.io/shacl/iceg-public-service_en#PublicServiceDatasetShape>,
     <https://semiceu.github.io/shacl/iceg-public-service_en#ChannelShape>,
-    <https://semiceu.github.io/shacl/iceg-public-service_en#AddressShape>,
-    <https://semiceu.github.io/shacl/iceg-public-service_en#RuleShape>,
-    <https://semiceu.github.io/shacl/iceg-public-service_en#RequirementShape>,
-    <https://semiceu.github.io/shacl/iceg-public-service_en#EventShape>,
     <https://semiceu.github.io/shacl/iceg-public-service_en#CostShape>,
+    <https://semiceu.github.io/shacl/iceg-public-service_en#EventShape>,
+    <https://semiceu.github.io/shacl/iceg-public-service_en#EvidenceShape>,
     <https://semiceu.github.io/shacl/iceg-public-service_en#LifeEventShape>,
-    <https://semiceu.github.io/shacl/iceg-public-service_en#ConceptShape>,
-    <https://semiceu.github.io/shacl/iceg-public-service_en#PublicServiceShape>,
-    <https://semiceu.github.io/shacl/iceg-public-service_en#ContactPointShape>,
+    <https://semiceu.github.io/shacl/iceg-public-service_en#OutputShape>,
+    <https://semiceu.github.io/shacl/iceg-public-service_en#ParticipationShape>,
     <https://semiceu.github.io/shacl/iceg-public-service_en#PublicOrganizationShape>,
+    <https://semiceu.github.io/shacl/iceg-public-service_en#PublicServiceDatasetShape>,
+    <https://semiceu.github.io/shacl/iceg-public-service_en#RequirementShape>,
+    <https://semiceu.github.io/shacl/iceg-public-service_en#PublicServiceShape>,
+    <https://semiceu.github.io/shacl/iceg-public-service_en#RuleShape>,
+    <https://semiceu.github.io/shacl/iceg-public-service_en#CollectionShape>,
+    <https://semiceu.github.io/shacl/iceg-public-service_en#ConceptShape>,
+    <https://semiceu.github.io/shacl/iceg-public-service_en#AddressShape>,
+    <https://semiceu.github.io/shacl/iceg-public-service_en#SiteShape>,
+    <https://semiceu.github.io/shacl/iceg-public-service_en#AgentShape>,
+    <https://semiceu.github.io/shacl/iceg-public-service_en#GroupShape>,
+    <https://semiceu.github.io/shacl/iceg-public-service_en#ContactPointShape>,
     <https://semiceu.github.io/shacl/iceg-public-service_en#OpeningHoursSpecificationShape>,
-    <https://semiceu.github.io/shacl/iceg-public-service_en#AgentShape> .
+    <https://semiceu.github.io/shacl/iceg-public-service_en#PurposeShape> .
 
 <https://semiceu.github.io/shacl/iceg-public-service_en#AddressShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property [
-    shacl:datatype xsd:string;
-    shacl:definition "The post/zip code of an address. (INSPIRE's definition is \"A code created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points.\")"@en;
+    shacl:datatype rdf:langString;
+    shacl:definition "The name or names of a geographic area or locality that groups a number of addressable objects for addressing purposes, without being an administrative unit."@en;
     shacl:maxCount 1;
-    shacl:name "post code"@en;
-    shacl:path <http://www.w3.org/ns/locn#postCode>
+    shacl:name "address area"@en;
+    shacl:path <http://www.w3.org/ns/locn#addressArea>
   ], [
     shacl:datatype xsd:string;
-    shacl:definition "A number or a sequence of characters which allows a user or an application to interpret, parse and format the locator within the relevant scope. A locator may include more locator designators."@en;
+    shacl:definition "A globally unique identifier for each instance of an Address."@en;
     shacl:maxCount 1;
-    shacl:name "locator designator"@en;
-    shacl:path <http://www.w3.org/ns/locn#locatorDesignator>
+    shacl:name "address ID"@en;
+    shacl:path <http://www.w3.org/ns/locn#addressID>
+  ], [
+    shacl:datatype skos:Concept;
+    shacl:definition "The name or names of a unit of administration where a Member State has and/or exercises jurisdictional rights, for local, regional and national governance. Level 1 refers to the uppermost administrative unit for the address, almost always a country."@en;
+    shacl:maxCount 1;
+    shacl:name "administrative unit level 1 (country)"@en;
+    shacl:path <http://www.w3.org/ns/locn#adminUnitL1>
   ], [
     shacl:datatype skos:Concept;
     shacl:definition "The name or names of a unit of administration where a Member State has and/or exercises jurisdictional rights, for local, regional and national governance. Level 2 referst to the region of the address, usually a county, state or other such area that typically encompasses several localities."@en;
@@ -56,22 +62,22 @@
     shacl:path <http://www.w3.org/ns/locn#adminUnitL2>
   ], [
     shacl:datatype rdf:langString;
+    shacl:definition "The complete address written as a formatted string."@en;
+    shacl:maxCount 1;
+    shacl:name "full address"@en;
+    shacl:path <http://www.w3.org/ns/locn#fullAddress>
+  ], [
+    shacl:datatype xsd:string;
+    shacl:definition "A number or a sequence of characters which allows a user or an application to interpret, parse and format the locator within the relevant scope. A locator may include more locator designators."@en;
+    shacl:maxCount 1;
+    shacl:name "locator designator"@en;
+    shacl:path <http://www.w3.org/ns/locn#locatorDesignator>
+  ], [
+    shacl:datatype rdf:langString;
     shacl:definition "Proper noun(s) applied to the real world entity identified by the locator."@en;
     shacl:maxCount 1;
     shacl:name "locator name"@en;
     shacl:path <http://www.w3.org/ns/locn#locatorName>
-  ], [
-    shacl:datatype skos:Concept;
-    shacl:definition "The name or names of a unit of administration where a Member State has and/or exercises jurisdictional rights, for local, regional and national governance. Level 1 refers to the uppermost administrative unit for the address, almost always a country."@en;
-    shacl:maxCount 1;
-    shacl:name "administrative unit level 1 (country)"@en;
-    shacl:path <http://www.w3.org/ns/locn#adminUnitL1>
-  ], [
-    shacl:datatype xsd:string;
-    shacl:definition "A globally unique identifier for each instance of an Address."@en;
-    shacl:maxCount 1;
-    shacl:name "address ID"@en;
-    shacl:path <http://www.w3.org/ns/locn#addressID>
   ], [
     shacl:datatype xsd:string;
     shacl:definition "The Post Office Box number."@en;
@@ -79,11 +85,11 @@
     shacl:name "post office box"@en;
     shacl:path <http://www.w3.org/ns/locn#poBox>
   ], [
-    shacl:datatype rdf:langString;
-    shacl:definition "The name or names of a geographic area or locality that groups a number of addressable objects for addressing purposes, without being an administrative unit."@en;
+    shacl:datatype xsd:string;
+    shacl:definition "The post/zip code of an address. (INSPIRE's definition is \"A code created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points.\")"@en;
     shacl:maxCount 1;
-    shacl:name "address area"@en;
-    shacl:path <http://www.w3.org/ns/locn#addressArea>
+    shacl:name "post code"@en;
+    shacl:path <http://www.w3.org/ns/locn#postCode>
   ], [
     shacl:datatype rdf:langString;
     shacl:definition """The key postal division of the address, usually the city. (INSPIRE's definition is \"One or more names created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points.)
@@ -97,12 +103,6 @@
     shacl:maxCount 1;
     shacl:name "thoroughfare"@en;
     shacl:path <http://www.w3.org/ns/locn#thoroughfare>
-  ], [
-    shacl:datatype rdf:langString;
-    shacl:definition "The complete address written as a formatted string."@en;
-    shacl:maxCount 1;
-    shacl:name "full address"@en;
-    shacl:path <http://www.w3.org/ns/locn#fullAddress>
   ];
   shacl:targetClass <http://www.w3.org/ns/locn#Address> .
 
@@ -115,19 +115,19 @@
     shacl:name "has address"@en;
     shacl:path <http://www.w3.org/ns/locn#address>
   ], [
-    shacl:datatype rdf:langString;
-    shacl:definition "This property represents the Name of the Agent."@en;
-    shacl:maxCount 1;
-    shacl:minCount 1;
-    shacl:name "name"@en;
-    shacl:path dc:title
-  ], [
     shacl:datatype <http://www.w3.org/ns/adms#Identifier>;
     shacl:definition "This property represents an Identifier for the Agent."@en;
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "identifier"@en;
     shacl:path dc:identifier
+  ], [
+    shacl:datatype rdf:langString;
+    shacl:definition "This property represents the Name of the Agent."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "name"@en;
+    shacl:path dc:title
   ], [
     shacl:class <http://data.europa.eu/m8g/Participation>;
     shacl:definition """This property links an Agent to the Participation class. The Participation class facilitates the detailed description of how an Agent participates in or interacts with a Public Service and may include temporal and spatial information.
@@ -144,6 +144,12 @@
 <https://semiceu.github.io/shacl/iceg-public-service_en#ChannelShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property [
+    shacl:class schemas:OpeningHoursSpecification;
+    shacl:definition "The availability restriction property links a Channel  to details of specific details of its opening hours that override the general case."@en;
+    shacl:maxCount 1;
+    shacl:name "availability restriction"@en;
+    shacl:path schemas:hoursAvailable
+  ], [
     shacl:datatype rdf:langString;
     shacl:definition "This property represents a free text description of the Channel."@en;
     shacl:maxCount 1;
@@ -151,11 +157,8 @@
     shacl:name "description"@en;
     shacl:path dc:description
   ], [
-    shacl:class schemas:OpeningHoursSpecification;
-    shacl:definition "The availability restriction property links a Channel  to details of specific details of its opening hours that override the general case."@en;
-    shacl:maxCount 1;
-    shacl:name "availability restriction"@en;
-    shacl:path schemas:hoursAvailable
+    shacl:definition "This property describes the relationship between a purpose and a channel. "@en;
+    shacl:name "has purpose"@en
   ], [
     shacl:datatype rdf:langString;
     shacl:definition "This property represents an Identifier for the Channel."@en;
@@ -164,18 +167,15 @@
     shacl:name "identifier"@en;
     shacl:path dc:identifier
   ], [
-    shacl:definition "This property describes the relationship between a purpose and a channel. "@en;
-    shacl:name "has purpose"@en
+    shacl:datatype rdf:langString;
+    shacl:definition "This property represents the normal opening hours of a channel."@en;
+    shacl:name "opening hours"@en;
+    shacl:path schemas:openingHours
   ], [
     shacl:class <http://data.europa.eu/m8g/PublicOrganisation>;
     shacl:definition "This property indicates the owner of a specific Channel through which a Public Service is being delivered."@en;
     shacl:name "owned by"@en;
     shacl:path <http://data.europa.eu/m8g/ownedBy>
-  ], [
-    shacl:datatype rdf:langString;
-    shacl:definition "This property represents the normal opening hours of a channel."@en;
-    shacl:name "opening hours"@en;
-    shacl:path schemas:openingHours
   ], [
     shacl:class <http://data.europa.eu/m8g/Evidence>;
     shacl:definition """In the majority of cases, the evidence required to use a Public Service will be independent of the channel through which the service is accessed. The Has Input property should normally be used to link a Public Service directly to one or more pieces of Evidence. However, where the type of Evidence required varies according to the channel used to access the Public Service, then the Has Input property may be used at the Channel level. For example, a digital signature may be
@@ -209,11 +209,11 @@ required for an online channel, whereas a physical signature may be required for
 <https://semiceu.github.io/shacl/iceg-public-service_en#ContactPointShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property [
-    shacl:datatype rdfs:Literal;
-    shacl:definition "A property through which a phone number for the Public Organization, or a representative of it, can be contacted."@en;
+    shacl:class schemas:OpeningHoursSpecification;
+    shacl:definition "The availability restriction property links a Contact Point to details of specific details of its opening hours that override the general case."@en;
     shacl:maxCount 1;
-    shacl:name "has telephone"@en;
-    shacl:path schemas:telephone
+    shacl:name "availability restriction"@en;
+    shacl:path schemas:hoursAvailable
   ], [
     shacl:datatype rdfs:Literal;
     shacl:definition """A property through which an e-mail address for the Public Organization, or a
@@ -222,23 +222,23 @@ representative of it, can be contacted."""@en;
     shacl:name "has email"@en;
     shacl:path schemas:email
   ], [
-    shacl:datatype schema:url;
-    shacl:definition "A WebSite is a set of related web pages and other items typically served from a single web domain and accessible via URLs."@en;
+    shacl:datatype rdfs:Literal;
+    shacl:definition "A property through which a phone number for the Public Organization, or a representative of it, can be contacted."@en;
     shacl:maxCount 1;
-    shacl:name "website"@en;
-    shacl:path schemas:WebSite
-  ], [
-    shacl:class schemas:OpeningHoursSpecification;
-    shacl:definition "The availability restriction property links a Contact Point to details of specific details of its opening hours that override the general case."@en;
-    shacl:maxCount 1;
-    shacl:name "availability restriction"@en;
-    shacl:path schemas:hoursAvailable
+    shacl:name "has telephone"@en;
+    shacl:path schemas:telephone
   ], [
     shacl:datatype rdfs:Literal;
     shacl:definition "The value of this property is structured text that gives the hours at which the contact point is normally available."@en;
     shacl:maxCount 1;
     shacl:name "opening hours"@en;
     shacl:path schemas:openingHours
+  ], [
+    shacl:datatype schema:url;
+    shacl:definition "A WebSite is a set of related web pages and other items typically served from a single web domain and accessible via URLs."@en;
+    shacl:maxCount 1;
+    shacl:name "website"@en;
+    shacl:path schemas:WebSite
   ];
   shacl:targetClass schemas:ContactPoint .
 
@@ -246,21 +246,9 @@ representative of it, can be contacted."""@en;
   shacl:closed false;
   shacl:property [
     shacl:datatype rdf:langString;
-    shacl:definition "This property represents a free text description of the Cost."@en;
+    shacl:definition "The cost breakdown property represents as a free text how the cost is calculated. "@en;
     shacl:maxCount 1;
-    shacl:name "description"@en;
-    shacl:path dc:description
-  ], [
-    shacl:definition "This property represents a numeric value indicating the amount of the Cost."@en;
-    shacl:maxCount 1;
-    shacl:name "value"@en;
-    shacl:path <http://data.europa.eu/m8g/value>
-  ], [
-    shacl:class <http://data.europa.eu/m8g/Channel>;
-    shacl:definition "Where the cost varies depending on the channel used, for example, if accessed through an online service cf. accessed at a physical location, the cost can be linked to the channel using the If Accessed Through property. "@en;
-    shacl:maxCount 1;
-    shacl:name "if accessed through"@en;
-    shacl:path <http://data.europa.eu/m8g/ifAccessedThrough>
+    shacl:name "cost breakdown"@en
   ], [
     shacl:datatype skos:Concept;
     shacl:definition "This property represents the currency in which the Cost needs to be paid and the value of the Cost is expressed. The possible values for this property are described in a controlled vocabulary."@en;
@@ -269,21 +257,33 @@ representative of it, can be contacted."""@en;
     shacl:path <http://data.europa.eu/m8g/currency>
   ], [
     shacl:datatype rdf:langString;
+    shacl:definition "This property represents a free text description of the Cost."@en;
+    shacl:maxCount 1;
+    shacl:name "description"@en;
+    shacl:path dc:description
+  ], [
+    shacl:datatype rdf:langString;
     shacl:definition "This property represents an Identifier for the Cost."@en;
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "identifier"@en;
     shacl:path dc:identifier
   ], [
-    shacl:datatype rdf:langString;
-    shacl:definition "The cost breakdown property represents as a free text how the cost is calculated. "@en;
+    shacl:class <http://data.europa.eu/m8g/Channel>;
+    shacl:definition "Where the cost varies depending on the channel used, for example, if accessed through an online service cf. accessed at a physical location, the cost can be linked to the channel using the If Accessed Through property. "@en;
     shacl:maxCount 1;
-    shacl:name "cost breakdown"@en
+    shacl:name "if accessed through"@en;
+    shacl:path <http://data.europa.eu/m8g/ifAccessedThrough>
   ], [
     shacl:class <http://data.europa.eu/m8g/PublicOrganisation>;
     shacl:definition """This property links the Cost class with one or more instances of the Public Organization class. This property indicates which Public Organization is the Competent Authority for defining the costs associated with the delivery of a particular Public Service."""@en;
     shacl:name "is defined by"@en;
     shacl:path <http://data.europa.eu/m8g/isDefinedBy>
+  ], [
+    shacl:definition "This property represents a numeric value indicating the amount of the Cost."@en;
+    shacl:maxCount 1;
+    shacl:name "value"@en;
+    shacl:path <http://data.europa.eu/m8g/value>
   ];
   shacl:targetClass <http://data.europa.eu/m8g/Cost> .
 
@@ -291,16 +291,10 @@ representative of it, can be contacted."""@en;
   shacl:closed false;
   shacl:property [
     shacl:datatype rdf:langString;
-    shacl:definition "This property represents the Name (or title) of the Event."@en;
+    shacl:definition "This property represents a free text description of the Event. The description is likely to be the text that a business or citizen sees for that specific Event when looking for relevant Public Services. Public administrations are therefore encouraged to include a reasonable level of detail in the description."@en;
     shacl:maxCount 1;
-    shacl:minCount 1;
-    shacl:name "name"@en;
-    shacl:path dc:title
-  ], [
-    shacl:datatype skos:Concept;
-    shacl:definition """The type property links an Event to a controlled vocabulary of event types and it is the nature of those controlled vocabularies that is the major difference between a business event, such as creating the business in the first place and a life event, such as the birth of a child."""@en;
-    shacl:name "type"@en;
-    shacl:path dc:type
+    shacl:name "description"@en;
+    shacl:path dc:description
   ], [
     shacl:datatype <http://www.w3.org/ns/adms#Identifier>;
     shacl:definition "This property represents an Identifier for the Event."@en;
@@ -309,37 +303,38 @@ representative of it, can be contacted."""@en;
     shacl:name "identifier"@en;
     shacl:path dc:identifier
   ], [
+    shacl:datatype rdf:langString;
+    shacl:definition "This property represents the Name (or title) of the Event."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "name"@en;
+    shacl:path dc:title
+  ], [
     shacl:class <http://purl.org/vocab/cpsv#PublicService>;
     shacl:definition "This property links an event directly to a public service that is related to it."@en;
     shacl:name "related service"@en;
     shacl:path dc:relation
   ], [
-    shacl:datatype rdf:langString;
-    shacl:definition "This property represents a free text description of the Event. The description is likely to be the text that a business or citizen sees for that specific Event when looking for relevant Public Services. Public administrations are therefore encouraged to include a reasonable level of detail in the description."@en;
-    shacl:maxCount 1;
-    shacl:name "description"@en;
-    shacl:path dc:description
+    shacl:datatype skos:Concept;
+    shacl:definition """The type property links an Event to a controlled vocabulary of event types and it is the nature of those controlled vocabularies that is the major difference between a business event, such as creating the business in the first place and a life event, such as the birth of a child."""@en;
+    shacl:name "type"@en;
+    shacl:path dc:type
   ];
   shacl:targetClass <http://data.europa.eu/m8g/Event> .
 
 <https://semiceu.github.io/shacl/iceg-public-service_en#EvidenceShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property [
-    shacl:class foaf:Agent;
-    shacl:definition "The Agent that is the main actor in the provided Evidence."@en;
-    shacl:name "is about"@en;
-    shacl:path dc:subject
+    shacl:class <http://data.europa.eu/m8g/Output>;
+    shacl:definition """This property describes the case where an Evidence is considered as one or multiple Output. 
+This property might be used when a Public Service consumes its own Output as Evidence."""@en;
+    shacl:name "comes from"@en
   ], [
     shacl:datatype skos:Concept;
     shacl:definition "The security classification assigned to an Evidence or, in general, to a content."@en;
     shacl:maxCount 1;
     shacl:name "confidentiality level type"@en;
     shacl:path <http://data.europa.eu/m8g/confidentialityLevelType>
-  ], [
-    shacl:class <http://data.europa.eu/m8g/Requirement>;
-    shacl:definition "The Requirement for which the Evidence provides information (proof, support)."@en;
-    shacl:name "supports Requirement"@en;
-    shacl:path <http://data.europa.eu/m8g/supportsRequirement>
   ], [
     shacl:datatype skos:Concept;
     shacl:definition "Country where the evidence has been issued."@en;
@@ -348,29 +343,34 @@ representative of it, can be contacted."""@en;
     shacl:path <http://www.w3.org/ns/locn#adminUnitL1>
   ], [
     shacl:class foaf:Agent;
+    shacl:definition "The Agent that is the main actor in the provided Evidence."@en;
+    shacl:name "is about"@en;
+    shacl:path dc:subject
+  ], [
+    shacl:class foaf:Agent;
     shacl:definition "The Agent that produces the Evidence."@en;
     shacl:name "is created by"@en;
     shacl:path dc:creator
-  ], [
-    shacl:class <http://data.europa.eu/m8g/Output>;
-    shacl:definition """This property describes the case where an Evidence is considered as one or multiple Output. 
-This property might be used when a Public Service consumes its own Output as Evidence."""@en;
-    shacl:name "comes from"@en
   ], [
     shacl:class foaf:Agent;
     shacl:definition "The legal authority responsible for an Evidence."@en;
     shacl:name "is issued by"@en;
     shacl:path dc:publisher
   ], [
+    shacl:class foaf:Agent;
+    shacl:definition "The Agent that provides the trust and/or certifies that the Evidence is genuine."@en;
+    shacl:name "is provided by"@en;
+    shacl:path dc:provenance
+  ], [
     shacl:class dc:LinguisticSystem;
     shacl:definition "This property represents the language(s) in which the Evidence is issued. This could be one language or multiple languages, for instance in countries with more than one official language. The possible values for this property are described in a controlled vocabulary. "@en;
     shacl:name "language"@en;
     shacl:path dc:language
   ], [
-    shacl:class foaf:Agent;
-    shacl:definition "The Agent that provides the trust and/or certifies that the Evidence is genuine."@en;
-    shacl:name "is provided by"@en;
-    shacl:path dc:provenance
+    shacl:class <http://data.europa.eu/m8g/Requirement>;
+    shacl:definition "The Requirement for which the Evidence provides information (proof, support)."@en;
+    shacl:name "supports Requirement"@en;
+    shacl:path <http://data.europa.eu/m8g/supportsRequirement>
   ];
   shacl:targetClass <http://data.europa.eu/m8g/Evidence> .
 
@@ -401,19 +401,19 @@ This property might be used when a Public Service consumes its own Output as Evi
 <https://semiceu.github.io/shacl/iceg-public-service_en#OpeningHoursSpecificationShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property [
-    shacl:datatype xsd:dateTime;
-    shacl:definition "The date when the Opening Hours Specification becomes valid."@en;
-    shacl:maxCount 1;
-    shacl:minCount 1;
-    shacl:name "valid from"@en;
-    shacl:path schemas:validFrom
-  ], [
     shacl:datatype xsd:anyURI;
     shacl:definition "The day of the week for which these opening hours are valid."@en;
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "day of week"@en;
     shacl:path schemas:dayOfWeek
+  ], [
+    shacl:datatype xsd:dateTime;
+    shacl:definition "The date when the Opening Hours Specification becomes valid."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "valid from"@en;
+    shacl:path schemas:validFrom
   ], [
     shacl:datatype xsd:dateTime;
     shacl:definition "TThe date after when the Opening Hours Specification is not valid."@en;
@@ -433,6 +433,10 @@ This property might be used when a Public Service consumes its own Output as Evi
     shacl:name "description"@en;
     shacl:path dc:description
   ], [
+    shacl:class <http://data.europa.eu/eli/ontology#LegalResource>;
+    shacl:definition "The Has Legal Resource property links an Output to a Legal Resource. It indicates the Legal Resource (e.g. legislation) to which the Output relates, operates or has its legal basis."@en;
+    shacl:name "has legal resource"@en
+  ], [
     shacl:datatype <http://www.w3.org/ns/adms#Identifier>;
     shacl:definition "This property represents an Identifier for the Output."@en;
     shacl:maxCount 1;
@@ -440,31 +444,8 @@ This property might be used when a Public Service consumes its own Output as Evi
     shacl:name "identifier"@en;
     shacl:path dc:identifier
   ], [
-    shacl:datatype xsd:duration;
-    shacl:definition "The duration necessary for the Public Service to deliver the Output given that the Beneficiary has provided all the Evidences."@en;
-    shacl:maxCount 1;
-    shacl:name "response time"@en
-  ], [
     shacl:class foaf:Agent;
     shacl:name "is about"@en
-  ], [
-    shacl:datatype skos:Concept;
-    shacl:definition "This property represents the type of Output as defined in a controlled vocabulary. "@en;
-    shacl:maxCount 1;
-    shacl:minCount 1;
-    shacl:name "type"@en;
-    shacl:path dc:type
-  ], [
-    shacl:class <http://data.europa.eu/eli/ontology#LegalResource>;
-    shacl:definition "The Has Legal Resource property links an Output to a Legal Resource. It indicates the Legal Resource (e.g. legislation) to which the Output relates, operates or has its legal basis."@en;
-    shacl:name "has legal resource"@en
-  ], [
-    shacl:datatype rdf:langString;
-    shacl:definition "This property represents the official Name of the Output."@en;
-    shacl:maxCount 1;
-    shacl:minCount 1;
-    shacl:name "name"@en;
-    shacl:path dc:title
   ], [
     shacl:class <http://data.europa.eu/eli/ontology#LegalResource>;
     shacl:definition "This property must be used if the Output is one or multiple legal resource"@en;
@@ -474,25 +455,44 @@ This property might be used when a Public Service consumes its own Output as Evi
     shacl:definition """This property describes the case where an Output is considered as one or multiple Evidence. 
 This property might be used when a Public Service consumes its own Output as Evidence."""@en;
     shacl:name "is used as"@en
+  ], [
+    shacl:datatype rdf:langString;
+    shacl:definition "This property represents the official Name of the Output."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "name"@en;
+    shacl:path dc:title
+  ], [
+    shacl:datatype xsd:duration;
+    shacl:definition "The duration necessary for the Public Service to deliver the Output given that the Beneficiary has provided all the Evidences."@en;
+    shacl:maxCount 1;
+    shacl:name "response time"@en
+  ], [
+    shacl:datatype skos:Concept;
+    shacl:definition "This property represents the type of Output as defined in a controlled vocabulary. "@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "type"@en;
+    shacl:path dc:type
   ];
   shacl:targetClass <http://data.europa.eu/m8g/Output> .
 
 <https://semiceu.github.io/shacl/iceg-public-service_en#ParticipationShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property [
-    shacl:datatype <http://www.w3.org/ns/adms#Identifier>;
-    shacl:definition "This property represents an Identifier for the Participation."@en;
-    shacl:maxCount 1;
-    shacl:minCount 1;
-    shacl:name "identifier"@en;
-    shacl:path dc:identifier
-  ], [
     shacl:datatype rdf:langString;
     shacl:definition "A free text description of the Participation."@en;
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "description"@en;
     shacl:path dc:description
+  ], [
+    shacl:datatype <http://www.w3.org/ns/adms#Identifier>;
+    shacl:definition "This property represents an Identifier for the Participation."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "identifier"@en;
+    shacl:path dc:identifier
   ], [
     shacl:datatype skos:Concept;
     shacl:definition """Provides the role played. This should be provided using a controlled vocabulary. Since 
@@ -506,11 +506,9 @@ this is an extension mechanism for the CSPV-AP, the controlled vocabulary should
 <https://semiceu.github.io/shacl/iceg-public-service_en#PublicOrganizationShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property [
-    shacl:datatype rdf:langString;
-    shacl:definition "The type of entity as defined by the Belgian law"@en;
-    shacl:maxCount 1;
-    shacl:minCount 1;
-    shacl:name "legal form"@en
+    shacl:class <http://data.europa.eu/m8g/Channel>;
+    shacl:definition "This property indicates the specific Channel through which a Public Organization delivers a Public Service."@en;
+    shacl:name "has channel"@en
   ], [
     shacl:class org:Site;
     shacl:definition "Indicates a site at which the Organization has some presence even if only indirect (e.g. virtual office or a professional service which is acting as the registered address for a company)."@en;
@@ -518,9 +516,11 @@ this is an extension mechanism for the CSPV-AP, the controlled vocabulary should
     shacl:name "has site"@en;
     shacl:path org:hasSite
   ], [
-    shacl:class <http://data.europa.eu/m8g/Channel>;
-    shacl:definition "This property indicates the specific Channel through which a Public Organization delivers a Public Service."@en;
-    shacl:name "has channel"@en
+    shacl:datatype rdf:langString;
+    shacl:definition "The type of entity as defined by the Belgian law"@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "legal form"@en
   ];
   shacl:targetClass <http://data.europa.eu/m8g/PublicOrganisation> .
 
@@ -528,10 +528,15 @@ this is an extension mechanism for the CSPV-AP, the controlled vocabulary should
   shacl:closed false;
   shacl:property [
     shacl:datatype rdf:langString;
-    shacl:definition "This property contains a name given to the Dataset."@en;
+    shacl:definition "This property contains a free-text account of the Dataset. This property can be repeated for parallel language versions of the description."@en;
     shacl:minCount 1;
-    shacl:name "title"@en;
-    shacl:path dc:title
+    shacl:name "description"@en;
+    shacl:path dc:description
+  ], [
+    shacl:datatype <http://www.w3.org/ns/adms#Identifier>;
+    shacl:definition "This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue."@en;
+    shacl:name "identifier"@en;
+    shacl:path dc:identifier
   ], [
     shacl:class foaf:Agent;
     shacl:definition "This property represents the Publisher of the Public Service Dataset, i.e. an entity  (organization) responsible for making the Public Service Dataset available."@en;
@@ -540,31 +545,17 @@ this is an extension mechanism for the CSPV-AP, the controlled vocabulary should
     shacl:name "publisher"@en;
     shacl:path dc:publisher
   ], [
-    shacl:datatype <http://www.w3.org/ns/adms#Identifier>;
-    shacl:definition "This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue."@en;
-    shacl:name "identifier"@en;
-    shacl:path dc:identifier
-  ], [
     shacl:datatype rdf:langString;
-    shacl:definition "This property contains a free-text account of the Dataset. This property can be repeated for parallel language versions of the description."@en;
+    shacl:definition "This property contains a name given to the Dataset."@en;
     shacl:minCount 1;
-    shacl:name "description"@en;
-    shacl:path dc:description
+    shacl:name "title"@en;
+    shacl:path dc:title
   ];
   shacl:targetClass <http://data.europa.eu/m8g/PublicServiceDataset> .
 
 <https://semiceu.github.io/shacl/iceg-public-service_en#PublicServiceShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property [
-    shacl:class skos:Concept;
-    shacl:definition "The Is Classified By property allows to classify the Public Service with any Concept, other than those already foreseen and defined explicitely in the CPSV-AP (Thematic Area, Sector, ). It is a generic property which can be further specialised to make the classification explicit, for instance for classifying public services according level of digitisation, type of audience "@en;
-    shacl:name "is classified by"@en;
-    shacl:path <http://data.europa.eu/m8g/isClassifiedBy>
-  ], [
-    shacl:class <http://data.europa.eu/m8g/Channel>;
-    shacl:definition "This relationship represents the preferred channel for a specific Public Service. "@en;
-    shacl:name "has preferred channel"@en
-  ], [
     shacl:datatype rdf:langString;
     shacl:definition "This property represents a free text Description of the Public Service. The description is likely to be the text that potential users of the Public Service see in any public service catalogue. Public administrations are encouraged to include a reasonable level of detail in the description, for instance including basic eligibility requirements for the particular Public Service and contact information."@en;
     shacl:maxCount 1;
@@ -572,11 +563,107 @@ this is an extension mechanism for the CSPV-AP, the controlled vocabulary should
     shacl:name "description"@en;
     shacl:path dc:description
   ], [
+    shacl:class <http://purl.org/vocab/cpsv#Rule>;
+    shacl:definition "The Follows property links a Public Service to the Rule(s) under which it operates. The definition of the Rule class is very broad. In a typical case, the competent authority that provides the public service will also define the rules that will implement its own policies. This model is flexible to allow for significant variation in such a scenario."@en;
+    shacl:name "follows"@en;
+    shacl:path <http://purl.org/vocab/cpsv#follows>
+  ], [
+    shacl:class <http://data.europa.eu/m8g/Channel>;
+    shacl:definition "This property links the Public Service to any Channel through which an Agent provides, uses or otherwise interacts with the Public Service, such as an online service, phone number or office."@en;
+    shacl:name "has channel"@en;
+    shacl:path <http://data.europa.eu/m8g/hasChannel>
+  ], [
+    shacl:class <http://data.europa.eu/m8g/PublicOrganisation>;
+    shacl:definition """This property links a Public Service to a Public Organization, which is the responsible
+Agent for the delivery of the Public Service. Whether the particular Public
+Organization provides the public service directly or outsources it is not relevant. The
+Public Organization that is the Competent Authority of the service is the one that is
+ultimately responsible for managing and providing the public service.
+
+The term Competent Authority is defined in the Services Directive (2006/123/EC) in
+the following way:
+Any body or authority which has a supervisory or regulatory role in a Member State
+in relation to service activities, including, in particular, administrative authorities,
+including courts acting as such, professional bodies, and those professional
+associations or other professional organizations which, in the exercise of their legal
+autonomy, regulate in a collective manner access to service activities or the exercise
+thereof."""@en;
+    shacl:minCount 1;
+    shacl:name "has competent authority"@en;
+    shacl:path <http://data.europa.eu/m8g/hasCompetentAuthority>
+  ], [
     shacl:class schemas:ContactPoint;
     shacl:definition """A contact point for the service is almost always helpful. The value of this property, the contact information itself, should be provided using schema:ContactPoint. Note that the contact information should be relevant to the Public Service which may not be the same as contact information for the Competent Authority or any Participant.
 """@en;
     shacl:name "has contact point"@en;
     shacl:path <http://data.europa.eu/m8g/hasContactPoint>
+  ], [
+    shacl:class <http://data.europa.eu/m8g/Cost>;
+    shacl:definition "The Has Cost property links a Public Service to one or more instances of the Cost class. It indicates the costs related to the execution of a Public Service for the citizen or business related to the execution of the particular Public Service. Where the cost varies depending on the channel through which the service is accessed, it can be linked to the channel using the If Accessed Through relationship."@en;
+    shacl:name "has cost"@en;
+    shacl:path <http://data.europa.eu/m8g/hasCost>
+  ], [
+    shacl:class <http://data.europa.eu/eli/ontology#LegalResource>;
+    shacl:definition """The Has Legal Resource property links a Public Service to a Legal Resource. It indicates the Legal Resource (e.g. legislation) to which the Public Service relates, operates or has its legal basis."""@en;
+    shacl:name "has legal resource"@en;
+    shacl:path <http://data.europa.eu/m8g/hasLegalResource>
+  ], [
+    shacl:class <http://data.europa.eu/m8g/Participation>;
+    shacl:definition "This property links a Public Service to the Participation class. The Participation class facilitates the detailed description of how an Agent participates in or interacts with a Public Service and may include temporal and spatial information."@en;
+    shacl:name "has participation"@en;
+    shacl:path <http://data.europa.eu/m8g/hasParticipation>
+  ], [
+    shacl:class <http://data.europa.eu/m8g/Channel>;
+    shacl:definition "This relationship represents the preferred channel for a specific Public Service. "@en;
+    shacl:name "has preferred channel"@en
+  ], [
+    shacl:class <http://data.europa.eu/m8g/Requirement>;
+    shacl:definition """The term Competent Authority is defined in the Services Directive (2006/123/EC) in the following way: \"Any body or authority which has a supervisory or regulatory role in a Member State in relation to service activities, including, in particular, administrative authorities,
+including courts acting as such, professional bodies, and those professional associations or other professional organisations which, in the exercise of their legal autonomy, regulate in a collective manner access to service activities or the exercise thereof.\""""@en;
+    shacl:name "has requirement"@en
+  ], [
+    shacl:datatype <http://www.w3.org/ns/adms#Identifier>;
+    shacl:definition "This property represents a formally-issued Identifier for the Public Service."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "identifier"@en;
+    shacl:path dc:identifier
+  ], [
+    shacl:class skos:Concept;
+    shacl:definition "The Is Classified By property allows to classify the Public Service with any Concept, other than those already foreseen and defined explicitely in the CPSV-AP (Thematic Area, Sector, ). It is a generic property which can be further specialised to make the classification explicit, for instance for classifying public services according level of digitisation, type of audience "@en;
+    shacl:name "is classified by"@en;
+    shacl:path <http://data.europa.eu/m8g/isClassifiedBy>
+  ], [
+    shacl:class <http://data.europa.eu/m8g/PublicServiceDataset>;
+    shacl:definition "The Is Described At property links a Public Service to the Public Service Dataset(s) in which it is being described."@en;
+    shacl:name "is described at"@en;
+    shacl:path <http://data.europa.eu/m8g/isDescribedAt>
+  ], [
+    shacl:class <http://data.europa.eu/m8g/Event>;
+    shacl:definition """This property links the Public Service to the Event class. Several
+Public Services may be associated with a particular Event and, likewise, the same Public Service may be associated with several different Events. """@en;
+    shacl:name "is grouped by"@en;
+    shacl:path <http://data.europa.eu/m8g/isGroupedBy>
+  ], [
+    shacl:datatype rdf:langString;
+    shacl:definition "This property represents a keyword, term or phrase to describe the Public Service."@en;
+    shacl:name "keyword"@en;
+    shacl:path dcat:keyword
+  ], [
+    shacl:class dc:LinguisticSystem;
+    shacl:definition """This property represents the language(s) in which the Public Service is available. This could be one language or multiple languages, for instance in countries with more than one official language. The possible values for this property are described in a controlled vocabulary. The recommended controlled vocabularies are listed in section 4."""@en;
+    shacl:name "language"@en;
+    shacl:path dc:language
+  ], [
+    shacl:datatype skos:Concept;
+    shacl:definition "This property represents the status within the lifecycle of the public service (exp: creation, use or deletion of a Public Service). It doesn't refer to the status within the Public Service process."@en;
+    shacl:name "lifecycle status"@en
+  ], [
+    shacl:datatype rdf:langString;
+    shacl:definition "This property represents the official Name of the Public Service."@en;
+    shacl:minCount 1;
+    shacl:name "name"@en;
+    shacl:path dc:title
   ], [
     shacl:datatype xsd:duration;
     shacl:definition """The value of this property is the (estimated) time needed for executing a Public Service. The actual information is provided using the ISO8601 syntax for durations. 
@@ -598,128 +685,41 @@ This approach is consistent with both schema.org and the W3C OWL Time Ontology."
     shacl:name "processing time"@en;
     shacl:path <http://data.europa.eu/m8g/processingTime>
   ], [
-    shacl:class <http://data.europa.eu/m8g/PublicServiceDataset>;
-    shacl:definition "The Is Described At property links a Public Service to the Public Service Dataset(s) in which it is being described."@en;
-    shacl:name "is described at"@en;
-    shacl:path <http://data.europa.eu/m8g/isDescribedAt>
-  ], [
-    shacl:class dc:Location;
-    shacl:definition "A Public Service is likely to be available only within a given area, typically the area covered by a particular public authority."@en;
-    shacl:name "spatial"@en;
-    shacl:path dc:spatial
-  ], [
-    shacl:class <http://purl.org/vocab/cpsv#Rule>;
-    shacl:definition "The Follows property links a Public Service to the Rule(s) under which it operates. The definition of the Rule class is very broad. In a typical case, the competent authority that provides the public service will also define the rules that will implement its own policies. This model is flexible to allow for significant variation in such a scenario."@en;
-    shacl:name "follows"@en;
-    shacl:path <http://purl.org/vocab/cpsv#follows>
-  ], [
-    shacl:datatype rdf:langString;
-    shacl:definition "This property represents a keyword, term or phrase to describe the Public Service."@en;
-    shacl:name "keyword"@en;
-    shacl:path dcat:keyword
-  ], [
-    shacl:datatype rdf:langString;
-    shacl:definition "This property represents the official Name of the Public Service."@en;
-    shacl:minCount 1;
-    shacl:name "name"@en;
-    shacl:path dc:title
-  ], [
-    shacl:class dc:LinguisticSystem;
-    shacl:definition """This property represents the language(s) in which the Public Service is available. This could be one language or multiple languages, for instance in countries with more than one official language. The possible values for this property are described in a controlled vocabulary. The recommended controlled vocabularies are listed in section 4."""@en;
-    shacl:name "language"@en;
-    shacl:path dc:language
-  ], [
-    shacl:class <http://data.europa.eu/m8g/Requirement>;
-    shacl:definition """The term Competent Authority is defined in the Services Directive (2006/123/EC) in the following way: \"Any body or authority which has a supervisory or regulatory role in a Member State in relation to service activities, including, in particular, administrative authorities,
-including courts acting as such, professional bodies, and those professional associations or other professional organisations which, in the exercise of their legal autonomy, regulate in a collective manner access to service activities or the exercise thereof.\""""@en;
-    shacl:name "has requirement"@en
+    shacl:class <http://data.europa.eu/m8g/Output>;
+    shacl:definition "The Produces property links a Public Service to one or more instances of the Output class, describing the actual result of executing a given Public Service. Outputs can be any resource, for instance a document, artefact or anything else being produced as a result of executing the Public Service."@en;
+    shacl:name "produces"@en;
+    shacl:path <http://purl.org/vocab/cpsv#produces>
   ], [
     shacl:class <http://purl.org/vocab/cpsv#PublicService>;
     shacl:definition "This property represents a Public Service related to the particular instance of the Public Service class."@en;
     shacl:name "related"@en;
     shacl:path dc:relation
   ], [
-    shacl:class <http://data.europa.eu/m8g/Cost>;
-    shacl:definition "The Has Cost property links a Public Service to one or more instances of the Cost class. It indicates the costs related to the execution of a Public Service for the citizen or business related to the execution of the particular Public Service. Where the cost varies depending on the channel through which the service is accessed, it can be linked to the channel using the If Accessed Through relationship."@en;
-    shacl:name "has cost"@en;
-    shacl:path <http://data.europa.eu/m8g/hasCost>
-  ], [
-    shacl:datatype skos:Concept;
-    shacl:definition "This property represents the Thematic Area of a Public Service as described in a controlled vocabulary, for instance social protection, health, recreation, culture and religion, family, traveling economic affairs, tax, staff, environment..."@en;
-    shacl:name "thematic area"@en;
-    shacl:path <http://data.europa.eu/m8g/thematicArea>
-  ], [
-    shacl:class <http://data.europa.eu/m8g/Output>;
-    shacl:definition "The Produces property links a Public Service to one or more instances of the Output class, describing the actual result of executing a given Public Service. Outputs can be any resource, for instance a document, artefact or anything else being produced as a result of executing the Public Service."@en;
-    shacl:name "produces"@en;
-    shacl:path <http://purl.org/vocab/cpsv#produces>
-  ], [
-    shacl:class <http://data.europa.eu/m8g/Event>;
-    shacl:definition """This property links the Public Service to the Event class. Several
-Public Services may be associated with a particular Event and, likewise, the same Public Service may be associated with several different Events. """@en;
-    shacl:name "is grouped by"@en;
-    shacl:path <http://data.europa.eu/m8g/isGroupedBy>
-  ], [
-    shacl:class <http://data.europa.eu/m8g/PublicOrganisation>;
-    shacl:definition """This property links a Public Service to a Public Organization, which is the responsible
-Agent for the delivery of the Public Service. Whether the particular Public
-Organization provides the public service directly or outsources it is not relevant. The
-Public Organization that is the Competent Authority of the service is the one that is
-ultimately responsible for managing and providing the public service.
-
-The term Competent Authority is defined in the Services Directive (2006/123/EC) in
-the following way:
-Any body or authority which has a supervisory or regulatory role in a Member State
-in relation to service activities, including, in particular, administrative authorities,
-including courts acting as such, professional bodies, and those professional
-associations or other professional organizations which, in the exercise of their legal
-autonomy, regulate in a collective manner access to service activities or the exercise
-thereof."""@en;
-    shacl:minCount 1;
-    shacl:name "has competent authority"@en;
-    shacl:path <http://data.europa.eu/m8g/hasCompetentAuthority>
-  ], [
-    shacl:class <http://data.europa.eu/m8g/Channel>;
-    shacl:definition "This property links the Public Service to any Channel through which an Agent provides, uses or otherwise interacts with the Public Service, such as an online service, phone number or office."@en;
-    shacl:name "has channel"@en;
-    shacl:path <http://data.europa.eu/m8g/hasChannel>
-  ], [
-    shacl:class <http://data.europa.eu/m8g/Participation>;
-    shacl:definition "This property links a Public Service to the Participation class. The Participation class facilitates the detailed description of how an Agent participates in or interacts with a Public Service and may include temporal and spatial information."@en;
-    shacl:name "has participation"@en;
-    shacl:path <http://data.europa.eu/m8g/hasParticipation>
-  ], [
     shacl:class <http://purl.org/vocab/cpsv#PublicService>;
     shacl:definition "One Public Service may require, or in some way make use of, the output of one or several other Public Services. In this case, for a Public Service to be executed, another Public Service must be executed beforehand. The nature of the requirement will be de"@en;
     shacl:name "requires"@en;
     shacl:path dc:requires
-  ], [
-    shacl:class <http://data.europa.eu/eli/ontology#LegalResource>;
-    shacl:definition """The Has Legal Resource property links a Public Service to a Legal Resource. It indicates the Legal Resource (e.g. legislation) to which the Public Service relates, operates or has its legal basis."""@en;
-    shacl:name "has legal resource"@en;
-    shacl:path <http://data.europa.eu/m8g/hasLegalResource>
   ], [
     shacl:datatype skos:Concept;
     shacl:definition "This property represents the industry or sector a Public Service relates to, or is intended for. For example: environment, safety, housing. Note that a single Public Service may relate to multiple sectors. The possible values for this property are provided as a controlled vocabulary."@en;
     shacl:name "sector"@en;
     shacl:path <http://data.europa.eu/m8g/sector>
   ], [
-    shacl:datatype <http://www.w3.org/ns/adms#Identifier>;
-    shacl:definition "This property represents a formally-issued Identifier for the Public Service."@en;
-    shacl:maxCount 1;
-    shacl:minCount 1;
-    shacl:name "identifier"@en;
-    shacl:path dc:identifier
-  ], [
-    shacl:datatype skos:Concept;
-    shacl:definition "This property represents the status within the lifecycle of the public service (exp: creation, use or deletion of a Public Service). It doesn't refer to the status within the Public Service process."@en;
-    shacl:name "lifecycle status"@en
+    shacl:class dc:Location;
+    shacl:definition "A Public Service is likely to be available only within a given area, typically the area covered by a particular public authority."@en;
+    shacl:name "spatial"@en;
+    shacl:path dc:spatial
   ], [
     shacl:datatype skos:Concept;
     shacl:definition "Indicates whether a Public Service is active, inactive, under development etc. according to a controlled vocabulary."@en;
     shacl:maxCount 1;
     shacl:name "status"@en;
     shacl:path <http://www.w3.org/ns/adms#status>
+  ], [
+    shacl:datatype skos:Concept;
+    shacl:definition "This property represents the Thematic Area of a Public Service as described in a controlled vocabulary, for instance social protection, health, recreation, culture and religion, family, traveling economic affairs, tax, staff, environment..."@en;
+    shacl:name "thematic area"@en;
+    shacl:path <http://data.europa.eu/m8g/thematicArea>
   ];
   shacl:targetClass <http://purl.org/vocab/cpsv#PublicService> .
 
@@ -734,15 +734,27 @@ thereof."""@en;
 <https://semiceu.github.io/shacl/iceg-public-service_en#RequirementShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property [
-    shacl:class <http://data.europa.eu/m8g/Requirement>;
-    shacl:definition "A reference between a sub-Requirement and its parent, more general, Requirement."@en;
-    shacl:name "is requirement of"@en;
-    shacl:path <http://data.europa.eu/m8g/isRequirementOf>
+    shacl:datatype rdf:langString;
+    shacl:definition "A short explanation about the nature, attributes, uses or any other additional information that helps clarify the understanding of the Requirement being instantiated."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "description"@en;
+    shacl:path dc:description
   ], [
-    shacl:class <http://data.europa.eu/eli/ontology#LegalResource>;
-    shacl:definition "The Legal Resource that is responsible for the creation/initiation of the Requirement."@en;
-    shacl:name "is derived from"@en;
-    shacl:path <http://data.europa.eu/m8g/isDerivedFrom>
+    shacl:class <http://data.europa.eu/m8g/Requirement>;
+    shacl:definition "A described and/or categorised relation to the instance of another Requirement class or subclass."@en;
+    shacl:name "has qualified relation"@en;
+    shacl:path <http://data.europa.eu/m8g/hasQualifiedRelation>
+  ], [
+    shacl:class <http://data.europa.eu/m8g/Requirement>;
+    shacl:definition "A sub-Requirement."@en;
+    shacl:name "has requirement"@en;
+    shacl:path <http://data.europa.eu/m8g/hasRequirement>
+  ], [
+    shacl:class <http://data.europa.eu/m8g/Evidence>;
+    shacl:definition "The Evidence that supplies information (proof, support) for this Requirement."@en;
+    shacl:name "has Supporting Evidence"@en;
+    shacl:path <http://data.europa.eu/m8g/hasSupportingEvidence>
   ], [
     shacl:datatype <http://www.w3.org/ns/adms#Identifier>;
     shacl:definition "This property represents an Identifier for the Requirement."@en;
@@ -751,17 +763,10 @@ thereof."""@en;
     shacl:name "identifier"@en;
     shacl:path dc:identifier
   ], [
-    shacl:class <http://data.europa.eu/m8g/Requirement>;
-    shacl:definition "A sub-Requirement."@en;
-    shacl:name "has requirement"@en;
-    shacl:path <http://data.europa.eu/m8g/hasRequirement>
-  ], [
-    shacl:datatype rdf:langString;
-    shacl:definition "This property represents the official Name of the Requirement."@en;
-    shacl:maxCount 1;
-    shacl:minCount 1;
-    shacl:name "name"@en;
-    shacl:path skos:prefLabel
+    shacl:class <http://data.europa.eu/eli/ontology#LegalResource>;
+    shacl:definition "The Legal Resource that is responsible for the creation/initiation of the Requirement."@en;
+    shacl:name "is derived from"@en;
+    shacl:path <http://data.europa.eu/m8g/isDerivedFrom>
   ], [
     shacl:class foaf:Agent;
     shacl:definition "The Agent that has published the Requirement."@en;
@@ -769,21 +774,16 @@ thereof."""@en;
     shacl:path dc:publisher
   ], [
     shacl:class <http://data.europa.eu/m8g/Requirement>;
-    shacl:definition "A described and/or categorised relation to the instance of another Requirement class or subclass."@en;
-    shacl:name "has qualified relation"@en;
-    shacl:path <http://data.europa.eu/m8g/hasQualifiedRelation>
+    shacl:definition "A reference between a sub-Requirement and its parent, more general, Requirement."@en;
+    shacl:name "is requirement of"@en;
+    shacl:path <http://data.europa.eu/m8g/isRequirementOf>
   ], [
     shacl:datatype rdf:langString;
-    shacl:definition "A short explanation about the nature, attributes, uses or any other additional information that helps clarify the understanding of the Requirement being instantiated."@en;
+    shacl:definition "This property represents the official Name of the Requirement."@en;
     shacl:maxCount 1;
     shacl:minCount 1;
-    shacl:name "description"@en;
-    shacl:path dc:description
-  ], [
-    shacl:class <http://data.europa.eu/m8g/Evidence>;
-    shacl:definition "The Evidence that supplies information (proof, support) for this Requirement."@en;
-    shacl:name "has Supporting Evidence"@en;
-    shacl:path <http://data.europa.eu/m8g/hasSupportingEvidence>
+    shacl:name "name"@en;
+    shacl:path skos:prefLabel
   ];
   shacl:targetClass <http://data.europa.eu/m8g/Requirement> .
 
@@ -797,18 +797,18 @@ thereof."""@en;
     shacl:name "description"@en;
     shacl:path dc:description
   ], [
-    shacl:class <http://data.europa.eu/eli/ontology#LegalResource>;
-    shacl:definition """The Implements property links a Rule to relevant legislation or policy documents i.e.
-the Legal Resource under which the Rules are being defined (see section 3.16)."""@en;
-    shacl:name "implements"@en;
-    shacl:path <http://purl.org/vocab/cpsv#implements>
-  ], [
     shacl:datatype <http://www.w3.org/ns/adms#Identifier>;
     shacl:definition "This property represents an Identifier for the Rule."@en;
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "identifier"@en;
     shacl:path dc:identifier
+  ], [
+    shacl:class <http://data.europa.eu/eli/ontology#LegalResource>;
+    shacl:definition """The Implements property links a Rule to relevant legislation or policy documents i.e.
+the Legal Resource under which the Rules are being defined (see section 3.16)."""@en;
+    shacl:name "implements"@en;
+    shacl:path <http://purl.org/vocab/cpsv#implements>
   ], [
     shacl:class dc:LinguisticSystem;
     shacl:definition "This property represents the language(s) in which the Rule is available. This could be one or multiple languages, for instance in countries with more than one official language. The possible values for this property are described in a controlled vocabulary."@en;

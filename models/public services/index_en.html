@@ -121,7 +121,7 @@
               <div class="head" role="metainfo" id="metainfo">
               <dl>
               <dt>Source</dt><dd><br></dd>
-              <!--<dt>Changelog</dt><dd><a href="https://github.com/bertvannuffelen/semiceuthema/blob/117f5594f6c63b508610cf79bd10c6689ec6a938/CHANGELOG">https://github.com/bertvannuffelen/semiceuthema/blob/117f5594f6c63b508610cf79bd10c6689ec6a938/CHANGELOG</a></dd>-->
+              <!--<dt>Changelog</dt><dd><a href="https://github.com/bertvannuffelen/semiceuthema/blob/bc0b66ea972235be1f888263ff74b39dc0b44a0a/CHANGELOG">https://github.com/bertvannuffelen/semiceuthema/blob/bc0b66ea972235be1f888263ff74b39dc0b44a0a/CHANGELOG</a></dd>-->
               <dt>Feedback</dt><dd><a href="https://github.com/belgif/thematic/issues">https://github.com/belgif/thematic/issues</a></dd>
               <!--<dt>Registry of standards</dt><dd><a href="TODO">TODO</a></dd>-->
 
@@ -835,10 +835,10 @@ In other words, a Business Event groups together a number of public services tha
                         <td></td>
                       </tr>
                     
-                      <tr id="Channel%3Ahas%20purpose" typeof="rdfs:Property" resource="purl.eu/ns/publicservice#hasPurpose">
+                      <tr id="Channel%3Ahas%20purpose" typeof="rdfs:Property" resource="vocab.belgif.be/ns/publicservice#hasPurpose">
                         <td>
                           <code property="rdfs:label">
-                            <a href="purl.eu/ns/publicservice#hasPurpose" data-toggle="tooltip" data-content="purl.eu/ns/publicservice#hasPurpose" data-placement="right">
+                            <a href="vocab.belgif.be/ns/publicservice#hasPurpose" data-toggle="tooltip" data-content="vocab.belgif.be/ns/publicservice#hasPurpose" data-placement="right">
                             has purpose</a>
                           </code>
                         </td>
@@ -894,8 +894,7 @@ In other words, a Business Event groups together a number of public services tha
                         <td property="skos:scopeNote">The value should follow the flexible format defined for schema.org's opening hours property.
 Following that structure, days of the week are represented by two letter codes (Mo,Tu, We, Th, Fr, Sa, Su).  Lists should be comma separated (for example: Mo, We, Fr) and periods separated by a hyphen (for example: Mo-Fr).
 
-If it is appropriate to add opening hours then this follows the day so if a phone service is available 08:00-20:00 Monday to Saturday and 08:00-18:00 on Sundays that would be encoded as Mo-Sa 08:00-20:00, Su 08:00-18:00.
-</td>
+If it is appropriate to add opening hours then this follows the day so if a phone service is available 08:00-20:00 Monday to Saturday and 08:00-18:00 on Sundays that would be encoded as Mo-Sa 08:00-20:00, Su 08:00-18:00.</td>
                         <td></td>
                       </tr>
                     
@@ -935,8 +934,7 @@ If it is appropriate to add opening hours then this follows the day so if a phon
                         </td>
 			<td>0..*</td>
                         <td property="rdfs:comment">In the majority of cases, the evidence required to use a Public Service will be independent of the channel through which the service is accessed. The Has Input property should normally be used to link a Public Service directly to one or more pieces of Evidence. However, where the type of Evidence required varies according to the channel used to access the Public Service, then the Has Input property may be used at the Channel level. For example, a digital signature may be
-required for an online channel, whereas a physical signature may be required for a face to face service provision.
-</td>
+required for an online channel, whereas a physical signature may be required for a face to face service provision.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -1244,10 +1242,10 @@ representative of it, can be contacted.</td>
 
                     <tbody class="supertype">
                     
-                      <tr id="Cost%3Acost%20breakdown" typeof="rdfs:Property" resource="purl.eu/ns/publicservice#costBreakdown">
+                      <tr id="Cost%3Acost%20breakdown" typeof="rdfs:Property" resource="vocab.belgif.be/ns/publicservice#costBreakdown">
                         <td>
                           <code property="rdfs:label">
-                            <a href="purl.eu/ns/publicservice#costBreakdown" data-toggle="tooltip" data-content="purl.eu/ns/publicservice#costBreakdown" data-placement="right">
+                            <a href="vocab.belgif.be/ns/publicservice#costBreakdown" data-toggle="tooltip" data-content="vocab.belgif.be/ns/publicservice#costBreakdown" data-placement="right">
                             cost breakdown</a>
                           </code>
                         </td>
@@ -1360,8 +1358,7 @@ The cost breakdown property is not to be confused with the description property 
                           
                         </td>
 			<td>0..*</td>
-                        <td property="rdfs:comment">This property links the Cost class with one or more instances of the Public Organization class. This property indicates which Public Organization is the Competent Authority for defining the costs associated with the delivery of a particular Public Service.
-</td>
+                        <td property="rdfs:comment">This property links the Cost class with one or more instances of the Public Organization class. This property indicates which Public Organization is the Competent Authority for defining the costs associated with the delivery of a particular Public Service.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -1392,8 +1389,7 @@ The cost breakdown property is not to be confused with the description property 
               <h3 class="h3" id="Event"><a href="http://data.europa.eu/m8g/Event" data-toggle="tooltip" data-content="http://data.europa.eu/m8g/Event" data-placement="right">Event</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
-                    <dt>Description</dt><dd>This class represents an event that can be of any type that triggers, makes use of, or in some way is related to, a Public Service. It is not expected to be used directly, rather, one or other of its subclasses should be used. The properties of the class are, of course, inherited by those subclasses.
-
+                    <dt>Description</dt><dd>This class represents an event that can be of any type that triggers, makes use of, or in some way is related to, a Public Service. It is not expected to be used directly, rather, one or other of its subclasses should be used. The properties of the class are, of course, inherited by those subclasses.
 
 The Event class is used as a hook either to a single related Public Service, such as diagnosis of illness being related to application for sickness benefit ;
 or to a group of Public Services, such as all those related to the establishment of a new business.</dd>
@@ -1521,8 +1517,7 @@ or to a group of Public Services, such as all those related to the establishment
                           
                         </td>
 			<td>0..*</td>
-                        <td property="rdfs:comment">The type property links an Event to a controlled vocabulary of event types and it is the nature of those controlled vocabularies that is the major difference between a business event, such as creating the business in the first place and a life event, such as the birth of a child.
-</td>
+                        <td property="rdfs:comment">The type property links an Event to a controlled vocabulary of event types and it is the nature of those controlled vocabularies that is the major difference between a business event, such as creating the business in the first place and a life event, such as the birth of a child.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -1543,8 +1538,7 @@ or to a group of Public Services, such as all those related to the establishment
 
 Evidence can be any resource - document, artefact - anything needed for executing the Public Service. In the context of Public Services, Evidence is usually administrative documents or completed application forms. A specific Public Service may require the presence of certain Evidence or combinations of Evidence in order to be delivered.
 
-In some cases, the Output of one service will be Evidence for another service. Such relationships should be described in the associated Rule(s).
-</dd>
+In some cases, the Output of one service will be Evidence for another service. Such relationships should be described in the associated Rule(s).</dd>
                     
 		    
                     <dt>Properties</dt>
@@ -1578,10 +1572,10 @@ In some cases, the Output of one service will be Evidence for another service. S
 
                     <tbody class="supertype">
                     
-                      <tr id="Evidence%3Acomes%20from" typeof="rdfs:Property" resource="purl.eu/ns/publicservice#comesFrom">
+                      <tr id="Evidence%3Acomes%20from" typeof="rdfs:Property" resource="vocab.belgif.be/ns/publicservice#comesFrom">
                         <td>
                           <code property="rdfs:label">
-                            <a href="purl.eu/ns/publicservice#comesFrom" data-toggle="tooltip" data-content="purl.eu/ns/publicservice#comesFrom" data-placement="right">
+                            <a href="vocab.belgif.be/ns/publicservice#comesFrom" data-toggle="tooltip" data-content="vocab.belgif.be/ns/publicservice#comesFrom" data-placement="right">
                             comes from</a>
                           </code>
                         </td>
@@ -2067,10 +2061,10 @@ While a Group has the characteristics of a Agent, it is also associated with a n
                         <td></td>
                       </tr>
                     
-                      <tr id="Output%3Ahas%20legal%20resource" typeof="rdfs:Property" resource="purl.eu/ns/publicservice#hasLegalResource">
+                      <tr id="Output%3Ahas%20legal%20resource" typeof="rdfs:Property" resource="vocab.belgif.be/ns/publicservice#hasLegalResource">
                         <td>
                           <code property="rdfs:label">
-                            <a href="purl.eu/ns/publicservice#hasLegalResource" data-toggle="tooltip" data-content="purl.eu/ns/publicservice#hasLegalResource" data-placement="right">
+                            <a href="vocab.belgif.be/ns/publicservice#hasLegalResource" data-toggle="tooltip" data-content="vocab.belgif.be/ns/publicservice#hasLegalResource" data-placement="right">
                             has legal resource</a>
                           </code>
                         </td>
@@ -2107,10 +2101,10 @@ While a Group has the characteristics of a Agent, it is also associated with a n
                         <td></td>
                       </tr>
                     
-                      <tr id="Output%3Ais%20about" typeof="rdfs:Property" resource="purl.eu/ns/publicservice#isAbout">
+                      <tr id="Output%3Ais%20about" typeof="rdfs:Property" resource="vocab.belgif.be/ns/publicservice#isAbout">
                         <td>
                           <code property="rdfs:label">
-                            <a href="purl.eu/ns/publicservice#isAbout" data-toggle="tooltip" data-content="purl.eu/ns/publicservice#isAbout" data-placement="right">
+                            <a href="vocab.belgif.be/ns/publicservice#isAbout" data-toggle="tooltip" data-content="vocab.belgif.be/ns/publicservice#isAbout" data-placement="right">
                             is about</a>
                           </code>
                         </td>
@@ -2127,10 +2121,10 @@ While a Group has the characteristics of a Agent, it is also associated with a n
                         <td></td>
                       </tr>
                     
-                      <tr id="Output%3Ais%20legal%20resource" typeof="rdfs:Property" resource="purl.eu/ns/publicservice#isLegalResource">
+                      <tr id="Output%3Ais%20legal%20resource" typeof="rdfs:Property" resource="vocab.belgif.be/ns/publicservice#isLegalResource">
                         <td>
                           <code property="rdfs:label">
-                            <a href="purl.eu/ns/publicservice#isLegalResource" data-toggle="tooltip" data-content="purl.eu/ns/publicservice#isLegalResource" data-placement="right">
+                            <a href="vocab.belgif.be/ns/publicservice#isLegalResource" data-toggle="tooltip" data-content="vocab.belgif.be/ns/publicservice#isLegalResource" data-placement="right">
                             is legal resource</a>
                           </code>
                         </td>
@@ -2147,10 +2141,10 @@ While a Group has the characteristics of a Agent, it is also associated with a n
                         <td></td>
                       </tr>
                     
-                      <tr id="Output%3Ais%20used%20as" typeof="rdfs:Property" resource="purl.eu/ns/publicservice#isUsedAs">
+                      <tr id="Output%3Ais%20used%20as" typeof="rdfs:Property" resource="vocab.belgif.be/ns/publicservice#isUsedAs">
                         <td>
                           <code property="rdfs:label">
-                            <a href="purl.eu/ns/publicservice#isUsedAs" data-toggle="tooltip" data-content="purl.eu/ns/publicservice#isUsedAs" data-placement="right">
+                            <a href="vocab.belgif.be/ns/publicservice#isUsedAs" data-toggle="tooltip" data-content="vocab.belgif.be/ns/publicservice#isUsedAs" data-placement="right">
                             is used as</a>
                           </code>
                         </td>
@@ -2188,10 +2182,10 @@ This property might be used when a Public Service consumes its own Output as Evi
                         <td></td>
                       </tr>
                     
-                      <tr id="Output%3Aresponse%20time" typeof="rdfs:Property" resource="purl.eu/ns/publicservice#responseTime">
+                      <tr id="Output%3Aresponse%20time" typeof="rdfs:Property" resource="vocab.belgif.be/ns/publicservice#responseTime">
                         <td>
                           <code property="rdfs:label">
-                            <a href="purl.eu/ns/publicservice#responseTime" data-toggle="tooltip" data-content="purl.eu/ns/publicservice#responseTime" data-placement="right">
+                            <a href="vocab.belgif.be/ns/publicservice#responseTime" data-toggle="tooltip" data-content="vocab.belgif.be/ns/publicservice#responseTime" data-placement="right">
                             response time</a>
                           </code>
                         </td>
@@ -2340,8 +2334,7 @@ this is an extension mechanism for the CSPV-AP, the controlled vocabulary should
                   <dl>
                     <dt>Description</dt><dd>Any Organization that is defined as being part of the public sector by a legal framework at any level.</dd>
                     
-                    <dt>Usage</dt><dd>Within this model the following properties are mandatory: preferred label and spatial. The value of the latter should be a URI from the Administrative Territorial Units Named Authority List maintained by the Publications Office's Metadata Registry.
-</dd>
+                    <dt>Usage</dt><dd>Within this model the following properties are mandatory: preferred label and spatial. The value of the latter should be a URI from the Administrative Territorial Units Named Authority List maintained by the Publications Office's Metadata Registry.</dd>
                     
 		    
                     <dt>Properties</dt>
@@ -2369,10 +2362,10 @@ this is an extension mechanism for the CSPV-AP, the controlled vocabulary should
 
                     <tbody class="supertype">
                     
-                      <tr id="Public%20Organization%3Ahas%20channel" typeof="rdfs:Property" resource="purl.eu/ns/publicservice#hasChannel">
+                      <tr id="Public%20Organization%3Ahas%20channel" typeof="rdfs:Property" resource="vocab.belgif.be/ns/publicservice#hasChannel">
                         <td>
                           <code property="rdfs:label">
-                            <a href="purl.eu/ns/publicservice#hasChannel" data-toggle="tooltip" data-content="purl.eu/ns/publicservice#hasChannel" data-placement="right">
+                            <a href="vocab.belgif.be/ns/publicservice#hasChannel" data-toggle="tooltip" data-content="vocab.belgif.be/ns/publicservice#hasChannel" data-placement="right">
                             has channel</a>
                           </code>
                         </td>
@@ -2650,8 +2643,7 @@ thereof.</td>
                           
                         </td>
 			<td>0..*</td>
-                        <td property="rdfs:comment">The Has Legal Resource property links a Public Service to a Legal Resource. It indicates the Legal Resource (e.g. legislation) to which the Public Service relates, operates or has its legal basis.
-</td>
+                        <td property="rdfs:comment">The Has Legal Resource property links a Public Service to a Legal Resource. It indicates the Legal Resource (e.g. legislation) to which the Public Service relates, operates or has its legal basis.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -2676,10 +2668,10 @@ thereof.</td>
                         <td></td>
                       </tr>
                     
-                      <tr id="Public%20Service%3Ahas%20preferred%20channel" typeof="rdfs:Property" resource="purl.eu/ns/publicservice#hasPreferredChannel">
+                      <tr id="Public%20Service%3Ahas%20preferred%20channel" typeof="rdfs:Property" resource="vocab.belgif.be/ns/publicservice#hasPreferredChannel">
                         <td>
                           <code property="rdfs:label">
-                            <a href="purl.eu/ns/publicservice#hasPreferredChannel" data-toggle="tooltip" data-content="purl.eu/ns/publicservice#hasPreferredChannel" data-placement="right">
+                            <a href="vocab.belgif.be/ns/publicservice#hasPreferredChannel" data-toggle="tooltip" data-content="vocab.belgif.be/ns/publicservice#hasPreferredChannel" data-placement="right">
                             has preferred channel</a>
                           </code>
                         </td>
@@ -2696,10 +2688,10 @@ thereof.</td>
                         <td></td>
                       </tr>
                     
-                      <tr id="Public%20Service%3Ahas%20requirement" typeof="rdfs:Property" resource="purl.eu/ns/publicservice#hasRequirement">
+                      <tr id="Public%20Service%3Ahas%20requirement" typeof="rdfs:Property" resource="vocab.belgif.be/ns/publicservice#hasRequirement">
                         <td>
                           <code property="rdfs:label">
-                            <a href="purl.eu/ns/publicservice#hasRequirement" data-toggle="tooltip" data-content="purl.eu/ns/publicservice#hasRequirement" data-placement="right">
+                            <a href="vocab.belgif.be/ns/publicservice#hasRequirement" data-toggle="tooltip" data-content="vocab.belgif.be/ns/publicservice#hasRequirement" data-placement="right">
                             has requirement</a>
                           </code>
                         </td>
@@ -2712,8 +2704,7 @@ thereof.</td>
                         </td>
 			<td>0..*</td>
                         <td property="rdfs:comment">The term Competent Authority is defined in the Services Directive (2006/123/EC) in the following way: &quot;Any body or authority which has a supervisory or regulatory role in a Member State in relation to service activities, including, in particular, administrative authorities,
-including courts acting as such, professional bodies, and those professional associations or other professional organisations which, in the exercise of their legal autonomy, regulate in a collective manner access to service activities or the exercise thereof.&quot;
-</td>
+including courts acting as such, professional bodies, and those professional associations or other professional organisations which, in the exercise of their legal autonomy, regulate in a collective manner access to service activities or the exercise thereof.&quot;</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -2834,16 +2825,15 @@ Public Services may be associated with a particular Event and, likewise, the sam
                           
                         </td>
 			<td>0..*</td>
-                        <td property="rdfs:comment">This property represents the language(s) in which the Public Service is available. This could be one language or multiple languages, for instance in countries with more than one official language. The possible values for this property are described in a controlled vocabulary. The recommended controlled vocabularies are listed in section 4.
-</td>
+                        <td property="rdfs:comment">This property represents the language(s) in which the Public Service is available. This could be one language or multiple languages, for instance in countries with more than one official language. The possible values for this property are described in a controlled vocabulary. The recommended controlled vocabularies are listed in section 4.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
                     
-                      <tr id="Public%20Service%3Alifecycle%20status" typeof="rdfs:Property" resource="purl.eu/ns/publicservice#lifecycleStatus">
+                      <tr id="Public%20Service%3Alifecycle%20status" typeof="rdfs:Property" resource="vocab.belgif.be/ns/publicservice#lifecycleStatus">
                         <td>
                           <code property="rdfs:label">
-                            <a href="purl.eu/ns/publicservice#lifecycleStatus" data-toggle="tooltip" data-content="purl.eu/ns/publicservice#lifecycleStatus" data-placement="right">
+                            <a href="vocab.belgif.be/ns/publicservice#lifecycleStatus" data-toggle="tooltip" data-content="vocab.belgif.be/ns/publicservice#lifecycleStatus" data-placement="right">
                             lifecycle status</a>
                           </code>
                         </td>
@@ -3195,7 +3185,7 @@ N.B. The spatial restriction is not meant to be used to describe eligibility or 
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="Purpose"><a href="purl.eu/ns/publicservice#Purpose" data-toggle="tooltip" data-content="purl.eu/ns/publicservice#Purpose" data-placement="right">Purpose</a></h3>
+              <h3 class="h3" id="Purpose"><a href="vocab.belgif.be/ns/publicservice#Purpose" data-toggle="tooltip" data-content="vocab.belgif.be/ns/publicservice#Purpose" data-placement="right">Purpose</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Description</dt><dd>This class represents any concepts that can be used to specify the purpose of the Channel and which relates to the Channel through the properties has Channel and has preferred channel.</dd>
@@ -3232,10 +3222,10 @@ Each purpose can have one or more preferred channels, and one or more "deprecate
 
                     <tbody class="supertype">
                     
-                      <tr id="Purpose%3Ahas%20channel" typeof="rdfs:Property" resource="purl.eu/ns/publicservice#hasChannel">
+                      <tr id="Purpose%3Ahas%20channel" typeof="rdfs:Property" resource="vocab.belgif.be/ns/publicservice#hasChannel">
                         <td>
                           <code property="rdfs:label">
-                            <a href="purl.eu/ns/publicservice#hasChannel" data-toggle="tooltip" data-content="purl.eu/ns/publicservice#hasChannel" data-placement="right">
+                            <a href="vocab.belgif.be/ns/publicservice#hasChannel" data-toggle="tooltip" data-content="vocab.belgif.be/ns/publicservice#hasChannel" data-placement="right">
                             has channel</a>
                           </code>
                         </td>
@@ -3493,8 +3483,7 @@ Each purpose can have one or more preferred channels, and one or more "deprecate
 Instances of the Rule class are FRBR (Functional Requirements for Bibliographic Records) Expressions, that is, a concrete expression such
 as a document, of the more abstract concept of the rules themselves.This model does not envisage instances of the Rule class as machine-readable business rules.
 
-Detailed modelling of the rules related to Public Services is out of scope of this model.
-</dd>
+Detailed modelling of the rules related to Public Services is out of scope of this model.</dd>
                     
 		    
                     <dt>Properties</dt>
@@ -3719,7 +3708,7 @@ No changelog defined.
                 <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">JSON-LD context</h2>
                 (non-normative)
                 
-		<p>A reusable JSON-LD context definition for this Core Vocabulary is retrievable at: <a href="https://belgif.github.io/thematic/models/public%20services/context/iceg-public-organisation_en.jsonld" target="_blank">thematic/models/public%20services/context/iceg-public-service_en.jsonld</a></p>
+		<p>A reusable JSON-LD context definition for this Core Vocabulary is retrievable at: <a href="/doc/iceg/public-service/context/iceg-public-service_en.jsonld" target="_blank">/doc/iceg/public-service/context/iceg-public-service_en.jsonld</a></p>
                 
             </div>
 	    <!--
