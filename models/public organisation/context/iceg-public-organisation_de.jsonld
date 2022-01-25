@@ -1,9 +1,0 @@
-{
-  "@context": {
-    "EnterYourTranslationHere": "https://schema.org/OpeningHoursSpecification",
-    "EnterYourTranslationHere.enterYourTranslationHere": {
-      "@id": "vocab.belgif.be/ns/publicorganization#status",
-      "@type": "http://www.w3.org/2004/02/skos/core#Concept"
-    }
-  }
-}
