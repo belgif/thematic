@@ -9,11 +9,11 @@
       "@id": "http://www.w3.org/ns/locn#addressID",
       "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
-    "Address.administrativeUnitLevel1 (country)": {
+    "Address.administrativeUnitLevel1": {
       "@id": "http://www.w3.org/ns/locn#adminUnitL1",
       "@type": "http://www.w3.org/2004/02/skos/core#Concept"
     },
-    "Address.administrativeUnitLevel2 (country/region/state)": {
+    "Address.administrativeUnitLevel2": {
       "@id": "http://www.w3.org/ns/locn#adminUnitL2",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
@@ -33,7 +33,7 @@
       "@id": "http://www.w3.org/ns/locn#postCode",
       "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
-    "Address.postName (city)": {
+    "Address.postName": {
       "@id": "http://www.w3.org/ns/locn#postName",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
@@ -295,7 +295,7 @@
       "@id": "https://schema.org/deathDate",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
-    "Person.familyName (surname)": {
+    "Person.familyName": {
       "@id": "http://xmlns.com/foaf/0.1/familyName",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
@@ -303,7 +303,7 @@
       "@id": "http://xmlns.com/foaf/0.1/name",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
-    "Person.givenName (forename)": {
+    "Person.givenName": {
       "@id": "http://xmlns.com/foaf/0.1/givenName",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
