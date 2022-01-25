@@ -175,7 +175,7 @@
     },
     "Organization.certification": {
       "@container": "@set",
-      "@id": "vocab.belgif.be/ns/publicorganization#certification",
+      "@id": "http://vocab.belgif.be/ns/publicorganization#certification",
       "@type": "http://www.w3.org/2004/02/skos/core#Concept"
     },
     "Organization.changedBy": {
@@ -193,7 +193,7 @@
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "Organization.exOfficioStrikingOff": {
-      "@id": "vocab.belgif.be/ns/publicorganization#exOfficioStrikingOff",
+      "@id": "http://vocab.belgif.be/ns/publicorganization#exOfficioStrikingOff",
       "@type": "http://www.w3.org/2004/02/skos/core#Concept"
     },
     "Organization.hasMember": {
@@ -227,7 +227,7 @@
     },
     "Organization.linksToDatabase": {
       "@container": "@set",
-      "@id": "vocab.belgif.be/ns/publicorganization#linksToDatabase",
+      "@id": "http://vocab.belgif.be/ns/publicorganization#linksToDatabase",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "Organization.logo": {
@@ -260,11 +260,11 @@
       "@type": "@id"
     },
     "Organization.startDateOfThisData": {
-      "@id": "vocab.belgif.be/ns/publicorganization#startDateOfThisData",
+      "@id": "http://vocab.belgif.be/ns/publicorganization#startDateOfThisData",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "Organization.status": {
-      "@id": "vocab.belgif.be/ns/publicorganization#status",
+      "@id": "http://vocab.belgif.be/ns/publicorganization#status",
       "@type": "http://www.w3.org/2004/02/skos/core#Concept"
     },
     "Organization.subOrganizationOf": {
@@ -351,7 +351,7 @@
       "@type": "@id"
     },
     "PublicOrganization.legalForm": {
-      "@id": "vocab.belgif.be/ns/publicorganization#legalForm",
+      "@id": "http://vocab.belgif.be/ns/publicorganization#legalForm",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "ReferenceFramework": "http://data.europa.eu/m8g/ReferenceFramework",
