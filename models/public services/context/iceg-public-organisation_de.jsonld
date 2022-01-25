@@ -1,9 +1,0 @@
-{
-  "@context": {
-    "EnterYourTranslationHere": "https://schema.org/OpeningHoursSpecification",
-    "EnterYourTranslationHere.enterYourTranslationHere": {
-      "@id": "purl.eu/ns/publicorganization#status",
-      "@type": "http://www.w3.org/2004/02/skos/core#Concept"
-    }
-  }
-}
