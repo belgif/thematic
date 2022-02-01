@@ -137,7 +137,7 @@
         {
           "sh:class": "http://data.europa.eu/m8g/Evidence",
           "sh:definition": {
-            "en": "In the majority of cases, the evidence required to use a Public Service will be independent of the channel through which the service is accessed. The Has Input property should normally be used to link a Public Service directly to one or more pieces of Evidence. However, where the type of Evidence required varies according to the channel used to access the Public Service, then the Has Input property may be used at the Channel level. For example, a digital signature may be\r\nrequired for an online channel, whereas a physical signature may be required for a face to face service provision.\r"
+            "en": "In the majority of cases, the evidence required to use a Public Service will be independent of the channel through which the service is accessed. The Has Input property should normally be used to link a Public Service directly to one or more pieces of Evidence. However, where the type of Evidence required varies according to the channel used to access the Public Service, then the Has Input property may be used at the Channel level. For example, a digital signature may be\r\nrequired for an online channel, whereas a physical signature may be required for a face to face service provision."
           },
           "sh:name": {
             "en": "via channel"
@@ -164,7 +164,7 @@
           "sh:path": "http://vocab.belgif.be/ns/publicservice#costBreakdown"
         },
         {
-          "sh:datatype": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
             "en": "This property represents the currency in which the Cost needs to be paid and the value of the Cost is expressed. The possible values for this property are described in a controlled vocabulary."
           },
@@ -219,6 +219,7 @@
           "sh:path": "http://data.europa.eu/m8g/isDefinedBy"
         },
         {
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#double",
           "sh:definition": {
             "en": "This property represents a numeric value indicating the amount of the Cost."
           },
@@ -248,7 +249,7 @@
           "sh:path": "http://purl.org/dc/terms/description"
         },
         {
-          "sh:datatype": "http://www.w3.org/ns/adms#Identifier",
+          "sh:class": "http://www.w3.org/ns/adms#Identifier",
           "sh:definition": {
             "en": "This property represents an Identifier for the Event."
           },
@@ -282,9 +283,9 @@
           "sh:path": "http://purl.org/dc/terms/relation"
         },
         {
-          "sh:datatype": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
-            "en": "The type property links an Event to a controlled vocabulary of event types and it is the nature of those controlled vocabularies that is the major difference between a business event, such as creating the business in the first place and a life event, such as the birth of a child.\r"
+            "en": "The type property links an Event to a controlled vocabulary of event types and it is the nature of those controlled vocabularies that is the major difference between a business event, such as creating the business in the first place and a life event, such as the birth of a child."
           },
           "sh:name": {
             "en": "type"
@@ -310,7 +311,7 @@
           "sh:path": "http://vocab.belgif.be/ns/publicservice#comesFrom"
         },
         {
-          "sh:datatype": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
             "en": "The security classification assigned to an Evidence or, in general, to a content."
           },
@@ -321,7 +322,7 @@
           "sh:path": "http://data.europa.eu/m8g/confidentialityLevelType"
         },
         {
-          "sh:datatype": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
             "en": "Country where the evidence has been issued."
           },
@@ -428,7 +429,7 @@
           "sh:path": "http://vocab.belgif.be/ns/publicservice#hasLegalResource"
         },
         {
-          "sh:datatype": "http://www.w3.org/ns/adms#Identifier",
+          "sh:class": "http://www.w3.org/ns/adms#Identifier",
           "sh:definition": {
             "en": "This property represents an Identifier for the Output."
           },
@@ -487,10 +488,10 @@
           "sh:name": {
             "en": "response time"
           },
-          "sh:path": "http://vocab.belgif.be/ns/publicservice#responseTime"
+          "sh:path": "vocab.belgif.be/ns/publicservice#responseTime"
         },
         {
-          "sh:datatype": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
             "en": "This property represents the type of Output as defined in a controlled vocabulary. "
           },
@@ -522,7 +523,7 @@
           "sh:path": "http://purl.org/dc/terms/description"
         },
         {
-          "sh:datatype": "http://www.w3.org/ns/adms#Identifier",
+          "sh:class": "http://www.w3.org/ns/adms#Identifier",
           "sh:definition": {
             "en": "This property represents an Identifier for the Participation."
           },
@@ -534,7 +535,7 @@
           "sh:path": "http://purl.org/dc/terms/identifier"
         },
         {
-          "sh:datatype": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
             "en": "Provides the role played. This should be provided using a controlled vocabulary. Since \r\nthis is an extension mechanism for the CSPV-AP, the controlled vocabulary should be decided to suit local implementations."
           },
@@ -583,7 +584,7 @@
           "sh:name": {
             "en": "legal form"
           },
-          "sh:path": "purl.eu/ns/publicservice#legalForm"
+          "sh:path": "http://vocab.belgif.be/ns/publicservice#legalForm"
         }
       ],
       "sh:targetClass": "http://data.europa.eu/m8g/PublicOrganisation"
@@ -605,7 +606,7 @@
           "sh:path": "http://purl.org/dc/terms/description"
         },
         {
-          "sh:datatype": "http://www.w3.org/ns/adms#Identifier",
+          "sh:class": "http://www.w3.org/ns/adms#Identifier",
           "sh:definition": {
             "en": "This property contains the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue."
           },
@@ -688,7 +689,7 @@
           "sh:path": "http://data.europa.eu/m8g/hasSupportingEvidence"
         },
         {
-          "sh:datatype": "http://www.w3.org/ns/adms#Identifier",
+          "sh:class": "http://www.w3.org/ns/adms#Identifier",
           "sh:definition": {
             "en": "This property represents an Identifier for the Requirement."
           },
@@ -853,7 +854,7 @@
           "sh:path": "http://vocab.belgif.be/ns/publicservice#hasRequirement"
         },
         {
-          "sh:datatype": "http://www.w3.org/ns/adms#Identifier",
+          "sh:class": "http://www.w3.org/ns/adms#Identifier",
           "sh:definition": {
             "en": "This property represents a formally-issued Identifier for the Public Service."
           },
@@ -915,7 +916,7 @@
           "sh:path": "http://purl.org/dc/terms/language"
         },
         {
-          "sh:datatype": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
             "en": "This property represents the status within the lifecycle of the public service (exp: creation, use or deletion of a Public Service). It doesn't refer to the status within the Public Service process."
           },
@@ -977,7 +978,7 @@
           "sh:path": "http://purl.org/dc/terms/requires"
         },
         {
-          "sh:datatype": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
             "en": "This property represents the industry or sector a Public Service relates to, or is intended for. For example: environment, safety, housing. Note that a single Public Service may relate to multiple sectors. The possible values for this property are provided as a controlled vocabulary."
           },
@@ -997,7 +998,7 @@
           "sh:path": "http://purl.org/dc/terms/spatial"
         },
         {
-          "sh:datatype": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
             "en": "Indicates whether a Public Service is active, inactive, under development etc. according to a controlled vocabulary."
           },
@@ -1008,7 +1009,7 @@
           "sh:path": "http://www.w3.org/ns/adms#status"
         },
         {
-          "sh:datatype": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
             "en": "This property represents the Thematic Area of a Public Service as described in a controlled vocabulary, for instance social protection, health, recreation, culture and religion, family, traveling economic affairs, tax, staff, environment..."
           },
@@ -1038,7 +1039,7 @@
           "sh:path": "http://purl.org/dc/terms/description"
         },
         {
-          "sh:datatype": "http://www.w3.org/ns/adms#Identifier",
+          "sh:class": "http://www.w3.org/ns/adms#Identifier",
           "sh:definition": {
             "en": "This property represents an Identifier for the Rule."
           },
@@ -1085,6 +1086,24 @@
       "sh:targetClass": "http://purl.org/vocab/cpsv#Rule"
     },
     {
+      "@id": "https://semiceu.github.io/shacl/iceg-public-service_en#PurposeShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "sh:class": "http://data.europa.eu/m8g/Channel",
+          "sh:definition": {
+            "en": "This property describes the relationship between a purpose and a channel. "
+          },
+          "sh:name": {
+            "en": "has channel"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/publicservice#hasChannel"
+        }
+      ],
+      "sh:targetClass": "http://vocab.belgif.be/ns/publicservice#Purpose"
+    },
+    {
       "@id": "https://semiceu.github.io/shacl/iceg-public-service_en#CollectionShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
@@ -1108,7 +1127,7 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "sh:datatype": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
             "en": "Classification of the different types of public service."
           },
@@ -1116,7 +1135,7 @@
           "sh:name": {
             "en": "classification"
           },
-          "sh:path": "http://fixme.com#classification"
+          "sh:path": "http://vocab.belgif.be/ns/publicservice#classification"
         }
       ],
       "sh:targetClass": "http://www.w3.org/2004/02/skos/core#Concept"
@@ -1138,7 +1157,6 @@
           "sh:path": "http://www.w3.org/ns/locn#addressArea"
         },
         {
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
           "sh:definition": {
             "en": "A globally unique identifier for each instance of an Address."
           },
@@ -1149,7 +1167,7 @@
           "sh:path": "http://www.w3.org/ns/locn#addressID"
         },
         {
-          "sh:datatype": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
             "en": "The name or names of a unit of administration where a Member State has and/or exercises jurisdictional rights, for local, regional and national governance. Level 1 refers to the uppermost administrative unit for the address, almost always a country."
           },
@@ -1160,7 +1178,7 @@
           "sh:path": "http://www.w3.org/ns/locn#adminUnitL1"
         },
         {
-          "sh:datatype": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
             "en": "The name or names of a unit of administration where a Member State has and/or exercises jurisdictional rights, for local, regional and national governance. Level 2 referst to the region of the address, usually a county, state or other such area that typically encompasses several localities."
           },
@@ -1287,7 +1305,7 @@
           "sh:path": "http://www.w3.org/ns/locn#address"
         },
         {
-          "sh:datatype": "http://www.w3.org/ns/adms#Identifier",
+          "sh:class": "http://www.w3.org/ns/adms#Identifier",
           "sh:definition": {
             "en": "This property represents an Identifier for the Agent."
           },
@@ -1447,24 +1465,6 @@
         }
       ],
       "sh:targetClass": "https://schema.org/OpeningHoursSpecification"
-    },
-    {
-      "@id": "https://semiceu.github.io/shacl/iceg-public-service_en#PurposeShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [
-        {
-          "sh:class": "http://data.europa.eu/m8g/Channel",
-          "sh:definition": {
-            "en": "This property describes the relationship between a purpose and a channel. "
-          },
-          "sh:name": {
-            "en": "has channel"
-          },
-          "sh:path": "http://vocab.belgif.be/ns/publicservice#hasChannel"
-        }
-      ],
-      "sh:targetClass": "http://vocab.belgif.be/ns/publicservice#Purpose"
     }
   ]
 }

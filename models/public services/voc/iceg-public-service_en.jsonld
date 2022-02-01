@@ -51,7 +51,7 @@
       "name": {
         "en": "Purpose"
       },
-      "@id": "vocab.belgif.be/ns/publicservice#Purpose",
+      "@id": "http://vocab.belgif.be/ns/publicservice#Purpose",
       "@type": "rdfs:Class"
     }
   ],
