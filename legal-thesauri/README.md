@@ -15,7 +15,7 @@ en zelfs combineren met thesauri in andere landen.
 # Relaties tussen thesauri
 
 Voor het "mappen" (documenteren van relaties tussen de termen van de verschillende thesauri) kan onder andere gebruik gemaakt worden van 
-"[W3C] SKOS(https://www.w3.org/2001/sw/wiki/SKOS)", 
+"[W3C SKOS](https://www.w3.org/2001/sw/wiki/SKOS)", 
 een internationaal gekende technische specificatie die specifiek ontwikkeld werd om dit soort "mappings".
 
 # Eigendomsrechten
