@@ -32,7 +32,6 @@ De "mappings"  zullen gratis ter beschikking worden gesteld onder de "Creative C
 Deze is een internationaal gekende tekst die onder andere ook door de federale overheidsdiensten wordt gebruikt, en die commerciëel hergebruik expliciet toelaat.
 Bronvermelding van deze mapping is niet verplicht maar wel aan te raden (bronvermelding van thesauri kan verplicht zijn, zie hoger)
 
-
 # Garanties en verplichtingen
 
 Het werk van deze groep wordt "naar best vermogen" uitgevoerd, er zijn dan ook geen garanties op correctheid, geschiktheid of bereikbaarheid.
@@ -41,4 +40,9 @@ Er zijn anderzijds ook geen verplichtingen: het staat iedereen vrij de resultate
 # Deelnemers
 
 In de eerste plaats worden de verschillende overheidsdiensten, instituten en rechtscolleges uitgenodigd.
-Andere partijen (VZWs, bedrijven) zijn ook welkom, mits zij akkoord gaan met bovenstaande werkwijze en eigendomsbepalingen.C
+Andere partijen (VZWs, bedrijven) zijn ook welkom, mits zij akkoord gaan met bovenstaande werkwijze en eigendomsbepalingen.
+
+## Voorlopige lijst van kwaliteitsvolle thesauri die "gelinkt" worden:
+
+- Hof van Cassatie
+- UTU VZW
