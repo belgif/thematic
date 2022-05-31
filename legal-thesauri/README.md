@@ -46,7 +46,7 @@ de beheerders van de respectievelijke thesauri zijn vrij om al dan niet rekening
 In de eerste plaats worden de verschillende overheidsdiensten, instituten en rechtscolleges uitgenodigd.
 Andere partijen (VZWs, bedrijven) kunnen ook deelnemen, mits zij akkoord gaan met bovenstaande werkwijze en eigendomsbepalingen.
 
-## Voorlopige lijst van thesauri die "gelinkt" worden:
+## Voorlopige lijst van partijen met een thesauri:
 
 - Hof van Cassatie
 - UTU VZW
