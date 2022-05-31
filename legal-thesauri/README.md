@@ -14,7 +14,8 @@ en zelfs combineren met thesauri in andere landen.
 
 # Relaties tussen thesauri
 
-Voor het "mappen" (documenteren van relaties tussen de termen van de verschillende thesauri) kan onder andere gebruik gemaakt worden van "W3 SKOS", 
+Voor het "mappen" (documenteren van relaties tussen de termen van de verschillende thesauri) kan onder andere gebruik gemaakt worden van 
+"[W3C] SKOS(https://www.w3.org/2001/sw/wiki/SKOS)", 
 een internationaal gekende technische specificatie die specifiek ontwikkeld werd om dit soort "mappings".
 
 # Eigendomsrechten
@@ -32,19 +33,20 @@ De "mappings"  zullen gratis ter beschikking worden gesteld onder de "[Creative 
 Deze is een internationaal gekende tekst die onder andere ook door de federale overheidsdiensten wordt gebruikt, en die commerciëel hergebruik expliciet toelaat.
 Bronvermelding van deze mapping is niet verplicht maar wel aan te raden (bronvermelding van thesauri kan verplicht zijn, zie hoger).
 
-Als technische specificatie om de thesauri te publiceren en te mappen, zal het internationaal gekende "[SKOS](https://www.w3.org/2001/sw/wiki/SKOS) gebruikt worden.
-
 # Garanties en verplichtingen
 
 Het werk van deze groep wordt "naar best vermogen" uitgevoerd, er zijn dan ook geen garanties op correctheid, geschiktheid of bereikbaarheid.
 Er zijn anderzijds ook geen verplichtingen: het staat iedereen vrij de resultaten al dan niet te gebruiken.
 
+Iedereen - zelfs wie geen deel uitmaakt van de werkgroep - kan suggesties doen voor eventuele verbeteringen en correcties, 
+de beheerders van de respectievelijke thesauri zijn vrij om al dan niet rekening te houden met deze suggesties.
+
 # Deelnemers
 
 In de eerste plaats worden de verschillende overheidsdiensten, instituten en rechtscolleges uitgenodigd.
-Andere partijen (VZWs, bedrijven) zijn ook welkom, mits zij akkoord gaan met bovenstaande werkwijze en eigendomsbepalingen.
+Andere partijen (VZWs, bedrijven) kunnen ook deelnemen, mits zij akkoord gaan met bovenstaande werkwijze en eigendomsbepalingen.
 
-## Voorlopige lijst van kwaliteitsvolle thesauri die "gelinkt" worden:
+## Voorlopige lijst van thesauri die "gelinkt" worden:
 
 - Hof van Cassatie
 - UTU VZW
