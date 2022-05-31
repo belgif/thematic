@@ -24,7 +24,7 @@ De thesauri blijven eigendom van de respectievelijke eigenaars, en worden verder
 De eigenaars/beheerders zijn vrij te kiezen onder welke voorwaarden/licentie zij deze aanbieden (tenzij andersluidende juridische bepalingen),
 zoals bijvoorbeeld een verplichting tot bronvermelding.
 
-Om praktische redenen zal de werkgroep enkel thesauri bekijken die gratis te gebruiken zijn, en die ook commercieel hergebruikt mogen worden.
+Om praktische redenen zal de werkgroep enkel thesauri bekijken die gratis ter beschikking worden gesteld, en die ook commercieel hergebruikt mogen worden.
 
 ## Mapping
 
