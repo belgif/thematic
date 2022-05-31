@@ -1,4 +1,4 @@
-# UTU - Universele Thesaurus / Thésarus Universel
+# UTU - Universele Thesaurus / Thésaurus Universel
 
 Hergebruik is gratis, maar bronvermelding is verplicht: UTU VZW
 
