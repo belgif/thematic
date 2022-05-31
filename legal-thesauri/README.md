@@ -28,9 +28,11 @@ Om praktische redenen zal de werkgroep enkel thesauri bekijken die gratis ter be
 
 ## Mapping
 
-De "mappings"  zullen gratis ter beschikking worden gesteld onder de "Creative Commons Zero" verklaring.
+De "mappings"  zullen gratis ter beschikking worden gesteld onder de "[Creative Commons Zero](https://creativecommons.org/publicdomain/zero/1.0/deed.nl)" verklaring.
 Deze is een internationaal gekende tekst die onder andere ook door de federale overheidsdiensten wordt gebruikt, en die commerciëel hergebruik expliciet toelaat.
-Bronvermelding van deze mapping is niet verplicht maar wel aan te raden (bronvermelding van thesauri kan verplicht zijn, zie hoger)
+Bronvermelding van deze mapping is niet verplicht maar wel aan te raden (bronvermelding van thesauri kan verplicht zijn, zie hoger).
+
+Als technische specificatie om de thesauri te publiceren en te mappen, zal het internationaal gekende "[SKOS](https://www.w3.org/2001/sw/wiki/SKOS) gebruikt worden.
 
 # Garanties en verplichtingen
 
