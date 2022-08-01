@@ -101,10 +101,10 @@ public class Main {
 		IRI utu =  Values.iri("https://org.belgif.be/id/CbeRegisteredEntity/0808125806");
 		w.handleStatement(statement(subj, DCTERMS.CREATOR, utu));
 		w.handleStatement(statement(subj, DCTERMS.RIGHTS_HOLDER,utu));
-		w.handleStatement(statement(subj, ROV.LEGAL_NAME, Values.literal("vzw UTU", "nl")));
-		w.handleStatement(statement(subj, ROV.LEGAL_NAME, Values.literal("asbl UTU", "fr")));
-		w.handleStatement(statement(subj, ROV.LEGAL_NAME, Values.literal("VoG UTU", "de")));
-		w.handleStatement(statement(subj, ROV.LEGAL_NAME, Values.literal("vzw/asbl UTU", "en")));		
+		w.handleStatement(statement(utu, ROV.LEGAL_NAME, Values.literal("vzw UTU", "nl")));
+		w.handleStatement(statement(utu, ROV.LEGAL_NAME, Values.literal("asbl UTU", "fr")));
+		w.handleStatement(statement(utu, ROV.LEGAL_NAME, Values.literal("VoG UTU", "de")));
+		w.handleStatement(statement(utu, ROV.LEGAL_NAME, Values.literal("vzw/asbl UTU", "en")));		
 		
 		w.handleStatement(statement(subj, OWL.VERSIONINFO, Values.literal(version)));
 		w.handleStatement(statement(subj, DCTERMS.MODIFIED, Values.literal(Instant.now().toString())));
