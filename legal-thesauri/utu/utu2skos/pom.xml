@@ -5,6 +5,16 @@
     <artifactId>utu2skos</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
+    <name>Utu2Skos</name>
+    <description>Conversion tool to convert UTU thesaurus file XLSX to RDF/SKOS</description>
+    <url>https://github.com/belgif/thematic</url>
+	<licenses>
+		<license>
+			<name>BSD-2-Clause</name>
+			<url>https://opensource.org/licenses/BSD-2-Clause</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
     <dependencies>
         <dependency>
             <groupId>org.dhatim</groupId>
