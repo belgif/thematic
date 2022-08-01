@@ -93,7 +93,7 @@ public class Main {
 		
 		for (String lang: new String[] {"nl", "fr", "de", "en"}) {
 			w.handleStatement(statement(subj, DCTERMS.TITLE, Values.literal("UTU 2021", lang)));
-			w.handleStatement(statement(subj, DCTERMS.DESCRIPTION, Values.literal("Universele Thesaurus Universel 2021", lang)));
+			w.handleStatement(statement(subj, DCTERMS.DESCRIPTION, Values.literal("Universele Thesaurus Universel (2021)", lang)));
 
 			w.handleStatement(statement(cc, DCTERMS.TITLE, Values.literal("Creative Commons Attribution 4.0 International", lang)));
 		}
@@ -104,7 +104,7 @@ public class Main {
 		w.handleStatement(statement(subj, ROV.LEGAL_NAME, Values.literal("vzw UTU", "nl")));
 		w.handleStatement(statement(subj, ROV.LEGAL_NAME, Values.literal("asbl UTU", "fr")));
 		w.handleStatement(statement(subj, ROV.LEGAL_NAME, Values.literal("VoG UTU", "de")));
-		w.handleStatement(statement(subj, ROV.LEGAL_NAME, Values.literal("vzw/asbl UTU", "nl")));		
+		w.handleStatement(statement(subj, ROV.LEGAL_NAME, Values.literal("vzw/asbl UTU", "en")));		
 		
 		w.handleStatement(statement(subj, OWL.VERSIONINFO, Values.literal(version)));
 		w.handleStatement(statement(subj, DCTERMS.MODIFIED, Values.literal(Instant.now().toString())));
