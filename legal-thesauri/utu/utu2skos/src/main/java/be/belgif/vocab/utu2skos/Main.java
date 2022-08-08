@@ -155,6 +155,7 @@ public class Main {
 				IRI subj = Values.iri(prefix + "/", code);
 
 				w.handleStatement(statement(subj, RDF.TYPE, SKOS.CONCEPT));
+				w.handleStatement(statement(subj, SKOS.NOTATION, Values.literal(code)));
 				w.handleStatement(statement(subj, SKOS.PREF_LABEL, Values.literal(nl, "nl")));
 				w.handleStatement(statement(subj, SKOS.PREF_LABEL, Values.literal(fr, "fr")));
 				
