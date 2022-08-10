@@ -119,6 +119,8 @@ public class Main {
 	 * @throws IOException
 	 */
 	private static void processRows(Sheet sheet, String prefix, RDFWriter w) throws IOException {
+		IRI scheme = Values.iri(prefix);
+	
 		try (Stream<Row> rows = sheet.openStream()) {
 			rows.skip(2).forEach(r -> {
 				String[] cells = r.stream().map(c -> c != null ? c.getRawValue() : "").toArray(String[]::new);
@@ -155,6 +157,7 @@ public class Main {
 				IRI subj = Values.iri(prefix + "/", code);
 
 				w.handleStatement(statement(subj, RDF.TYPE, SKOS.CONCEPT));
+				w.handleStatement(statement(subj, SKOS.IN_SCHEME, scheme));
 				w.handleStatement(statement(subj, SKOS.NOTATION, Values.literal(code)));
 				w.handleStatement(statement(subj, SKOS.PREF_LABEL, Values.literal(nl, "nl")));
 				w.handleStatement(statement(subj, SKOS.PREF_LABEL, Values.literal(fr, "fr")));
