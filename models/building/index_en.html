@@ -13,6 +13,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://dij151upo6vad.cloudfront.net/2.latest/css/vlaanderen-ui.css" />
   <link rel="stylesheet" href="https://dij151upo6vad.cloudfront.net/2.latest/css/vlaanderen-ui-corporate.css" />
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 
   <link rel="icon" sizes="192x192" href="/cms/icons/DUETLogo.jpg" />
   <link rel="apple-touch-icon" href="/cms/icons/DUETLogo.jpg" />
@@ -64,7 +65,7 @@
               <div class="head" role="status" id="status">
               <dl>
               <dt>Status</dt><dd>Working Draft</dd>
-              <dt>Published at</dt><dd>2022-07-19</dd>
+              <dt>Published at</dt><dd>2022-10-20</dd>
               <dt>This version</dt><dd><a href="https://belgif.github.io/thematic/models/public%20services/index_en.html">https://belgif.github.io/thematic/models/public%20services/index_en.html</a><br></dd>
               
               
@@ -110,7 +111,7 @@
               <div class="head" role="metainfo" id="metainfo">
               <dl>
               <dt>Source</dt><dd><br></dd>
-              <!--<dt>Changelog</dt><dd><a href="https://github.com/bertvannuffelen/semiceuthema/blob/8df2486728ff9e8b2cc972a3bce2ac74e57a5b24/CHANGELOG">https://github.com/bertvannuffelen/semiceuthema/blob/8df2486728ff9e8b2cc972a3bce2ac74e57a5b24/CHANGELOG</a></dd>-->
+              <!--<dt>Changelog</dt><dd><a href="https://github.com/bertvannuffelen/semiceuthema/blob/9fedf40f0d69bd6c77cc1ab0f2b261ce48222687/CHANGELOG">https://github.com/bertvannuffelen/semiceuthema/blob/9fedf40f0d69bd6c77cc1ab0f2b261ce48222687/CHANGELOG</a></dd>-->
               <dt>Feedback</dt><dd><a href="https://github.com/belgif/thematic/issues">https://github.com/belgif/thematic/issues</a></dd>
               <!--<dt>Registry of standards</dt><dd><a href="TODO">TODO</a></dd>-->
 
@@ -138,16 +139,37 @@
 		<p>This document describes the <strong>Building</strong>.</p>
                 -->
                 
-<p>
-This trajectory is still ongoing, this means that this draft specification is still in development.
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">English</a></li>
+    <li><a href="#tabs-2">French</a></li>
+    <li><a href="#tabs-3">Dutch</a></li>
+	<li><a href="#tabs-4">German</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p>The model presented below is an application profile of the theme ‘Building’, built in the context of the ICEG thematic working group regrouping experts from the federal and regional level as well as communities. It was designed through a series of workshops and a final open consultation.</p>
+    <p>The objective was to standardize the terms defined for buildings and building units at regional and federal level, starting from INSPIRE, OSLO and BUNI. It serves the purpose to make data accessible as linked open data and to define standard interfaces (APIs) to simplify collaboration and integration of the various services and tools.</p>
+    <p>The Building Vocabulary is designed to support the exchange of basic information about buildings and building units. Using the vocabulary – with sector- or country-specific information – will make it easier for institutions publishing data about these topics.</p>
+  </div>
+  <div id="tabs-2">
+    <p>Le modèle présenté ci-dessous est un profil d'application du thème "Bâtiment", élaboré dans le cadre du groupe de travail thématique 'ICEG regroupant des experts des niveaux fédéral et régional ainsi que des communautés. Il a été conçu au travers d'une série d'ateliers et d'une consultation publique.</p>
+    <p>L'objectif était de standardiser les termes définis pour les bâtiments et les unités de bâtiment au niveau régional et fédéral, en partant de INSPIRE, OSLO et BUNI. Cela sert à rendre les données accessibles en tant que Linked Open Data (LOD) et à définir des interfaces standard (API) pour simplifier la collaboration et l'intégration des différents services et outils.</p>
+	<p>Le Vocabulaire du bâtiment est conçu pour soutenir l'échange d'informations de base sur les bâtiments et les unités de bâtiment. L'utilisation du vocabulaire - avec des informations spécifiques au secteur ou au pays - facilitera la tâche des institutions qui publient des données sur ces sujets. </p>
+  </div>
+  <div id="tabs-3">
+    <p>Het onderstaande model is een applicatieprofiel over het thema "Gebouw", opgesteld in het kader van de thematische werkgroepen van ICEG, waarin deskundigen van het federale en regionale niveau en van gemeenschappen zijn samengebracht. Het model werd ontworpen via een reeks workshops en een laatste open raadpleging.</p>
+	<p>Het doel was om de termen voor gebouwen en gebouweenheden op regionaal en federaal niveau te standaardiseren, startend vanuit INSPIRE, OSLO en BUNI. Het doel is gegevens toegankelijk te maken als linked open data en standaardinterfaces (API's) te definiëren om de samenwerking en integratie van de verschillende diensten en instrumenten te vereenvoudigen.</p>
+	<p>De woordenlijst gebouwen is bedoeld om de uitwisseling van basisinformatie over gebouwen en gebouweenheden te ondersteunen. Het gebruik van de woordenlijst - met sector- of landspecifieke informatie - zal het gemakkelijker maken voor instellingen die gegevens over deze onderwerpen publiceren.</p>
+  </div>
+   <div id="tabs-4">
+    <p>Das im Folgende vorgestellte Modell ist ein Anwendungsprofil für das Thema "Bauen", das im Rahmen der thematischen ICEG-Arbeitsgruppe erstellt wurde, in welcher Experten der föderalen und regionalen Ebene sowie aus den Gemeinden vertreten sind. Das Modell wurde im Rahmen einer Workshop-Reihe und einer abschließenden offenen Befragung entwickelt.</p>
+	<p>Ziel war es, die für Gebäude und Gebäudeeinheiten definierten Begriffe auf regionaler und föderaler Ebene, ausgehend von INSPIRE, OSLO und BUNI, zu standardisieren. Es dient dazu, Daten als verknüpfte offene Daten zugänglich zu machen und Standardschnittstellen (APIs) zu definieren, um die Zusammenarbeit und Integration verschiedener Dienste und Werkzeuge zu vereinfachen.</p>
+	<p>Das Gebäudevokabular dient dazu, den Austausch von grundlegenden Informationen über Gebäude und Gebäudeeinheiten zu unterstützen. Die Verwendung des Vokabulars - mit sektor- oder länderspezifischen Informationen - wird es für Institutionen, die Daten zu diesen Themen veröffentlichen, einfacher machen.</p>
+  </div>
+</div>
+ 
 <br><br>
-The model presented below is an application profile of the theme ‘Building’, built in the context of the ICEG thematic working group regrouping experts from the federal and regional level as well as communities. It was designed through a series of workshops and a final open consultation.
-<br><br>
-The objective was to standardize the terms defined for buildings and building units at regional and federal level, starting from INSPIRE, OSLO and BUNI. It serves the purpose to make data accessible as linked open data and to define standard interfaces (APIs) to simplify collaboration and integration of the various services and tools.
-<br><br>
-The Building Vocabulary is designed to support the exchange of basic information about buildings and building units. Using the vocabulary – with sector- or country-specific information – will make it easier for institutions publishing data about these topics.
-<br><br>
-<p>Please find below the namespaces used in the model:</p>
+<p>Namespaces:</p>
 
     <table id="table-namespaces" class="simple">
       <thead>
@@ -215,7 +237,7 @@ The Building Vocabulary is designed to support the exchange of basic information
                 <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">Status of this document</h2>
                 
                 <p>
-                  This model has the status of Working Draft published on 2022-07-19.
+                  This model has the status of Working Draft published on 2022-10-20.
 	        </p>
                 
               </section>
@@ -260,18 +282,23 @@ The Building Vocabulary is designed to support the exchange of basic information
                       <a href="#BuildingGeometry3DLoD">BuildingGeometry3DLoD</a> |
                       <a href="#BuildingGeometry3DLoD1">BuildingGeometry3DLoD1</a> |
                       <a href="#BuildingGeometry3DLoD2">BuildingGeometry3DLoD2</a> |
+                      <a href="#CurrentUse">CurrentUse</a> |
                       <a href="#DateTime">DateTime</a> |
                       <a href="#DirectPosition">DirectPosition</a> |
                       <a href="#Elevation">Elevation</a> |
                       <a href="#EntranceLocation">EntranceLocation</a> |
                       <a href="#EventDate">EventDate</a> |
+                      <a href="#ExternalReference">ExternalReference</a> |
+                      <a href="#GeographicalName">GeographicalName</a> |
                       <a href="#Geometry">Geometry</a> |
+                      <a href="#HeightAboveGround">HeightAboveGround</a> |
                       <a href="#Identifier">Identifier</a> |
                       <a href="#Integer">Integer</a> |
                       <a href="#Langstring">Langstring</a> |
                       <a href="#Length">Length</a> |
+                      <a href="#Literal">Literal</a> |
                       <a href="#MeasuringMethod">MeasuringMethod</a> |
-                      <a href="#Multicurve">Multicurve</a> |
+                      <a href="#MultiCurve">MultiCurve</a> |
                       <a href="#MultiSurface">MultiSurface</a> |
                       <a href="#Point">Point</a> |
                       <a href="#Polygon">Polygon</a> |
@@ -311,12 +338,16 @@ The Building Vocabulary is designed to support the exchange of basic information
                       <a href="#Building%3AbuildingNature">buildingNature</a>, 
                       <a href="#Building%3AconditionOfConstruction">conditionOfConstruction</a>, 
                       <a href="#Building%3AconsistsOf">consistsOf</a>, 
+                      <a href="#Building%3AcurrentUse">currentUse</a>, 
                       <a href="#Building%3AdateOfConstruction">dateOfConstruction</a>, 
                       <a href="#Building%3AdateOfDemolition">dateOfDemolition</a>, 
                       <a href="#Building%3AdateOfRenovation">dateOfRenovation</a>, 
                       <a href="#Building%3Aelevation">elevation</a>, 
+                      <a href="#Building%3AexternalReference">externalReference</a>, 
                       <a href="#Building%3Ageometry">geometry</a>, 
+                      <a href="#Building%3AheightAboveGround">heightAboveGround</a>, 
                       <a href="#Building%3Aname">name</a>, 
+                      <a href="#Building%3AnumberOfDwellings">numberOfDwellings</a>, 
                       <a href="#Building%3AnumberOfFloorsAboveGround">numberOfFloorsAboveGround</a>, 
                       <a href="#Building%3AnumberOfFloorsUnderGround">numberOfFloorsUnderGround</a>.</dd>
                     
@@ -438,6 +469,26 @@ The Building Vocabulary is designed to support the exchange of basic information
                         <td></td>
                       </tr>
                     
+                      <tr id="Building%3AcurrentUse" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#currentUse">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#currentUse" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#currentUse" data-placement="right">
+                            currentUse</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#CurrentUse" data-placement="right">CurrentUse</a>
+			    
+                          
+                        </td>
+			<td>0..*</td>
+                        <td property="rdfs:comment">Activity hosted within the building. This attribute addresses mainly the buildings hosting human activities.</td>
+                        <td property="skos:scopeNote">NOTE: . This attribute aims to fulfill management requirements, such as computation of population or spatial planning ; this classification aims to be exhaustive for the functional buildings hosting human activities.</td>
+                        <td></td>
+                      </tr>
+                    
                       <tr id="Building%3AdateOfConstruction" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#dateOfConstruction">
                         <td>
                           <code property="rdfs:label">
@@ -518,6 +569,26 @@ The Building Vocabulary is designed to support the exchange of basic information
                         <td></td>
                       </tr>
                     
+                      <tr id="Building%3AexternalReference" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#externalReference">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#externalReference" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#externalReference" data-placement="right">
+                            externalReference</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#ExternalReference" data-placement="right">ExternalReference</a>
+			    
+                          
+                        </td>
+			<td>0..*</td>
+                        <td property="rdfs:comment">Reference to an external information system containing any piece of information related to the spatial object.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                    
                       <tr id="Building%3Ageometry" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/gebouw#geometrie">
                         <td>
                           <code property="rdfs:label">
@@ -538,6 +609,26 @@ The Building Vocabulary is designed to support the exchange of basic information
                         <td></td>
                       </tr>
                     
+                      <tr id="Building%3AheightAboveGround" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#heightAboveGround">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#heightAboveGround" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#heightAboveGround" data-placement="right">
+                            heightAboveGround</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#HeightAboveGround" data-placement="right">HeightAboveGround</a>
+			    
+                          
+                        </td>
+			<td>0..*</td>
+                        <td property="rdfs:comment">Height above ground.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                    
                       <tr id="Building%3Aname" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/gebouw#gebouwnaam">
                         <td>
                           <code property="rdfs:label">
@@ -548,12 +639,32 @@ The Building Vocabulary is designed to support the exchange of basic information
                         <td>
                           
 			    
-			    <a href="#Text" data-placement="right">Text</a>
+			    <a href="#Langstring" data-placement="right">Langstring</a>
 			    
                           
                         </td>
 			<td>0..*</td>
                         <td property="rdfs:comment">Name of the building</td>
+                        <td property="skos:scopeNote">EXAMPLES: Big Ben, Eiffel Tower, Sacrada Familia</td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Building%3AnumberOfDwellings" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#numberOfDwellings">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#numberOfDwellings" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#numberOfDwellings" data-placement="right">
+                            numberOfDwellings</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Integer" data-placement="right">Integer</a>
+			    
+                          
+                        </td>
+			<td>0..1</td>
+                        <td property="rdfs:comment">The number of dwellings. A dwelling is a residential unit which may consist of one or several rooms designed for the occupation of households.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -620,7 +731,8 @@ The Building Vocabulary is designed to support the exchange of basic information
                     <dd>For this entity the following properties are defined:
                       <a href="#BuildingUnit%3A%5Eidentifier">^identifier</a>, 
                       <a href="#BuildingUnit%3Aaddress">address</a>, 
-                      <a href="#BuildingUnit%3AEntranceLocation">EntranceLocation</a>, 
+                      <a href="#BuildingUnit%3AdateOfRenovation">dateOfRenovation</a>, 
+                      <a href="#BuildingUnit%3AentranceLocation">entranceLocation</a>, 
                       <a href="#BuildingUnit%3Afunction">function</a>, 
                       <a href="#BuildingUnit%3Ageometry">geometry</a>, 
                       <a href="#BuildingUnit%3AisPartOf">isPartOf</a>.</dd>
@@ -683,11 +795,31 @@ The Building Vocabulary is designed to support the exchange of basic information
                         <td></td>
                       </tr>
                     
-                      <tr id="BuildingUnit%3AEntranceLocation" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#entranceLocation">
+                      <tr id="BuildingUnit%3AdateOfRenovation" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#dateOfRenovation">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#dateOfRenovation" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#dateOfRenovation" data-placement="right">
+                            dateOfRenovation</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#EventDate" data-placement="right">EventDate</a>
+			    
+                          
+                        </td>
+			<td>0..*</td>
+                        <td property="rdfs:comment">Date of renovation.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="BuildingUnit%3AentranceLocation" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#entranceLocation">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://vocab.belgif.be/ns/building#entranceLocation" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#entranceLocation" data-placement="right">
-                            EntranceLocation</a>
+                            entranceLocation</a>
                           </code>
                         </td>
                         <td>
@@ -713,11 +845,11 @@ The Building Vocabulary is designed to support the exchange of basic information
                         <td>
                           
 			    
-			    <a href="#FunctionValue" data-placement="right">FunctionValue</a>
+			    <a href="#CurrentUse" data-placement="right">CurrentUse</a>
 			    
                           
                         </td>
-			<td>1..*</td>
+			<td>0..*</td>
                         <td property="rdfs:comment">Function for which the building unit is used in reality (as determined on site).</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
@@ -832,12 +964,13 @@ The Building Vocabulary is designed to support the exchange of basic information
                       <a href="#AddressRepresentation%3AaddressArea">addressArea</a>, 
                       <a href="#AddressRepresentation%3AadministrativeUnitLevel1">administrativeUnitLevel1</a>, 
                       <a href="#AddressRepresentation%3AadministrativeUnitLevel2">administrativeUnitLevel2</a>, 
+                      <a href="#AddressRepresentation%3AadminUnit">adminUnit</a>, 
                       <a href="#AddressRepresentation%3AboxNumber">boxNumber</a>, 
                       <a href="#AddressRepresentation%3Acountry">country</a>, 
                       <a href="#AddressRepresentation%3AfullAddress">fullAddress</a>, 
                       <a href="#AddressRepresentation%3Ahousenumber">housenumber</a>, 
                       <a href="#AddressRepresentation%3AlocationName">locationName</a>, 
-                      <a href="#AddressRepresentation%3Alocatordesignator">locatordesignator</a>, 
+                      <a href="#AddressRepresentation%3AlocatorDesignator">locatorDesignator</a>, 
                       <a href="#AddressRepresentation%3AmunicipalityName">municipalityName</a>, 
                       <a href="#AddressRepresentation%3ApoBox">poBox</a>, 
                       <a href="#AddressRepresentation%3Apostalcode">postalcode</a>, 
@@ -916,6 +1049,25 @@ The Building Vocabulary is designed to support the exchange of basic information
                         </td>
 			<td>0..1</td>
                         <td property="rdfs:comment">The region of the address, usually a province or state or similar area typically comprising several towns.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="AddressRepresentation%3AadminUnit" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/adres#adminUnit">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://data.vlaanderen.be/ns/adres#adminUnit" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/adres#adminUnit" data-placement="right">adminUnit</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Langstring" data-placement="right">Langstring</a>
+			    
+                          
+                        </td>
+			<td>1..*</td>
+                        <td property="rdfs:comment">The name or names of a unit of administration where a Member State has and/or exercises jurisdictional rights, for local, regional and national governance.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -1015,10 +1167,10 @@ The Building Vocabulary is designed to support the exchange of basic information
                         <td></td>
                       </tr>
                       
-                      <tr id="AddressRepresentation%3Alocatordesignator" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#locatorDesignator">
+                      <tr id="AddressRepresentation%3AlocatorDesignator" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#locatorDesignator">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://www.w3.org/ns/locn#locatorDesignator" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#locatorDesignator" data-placement="right">locatordesignator</a>
+                            <a href="http://www.w3.org/ns/locn#locatorDesignator" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#locatorDesignator" data-placement="right">locatorDesignator</a>
                           </code>
                         </td>
                         <td>
@@ -1164,12 +1316,71 @@ The Building Vocabulary is designed to support the exchange of basic information
                     
 		    
                     <dt>Properties</dt>
-		    
-                    <dd>There are no properties defined for this datatype.</dd>
+		     
+                    <dd>we have defined the following properties for this datatype:
+                      <a href="#BuildingGeometry%3AhorizontalGeometryEstimatedAccuracy">horizontalGeometryEstimatedAccuracy</a>, 
+                      <a href="#BuildingGeometry%3AverticalGeometryEstimatedAccuracy">verticalGeometryEstimatedAccuracy</a>.</dd>
                     
                   </dl>
                 </div>
-		
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Property</th>
+                        <th class="data-table__header-title--sortable">Expects Type</th>
+			<th class="data-table__header-title--sortable">Cardinality</th>
+                        <th class="data-table__header-title--sortable">Description</th>
+                        <th class="data-table__header-title--sortable">Usage</th>
+                        <th class="data-table__header-title--sortable">Codelist</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                      
+                      <tr id="BuildingGeometry%3AhorizontalGeometryEstimatedAccuracy" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#horizontalGeometryEstimatedAccuracy">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#horizontalGeometryEstimatedAccuracy" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#horizontalGeometryEstimatedAccuracy" data-placement="right">horizontalGeometryEstimatedAccuracy</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Length" data-placement="right">Length</a>
+			    
+                          
+                        </td>
+			<td>0..1</td>
+                        <td property="rdfs:comment">The estimated absolute positional accuracy of the (X,Y) coordinates of the building geometry.	</td>
+                        <td property="skos:scopeNote">	</td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="BuildingGeometry%3AverticalGeometryEstimatedAccuracy" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#verticalGeometryEstimatedAccuracy">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#verticalGeometryEstimatedAccuracy" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#verticalGeometryEstimatedAccuracy" data-placement="right">verticalGeometryEstimatedAccuracy</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Length" data-placement="right">Length</a>
+			    
+                          
+                        </td>
+			<td>0..1</td>
+                        <td property="rdfs:comment">The estimated absolute positional accuracy of the Z-coordinate of the building geometry.	</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                </div>
+                
             </div>
             
             <div class="region region--no-space-top">
@@ -1189,10 +1400,8 @@ The Building Vocabulary is designed to support the exchange of basic information
 		     
                     <dd>we have defined the following properties for this datatype:
                       <a href="#BuildingGeometry2D%3Ageometry">geometry</a>, 
-                      <a href="#BuildingGeometry2D%3AhorizontalGeometryEstimatedAccuracy">horizontalGeometryEstimatedAccuracy</a>, 
                       <a href="#BuildingGeometry2D%3AhorizontalGeometryReference">horizontalGeometryReference</a>, 
                       <a href="#BuildingGeometry2D%3AreferenceGeometry">referenceGeometry</a>, 
-                      <a href="#BuildingGeometry2D%3AverticalGeometryEstimatedAccuracy">verticalGeometryEstimatedAccuracy</a>, 
                       <a href="#BuildingGeometry2D%3AverticalGeometryReference">verticalGeometryReference</a>.</dd>
                     
                   </dl>
@@ -1232,25 +1441,6 @@ The Building Vocabulary is designed to support the exchange of basic information
                         <td></td>
                       </tr>
                       
-                      <tr id="BuildingGeometry2D%3AhorizontalGeometryEstimatedAccuracy" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#horizontalGeometryEstimatedAccuracy">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#horizontalGeometryEstimatedAccuracy" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#horizontalGeometryEstimatedAccuracy" data-placement="right">horizontalGeometryEstimatedAccuracy</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			    
-			    <a href="#Length" data-placement="right">Length</a>
-			    
-                          
-                        </td>
-			<td>1</td>
-                        <td property="rdfs:comment">The estimated absolute positional accuracy of the (X,Y) coordinates of the building geometry.</td>
-                        <td property="skos:scopeNote">Absolute positional accuracy is defined as the mean value of the positional uncertainties for a set of positions where the positional uncertainties are defined as the distance between a measured position and what is considered as the corresponding true position.</td>
-                        <td></td>
-                      </tr>
-                      
                       <tr id="BuildingGeometry2D%3AhorizontalGeometryReference" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/gebouw#horizontaleReferentie">
                         <td>
                           <code property="rdfs:label">
@@ -1286,25 +1476,6 @@ The Building Vocabulary is designed to support the exchange of basic information
 			<td>1</td>
                         <td property="rdfs:comment">The geometry to be taken into account by view services, for portrayal.</td>
                         <td property="skos:scopeNote"></td>
-                        <td></td>
-                      </tr>
-                      
-                      <tr id="BuildingGeometry2D%3AverticalGeometryEstimatedAccuracy" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#verticalGeometryEstimatedAccuracy">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#verticalGeometryEstimatedAccuracy" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#verticalGeometryEstimatedAccuracy" data-placement="right">verticalGeometryEstimatedAccuracy</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			    
-			    <a href="#Length" data-placement="right">Length</a>
-			    
-                          
-                        </td>
-			<td>0..1</td>
-                        <td property="rdfs:comment">The estimated absolute positional accuracy of the Z-coordinate of the building geometry.</td>
-                        <td property="skos:scopeNote">Absolute positional accuracy is defined as the mean value of the positional uncertainties for a set of positions where the positional uncertainties are defined as the distance between a measured position and what is considered as the corresponding true position.</td>
                         <td></td>
                       </tr>
                       
@@ -1351,9 +1522,7 @@ The Building Vocabulary is designed to support the exchange of basic information
                     <dd>we have defined the following properties for this datatype:
                       <a href="#BuildingGeometry3DLoD%3AgeometryMultiSurface">geometryMultiSurface</a>, 
                       <a href="#BuildingGeometry3DLoD%3AgeometrySolid">geometrySolid</a>, 
-                      <a href="#BuildingGeometry3DLoD%3AhorizontalGeometryEstimatedAccuracy">horizontalGeometryEstimatedAccuracy</a>, 
                       <a href="#BuildingGeometry3DLoD%3AterrainIntersection">terrainIntersection</a>, 
-                      <a href="#BuildingGeometry3DLoD%3AverticalGeometryEstimatedAccuracy">verticalGeometryEstimatedAccuracy</a>, 
                       <a href="#BuildingGeometry3DLoD%3AverticalGeometryReference3DBottom">verticalGeometryReference3DBottom</a>.</dd>
                     
                   </dl>
@@ -1412,25 +1581,6 @@ The Building Vocabulary is designed to support the exchange of basic information
                         <td></td>
                       </tr>
                       
-                      <tr id="BuildingGeometry3DLoD%3AhorizontalGeometryEstimatedAccuracy" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#horizontalGeometryEstimatedAccuracy">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#horizontalGeometryEstimatedAccuracy" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#horizontalGeometryEstimatedAccuracy" data-placement="right">horizontalGeometryEstimatedAccuracy</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			    
-			    <a href="#Length" data-placement="right">Length</a>
-			    
-                          
-                        </td>
-			<td>0..1</td>
-                        <td property="rdfs:comment">The estimated absolute positional accuracy of the (X,Y) coordinates of the geometry.</td>
-                        <td property="skos:scopeNote">Absolute positional accuracy is defined as the mean value of the positional uncertainties for a set of positions where the positional uncertainties are defined as the distance between a measured position and what is considered as the corresponding true position.</td>
-                        <td></td>
-                      </tr>
-                      
                       <tr id="BuildingGeometry3DLoD%3AterrainIntersection" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#terrainIntersection">
                         <td>
                           <code property="rdfs:label">
@@ -1440,32 +1590,13 @@ The Building Vocabulary is designed to support the exchange of basic information
                         <td>
                           
 			    
-			    <a href="#Multicurve" data-placement="right">Multicurve</a>
+			    <a href="#MultiCurve" data-placement="right">MultiCurve</a>
 			    
                           
                         </td>
 			<td>0..1</td>
                         <td property="rdfs:comment">Line or multi-line where the spatial object touches the terrain representation.</td>
                         <td property="skos:scopeNote"></td>
-                        <td></td>
-                      </tr>
-                      
-                      <tr id="BuildingGeometry3DLoD%3AverticalGeometryEstimatedAccuracy" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#verticalGeometryEstimatedAccuracy">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#verticalGeometryEstimatedAccuracy" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#verticalGeometryEstimatedAccuracy" data-placement="right">verticalGeometryEstimatedAccuracy</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			    
-			    <a href="#Length" data-placement="right">Length</a>
-			    
-                          
-                        </td>
-			<td>0..1</td>
-                        <td property="rdfs:comment">The estimated absolute positional accuracy of the Z-coordinate of the geometry.</td>
-                        <td property="skos:scopeNote">Absolute positional accuracy is defined as the mean value of the positional uncertainties for a set of positions where the positional uncertainties are defined as the distance between a measured position and what is considered as the corresponding true position.</td>
                         <td></td>
                       </tr>
                       
@@ -1638,6 +1769,83 @@ The Building Vocabulary is designed to support the exchange of basic information
             
             <div class="region region--no-space-top">
               
+              <h3 class="h3" id="CurrentUse"><a href="http://vocab.belgif.be/ns/building#CurrentUse" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#CurrentUse" data-placement="right">CurrentUse</a></h3>
+	      
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Description</dt><dd>This data type enables to detail the current use(s).</dd>
+                    
+		    
+                    <dt>Properties</dt>
+		     
+                    <dd>we have defined the following properties for this datatype:
+                      <a href="#CurrentUse%3AcurrentUse">currentUse</a>, 
+                      <a href="#CurrentUse%3Apercentage">percentage</a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Property</th>
+                        <th class="data-table__header-title--sortable">Expects Type</th>
+			<th class="data-table__header-title--sortable">Cardinality</th>
+                        <th class="data-table__header-title--sortable">Description</th>
+                        <th class="data-table__header-title--sortable">Usage</th>
+                        <th class="data-table__header-title--sortable">Codelist</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                      
+                      <tr id="CurrentUse%3AcurrentUse" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#currentUse">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#currentUse" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#currentUse" data-placement="right">currentUse</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#FunctionValue" data-placement="right">FunctionValue</a>
+			    
+                          
+                        </td>
+			<td>1</td>
+                        <td property="rdfs:comment">The current use of a building</td>
+                        <td property="skos:scopeNote">EXAMPLE: trade, entertainment, ...</td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="CurrentUse%3Apercentage" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#percentage">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#percentage" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#percentage" data-placement="right">percentage</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Integer" data-placement="right">Integer</a>
+			    
+                          
+                        </td>
+			<td>0..1</td>
+                        <td property="rdfs:comment">The proportion of the building, given as a percentage, devoted to this current use.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                </div>
+                
+            </div>
+            
+            <div class="region region--no-space-top">
+              
               <h3 class="h3" id="DateTime"><a href="http://www.w3.org/2001/XMLSchema#dateTime" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#dateTime" data-placement="right">DateTime</a></h3>
 	      
                 <div class="region region--no-space-top">
@@ -1696,9 +1904,9 @@ The Building Vocabulary is designed to support the exchange of basic information
                         </td>
                         <td>
                           
-			     
-			    <a href="http://www.w3.org/2000/01/rdf-schema#Literal" data-toggle="tooltip" data-content="http://www.w3.org/2000/01/rdf-schema#Literal" data-placement="right">GetypeerdeString</a>
-                            
+			    
+			    <a href="#Literal" data-placement="right">Literal</a>
+			    
                           
                         </td>
 			<td>0..1</td>
@@ -1734,9 +1942,9 @@ The Building Vocabulary is designed to support the exchange of basic information
                         </td>
                         <td>
                           
-			     
-			    <a href="http://www.w3.org/2000/01/rdf-schema#Literal" data-toggle="tooltip" data-content="http://www.w3.org/2000/01/rdf-schema#Literal" data-placement="right">GetypeerdeString</a>
-                            
+			    
+			    <a href="#Literal" data-placement="right">Literal</a>
+			    
                           
                         </td>
 			<td>0..1</td>
@@ -2004,6 +2212,121 @@ The Building Vocabulary is designed to support the exchange of basic information
             
             <div class="region region--no-space-top">
               
+              <h3 class="h3" id="ExternalReference"><a href="http://vocab.belgif.be/ns/building#ExternalReference" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#ExternalReference" data-placement="right">ExternalReference</a></h3>
+	      
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Description</dt><dd>Reference to an external information system containing any piece of information related to the spatial object.</dd>
+                    
+		    
+                    <dt>Properties</dt>
+		     
+                    <dd>we have defined the following properties for this datatype:
+                      <a href="#ExternalReference%3AinformationSystem">informationSystem</a>, 
+                      <a href="#ExternalReference%3AinformationSystemName">informationSystemName</a>, 
+                      <a href="#ExternalReference%3Areference">reference</a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Property</th>
+                        <th class="data-table__header-title--sortable">Expects Type</th>
+			<th class="data-table__header-title--sortable">Cardinality</th>
+                        <th class="data-table__header-title--sortable">Description</th>
+                        <th class="data-table__header-title--sortable">Usage</th>
+                        <th class="data-table__header-title--sortable">Codelist</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                      
+                      <tr id="ExternalReference%3AinformationSystem" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#informationSystem">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#informationSystem" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#informationSystem" data-placement="right">informationSystem</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Identifier" data-placement="right">Identifier</a>
+			    
+                          
+                        </td>
+			<td>1</td>
+                        <td property="rdfs:comment">Uniform Resource Identifier of the external information system.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="ExternalReference%3AinformationSystemName" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#informationSystemName">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#informationSystemName" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#informationSystemName" data-placement="right">informationSystemName</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Langstring" data-placement="right">Langstring</a>
+			    
+                          
+                        </td>
+			<td>1</td>
+                        <td property="rdfs:comment">The name of the external information system.</td>
+                        <td property="skos:scopeNote">EXAMPLES: Danish Register of Dwellings, Spanish Cadastre</td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="ExternalReference%3Areference" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#reference">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#reference" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#reference" data-placement="right">reference</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Text" data-placement="right">Text</a>
+			    
+                          
+                        </td>
+			<td>1</td>
+                        <td property="rdfs:comment">Thematic identifier of the spatial object or of any piece of information related to the spatial object.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                </div>
+                
+            </div>
+            
+            <div class="region region--no-space-top">
+              
+              <h3 class="h3" id="GeographicalName"><a href="http://vocab.belgif.be/ns/building#GeographicalName" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#GeographicalName" data-placement="right">GeographicalName</a></h3>
+	      
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Description</dt><dd></dd>
+                    
+		    
+                    <dt>Properties</dt>
+		    
+                    <dd>There are no properties defined for this datatype.</dd>
+                    
+                  </dl>
+                </div>
+		
+            </div>
+            
+            <div class="region region--no-space-top">
+              
               <h3 class="h3" id="Geometry"><a href="http://www.w3.org/ns/locn#Geometry" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#Geometry" data-placement="right">Geometry</a></h3>
 	      
                 <div class="region region--no-space-top">
@@ -2043,9 +2366,9 @@ The Building Vocabulary is designed to support the exchange of basic information
                         </td>
                         <td>
                           
-			     
-			    <a href="http://www.w3.org/2000/01/rdf-schema#Literal" data-toggle="tooltip" data-content="http://www.w3.org/2000/01/rdf-schema#Literal" data-placement="right">GetypeerdeString</a>
-                            
+			    
+			    <a href="#Literal" data-placement="right">Literal</a>
+			    
                           
                         </td>
 			<td>1</td>
@@ -2062,13 +2385,130 @@ The Building Vocabulary is designed to support the exchange of basic information
                         </td>
                         <td>
                           
-			     
-			    <a href="http://www.w3.org/2000/01/rdf-schema#Literal" data-toggle="tooltip" data-content="http://www.w3.org/2000/01/rdf-schema#Literal" data-placement="right">GetypeerdeString</a>
-                            
+			    
+			    <a href="#Literal" data-placement="right">Literal</a>
+			    
                           
                         </td>
 			<td>1</td>
                         <td property="rdfs:comment">Geometry expressed in wkt format.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                </div>
+                
+            </div>
+            
+            <div class="region region--no-space-top">
+              
+              <h3 class="h3" id="HeightAboveGround"><a href="http://vocab.belgif.be/ns/building#HeightAboveGround" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#HeightAboveGround" data-placement="right">HeightAboveGround</a></h3>
+	      
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Description</dt><dd>Vertical distance (measured or estimated) between a low reference and a high reference.</dd>
+                    
+		    
+                    <dt>Properties</dt>
+		     
+                    <dd>we have defined the following properties for this datatype:
+                      <a href="#HeightAboveGround%3AheightReference">heightReference</a>, 
+                      <a href="#HeightAboveGround%3AlowReference">lowReference</a>, 
+                      <a href="#HeightAboveGround%3Astatus">status</a>, 
+                      <a href="#HeightAboveGround%3Avalue">value</a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Property</th>
+                        <th class="data-table__header-title--sortable">Expects Type</th>
+			<th class="data-table__header-title--sortable">Cardinality</th>
+                        <th class="data-table__header-title--sortable">Description</th>
+                        <th class="data-table__header-title--sortable">Usage</th>
+                        <th class="data-table__header-title--sortable">Codelist</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                      
+                      <tr id="HeightAboveGround%3AheightReference" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#heightReference">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#heightReference" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#heightReference" data-placement="right">heightReference</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#ElevationReferenceValue" data-placement="right">ElevationReferenceValue</a>
+			    
+                          
+                        </td>
+			<td>1</td>
+                        <td property="rdfs:comment">Element used as the high reference.</td>
+                        <td property="skos:scopeNote">EXAMPLE: The height of the building has been captured up to the top of building.</td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="HeightAboveGround%3AlowReference" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#lowReference">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#lowReference" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#lowReference" data-placement="right">lowReference</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#ElevationReferenceValue" data-placement="right">ElevationReferenceValue</a>
+			    
+                          
+                        </td>
+			<td>1</td>
+                        <td property="rdfs:comment">Element as the low reference.</td>
+                        <td property="skos:scopeNote">EXAMPLE: the height of the building has been captured from its the lowest ground point.</td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="HeightAboveGround%3Astatus" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#status">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#status" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#status" data-placement="right">status</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Height status value" data-placement="right">Height status value</a>
+			    
+                          
+                        </td>
+			<td>1</td>
+                        <td property="rdfs:comment">The way the height has been captured.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="HeightAboveGround%3Avalue" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#value">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#value" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#value" data-placement="right">value</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Length" data-placement="right">Length</a>
+			    
+                          
+                        </td>
+			<td>1</td>
+                        <td property="rdfs:comment">Value of the height above ground.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -2153,6 +2593,24 @@ The Building Vocabulary is designed to support the exchange of basic information
             
             <div class="region region--no-space-top">
               
+              <h3 class="h3" id="Literal"><a href="http://www.w3.org/2000/01/rdf-schema#Literal" data-toggle="tooltip" data-content="http://www.w3.org/2000/01/rdf-schema#Literal" data-placement="right">Literal</a></h3>
+	      
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Description</dt><dd>The class of literal values, eg. textual strings and integers.</dd>
+                    
+		    
+                    <dt>Properties</dt>
+		    
+                    <dd>There are no properties defined for this datatype.</dd>
+                    
+                  </dl>
+                </div>
+		
+            </div>
+            
+            <div class="region region--no-space-top">
+              
               <h3 class="h3" id="MeasuringMethod"><a href="http://vocab.belgif.be/ns/building#MeasuringMethod" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#MeasuringMethod" data-placement="right">MeasuringMethod</a></h3>
 	      
                 <div class="region region--no-space-top">
@@ -2171,7 +2629,7 @@ The Building Vocabulary is designed to support the exchange of basic information
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="Multicurve"><a href="http://www.opengis.net/ont/sf#MultiCurve" data-toggle="tooltip" data-content="http://www.opengis.net/ont/sf#MultiCurve" data-placement="right">Multicurve</a></h3>
+              <h3 class="h3" id="MultiCurve"><a href="http://www.opengis.net/ont/sf#MultiCurve" data-toggle="tooltip" data-content="http://www.opengis.net/ont/sf#MultiCurve" data-placement="right">MultiCurve</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
@@ -2379,7 +2837,13 @@ No changelog defined.
           }   
       }
   </script> 
-
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
   <style>
     @media screen {  /* hide from IE3 */
       a[href]:hover { background: #ffa }
@@ -2429,6 +2893,9 @@ No changelog defined.
     html, h1, h2, h3, h4, code {
       font-family: "Arial" !important;
     }
+	.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+	  color: #454545;
+	}
   </style>
 </body>
 </html>

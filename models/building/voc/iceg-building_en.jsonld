@@ -36,7 +36,7 @@
   "issued": "TBD",
   "navigation": {},
   "publication-state": "Working Draft",
-  "publication-date": "2022-07-19",
+  "publication-date": "2022-10-20",
   "classes": [
     {
       "@id": "http://vocab.belgif.be/ns/building#Building",
@@ -97,10 +97,47 @@
       ]
     },
     {
+      "@id": "http://vocab.belgif.be/ns/building#CurrentUse",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "definition": {
+        "en": "This data type enables to detail the current use(s)."
+      },
+      "parents": []
+    },
+    {
       "@id": "http://vocab.belgif.be/ns/building#EntranceLocation",
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "definition": {
         "en": "The location where the building unit can be entered."
+      },
+      "parents": []
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/building#ExternalReference",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "definition": {
+        "en": "Reference to an external information system containing any piece of information related to the spatial object."
+      },
+      "parents": []
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/building#GeographicalName",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "parents": []
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/building#HeightAboveGround",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "definition": {
+        "en": "Vertical distance (measured or estimated) between a low reference and a high reference."
+      },
+      "parents": []
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/building#HeightStatusValue",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "definition": {
+        "en": "Values indicating the method used to capture a height."
       },
       "parents": []
     },
@@ -119,6 +156,13 @@
         "en": "Langstring"
       },
       "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+      "@type": "rdfs:Class"
+    },
+    {
+      "name": {
+        "en": "Literal"
+      },
+      "@id": "http://www.w3.org/2000/01/rdf-schema#Literal",
       "@type": "rdfs:Class"
     },
     {
@@ -265,6 +309,40 @@
       "generalization": []
     },
     {
+      "@id": "http://vocab.belgif.be/ns/building#currentUse",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "definition": {
+        "en": "Activity hosted within the building. This attribute addresses mainly the buildings hosting human activities."
+      },
+      "usage": {
+        "en": "NOTE: . This attribute aims to fulfill management requirements, such as computation of population or spatial planning ; this classification aims to be exhaustive for the functional buildings hosting human activities."
+      },
+      "domain": [
+        "http://vocab.belgif.be/ns/building#Building"
+      ],
+      "range": [
+        "http://vocab.belgif.be/ns/building#CurrentUse"
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/building#currentUse",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "definition": {
+        "en": "The current use of a building"
+      },
+      "usage": {
+        "en": "EXAMPLE: trade, entertainment, ..."
+      },
+      "domain": [
+        "http://vocab.belgif.be/ns/building#CurrentUse"
+      ],
+      "range": [
+        "http://www.w3.org/2004/02/skos/core#Concept"
+      ],
+      "generalization": []
+    },
+    {
       "@id": "http://vocab.belgif.be/ns/building#dateOfConstruction",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "definition": {
@@ -300,6 +378,20 @@
       },
       "domain": [
         "http://vocab.belgif.be/ns/building#Building"
+      ],
+      "range": [
+        "https://data.vlaanderen.be/ns/generiek#Gebeurtenisdatum"
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/building#dateOfRenovation",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "definition": {
+        "en": "Date of renovation."
+      },
+      "domain": [
+        "http://vocab.belgif.be/ns/building#BuildingUnit"
       ],
       "range": [
         "https://data.vlaanderen.be/ns/generiek#Gebeurtenisdatum"
@@ -349,6 +441,20 @@
       "generalization": []
     },
     {
+      "@id": "http://vocab.belgif.be/ns/building#externalReference",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "definition": {
+        "en": "Reference to an external information system containing any piece of information related to the spatial object."
+      },
+      "domain": [
+        "http://vocab.belgif.be/ns/building#Building"
+      ],
+      "range": [
+        "http://vocab.belgif.be/ns/building#ExternalReference"
+      ],
+      "generalization": []
+    },
+    {
       "@id": "http://vocab.belgif.be/ns/building#geometry",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "definition": {
@@ -391,19 +497,33 @@
       "generalization": []
     },
     {
-      "@id": "http://vocab.belgif.be/ns/building#horizontalGeometryEstimatedAccuracy",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "@id": "http://vocab.belgif.be/ns/building#heightAboveGround",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "definition": {
-        "en": "The estimated absolute positional accuracy of the (X,Y) coordinates of the building geometry."
-      },
-      "usage": {
-        "en": "Absolute positional accuracy is defined as the mean value of the positional uncertainties for a set of positions where the positional uncertainties are defined as the distance between a measured position and what is considered as the corresponding true position."
+        "en": "Height above ground."
       },
       "domain": [
-        "https://data.vlaanderen.be/ns/gebouw#2DGebouwgeometrie"
+        "http://vocab.belgif.be/ns/building#Building"
       ],
       "range": [
-        "https://data.vlaanderen.be/ns/weg#Lengte"
+        "http://vocab.belgif.be/ns/building#HeightAboveGround"
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/building#heightReference",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "definition": {
+        "en": "Element used as the high reference."
+      },
+      "usage": {
+        "en": "EXAMPLE: The height of the building has been captured up to the top of building."
+      },
+      "domain": [
+        "http://vocab.belgif.be/ns/building#HeightAboveGround"
+      ],
+      "range": [
+        "http://www.w3.org/2004/02/skos/core#Concept"
       ],
       "generalization": []
     },
@@ -411,13 +531,10 @@
       "@id": "http://vocab.belgif.be/ns/building#horizontalGeometryEstimatedAccuracy",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "definition": {
-        "en": "The estimated absolute positional accuracy of the (X,Y) coordinates of the geometry."
-      },
-      "usage": {
-        "en": "Absolute positional accuracy is defined as the mean value of the positional uncertainties for a set of positions where the positional uncertainties are defined as the distance between a measured position and what is considered as the corresponding true position."
+        "en": "The estimated absolute positional accuracy of the (X,Y) coordinates of the building geometry.\t"
       },
       "domain": [
-        "http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD"
+        "http://vocab.belgif.be/ns/building#BuildingGeometry"
       ],
       "range": [
         "https://data.vlaanderen.be/ns/weg#Lengte"
@@ -459,6 +576,37 @@
       "generalization": []
     },
     {
+      "@id": "http://vocab.belgif.be/ns/building#informationSystem",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "definition": {
+        "en": "Uniform Resource Identifier of the external information system."
+      },
+      "domain": [
+        "http://vocab.belgif.be/ns/building#ExternalReference"
+      ],
+      "range": [
+        "http://www.w3.org/ns/adms#Identifier"
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/building#informationSystemName",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "definition": {
+        "en": "The name of the external information system."
+      },
+      "usage": {
+        "en": "EXAMPLES: Danish Register of Dwellings, Spanish Cadastre"
+      },
+      "domain": [
+        "http://vocab.belgif.be/ns/building#ExternalReference"
+      ],
+      "range": [
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+      ],
+      "generalization": []
+    },
+    {
       "@id": "http://vocab.belgif.be/ns/building#isPartOf",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "domain": [
@@ -466,6 +614,65 @@
       ],
       "range": [
         "http://vocab.belgif.be/ns/building#Building"
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/building#lowReference",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "definition": {
+        "en": "Element as the low reference."
+      },
+      "usage": {
+        "en": "EXAMPLE: the height of the building has been captured from its the lowest ground point."
+      },
+      "domain": [
+        "http://vocab.belgif.be/ns/building#HeightAboveGround"
+      ],
+      "range": [
+        "http://www.w3.org/2004/02/skos/core#Concept"
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/building#numberOfDwellings",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "definition": {
+        "en": "The number of dwellings. A dwelling is a residential unit which may consist of one or several rooms designed for the occupation of households."
+      },
+      "domain": [
+        "http://vocab.belgif.be/ns/building#Building"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#integer"
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/building#percentage",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "definition": {
+        "en": "The proportion of the building, given as a percentage, devoted to this current use."
+      },
+      "domain": [
+        "http://vocab.belgif.be/ns/building#CurrentUse"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#integer"
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/building#reference",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "definition": {
+        "en": "Thematic identifier of the spatial object or of any piece of information related to the spatial object."
+      },
+      "domain": [
+        "http://vocab.belgif.be/ns/building#ExternalReference"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#string"
       ],
       "generalization": []
     },
@@ -484,6 +691,20 @@
       "generalization": []
     },
     {
+      "@id": "http://vocab.belgif.be/ns/building#status",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "definition": {
+        "en": "The way the height has been captured."
+      },
+      "domain": [
+        "http://vocab.belgif.be/ns/building#HeightAboveGround"
+      ],
+      "range": [
+        "http://vocab.belgif.be/ns/building#HeightStatusValue"
+      ],
+      "generalization": []
+    },
+    {
       "@id": "http://vocab.belgif.be/ns/building#terrainIntersection",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "definition": {
@@ -498,16 +719,13 @@
       "generalization": []
     },
     {
-      "@id": "http://vocab.belgif.be/ns/building#verticalGeometryEstimatedAccuracy",
+      "@id": "http://vocab.belgif.be/ns/building#value",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "definition": {
-        "en": "The estimated absolute positional accuracy of the Z-coordinate of the building geometry."
-      },
-      "usage": {
-        "en": "Absolute positional accuracy is defined as the mean value of the positional uncertainties for a set of positions where the positional uncertainties are defined as the distance between a measured position and what is considered as the corresponding true position."
+        "en": "Value of the height above ground."
       },
       "domain": [
-        "https://data.vlaanderen.be/ns/gebouw#2DGebouwgeometrie"
+        "http://vocab.belgif.be/ns/building#HeightAboveGround"
       ],
       "range": [
         "https://data.vlaanderen.be/ns/weg#Lengte"
@@ -518,13 +736,10 @@
       "@id": "http://vocab.belgif.be/ns/building#verticalGeometryEstimatedAccuracy",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "definition": {
-        "en": "The estimated absolute positional accuracy of the Z-coordinate of the geometry."
-      },
-      "usage": {
-        "en": "Absolute positional accuracy is defined as the mean value of the positional uncertainties for a set of positions where the positional uncertainties are defined as the distance between a measured position and what is considered as the corresponding true position."
+        "en": "The estimated absolute positional accuracy of the Z-coordinate of the building geometry.\t"
       },
       "domain": [
-        "http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD"
+        "http://vocab.belgif.be/ns/building#BuildingGeometry"
       ],
       "range": [
         "https://data.vlaanderen.be/ns/weg#Lengte"
