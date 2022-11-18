@@ -16,7 +16,7 @@
     {
       "@type": "foaf:Person",
       "affiliation": {
-        "foaf:name": "PwC EU Services"
+        "foaf:name": "PwC"
       },
       "foaf:firstName": "Christophe",
       "foaf:lastName": "Bahim"
@@ -24,19 +24,308 @@
     {
       "@type": "foaf:Person",
       "affiliation": {
-        "foaf:name": "PwC EU Services"
+        "foaf:name": "PwC"
+      },
+      "foaf:firstName": "Florian",
+      "foaf:lastName": "Barthelemy"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "PwC"
       },
       "foaf:firstName": "Yaron",
       "foaf:lastName": "Dassonneville"
     }
   ],
-  "contributors": [],
+  "contributors": [
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "Vlaanderen"
+      },
+      "foaf:firstName": "Jan",
+      "foaf:lastName": "Laporte"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "National Registry"
+      },
+      "foaf:firstName": "Tom",
+      "foaf:lastName": "Bols"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "Perspective.brussels"
+      },
+      "foaf:firstName": "Ralph",
+      "foaf:lastName": "Boswell"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "WVI"
+      },
+      "foaf:firstName": "Bart",
+      "foaf:lastName": "Boute"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "FOD BOSA"
+      },
+      "foaf:firstName": "Marc",
+      "foaf:lastName": "Bruyland"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "Fednot"
+      },
+      "foaf:firstName": "Yahsmeen",
+      "foaf:lastName": "Coulon"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "Nationaal Geografisch Instituut (NGI)"
+      },
+      "foaf:firstName": "Nathalie",
+      "foaf:lastName": "Delattre"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "FOD Finance"
+      },
+      "foaf:firstName": "Evy",
+      "foaf:lastName": "Dewinter"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "FOD BOSA"
+      },
+      "foaf:firstName": "Liesbet",
+      "foaf:lastName": "D’Hondt"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "CFWB"
+      },
+      "foaf:firstName": "Martin",
+      "foaf:lastName": "Erpicum"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "CIRB/CIBG/BRIC"
+      },
+      "foaf:firstName": "Benoît",
+      "foaf:lastName": "Fricheteau"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "CFWB"
+      },
+      "foaf:firstName": "Leticia",
+      "foaf:lastName": "Garcia"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "CIRB/CIBG/BRIC"
+      },
+      "foaf:firstName": "Claude",
+      "foaf:lastName": "Hannecart"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "Nationaal Geografisch Instituut (NGI)"
+      },
+      "foaf:firstName": "Jordan",
+      "foaf:lastName": "Ikalulu"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "SPW"
+      },
+      "foaf:firstName": "Jean-Claude",
+      "foaf:lastName": "Jasselette"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "Nationaal Geografisch Instituut (NGI)"
+      },
+      "foaf:firstName": "Gael",
+      "foaf:lastName": "Kruwialis"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "CIRB/CIBG/BRIC"
+      },
+      "foaf:firstName": "Fabien",
+      "foaf:lastName": "Krzewinski"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "Fednot"
+      },
+      "foaf:firstName": "Johan",
+      "foaf:lastName": "Boogaerts"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "Proximus"
+      },
+      "foaf:firstName": "Raphaël",
+      "foaf:lastName": "Lebrun"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "Nationaal Geografisch Instituut (NGI)"
+      },
+      "foaf:firstName": "Hugues",
+      "foaf:lastName": "Lorent"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "FOD Financiën - Patrimoniumdocumentatie"
+      },
+      "foaf:firstName": "Nathalie",
+      "foaf:lastName": "Mertens"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "National Registry"
+      },
+      "foaf:firstName": "Joris",
+      "foaf:lastName": "Pasgang"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "SPW"
+      },
+      "foaf:firstName": "Daniel",
+      "foaf:lastName": "Reuviaux"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "CIRB/CIBG/BRIC"
+      },
+      "foaf:firstName": "Thomas",
+      "foaf:lastName": "Ruhl"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "Stad Kortrijk"
+      },
+      "foaf:firstName": "Mieke",
+      "foaf:lastName": "Ryckoort"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "Digitaal Vlaanderen"
+      },
+      "foaf:firstName": "Geert",
+      "foaf:lastName": "Thijs"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "CIRB/CIBG/BRIC"
+      },
+      "foaf:firstName": "Catalin",
+      "foaf:lastName": "Turlica"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "Stad Leuven"
+      },
+      "foaf:firstName": "Cindy",
+      "foaf:lastName": "Valvekens"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "National Registry"
+      },
+      "foaf:firstName": "Stefan",
+      "foaf:lastName": "Van De Venster"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "Departement Omgeving (Flanders)"
+      },
+      "foaf:firstName": "Geert",
+      "foaf:lastName": "Van Haute"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "Vlaanderen"
+      },
+      "foaf:firstName": "Paul",
+      "foaf:lastName": "Van Lindt"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "Digitaal Vlaanderen"
+      },
+      "foaf:firstName": "Christophe",
+      "foaf:lastName": "Van Loo"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "Belgian Buildings Agency"
+      },
+      "foaf:firstName": "Grégoire",
+      "foaf:lastName": "Verhulst"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "National Registry"
+      },
+      "foaf:firstName": "Christophe",
+      "foaf:lastName": "Verschoore"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "Digitaal Vlaanderen"
+      },
+      "foaf:firstName": "Hendrik",
+      "foaf:lastName": "van Hemelryck"
+    }
+  ],
   "baseURI": "http://vocab.belgif.be/ns/building#",
   "license": "https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic",
   "issued": "TBD",
   "navigation": {},
-  "publication-state": "Working Draft",
-  "publication-date": "2022-10-20",
+  "publication-state": "Public Review",
+  "publication-date": "2022-11-17",
   "classes": [
     {
       "@id": "http://vocab.belgif.be/ns/building#Building",
@@ -44,9 +333,7 @@
       "definition": {
         "en": "An enclosed and/or covered structure, above and/or below ground, intended either for the shelter of persons, animals or things, or for the production of economic goods or the provision of services, and refers to any structure permanently constructed or erected on its site."
       },
-      "parents": [
-        "http://www.w3.org/2000/01/rdf-schema#Resource"
-      ]
+      "parents": []
     },
     {
       "@id": "http://vocab.belgif.be/ns/building#BuildingGeometry",
@@ -92,9 +379,7 @@
       "definition": {
         "en": "The smallest unit within a building that is suitable and adapted for residential, commercial or recreational purposes and which is accessible from the outside or from a common area. A building unit is atomic, functionally independent, and may be separately sold, rented out, inherited, etc. In addition, a building unit can also be a common part."
       },
-      "parents": [
-        "http://www.w3.org/2000/01/rdf-schema#Resource"
-      ]
+      "parents": []
     },
     {
       "@id": "http://vocab.belgif.be/ns/building#CurrentUse",
@@ -123,6 +408,9 @@
     {
       "@id": "http://vocab.belgif.be/ns/building#GeographicalName",
       "@type": "http://www.w3.org/2002/07/owl#Class",
+      "definition": {
+        "en": "Proper noun applied to a real world entity."
+      },
       "parents": []
     },
     {
@@ -145,7 +433,7 @@
       "@id": "http://vocab.belgif.be/ns/building#MeasuringMethod",
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "definition": {
-        "en": "TO DO"
+        "en": "The way something is measured."
       },
       "parents": []
     }
@@ -167,34 +455,6 @@
     },
     {
       "name": {
-        "en": "Boolean"
-      },
-      "@id": "http://www.w3.org/2001/XMLSchema#boolean",
-      "@type": "rdfs:Class"
-    },
-    {
-      "name": {
-        "en": "DateTime"
-      },
-      "@id": "http://www.w3.org/2001/XMLSchema#dateTime",
-      "@type": "rdfs:Class"
-    },
-    {
-      "name": {
-        "en": "Integer"
-      },
-      "@id": "http://www.w3.org/2001/XMLSchema#integer",
-      "@type": "rdfs:Class"
-    },
-    {
-      "name": {
-        "en": "Text"
-      },
-      "@id": "http://www.w3.org/2001/XMLSchema#string",
-      "@type": "rdfs:Class"
-    },
-    {
-      "name": {
         "en": "BuildingNatureValue"
       },
       "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -202,7 +462,7 @@
     },
     {
       "name": {
-        "en": "FunctionValue"
+        "en": "CurrentUseValue"
       },
       "@id": "http://www.w3.org/2004/02/skos/core#Concept",
       "@type": "rdfs:Class"
@@ -264,6 +524,34 @@
   ],
   "properties": [
     {
+      "@id": "http://vocab.belgif.be/ns/building#Building.geometry",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "definition": {
+        "en": "Shape and position characteristics of a building"
+      },
+      "domain": [
+        "http://vocab.belgif.be/ns/building#Building"
+      ],
+      "range": [
+        "http://vocab.belgif.be/ns/building#BuildingGeometry"
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/building#Buildingunit.currentUse",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "definition": {
+        "en": "Activity hosted within the building unit. This attribute addresses mainly the building units hosting human activities."
+      },
+      "domain": [
+        "http://vocab.belgif.be/ns/building#BuildingUnit"
+      ],
+      "range": [
+        "http://vocab.belgif.be/ns/building#CurrentUse"
+      ],
+      "generalization": []
+    },
+    {
       "@id": "http://vocab.belgif.be/ns/building#Buildingunit.geometry",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "definition": {
@@ -295,10 +583,24 @@
       "generalization": []
     },
     {
+      "@id": "http://vocab.belgif.be/ns/building#conditionOfConstruction",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "definition": {
+        "en": "Values indicating the condition of a construction"
+      },
+      "domain": [
+        "http://vocab.belgif.be/ns/building#Building"
+      ],
+      "range": [
+        "http://www.w3.org/2004/02/skos/core#Concept"
+      ],
+      "generalization": []
+    },
+    {
       "@id": "http://vocab.belgif.be/ns/building#consistsOf",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "definition": {
-        "en": "The building units belonging to the building."
+        "en": "The building unit(s) being part of the building."
       },
       "domain": [
         "http://vocab.belgif.be/ns/building#Building"
@@ -422,7 +724,7 @@
         "https://schema.org/elevation"
       ],
       "range": [
-        "https://data.vlaanderen.be/ns/generiek#DirectPosition"
+        "http://www.opengis.net/ont/sf#DirectPosition"
       ],
       "generalization": []
     },
@@ -545,6 +847,20 @@
       "@id": "http://vocab.belgif.be/ns/building#horizontalGeometryReference",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "definition": {
+        "en": "Element of the building that was captured by (X,Y) coordinates"
+      },
+      "domain": [
+        "https://data.vlaanderen.be/ns/gebouw#2DGebouwgeometrie"
+      ],
+      "range": [
+        "http://www.w3.org/2004/02/skos/core#Concept"
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/building#horizontalGeometryReference",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "definition": {
         "en": "Element of the real world object that was captured by the (X,Y) coordinates of the LoD1 Multisurface or Solid geometry."
       },
       "usage": {
@@ -577,7 +893,7 @@
     },
     {
       "@id": "http://vocab.belgif.be/ns/building#informationSystem",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "definition": {
         "en": "Uniform Resource Identifier of the external information system."
       },
@@ -609,12 +925,27 @@
     {
       "@id": "http://vocab.belgif.be/ns/building#isPartOf",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "definition": {
+        "en": "The building of which building unit(s) are being a part."
+      },
       "domain": [
         "http://vocab.belgif.be/ns/building#BuildingUnit"
       ],
       "range": [
         "http://vocab.belgif.be/ns/building#Building"
       ],
+      "generalization": []
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/building#language",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "definition": {
+        "en": "Language of the name, given as a three letters code, in accordance with either ISO 639-3 or ISO 639-5."
+      },
+      "domain": [
+        "http://vocab.belgif.be/ns/building#GeographicalName"
+      ],
+      "range": [],
       "generalization": []
     },
     {
@@ -635,10 +966,55 @@
       "generalization": []
     },
     {
+      "@id": "http://vocab.belgif.be/ns/building#name",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "definition": {
+        "en": "Name of the building"
+      },
+      "usage": {
+        "en": "EXAMPLES: Big Ben, Eiffel Tower, Sacrada Familia"
+      },
+      "domain": [
+        "http://vocab.belgif.be/ns/building#Building"
+      ],
+      "range": [
+        "http://vocab.belgif.be/ns/building#GeographicalName"
+      ],
+      "generalization": []
+    },
+    {
       "@id": "http://vocab.belgif.be/ns/building#numberOfDwellings",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "definition": {
         "en": "The number of dwellings. A dwelling is a residential unit which may consist of one or several rooms designed for the occupation of households."
+      },
+      "domain": [
+        "http://vocab.belgif.be/ns/building#Building"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#integer"
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/building#numberOfFloorsAboveGround",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "definition": {
+        "en": "Total number of building layers above ground, viewed across all building sections."
+      },
+      "domain": [
+        "http://vocab.belgif.be/ns/building#Building"
+      ],
+      "range": [
+        "http://www.w3.org/2001/XMLSchema#integer"
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/building#numberOfFloorsUnderGround",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "definition": {
+        "en": "Total number of building layers under ground, viewed across all building sections."
       },
       "domain": [
         "http://vocab.belgif.be/ns/building#Building"
@@ -672,7 +1048,7 @@
         "http://vocab.belgif.be/ns/building#ExternalReference"
       ],
       "range": [
-        "http://www.w3.org/2001/XMLSchema#string"
+        "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
       ],
       "generalization": []
     },
@@ -691,6 +1067,18 @@
       "generalization": []
     },
     {
+      "@id": "http://vocab.belgif.be/ns/building#spelling",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "definition": {
+        "en": "A proper way of writing the geographical name."
+      },
+      "domain": [
+        "http://vocab.belgif.be/ns/building#GeographicalName"
+      ],
+      "range": [],
+      "generalization": []
+    },
+    {
       "@id": "http://vocab.belgif.be/ns/building#status",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "definition": {
@@ -702,6 +1090,18 @@
       "range": [
         "http://vocab.belgif.be/ns/building#HeightStatusValue"
       ],
+      "generalization": []
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/building#structuredIdentificator",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+      "definition": {
+        "en": "Identifier of the object broken down into its parts."
+      },
+      "domain": [
+        "http://www.w3.org/ns/adms#Identifier"
+      ],
+      "range": [],
       "generalization": []
     },
     {
@@ -747,6 +1147,20 @@
       "generalization": []
     },
     {
+      "@id": "http://vocab.belgif.be/ns/building#verticalGeometryReference",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "definition": {
+        "en": "Element of the building that was captured by vertical coordinates."
+      },
+      "domain": [
+        "https://data.vlaanderen.be/ns/gebouw#2DGebouwgeometrie"
+      ],
+      "range": [
+        "http://www.w3.org/2004/02/skos/core#Concept"
+      ],
+      "generalization": []
+    },
+    {
       "@id": "http://vocab.belgif.be/ns/building#verticalGeometryReference3DBottom",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "definition": {
@@ -781,16 +1195,44 @@
   "externalproperties": [
     {
       "name": {
-        "en": "^identifier"
+        "en": "assignedBy"
+      },
+      "@id": "http://purl.org/dc/terms/creator",
+      "@type": "rdf:Property"
+    },
+    {
+      "name": {
+        "en": "assignedOn"
+      },
+      "@id": "http://purl.org/dc/terms/issued",
+      "@type": "rdf:Property"
+    },
+    {
+      "name": {
+        "en": "identifier"
+      },
+      "@id": "http://www.w3.org/2004/02/skos/core#notation",
+      "@type": "rdf:Property"
+    },
+    {
+      "name": {
+        "en": "identifier"
       },
       "@id": "http://www.w3.org/ns/adms#Identifier",
       "@type": "rdf:Property"
     },
     {
       "name": {
-        "en": "^identifier"
+        "en": "identifier"
       },
       "@id": "http://www.w3.org/ns/adms#identifier",
+      "@type": "rdf:Property"
+    },
+    {
+      "name": {
+        "en": "assignedBy (String)"
+      },
+      "@id": "http://www.w3.org/ns/adms#schemaAgency",
       "@type": "rdf:Property"
     },
     {
@@ -798,62 +1240,6 @@
         "en": "address"
       },
       "@id": "http://www.w3.org/ns/locn#Address",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "en": "conditionOfConstruction"
-      },
-      "@id": "https://data.vlaanderen.be/ns/gebouw#Gebouw.status",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "en": "numberOfFloorsAboveGround"
-      },
-      "@id": "https://data.vlaanderen.be/ns/gebouw#aantalBovengrondseVerdiepingen",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "en": "numberOfFloorsUnderGround"
-      },
-      "@id": "https://data.vlaanderen.be/ns/gebouw#aantalOndergrondseVerdiepingen",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "en": "function"
-      },
-      "@id": "https://data.vlaanderen.be/ns/gebouw#functie",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "en": "name"
-      },
-      "@id": "https://data.vlaanderen.be/ns/gebouw#gebouwnaam",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "en": "geometry"
-      },
-      "@id": "https://data.vlaanderen.be/ns/gebouw#geometrie",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "en": "horizontalGeometryReference"
-      },
-      "@id": "https://data.vlaanderen.be/ns/gebouw#horizontaleReferentie",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "en": "verticalGeometryReference"
-      },
-      "@id": "https://data.vlaanderen.be/ns/gebouw#verticaleReferentie",
       "@type": "rdf:Property"
     },
     {
