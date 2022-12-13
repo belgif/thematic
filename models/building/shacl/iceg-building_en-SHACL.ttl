@@ -13,12 +13,15 @@
     <https://semiceu.github.io/shacl/iceg-building_en#BuildingGeometry3DLoD2Shape>,
     <https://semiceu.github.io/shacl/iceg-building_en#BuildingUnitShape>,
     <https://semiceu.github.io/shacl/iceg-building_en#CurrentUseShape>,
+    <https://semiceu.github.io/shacl/iceg-building_en#DateOfEventShape>,
+    <https://semiceu.github.io/shacl/iceg-building_en#ElevationShape>,
     <https://semiceu.github.io/shacl/iceg-building_en#EntranceLocationShape>,
     <https://semiceu.github.io/shacl/iceg-building_en#ExternalReferenceShape>,
     <https://semiceu.github.io/shacl/iceg-building_en#GeographicalNameShape>,
     <https://semiceu.github.io/shacl/iceg-building_en#HeightAboveGroundShape>,
     <https://semiceu.github.io/shacl/iceg-building_en#HeightStatusValueShape>,
-    <https://semiceu.github.io/shacl/iceg-building_en#MeasuringMethodShape>,
+    <https://semiceu.github.io/shacl/iceg-building_en#LangCodeShape>,
+    <https://semiceu.github.io/shacl/iceg-building_en#CadastralParcelShape>,
     <https://semiceu.github.io/shacl/iceg-building_en#3DobjectShape>,
     <https://semiceu.github.io/shacl/iceg-building_en#DirectPositionShape>,
     <https://semiceu.github.io/shacl/iceg-building_en#MultiCurveShape>,
@@ -27,19 +30,23 @@
     <https://semiceu.github.io/shacl/iceg-building_en#PolygonShape>,
     <https://semiceu.github.io/shacl/iceg-building_en#LangStringShape>,
     <https://semiceu.github.io/shacl/iceg-building_en#LiteralShape>,
+    <https://semiceu.github.io/shacl/iceg-building_en#TextShape>,
     <https://semiceu.github.io/shacl/iceg-building_en#BuildingNatureValueShape>,
     <https://semiceu.github.io/shacl/iceg-building_en#CurrentUseValueShape>,
     <https://semiceu.github.io/shacl/iceg-building_en#ConditionOfConstructionValueShape>,
     <https://semiceu.github.io/shacl/iceg-building_en#ElevationReferenceValueShape>,
     <https://semiceu.github.io/shacl/iceg-building_en#HorizontalGeometryReferenceValueShape>,
+    <https://semiceu.github.io/shacl/iceg-building_en#MeasuringMethodShape>,
+    <https://semiceu.github.io/shacl/iceg-building_en#NameStatusValueShape>,
+    <https://semiceu.github.io/shacl/iceg-building_en#SourceStatusValueShape>,
+    <https://semiceu.github.io/shacl/iceg-building_en#NativenessValueShape>,
     <https://semiceu.github.io/shacl/iceg-building_en#IdentifierShape>,
     <https://semiceu.github.io/shacl/iceg-building_en#AddressRepresentationShape>,
     <https://semiceu.github.io/shacl/iceg-building_en#GeometryShape>,
     <https://semiceu.github.io/shacl/iceg-building_en#BuildingGeometry2DShape>,
-    <https://semiceu.github.io/shacl/iceg-building_en#EventDateShape>,
-    <https://semiceu.github.io/shacl/iceg-building_en#CadastralParcelShape>,
+    <https://semiceu.github.io/shacl/iceg-building_en#StructuredIdentificatorShape>,
     <https://semiceu.github.io/shacl/iceg-building_en#LengthShape>,
-    <https://semiceu.github.io/shacl/iceg-building_en#ElevationShape> .
+    <https://semiceu.github.io/shacl/iceg-building_en#DocumentShape> .
 
 <https://semiceu.github.io/shacl/iceg-building_en#3DobjectShape> a shacl:NodeShape;
   shacl:closed false;
@@ -159,14 +166,7 @@
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "horizontalGeometryReference"@en;
-    shacl:path <http://vocab.belgif.be/ns/building#horizontalGeometryReference>
-  ], [
-    shacl:datatype xsd:boolean;
-    shacl:definition "The geometry to be taken into account by view services, for portrayal."@en;
-    shacl:maxCount 1;
-    shacl:minCount 1;
-    shacl:name "referenceGeometry"@en;
-    shacl:path <http://vocab.belgif.be/ns/building#referenceGeometry>
+    shacl:path <http://vocab.belgif.be/ns/building#BuildingGeometry2D.horizontalGeometryReference>
   ], [
     shacl:class skos:Concept;
     shacl:definition "Element of the building that was captured by vertical coordinates."@en;
@@ -183,7 +183,7 @@
     shacl:definition "Element of the real world object that was captured by the (X,Y) coordinates of the LoD1 Multisurface or Solid geometry."@en;
     shacl:maxCount 1;
     shacl:name "horizontalGeometryReference"@en;
-    shacl:path <http://vocab.belgif.be/ns/building#horizontalGeometryReference>
+    shacl:path <http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD1.horizontalGeometryReference>
   ], [
     shacl:class skos:Concept;
     shacl:definition "Height level to which the upper height of the model (Z-value of the upper horizontal polygon) refers to."@en;
@@ -202,7 +202,7 @@
     shacl:name "horizontalGeometryReference"@en;
     shacl:path <http://vocab.belgif.be/ns/building#horizontalGeometryReference>
   ];
-  shacl:targetClass <http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD2> .
+  shacl:targetClass <http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD2.horizontalGeometryReference> .
 
 <https://semiceu.github.io/shacl/iceg-building_en#BuildingGeometry3DLoDShape> a shacl:NodeShape;
   shacl:closed false;
@@ -242,6 +242,13 @@
     shacl:name "horizontalGeometryEstimatedAccuracy"@en;
     shacl:path <http://vocab.belgif.be/ns/building#horizontalGeometryEstimatedAccuracy>
   ], [
+    shacl:datatype xsd:boolean;
+    shacl:definition "The geometry to be taken into account by view services, for portrayal."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "referenceGeometry"@en;
+    shacl:path <http://vocab.belgif.be/ns/building#referenceGeometry>
+  ], [
     shacl:datatype <https://data.vlaanderen.be/ns/weg#Lengte>;
     shacl:definition """The estimated absolute positional accuracy of the Z-coordinate of the building geometry.	"""@en;
     shacl:maxCount 1;
@@ -267,6 +274,11 @@
     shacl:name "buildingNature"@en;
     shacl:path <http://vocab.belgif.be/ns/building#buildingNature>
   ], [
+    shacl:class <http://vocab.belgif.be/ns/building#BuildingUnit>;
+    shacl:definition "Building unit(s) being part of the building."@en;
+    shacl:name "buildingUnit"@en;
+    shacl:path <http://vocab.belgif.be/ns/building#buildingUnit>
+  ], [
     shacl:class skos:Concept;
     shacl:definition "Values indicating the condition of a construction"@en;
     shacl:maxCount 1;
@@ -274,37 +286,42 @@
     shacl:name "conditionOfConstruction"@en;
     shacl:path <http://vocab.belgif.be/ns/building#conditionOfConstruction>
   ], [
-    shacl:class <http://vocab.belgif.be/ns/building#BuildingUnit>;
-    shacl:definition "The building unit(s) being part of the building."@en;
-    shacl:name "consistsOf"@en;
-    shacl:path <http://vocab.belgif.be/ns/building#consistsOf>
-  ], [
     shacl:class <http://vocab.belgif.be/ns/building#CurrentUse>;
     shacl:definition "Activity hosted within the building. This attribute addresses mainly the buildings hosting human activities."@en;
     shacl:name "currentUse"@en;
-    shacl:path <http://vocab.belgif.be/ns/building#currentUse>
+    shacl:path <http://vocab.belgif.be/ns/building#Building.currentUse>
   ], [
-    shacl:datatype <https://data.vlaanderen.be/ns/generiek#Gebeurtenisdatum>;
+    shacl:datatype <http://vocab.belgif.be/ns/building#DateOfEvent>;
     shacl:definition "Date of construction."@en;
     shacl:maxCount 1;
     shacl:name "dateOfConstruction"@en;
-    shacl:path <http://vocab.belgif.be/ns/building#dateOfConstruction>
+    shacl:path <http://vocab.belgif.be/ns/building#Building.dateOfConstruction>
   ], [
-    shacl:datatype <https://data.vlaanderen.be/ns/generiek#Gebeurtenisdatum>;
+    shacl:datatype <http://vocab.belgif.be/ns/building#DateOfEvent>;
     shacl:definition "Date of demolition."@en;
     shacl:maxCount 1;
     shacl:name "dateOfDemolition"@en;
-    shacl:path <http://vocab.belgif.be/ns/building#dateOfDemolition>
+    shacl:path <http://vocab.belgif.be/ns/building#Building.dateOfDemolition>
   ], [
-    shacl:datatype <https://data.vlaanderen.be/ns/generiek#Gebeurtenisdatum>;
+    shacl:datatype <http://vocab.belgif.be/ns/building#DateOfEvent>;
     shacl:definition "Date of renovation."@en;
     shacl:name "dateOfRenovation"@en;
-    shacl:path <http://vocab.belgif.be/ns/building#dateOfRenovation>
+    shacl:path <http://vocab.belgif.be/ns/building#Building.dateOfRenovation>
   ], [
-    shacl:datatype schemas:elevation;
+    shacl:class schemas:DigitalDocument;
+    shacl:definition "Any document providing information about the building."@en;
+    shacl:name "Document"@en;
+    shacl:path <http://vocab.belgif.be/ns/building#document>
+  ], [
+    shacl:datatype <http://vocab.belgif.be/ns/building#Elevation>;
     shacl:definition "Vertically-constrained dimensional property consisting of an absolute measure referenced to a well-defined surface which is commonly taken as origin (geoïd, water level, etc.)."@en;
     shacl:name "elevation"@en;
-    shacl:path schemas:elevation
+    shacl:path <http://vocab.belgif.be/ns/building#Building.elevation>
+  ], [
+    shacl:datatype <http://vocab.belgif.be/ns/building#EntranceLocation>;
+    shacl:definition "The location where the building can be entered or exited."@en;
+    shacl:name "entranceLocation"@en;
+    shacl:path <http://vocab.belgif.be/ns/building#entranceLocation>
   ], [
     shacl:class <http://vocab.belgif.be/ns/building#ExternalReference>;
     shacl:definition "Reference to an external information system containing any piece of information related to the spatial object."@en;
@@ -314,7 +331,7 @@
     shacl:datatype <http://vocab.belgif.be/ns/building#BuildingGeometry>;
     shacl:definition "Shape and position characteristics of a building"@en;
     shacl:name "geometry"@en;
-    shacl:path <http://vocab.belgif.be/ns/building#Building.geometry>
+    shacl:path <http://www.w3.org/ns/locn#Geometry>
   ], [
     shacl:class <http://vocab.belgif.be/ns/building#HeightAboveGround>;
     shacl:definition "Height above ground."@en;
@@ -323,8 +340,6 @@
   ], [
     shacl:class <http://www.w3.org/ns/adms#Identifier>;
     shacl:definition "Identifier of the Building."@en;
-    shacl:maxCount 1;
-    shacl:minCount 1;
     shacl:name "identifier"@en;
     shacl:path <http://www.w3.org/ns/adms#Identifier>
   ], [
@@ -334,7 +349,7 @@
     shacl:path <http://vocab.belgif.be/ns/building#name>
   ], [
     shacl:datatype xsd:integer;
-    shacl:definition "The number of dwellings. A dwelling is a residential unit which may consist of one or several rooms designed for the occupation of households."@en;
+    shacl:definition "Number of dwellings. A dwelling is a residential unit which may consist of one or several rooms designed for the occupation of households."@en;
     shacl:maxCount 1;
     shacl:name "numberOfDwellings"@en;
     shacl:path <http://vocab.belgif.be/ns/building#numberOfDwellings>
@@ -361,18 +376,42 @@
     shacl:name "address"@en;
     shacl:path <https://www.w3.org/ns/locn#Address>
   ], [
+    shacl:class <http://vocab.belgif.be/ns/building#Building>;
+    shacl:definition "Building of which building unit(s) are being a part."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "building"@en;
+    shacl:path <http://vocab.belgif.be/ns/building#building>
+  ], [
     shacl:class <http://vocab.belgif.be/ns/building#CurrentUse>;
     shacl:definition "Activity hosted within the building unit. This attribute addresses mainly the building units hosting human activities."@en;
     shacl:name "currentUse"@en;
     shacl:path <http://vocab.belgif.be/ns/building#Buildingunit.currentUse>
   ], [
-    shacl:datatype <https://data.vlaanderen.be/ns/generiek#Gebeurtenisdatum>;
+    shacl:datatype <http://vocab.belgif.be/ns/building#DateOfEvent>;
+    shacl:definition "Date of construction."@en;
+    shacl:maxCount 1;
+    shacl:name "dateOfConstruction"@en;
+    shacl:path <http://vocab.belgif.be/ns/building#BuildingUnit.dateOfConstruction>
+  ], [
+    shacl:datatype <http://vocab.belgif.be/ns/building#DateOfEvent>;
+    shacl:definition "Date of demolition"@en;
+    shacl:maxCount 1;
+    shacl:name "dateOfDemolition"@en;
+    shacl:path <http://vocab.belgif.be/ns/building#BuildingUnit.dateOfDemolition>
+  ], [
+    shacl:datatype <http://vocab.belgif.be/ns/building#DateOfEvent>;
     shacl:definition "Date of renovation."@en;
     shacl:name "dateOfRenovation"@en;
-    shacl:path <http://vocab.belgif.be/ns/building#dateOfRenovation>
+    shacl:path <http://vocab.belgif.be/ns/building#BuildingUnit.dateOfRenovation>
+  ], [
+    shacl:class schemas:DigitalDocument;
+    shacl:definition "Any document providing information about the building unit."@en;
+    shacl:name "Document"@en;
+    shacl:path <http://vocab.belgif.be/ns/building#document>
   ], [
     shacl:datatype <http://vocab.belgif.be/ns/building#EntranceLocation>;
-    shacl:definition "The location where the building unit can be entered."@en;
+    shacl:definition "The location where the building unit can be entered or exited."@en;
     shacl:minCount 1;
     shacl:name "entranceLocation"@en;
     shacl:path <http://vocab.belgif.be/ns/building#entranceLocation>
@@ -380,27 +419,18 @@
     shacl:datatype <http://www.w3.org/ns/locn#Geometry>;
     shacl:definition "Shape and position characteristics of a building unit."@en;
     shacl:name "geometry"@en;
-    shacl:path <http://vocab.belgif.be/ns/building#Buildingunit.geometry>
+    shacl:path <http://www.w3.org/ns/locn#Geometry>
   ], [
     shacl:class <http://www.w3.org/ns/adms#Identifier>;
     shacl:definition "The unique identifier of a building unit."@en;
-    shacl:maxCount 1;
-    shacl:minCount 1;
     shacl:name "identifier"@en;
     shacl:path <http://www.w3.org/ns/adms#identifier>
-  ], [
-    shacl:class <http://vocab.belgif.be/ns/building#Building>;
-    shacl:definition "The building of which building unit(s) are being a part."@en;
-    shacl:maxCount 1;
-    shacl:minCount 1;
-    shacl:name "isPartOf"@en;
-    shacl:path <http://vocab.belgif.be/ns/building#isPartOf>
   ];
   shacl:targetClass <http://vocab.belgif.be/ns/building#BuildingUnit> .
 
 <https://semiceu.github.io/shacl/iceg-building_en#CadastralParcelShape> a shacl:NodeShape;
   shacl:closed false;
-  shacl:targetClass <https://data.vlaanderen.be/ns/perceel#KadastraalPlanperceel> .
+  shacl:targetClass <http://vocab.belgif.be/ns/building#CadastralParcel> .
 
 <https://semiceu.github.io/shacl/iceg-building_en#ConditionOfConstructionValueShape> a shacl:NodeShape;
   shacl:closed false;
@@ -409,24 +439,47 @@
 <https://semiceu.github.io/shacl/iceg-building_en#CurrentUseShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property [
-    shacl:class skos:Concept;
-    shacl:definition "The current use of a building"@en;
-    shacl:maxCount 1;
-    shacl:minCount 1;
-    shacl:name "currentUse"@en;
-    shacl:path <http://vocab.belgif.be/ns/building#currentUse>
-  ], [
     shacl:datatype xsd:integer;
     shacl:definition "The proportion of the building, given as a percentage, devoted to this current use."@en;
     shacl:maxCount 1;
     shacl:name "percentage"@en;
     shacl:path <http://vocab.belgif.be/ns/building#percentage>
+  ], [
+    shacl:class skos:Concept;
+    shacl:definition "The current use of a building"@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "type"@en;
+    shacl:path <http://vocab.belgif.be/ns/building#type>
   ];
   shacl:targetClass <http://vocab.belgif.be/ns/building#CurrentUse> .
 
 <https://semiceu.github.io/shacl/iceg-building_en#CurrentUseValueShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:targetClass skos:Concept .
+
+<https://semiceu.github.io/shacl/iceg-building_en#DateOfEventShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:datatype xsd:dateTime;
+    shacl:definition "A date and time of any point of the event, between its beginning and its end."@en;
+    shacl:maxCount 1;
+    shacl:name "anyPoint"@en;
+    shacl:path <http://vocab.belgif.be/ns/building#anyPoint>
+  ], [
+    shacl:datatype xsd:dateTime;
+    shacl:definition "Date and time when the event ended."@en;
+    shacl:maxCount 1;
+    shacl:name "endDate"@en;
+    shacl:path <http://vocab.belgif.be/ns/building#endDate>
+  ], [
+    shacl:datatype xsd:dateTime;
+    shacl:definition "Date and time when the event begun."@en;
+    shacl:maxCount 1;
+    shacl:name "startDate"@en;
+    shacl:path <http://vocab.belgif.be/ns/building#startDate>
+  ];
+  shacl:targetClass <http://vocab.belgif.be/ns/building#DateOfEvent> .
 
 <https://semiceu.github.io/shacl/iceg-building_en#DirectPositionShape> a shacl:NodeShape;
   shacl:closed false;
@@ -437,7 +490,7 @@
     shacl:name "gml"@en;
     shacl:path <http://www.opengis.net/ont/geosparql#asGML>
   ], [
-    shacl:datatype <http://vocab.belgif.be/ns/building#MeasuringMethod>;
+    shacl:datatype skos:Concept;
     shacl:definition "The way the point was determined."@en;
     shacl:maxCount 1;
     shacl:minCount 1;
@@ -451,6 +504,30 @@
     shacl:path <http://www.opengis.net/ont/geosparql#asWKT>
   ];
   shacl:targetClass <http://www.opengis.net/ont/sf#DirectPosition> .
+
+<https://semiceu.github.io/shacl/iceg-building_en#DocumentShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:datatype xsd:dateTime;
+    shacl:definition "Date of validity of the document."@en;
+    shacl:maxCount 1;
+    shacl:name "Date"@en;
+    shacl:path <http://vocab.belgif.be/ns/building#date>
+  ], [
+    shacl:datatype rdf:langString;
+    shacl:definition "A short text providing overview of the document content. May be just title of the document."@en;
+    shacl:maxCount 1;
+    shacl:name "documentDescription"@en;
+    shacl:path <http://vocab.belgif.be/ns/building#documentDescription>
+  ], [
+    shacl:class skos:Concept;
+    shacl:definition "The status of the document, i.e. this attribute indicates if the document comes from official source or not."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "sourceStatus"@en;
+    shacl:path <http://vocab.belgif.be/ns/building#sourceStatus>
+  ];
+  shacl:targetClass schemas:DigitalDocument .
 
 <https://semiceu.github.io/shacl/iceg-building_en#ElevationReferenceValueShape> a shacl:NodeShape;
   shacl:closed false;
@@ -473,7 +550,7 @@
     shacl:name "elevationValue"@en;
     shacl:path <http://vocab.belgif.be/ns/building#elevationValue>
   ];
-  shacl:targetClass schemas:elevation .
+  shacl:targetClass <http://vocab.belgif.be/ns/building#Elevation> .
 
 <https://semiceu.github.io/shacl/iceg-building_en#EntranceLocationShape> a shacl:NodeShape;
   shacl:closed false;
@@ -481,41 +558,16 @@
     shacl:datatype <http://www.w3.org/ns/locn#Address>;
     shacl:definition "The address linked to the location of the entrance."@en;
     shacl:maxCount 1;
-    shacl:minCount 1;
     shacl:name "address"@en;
     shacl:path <http://www.w3.org/ns/locn#Address>
   ], [
     shacl:datatype <http://www.opengis.net/ont/sf#DirectPosition>;
     shacl:definition "Holder of the coordinates of a position in a coordinate reference system."@en;
     shacl:maxCount 1;
-    shacl:minCount 1;
-    shacl:name "geoCoordinates"@en;
-    shacl:path schemas:GeoCoordinates
+    shacl:name "position"@en;
+    shacl:path <http://www.w3.org/ns/locn#Geometry>
   ];
   shacl:targetClass <http://vocab.belgif.be/ns/building#EntranceLocation> .
-
-<https://semiceu.github.io/shacl/iceg-building_en#EventDateShape> a shacl:NodeShape;
-  shacl:closed false;
-  shacl:property [
-    shacl:datatype xsd:dateTime;
-    shacl:definition "A date and time of any point of the event, between its beginning and its end."@en;
-    shacl:maxCount 1;
-    shacl:name "anyPoint"@en;
-    shacl:path <https://data.vlaanderen.be/ns/generiek#tussentijdstip>
-  ], [
-    shacl:datatype xsd:dateTime;
-    shacl:definition "Date and time when the event ended."@en;
-    shacl:maxCount 1;
-    shacl:name "endDate"@en;
-    shacl:path <https://data.vlaanderen.be/ns/generiek#einde>
-  ], [
-    shacl:datatype xsd:dateTime;
-    shacl:definition "Date and time when the event begun."@en;
-    shacl:maxCount 1;
-    shacl:name "startDate"@en;
-    shacl:path <https://data.vlaanderen.be/ns/generiek#begin>
-  ];
-  shacl:targetClass <https://data.vlaanderen.be/ns/generiek#Gebeurtenisdatum> .
 
 <https://semiceu.github.io/shacl/iceg-building_en#ExternalReferenceShape> a shacl:NodeShape;
   shacl:closed false;
@@ -546,12 +598,25 @@
 <https://semiceu.github.io/shacl/iceg-building_en#GeographicalNameShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property [
-    shacl:definition "Language of the name, given as a three letters code, in accordance with either ISO 639-3 or ISO 639-5."@en;
+    shacl:class skos:Concept;
+    shacl:definition "Qualitative information enabling to discern which credit should be given to the name with respect to its standardisation and/or its topicality."@en;
     shacl:maxCount 1;
-    shacl:minCount 1;
-    shacl:name "language"@en;
-    shacl:path <http://vocab.belgif.be/ns/building#language>
+    shacl:name "nameStatus"@en;
+    shacl:path <http://vocab.belgif.be/ns/building#nameStatus>
   ], [
+    shacl:class skos:Concept;
+    shacl:definition "Information enabling to acknowledge if the name is the one that is/was used in the area where the spatial object is situated at the instant when the name is/was in use."@en;
+    shacl:maxCount 1;
+    shacl:name "nativeness"@en;
+    shacl:path <http://vocab.belgif.be/ns/building#nativeness>
+  ], [
+    shacl:datatype rdf:langString;
+    shacl:definition "Original data source from which the geographical name is taken from and integrated in the data set providing/publishing it. For some named spatial objects it might refer again to the publishing data set if no other information is available."@en;
+    shacl:maxCount 1;
+    shacl:name "sourceOfName"@en;
+    shacl:path <http://vocab.belgif.be/ns/building#sourceOfName>
+  ], [
+    shacl:datatype rdf:langString;
     shacl:definition "A proper way of writing the geographical name."@en;
     shacl:maxCount 1;
     shacl:minCount 1;
@@ -569,6 +634,13 @@
     shacl:minCount 1;
     shacl:name "gml"@en;
     shacl:path <http://www.opengis.net/ont/geosparql#asGML>
+  ], [
+    shacl:datatype skos:Concept;
+    shacl:definition "The way the point was determined."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "method"@en;
+    shacl:path <http://www.opengis.net/ont/sf#method>
   ], [
     shacl:datatype rdfs:Literal;
     shacl:definition "Geometry expressed in wkt format."@en;
@@ -641,12 +713,13 @@
     shacl:name "assignedOn"@en;
     shacl:path dc:issued
   ], [
-    shacl:datatype rdf:langString;
+    shacl:datatype rdfs:Literal;
     shacl:definition "String used to uniquely identify the object. "@en;
     shacl:maxCount 1;
     shacl:name "identifier"@en;
     shacl:path skos:notation
   ], [
+    shacl:class <https://data.vlaanderen.be/ns/generiek#GestructureerdeIdentificator>;
     shacl:definition "Identifier of the object broken down into its parts."@en;
     shacl:maxCount 1;
     shacl:name "structuredIdentifier"@en;
@@ -654,8 +727,26 @@
   ];
   shacl:targetClass <http://www.w3.org/ns/adms#Identifier> .
 
+<https://semiceu.github.io/shacl/iceg-building_en#LangCodeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <http://vocab.belgif.be/ns/building#LangCode> .
+
 <https://semiceu.github.io/shacl/iceg-building_en#LangStringShape> a shacl:NodeShape;
   shacl:closed false;
+  shacl:property [
+    shacl:class <http://vocab.belgif.be/ns/building#LangCode>;
+    shacl:definition "Language code of the string."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "LangString"@en;
+    shacl:path <http://vocab.belgif.be/ns/building#language>
+  ], [
+    shacl:datatype xsd:string;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "String"@en;
+    shacl:path <http://vocab.belgif.be/ns/building#string>
+  ];
   shacl:targetClass rdf:langString .
 
 <https://semiceu.github.io/shacl/iceg-building_en#LengthShape> a shacl:NodeShape;
@@ -668,7 +759,7 @@
 
 <https://semiceu.github.io/shacl/iceg-building_en#MeasuringMethodShape> a shacl:NodeShape;
   shacl:closed false;
-  shacl:targetClass <http://vocab.belgif.be/ns/building#MeasuringMethod> .
+  shacl:targetClass skos:Concept .
 
 <https://semiceu.github.io/shacl/iceg-building_en#MultiCurveShape> a shacl:NodeShape;
   shacl:closed false;
@@ -678,6 +769,14 @@
   shacl:closed false;
   shacl:targetClass <http://www.opengis.net/ont/sf#MultiSurface> .
 
+<https://semiceu.github.io/shacl/iceg-building_en#NameStatusValueShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://semiceu.github.io/shacl/iceg-building_en#NativenessValueShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
 <https://semiceu.github.io/shacl/iceg-building_en#PointShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:targetClass <http://www.opengis.net/ont/sf#Point> .
@@ -685,3 +784,15 @@
 <https://semiceu.github.io/shacl/iceg-building_en#PolygonShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:targetClass <http://www.opengis.net/ont/sf#Polygon> .
+
+<https://semiceu.github.io/shacl/iceg-building_en#SourceStatusValueShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://semiceu.github.io/shacl/iceg-building_en#StructuredIdentificatorShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <https://data.vlaanderen.be/ns/generiek#GestructureerdeIdentificator> .
+
+<https://semiceu.github.io/shacl/iceg-building_en#TextShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass xsd:string .

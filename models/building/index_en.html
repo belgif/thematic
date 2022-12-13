@@ -515,7 +515,7 @@
               <div class="head" role="metainfo" id="metainfo">
               <dl>
               <!--<dt>Source</dt><dd><br></dd>-->
-              <!--<dt>Changelog</dt><dd><a href="https://github.com/bertvannuffelen/semiceuthema/blob/08b7a64fd08ea778b612844c8f2a941b7178ff84/CHANGELOG">https://github.com/bertvannuffelen/semiceuthema/blob/08b7a64fd08ea778b612844c8f2a941b7178ff84/CHANGELOG</a></dd>-->
+              <!--<dt>Changelog</dt><dd><a href="https://github.com/bertvannuffelen/semiceuthema/blob/ffb91a5ef29d6c6f0420aec4449b18414612a187/CHANGELOG">https://github.com/bertvannuffelen/semiceuthema/blob/ffb91a5ef29d6c6f0420aec4449b18414612a187/CHANGELOG</a></dd>-->
               <dt>Feedback</dt><dd><a href="https://github.com/belgif/thematic/issues">https://github.com/belgif/thematic/issues</a></dd>
               <!--<dt>Registry of standards</dt><dd><a href="TODO">TODO</a></dd>-->
 
@@ -685,6 +685,7 @@
                     <p> This document describes the usage of the following datatypes for a correct usage of the Core Vocabulary:
                       <br />
                       |
+                      <a href="#"></a> |
                       <a href="#3Dobject">3Dobject</a> |
                       <a href="#AddressRepresentation">AddressRepresentation</a> |
                       <a href="#BuildingGeometry">BuildingGeometry</a> |
@@ -693,10 +694,11 @@
                       <a href="#BuildingGeometry3DLoD1">BuildingGeometry3DLoD1</a> |
                       <a href="#BuildingGeometry3DLoD2">BuildingGeometry3DLoD2</a> |
                       <a href="#CurrentUse">CurrentUse</a> |
+                      <a href="#DateOfEvent">DateOfEvent</a> |
                       <a href="#DirectPosition">DirectPosition</a> |
+                      <a href="#Document">Document</a> |
                       <a href="#Elevation">Elevation</a> |
                       <a href="#EntranceLocation">EntranceLocation</a> |
-                      <a href="#EventDate">EventDate</a> |
                       <a href="#ExternalReference">ExternalReference</a> |
                       <a href="#GeographicalName">GeographicalName</a> |
                       <a href="#Geometry">Geometry</a> |
@@ -705,11 +707,12 @@
                       <a href="#Langstring">Langstring</a> |
                       <a href="#Length">Length</a> |
                       <a href="#Literal">Literal</a> |
-                      <a href="#MeasuringMethod">MeasuringMethod</a> |
                       <a href="#MultiCurve">MultiCurve</a> |
                       <a href="#MultiSurface">MultiSurface</a> |
                       <a href="#Point">Point</a> |
                       <a href="#Polygon">Polygon</a> |
+                      <a href="#StructuredIdentificator">StructuredIdentificator</a> |
+                      <a href="#Text">Text</a> |
                     </p>
                   </div>
                   
@@ -738,13 +741,15 @@
                     <dd>For this entity the following properties are defined:
                       <a href="#Building%3Aaddress">address</a>, 
                       <a href="#Building%3AbuildingNature">buildingNature</a>, 
+                      <a href="#Building%3AbuildingUnit">buildingUnit</a>, 
                       <a href="#Building%3AconditionOfConstruction">conditionOfConstruction</a>, 
-                      <a href="#Building%3AconsistsOf">consistsOf</a>, 
                       <a href="#Building%3AcurrentUse">currentUse</a>, 
                       <a href="#Building%3AdateOfConstruction">dateOfConstruction</a>, 
                       <a href="#Building%3AdateOfDemolition">dateOfDemolition</a>, 
                       <a href="#Building%3AdateOfRenovation">dateOfRenovation</a>, 
+                      <a href="#Building%3ADocument">Document</a>, 
                       <a href="#Building%3Aelevation">elevation</a>, 
+                      <a href="#Building%3AentranceLocation">entranceLocation</a>, 
                       <a href="#Building%3AexternalReference">externalReference</a>, 
                       <a href="#Building%3Ageometry">geometry</a>, 
                       <a href="#Building%3AheightAboveGround">heightAboveGround</a>, 
@@ -808,7 +813,27 @@
                         </td>
 			<td>0..*</td>
                         <td property="rdfs:comment">Characteristic of the building that makes it generally of interest for mappings applications. The characteristic may be related to the physical aspect and/or to the function of the building.</td>
-                        <td property="skos:scopeNote">This attribute focuses on the physical aspect of the building; however, this physical aspect is often expressed as a function (e.g. stadium, silo, windmill); this attribute aims to fulfil mainly mapping purposes and addresses only specific, noticeable buildings.</td>
+                        <td property="skos:scopeNote">This attribute focuses on the physical aspect (facade) of the building; however, this physical aspect is often expressed as a function (e.g. stadium, silo, windmill); this attribute aims to fulfil mainly mapping purposes and addresses only specific, noticeable buildings.</td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Building%3AbuildingUnit" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#buildingUnit">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#buildingUnit" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#buildingUnit" data-placement="right">
+                            buildingUnit</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#BuildingUnit" data-placement="right">BuildingUnit</a>
+			    
+                          
+                        </td>
+			<td>0..*</td>
+                        <td property="rdfs:comment">Building unit(s) being part of the building.</td>
+                        <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
                     
@@ -832,30 +857,10 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Building%3AconsistsOf" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#consistsOf">
+                      <tr id="Building%3AcurrentUse" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#Building.currentUse">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#consistsOf" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#consistsOf" data-placement="right">
-                            consistsOf</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			    
-			    <a href="#BuildingUnit" data-placement="right">BuildingUnit</a>
-			    
-                          
-                        </td>
-			<td>0..*</td>
-                        <td property="rdfs:comment">The building unit(s) being part of the building.</td>
-                        <td property="skos:scopeNote"></td>
-                        <td></td>
-                      </tr>
-                    
-                      <tr id="Building%3AcurrentUse" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#currentUse">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#currentUse" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#currentUse" data-placement="right">
+                            <a href="http://vocab.belgif.be/ns/building#Building.currentUse" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#Building.currentUse" data-placement="right">
                             currentUse</a>
                           </code>
                         </td>
@@ -868,21 +873,21 @@
                         </td>
 			<td>0..*</td>
                         <td property="rdfs:comment">Activity hosted within the building. This attribute addresses mainly the buildings hosting human activities.</td>
-                        <td property="skos:scopeNote">NOTE: . This attribute aims to fulfill management requirements, such as computation of population or spatial planning ; this classification aims to be exhaustive for the functional buildings hosting human activities.</td>
+                        <td property="skos:scopeNote">This attribute aims to fulfill management requirements, such as computation of population or spatial planning ; this classification aims to be exhaustive for the functional buildings hosting human activities.</td>
                         <td></td>
                       </tr>
                     
-                      <tr id="Building%3AdateOfConstruction" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#dateOfConstruction">
+                      <tr id="Building%3AdateOfConstruction" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#Building.dateOfConstruction">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#dateOfConstruction" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#dateOfConstruction" data-placement="right">
+                            <a href="http://vocab.belgif.be/ns/building#Building.dateOfConstruction" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#Building.dateOfConstruction" data-placement="right">
                             dateOfConstruction</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#EventDate" data-placement="right">EventDate</a>
+			    <a href="#DateOfEvent" data-placement="right">DateOfEvent</a>
 			    
                           
                         </td>
@@ -892,17 +897,17 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Building%3AdateOfDemolition" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#dateOfDemolition">
+                      <tr id="Building%3AdateOfDemolition" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#Building.dateOfDemolition">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#dateOfDemolition" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#dateOfDemolition" data-placement="right">
+                            <a href="http://vocab.belgif.be/ns/building#Building.dateOfDemolition" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#Building.dateOfDemolition" data-placement="right">
                             dateOfDemolition</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#EventDate" data-placement="right">EventDate</a>
+			    <a href="#DateOfEvent" data-placement="right">DateOfEvent</a>
 			    
                           
                         </td>
@@ -912,17 +917,17 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Building%3AdateOfRenovation" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#dateOfRenovation">
+                      <tr id="Building%3AdateOfRenovation" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#Building.dateOfRenovation">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#dateOfRenovation" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#dateOfRenovation" data-placement="right">
+                            <a href="http://vocab.belgif.be/ns/building#Building.dateOfRenovation" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#Building.dateOfRenovation" data-placement="right">
                             dateOfRenovation</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#EventDate" data-placement="right">EventDate</a>
+			    <a href="#DateOfEvent" data-placement="right">DateOfEvent</a>
 			    
                           
                         </td>
@@ -932,10 +937,30 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Building%3Aelevation" typeof="rdfs:Property" resource="https://schema.org/elevation">
+                      <tr id="Building%3ADocument" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#document">
                         <td>
                           <code property="rdfs:label">
-                            <a href="https://schema.org/elevation" data-toggle="tooltip" data-content="https://schema.org/elevation" data-placement="right">
+                            <a href="http://vocab.belgif.be/ns/building#document" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#document" data-placement="right">
+                            Document</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Document" data-placement="right">Document</a>
+			    
+                          
+                        </td>
+			<td>0..*</td>
+                        <td property="rdfs:comment">Any document providing information about the building.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Building%3Aelevation" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#Building.elevation">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#Building.elevation" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#Building.elevation" data-placement="right">
                             elevation</a>
                           </code>
                         </td>
@@ -948,6 +973,26 @@
                         </td>
 			<td>0..*</td>
                         <td property="rdfs:comment">Vertically-constrained dimensional property consisting of an absolute measure referenced to a well-defined surface which is commonly taken as origin (geoïd, water level, etc.).</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Building%3AentranceLocation" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#entranceLocation">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#entranceLocation" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#entranceLocation" data-placement="right">
+                            entranceLocation</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#EntranceLocation" data-placement="right">EntranceLocation</a>
+			    
+                          
+                        </td>
+			<td>0..*</td>
+                        <td property="rdfs:comment">The location where the building can be entered or exited.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -972,10 +1017,10 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Building%3Ageometry" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#Building.geometry">
+                      <tr id="Building%3Ageometry" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#Geometry">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#Building.geometry" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#Building.geometry" data-placement="right">
+                            <a href="http://www.w3.org/ns/locn#Geometry" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#Geometry" data-placement="right">
                             geometry</a>
                           </code>
                         </td>
@@ -1026,7 +1071,7 @@
 			    
                           
                         </td>
-			<td>1</td>
+			<td>0..*</td>
                         <td property="rdfs:comment">Identifier of the Building.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
@@ -1048,7 +1093,7 @@
                         </td>
 			<td>0..*</td>
                         <td property="rdfs:comment">Name of the building</td>
-                        <td property="skos:scopeNote">EXAMPLES: Big Ben, Eiffel Tower, Sacrada Familia</td>
+                        <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
                     
@@ -1067,7 +1112,7 @@
                           
                         </td>
 			<td>0..1</td>
-                        <td property="rdfs:comment">The number of dwellings. A dwelling is a residential unit which may consist of one or several rooms designed for the occupation of households.</td>
+                        <td property="rdfs:comment">Number of dwellings. A dwelling is a residential unit which may consist of one or several rooms designed for the occupation of households.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -1088,7 +1133,7 @@
                         </td>
 			<td>0..1</td>
                         <td property="rdfs:comment">Total number of building layers above ground, viewed across all building sections.</td>
-                        <td property="skos:scopeNote"></td>
+                        <td property="skos:scopeNote">This starts usually from the level where the main entrance is located.</td>
                         <td></td>
                       </tr>
                     
@@ -1108,7 +1153,7 @@
                         </td>
 			<td>0..1</td>
                         <td property="rdfs:comment">Total number of building layers under ground, viewed across all building sections.</td>
-                        <td property="skos:scopeNote"></td>
+                        <td property="skos:scopeNote">This starts usually from the level where the main entrance is located.</td>
                         <td></td>
                       </tr>
                     
@@ -1129,12 +1174,15 @@
 		     
                     <dd>For this entity the following properties are defined:
                       <a href="#BuildingUnit%3Aaddress">address</a>, 
+                      <a href="#BuildingUnit%3Abuilding">building</a>, 
                       <a href="#BuildingUnit%3AcurrentUse">currentUse</a>, 
+                      <a href="#BuildingUnit%3AdateOfConstruction">dateOfConstruction</a>, 
+                      <a href="#BuildingUnit%3AdateOfDemolition">dateOfDemolition</a>, 
                       <a href="#BuildingUnit%3AdateOfRenovation">dateOfRenovation</a>, 
+                      <a href="#BuildingUnit%3ADocument">Document</a>, 
                       <a href="#BuildingUnit%3AentranceLocation">entranceLocation</a>, 
                       <a href="#BuildingUnit%3Ageometry">geometry</a>, 
-                      <a href="#BuildingUnit%3Aidentifier">identifier</a>, 
-                      <a href="#BuildingUnit%3AisPartOf">isPartOf</a>.</dd>
+                      <a href="#BuildingUnit%3Aidentifier">identifier</a>.</dd>
                     
                   </dl>
                 </div>
@@ -1174,6 +1222,26 @@
                         <td></td>
                       </tr>
                     
+                      <tr id="BuildingUnit%3Abuilding" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#building">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#building" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#building" data-placement="right">
+                            building</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Building" data-placement="right">Building</a>
+			    
+                          
+                        </td>
+			<td>1</td>
+                        <td property="rdfs:comment">Building of which building unit(s) are being a part.</td>
+                        <td property="skos:scopeNote">$ea_notes=The set of two distinct volumes united by a gallery/walkway is nevertheless considered as a single building. Two volumes separated by a footbridge (which is above a public road) are considered as two separate buildings which are located in different sites (because they are different plots).</td>
+                        <td></td>
+                      </tr>
+                    
                       <tr id="BuildingUnit%3AcurrentUse" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#Buildingunit.currentUse">
                         <td>
                           <code property="rdfs:label">
@@ -1194,22 +1262,82 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="BuildingUnit%3AdateOfRenovation" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#dateOfRenovation">
+                      <tr id="BuildingUnit%3AdateOfConstruction" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#BuildingUnit.dateOfConstruction">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#dateOfRenovation" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#dateOfRenovation" data-placement="right">
+                            <a href="http://vocab.belgif.be/ns/building#BuildingUnit.dateOfConstruction" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#BuildingUnit.dateOfConstruction" data-placement="right">
+                            dateOfConstruction</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#DateOfEvent" data-placement="right">DateOfEvent</a>
+			    
+                          
+                        </td>
+			<td>0..1</td>
+                        <td property="rdfs:comment">Date of construction.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="BuildingUnit%3AdateOfDemolition" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#BuildingUnit.dateOfDemolition">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#BuildingUnit.dateOfDemolition" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#BuildingUnit.dateOfDemolition" data-placement="right">
+                            dateOfDemolition</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#DateOfEvent" data-placement="right">DateOfEvent</a>
+			    
+                          
+                        </td>
+			<td>0..1</td>
+                        <td property="rdfs:comment">Date of demolition</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="BuildingUnit%3AdateOfRenovation" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#BuildingUnit.dateOfRenovation">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#BuildingUnit.dateOfRenovation" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#BuildingUnit.dateOfRenovation" data-placement="right">
                             dateOfRenovation</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#EventDate" data-placement="right">EventDate</a>
+			    <a href="#DateOfEvent" data-placement="right">DateOfEvent</a>
 			    
                           
                         </td>
 			<td>0..*</td>
                         <td property="rdfs:comment">Date of renovation.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="BuildingUnit%3ADocument" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#document">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#document" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#document" data-placement="right">
+                            Document</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Document" data-placement="right">Document</a>
+			    
+                          
+                        </td>
+			<td>0..*</td>
+                        <td property="rdfs:comment">Any document providing information about the building unit.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -1229,15 +1357,15 @@
                           
                         </td>
 			<td>1..*</td>
-                        <td property="rdfs:comment">The location where the building unit can be entered.</td>
+                        <td property="rdfs:comment">The location where the building unit can be entered or exited.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
                     
-                      <tr id="BuildingUnit%3Ageometry" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#Buildingunit.geometry">
+                      <tr id="BuildingUnit%3Ageometry" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#Geometry">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#Buildingunit.geometry" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#Buildingunit.geometry" data-placement="right">
+                            <a href="http://www.w3.org/ns/locn#Geometry" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#Geometry" data-placement="right">
                             geometry</a>
                           </code>
                         </td>
@@ -1268,28 +1396,8 @@
 			    
                           
                         </td>
-			<td>1</td>
+			<td>0..*</td>
                         <td property="rdfs:comment">The unique identifier of a building unit.</td>
-                        <td property="skos:scopeNote"></td>
-                        <td></td>
-                      </tr>
-                    
-                      <tr id="BuildingUnit%3AisPartOf" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#isPartOf">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#isPartOf" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#isPartOf" data-placement="right">
-                            isPartOf</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			    
-			    <a href="#Building" data-placement="right">Building</a>
-			    
-                          
-                        </td>
-			<td>1</td>
-                        <td property="rdfs:comment">The building of which building unit(s) are being a part.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -1301,7 +1409,7 @@
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="CadastralParcel"><a href="https://data.vlaanderen.be/ns/perceel#KadastraalPlanperceel" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/perceel#KadastraalPlanperceel" data-placement="right">CadastralParcel</a></h3>
+              <h3 class="h3" id="CadastralParcel"><a href="http://vocab.belgif.be/ns/building#CadastralParcel" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#CadastralParcel" data-placement="right">CadastralParcel</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Description</dt><dd>A portion of Belgian territory, geographically demarcated and identified by the AAPD on the cadastral plot plan, corresponding to the land area of one or more cadastral patrimonial plots.</dd>
@@ -1320,6 +1428,24 @@
             
             <div class="region region--no-space-top">
               <h2 class="h2">Datatypes</h2>
+            </div>
+            
+            <div class="region region--no-space-top">
+              
+              <h3 class="h3" id=""><a href="http://vocab.belgif.be/ns/building#LangCode" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#LangCode" data-placement="right"></a></h3>
+	      
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Description</dt><dd></dd>
+                    
+		    
+                    <dt>Properties</dt>
+		    
+                    <dd>There are no properties defined for this datatype.</dd>
+                    
+                  </dl>
+                </div>
+		
             </div>
             
             <div class="region region--no-space-top">
@@ -1714,6 +1840,7 @@
 		     
                     <dd>we have defined the following properties for this datatype:
                       <a href="#BuildingGeometry%3AhorizontalGeometryEstimatedAccuracy">horizontalGeometryEstimatedAccuracy</a>, 
+                      <a href="#BuildingGeometry%3AreferenceGeometry">referenceGeometry</a>, 
                       <a href="#BuildingGeometry%3AverticalGeometryEstimatedAccuracy">verticalGeometryEstimatedAccuracy</a>.</dd>
                     
                   </dl>
@@ -1750,6 +1877,25 @@
 			<td>0..1</td>
                         <td property="rdfs:comment">The estimated absolute positional accuracy of the (X,Y) coordinates of the building geometry.	</td>
                         <td property="skos:scopeNote">	</td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="BuildingGeometry%3AreferenceGeometry" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#referenceGeometry">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#referenceGeometry" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#referenceGeometry" data-placement="right">referenceGeometry</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#boolean" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#boolean" data-placement="right">Boolean</a>
+                            
+                          
+                        </td>
+			<td>1</td>
+                        <td property="rdfs:comment">The geometry to be taken into account by view services, for portrayal.</td>
+                        <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
                       
@@ -1796,7 +1942,6 @@
                     <dd>we have defined the following properties for this datatype:
                       <a href="#BuildingGeometry2D%3Ageometry">geometry</a>, 
                       <a href="#BuildingGeometry2D%3AhorizontalGeometryReference">horizontalGeometryReference</a>, 
-                      <a href="#BuildingGeometry2D%3AreferenceGeometry">referenceGeometry</a>, 
                       <a href="#BuildingGeometry2D%3AverticalGeometryReference">verticalGeometryReference</a>.</dd>
                     
                   </dl>
@@ -1836,10 +1981,10 @@
                         <td></td>
                       </tr>
                       
-                      <tr id="BuildingGeometry2D%3AhorizontalGeometryReference" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#horizontalGeometryReference">
+                      <tr id="BuildingGeometry2D%3AhorizontalGeometryReference" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#BuildingGeometry2D.horizontalGeometryReference">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#horizontalGeometryReference" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#horizontalGeometryReference" data-placement="right">horizontalGeometryReference</a>
+                            <a href="http://vocab.belgif.be/ns/building#BuildingGeometry2D.horizontalGeometryReference" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#BuildingGeometry2D.horizontalGeometryReference" data-placement="right">horizontalGeometryReference</a>
                           </code>
                         </td>
                         <td>
@@ -1851,25 +1996,6 @@
                         </td>
 			<td>1</td>
                         <td property="rdfs:comment">Element of the building that was captured by (X,Y) coordinates</td>
-                        <td property="skos:scopeNote"></td>
-                        <td></td>
-                      </tr>
-                      
-                      <tr id="BuildingGeometry2D%3AreferenceGeometry" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#referenceGeometry">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#referenceGeometry" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#referenceGeometry" data-placement="right">referenceGeometry</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			     
-			    <a href="http://www.w3.org/2001/XMLSchema#boolean" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#boolean" data-placement="right">Boolean</a>
-                            
-                          
-                        </td>
-			<td>1</td>
-                        <td property="rdfs:comment">The geometry to be taken into account by view services, for portrayal.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -1906,6 +2032,8 @@
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Description</dt><dd>Data type grouping the 3D geometry of a building or building part and the metadata information attached to this geometry.</dd>
+                    
+                    <dt>Usage</dt><dd>More information about LoD can be found via this link: https://docs.ogc.org/is/20-010/20-010.html#toc0</dd>
                     
 		     
 		    <dt>Subclass of <dt><dd>
@@ -2057,10 +2185,10 @@
 
                     <tbody class="supertype">
                       
-                      <tr id="BuildingGeometry3DLoD1%3AhorizontalGeometryReference" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#horizontalGeometryReference">
+                      <tr id="BuildingGeometry3DLoD1%3AhorizontalGeometryReference" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD1.horizontalGeometryReference">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#horizontalGeometryReference" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#horizontalGeometryReference" data-placement="right">horizontalGeometryReference</a>
+                            <a href="http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD1.horizontalGeometryReference" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD1.horizontalGeometryReference" data-placement="right">horizontalGeometryReference</a>
                           </code>
                         </td>
                         <td>
@@ -2103,7 +2231,7 @@
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="BuildingGeometry3DLoD2"><a href="http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD2" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD2" data-placement="right">BuildingGeometry3DLoD2</a></h3>
+              <h3 class="h3" id="BuildingGeometry3DLoD2"><a href="http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD2.horizontalGeometryReference" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD2.horizontalGeometryReference" data-placement="right">BuildingGeometry3DLoD2</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
@@ -2174,8 +2302,8 @@
                     <dt>Properties</dt>
 		     
                     <dd>we have defined the following properties for this datatype:
-                      <a href="#CurrentUse%3AcurrentUse">currentUse</a>, 
-                      <a href="#CurrentUse%3Apercentage">percentage</a>.</dd>
+                      <a href="#CurrentUse%3Apercentage">percentage</a>, 
+                      <a href="#CurrentUse%3Atype">type</a>.</dd>
                     
                   </dl>
                 </div>
@@ -2195,25 +2323,6 @@
 
                     <tbody class="supertype">
                       
-                      <tr id="CurrentUse%3AcurrentUse" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#currentUse">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#currentUse" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#currentUse" data-placement="right">currentUse</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			    
-			    <a href="#CurrentUseValue" data-placement="right">CurrentUseValue</a>
-			    
-                          
-                        </td>
-			<td>1</td>
-                        <td property="rdfs:comment">The current use of a building</td>
-                        <td property="skos:scopeNote">EXAMPLE: trade, entertainment, ...</td>
-                        <td></td>
-                      </tr>
-                      
                       <tr id="CurrentUse%3Apercentage" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#percentage">
                         <td>
                           <code property="rdfs:label">
@@ -2229,6 +2338,122 @@
                         </td>
 			<td>0..1</td>
                         <td property="rdfs:comment">The proportion of the building, given as a percentage, devoted to this current use.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="CurrentUse%3Atype" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#type">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#type" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#type" data-placement="right">type</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#CurrentUseValue" data-placement="right">CurrentUseValue</a>
+			    
+                          
+                        </td>
+			<td>1</td>
+                        <td property="rdfs:comment">The current use of a building</td>
+                        <td property="skos:scopeNote">EXAMPLE: trade, entertainment, ...</td>
+                        <td></td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                </div>
+                
+            </div>
+            
+            <div class="region region--no-space-top">
+              
+              <h3 class="h3" id="DateOfEvent"><a href="http://vocab.belgif.be/ns/building#DateOfEvent" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#DateOfEvent" data-placement="right">DateOfEvent</a></h3>
+	      
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Description</dt><dd>This data type includes the different possible ways to define the date of an event.</dd>
+                    
+		    
+                    <dt>Properties</dt>
+		     
+                    <dd>we have defined the following properties for this datatype:
+                      <a href="#DateOfEvent%3AanyPoint">anyPoint</a>, 
+                      <a href="#DateOfEvent%3AendDate">endDate</a>, 
+                      <a href="#DateOfEvent%3AstartDate">startDate</a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Property</th>
+                        <th class="data-table__header-title--sortable">Expects Type</th>
+			<th class="data-table__header-title--sortable">Cardinality</th>
+                        <th class="data-table__header-title--sortable">Description</th>
+                        <th class="data-table__header-title--sortable">Usage</th>
+                        <th class="data-table__header-title--sortable">Codelist</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                      
+                      <tr id="DateOfEvent%3AanyPoint" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#anyPoint">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#anyPoint" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#anyPoint" data-placement="right">anyPoint</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#dateTime" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#dateTime" data-placement="right">DateTime</a>
+                            
+                          
+                        </td>
+			<td>0..1</td>
+                        <td property="rdfs:comment">A date and time of any point of the event, between its beginning and its end.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="DateOfEvent%3AendDate" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#endDate">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#endDate" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#endDate" data-placement="right">endDate</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#dateTime" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#dateTime" data-placement="right">DateTime</a>
+                            
+                          
+                        </td>
+			<td>0..1</td>
+                        <td property="rdfs:comment">Date and time when the event ended.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="DateOfEvent%3AstartDate" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#startDate">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#startDate" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#startDate" data-placement="right">startDate</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#dateTime" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#dateTime" data-placement="right">DateTime</a>
+                            
+                          
+                        </td>
+			<td>0..1</td>
+                        <td property="rdfs:comment">Date and time when the event begun.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -2338,7 +2563,106 @@
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="Elevation"><a href="https://schema.org/elevation" data-toggle="tooltip" data-content="https://schema.org/elevation" data-placement="right">Elevation</a></h3>
+              <h3 class="h3" id="Document"><a href="https://schema.org/DigitalDocument" data-toggle="tooltip" data-content="https://schema.org/DigitalDocument" data-placement="right">Document</a></h3>
+	      
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Description</dt><dd>Any document providing information about a building or building unit.</dd>
+                    
+                    <dt>Usage</dt><dd>EXAMPLES: the building permit, a photo of facade or inner yard, a sketch of interior, the building code, the energy performance assessment, an emergency plan</dd>
+                    
+		    
+                    <dt>Properties</dt>
+		     
+                    <dd>we have defined the following properties for this datatype:
+                      <a href="#Document%3ADate">Date</a>, 
+                      <a href="#Document%3AdocumentDescription">documentDescription</a>, 
+                      <a href="#Document%3AsourceStatus">sourceStatus</a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Property</th>
+                        <th class="data-table__header-title--sortable">Expects Type</th>
+			<th class="data-table__header-title--sortable">Cardinality</th>
+                        <th class="data-table__header-title--sortable">Description</th>
+                        <th class="data-table__header-title--sortable">Usage</th>
+                        <th class="data-table__header-title--sortable">Codelist</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                      
+                      <tr id="Document%3ADate" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#date">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#date" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#date" data-placement="right">Date</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#dateTime" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#dateTime" data-placement="right">DateTime</a>
+                            
+                          
+                        </td>
+			<td>0..1</td>
+                        <td property="rdfs:comment">Date of validity of the document.</td>
+                        <td property="skos:scopeNote">EXAMPLES: the date the photo was taken, the date the sketch was done or approved, the date the building permit was accepted</td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="Document%3AdocumentDescription" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#documentDescription">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#documentDescription" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#documentDescription" data-placement="right">documentDescription</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Langstring" data-placement="right">Langstring</a>
+			    
+                          
+                        </td>
+			<td>0..1</td>
+                        <td property="rdfs:comment">A short text providing overview of the document content. May be just title of the document.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="Document%3AsourceStatus" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#sourceStatus">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#sourceStatus" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#sourceStatus" data-placement="right">sourceStatus</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#SourceStatusValue" data-placement="right">SourceStatusValue</a>
+			    
+                          
+                        </td>
+			<td>1</td>
+                        <td property="rdfs:comment">The status of the document, i.e. this attribute indicates if the document comes from official source or not.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                </div>
+                
+            </div>
+            
+            <div class="region region--no-space-top">
+              
+              <h3 class="h3" id="Elevation"><a href="http://vocab.belgif.be/ns/building#Elevation" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#Elevation" data-placement="right">Elevation</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
@@ -2419,14 +2743,14 @@
 	      
                 <div class="region region--no-space-top">
                   <dl>
-                    <dt>Description</dt><dd>The location where the building unit can be entered.</dd>
+                    <dt>Description</dt><dd>The location where the building (unit) can be entered or exited.</dd>
                     
 		    
                     <dt>Properties</dt>
 		     
                     <dd>we have defined the following properties for this datatype:
                       <a href="#EntranceLocation%3Aaddress">address</a>, 
-                      <a href="#EntranceLocation%3AgeoCoordinates">geoCoordinates</a>.</dd>
+                      <a href="#EntranceLocation%3Aposition">position</a>.</dd>
                     
                   </dl>
                 </div>
@@ -2459,16 +2783,16 @@
 			    
                           
                         </td>
-			<td>1</td>
+			<td>0..1</td>
                         <td property="rdfs:comment">The address linked to the location of the entrance.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
                       
-                      <tr id="EntranceLocation%3AgeoCoordinates" typeof="rdfs:Property" resource="https://schema.org/GeoCoordinates">
+                      <tr id="EntranceLocation%3Aposition" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#Geometry">
                         <td>
                           <code property="rdfs:label">
-                            <a href="https://schema.org/GeoCoordinates" data-toggle="tooltip" data-content="https://schema.org/GeoCoordinates" data-placement="right">geoCoordinates</a>
+                            <a href="http://www.w3.org/ns/locn#Geometry" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#Geometry" data-placement="right">position</a>
                           </code>
                         </td>
                         <td>
@@ -2478,105 +2802,8 @@
 			    
                           
                         </td>
-			<td>1</td>
+			<td>0..1</td>
                         <td property="rdfs:comment">Holder of the coordinates of a position in a coordinate reference system.</td>
-                        <td property="skos:scopeNote"></td>
-                        <td></td>
-                      </tr>
-                      
-                    </tbody>
-                  </table>
-                </div>
-                
-            </div>
-            
-            <div class="region region--no-space-top">
-              
-              <h3 class="h3" id="EventDate"><a href="https://data.vlaanderen.be/ns/generiek#Gebeurtenisdatum" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/generiek#Gebeurtenisdatum" data-placement="right">EventDate</a></h3>
-	      
-                <div class="region region--no-space-top">
-                  <dl>
-                    <dt>Description</dt><dd>This data type includes the different possible ways to define the date of an event.</dd>
-                    
-		    
-                    <dt>Properties</dt>
-		     
-                    <dd>we have defined the following properties for this datatype:
-                      <a href="#EventDate%3AanyPoint">anyPoint</a>, 
-                      <a href="#EventDate%3AendDate">endDate</a>, 
-                      <a href="#EventDate%3AstartDate">startDate</a>.</dd>
-                    
-                  </dl>
-                </div>
-		 
-                <div class="u-table-overflow">
-                  <table class="data-table">
-                    <thead>
-                      <tr class="data-table__header">
-                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Property</th>
-                        <th class="data-table__header-title--sortable">Expects Type</th>
-			<th class="data-table__header-title--sortable">Cardinality</th>
-                        <th class="data-table__header-title--sortable">Description</th>
-                        <th class="data-table__header-title--sortable">Usage</th>
-                        <th class="data-table__header-title--sortable">Codelist</th>
-                      </tr>
-                    </thead>
-
-                    <tbody class="supertype">
-                      
-                      <tr id="EventDate%3AanyPoint" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/generiek#tussentijdstip">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="https://data.vlaanderen.be/ns/generiek#tussentijdstip" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/generiek#tussentijdstip" data-placement="right">anyPoint</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			     
-			    <a href="http://www.w3.org/2001/XMLSchema#dateTime" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#dateTime" data-placement="right">DateTime</a>
-                            
-                          
-                        </td>
-			<td>0..1</td>
-                        <td property="rdfs:comment">A date and time of any point of the event, between its beginning and its end.</td>
-                        <td property="skos:scopeNote"></td>
-                        <td></td>
-                      </tr>
-                      
-                      <tr id="EventDate%3AendDate" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/generiek#einde">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="https://data.vlaanderen.be/ns/generiek#einde" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/generiek#einde" data-placement="right">endDate</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			     
-			    <a href="http://www.w3.org/2001/XMLSchema#dateTime" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#dateTime" data-placement="right">DateTime</a>
-                            
-                          
-                        </td>
-			<td>0..1</td>
-                        <td property="rdfs:comment">Date and time when the event ended.</td>
-                        <td property="skos:scopeNote"></td>
-                        <td></td>
-                      </tr>
-                      
-                      <tr id="EventDate%3AstartDate" typeof="rdfs:Property" resource="https://data.vlaanderen.be/ns/generiek#begin">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="https://data.vlaanderen.be/ns/generiek#begin" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/generiek#begin" data-placement="right">startDate</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			     
-			    <a href="http://www.w3.org/2001/XMLSchema#dateTime" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#dateTime" data-placement="right">DateTime</a>
-                            
-                          
-                        </td>
-			<td>0..1</td>
-                        <td property="rdfs:comment">Date and time when the event begun.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -2696,7 +2923,9 @@
                     <dt>Properties</dt>
 		     
                     <dd>we have defined the following properties for this datatype:
-                      <a href="#GeographicalName%3Alanguage">language</a>, 
+                      <a href="#GeographicalName%3AnameStatus">nameStatus</a>, 
+                      <a href="#GeographicalName%3Anativeness">nativeness</a>, 
+                      <a href="#GeographicalName%3AsourceOfName">sourceOfName</a>, 
                       <a href="#GeographicalName%3Aspelling">spelling</a>.</dd>
                     
                   </dl>
@@ -2717,17 +2946,59 @@
 
                     <tbody class="supertype">
                       
-                      <tr id="GeographicalName%3Alanguage" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#language">
+                      <tr id="GeographicalName%3AnameStatus" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#nameStatus">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#language" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#language" data-placement="right">language</a>
+                            <a href="http://vocab.belgif.be/ns/building#nameStatus" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#nameStatus" data-placement="right">nameStatus</a>
                           </code>
                         </td>
                         <td>
                           
+			    
+			    <a href="#NameStatusValue" data-placement="right">NameStatusValue</a>
+			    
+                          
                         </td>
-			<td>1</td>
-                        <td property="rdfs:comment">Language of the name, given as a three letters code, in accordance with either ISO 639-3 or ISO 639-5.</td>
+			<td>0..1</td>
+                        <td property="rdfs:comment">Qualitative information enabling to discern which credit should be given to the name with respect to its standardisation and/or its topicality.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="GeographicalName%3Anativeness" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#nativeness">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#nativeness" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#nativeness" data-placement="right">nativeness</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#NativenessValue" data-placement="right">NativenessValue</a>
+			    
+                          
+                        </td>
+			<td>0..1</td>
+                        <td property="rdfs:comment">Information enabling to acknowledge if the name is the one that is/was used in the area where the spatial object is situated at the instant when the name is/was in use.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="GeographicalName%3AsourceOfName" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#sourceOfName">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#sourceOfName" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#sourceOfName" data-placement="right">sourceOfName</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Langstring" data-placement="right">Langstring</a>
+			    
+                          
+                        </td>
+			<td>0..1</td>
+                        <td property="rdfs:comment">Original data source from which the geographical name is taken from and integrated in the data set providing/publishing it. For some named spatial objects it might refer again to the publishing data set if no other information is available.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -2739,6 +3010,10 @@
                           </code>
                         </td>
                         <td>
+                          
+			    
+			    <a href="#Langstring" data-placement="right">Langstring</a>
+			    
                           
                         </td>
 			<td>1</td>
@@ -2766,6 +3041,7 @@
 		     
                     <dd>we have defined the following properties for this datatype:
                       <a href="#Geometry%3Agml">gml</a>, 
+                      <a href="#Geometry%3Amethod">method</a>, 
                       <a href="#Geometry%3Awkt">wkt</a>.</dd>
                     
                   </dl>
@@ -2801,6 +3077,25 @@
                         </td>
 			<td>1</td>
                         <td property="rdfs:comment">Geometry expressed in gml format.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="Geometry%3Amethod" typeof="rdfs:Property" resource="http://www.opengis.net/ont/sf#method">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://www.opengis.net/ont/sf#method" data-toggle="tooltip" data-content="http://www.opengis.net/ont/sf#method" data-placement="right">method</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#MeasuringMethod" data-placement="right">MeasuringMethod</a>
+			    
+                          
+                        </td>
+			<td>1</td>
+                        <td property="rdfs:comment">The way the point was determined.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -3051,7 +3346,7 @@
                         <td>
                           
 			    
-			    <a href="#Langstring" data-placement="right">Langstring</a>
+			    <a href="#Literal" data-placement="right">Literal</a>
 			    
                           
                         </td>
@@ -3068,6 +3363,10 @@
                           </code>
                         </td>
                         <td>
+                          
+			    
+			    <a href="#StructuredIdentificator" data-placement="right">StructuredIdentificator</a>
+			    
                           
                         </td>
 			<td>0..1</td>
@@ -3092,12 +3391,71 @@
                     
 		    
                     <dt>Properties</dt>
-		    
-                    <dd>There are no properties defined for this datatype.</dd>
+		     
+                    <dd>we have defined the following properties for this datatype:
+                      <a href="#Langstring%3ALangString">LangString</a>, 
+                      <a href="#Langstring%3AString">String</a>.</dd>
                     
                   </dl>
                 </div>
-		
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Property</th>
+                        <th class="data-table__header-title--sortable">Expects Type</th>
+			<th class="data-table__header-title--sortable">Cardinality</th>
+                        <th class="data-table__header-title--sortable">Description</th>
+                        <th class="data-table__header-title--sortable">Usage</th>
+                        <th class="data-table__header-title--sortable">Codelist</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                      
+                      <tr id="Langstring%3ALangString" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#language">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#language" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#language" data-placement="right">LangString</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#LangCode" data-placement="right">LangCode</a>
+			    
+                          
+                        </td>
+			<td>1</td>
+                        <td property="rdfs:comment">Language code of the string.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="Langstring%3AString" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#string">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#string" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#string" data-placement="right">String</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">String</a>
+                            
+                          
+                        </td>
+			<td>1</td>
+                        <td property="rdfs:comment"></td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                </div>
+                
             </div>
             
             <div class="region region--no-space-top">
@@ -3107,6 +3465,8 @@
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Description</dt><dd>The measure of distance as an integral, i.e. the limit of an infinite sum of distances between points on a curve.  For example the length of curve, the perimeter of a polygon as the length of the boundary.</dd>
+                    
+                    <dt>Usage</dt><dd>This can be substituted by other classes like udt:Quantity, qudt:QuantityValue or ucum</dd>
                     
 		    
                     <dt>Properties</dt>
@@ -3125,24 +3485,6 @@
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Description</dt><dd>The class of literal values, eg. textual strings and integers.</dd>
-                    
-		    
-                    <dt>Properties</dt>
-		    
-                    <dd>There are no properties defined for this datatype.</dd>
-                    
-                  </dl>
-                </div>
-		
-            </div>
-            
-            <div class="region region--no-space-top">
-              
-              <h3 class="h3" id="MeasuringMethod"><a href="http://vocab.belgif.be/ns/building#MeasuringMethod" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#MeasuringMethod" data-placement="right">MeasuringMethod</a></h3>
-	      
-                <div class="region region--no-space-top">
-                  <dl>
-                    <dt>Description</dt><dd>The way something is measured.</dd>
                     
 		    
                     <dt>Properties</dt>
@@ -3233,6 +3575,42 @@
                         <a href="#Geometry">Geometry</a>
 		   </dd>
                     
+                    <dt>Properties</dt>
+		    
+                    <dd>There are no properties defined for this datatype.</dd>
+                    
+                  </dl>
+                </div>
+		
+            </div>
+            
+            <div class="region region--no-space-top">
+              
+              <h3 class="h3" id="StructuredIdentificator"><a href="https://data.vlaanderen.be/ns/generiek#GestructureerdeIdentificator" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/generiek#GestructureerdeIdentificator" data-placement="right">StructuredIdentificator</a></h3>
+	      
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Description</dt><dd>Identifier of an object broken down into its parts.</dd>
+                    
+		    
+                    <dt>Properties</dt>
+		    
+                    <dd>There are no properties defined for this datatype.</dd>
+                    
+                  </dl>
+                </div>
+		
+            </div>
+            
+            <div class="region region--no-space-top">
+              
+              <h3 class="h3" id="Text"><a href="http://www.w3.org/2001/XMLSchema#string" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#string" data-placement="right">Text</a></h3>
+	      
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Description</dt><dd>A linear sequence of characters, words, or other data.</dd>
+                    
+		    
                     <dt>Properties</dt>
 		    
                     <dd>There are no properties defined for this datatype.</dd>

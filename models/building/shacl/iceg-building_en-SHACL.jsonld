@@ -65,6 +65,16 @@
           "sh:path": "http://vocab.belgif.be/ns/building#buildingNature"
         },
         {
+          "sh:class": "http://vocab.belgif.be/ns/building#BuildingUnit",
+          "sh:definition": {
+            "en": "Building unit(s) being part of the building."
+          },
+          "sh:name": {
+            "en": "buildingUnit"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/building#buildingUnit"
+        },
+        {
           "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
             "en": "Values indicating the condition of a construction"
@@ -77,16 +87,6 @@
           "sh:path": "http://vocab.belgif.be/ns/building#conditionOfConstruction"
         },
         {
-          "sh:class": "http://vocab.belgif.be/ns/building#BuildingUnit",
-          "sh:definition": {
-            "en": "The building unit(s) being part of the building."
-          },
-          "sh:name": {
-            "en": "consistsOf"
-          },
-          "sh:path": "http://vocab.belgif.be/ns/building#consistsOf"
-        },
-        {
           "sh:class": "http://vocab.belgif.be/ns/building#CurrentUse",
           "sh:definition": {
             "en": "Activity hosted within the building. This attribute addresses mainly the buildings hosting human activities."
@@ -94,10 +94,10 @@
           "sh:name": {
             "en": "currentUse"
           },
-          "sh:path": "http://vocab.belgif.be/ns/building#currentUse"
+          "sh:path": "http://vocab.belgif.be/ns/building#Building.currentUse"
         },
         {
-          "sh:datatype": "https://data.vlaanderen.be/ns/generiek#Gebeurtenisdatum",
+          "sh:datatype": "http://vocab.belgif.be/ns/building#DateOfEvent",
           "sh:definition": {
             "en": "Date of construction."
           },
@@ -105,10 +105,10 @@
           "sh:name": {
             "en": "dateOfConstruction"
           },
-          "sh:path": "http://vocab.belgif.be/ns/building#dateOfConstruction"
+          "sh:path": "http://vocab.belgif.be/ns/building#Building.dateOfConstruction"
         },
         {
-          "sh:datatype": "https://data.vlaanderen.be/ns/generiek#Gebeurtenisdatum",
+          "sh:datatype": "http://vocab.belgif.be/ns/building#DateOfEvent",
           "sh:definition": {
             "en": "Date of demolition."
           },
@@ -116,27 +116,47 @@
           "sh:name": {
             "en": "dateOfDemolition"
           },
-          "sh:path": "http://vocab.belgif.be/ns/building#dateOfDemolition"
+          "sh:path": "http://vocab.belgif.be/ns/building#Building.dateOfDemolition"
         },
         {
-          "sh:datatype": "https://data.vlaanderen.be/ns/generiek#Gebeurtenisdatum",
+          "sh:datatype": "http://vocab.belgif.be/ns/building#DateOfEvent",
           "sh:definition": {
             "en": "Date of renovation."
           },
           "sh:name": {
             "en": "dateOfRenovation"
           },
-          "sh:path": "http://vocab.belgif.be/ns/building#dateOfRenovation"
+          "sh:path": "http://vocab.belgif.be/ns/building#Building.dateOfRenovation"
         },
         {
-          "sh:datatype": "https://schema.org/elevation",
+          "sh:class": "https://schema.org/DigitalDocument",
+          "sh:definition": {
+            "en": "Any document providing information about the building."
+          },
+          "sh:name": {
+            "en": "Document"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/building#document"
+        },
+        {
+          "sh:datatype": "http://vocab.belgif.be/ns/building#Elevation",
           "sh:definition": {
             "en": "Vertically-constrained dimensional property consisting of an absolute measure referenced to a well-defined surface which is commonly taken as origin (geoïd, water level, etc.)."
           },
           "sh:name": {
             "en": "elevation"
           },
-          "sh:path": "https://schema.org/elevation"
+          "sh:path": "http://vocab.belgif.be/ns/building#Building.elevation"
+        },
+        {
+          "sh:datatype": "http://vocab.belgif.be/ns/building#EntranceLocation",
+          "sh:definition": {
+            "en": "The location where the building can be entered or exited."
+          },
+          "sh:name": {
+            "en": "entranceLocation"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/building#entranceLocation"
         },
         {
           "sh:class": "http://vocab.belgif.be/ns/building#ExternalReference",
@@ -156,7 +176,7 @@
           "sh:name": {
             "en": "geometry"
           },
-          "sh:path": "http://vocab.belgif.be/ns/building#Building.geometry"
+          "sh:path": "http://www.w3.org/ns/locn#Geometry"
         },
         {
           "sh:class": "http://vocab.belgif.be/ns/building#HeightAboveGround",
@@ -173,8 +193,6 @@
           "sh:definition": {
             "en": "Identifier of the Building."
           },
-          "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
             "en": "identifier"
           },
@@ -193,7 +211,7 @@
         {
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#integer",
           "sh:definition": {
-            "en": "The number of dwellings. A dwelling is a residential unit which may consist of one or several rooms designed for the occupation of households."
+            "en": "Number of dwellings. A dwelling is a residential unit which may consist of one or several rooms designed for the occupation of households."
           },
           "sh:maxCount": "1",
           "sh:name": {
@@ -241,6 +259,18 @@
             "en": "horizontalGeometryEstimatedAccuracy"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#horizontalGeometryEstimatedAccuracy"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#boolean",
+          "sh:definition": {
+            "en": "The geometry to be taken into account by view services, for portrayal."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "referenceGeometry"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/building#referenceGeometry"
         },
         {
           "sh:datatype": "https://data.vlaanderen.be/ns/weg#Lengte",
@@ -322,7 +352,7 @@
           "sh:name": {
             "en": "horizontalGeometryReference"
           },
-          "sh:path": "http://vocab.belgif.be/ns/building#horizontalGeometryReference"
+          "sh:path": "http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD1.horizontalGeometryReference"
         },
         {
           "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -355,7 +385,7 @@
           "sh:path": "http://vocab.belgif.be/ns/building#horizontalGeometryReference"
         }
       ],
-      "sh:targetClass": "http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD2"
+      "sh:targetClass": "http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD2.horizontalGeometryReference"
     },
     {
       "@id": "https://semiceu.github.io/shacl/iceg-building_en#BuildingUnitShape",
@@ -373,6 +403,18 @@
           "sh:path": "https://www.w3.org/ns/locn#Address"
         },
         {
+          "sh:class": "http://vocab.belgif.be/ns/building#Building",
+          "sh:definition": {
+            "en": "Building of which building unit(s) are being a part."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "building"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/building#building"
+        },
+        {
           "sh:class": "http://vocab.belgif.be/ns/building#CurrentUse",
           "sh:definition": {
             "en": "Activity hosted within the building unit. This attribute addresses mainly the building units hosting human activities."
@@ -383,19 +425,51 @@
           "sh:path": "http://vocab.belgif.be/ns/building#Buildingunit.currentUse"
         },
         {
-          "sh:datatype": "https://data.vlaanderen.be/ns/generiek#Gebeurtenisdatum",
+          "sh:datatype": "http://vocab.belgif.be/ns/building#DateOfEvent",
+          "sh:definition": {
+            "en": "Date of construction."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "dateOfConstruction"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/building#BuildingUnit.dateOfConstruction"
+        },
+        {
+          "sh:datatype": "http://vocab.belgif.be/ns/building#DateOfEvent",
+          "sh:definition": {
+            "en": "Date of demolition"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "dateOfDemolition"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/building#BuildingUnit.dateOfDemolition"
+        },
+        {
+          "sh:datatype": "http://vocab.belgif.be/ns/building#DateOfEvent",
           "sh:definition": {
             "en": "Date of renovation."
           },
           "sh:name": {
             "en": "dateOfRenovation"
           },
-          "sh:path": "http://vocab.belgif.be/ns/building#dateOfRenovation"
+          "sh:path": "http://vocab.belgif.be/ns/building#BuildingUnit.dateOfRenovation"
+        },
+        {
+          "sh:class": "https://schema.org/DigitalDocument",
+          "sh:definition": {
+            "en": "Any document providing information about the building unit."
+          },
+          "sh:name": {
+            "en": "Document"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/building#document"
         },
         {
           "sh:datatype": "http://vocab.belgif.be/ns/building#EntranceLocation",
           "sh:definition": {
-            "en": "The location where the building unit can be entered."
+            "en": "The location where the building unit can be entered or exited."
           },
           "sh:minCount": "1",
           "sh:name": {
@@ -411,31 +485,17 @@
           "sh:name": {
             "en": "geometry"
           },
-          "sh:path": "http://vocab.belgif.be/ns/building#Buildingunit.geometry"
+          "sh:path": "http://www.w3.org/ns/locn#Geometry"
         },
         {
           "sh:class": "http://www.w3.org/ns/adms#Identifier",
           "sh:definition": {
             "en": "The unique identifier of a building unit."
           },
-          "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
             "en": "identifier"
           },
           "sh:path": "http://www.w3.org/ns/adms#identifier"
-        },
-        {
-          "sh:class": "http://vocab.belgif.be/ns/building#Building",
-          "sh:definition": {
-            "en": "The building of which building unit(s) are being a part."
-          },
-          "sh:maxCount": "1",
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "isPartOf"
-          },
-          "sh:path": "http://vocab.belgif.be/ns/building#isPartOf"
         }
       ],
       "sh:targetClass": "http://vocab.belgif.be/ns/building#BuildingUnit"
@@ -446,18 +506,6 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
-          "sh:definition": {
-            "en": "The current use of a building"
-          },
-          "sh:maxCount": "1",
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "currentUse"
-          },
-          "sh:path": "http://vocab.belgif.be/ns/building#currentUse"
-        },
-        {
           "sh:datatype": "http://www.w3.org/2001/XMLSchema#integer",
           "sh:definition": {
             "en": "The proportion of the building, given as a percentage, devoted to this current use."
@@ -467,9 +515,94 @@
             "en": "percentage"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#percentage"
+        },
+        {
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:definition": {
+            "en": "The current use of a building"
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "type"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/building#type"
         }
       ],
       "sh:targetClass": "http://vocab.belgif.be/ns/building#CurrentUse"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-building_en#DateOfEventShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "sh:definition": {
+            "en": "A date and time of any point of the event, between its beginning and its end."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "anyPoint"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/building#anyPoint"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "sh:definition": {
+            "en": "Date and time when the event ended."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "endDate"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/building#endDate"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "sh:definition": {
+            "en": "Date and time when the event begun."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "startDate"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/building#startDate"
+        }
+      ],
+      "sh:targetClass": "http://vocab.belgif.be/ns/building#DateOfEvent"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-building_en#ElevationShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:definition": {
+            "en": "Element where the elevation was measured."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "elevationReference"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/building#elevationReference"
+        },
+        {
+          "sh:datatype": "http://www.opengis.net/ont/sf#DirectPosition",
+          "sh:definition": {
+            "en": "Value of the elevation."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "elevationValue"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/building#elevationValue"
+        }
+      ],
+      "sh:targetClass": "http://vocab.belgif.be/ns/building#Elevation"
     },
     {
       "@id": "https://semiceu.github.io/shacl/iceg-building_en#EntranceLocationShape",
@@ -482,7 +615,6 @@
             "en": "The address linked to the location of the entrance."
           },
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
             "en": "address"
           },
@@ -494,11 +626,10 @@
             "en": "Holder of the coordinates of a position in a coordinate reference system."
           },
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
-            "en": "geoCoordinates"
+            "en": "position"
           },
-          "sh:path": "https://schema.org/GeoCoordinates"
+          "sh:path": "http://www.w3.org/ns/locn#Geometry"
         }
       ],
       "sh:targetClass": "http://vocab.belgif.be/ns/building#EntranceLocation"
@@ -553,17 +684,40 @@
       "sh:closed": false,
       "sh:property": [
         {
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
-            "en": "Language of the name, given as a three letters code, in accordance with either ISO 639-3 or ISO 639-5."
+            "en": "Qualitative information enabling to discern which credit should be given to the name with respect to its standardisation and/or its topicality."
           },
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
-            "en": "language"
+            "en": "nameStatus"
           },
-          "sh:path": "http://vocab.belgif.be/ns/building#language"
+          "sh:path": "http://vocab.belgif.be/ns/building#nameStatus"
         },
         {
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:definition": {
+            "en": "Information enabling to acknowledge if the name is the one that is/was used in the area where the spatial object is situated at the instant when the name is/was in use."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "nativeness"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/building#nativeness"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:definition": {
+            "en": "Original data source from which the geographical name is taken from and integrated in the data set providing/publishing it. For some named spatial objects it might refer again to the publishing data set if no other information is available."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "sourceOfName"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/building#sourceOfName"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
             "en": "A proper way of writing the geographical name."
           },
@@ -641,11 +795,18 @@
       "sh:targetClass": "http://vocab.belgif.be/ns/building#HeightStatusValue"
     },
     {
-      "@id": "https://semiceu.github.io/shacl/iceg-building_en#MeasuringMethodShape",
+      "@id": "https://semiceu.github.io/shacl/iceg-building_en#LangCodeShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],
-      "sh:targetClass": "http://vocab.belgif.be/ns/building#MeasuringMethod"
+      "sh:targetClass": "http://vocab.belgif.be/ns/building#LangCode"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-building_en#CadastralParcelShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://vocab.belgif.be/ns/building#CadastralParcel"
     },
     {
       "@id": "https://semiceu.github.io/shacl/iceg-building_en#3DobjectShape",
@@ -671,7 +832,7 @@
           "sh:path": "http://www.opengis.net/ont/geosparql#asGML"
         },
         {
-          "sh:datatype": "http://vocab.belgif.be/ns/building#MeasuringMethod",
+          "sh:datatype": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
             "en": "The way the point was determined."
           },
@@ -728,7 +889,29 @@
       "@id": "https://semiceu.github.io/shacl/iceg-building_en#LangStringShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
-      "sh:property": [],
+      "sh:property": [
+        {
+          "sh:class": "http://vocab.belgif.be/ns/building#LangCode",
+          "sh:definition": {
+            "en": "Language code of the string."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "LangString"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/building#language"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "String"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/building#string"
+        }
+      ],
       "sh:targetClass": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     {
@@ -737,6 +920,13 @@
       "sh:closed": false,
       "sh:property": [],
       "sh:targetClass": "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-building_en#TextShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://www.w3.org/2001/XMLSchema#string"
     },
     {
       "@id": "https://semiceu.github.io/shacl/iceg-building_en#BuildingNatureValueShape",
@@ -768,6 +958,34 @@
     },
     {
       "@id": "https://semiceu.github.io/shacl/iceg-building_en#HorizontalGeometryReferenceValueShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-building_en#MeasuringMethodShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-building_en#NameStatusValueShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-building_en#SourceStatusValueShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-building_en#NativenessValueShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],
@@ -812,7 +1030,7 @@
           "sh:path": "http://purl.org/dc/terms/issued"
         },
         {
-          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
           "sh:definition": {
             "en": "String used to uniquely identify the object. "
           },
@@ -823,6 +1041,7 @@
           "sh:path": "http://www.w3.org/2004/02/skos/core#notation"
         },
         {
+          "sh:class": "https://data.vlaanderen.be/ns/generiek#GestructureerdeIdentificator",
           "sh:definition": {
             "en": "Identifier of the object broken down into its parts."
           },
@@ -1035,6 +1254,18 @@
           "sh:path": "http://www.opengis.net/ont/geosparql#asGML"
         },
         {
+          "sh:datatype": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:definition": {
+            "en": "The way the point was determined."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "method"
+          },
+          "sh:path": "http://www.opengis.net/ont/sf#method"
+        },
+        {
           "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
           "sh:definition": {
             "en": "Geometry expressed in wkt format."
@@ -1076,19 +1307,7 @@
           "sh:name": {
             "en": "horizontalGeometryReference"
           },
-          "sh:path": "http://vocab.belgif.be/ns/building#horizontalGeometryReference"
-        },
-        {
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#boolean",
-          "sh:definition": {
-            "en": "The geometry to be taken into account by view services, for portrayal."
-          },
-          "sh:maxCount": "1",
-          "sh:minCount": "1",
-          "sh:name": {
-            "en": "referenceGeometry"
-          },
-          "sh:path": "http://vocab.belgif.be/ns/building#referenceGeometry"
+          "sh:path": "http://vocab.belgif.be/ns/building#BuildingGeometry2D.horizontalGeometryReference"
         },
         {
           "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -1105,52 +1324,11 @@
       "sh:targetClass": "https://data.vlaanderen.be/ns/gebouw#2DGebouwgeometrie"
     },
     {
-      "@id": "https://semiceu.github.io/shacl/iceg-building_en#EventDateShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [
-        {
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
-          "sh:definition": {
-            "en": "A date and time of any point of the event, between its beginning and its end."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "anyPoint"
-          },
-          "sh:path": "https://data.vlaanderen.be/ns/generiek#tussentijdstip"
-        },
-        {
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
-          "sh:definition": {
-            "en": "Date and time when the event ended."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "endDate"
-          },
-          "sh:path": "https://data.vlaanderen.be/ns/generiek#einde"
-        },
-        {
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
-          "sh:definition": {
-            "en": "Date and time when the event begun."
-          },
-          "sh:maxCount": "1",
-          "sh:name": {
-            "en": "startDate"
-          },
-          "sh:path": "https://data.vlaanderen.be/ns/generiek#begin"
-        }
-      ],
-      "sh:targetClass": "https://data.vlaanderen.be/ns/generiek#Gebeurtenisdatum"
-    },
-    {
-      "@id": "https://semiceu.github.io/shacl/iceg-building_en#CadastralParcelShape",
+      "@id": "https://semiceu.github.io/shacl/iceg-building_en#StructuredIdentificatorShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [],
-      "sh:targetClass": "https://data.vlaanderen.be/ns/perceel#KadastraalPlanperceel"
+      "sh:targetClass": "https://data.vlaanderen.be/ns/generiek#GestructureerdeIdentificator"
     },
     {
       "@id": "https://semiceu.github.io/shacl/iceg-building_en#LengthShape",
@@ -1160,36 +1338,46 @@
       "sh:targetClass": "https://data.vlaanderen.be/ns/weg#Lengte"
     },
     {
-      "@id": "https://semiceu.github.io/shacl/iceg-building_en#ElevationShape",
+      "@id": "https://semiceu.github.io/shacl/iceg-building_en#DocumentShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
         {
-          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
           "sh:definition": {
-            "en": "Element where the elevation was measured."
+            "en": "Date of validity of the document."
           },
           "sh:maxCount": "1",
-          "sh:minCount": "1",
           "sh:name": {
-            "en": "elevationReference"
+            "en": "Date"
           },
-          "sh:path": "http://vocab.belgif.be/ns/building#elevationReference"
+          "sh:path": "http://vocab.belgif.be/ns/building#date"
         },
         {
-          "sh:datatype": "http://www.opengis.net/ont/sf#DirectPosition",
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
           "sh:definition": {
-            "en": "Value of the elevation."
+            "en": "A short text providing overview of the document content. May be just title of the document."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "documentDescription"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/building#documentDescription"
+        },
+        {
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:definition": {
+            "en": "The status of the document, i.e. this attribute indicates if the document comes from official source or not."
           },
           "sh:maxCount": "1",
           "sh:minCount": "1",
           "sh:name": {
-            "en": "elevationValue"
+            "en": "sourceStatus"
           },
-          "sh:path": "http://vocab.belgif.be/ns/building#elevationValue"
+          "sh:path": "http://vocab.belgif.be/ns/building#sourceStatus"
         }
       ],
-      "sh:targetClass": "https://schema.org/elevation"
+      "sh:targetClass": "https://schema.org/DigitalDocument"
     }
   ]
 }
