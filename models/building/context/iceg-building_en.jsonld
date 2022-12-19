@@ -8,7 +8,7 @@
     },
     "AddressRepresentation.adminUnit": {
       "@container": "@set",
-      "@id": "https://data.vlaanderen.be/ns/adres#adminUnit",
+      "@id": "http://vocab.belgif.be/ns/building#adminUnit",
       "@type": "@id"
     },
     "AddressRepresentation.administrativeUnitLevel1": {
@@ -20,11 +20,11 @@
       "@type": "@id"
     },
     "AddressRepresentation.boxNumber": {
-      "@id": "https://data.vlaanderen.be/ns/adres#Adresvoorstelling.busnummer",
+      "@id": "http://vocab.belgif.be/ns/building#Adresvoorstelling.busnummer",
       "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
     "AddressRepresentation.country": {
-      "@id": "https://data.vlaanderen.be/ns/adres#country",
+      "@id": "http://vocab.belgif.be/ns/building#country",
       "@type": "@id"
     },
     "AddressRepresentation.fullAddress": {
@@ -32,7 +32,7 @@
       "@type": "@id"
     },
     "AddressRepresentation.housenumber": {
-      "@id": "https://data.vlaanderen.be/ns/adres#Adresvoorstelling.huisnummer",
+      "@id": "http://vocab.belgif.be/ns/building#Adresvoorstelling.huisnummer",
       "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
     "AddressRepresentation.locationName": {
@@ -46,7 +46,7 @@
       "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
     "AddressRepresentation.municipalityName": {
-      "@id": "https://data.vlaanderen.be/ns/adres#municipalityName",
+      "@id": "http://vocab.belgif.be/ns/building#municipalityName",
       "@type": "@id"
     },
     "AddressRepresentation.poBox": {
@@ -62,7 +62,7 @@
       "@type": "http://www.w3.org/2001/XMLSchema#string"
     },
     "AddressRepresentation.reference": {
-      "@id": "https://data.vlaanderen.be/ns/adres#reference",
+      "@id": "http://vocab.belgif.be/ns/building#reference",
       "@type": "@id"
     },
     "AddressRepresentation.streetname": {
@@ -162,7 +162,7 @@
     "BuildingGeometry": "http://vocab.belgif.be/ns/building#BuildingGeometry",
     "BuildingGeometry.horizontalGeometryEstimatedAccuracy": {
       "@id": "http://vocab.belgif.be/ns/building#horizontalGeometryEstimatedAccuracy",
-      "@type": "https://data.vlaanderen.be/ns/weg#Lengte"
+      "@type": "http://inspire.ec.europa.eu/ont/base#Measure"
     },
     "BuildingGeometry.referenceGeometry": {
       "@id": "http://vocab.belgif.be/ns/building#referenceGeometry",
@@ -170,7 +170,7 @@
     },
     "BuildingGeometry.verticalGeometryEstimatedAccuracy": {
       "@id": "http://vocab.belgif.be/ns/building#verticalGeometryEstimatedAccuracy",
-      "@type": "https://data.vlaanderen.be/ns/weg#Lengte"
+      "@type": "http://inspire.ec.europa.eu/ont/base#Measure"
     },
     "BuildingGeometry2D": "https://data.vlaanderen.be/ns/gebouw#2DGebouwgeometrie",
     "BuildingGeometry2D.geometry": {
@@ -266,7 +266,6 @@
       "@type": "@id"
     },
     "CadastralParcel": "http://vocab.belgif.be/ns/building#CadastralParcel",
-    "ConditionOfConstructionValue": "http://www.w3.org/2004/02/skos/core#Concept",
     "CurrentUse": "http://vocab.belgif.be/ns/building#CurrentUse",
     "CurrentUse.percentage": {
       "@id": "http://vocab.belgif.be/ns/building#percentage",
@@ -325,7 +324,6 @@
       "@id": "http://vocab.belgif.be/ns/building#elevationValue",
       "@type": "http://www.opengis.net/ont/sf#DirectPosition"
     },
-    "ElevationReferenceValue": "http://www.w3.org/2004/02/skos/core#Concept",
     "EntranceLocation": "http://vocab.belgif.be/ns/building#EntranceLocation",
     "EntranceLocation.address": {
       "@id": "http://www.w3.org/ns/locn#Address",
@@ -393,16 +391,14 @@
     },
     "HeightAboveGround.value": {
       "@id": "http://vocab.belgif.be/ns/building#value",
-      "@type": "https://data.vlaanderen.be/ns/weg#Lengte"
+      "@type": "http://inspire.ec.europa.eu/ont/base#Measure"
     },
-    "HeightStatusValue": "http://vocab.belgif.be/ns/building#HeightStatusValue",
-    "HorizontalGeometryReferenceValue": "http://www.w3.org/2004/02/skos/core#Concept",
     "Identifier": "http://www.w3.org/ns/adms#Identifier",
     "Identifier.assignedBy": {
       "@id": "http://purl.org/dc/terms/creator",
       "@type": "@id"
     },
-    "Identifier.assignedBy (string)": {
+    "Identifier.assignedByString": {
       "@id": "http://www.w3.org/ns/adms#schemaAgency",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
@@ -419,22 +415,18 @@
       "@type": "@id"
     },
     "LangCode": "http://vocab.belgif.be/ns/building#LangCode",
-    "Langstring": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-    "Langstring.langString": {
-      "@id": "http://vocab.belgif.be/ns/building#language",
+    "Measure": "http://inspire.ec.europa.eu/ont/base#Measure",
+    "Measure.uom": {
+      "@id": "http://vocab.belgif.be/ns/building#uom",
       "@type": "@id"
     },
-    "Langstring.string": {
-      "@id": "http://vocab.belgif.be/ns/building#string",
-      "@type": "http://www.w3.org/2001/XMLSchema#string"
+    "Measure.value": {
+      "@id": "https://qudt.org/schema/qudt/value",
+      "@type": "http://www.w3.org/2001/XMLSchema#double"
     },
-    "Length": "https://data.vlaanderen.be/ns/weg#Lengte",
-    "Literal": "http://www.w3.org/2000/01/rdf-schema#Literal",
     "MeasuringMethod": "http://www.w3.org/2004/02/skos/core#Concept",
     "MultiCurve": "http://www.opengis.net/ont/sf#MultiCurve",
     "MultiSurface": "http://www.opengis.net/ont/sf#MultiSurface",
-    "NameStatusValue": "http://www.w3.org/2004/02/skos/core#Concept",
-    "NativenessValue": "http://www.w3.org/2004/02/skos/core#Concept",
     "Point": "http://www.opengis.net/ont/sf#Point",
     "Polygon": "http://www.opengis.net/ont/sf#Polygon",
     "SourceStatusValue": "http://www.w3.org/2004/02/skos/core#Concept",

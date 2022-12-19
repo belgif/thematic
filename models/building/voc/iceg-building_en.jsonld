@@ -325,7 +325,7 @@
   "issued": "TBD",
   "navigation": {},
   "publication-state": "Public Review",
-  "publication-date": "2022-11-17",
+  "publication-date": "2022-12-19",
   "classes": [
     {
       "@id": "http://vocab.belgif.be/ns/building#Building",
@@ -441,14 +441,6 @@
       "parents": []
     },
     {
-      "@id": "http://vocab.belgif.be/ns/building#HeightStatusValue",
-      "@type": "http://www.w3.org/2002/07/owl#Class",
-      "definition": {
-        "en": "Values indicating the method used to capture a height."
-      },
-      "parents": []
-    },
-    {
       "@id": "http://vocab.belgif.be/ns/building#LangCode",
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "parents": []
@@ -457,16 +449,9 @@
   "externals": [
     {
       "name": {
-        "en": "Langstring"
+        "en": "Measure"
       },
-      "@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
-      "@type": "rdfs:Class"
-    },
-    {
-      "name": {
-        "en": "Literal"
-      },
-      "@id": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "@id": "http://inspire.ec.europa.eu/ont/base#Measure",
       "@type": "rdfs:Class"
     },
     {
@@ -492,25 +477,6 @@
     },
     {
       "name": {
-        "en": "ConditionOfConstructionValue"
-      },
-      "@id": "http://www.w3.org/2004/02/skos/core#Concept",
-      "@type": "rdfs:Class"
-    },
-    {
-      "name": {},
-      "@id": "http://www.w3.org/2004/02/skos/core#Concept",
-      "@type": "rdfs:Class"
-    },
-    {
-      "name": {
-        "en": "HorizontalGeometryReferenceValue"
-      },
-      "@id": "http://www.w3.org/2004/02/skos/core#Concept",
-      "@type": "rdfs:Class"
-    },
-    {
-      "name": {
         "en": "MeasuringMethod"
       },
       "@id": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -518,19 +484,7 @@
     },
     {
       "name": {
-        "en": "NameStatusValue"
-      },
-      "@id": "http://www.w3.org/2004/02/skos/core#Concept",
-      "@type": "rdfs:Class"
-    },
-    {
-      "name": {},
-      "@id": "http://www.w3.org/2004/02/skos/core#Concept",
-      "@type": "rdfs:Class"
-    },
-    {
-      "name": {
-        "en": "NativenessValue"
+        "en": "SourceStatusValue"
       },
       "@id": "http://www.w3.org/2004/02/skos/core#Concept",
       "@type": "rdfs:Class"
@@ -554,13 +508,6 @@
         "en": "StructuredIdentificator"
       },
       "@id": "https://data.vlaanderen.be/ns/generiek#GestructureerdeIdentificator",
-      "@type": "rdfs:Class"
-    },
-    {
-      "name": {
-        "en": "Length"
-      },
-      "@id": "https://data.vlaanderen.be/ns/weg#Lengte",
       "@type": "rdfs:Class"
     },
     {
@@ -666,7 +613,7 @@
         "en": "Element of the real world object that was captured by the (X,Y) coordinates of the LoD1 Multisurface or Solid geometry."
       },
       "usage": {
-        "en": "Example: footprint, roof edge"
+        "en": "Example: footprint, roof edge.\r\n<br/><br/>\r\nConcepts of this codelist should be used from the INSPIRE <a href=\"http://inspire.ec.europa.eu/codelist/HorizontalGeometryReferenceValue/\">Horizontal Geometry Reference</a> code list."
       },
       "domain": [
         "http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD1"
@@ -753,7 +700,7 @@
         "en": "Building of which building unit(s) are being a part."
       },
       "usage": {
-        "en": "$ea_notes=The set of two distinct volumes united by a gallery/walkway is nevertheless considered as a single building. Two volumes separated by a footbridge (which is above a public road) are considered as two separate buildings which are located in different sites (because they are different plots)."
+        "en": "The set of two distinct volumes united by a gallery/walkway is nevertheless considered as a single building. Two volumes separated by a footbridge (which is above a public road) are considered as two separate buildings which are located in different sites (because they are different plots)."
       },
       "domain": [
         "http://vocab.belgif.be/ns/building#BuildingUnit"
@@ -770,7 +717,7 @@
         "en": "Characteristic of the building that makes it generally of interest for mappings applications. The characteristic may be related to the physical aspect and/or to the function of the building."
       },
       "usage": {
-        "en": "This attribute focuses on the physical aspect (facade) of the building; however, this physical aspect is often expressed as a function (e.g. stadium, silo, windmill); this attribute aims to fulfil mainly mapping purposes and addresses only specific, noticeable buildings."
+        "en": "This attribute focuses on the physical aspect (facade) of the building; however, this physical aspect is often expressed as a function (e.g. stadium, silo, windmill); this attribute aims to fulfil mainly mapping purposes and addresses only specific, noticeable buildings.\r\n<br/><br/>\r\nMore information about the enumerations can be found on the INSPIRE <a href=\"https://inspire.ec.europa.eu/codelist/BuildingNatureValue\">Building Nature</a> code list."
       },
       "domain": [
         "http://vocab.belgif.be/ns/building#Building"
@@ -799,6 +746,9 @@
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "definition": {
         "en": "Values indicating the condition of a construction"
+      },
+      "usage": {
+        "en": "Concepts of this codelist should be used from the INSPIRE <a href=\"https://inspire.ec.europa.eu/codelist/ConditionOfConstructionValue/\">Condition of Construction</a> code list."
       },
       "domain": [
         "http://vocab.belgif.be/ns/building#Building"
@@ -872,6 +822,9 @@
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "definition": {
         "en": "Element where the elevation was measured."
+      },
+      "usage": {
+        "en": "Concepts of this codelist should be used from the INSPIRE <a href=\"http://inspire.ec.europa.eu/codelist/ElevationReferenceValue\">Elevation Reference</a> code list."
       },
       "domain": [
         "http://vocab.belgif.be/ns/building#Elevation"
@@ -1014,7 +967,7 @@
         "en": "Element used as the high reference."
       },
       "usage": {
-        "en": "EXAMPLE: The height of the building has been captured up to the top of building."
+        "en": "EXAMPLE: The height of the building has been captured up to the top of building.\r\n<br/><br/>\r\nConcepts of this codelist should be used from the INSPIRE <a href=\"http://inspire.ec.europa.eu/codelist/ElevationReferenceValue\">Elevation Reference</a> code list."
       },
       "domain": [
         "http://vocab.belgif.be/ns/building#HeightAboveGround"
@@ -1030,11 +983,14 @@
       "definition": {
         "en": "The estimated absolute positional accuracy of the (X,Y) coordinates of the building geometry.\t"
       },
+      "usage": {
+        "en": "NOTE\t"
+      },
       "domain": [
         "http://vocab.belgif.be/ns/building#BuildingGeometry"
       ],
       "range": [
-        "https://data.vlaanderen.be/ns/weg#Lengte"
+        "http://inspire.ec.europa.eu/ont/base#Measure"
       ],
       "generalization": []
     },
@@ -1045,7 +1001,7 @@
         "en": "Element that was captured by the (X,Y) coordinates of the LoD2 MultiSurface or Solid geometry."
       },
       "usage": {
-        "en": "Example: footprint, roof edge"
+        "en": "Example: footprint, roof edge.\r\n<br/><br/>\r\nConcepts of this codelist should be used from the INSPIRE <a href=\"http://inspire.ec.europa.eu/codelist/HorizontalGeometryReferenceValue/\">Horizontal Geometry Reference</a> code list."
       },
       "domain": [
         "http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD2.horizontalGeometryReference"
@@ -1087,20 +1043,6 @@
       "generalization": []
     },
     {
-      "@id": "http://vocab.belgif.be/ns/building#language",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "definition": {
-        "en": "Language code of the string."
-      },
-      "domain": [
-        "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-      ],
-      "range": [
-        "http://vocab.belgif.be/ns/building#LangCode"
-      ],
-      "generalization": []
-    },
-    {
       "@id": "http://vocab.belgif.be/ns/building#lowReference",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "definition": {
@@ -1137,6 +1079,9 @@
       "definition": {
         "en": "Qualitative information enabling to discern which credit should be given to the name with respect to its standardisation and/or its topicality."
       },
+      "usage": {
+        "en": "NOTE The Geographical Names application schema does not explicitly make a preference between different names (e.g. official endonyms) of a specific real world entity. The necessary information for making the preference (e.g. the linguistic status of the administrative or geographic area in question), for a certain use case, must be obtained from other data or information sources. For example, the status of the language of the name may be known through queries on the geometries of named places against the geometry of administrative units recorded in a certain source with the language statuses information. \r\n\r\nConcepts of this codelist should be used from the INSPIRE <a href=\"https://inspire.ec.europa.eu/codelist/NameStatusValue\">Name Status</a> code list."
+      },
       "domain": [
         "http://vocab.belgif.be/ns/building#GeographicalName"
       ],
@@ -1150,6 +1095,9 @@
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "definition": {
         "en": "Information enabling to acknowledge if the name is the one that is/was used in the area where the spatial object is situated at the instant when the name is/was in use."
+      },
+      "usage": {
+        "en": "Concepts of this codelist should be used from the INSPIRE <a href=\"http://inspire.ec.europa.eu/codelist/NativenessValue\">Nativeness</a> code list."
       },
       "domain": [
         "http://vocab.belgif.be/ns/building#GeographicalName"
@@ -1320,17 +1268,6 @@
       "generalization": []
     },
     {
-      "@id": "http://vocab.belgif.be/ns/building#string",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "domain": [
-        "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-      ],
-      "range": [
-        "http://www.w3.org/2001/XMLSchema#string"
-      ],
-      "generalization": []
-    },
-    {
       "@id": "http://vocab.belgif.be/ns/building#structuredIdentificator",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "definition": {
@@ -1365,10 +1302,27 @@
         "en": "The current use of a building"
       },
       "usage": {
-        "en": "EXAMPLE: trade, entertainment, ..."
+        "en": "Example: trade, entertainment, ..."
       },
       "domain": [
         "http://vocab.belgif.be/ns/building#CurrentUse"
+      ],
+      "range": [
+        "http://www.w3.org/2004/02/skos/core#Concept"
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/building#uom",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "definition": {
+        "en": "Standard units of measurements used when accounting for stock, and expressing them in quantities."
+      },
+      "usage": {
+        "en": "Concepts of this codelist should be used from the EU Vocabulary <a href=\"https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/measurement-unit\">Measurement unit</a>."
+      },
+      "domain": [
+        "http://inspire.ec.europa.eu/ont/base#Measure"
       ],
       "range": [
         "http://www.w3.org/2004/02/skos/core#Concept"
@@ -1385,7 +1339,7 @@
         "http://vocab.belgif.be/ns/building#HeightAboveGround"
       ],
       "range": [
-        "https://data.vlaanderen.be/ns/weg#Lengte"
+        "http://inspire.ec.europa.eu/ont/base#Measure"
       ],
       "generalization": []
     },
@@ -1395,11 +1349,14 @@
       "definition": {
         "en": "The estimated absolute positional accuracy of the Z-coordinate of the building geometry.\t"
       },
+      "usage": {
+        "en": "Absolute positional accuracy is defined as the mean value of the positional uncertainties for a set of positions where the positional uncertainties are defined as the distance between a measured position and what is considered as the corresponding true position."
+      },
       "domain": [
         "http://vocab.belgif.be/ns/building#BuildingGeometry"
       ],
       "range": [
-        "https://data.vlaanderen.be/ns/weg#Lengte"
+        "http://inspire.ec.europa.eu/ont/base#Measure"
       ],
       "generalization": []
     },
@@ -1408,6 +1365,9 @@
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "definition": {
         "en": "Element of the building that was captured by vertical coordinates."
+      },
+      "usage": {
+        "en": "Concepts of this codelist should be used from the INSPIRE <a href=\"http://inspire.ec.europa.eu/codelist/ElevationReferenceValue\">Elevation Reference</a> code list."
       },
       "domain": [
         "https://data.vlaanderen.be/ns/gebouw#2DGebouwgeometrie"
@@ -1422,6 +1382,9 @@
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "definition": {
         "en": "Height level to which the lower height of the model (Z-value of the lower horizontal polygon) refers to."
+      },
+      "usage": {
+        "en": "Concepts of this codelist should be used from the INSPIRE <a href=\"http://inspire.ec.europa.eu/codelist/ElevationReferenceValue\">Elevation Reference</a> code list."
       },
       "domain": [
         "http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD"
@@ -1438,7 +1401,7 @@
         "en": "Height level to which the upper height of the model (Z-value of the upper horizontal polygon) refers to."
       },
       "usage": {
-        "en": "Example: generalRoof, lowestRoof edge"
+        "en": "Example: generalRoof, lowestRoof edge.\r\n<br/><br/>\r\nConcepts of this codelist should be used from the INSPIRE <a href=\"http://inspire.ec.europa.eu/codelist/ElevationReferenceValue\">Elevation Reference</a> code list."
       },
       "domain": [
         "http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD1"
@@ -1487,7 +1450,7 @@
     },
     {
       "name": {
-        "en": "assignedBy (String)"
+        "en": "assignedByString"
       },
       "@id": "http://www.w3.org/ns/adms#schemaAgency",
       "@type": "rdf:Property"
@@ -1518,6 +1481,13 @@
         "en": "position"
       },
       "@id": "http://www.w3.org/ns/locn#Geometry",
+      "@type": "rdf:Property"
+    },
+    {
+      "name": {
+        "en": "value"
+      },
+      "@id": "https://qudt.org/schema/qudt/value",
       "@type": "rdf:Property"
     },
     {
