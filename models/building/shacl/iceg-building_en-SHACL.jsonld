@@ -52,7 +52,7 @@
           "sh:name": {
             "en": "address"
           },
-          "sh:path": "https://www.w3.org/ns/locn#Address"
+          "sh:path": "https://www.w3.org/ns/locn#address"
         },
         {
           "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -73,6 +73,16 @@
             "en": "buildingUnit"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#buildingUnit"
+        },
+        {
+          "sh:class": "http://vocab.belgif.be/ns/building#CadastralParcel",
+          "sh:definition": {
+            "en": "The parcel(s) with which the building is officially associated.\t"
+          },
+          "sh:name": {
+            "en": "cadastralParcel"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/building#cadastralParcel"
         },
         {
           "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -176,7 +186,7 @@
           "sh:name": {
             "en": "geometry"
           },
-          "sh:path": "http://www.w3.org/ns/locn#Geometry"
+          "sh:path": "http://www.w3.org/ns/locn#geometry"
         },
         {
           "sh:class": "http://vocab.belgif.be/ns/building#HeightAboveGround",
@@ -196,7 +206,7 @@
           "sh:name": {
             "en": "identifier"
           },
-          "sh:path": "http://www.w3.org/ns/adms#Identifier"
+          "sh:path": "http://www.w3.org/ns/adms#identifier"
         },
         {
           "sh:class": "http://vocab.belgif.be/ns/building#GeographicalName",
@@ -400,7 +410,7 @@
           "sh:name": {
             "en": "address"
           },
-          "sh:path": "https://www.w3.org/ns/locn#Address"
+          "sh:path": "https://www.w3.org/ns/locn#address"
         },
         {
           "sh:class": "http://vocab.belgif.be/ns/building#Building",
@@ -485,7 +495,7 @@
           "sh:name": {
             "en": "geometry"
           },
-          "sh:path": "http://www.w3.org/ns/locn#Geometry"
+          "sh:path": "http://www.w3.org/ns/locn#geometry"
         },
         {
           "sh:class": "http://www.w3.org/ns/adms#Identifier",
@@ -794,6 +804,13 @@
       "sh:targetClass": "http://vocab.belgif.be/ns/building#LangCode"
     },
     {
+      "@id": "https://semiceu.github.io/shacl/iceg-building_en#StructuredIdentificatorShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://vocab.belgif.be/ns/building#StructuredIdentificator"
+    },
+    {
       "@id": "https://semiceu.github.io/shacl/iceg-building_en#MeasureShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
@@ -829,7 +846,15 @@
       "@id": "https://semiceu.github.io/shacl/iceg-building_en#CadastralParcelShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
-      "sh:property": [],
+      "sh:property": [
+        {
+          "sh:class": "http://vocab.belgif.be/ns/building#Building",
+          "sh:name": {
+            "en": "building"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/building#building"
+        }
+      ],
       "sh:targetClass": "http://vocab.belgif.be/ns/building#CadastralParcel"
     },
     {
@@ -994,13 +1019,13 @@
           "sh:path": "http://www.w3.org/2004/02/skos/core#notation"
         },
         {
-          "sh:class": "https://data.vlaanderen.be/ns/generiek#GestructureerdeIdentificator",
+          "sh:class": "http://vocab.belgif.be/ns/building#StructuredIdentificator",
           "sh:definition": {
             "en": "Identifier of the object broken down into its parts."
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "structuredIdentifier"
+            "en": "structuredIdentificator"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#structuredIdentificator"
         }
@@ -1275,13 +1300,6 @@
         }
       ],
       "sh:targetClass": "https://data.vlaanderen.be/ns/gebouw#2DGebouwgeometrie"
-    },
-    {
-      "@id": "https://semiceu.github.io/shacl/iceg-building_en#StructuredIdentificatorShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [],
-      "sh:targetClass": "https://data.vlaanderen.be/ns/generiek#GestructureerdeIdentificator"
     },
     {
       "@id": "https://semiceu.github.io/shacl/iceg-building_en#DocumentShape",

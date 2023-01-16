@@ -430,6 +430,9 @@
       "definition": {
         "en": "Proper noun applied to a real world entity."
       },
+      "usage": {
+        "en": "This can be substituted by LangString"
+      },
       "parents": []
     },
     {
@@ -443,6 +446,14 @@
     {
       "@id": "http://vocab.belgif.be/ns/building#LangCode",
       "@type": "http://www.w3.org/2002/07/owl#Class",
+      "parents": []
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/building#StructuredIdentificator",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "definition": {
+        "en": "Identifier of an object broken down into its parts."
+      },
       "parents": []
     }
   ],
@@ -501,13 +512,6 @@
         "en": "BuildingGeometry2D"
       },
       "@id": "https://data.vlaanderen.be/ns/gebouw#2DGebouwgeometrie",
-      "@type": "rdfs:Class"
-    },
-    {
-      "name": {
-        "en": "StructuredIdentificator"
-      },
-      "@id": "https://data.vlaanderen.be/ns/generiek#GestructureerdeIdentificator",
       "@type": "rdfs:Class"
     },
     {
@@ -711,6 +715,17 @@
       "generalization": []
     },
     {
+      "@id": "http://vocab.belgif.be/ns/building#building",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "domain": [
+        "http://vocab.belgif.be/ns/building#CadastralParcel"
+      ],
+      "range": [
+        "http://vocab.belgif.be/ns/building#Building"
+      ],
+      "generalization": []
+    },
+    {
       "@id": "http://vocab.belgif.be/ns/building#buildingNature",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "definition": {
@@ -738,6 +753,20 @@
       ],
       "range": [
         "http://vocab.belgif.be/ns/building#BuildingUnit"
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/building#cadastralParcel",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "definition": {
+        "en": "The parcel(s) with which the building is officially associated.\t"
+      },
+      "domain": [
+        "http://vocab.belgif.be/ns/building#Building"
+      ],
+      "range": [
+        "http://vocab.belgif.be/ns/building#CadastralParcel"
       ],
       "generalization": []
     },
@@ -1277,7 +1306,7 @@
         "http://www.w3.org/ns/adms#Identifier"
       ],
       "range": [
-        "https://data.vlaanderen.be/ns/generiek#GestructureerdeIdentificator"
+        "http://vocab.belgif.be/ns/building#StructuredIdentificator"
       ],
       "generalization": []
     },
@@ -1438,7 +1467,7 @@
       "name": {
         "en": "identifier"
       },
-      "@id": "http://www.w3.org/ns/adms#Identifier",
+      "@id": "http://www.w3.org/ns/adms#identifier",
       "@type": "rdf:Property"
     },
     {
@@ -1464,23 +1493,23 @@
     },
     {
       "name": {
-        "en": "geometry"
-      },
-      "@id": "http://www.w3.org/ns/locn#Geometry",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
-        "en": "geometry"
-      },
-      "@id": "http://www.w3.org/ns/locn#Geometry",
-      "@type": "rdf:Property"
-    },
-    {
-      "name": {
         "en": "position"
       },
       "@id": "http://www.w3.org/ns/locn#Geometry",
+      "@type": "rdf:Property"
+    },
+    {
+      "name": {
+        "en": "geometry"
+      },
+      "@id": "http://www.w3.org/ns/locn#geometry",
+      "@type": "rdf:Property"
+    },
+    {
+      "name": {
+        "en": "geometry"
+      },
+      "@id": "http://www.w3.org/ns/locn#geometry",
       "@type": "rdf:Property"
     },
     {
@@ -1494,14 +1523,14 @@
       "name": {
         "en": "address"
       },
-      "@id": "https://www.w3.org/ns/locn#Address",
+      "@id": "https://www.w3.org/ns/locn#address",
       "@type": "rdf:Property"
     },
     {
       "name": {
         "en": "address"
       },
-      "@id": "https://www.w3.org/ns/locn#Address",
+      "@id": "https://www.w3.org/ns/locn#address",
       "@type": "rdf:Property"
     }
   ],

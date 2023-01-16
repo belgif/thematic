@@ -20,6 +20,7 @@
     <https://semiceu.github.io/shacl/iceg-building_en#GeographicalNameShape>,
     <https://semiceu.github.io/shacl/iceg-building_en#HeightAboveGroundShape>,
     <https://semiceu.github.io/shacl/iceg-building_en#LangCodeShape>,
+    <https://semiceu.github.io/shacl/iceg-building_en#StructuredIdentificatorShape>,
     <https://semiceu.github.io/shacl/iceg-building_en#MeasureShape>,
     <https://semiceu.github.io/shacl/iceg-building_en#CadastralParcelShape>,
     <https://semiceu.github.io/shacl/iceg-building_en#3DobjectShape>,
@@ -37,7 +38,6 @@
     <https://semiceu.github.io/shacl/iceg-building_en#AddressRepresentationShape>,
     <https://semiceu.github.io/shacl/iceg-building_en#GeometryShape>,
     <https://semiceu.github.io/shacl/iceg-building_en#BuildingGeometry2DShape>,
-    <https://semiceu.github.io/shacl/iceg-building_en#StructuredIdentificatorShape>,
     <https://semiceu.github.io/shacl/iceg-building_en#DocumentShape> .
 
 <https://semiceu.github.io/shacl/iceg-building_en#3DobjectShape> a shacl:NodeShape;
@@ -259,7 +259,7 @@
     shacl:datatype <http://www.w3.org/ns/locn#Address>;
     shacl:definition "The address representation that corresponds to the building."@en;
     shacl:name "address"@en;
-    shacl:path <https://www.w3.org/ns/locn#Address>
+    shacl:path <https://www.w3.org/ns/locn#address>
   ], [
     shacl:class skos:Concept;
     shacl:definition "Characteristic of the building that makes it generally of interest for mappings applications. The characteristic may be related to the physical aspect and/or to the function of the building."@en;
@@ -270,6 +270,11 @@
     shacl:definition "Building unit(s) being part of the building."@en;
     shacl:name "buildingUnit"@en;
     shacl:path <http://vocab.belgif.be/ns/building#buildingUnit>
+  ], [
+    shacl:class <http://vocab.belgif.be/ns/building#CadastralParcel>;
+    shacl:definition """The parcel(s) with which the building is officially associated.	"""@en;
+    shacl:name "cadastralParcel"@en;
+    shacl:path <http://vocab.belgif.be/ns/building#cadastralParcel>
   ], [
     shacl:class skos:Concept;
     shacl:definition "Values indicating the condition of a construction"@en;
@@ -323,7 +328,7 @@
     shacl:datatype <http://vocab.belgif.be/ns/building#BuildingGeometry>;
     shacl:definition "Shape and position characteristics of a building"@en;
     shacl:name "geometry"@en;
-    shacl:path <http://www.w3.org/ns/locn#Geometry>
+    shacl:path <http://www.w3.org/ns/locn#geometry>
   ], [
     shacl:class <http://vocab.belgif.be/ns/building#HeightAboveGround>;
     shacl:definition "Height above ground."@en;
@@ -333,7 +338,7 @@
     shacl:class <http://www.w3.org/ns/adms#Identifier>;
     shacl:definition "Identifier of the Building."@en;
     shacl:name "identifier"@en;
-    shacl:path <http://www.w3.org/ns/adms#Identifier>
+    shacl:path <http://www.w3.org/ns/adms#identifier>
   ], [
     shacl:class <http://vocab.belgif.be/ns/building#GeographicalName>;
     shacl:definition "Name of the building"@en;
@@ -366,7 +371,7 @@
     shacl:datatype <http://www.w3.org/ns/locn#Address>;
     shacl:definition "The address representation that corresponds to the building unit."@en;
     shacl:name "address"@en;
-    shacl:path <https://www.w3.org/ns/locn#Address>
+    shacl:path <https://www.w3.org/ns/locn#address>
   ], [
     shacl:class <http://vocab.belgif.be/ns/building#Building>;
     shacl:definition "Building of which building unit(s) are being a part."@en;
@@ -411,7 +416,7 @@
     shacl:datatype <http://www.w3.org/ns/locn#Geometry>;
     shacl:definition "Shape and position characteristics of a building unit."@en;
     shacl:name "geometry"@en;
-    shacl:path <http://www.w3.org/ns/locn#Geometry>
+    shacl:path <http://www.w3.org/ns/locn#geometry>
   ], [
     shacl:class <http://www.w3.org/ns/adms#Identifier>;
     shacl:definition "The unique identifier of a building unit."@en;
@@ -422,6 +427,11 @@
 
 <https://semiceu.github.io/shacl/iceg-building_en#CadastralParcelShape> a shacl:NodeShape;
   shacl:closed false;
+  shacl:property [
+    shacl:class <http://vocab.belgif.be/ns/building#Building>;
+    shacl:name "building"@en;
+    shacl:path <http://vocab.belgif.be/ns/building#building>
+  ];
   shacl:targetClass <http://vocab.belgif.be/ns/building#CadastralParcel> .
 
 <https://semiceu.github.io/shacl/iceg-building_en#CurrentUseShape> a shacl:NodeShape;
@@ -694,10 +704,10 @@
     shacl:name "identifier"@en;
     shacl:path skos:notation
   ], [
-    shacl:class <https://data.vlaanderen.be/ns/generiek#GestructureerdeIdentificator>;
+    shacl:class <http://vocab.belgif.be/ns/building#StructuredIdentificator>;
     shacl:definition "Identifier of the object broken down into its parts."@en;
     shacl:maxCount 1;
-    shacl:name "structuredIdentifier"@en;
+    shacl:name "structuredIdentificator"@en;
     shacl:path <http://vocab.belgif.be/ns/building#structuredIdentificator>
   ];
   shacl:targetClass <http://www.w3.org/ns/adms#Identifier> .
@@ -751,7 +761,7 @@
 
 <https://semiceu.github.io/shacl/iceg-building_en#StructuredIdentificatorShape> a shacl:NodeShape;
   shacl:closed false;
-  shacl:targetClass <https://data.vlaanderen.be/ns/generiek#GestructureerdeIdentificator> .
+  shacl:targetClass <http://vocab.belgif.be/ns/building#StructuredIdentificator> .
 
 <https://semiceu.github.io/shacl/iceg-building_en#TextShape> a shacl:NodeShape;
   shacl:closed false;
