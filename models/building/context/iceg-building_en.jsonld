@@ -167,7 +167,7 @@
     "BuildingGeometry": "http://vocab.belgif.be/ns/building#BuildingGeometry",
     "BuildingGeometry.horizontalGeometryEstimatedAccuracy": {
       "@id": "http://vocab.belgif.be/ns/building#horizontalGeometryEstimatedAccuracy",
-      "@type": "http://inspire.ec.europa.eu/ont/base#Measure"
+      "@type": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure"
     },
     "BuildingGeometry.referenceGeometry": {
       "@id": "http://vocab.belgif.be/ns/building#referenceGeometry",
@@ -175,7 +175,7 @@
     },
     "BuildingGeometry.verticalGeometryEstimatedAccuracy": {
       "@id": "http://vocab.belgif.be/ns/building#verticalGeometryEstimatedAccuracy",
-      "@type": "http://inspire.ec.europa.eu/ont/base#Measure"
+      "@type": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure"
     },
     "BuildingGeometry2D": "https://data.vlaanderen.be/ns/gebouw#2DGebouwgeometrie",
     "BuildingGeometry2D.geometry": {
@@ -401,7 +401,16 @@
     },
     "HeightAboveGround.value": {
       "@id": "http://vocab.belgif.be/ns/building#value",
-      "@type": "http://inspire.ec.europa.eu/ont/base#Measure"
+      "@type": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure"
+    },
+    "IcegUnit": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure",
+    "IcegUnit.uom": {
+      "@id": "http://vocab.belgif.be/ns/building#uom",
+      "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "IcegUnit.value": {
+      "@id": "https://qudt.org/schema/qudt/value",
+      "@type": ""
     },
     "Identifier": "http://www.w3.org/ns/adms#Identifier",
     "Identifier.assignedBy": {
@@ -425,15 +434,6 @@
       "@type": "@id"
     },
     "LangCode": "http://vocab.belgif.be/ns/building#LangCode",
-    "Measure": "http://inspire.ec.europa.eu/ont/base#Measure",
-    "Measure.uom": {
-      "@id": "http://vocab.belgif.be/ns/building#uom",
-      "@type": "@id"
-    },
-    "Measure.value": {
-      "@id": "https://qudt.org/schema/qudt/value",
-      "@type": "http://www.w3.org/2001/XMLSchema#double"
-    },
     "MeasuringMethod": "http://www.w3.org/2004/02/skos/core#Concept",
     "MultiCurve": "http://www.opengis.net/ont/sf#MultiCurve",
     "MultiSurface": "http://www.opengis.net/ont/sf#MultiSurface",
@@ -441,6 +441,7 @@
     "Polygon": "http://www.opengis.net/ont/sf#Polygon",
     "SourceStatusValue": "http://www.w3.org/2004/02/skos/core#Concept",
     "StructuredIdentificator": "http://vocab.belgif.be/ns/building#StructuredIdentificator",
-    "Text": "http://www.w3.org/2001/XMLSchema#string"
+    "Text": "http://www.w3.org/2001/XMLSchema#string",
+    "URI": "http://www.w3.org/2001/XMLSchema#anyURI"
   }
 }

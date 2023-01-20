@@ -260,7 +260,7 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "sh:datatype": "http://inspire.ec.europa.eu/ont/base#Measure",
+          "sh:datatype": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure",
           "sh:definition": {
             "en": "The estimated absolute positional accuracy of the (X,Y) coordinates of the building geometry.\t"
           },
@@ -283,7 +283,7 @@
           "sh:path": "http://vocab.belgif.be/ns/building#referenceGeometry"
         },
         {
-          "sh:datatype": "http://inspire.ec.europa.eu/ont/base#Measure",
+          "sh:datatype": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure",
           "sh:definition": {
             "en": "The estimated absolute positional accuracy of the Z-coordinate of the building geometry.\t"
           },
@@ -782,7 +782,7 @@
           "sh:path": "http://vocab.belgif.be/ns/building#status"
         },
         {
-          "sh:datatype": "http://inspire.ec.europa.eu/ont/base#Measure",
+          "sh:datatype": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure",
           "sh:definition": {
             "en": "Value of the height above ground."
           },
@@ -816,7 +816,7 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#anyURI",
           "sh:definition": {
             "en": "Standard units of measurements used when accounting for stock, and expressing them in quantities."
           },
@@ -828,7 +828,6 @@
           "sh:path": "http://vocab.belgif.be/ns/building#uom"
         },
         {
-          "sh:datatype": "http://www.w3.org/2001/XMLSchema#double",
           "sh:definition": {
             "en": "Number with a scale. The value of uom (Units Of Measure) attribute is a reference to a Reference System for the amount, either a ratio or position scale."
           },
@@ -840,7 +839,7 @@
           "sh:path": "https://qudt.org/schema/qudt/value"
         }
       ],
-      "sh:targetClass": "http://inspire.ec.europa.eu/ont/base#Measure"
+      "sh:targetClass": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure"
     },
     {
       "@id": "https://semiceu.github.io/shacl/iceg-building_en#CadastralParcelShape",
@@ -933,6 +932,13 @@
       "sh:closed": false,
       "sh:property": [],
       "sh:targetClass": "http://www.opengis.net/ont/sf#Polygon"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-building_en#URIShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://www.w3.org/2001/XMLSchema#anyURI"
     },
     {
       "@id": "https://semiceu.github.io/shacl/iceg-building_en#TextShape",

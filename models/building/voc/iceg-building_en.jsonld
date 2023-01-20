@@ -325,7 +325,7 @@
   "issued": "TBD",
   "navigation": {},
   "publication-state": "Public Review",
-  "publication-date": "2022-12-19",
+  "publication-date": "2023-01-20",
   "classes": [
     {
       "@id": "http://vocab.belgif.be/ns/building#Building",
@@ -460,9 +460,14 @@
   "externals": [
     {
       "name": {
-        "en": "Measure"
+        "en": "ICEG-Unit"
       },
-      "@id": "http://inspire.ec.europa.eu/ont/base#Measure",
+      "@id": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure",
+      "@type": "rdfs:Class"
+    },
+    {
+      "name": {},
+      "@id": "http://www.w3.org/2001/XMLSchema#anyURI",
       "@type": "rdfs:Class"
     },
     {
@@ -700,14 +705,8 @@
     {
       "@id": "http://vocab.belgif.be/ns/building#building",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "definition": {
-        "en": "Building of which building unit(s) are being a part."
-      },
-      "usage": {
-        "en": "The set of two distinct volumes united by a gallery/walkway is nevertheless considered as a single building. Two volumes separated by a footbridge (which is above a public road) are considered as two separate buildings which are located in different sites (because they are different plots)."
-      },
       "domain": [
-        "http://vocab.belgif.be/ns/building#BuildingUnit"
+        "http://vocab.belgif.be/ns/building#CadastralParcel"
       ],
       "range": [
         "http://vocab.belgif.be/ns/building#Building"
@@ -717,8 +716,14 @@
     {
       "@id": "http://vocab.belgif.be/ns/building#building",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "definition": {
+        "en": "Building of which building unit(s) are being a part."
+      },
+      "usage": {
+        "en": "The set of two distinct volumes united by a gallery/walkway is nevertheless considered as a single building. Two volumes separated by a footbridge (which is above a public road) are considered as two separate buildings which are located in different sites (because they are different plots)."
+      },
       "domain": [
-        "http://vocab.belgif.be/ns/building#CadastralParcel"
+        "http://vocab.belgif.be/ns/building#BuildingUnit"
       ],
       "range": [
         "http://vocab.belgif.be/ns/building#Building"
@@ -1019,7 +1024,7 @@
         "http://vocab.belgif.be/ns/building#BuildingGeometry"
       ],
       "range": [
-        "http://inspire.ec.europa.eu/ont/base#Measure"
+        "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure"
       ],
       "generalization": []
     },
@@ -1343,7 +1348,7 @@
     },
     {
       "@id": "http://vocab.belgif.be/ns/building#uom",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "definition": {
         "en": "Standard units of measurements used when accounting for stock, and expressing them in quantities."
       },
@@ -1351,10 +1356,10 @@
         "en": "Concepts of this codelist should be used from the EU Vocabulary <a href=\"https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/measurement-unit\">Measurement unit</a>."
       },
       "domain": [
-        "http://inspire.ec.europa.eu/ont/base#Measure"
+        "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure"
       ],
       "range": [
-        "http://www.w3.org/2004/02/skos/core#Concept"
+        "http://www.w3.org/2001/XMLSchema#anyURI"
       ],
       "generalization": []
     },
@@ -1368,7 +1373,7 @@
         "http://vocab.belgif.be/ns/building#HeightAboveGround"
       ],
       "range": [
-        "http://inspire.ec.europa.eu/ont/base#Measure"
+        "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure"
       ],
       "generalization": []
     },
@@ -1385,7 +1390,7 @@
         "http://vocab.belgif.be/ns/building#BuildingGeometry"
       ],
       "range": [
-        "http://inspire.ec.europa.eu/ont/base#Measure"
+        "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure"
       ],
       "generalization": []
     },

@@ -29,6 +29,7 @@
     <https://semiceu.github.io/shacl/iceg-building_en#MultiSurfaceShape>,
     <https://semiceu.github.io/shacl/iceg-building_en#PointShape>,
     <https://semiceu.github.io/shacl/iceg-building_en#PolygonShape>,
+    <https://semiceu.github.io/shacl/iceg-building_en#URIShape>,
     <https://semiceu.github.io/shacl/iceg-building_en#TextShape>,
     <https://semiceu.github.io/shacl/iceg-building_en#BuildingNatureValueShape>,
     <https://semiceu.github.io/shacl/iceg-building_en#CurrentUseValueShape>,
@@ -228,7 +229,7 @@
 <https://semiceu.github.io/shacl/iceg-building_en#BuildingGeometryShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property [
-    shacl:datatype <http://inspire.ec.europa.eu/ont/base#Measure>;
+    shacl:datatype <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure>;
     shacl:definition """The estimated absolute positional accuracy of the (X,Y) coordinates of the building geometry.	"""@en;
     shacl:maxCount 1;
     shacl:name "horizontalGeometryEstimatedAccuracy"@en;
@@ -241,7 +242,7 @@
     shacl:name "referenceGeometry"@en;
     shacl:path <http://vocab.belgif.be/ns/building#referenceGeometry>
   ], [
-    shacl:datatype <http://inspire.ec.europa.eu/ont/base#Measure>;
+    shacl:datatype <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure>;
     shacl:definition """The estimated absolute positional accuracy of the Z-coordinate of the building geometry.	"""@en;
     shacl:maxCount 1;
     shacl:name "verticalGeometryEstimatedAccuracy"@en;
@@ -668,7 +669,7 @@
     shacl:name "status"@en;
     shacl:path <http://vocab.belgif.be/ns/building#status>
   ], [
-    shacl:datatype <http://inspire.ec.europa.eu/ont/base#Measure>;
+    shacl:datatype <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure>;
     shacl:definition "Value of the height above ground."@en;
     shacl:maxCount 1;
     shacl:minCount 1;
@@ -719,21 +720,20 @@
 <https://semiceu.github.io/shacl/iceg-building_en#MeasureShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property [
-    shacl:class skos:Concept;
+    shacl:datatype xsd:anyURI;
     shacl:definition "Standard units of measurements used when accounting for stock, and expressing them in quantities."@en;
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "uom"@en;
     shacl:path <http://vocab.belgif.be/ns/building#uom>
   ], [
-    shacl:datatype xsd:double;
     shacl:definition "Number with a scale. The value of uom (Units Of Measure) attribute is a reference to a Reference System for the amount, either a ratio or position scale."@en;
     shacl:maxCount 1;
     shacl:minCount 1;
     shacl:name "value"@en;
     shacl:path <https://qudt.org/schema/qudt/value>
   ];
-  shacl:targetClass <http://inspire.ec.europa.eu/ont/base#Measure> .
+  shacl:targetClass <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure> .
 
 <https://semiceu.github.io/shacl/iceg-building_en#MeasuringMethodShape> a shacl:NodeShape;
   shacl:closed false;
@@ -766,3 +766,7 @@
 <https://semiceu.github.io/shacl/iceg-building_en#TextShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:targetClass xsd:string .
+
+<https://semiceu.github.io/shacl/iceg-building_en#URIShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass xsd:anyURI .
