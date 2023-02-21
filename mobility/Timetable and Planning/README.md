@@ -1,3 +1,11 @@
+# 2023-02
+The model has been adapted and can be found at https://github.com/belgif/thematic/tree/master/models/public%20transport.
+
+The public review will start at 2023-03-01 and will end at 2023-04-30.
+
+Comments can be added as issues with label "Transport".
+
+
 # 2022-05
 - Request to scale up the OSLO standard to an interfederal level.
 - TODO: finalize alignment from Dutch OSLO standard to English OSLO standard
