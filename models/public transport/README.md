@@ -1,4 +1,4 @@
-Status: public review
+Status: in public review
 
 # Vocabulary
 [Timetables and Planning (Vocabulary)](https://purl.eu/ns/mobility/timetables-and-planning/)
