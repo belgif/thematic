@@ -1,7 +1,5 @@
 # Organization ID and Discovery
 
-Note that this ID must remain unique throughout history, which used to be the case for the BCE, but see http://www.ejustice.just.fgov.be/eli/besluit/2018/12/21/2019040018/justel
-
 
 ## Use cases:
 
