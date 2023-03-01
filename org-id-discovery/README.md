@@ -22,4 +22,4 @@ This is out of the scope of this document, though the use of [W3C ORG](https://w
 
 As the BCE can contain the link to the homepage of an (registered) organization or establishment unit, 
 this homepage could contain semantic markup in RDFa/JSON-LD format.
-Or, as an alternative approach, by using [Well-Known URIs](https://tools.ietf.org/html/rfc8615) as locator of a file containing the organogram in RDF, e.g. the assigned URI [openorg](https://www.iana.org/assignments/well-known-uris/well-known-uris.xhtml).
+Or, as an alternative approach, by using [Well-Known URIs](https://tools.ietf.org/html/rfc8615) as locator of a file containing the organogram in RDF, e.g. the a[well-known URI](https://www.iana.org/assignments/well-known-uris/well-known-uris.xhtml) for [openorg](https://opd.data.ac.uk/).
