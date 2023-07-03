@@ -1,0 +1,779 @@
+{
+  "@context": {
+    "@vocab": "https://semiceu.github.io/shacl/iceg-hydrants_en",
+    "qb": "http://purl.org/linked-data/cube#",
+    "qb:codeList": {
+      "@type": "@id"
+    },
+    "sh": "http://www.w3.org/ns/shacl#",
+    "sh:class": {
+      "@type": "@id"
+    },
+    "sh:datatype": {
+      "@type": "@id"
+    },
+    "sh:definition": {
+      "@container": "@language"
+    },
+    "sh:maxCount": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "sh:minCount": {
+      "@type": "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "sh:name": {
+      "@container": "@language"
+    },
+    "sh:path": {
+      "@type": "@id"
+    },
+    "sh:property": {
+      "@type": "@id"
+    },
+    "sh:targetClass": {
+      "@type": "@id"
+    },
+    "shapes": {
+      "@type": "@id"
+    }
+  },
+  "@id": "https://semiceu.github.io/shacl/iceg-hydrants_en",
+  "shapes": [
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-hydrants_en#OutletShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "sh:datatype": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure",
+          "sh:definition": {
+            "en": "The measurement of the circular opening through which water can be discharged from a fire hydrant."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "diameter"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/hydrant#outletDiameter"
+        },
+        {
+          "sh:class": "https://saref.etsi.org/saref4watr/FireHydrant",
+          "sh:definition": {
+            "en": "The fire hydrant to which the outlet is physically attached."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "is part of"
+          },
+          "sh:path": " http://purl.org/dc/terms/isPartOf"
+        }
+      ],
+      "sh:targetClass": "http://vocab.belgif.be/ns/hydrant#Outlet"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-hydrants_en#ContactPointShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:definition": {
+            "en": "An electronic address through which the Contact Point can be contacted."
+          },
+          "sh:name": {
+            "en": "has email"
+          },
+          "sh:path": "http://data.europa.eu/m8g/email"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:definition": {
+            "en": "A telephone number through which the Contact Point can be contacted."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "has telephone"
+          },
+          "sh:path": "http://data.europa.eu/m8g/telephone"
+        }
+      ],
+      "sh:targetClass": "http://data.europa.eu/m8g/ContactPoint"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-hydrants_en#MeasureShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:definition": {
+            "en": "Standard units of measurements used when accounting for stock, and expressing them in quantities."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "uom"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/building#uom"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:definition": {
+            "en": "Number with a scale. The value of uom (Units Of Measure) attribute is a reference to a Reference System for the amount, either a ratio or position scale."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "value"
+          },
+          "sh:path": "https://qudt.org/schema/qudt/value"
+        }
+      ],
+      "sh:targetClass": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-hydrants_en#GeographicalNameShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:definition": {
+            "en": "Qualitative information enabling to discern which credit should be given to the name with respect to its standardisation and/or its topicality."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "nameStatus"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/building#nameStatus"
+        },
+        {
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:definition": {
+            "en": "Information enabling to acknowledge if the name is the one that is/was used in the area where the spatial object is situated at the instant when the name is/was in use."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "nativeness"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/building#nativeness"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:definition": {
+            "en": "Original data source from which the geographical name is taken from and integrated in the data set providing/publishing it. For some named spatial objects it might refer again to the publishing data set if no other information is available."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "sourceOfName"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/building#sourceOfName"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:definition": {
+            "en": "A proper way of writing the geographical name."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "spelling"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/building#spelling"
+        }
+      ],
+      "sh:targetClass": "http://vocab.belgif.be/ns/building#GeographicalName"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-hydrants_en#HydrantTypeShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-hydrants_en#PipeTypeShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-hydrants_en#StatusShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-hydrants_en#OpeningKeyTypeShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-hydrants_en#NativenessValueShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-hydrants_en#NameStatusValueShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-hydrants_en#IdentifierShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "sh:class": "http://purl.org/dc/terms/Agent",
+          "sh:definition": {
+            "en": "\tLink to the agent who issued the identifier"
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "assigned by"
+          },
+          "sh:path": "http://purl.org/dc/terms/creator"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:definition": {
+            "en": "\tName of the agent who assigned the identifier."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "assigned by string"
+          },
+          "sh:path": "http://www.w3.org/ns/adms#schemeAgency"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "sh:definition": {
+            "en": "Time when the identifier was issued."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "assigned on"
+          },
+          "sh:path": "http://purl.org/dc/terms/issued"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:definition": {
+            "en": "String used to uniquely identify the object."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "identifier"
+          },
+          "sh:path": "http://www.w3.org/2004/02/skos/core#notation"
+        },
+        {
+          "sh:class": "http://vocab.belgif.be/ns/building#StructuredIdentificator",
+          "sh:definition": {
+            "en": "Identifier of the object broken down into its parts."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "structured identificator"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/building#structuredIdentificator"
+        }
+      ],
+      "sh:targetClass": "http://www.w3.org/ns/adms#Identifier"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-hydrants_en#AddressRepresentationShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:definition": {
+            "en": "Alphanumeric code officially assigned to building units, berths, pitches or parcels."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "houseNumber"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/building#Adresvoorstelling.huisnummer"
+        },
+        {
+          "sh:class": "http://vocab.belgif.be/ns/hydrant#GeographicalName",
+          "sh:definition": {
+            "en": "Municipal name of the address."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "municipalityName"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/building#municipalityName"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:definition": {
+            "en": "Code designating the geographical area that groups addresses for postal purposes."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "postalcode"
+          },
+          "sh:path": "http://www.w3.org/ns/locn#postCode"
+        },
+        {
+          "sh:class": "http://vocab.belgif.be/ns/hydrant#GeographicalName",
+          "sh:definition": {
+            "en": "Streetname of the address."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "streetname"
+          },
+          "sh:path": "http://www.w3.org/ns/locn#thoroughfare"
+        }
+      ],
+      "sh:targetClass": "http://www.w3.org/ns/locn#Address"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-hydrants_en#OrganizationShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "sh:class": "http://data.europa.eu/m8g/ContactPoint",
+          "sh:definition": {
+            "en": "The main contact information of the resource."
+          },
+          "sh:name": {
+            "en": "contact point"
+          },
+          "sh:path": "http://data.europa.eu/m8g/contactPoint"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:definition": {
+            "en": "The legally recognised name of the organization."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "name"
+          },
+          "sh:path": "http://www.w3.org/2004/02/skos/core#prefLabel"
+        },
+        {
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:definition": {
+            "en": "The distinction between whether an organisation is a private or public entity."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "type"
+          },
+          "sh:path": "http://www.w3.org/ns/org#classification"
+        }
+      ],
+      "sh:targetClass": "http://www.w3.org/ns/org#Organization"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-hydrants_en#FireHydrantShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "sh:class": "http://www.w3.org/ns/locn#Address",
+          "sh:definition": {
+            "en": "The address representation that corresponds to the fire hydrant."
+          },
+          "sh:name": {
+            "en": "address"
+          },
+          "sh:path": "http://w3.org/ns/locn#address"
+        },
+        {
+          "sh:datatype": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure",
+          "sh:definition": {
+            "en": "The nominal rate at which water flows through the fire hydrant."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "flow rate"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/hydrant#fireHydrantFlowRate"
+        },
+        {
+          "sh:class": "https://www.w3.org/ns/locn#Geometry",
+          "sh:definition": {
+            "en": "The fire hydrant's location as a point, expressed using coordinates in some coordinate reference system."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "geometry"
+          },
+          "sh:path": "http://www.w3.org/ns/locn#geometry"
+        },
+        {
+          "sh:class": "http://www.w3.org/ns/adms#Identifier",
+          "sh:definition": {
+            "en": "Any identifier issued by any authority, whether a government agency or not."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "identifier"
+          },
+          "sh:path": "http://www.w3.org/ns/adms#identifier"
+        },
+        {
+          "sh:class": "http://www.w3.org/ns/org#Organization",
+          "sh:definition": {
+            "en": "The organization in charge of controlling and maintaining the fire hydrant."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "is operated by"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/hydrant#isOperatedBy"
+        },
+        {
+          "sh:class": "https://saref.etsi.org/saref4watr/Pipe",
+          "sh:definition": {
+            "en": "The pipe providing water to the fire hydrant."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "is supplied by"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/hydrant#isSuppliedBy"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "sh:definition": {
+            "en": "The date of the most recently performed inspection of a fire hydrant."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "last inspection date"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/hydrant#lastInspectionDate"
+        },
+        {
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:definition": {
+            "en": "A tool used to open a fire hydrant by removing the cover of a fire hydrant's outlet."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "opening key"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/hydrant#openingKey"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#dateTime",
+          "sh:definition": {
+            "en": "The date on which the current version of the area or object starts to be used."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "start date"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/hydrant#startDate"
+        },
+        {
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:definition": {
+            "en": "The current operational state of a fire hydrant."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "status"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/hydrant#fireHydrantStatus"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString",
+          "sh:definition": {
+            "en": "A comment about minor flaws affecting the fire hydrant."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "status remark"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/hydrant#statusRemark"
+        },
+        {
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:definition": {
+            "en": "The classification or category of a fire hydrant."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "type"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/hydrant#fireHydrantType"
+        }
+      ],
+      "sh:targetClass": "https://saref.etsi.org/saref4watr/FireHydrant"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-hydrants_en#PipeShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "sh:class": "http://www.w3.org/ns/locn#Address",
+          "sh:definition": {
+            "en": "The address representation that corresponds to the pipe."
+          },
+          "sh:name": {
+            "en": "address"
+          },
+          "sh:path": "http://w3.org/ns/locn#address"
+        },
+        {
+          "sh:datatype": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure",
+          "sh:definition": {
+            "en": "The nominal diameter of the underground water pipe going along the street."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "diameter"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/hydrant#pipeDiameter"
+        },
+        {
+          "sh:datatype": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure",
+          "sh:definition": {
+            "en": "The amount of force with which water moves to a pipe."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "flow pressure"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/hydrant#flowPressure"
+        },
+        {
+          "sh:class": "https://www.w3.org/ns/locn#Geometry",
+          "sh:definition": {
+            "en": "The pipe's location as a point, expressed using coordinates in some coordinate reference system."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "geometry"
+          },
+          "sh:path": "http://www.w3.org/ns/locn#geometry"
+        },
+        {
+          "sh:class": "http://www.w3.org/ns/adms#Identifier",
+          "sh:definition": {
+            "en": "Any identifier issued by any authority, whether a government agency or not. It captures the identifier itself, the type of identifier, and details of the issuing authority, the date on which the identifier was issued."
+          },
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "identifier"
+          },
+          "sh:path": "http://www.w3.org/ns/adms#identifier"
+        },
+        {
+          "sh:class": "https://saref.etsi.org/saref4watr/Pipe",
+          "sh:definition": {
+            "en": "A pipe can be attached to other pipes."
+          },
+          "sh:name": {
+            "en": "is connected"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/hydrant#isConnected"
+        },
+        {
+          "sh:class": "http://www.w3.org/ns/org#Organization",
+          "sh:definition": {
+            "en": "The organization in charge of controlling and maintaining the pipe."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "is operated by"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/hydrant#isOperatedBy"
+        },
+        {
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:definition": {
+            "en": "The current operational state of a pipe."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "status"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/hydrant#pipeStatus"
+        },
+        {
+          "sh:class": "https://saref.etsi.org/saref4watr/FireHydrant",
+          "sh:definition": {
+            "en": "The fire hydrant receiving water from the pipe\n."
+          },
+          "sh:name": {
+            "en": "supplies"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/hydrant#supplies"
+        },
+        {
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:definition": {
+            "en": "The classification or category of a pipe."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "type"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/hydrant#pipeType"
+        },
+        {
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:definition": {
+            "en": "The classification or category of water."
+          },
+          "sh:name": {
+            "en": "water type"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/hydrant#waterType"
+        }
+      ],
+      "sh:targetClass": "https://saref.etsi.org/saref4watr/Pipe"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-hydrants_en#ValveShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "sh:datatype": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure",
+          "sh:definition": {
+            "en": "The measurement of the circular opening through which the water flow, pressure or volume can be controlled in a fire hydrant."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "diameter"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/hydrant#valveDiameter"
+        },
+        {
+          "sh:class": "https://saref.etsi.org/saref4watr/FireHydrant",
+          "sh:definition": {
+            "en": "The fire hydrant to which the valve is part of."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "is part of"
+          },
+          "sh:path": " http://purl.org/dc/terms/isPartOf"
+        }
+      ],
+      "sh:targetClass": "https://saref.etsi.org/saref4watr/Valve"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-hydrants_en#GeometryShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:definition": {
+            "en": "\tA list of geographic coordinates that define the extent of the Geometry."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "coordinates"
+          },
+          "sh:path": "https://www.w3.org/ns/locn#coordinates"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#anyURI",
+          "sh:definition": {
+            "en": "An identifier for the coordinate reference system."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "crs"
+          },
+          "sh:path": "https://www.w3.org/ns/locn#crs"
+        },
+        {
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:definition": {
+            "en": "The classification of the Geometry."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "geometryType"
+          },
+          "sh:path": "https://www.w3.org/ns/locn#geometryType"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:definition": {
+            "en": "The geometry written in Geography Markup Language."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "gml"
+          },
+          "sh:path": "https://www.w3.org/ns/locn#gml"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:definition": {
+            "en": "The latitude."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "latitude"
+          },
+          "sh:path": "https://www.w3.org/ns/locn#latitude"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#string",
+          "sh:definition": {
+            "en": "The longitude."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "longitude"
+          },
+          "sh:path": "https://www.w3.org/ns/locn#longitude"
+        },
+        {
+          "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "sh:definition": {
+            "en": "The well-known text representation string describing the point, line or polygon."
+          },
+          "sh:maxCount": "1",
+          "sh:name": {
+            "en": "wkt"
+          },
+          "sh:path": "https://www.w3.org/ns/locn#wkt"
+        }
+      ],
+      "sh:targetClass": "https://www.w3.org/ns/locn#Geometry"
+    }
+  ]
+}
