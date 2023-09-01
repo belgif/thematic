@@ -60,7 +60,7 @@
             "en": "Characteristic of the building that makes it generally of interest for mappings applications. The characteristic may be related to the physical aspect and/or to the function of the building."
           },
           "sh:name": {
-            "en": "buildingNature"
+            "en": "building nature"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#buildingNature"
         },
@@ -70,7 +70,7 @@
             "en": "Building unit(s) being part of the building."
           },
           "sh:name": {
-            "en": "buildingUnit"
+            "en": "building unit"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#buildingUnit"
         },
@@ -80,19 +80,19 @@
             "en": "The parcel(s) with which the building is officially associated.\t"
           },
           "sh:name": {
-            "en": "cadastralParcel"
+            "en": "cadastral parcel"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#cadastralParcel"
         },
         {
           "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
-            "en": "Values indicating the condition of a construction"
+            "en": "Values indicating the condition of a construction."
           },
           "sh:maxCount": "1",
           "sh:minCount": "1",
           "sh:name": {
-            "en": "conditionOfConstruction"
+            "en": "condition of construction"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#conditionOfConstruction"
         },
@@ -102,7 +102,7 @@
             "en": "Activity hosted within the building. This attribute addresses mainly the buildings hosting human activities."
           },
           "sh:name": {
-            "en": "currentUse"
+            "en": "current use"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#Building.currentUse"
         },
@@ -113,7 +113,7 @@
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "dateOfConstruction"
+            "en": "date of construction"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#Building.dateOfConstruction"
         },
@@ -124,7 +124,7 @@
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "dateOfDemolition"
+            "en": "date of demolition"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#Building.dateOfDemolition"
         },
@@ -134,7 +134,7 @@
             "en": "Date of renovation."
           },
           "sh:name": {
-            "en": "dateOfRenovation"
+            "en": "date of renovation"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#Building.dateOfRenovation"
         },
@@ -164,7 +164,7 @@
             "en": "The location where the building can be entered or exited."
           },
           "sh:name": {
-            "en": "entranceLocation"
+            "en": "entrance location"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#entranceLocation"
         },
@@ -174,14 +174,14 @@
             "en": "Reference to an external information system containing any piece of information related to the spatial object."
           },
           "sh:name": {
-            "en": "externalReference"
+            "en": "external reference"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#externalReference"
         },
         {
           "sh:datatype": "http://vocab.belgif.be/ns/building#BuildingGeometry",
           "sh:definition": {
-            "en": "Shape and position characteristics of a building"
+            "en": "Shape and position characteristics of a building."
           },
           "sh:name": {
             "en": "geometry"
@@ -194,7 +194,7 @@
             "en": "Height above ground."
           },
           "sh:name": {
-            "en": "heightAboveGround"
+            "en": "height above ground"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#heightAboveGround"
         },
@@ -207,6 +207,26 @@
             "en": "identifier"
           },
           "sh:path": "http://www.w3.org/ns/adms#identifier"
+        },
+        {
+          "sh:class": "http://vocab.belgif.be/ns/building#InteriorInstallation",
+          "sh:definition": {
+            "en": "The interior installation(s) serving the building."
+          },
+          "sh:name": {
+            "en": "interior installation"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/building#interiorInstallation"
+        },
+        {
+          "sh:class": "http://vocab.belgif.be/ns/building#CurrentUse",
+          "sh:definition": {
+            "en": "The legal use of the building."
+          },
+          "sh:name": {
+            "en": "legal use"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/building#legalUse"
         },
         {
           "sh:class": "http://vocab.belgif.be/ns/building#GeographicalName",
@@ -225,7 +245,7 @@
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "numberOfDwellings"
+            "en": "number of dwellings"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#numberOfDwellings"
         },
@@ -236,7 +256,7 @@
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "numberOfFloorsAboveGround"
+            "en": "number of floors above ground"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#numberOfFloorsAboveGround"
         },
@@ -247,7 +267,7 @@
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "numberOfFloorsUnderGround"
+            "en": "number of floors under ground"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#numberOfFloorsUnderGround"
         }
@@ -260,13 +280,13 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "sh:datatype": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure",
+          "sh:datatype": "http://vocab.belgif.be/ns/building#ICEG-Unit",
           "sh:definition": {
             "en": "The estimated absolute positional accuracy of the (X,Y) coordinates of the building geometry.\t"
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "horizontalGeometryEstimatedAccuracy"
+            "en": "horizontal geometry estimated accuracy"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#horizontalGeometryEstimatedAccuracy"
         },
@@ -278,18 +298,18 @@
           "sh:maxCount": "1",
           "sh:minCount": "1",
           "sh:name": {
-            "en": "referenceGeometry"
+            "en": "reference geometry"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#referenceGeometry"
         },
         {
-          "sh:datatype": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure",
+          "sh:datatype": "http://vocab.belgif.be/ns/building#ICEG-Unit",
           "sh:definition": {
             "en": "The estimated absolute positional accuracy of the Z-coordinate of the building geometry.\t"
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "verticalGeometryEstimatedAccuracy"
+            "en": "vertical geometry estimated accuracy"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#verticalGeometryEstimatedAccuracy"
         }
@@ -308,7 +328,7 @@
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "geometryMultiSurface"
+            "en": "geometry multi surface"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#geometryMultiSurface"
         },
@@ -319,7 +339,7 @@
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "geometrySolid"
+            "en": "geometry solid"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#geometrySolid"
         },
@@ -330,7 +350,7 @@
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "terrainIntersection"
+            "en": "terrain intersection"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#terrainIntersection"
         },
@@ -341,7 +361,7 @@
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "verticalGeometryReference3DBottom"
+            "en": "vertical geometry reference 3D bottom"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#verticalGeometryReference3DBottom"
         }
@@ -360,7 +380,7 @@
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "horizontalGeometryReference"
+            "en": "horizontal geometry reference"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD1.horizontalGeometryReference"
         },
@@ -371,7 +391,7 @@
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "verticalGeometryReference3DTop"
+            "en": "vertical geometry reference 3D top"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#verticalGeometryReference3DTop"
         }
@@ -390,12 +410,26 @@
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "horizontalGeometryReference"
+            "en": "horizontal geometry reference"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#horizontalGeometryReference"
         }
       ],
       "sh:targetClass": "http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD2.horizontalGeometryReference"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-building_en#BuildingGeometry3DLoD3Shape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD3"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-building_en#BuildingGeometry3DLoD4Shape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD4"
     },
     {
       "@id": "https://semiceu.github.io/shacl/iceg-building_en#BuildingUnitShape",
@@ -430,7 +464,7 @@
             "en": "Activity hosted within the building unit. This attribute addresses mainly the building units hosting human activities."
           },
           "sh:name": {
-            "en": "currentUse"
+            "en": "current use"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#Buildingunit.currentUse"
         },
@@ -441,7 +475,7 @@
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "dateOfConstruction"
+            "en": "date of construction"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#BuildingUnit.dateOfConstruction"
         },
@@ -452,7 +486,7 @@
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "dateOfDemolition"
+            "en": "date of demolition"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#BuildingUnit.dateOfDemolition"
         },
@@ -462,7 +496,7 @@
             "en": "Date of renovation."
           },
           "sh:name": {
-            "en": "dateOfRenovation"
+            "en": "date of renovation"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#BuildingUnit.dateOfRenovation"
         },
@@ -483,7 +517,7 @@
           },
           "sh:minCount": "1",
           "sh:name": {
-            "en": "entranceLocation"
+            "en": "entrance location"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#entranceLocation"
         },
@@ -506,9 +540,37 @@
             "en": "identifier"
           },
           "sh:path": "http://www.w3.org/ns/adms#identifier"
+        },
+        {
+          "sh:class": "http://vocab.belgif.be/ns/building#CurrentUse",
+          "sh:definition": {
+            "en": "The legal use of the building unit."
+          },
+          "sh:name": {
+            "en": "legal use"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/building#legalUse"
         }
       ],
       "sh:targetClass": "http://vocab.belgif.be/ns/building#BuildingUnit"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-building_en#CadastralParcelShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [
+        {
+          "sh:class": "http://vocab.belgif.be/ns/building#Building",
+          "sh:definition": {
+            "en": "The Building(s) related to the CadastralParcel."
+          },
+          "sh:name": {
+            "en": "building"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/building#building"
+        }
+      ],
+      "sh:targetClass": "http://vocab.belgif.be/ns/building#CadastralParcel"
     },
     {
       "@id": "https://semiceu.github.io/shacl/iceg-building_en#CurrentUseShape",
@@ -529,7 +591,7 @@
         {
           "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
-            "en": "The current use of a building"
+            "en": "The current use of a building."
           },
           "sh:maxCount": "1",
           "sh:minCount": "1",
@@ -553,7 +615,7 @@
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "anyPoint"
+            "en": "any point"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#anyPoint"
         },
@@ -564,7 +626,7 @@
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "endDate"
+            "en": "end date"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#endDate"
         },
@@ -575,7 +637,7 @@
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "startDate"
+            "en": "start date"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#startDate"
         }
@@ -595,7 +657,7 @@
           "sh:maxCount": "1",
           "sh:minCount": "1",
           "sh:name": {
-            "en": "elevationReference"
+            "en": "elevation reference"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#elevationReference"
         },
@@ -607,7 +669,7 @@
           "sh:maxCount": "1",
           "sh:minCount": "1",
           "sh:name": {
-            "en": "elevationValue"
+            "en": "elevation value"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#elevationValue"
         }
@@ -657,7 +719,7 @@
           "sh:maxCount": "1",
           "sh:minCount": "1",
           "sh:name": {
-            "en": "informationSystem"
+            "en": "information system"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#informationSystem"
         },
@@ -700,7 +762,7 @@
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "nameStatus"
+            "en": "name status"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#nameStatus"
         },
@@ -722,7 +784,7 @@
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "sourceOfName"
+            "en": "source of name"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#sourceOfName"
         },
@@ -753,7 +815,7 @@
           "sh:maxCount": "1",
           "sh:minCount": "1",
           "sh:name": {
-            "en": "heightReference"
+            "en": "height reference"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#heightReference"
         },
@@ -765,7 +827,7 @@
           "sh:maxCount": "1",
           "sh:minCount": "1",
           "sh:name": {
-            "en": "lowReference"
+            "en": "low reference"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#lowReference"
         },
@@ -782,7 +844,7 @@
           "sh:path": "http://vocab.belgif.be/ns/building#status"
         },
         {
-          "sh:datatype": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure",
+          "sh:datatype": "http://vocab.belgif.be/ns/building#ICEG-Unit",
           "sh:definition": {
             "en": "Value of the height above ground."
           },
@@ -797,21 +859,7 @@
       "sh:targetClass": "http://vocab.belgif.be/ns/building#HeightAboveGround"
     },
     {
-      "@id": "https://semiceu.github.io/shacl/iceg-building_en#LangCodeShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [],
-      "sh:targetClass": "http://vocab.belgif.be/ns/building#LangCode"
-    },
-    {
-      "@id": "https://semiceu.github.io/shacl/iceg-building_en#StructuredIdentificatorShape",
-      "@type": "sh:NodeShape",
-      "sh:closed": false,
-      "sh:property": [],
-      "sh:targetClass": "http://vocab.belgif.be/ns/building#StructuredIdentificator"
-    },
-    {
-      "@id": "https://semiceu.github.io/shacl/iceg-building_en#MeasureShape",
+      "@id": "https://semiceu.github.io/shacl/iceg-building_en#ICEG-UnitShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
@@ -828,8 +876,9 @@
           "sh:path": "http://vocab.belgif.be/ns/building#uom"
         },
         {
+          "sh:datatype": "http://www.w3.org/2001/XMLSchema#double",
           "sh:definition": {
-            "en": "Number with a scale. The value of uom (Units Of Measure) attribute is a reference to a Reference System for the amount, either a ratio or position scale."
+            "en": "A property to relate a unit with a value."
           },
           "sh:maxCount": "1",
           "sh:minCount": "1",
@@ -839,22 +888,63 @@
           "sh:path": "https://qudt.org/schema/qudt/value"
         }
       ],
-      "sh:targetClass": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure"
+      "sh:targetClass": "http://vocab.belgif.be/ns/building#ICEG-Unit"
     },
     {
-      "@id": "https://semiceu.github.io/shacl/iceg-building_en#CadastralParcelShape",
+      "@id": "https://semiceu.github.io/shacl/iceg-building_en#InteriorInstallationShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
       "sh:property": [
         {
-          "sh:class": "http://vocab.belgif.be/ns/building#Building",
-          "sh:name": {
-            "en": "building"
+          "sh:datatype": "http://www.w3.org/ns/locn#Geometry",
+          "sh:definition": {
+            "en": "3D geometric representation of the internal installation."
           },
-          "sh:path": "http://vocab.belgif.be/ns/building#building"
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "geometry 3D"
+          },
+          "sh:path": "http://www.w3.org/ns/locn#geometry"
+        },
+        {
+          "sh:class": "http://www.w3.org/ns/adms#Identifier",
+          "sh:definition": {
+            "en": "External unique object identifier published by the responsible body, which may\r\nbe used by external applications to reference the spatial object."
+          },
+          "sh:name": {
+            "en": "identifier"
+          },
+          "sh:path": "http://www.w3.org/ns/adms#identifier"
+        },
+        {
+          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
+          "sh:definition": {
+            "en": "The nature of the internal installation."
+          },
+          "sh:maxCount": "1",
+          "sh:minCount": "1",
+          "sh:name": {
+            "en": "installation nature"
+          },
+          "sh:path": "http://vocab.belgif.be/ns/building#installationNature"
         }
       ],
-      "sh:targetClass": "http://vocab.belgif.be/ns/building#CadastralParcel"
+      "sh:targetClass": "http://vocab.belgif.be/ns/building#InteriorInstallation"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-building_en#LangCodeShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://vocab.belgif.be/ns/building#LangCode"
+    },
+    {
+      "@id": "https://semiceu.github.io/shacl/iceg-building_en#StructuredIdentificatorShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://vocab.belgif.be/ns/building#StructuredIdentificator"
     },
     {
       "@id": "https://semiceu.github.io/shacl/iceg-building_en#3DobjectShape",
@@ -976,6 +1066,13 @@
       "sh:targetClass": "http://www.w3.org/2004/02/skos/core#Concept"
     },
     {
+      "@id": "https://semiceu.github.io/shacl/iceg-building_en#InternalInstallationNatureValueShape",
+      "@type": "sh:NodeShape",
+      "sh:closed": false,
+      "sh:property": [],
+      "sh:targetClass": "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    {
       "@id": "https://semiceu.github.io/shacl/iceg-building_en#IdentifierShape",
       "@type": "sh:NodeShape",
       "sh:closed": false,
@@ -987,7 +1084,7 @@
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "assignedBy"
+            "en": "assigned by"
           },
           "sh:path": "http://purl.org/dc/terms/creator"
         },
@@ -998,7 +1095,7 @@
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "assignedByString"
+            "en": "assigned by string"
           },
           "sh:path": "http://www.w3.org/ns/adms#schemaAgency"
         },
@@ -1009,14 +1106,14 @@
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "assignedOn"
+            "en": "assigned on"
           },
           "sh:path": "http://purl.org/dc/terms/issued"
         },
         {
           "sh:datatype": "http://www.w3.org/2000/01/rdf-schema#Literal",
           "sh:definition": {
-            "en": "String used to uniquely identify the object. "
+            "en": "String used to uniquely identify the object."
           },
           "sh:maxCount": "1",
           "sh:name": {
@@ -1031,7 +1128,7 @@
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "structuredIdentificator"
+            "en": "structured identificator"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#structuredIdentificator"
         }
@@ -1050,7 +1147,7 @@
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "addressArea"
+            "en": "address area"
           },
           "sh:path": "http://www.w3.org/ns/locn#addressArea"
         },
@@ -1061,7 +1158,7 @@
           },
           "sh:minCount": "1",
           "sh:name": {
-            "en": "adminUnit"
+            "en": "admin unit"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#adminUnit"
         },
@@ -1072,7 +1169,7 @@
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "administrativeUnitLevel1"
+            "en": "administrative unit level 1"
           },
           "sh:path": "http://www.w3.org/ns/locn#adminUnitL1"
         },
@@ -1083,7 +1180,7 @@
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "administrativeUnitLevel2"
+            "en": "administrative unit level 2"
           },
           "sh:path": "http://www.w3.org/ns/locn#adminUnitL2"
         },
@@ -1094,7 +1191,7 @@
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "boxNumber"
+            "en": "box number"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#Adresvoorstelling.busnummer"
         },
@@ -1116,7 +1213,7 @@
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "fullAddress"
+            "en": "full address"
           },
           "sh:path": "http://www.w3.org/ns/locn#fullAddress"
         },
@@ -1137,7 +1234,7 @@
             "en": "Name or description of the geographic object that the address locator identifies."
           },
           "sh:name": {
-            "en": "locationName"
+            "en": "location name"
           },
           "sh:path": "http://www.w3.org/ns/locn#locatorName"
         },
@@ -1147,7 +1244,7 @@
             "en": "Alphanumeric code that uniquely identifies the address locator within the street, administrative unit, etc."
           },
           "sh:name": {
-            "en": "locatorDesignator"
+            "en": "locator designator"
           },
           "sh:path": "http://www.w3.org/ns/locn#locatorDesignator"
         },
@@ -1158,7 +1255,7 @@
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "municipalityName"
+            "en": "municipality name"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#municipalityName"
         },
@@ -1169,7 +1266,7 @@
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "poBox"
+            "en": "po box"
           },
           "sh:path": "http://www.w3.org/ns/locn#poBox"
         },
@@ -1180,7 +1277,7 @@
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "postName"
+            "en": "post name"
           },
           "sh:path": "http://www.w3.org/ns/locn#postName"
         },
@@ -1209,7 +1306,7 @@
         {
           "sh:class": "http://vocab.belgif.be/ns/building#GeographicalName",
           "sh:definition": {
-            "en": "Streetname of the address"
+            "en": "Streetname of the address."
           },
           "sh:maxCount": "1",
           "sh:name": {
@@ -1284,12 +1381,12 @@
         {
           "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
-            "en": "Element of the building that was captured by (X,Y) coordinates"
+            "en": "Element of the building that was captured by (X,Y) coordinates."
           },
           "sh:maxCount": "1",
           "sh:minCount": "1",
           "sh:name": {
-            "en": "horizontalGeometryReference"
+            "en": "horizontal geometry reference"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#BuildingGeometry2D.horizontalGeometryReference"
         },
@@ -1300,7 +1397,7 @@
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "verticalGeometryReference"
+            "en": "vertical geometry reference"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#verticalGeometryReference"
         }
@@ -1330,7 +1427,7 @@
           },
           "sh:maxCount": "1",
           "sh:name": {
-            "en": "documentDescription"
+            "en": "document description"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#documentDescription"
         },
@@ -1342,7 +1439,7 @@
           "sh:maxCount": "1",
           "sh:minCount": "1",
           "sh:name": {
-            "en": "sourceStatus"
+            "en": "source status"
           },
           "sh:path": "http://vocab.belgif.be/ns/building#sourceStatus"
         }

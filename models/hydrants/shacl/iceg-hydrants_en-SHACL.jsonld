@@ -107,7 +107,6 @@
       "sh:closed": false,
       "sh:property": [
         {
-          "sh:class": "http://www.w3.org/2004/02/skos/core#Concept",
           "sh:definition": {
             "en": "Standard units of measurements used when accounting for stock, and expressing them in quantities."
           },

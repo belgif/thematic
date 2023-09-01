@@ -324,8 +324,8 @@
   "license": "https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic",
   "issued": "TBD",
   "navigation": {},
-  "publication-state": "Public Review",
-  "publication-date": "2023-01-20",
+  "publication-state": "For acceptance",
+  "publication-date": "2023-09-07",
   "classes": [
     {
       "@id": "http://vocab.belgif.be/ns/building#Building",
@@ -377,10 +377,38 @@
       ]
     },
     {
+      "@id": "http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD3",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "definition": {
+        "en": "Data type grouping the specific metadata attached to the 3D geometry, when provided by a LoD3 representation."
+      },
+      "parents": [
+        "http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD"
+      ]
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD4",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "definition": {
+        "en": "Data type grouping the specific metadata attached to the 3D geometry, when provided by a LoD4 representation."
+      },
+      "parents": [
+        "http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD"
+      ]
+    },
+    {
       "@id": "http://vocab.belgif.be/ns/building#BuildingUnit",
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "definition": {
         "en": "The smallest unit within a building that is suitable and adapted for residential, commercial or recreational purposes and which is accessible from the outside or from a common area. A building unit is atomic, functionally independent, and may be separately sold, rented out, inherited, etc. In addition, a building unit can also be a common part."
+      },
+      "parents": []
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/building#CadastralParcel",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "definition": {
+        "en": "A portion of Belgian territory, geographically demarcated and identified by the AAPD on the cadastral plot plan, corresponding to the land area of one or more cadastral patrimonial plots."
       },
       "parents": []
     },
@@ -444,8 +472,30 @@
       "parents": []
     },
     {
+      "@id": "http://vocab.belgif.be/ns/building#ICEG-Unit",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "definition": {
+        "en": "A representation of a unit."
+      },
+      "parents": []
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/building#InteriorInstallation",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "definition": {
+        "en": "An internal construction (generally or small size) or an internal device, serving the building."
+      },
+      "usage": {
+        "en": "Example: stairs, lift"
+      },
+      "parents": []
+    },
+    {
       "@id": "http://vocab.belgif.be/ns/building#LangCode",
       "@type": "http://www.w3.org/2002/07/owl#Class",
+      "definition": {
+        "en": "The official code of the language."
+      },
       "parents": []
     },
     {
@@ -460,13 +510,8 @@
   "externals": [
     {
       "name": {
-        "en": "ICEG-Unit"
+        "en": "URI"
       },
-      "@id": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure",
-      "@type": "rdfs:Class"
-    },
-    {
-      "name": {},
       "@id": "http://www.w3.org/2001/XMLSchema#anyURI",
       "@type": "rdfs:Class"
     },
@@ -479,28 +524,35 @@
     },
     {
       "name": {
-        "en": "BuildingNatureValue"
+        "en": "Building nature value"
       },
       "@id": "http://www.w3.org/2004/02/skos/core#Concept",
       "@type": "rdfs:Class"
     },
     {
       "name": {
-        "en": "CurrentUseValue"
+        "en": "Current use value"
       },
       "@id": "http://www.w3.org/2004/02/skos/core#Concept",
       "@type": "rdfs:Class"
     },
     {
       "name": {
-        "en": "MeasuringMethod"
+        "en": "Measuring method"
       },
       "@id": "http://www.w3.org/2004/02/skos/core#Concept",
       "@type": "rdfs:Class"
     },
     {
       "name": {
-        "en": "SourceStatusValue"
+        "en": "Source status value"
+      },
+      "@id": "http://www.w3.org/2004/02/skos/core#Concept",
+      "@type": "rdfs:Class"
+    },
+    {
+      "name": {
+        "en": "Internal installation nature value"
       },
       "@id": "http://www.w3.org/2004/02/skos/core#Concept",
       "@type": "rdfs:Class"
@@ -514,7 +566,7 @@
     },
     {
       "name": {
-        "en": "BuildingGeometry2D"
+        "en": "Building geometry 2D"
       },
       "@id": "https://data.vlaanderen.be/ns/gebouw#2DGebouwgeometrie",
       "@type": "rdfs:Class"
@@ -605,7 +657,7 @@
       "@id": "http://vocab.belgif.be/ns/building#BuildingGeometry2D.horizontalGeometryReference",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "definition": {
-        "en": "Element of the building that was captured by (X,Y) coordinates"
+        "en": "Element of the building that was captured by (X,Y) coordinates."
       },
       "domain": [
         "https://data.vlaanderen.be/ns/gebouw#2DGebouwgeometrie"
@@ -705,8 +757,14 @@
     {
       "@id": "http://vocab.belgif.be/ns/building#building",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "definition": {
+        "en": "Building of which building unit(s) are being a part."
+      },
+      "usage": {
+        "en": "The set of two distinct volumes united by a gallery/walkway is nevertheless considered as a single building. Two volumes separated by a footbridge (which is above a public road) are considered as two separate buildings which are located in different sites (because they are different plots)."
+      },
       "domain": [
-        "http://vocab.belgif.be/ns/building#CadastralParcel"
+        "http://vocab.belgif.be/ns/building#BuildingUnit"
       ],
       "range": [
         "http://vocab.belgif.be/ns/building#Building"
@@ -717,13 +775,10 @@
       "@id": "http://vocab.belgif.be/ns/building#building",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "definition": {
-        "en": "Building of which building unit(s) are being a part."
-      },
-      "usage": {
-        "en": "The set of two distinct volumes united by a gallery/walkway is nevertheless considered as a single building. Two volumes separated by a footbridge (which is above a public road) are considered as two separate buildings which are located in different sites (because they are different plots)."
+        "en": "The Building(s) related to the CadastralParcel."
       },
       "domain": [
-        "http://vocab.belgif.be/ns/building#BuildingUnit"
+        "http://vocab.belgif.be/ns/building#CadastralParcel"
       ],
       "range": [
         "http://vocab.belgif.be/ns/building#Building"
@@ -779,7 +834,7 @@
       "@id": "http://vocab.belgif.be/ns/building#conditionOfConstruction",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "definition": {
-        "en": "Values indicating the condition of a construction"
+        "en": "Values indicating the condition of a construction."
       },
       "usage": {
         "en": "Concepts of this codelist should be used from the INSPIRE <a href=\"https://inspire.ec.europa.eu/codelist/ConditionOfConstructionValue/\">Condition of Construction</a> code list."
@@ -1017,14 +1072,11 @@
       "definition": {
         "en": "The estimated absolute positional accuracy of the (X,Y) coordinates of the building geometry.\t"
       },
-      "usage": {
-        "en": "NOTE\t"
-      },
       "domain": [
         "http://vocab.belgif.be/ns/building#BuildingGeometry"
       ],
       "range": [
-        "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure"
+        "http://vocab.belgif.be/ns/building#ICEG-Unit"
       ],
       "generalization": []
     },
@@ -1073,6 +1125,62 @@
       ],
       "range": [
         "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/building#installationNature",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "definition": {
+        "en": "The nature of the internal installation."
+      },
+      "domain": [
+        "http://vocab.belgif.be/ns/building#InteriorInstallation"
+      ],
+      "range": [
+        "http://www.w3.org/2004/02/skos/core#Concept"
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/building#interiorInstallation",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "definition": {
+        "en": "The interior installation(s) serving the building."
+      },
+      "domain": [
+        "http://vocab.belgif.be/ns/building#Building"
+      ],
+      "range": [
+        "http://vocab.belgif.be/ns/building#InteriorInstallation"
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/building#legalUse",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "definition": {
+        "en": "The legal use of the building."
+      },
+      "domain": [
+        "http://vocab.belgif.be/ns/building#Building"
+      ],
+      "range": [
+        "http://vocab.belgif.be/ns/building#CurrentUse"
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/building#legalUse",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "definition": {
+        "en": "The legal use of the building unit."
+      },
+      "domain": [
+        "http://vocab.belgif.be/ns/building#BuildingUnit"
+      ],
+      "range": [
+        "http://vocab.belgif.be/ns/building#CurrentUse"
       ],
       "generalization": []
     },
@@ -1333,7 +1441,7 @@
       "@id": "http://vocab.belgif.be/ns/building#type",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "definition": {
-        "en": "The current use of a building"
+        "en": "The current use of a building."
       },
       "usage": {
         "en": "Example: trade, entertainment, ..."
@@ -1356,7 +1464,7 @@
         "en": "Concepts of this codelist should be used from the EU Vocabulary <a href=\"https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/measurement-unit\">Measurement unit</a>."
       },
       "domain": [
-        "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure"
+        "http://vocab.belgif.be/ns/building#ICEG-Unit"
       ],
       "range": [
         "http://www.w3.org/2001/XMLSchema#anyURI"
@@ -1373,7 +1481,7 @@
         "http://vocab.belgif.be/ns/building#HeightAboveGround"
       ],
       "range": [
-        "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure"
+        "http://vocab.belgif.be/ns/building#ICEG-Unit"
       ],
       "generalization": []
     },
@@ -1390,7 +1498,7 @@
         "http://vocab.belgif.be/ns/building#BuildingGeometry"
       ],
       "range": [
-        "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure"
+        "http://vocab.belgif.be/ns/building#ICEG-Unit"
       ],
       "generalization": []
     },
@@ -1449,14 +1557,14 @@
   "externalproperties": [
     {
       "name": {
-        "en": "assignedBy"
+        "en": "assigned by"
       },
       "@id": "http://purl.org/dc/terms/creator",
       "@type": "rdf:Property"
     },
     {
       "name": {
-        "en": "assignedOn"
+        "en": "assigned on"
       },
       "@id": "http://purl.org/dc/terms/issued",
       "@type": "rdf:Property"
@@ -1484,7 +1592,14 @@
     },
     {
       "name": {
-        "en": "assignedByString"
+        "en": "identifier"
+      },
+      "@id": "http://www.w3.org/ns/adms#identifier",
+      "@type": "rdf:Property"
+    },
+    {
+      "name": {
+        "en": "assigned by string"
       },
       "@id": "http://www.w3.org/ns/adms#schemaAgency",
       "@type": "rdf:Property"
@@ -1513,6 +1628,13 @@
     {
       "name": {
         "en": "geometry"
+      },
+      "@id": "http://www.w3.org/ns/locn#geometry",
+      "@type": "rdf:Property"
+    },
+    {
+      "name": {
+        "en": "geometry 3D"
       },
       "@id": "http://www.w3.org/ns/locn#geometry",
       "@type": "rdf:Property"

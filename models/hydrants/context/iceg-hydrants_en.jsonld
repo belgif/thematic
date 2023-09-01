@@ -129,7 +129,7 @@
     "IcegUnit": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure",
     "IcegUnit.uom": {
       "@id": "http://vocab.belgif.be/ns/building#uom",
-      "@type": "@id"
+      "@type": ""
     },
     "IcegUnit.value": {
       "@id": "https://qudt.org/schema/qudt/value",

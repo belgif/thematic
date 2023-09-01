@@ -64,8 +64,8 @@
 
               <div class="head" role="status">
               <dl>
-              <dt>Status</dt><dd>Public Review</dd>
-              <dt>Published at</dt><dd>2023-01-20</dd>
+              <dt>Status</dt><dd>For acceptance</dd>
+              <dt>Published at</dt><dd>2023-09-07</dd>
               <dt>This version</dt><dd><a href="https://belgif.github.io/thematic/models/building/index_en.html">https://belgif.github.io/thematic/models/building/index_en.html</a><br></dd>
               
               
@@ -515,7 +515,7 @@
               <div class="head" role="metainfo" id="metainfo">
               <dl>
               <!--<dt>Source</dt><dd><br></dd>-->
-              <!--<dt>Changelog</dt><dd><a href="https://github.com/bertvannuffelen/semiceuthema/blob/b119980a60be60b2c96819c4688ebd56de17deec/CHANGELOG">https://github.com/bertvannuffelen/semiceuthema/blob/b119980a60be60b2c96819c4688ebd56de17deec/CHANGELOG</a></dd>-->
+              <!--<dt>Changelog</dt><dd><a href="https://github.com/bertvannuffelen/semiceuthema/blob/266dbba8188ce580c0c528b05c81cd240ac30e78/CHANGELOG">https://github.com/bertvannuffelen/semiceuthema/blob/266dbba8188ce580c0c528b05c81cd240ac30e78/CHANGELOG</a></dd>-->
               <dt>Feedback</dt><dd><a href="https://github.com/belgif/thematic/issues">https://github.com/belgif/thematic/issues</a></dd>
               <!--<dt>Registry of standards</dt><dd><a href="TODO">TODO</a></dd>-->
 
@@ -542,7 +542,7 @@
                 <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">Status of this document</h2>
                 
                 <p>
-                  This model has the status of Public Review published on 2023-01-20.
+                  This model has the status of Public Review published on 2023-09-07.
 	        </p>
                 
               </section>
@@ -695,8 +695,9 @@
                       <br />
                       |
                       <a href="#Building">Building</a> |
-                      <a href="#BuildingUnit">BuildingUnit</a> |
-                      <a href="#CadastralParcel">CadastralParcel</a> |
+                      <a href="#Building unit">Building unit</a> |
+                      <a href="#Cadastral parcel">Cadastral parcel</a> |
+                      <a href="#Interior installation">Interior installation</a> |
                     </p>
                   </div>
                   
@@ -705,33 +706,35 @@
                     <p> This document describes the usage of the following datatypes for a correct usage of the Core Vocabulary:
                       <br />
                       |
-                      <a href="#"></a> |
-                      <a href="#3Dobject">3Dobject</a> |
-                      <a href="#AddressRepresentation">AddressRepresentation</a> |
-                      <a href="#BuildingGeometry">BuildingGeometry</a> |
-                      <a href="#BuildingGeometry2D">BuildingGeometry2D</a> |
-                      <a href="#BuildingGeometry3DLoD">BuildingGeometry3DLoD</a> |
-                      <a href="#BuildingGeometry3DLoD1">BuildingGeometry3DLoD1</a> |
-                      <a href="#BuildingGeometry3DLoD2">BuildingGeometry3DLoD2</a> |
-                      <a href="#CurrentUse">CurrentUse</a> |
-                      <a href="#DateOfEvent">DateOfEvent</a> |
-                      <a href="#DirectPosition">DirectPosition</a> |
+                      <a href="#3D object">3D object</a> |
+                      <a href="#Address representation">Address representation</a> |
+                      <a href="#Building geometry">Building geometry</a> |
+                      <a href="#Building geometry 2D">Building geometry 2D</a> |
+                      <a href="#Building geometry 3D LoD">Building geometry 3D LoD</a> |
+                      <a href="#Building geometry 3D LoD1">Building geometry 3D LoD1</a> |
+                      <a href="#Building geometry 3D LoD2">Building geometry 3D LoD2</a> |
+                      <a href="#Building geometry 3D LoD3">Building geometry 3D LoD3</a> |
+                      <a href="#Building geometry 3D LoD4">Building geometry 3D LoD4</a> |
+                      <a href="#Current use">Current use</a> |
+                      <a href="#Date of event">Date of event</a> |
+                      <a href="#Direct position">Direct position</a> |
                       <a href="#Document">Document</a> |
                       <a href="#Elevation">Elevation</a> |
-                      <a href="#EntranceLocation">EntranceLocation</a> |
-                      <a href="#ExternalReference">ExternalReference</a> |
-                      <a href="#GeographicalName">GeographicalName</a> |
+                      <a href="#Entrance location">Entrance location</a> |
+                      <a href="#External reference">External reference</a> |
+                      <a href="#Geographical name">Geographical name</a> |
                       <a href="#Geometry">Geometry</a> |
-                      <a href="#HeightAboveGround">HeightAboveGround</a> |
+                      <a href="#Height above ground">Height above ground</a> |
                       <a href="#ICEG-Unit">ICEG-Unit</a> |
                       <a href="#Identifier">Identifier</a> |
-                      <a href="#LangCode">LangCode</a> |
-                      <a href="#MultiCurve">MultiCurve</a> |
-                      <a href="#MultiSurface">MultiSurface</a> |
+                      <a href="#Lang code">Lang code</a> |
+                      <a href="#Multi curve">Multi curve</a> |
+                      <a href="#Multi surface">Multi surface</a> |
                       <a href="#Point">Point</a> |
                       <a href="#Polygon">Polygon</a> |
-                      <a href="#StructuredIdentificator">StructuredIdentificator</a> |
+                      <a href="#Structured identificator">Structured identificator</a> |
                       <a href="#Text">Text</a> |
+                      <a href="#URI">URI</a> |
                     </p>
                   </div>
                   
@@ -759,25 +762,27 @@
 		     
                     <dd>For this entity the following properties are defined:
                       <a href="#Building%3Aaddress">address</a>, 
-                      <a href="#Building%3AbuildingNature">buildingNature</a>, 
-                      <a href="#Building%3AbuildingUnit">buildingUnit</a>, 
-                      <a href="#Building%3AcadastralParcel">cadastralParcel</a>, 
-                      <a href="#Building%3AconditionOfConstruction">conditionOfConstruction</a>, 
-                      <a href="#Building%3AcurrentUse">currentUse</a>, 
-                      <a href="#Building%3AdateOfConstruction">dateOfConstruction</a>, 
-                      <a href="#Building%3AdateOfDemolition">dateOfDemolition</a>, 
-                      <a href="#Building%3AdateOfRenovation">dateOfRenovation</a>, 
+                      <a href="#Building%3Abuilding%20nature">building nature</a>, 
+                      <a href="#Building%3Abuilding%20unit">building unit</a>, 
+                      <a href="#Building%3Acadastral%20parcel">cadastral parcel</a>, 
+                      <a href="#Building%3Acondition%20of%20construction">condition of construction</a>, 
+                      <a href="#Building%3Acurrent%20use">current use</a>, 
+                      <a href="#Building%3Adate%20of%20construction">date of construction</a>, 
+                      <a href="#Building%3Adate%20of%20demolition">date of demolition</a>, 
+                      <a href="#Building%3Adate%20of%20renovation">date of renovation</a>, 
                       <a href="#Building%3Adocument">document</a>, 
                       <a href="#Building%3Aelevation">elevation</a>, 
-                      <a href="#Building%3AentranceLocation">entranceLocation</a>, 
-                      <a href="#Building%3AexternalReference">externalReference</a>, 
+                      <a href="#Building%3Aentrance%20location">entrance location</a>, 
+                      <a href="#Building%3Aexternal%20reference">external reference</a>, 
                       <a href="#Building%3Ageometry">geometry</a>, 
-                      <a href="#Building%3AheightAboveGround">heightAboveGround</a>, 
+                      <a href="#Building%3Aheight%20above%20ground">height above ground</a>, 
                       <a href="#Building%3Aidentifier">identifier</a>, 
+                      <a href="#Building%3Ainterior%20installation">interior installation</a>, 
+                      <a href="#Building%3Alegal%20use">legal use</a>, 
                       <a href="#Building%3Aname">name</a>, 
-                      <a href="#Building%3AnumberOfDwellings">numberOfDwellings</a>, 
-                      <a href="#Building%3AnumberOfFloorsAboveGround">numberOfFloorsAboveGround</a>, 
-                      <a href="#Building%3AnumberOfFloorsUnderGround">numberOfFloorsUnderGround</a>.</dd>
+                      <a href="#Building%3Anumber%20of%20dwellings">number of dwellings</a>, 
+                      <a href="#Building%3Anumber%20of%20floors%20above%20ground">number of floors above ground</a>, 
+                      <a href="#Building%3Anumber%20of%20floors%20under%20ground">number of floors under ground</a>.</dd>
                     
                   </dl>
                 </div>
@@ -807,7 +812,7 @@
                         <td>
                           
 			    
-			    <a href="#AddressRepresentation" data-placement="right">AddressRepresentation</a>
+			    <a href="#Address representation" data-placement="right">Address representation</a>
 			    
                           
                         </td>
@@ -817,17 +822,17 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Building%3AbuildingNature" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#buildingNature">
+                      <tr id="Building%3Abuilding%20nature" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#buildingNature">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://vocab.belgif.be/ns/building#buildingNature" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#buildingNature" data-placement="right">
-                            buildingNature</a>
+                            building nature</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#BuildingNatureValue" data-placement="right">BuildingNatureValue</a>
+			    <a href="#Building nature value" data-placement="right">Building nature value</a>
 			    
                           
                         </td>
@@ -839,17 +844,17 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                     
-                      <tr id="Building%3AbuildingUnit" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#buildingUnit">
+                      <tr id="Building%3Abuilding%20unit" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#buildingUnit">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://vocab.belgif.be/ns/building#buildingUnit" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#buildingUnit" data-placement="right">
-                            buildingUnit</a>
+                            building unit</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#BuildingUnit" data-placement="right">BuildingUnit</a>
+			    <a href="#Building unit" data-placement="right">Building unit</a>
 			    
                           
                         </td>
@@ -859,17 +864,17 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                     
-                      <tr id="Building%3AcadastralParcel" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#cadastralParcel">
+                      <tr id="Building%3Acadastral%20parcel" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#cadastralParcel">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://vocab.belgif.be/ns/building#cadastralParcel" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#cadastralParcel" data-placement="right">
-                            cadastralParcel</a>
+                            cadastral parcel</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#CadastralParcel" data-placement="right">CadastralParcel</a>
+			    <a href="#Cadastral parcel" data-placement="right">Cadastral parcel</a>
 			    
                           
                         </td>
@@ -879,11 +884,11 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                     
-                      <tr id="Building%3AconditionOfConstruction" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#conditionOfConstruction">
+                      <tr id="Building%3Acondition%20of%20construction" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#conditionOfConstruction">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://vocab.belgif.be/ns/building#conditionOfConstruction" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#conditionOfConstruction" data-placement="right">
-                            conditionOfConstruction</a>
+                            condition of construction</a>
                           </code>
                         </td>
                         <td>
@@ -894,22 +899,22 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                           
                         </td>
 			<td>1</td>
-                        <td property="rdfs:comment">Values indicating the condition of a construction</td>
+                        <td property="rdfs:comment">Values indicating the condition of a construction.</td>
                         <td property="skos:scopeNote">Concepts of this codelist should be used from the INSPIRE <a href="https://inspire.ec.europa.eu/codelist/ConditionOfConstructionValue/">Condition of Construction</a> code list.</td>
                         <td></td>
                       </tr>
                     
-                      <tr id="Building%3AcurrentUse" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#Building.currentUse">
+                      <tr id="Building%3Acurrent%20use" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#Building.currentUse">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://vocab.belgif.be/ns/building#Building.currentUse" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#Building.currentUse" data-placement="right">
-                            currentUse</a>
+                            current use</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#CurrentUse" data-placement="right">CurrentUse</a>
+			    <a href="#Current use" data-placement="right">Current use</a>
 			    
                           
                         </td>
@@ -919,17 +924,17 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                     
-                      <tr id="Building%3AdateOfConstruction" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#Building.dateOfConstruction">
+                      <tr id="Building%3Adate%20of%20construction" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#Building.dateOfConstruction">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://vocab.belgif.be/ns/building#Building.dateOfConstruction" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#Building.dateOfConstruction" data-placement="right">
-                            dateOfConstruction</a>
+                            date of construction</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#DateOfEvent" data-placement="right">DateOfEvent</a>
+			    <a href="#Date of event" data-placement="right">Date of event</a>
 			    
                           
                         </td>
@@ -939,17 +944,17 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                     
-                      <tr id="Building%3AdateOfDemolition" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#Building.dateOfDemolition">
+                      <tr id="Building%3Adate%20of%20demolition" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#Building.dateOfDemolition">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://vocab.belgif.be/ns/building#Building.dateOfDemolition" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#Building.dateOfDemolition" data-placement="right">
-                            dateOfDemolition</a>
+                            date of demolition</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#DateOfEvent" data-placement="right">DateOfEvent</a>
+			    <a href="#Date of event" data-placement="right">Date of event</a>
 			    
                           
                         </td>
@@ -959,17 +964,17 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                     
-                      <tr id="Building%3AdateOfRenovation" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#Building.dateOfRenovation">
+                      <tr id="Building%3Adate%20of%20renovation" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#Building.dateOfRenovation">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://vocab.belgif.be/ns/building#Building.dateOfRenovation" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#Building.dateOfRenovation" data-placement="right">
-                            dateOfRenovation</a>
+                            date of renovation</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#DateOfEvent" data-placement="right">DateOfEvent</a>
+			    <a href="#Date of event" data-placement="right">Date of event</a>
 			    
                           
                         </td>
@@ -1019,17 +1024,17 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                     
-                      <tr id="Building%3AentranceLocation" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#entranceLocation">
+                      <tr id="Building%3Aentrance%20location" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#entranceLocation">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://vocab.belgif.be/ns/building#entranceLocation" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#entranceLocation" data-placement="right">
-                            entranceLocation</a>
+                            entrance location</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#EntranceLocation" data-placement="right">EntranceLocation</a>
+			    <a href="#Entrance location" data-placement="right">Entrance location</a>
 			    
                           
                         </td>
@@ -1039,17 +1044,17 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                     
-                      <tr id="Building%3AexternalReference" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#externalReference">
+                      <tr id="Building%3Aexternal%20reference" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#externalReference">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://vocab.belgif.be/ns/building#externalReference" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#externalReference" data-placement="right">
-                            externalReference</a>
+                            external reference</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#ExternalReference" data-placement="right">ExternalReference</a>
+			    <a href="#External reference" data-placement="right">External reference</a>
 			    
                           
                         </td>
@@ -1069,27 +1074,27 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td>
                           
 			    
-			    <a href="#BuildingGeometry" data-placement="right">BuildingGeometry</a>
+			    <a href="#Building geometry" data-placement="right">Building geometry</a>
 			    
                           
                         </td>
 			<td>0..*</td>
-                        <td property="rdfs:comment">Shape and position characteristics of a building</td>
+                        <td property="rdfs:comment">Shape and position characteristics of a building.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
                     
-                      <tr id="Building%3AheightAboveGround" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#heightAboveGround">
+                      <tr id="Building%3Aheight%20above%20ground" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#heightAboveGround">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://vocab.belgif.be/ns/building#heightAboveGround" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#heightAboveGround" data-placement="right">
-                            heightAboveGround</a>
+                            height above ground</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#HeightAboveGround" data-placement="right">HeightAboveGround</a>
+			    <a href="#Height above ground" data-placement="right">Height above ground</a>
 			    
                           
                         </td>
@@ -1119,6 +1124,46 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                     
+                      <tr id="Building%3Ainterior%20installation" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#interiorInstallation">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#interiorInstallation" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#interiorInstallation" data-placement="right">
+                            interior installation</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Interior installation" data-placement="right">Interior installation</a>
+			    
+                          
+                        </td>
+			<td>0..*</td>
+                        <td property="rdfs:comment">The interior installation(s) serving the building.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Building%3Alegal%20use" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#legalUse">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#legalUse" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#legalUse" data-placement="right">
+                            legal use</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Current use" data-placement="right">Current use</a>
+			    
+                          
+                        </td>
+			<td>0..*</td>
+                        <td property="rdfs:comment">The legal use of the building.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                    
                       <tr id="Building%3Aname" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#name">
                         <td>
                           <code property="rdfs:label">
@@ -1129,7 +1174,7 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td>
                           
 			    
-			    <a href="#GeographicalName" data-placement="right">GeographicalName</a>
+			    <a href="#Geographical name" data-placement="right">Geographical name</a>
 			    
                           
                         </td>
@@ -1139,11 +1184,11 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                     
-                      <tr id="Building%3AnumberOfDwellings" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#numberOfDwellings">
+                      <tr id="Building%3Anumber%20of%20dwellings" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#numberOfDwellings">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://vocab.belgif.be/ns/building#numberOfDwellings" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#numberOfDwellings" data-placement="right">
-                            numberOfDwellings</a>
+                            number of dwellings</a>
                           </code>
                         </td>
                         <td>
@@ -1159,11 +1204,11 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                     
-                      <tr id="Building%3AnumberOfFloorsAboveGround" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#numberOfFloorsAboveGround">
+                      <tr id="Building%3Anumber%20of%20floors%20above%20ground" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#numberOfFloorsAboveGround">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://vocab.belgif.be/ns/building#numberOfFloorsAboveGround" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#numberOfFloorsAboveGround" data-placement="right">
-                            numberOfFloorsAboveGround</a>
+                            number of floors above ground</a>
                           </code>
                         </td>
                         <td>
@@ -1179,11 +1224,11 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                     
-                      <tr id="Building%3AnumberOfFloorsUnderGround" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#numberOfFloorsUnderGround">
+                      <tr id="Building%3Anumber%20of%20floors%20under%20ground" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#numberOfFloorsUnderGround">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://vocab.belgif.be/ns/building#numberOfFloorsUnderGround" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#numberOfFloorsUnderGround" data-placement="right">
-                            numberOfFloorsUnderGround</a>
+                            number of floors under ground</a>
                           </code>
                         </td>
                         <td>
@@ -1206,7 +1251,7 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="BuildingUnit"><a href="http://vocab.belgif.be/ns/building#BuildingUnit" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#BuildingUnit" data-placement="right">BuildingUnit</a></h3>
+              <h3 class="h3" id="Building unit"><a href="http://vocab.belgif.be/ns/building#BuildingUnit" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#BuildingUnit" data-placement="right">Building unit</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Description</dt><dd>The smallest unit within a building that is suitable and adapted for residential, commercial or recreational purposes and which is accessible from the outside or from a common area. A building unit is atomic, functionally independent, and may be separately sold, rented out, inherited, etc. In addition, a building unit can also be a common part.</dd>
@@ -1215,16 +1260,17 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                     <dt>Properties</dt>
 		     
                     <dd>For this entity the following properties are defined:
-                      <a href="#BuildingUnit%3Aaddress">address</a>, 
-                      <a href="#BuildingUnit%3Abuilding">building</a>, 
-                      <a href="#BuildingUnit%3AcurrentUse">currentUse</a>, 
-                      <a href="#BuildingUnit%3AdateOfConstruction">dateOfConstruction</a>, 
-                      <a href="#BuildingUnit%3AdateOfDemolition">dateOfDemolition</a>, 
-                      <a href="#BuildingUnit%3AdateOfRenovation">dateOfRenovation</a>, 
-                      <a href="#BuildingUnit%3Adocument">document</a>, 
-                      <a href="#BuildingUnit%3AentranceLocation">entranceLocation</a>, 
-                      <a href="#BuildingUnit%3Ageometry">geometry</a>, 
-                      <a href="#BuildingUnit%3Aidentifier">identifier</a>.</dd>
+                      <a href="#Building%20unit%3Aaddress">address</a>, 
+                      <a href="#Building%20unit%3Abuilding">building</a>, 
+                      <a href="#Building%20unit%3Acurrent%20use">current use</a>, 
+                      <a href="#Building%20unit%3Adate%20of%20construction">date of construction</a>, 
+                      <a href="#Building%20unit%3Adate%20of%20demolition">date of demolition</a>, 
+                      <a href="#Building%20unit%3Adate%20of%20renovation">date of renovation</a>, 
+                      <a href="#Building%20unit%3Adocument">document</a>, 
+                      <a href="#Building%20unit%3Aentrance%20location">entrance location</a>, 
+                      <a href="#Building%20unit%3Ageometry">geometry</a>, 
+                      <a href="#Building%20unit%3Aidentifier">identifier</a>, 
+                      <a href="#Building%20unit%3Alegal%20use">legal use</a>.</dd>
                     
                   </dl>
                 </div>
@@ -1244,7 +1290,7 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
 
                     <tbody class="supertype">
                     
-                      <tr id="BuildingUnit%3Aaddress" typeof="rdfs:Property" resource="https://www.w3.org/ns/locn#address">
+                      <tr id="Building%20unit%3Aaddress" typeof="rdfs:Property" resource="https://www.w3.org/ns/locn#address">
                         <td>
                           <code property="rdfs:label">
                             <a href="https://www.w3.org/ns/locn#address" data-toggle="tooltip" data-content="https://www.w3.org/ns/locn#address" data-placement="right">
@@ -1254,7 +1300,7 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td>
                           
 			    
-			    <a href="#AddressRepresentation" data-placement="right">AddressRepresentation</a>
+			    <a href="#Address representation" data-placement="right">Address representation</a>
 			    
                           
                         </td>
@@ -1264,7 +1310,7 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                     
-                      <tr id="BuildingUnit%3Abuilding" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#building">
+                      <tr id="Building%20unit%3Abuilding" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#building">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://vocab.belgif.be/ns/building#building" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#building" data-placement="right">
@@ -1284,17 +1330,17 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                     
-                      <tr id="BuildingUnit%3AcurrentUse" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#Buildingunit.currentUse">
+                      <tr id="Building%20unit%3Acurrent%20use" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#Buildingunit.currentUse">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://vocab.belgif.be/ns/building#Buildingunit.currentUse" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#Buildingunit.currentUse" data-placement="right">
-                            currentUse</a>
+                            current use</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#CurrentUse" data-placement="right">CurrentUse</a>
+			    <a href="#Current use" data-placement="right">Current use</a>
 			    
                           
                         </td>
@@ -1304,17 +1350,17 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                     
-                      <tr id="BuildingUnit%3AdateOfConstruction" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#BuildingUnit.dateOfConstruction">
+                      <tr id="Building%20unit%3Adate%20of%20construction" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#BuildingUnit.dateOfConstruction">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://vocab.belgif.be/ns/building#BuildingUnit.dateOfConstruction" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#BuildingUnit.dateOfConstruction" data-placement="right">
-                            dateOfConstruction</a>
+                            date of construction</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#DateOfEvent" data-placement="right">DateOfEvent</a>
+			    <a href="#Date of event" data-placement="right">Date of event</a>
 			    
                           
                         </td>
@@ -1324,17 +1370,17 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                     
-                      <tr id="BuildingUnit%3AdateOfDemolition" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#BuildingUnit.dateOfDemolition">
+                      <tr id="Building%20unit%3Adate%20of%20demolition" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#BuildingUnit.dateOfDemolition">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://vocab.belgif.be/ns/building#BuildingUnit.dateOfDemolition" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#BuildingUnit.dateOfDemolition" data-placement="right">
-                            dateOfDemolition</a>
+                            date of demolition</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#DateOfEvent" data-placement="right">DateOfEvent</a>
+			    <a href="#Date of event" data-placement="right">Date of event</a>
 			    
                           
                         </td>
@@ -1344,17 +1390,17 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                     
-                      <tr id="BuildingUnit%3AdateOfRenovation" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#BuildingUnit.dateOfRenovation">
+                      <tr id="Building%20unit%3Adate%20of%20renovation" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#BuildingUnit.dateOfRenovation">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://vocab.belgif.be/ns/building#BuildingUnit.dateOfRenovation" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#BuildingUnit.dateOfRenovation" data-placement="right">
-                            dateOfRenovation</a>
+                            date of renovation</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#DateOfEvent" data-placement="right">DateOfEvent</a>
+			    <a href="#Date of event" data-placement="right">Date of event</a>
 			    
                           
                         </td>
@@ -1364,7 +1410,7 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                     
-                      <tr id="BuildingUnit%3Adocument" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#document">
+                      <tr id="Building%20unit%3Adocument" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#document">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://vocab.belgif.be/ns/building#document" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#document" data-placement="right">
@@ -1384,17 +1430,17 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                     
-                      <tr id="BuildingUnit%3AentranceLocation" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#entranceLocation">
+                      <tr id="Building%20unit%3Aentrance%20location" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#entranceLocation">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://vocab.belgif.be/ns/building#entranceLocation" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#entranceLocation" data-placement="right">
-                            entranceLocation</a>
+                            entrance location</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#EntranceLocation" data-placement="right">EntranceLocation</a>
+			    <a href="#Entrance location" data-placement="right">Entrance location</a>
 			    
                           
                         </td>
@@ -1404,7 +1450,7 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                     
-                      <tr id="BuildingUnit%3Ageometry" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#geometry">
+                      <tr id="Building%20unit%3Ageometry" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#geometry">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://www.w3.org/ns/locn#geometry" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#geometry" data-placement="right">
@@ -1424,7 +1470,7 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                     
-                      <tr id="BuildingUnit%3Aidentifier" typeof="rdfs:Property" resource="http://www.w3.org/ns/adms#identifier">
+                      <tr id="Building%20unit%3Aidentifier" typeof="rdfs:Property" resource="http://www.w3.org/ns/adms#identifier">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://www.w3.org/ns/adms#identifier" data-toggle="tooltip" data-content="http://www.w3.org/ns/adms#identifier" data-placement="right">
@@ -1444,6 +1490,26 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                     
+                      <tr id="Building%20unit%3Alegal%20use" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#legalUse">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#legalUse" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#legalUse" data-placement="right">
+                            legal use</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Current use" data-placement="right">Current use</a>
+			    
+                          
+                        </td>
+			<td>0..*</td>
+                        <td property="rdfs:comment">The legal use of the building unit.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                    
                     </tbody>
                   </table>
                 </div>
@@ -1451,7 +1517,7 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
             </div>
             
               <div class="region region--no-space-top">
-              <h3 class="h3" id="CadastralParcel"><a href="http://vocab.belgif.be/ns/building#CadastralParcel" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#CadastralParcel" data-placement="right">CadastralParcel</a></h3>
+              <h3 class="h3" id="Cadastral parcel"><a href="http://vocab.belgif.be/ns/building#CadastralParcel" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#CadastralParcel" data-placement="right">Cadastral parcel</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
                     <dt>Description</dt><dd>A portion of Belgian territory, geographically demarcated and identified by the AAPD on the cadastral plot plan, corresponding to the land area of one or more cadastral patrimonial plots.</dd>
@@ -1460,7 +1526,7 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                     <dt>Properties</dt>
 		     
                     <dd>For this entity the following properties are defined:
-                      <a href="#CadastralParcel%3Abuilding">building</a>.</dd>
+                      <a href="#Cadastral%20parcel%3Abuilding">building</a>.</dd>
                     
                   </dl>
                 </div>
@@ -1480,7 +1546,7 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
 
                     <tbody class="supertype">
                     
-                      <tr id="CadastralParcel%3Abuilding" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#building">
+                      <tr id="Cadastral%20parcel%3Abuilding" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#building">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://vocab.belgif.be/ns/building#building" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#building" data-placement="right">
@@ -1495,7 +1561,108 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                           
                         </td>
 			<td>0..*</td>
-                        <td property="rdfs:comment"></td>
+                        <td property="rdfs:comment">The Building(s) related to the CadastralParcel.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
+            </div>
+            
+              <div class="region region--no-space-top">
+              <h3 class="h3" id="Interior installation"><a href="http://vocab.belgif.be/ns/building#InteriorInstallation" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#InteriorInstallation" data-placement="right">Interior installation</a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Description</dt><dd>An internal construction (generally or small size) or an internal device, serving the building.</dd>
+                    
+                    <dt>Usage</dt><dd>Example: stairs, lift</dd>
+                    
+		    
+                    <dt>Properties</dt>
+		     
+                    <dd>For this entity the following properties are defined:
+                      <a href="#Interior%20installation%3Ageometry%203D">geometry 3D</a>, 
+                      <a href="#Interior%20installation%3Aidentifier">identifier</a>, 
+                      <a href="#Interior%20installation%3Ainstallation%20nature">installation nature</a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Property</th>
+                        <th class="data-table__header-title--sortable">Expected Range</th>
+			<th class="data-table__header-title--sortable">Cardinality</th>
+                        <th class="data-table__header-title--sortable">Description</th>
+                        <th class="data-table__header-title--sortable">Usage</th>
+                        <th class="data-table__header-title--sortable">Codelist</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="Interior%20installation%3Ageometry%203D" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#geometry">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://www.w3.org/ns/locn#geometry" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#geometry" data-placement="right">
+                            geometry 3D</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Geometry" data-placement="right">Geometry</a>
+			    
+                          
+                        </td>
+			<td>1</td>
+                        <td property="rdfs:comment">3D geometric representation of the internal installation.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Interior%20installation%3Aidentifier" typeof="rdfs:Property" resource="http://www.w3.org/ns/adms#identifier">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://www.w3.org/ns/adms#identifier" data-toggle="tooltip" data-content="http://www.w3.org/ns/adms#identifier" data-placement="right">
+                            identifier</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Identifier" data-placement="right">Identifier</a>
+			    
+                          
+                        </td>
+			<td>0..*</td>
+                        <td property="rdfs:comment">External unique object identifier published by the responsible body, which may
+be used by external applications to reference the spatial object.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Interior%20installation%3Ainstallation%20nature" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#installationNature">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#installationNature" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#installationNature" data-placement="right">
+                            installation nature</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Internal installation nature value" data-placement="right">Internal installation nature value</a>
+			    
+                          
+                        </td>
+			<td>1</td>
+                        <td property="rdfs:comment">The nature of the internal installation.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -1514,25 +1681,7 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id=""><a href="http://www.w3.org/2001/XMLSchema#anyURI" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#anyURI" data-placement="right"></a></h3>
-	      
-                <div class="region region--no-space-top">
-                  <dl>
-                    <dt>Description</dt><dd></dd>
-                    
-		    
-                    <dt>Properties</dt>
-		    
-                    <dd>There are no properties defined for this datatype.</dd>
-                    
-                  </dl>
-                </div>
-		
-            </div>
-            
-            <div class="region region--no-space-top">
-              
-              <h3 class="h3" id="3Dobject"><a href="http://www.opengis.net/ont/gml#Solid" data-toggle="tooltip" data-content="http://www.opengis.net/ont/gml#Solid" data-placement="right">3Dobject</a></h3>
+              <h3 class="h3" id="3D object"><a href="http://www.opengis.net/ont/gml#Solid" data-toggle="tooltip" data-content="http://www.opengis.net/ont/gml#Solid" data-placement="right">3D object</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
@@ -1554,7 +1703,7 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="AddressRepresentation"><a href="http://www.w3.org/ns/locn#Address" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#Address" data-placement="right">AddressRepresentation</a></h3>
+              <h3 class="h3" id="Address representation"><a href="http://www.w3.org/ns/locn#Address" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#Address" data-placement="right">Address representation</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
@@ -1564,22 +1713,22 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                     <dt>Properties</dt>
 		     
                     <dd>we have defined the following properties for this datatype:
-                      <a href="#AddressRepresentation%3AaddressArea">addressArea</a>, 
-                      <a href="#AddressRepresentation%3AadministrativeUnitLevel1">administrativeUnitLevel1</a>, 
-                      <a href="#AddressRepresentation%3AadministrativeUnitLevel2">administrativeUnitLevel2</a>, 
-                      <a href="#AddressRepresentation%3AadminUnit">adminUnit</a>, 
-                      <a href="#AddressRepresentation%3AboxNumber">boxNumber</a>, 
-                      <a href="#AddressRepresentation%3Acountry">country</a>, 
-                      <a href="#AddressRepresentation%3AfullAddress">fullAddress</a>, 
-                      <a href="#AddressRepresentation%3Ahousenumber">housenumber</a>, 
-                      <a href="#AddressRepresentation%3AlocationName">locationName</a>, 
-                      <a href="#AddressRepresentation%3AlocatorDesignator">locatorDesignator</a>, 
-                      <a href="#AddressRepresentation%3AmunicipalityName">municipalityName</a>, 
-                      <a href="#AddressRepresentation%3ApoBox">poBox</a>, 
-                      <a href="#AddressRepresentation%3Apostalcode">postalcode</a>, 
-                      <a href="#AddressRepresentation%3ApostName">postName</a>, 
-                      <a href="#AddressRepresentation%3Areference">reference</a>, 
-                      <a href="#AddressRepresentation%3Astreetname">streetname</a>.</dd>
+                      <a href="#Address%20representation%3Aaddress%20area">address area</a>, 
+                      <a href="#Address%20representation%3Aadmin%20unit">admin unit</a>, 
+                      <a href="#Address%20representation%3Aadministrative%20unit%20level%201">administrative unit level 1</a>, 
+                      <a href="#Address%20representation%3Aadministrative%20unit%20level%202">administrative unit level 2</a>, 
+                      <a href="#Address%20representation%3Abox%20number">box number</a>, 
+                      <a href="#Address%20representation%3Acountry">country</a>, 
+                      <a href="#Address%20representation%3Afull%20address">full address</a>, 
+                      <a href="#Address%20representation%3Ahousenumber">housenumber</a>, 
+                      <a href="#Address%20representation%3Alocation%20name">location name</a>, 
+                      <a href="#Address%20representation%3Alocator%20designator">locator designator</a>, 
+                      <a href="#Address%20representation%3Amunicipality%20name">municipality name</a>, 
+                      <a href="#Address%20representation%3Apo%20box">po box</a>, 
+                      <a href="#Address%20representation%3Apost%20name">post name</a>, 
+                      <a href="#Address%20representation%3Apostalcode">postalcode</a>, 
+                      <a href="#Address%20representation%3Areference">reference</a>, 
+                      <a href="#Address%20representation%3Astreetname">streetname</a>.</dd>
                     
                   </dl>
                 </div>
@@ -1599,16 +1748,16 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
 
                     <tbody class="supertype">
                       
-                      <tr id="AddressRepresentation%3AaddressArea" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#addressArea">
+                      <tr id="Address%20representation%3Aaddress%20area" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#addressArea">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://www.w3.org/ns/locn#addressArea" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#addressArea" data-placement="right">addressArea</a>
+                            <a href="http://www.w3.org/ns/locn#addressArea" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#addressArea" data-placement="right">address area</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#GeographicalName" data-placement="right">GeographicalName</a>
+			    <a href="#Geographical name" data-placement="right">Geographical name</a>
 			    
                           
                         </td>
@@ -1618,54 +1767,16 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                       
-                      <tr id="AddressRepresentation%3AadministrativeUnitLevel1" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#adminUnitL1">
+                      <tr id="Address%20representation%3Aadmin%20unit" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#adminUnit">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://www.w3.org/ns/locn#adminUnitL1" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#adminUnitL1" data-placement="right">administrativeUnitLevel1</a>
+                            <a href="http://vocab.belgif.be/ns/building#adminUnit" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#adminUnit" data-placement="right">admin unit</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#GeographicalName" data-placement="right">GeographicalName</a>
-			    
-                          
-                        </td>
-			<td>0..1</td>
-                        <td property="rdfs:comment">Highest Administrative Unit of address, usually a country.</td>
-                        <td property="skos:scopeNote"></td>
-                        <td></td>
-                      </tr>
-                      
-                      <tr id="AddressRepresentation%3AadministrativeUnitLevel2" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#adminUnitL2">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="http://www.w3.org/ns/locn#adminUnitL2" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#adminUnitL2" data-placement="right">administrativeUnitLevel2</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			    
-			    <a href="#GeographicalName" data-placement="right">GeographicalName</a>
-			    
-                          
-                        </td>
-			<td>0..1</td>
-                        <td property="rdfs:comment">The region of the address, usually a province or state or similar area typically comprising several towns.</td>
-                        <td property="skos:scopeNote"></td>
-                        <td></td>
-                      </tr>
-                      
-                      <tr id="AddressRepresentation%3AadminUnit" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#adminUnit">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#adminUnit" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#adminUnit" data-placement="right">adminUnit</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			    
-			    <a href="#GeographicalName" data-placement="right">GeographicalName</a>
+			    <a href="#Geographical name" data-placement="right">Geographical name</a>
 			    
                           
                         </td>
@@ -1675,10 +1786,48 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                       
-                      <tr id="AddressRepresentation%3AboxNumber" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#Adresvoorstelling.busnummer">
+                      <tr id="Address%20representation%3Aadministrative%20unit%20level%201" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#adminUnitL1">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#Adresvoorstelling.busnummer" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#Adresvoorstelling.busnummer" data-placement="right">boxNumber</a>
+                            <a href="http://www.w3.org/ns/locn#adminUnitL1" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#adminUnitL1" data-placement="right">administrative unit level 1</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Geographical name" data-placement="right">Geographical name</a>
+			    
+                          
+                        </td>
+			<td>0..1</td>
+                        <td property="rdfs:comment">Highest Administrative Unit of address, usually a country.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="Address%20representation%3Aadministrative%20unit%20level%202" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#adminUnitL2">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://www.w3.org/ns/locn#adminUnitL2" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#adminUnitL2" data-placement="right">administrative unit level 2</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Geographical name" data-placement="right">Geographical name</a>
+			    
+                          
+                        </td>
+			<td>0..1</td>
+                        <td property="rdfs:comment">The region of the address, usually a province or state or similar area typically comprising several towns.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="Address%20representation%3Abox%20number" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#Adresvoorstelling.busnummer">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#Adresvoorstelling.busnummer" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#Adresvoorstelling.busnummer" data-placement="right">box number</a>
                           </code>
                         </td>
                         <td>
@@ -1694,7 +1843,7 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                       
-                      <tr id="AddressRepresentation%3Acountry" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#country">
+                      <tr id="Address%20representation%3Acountry" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#country">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://vocab.belgif.be/ns/building#country" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#country" data-placement="right">country</a>
@@ -1703,7 +1852,7 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td>
                           
 			    
-			    <a href="#GeographicalName" data-placement="right">GeographicalName</a>
+			    <a href="#Geographical name" data-placement="right">Geographical name</a>
 			    
                           
                         </td>
@@ -1713,16 +1862,16 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                       
-                      <tr id="AddressRepresentation%3AfullAddress" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#fullAddress">
+                      <tr id="Address%20representation%3Afull%20address" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#fullAddress">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://www.w3.org/ns/locn#fullAddress" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#fullAddress" data-placement="right">fullAddress</a>
+                            <a href="http://www.w3.org/ns/locn#fullAddress" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#fullAddress" data-placement="right">full address</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#GeographicalName" data-placement="right">GeographicalName</a>
+			    <a href="#Geographical name" data-placement="right">Geographical name</a>
 			    
                           
                         </td>
@@ -1732,7 +1881,7 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                       
-                      <tr id="AddressRepresentation%3Ahousenumber" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#Adresvoorstelling.huisnummer">
+                      <tr id="Address%20representation%3Ahousenumber" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#Adresvoorstelling.huisnummer">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://vocab.belgif.be/ns/building#Adresvoorstelling.huisnummer" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#Adresvoorstelling.huisnummer" data-placement="right">housenumber</a>
@@ -1747,20 +1896,20 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         </td>
 			<td>0..1</td>
                         <td property="rdfs:comment">Alphanumeric code officially assigned to building units, berths, pitches or parcels.</td>
-                        <td property="skos:scopeNote"></td>
+                        <td property="skos:scopeNote">This can be very broad. An option is only the house number 19, but can also include options to specify the block, floor and number of an apartment, such as A.01.001</td>
                         <td></td>
                       </tr>
                       
-                      <tr id="AddressRepresentation%3AlocationName" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#locatorName">
+                      <tr id="Address%20representation%3Alocation%20name" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#locatorName">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://www.w3.org/ns/locn#locatorName" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#locatorName" data-placement="right">locationName</a>
+                            <a href="http://www.w3.org/ns/locn#locatorName" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#locatorName" data-placement="right">location name</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#GeographicalName" data-placement="right">GeographicalName</a>
+			    <a href="#Geographical name" data-placement="right">Geographical name</a>
 			    
                           
                         </td>
@@ -1770,10 +1919,10 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                       
-                      <tr id="AddressRepresentation%3AlocatorDesignator" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#locatorDesignator">
+                      <tr id="Address%20representation%3Alocator%20designator" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#locatorDesignator">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://www.w3.org/ns/locn#locatorDesignator" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#locatorDesignator" data-placement="right">locatorDesignator</a>
+                            <a href="http://www.w3.org/ns/locn#locatorDesignator" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#locatorDesignator" data-placement="right">locator designator</a>
                           </code>
                         </td>
                         <td>
@@ -1789,16 +1938,16 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                       
-                      <tr id="AddressRepresentation%3AmunicipalityName" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#municipalityName">
+                      <tr id="Address%20representation%3Amunicipality%20name" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#municipalityName">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#municipalityName" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#municipalityName" data-placement="right">municipalityName</a>
+                            <a href="http://vocab.belgif.be/ns/building#municipalityName" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#municipalityName" data-placement="right">municipality name</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#GeographicalName" data-placement="right">GeographicalName</a>
+			    <a href="#Geographical name" data-placement="right">Geographical name</a>
 			    
                           
                         </td>
@@ -1808,10 +1957,10 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                       
-                      <tr id="AddressRepresentation%3ApoBox" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#poBox">
+                      <tr id="Address%20representation%3Apo%20box" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#poBox">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://www.w3.org/ns/locn#poBox" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#poBox" data-placement="right">poBox</a>
+                            <a href="http://www.w3.org/ns/locn#poBox" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#poBox" data-placement="right">po box</a>
                           </code>
                         </td>
                         <td>
@@ -1827,7 +1976,26 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                       
-                      <tr id="AddressRepresentation%3Apostalcode" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#postCode">
+                      <tr id="Address%20representation%3Apost%20name" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#postName">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://www.w3.org/ns/locn#postName" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#postName" data-placement="right">post name</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Geographical name" data-placement="right">Geographical name</a>
+			    
+                          
+                        </td>
+			<td>0..1</td>
+                        <td property="rdfs:comment">Name designating the geographical area that groups addresses for postal purposes.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="Address%20representation%3Apostalcode" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#postCode">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://www.w3.org/ns/locn#postCode" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#postCode" data-placement="right">postalcode</a>
@@ -1846,26 +2014,7 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                       
-                      <tr id="AddressRepresentation%3ApostName" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#postName">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="http://www.w3.org/ns/locn#postName" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#postName" data-placement="right">postName</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			    
-			    <a href="#GeographicalName" data-placement="right">GeographicalName</a>
-			    
-                          
-                        </td>
-			<td>0..1</td>
-                        <td property="rdfs:comment">Name designating the geographical area that groups addresses for postal purposes.</td>
-                        <td property="skos:scopeNote"></td>
-                        <td></td>
-                      </tr>
-                      
-                      <tr id="AddressRepresentation%3Areference" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#reference">
+                      <tr id="Address%20representation%3Areference" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#reference">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://vocab.belgif.be/ns/building#reference" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#reference" data-placement="right">reference</a>
@@ -1884,7 +2033,7 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                       
-                      <tr id="AddressRepresentation%3Astreetname" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#thoroughfare">
+                      <tr id="Address%20representation%3Astreetname" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#thoroughfare">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://www.w3.org/ns/locn#thoroughfare" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#thoroughfare" data-placement="right">streetname</a>
@@ -1893,12 +2042,12 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td>
                           
 			    
-			    <a href="#GeographicalName" data-placement="right">GeographicalName</a>
+			    <a href="#Geographical name" data-placement="right">Geographical name</a>
 			    
                           
                         </td>
 			<td>0..1</td>
-                        <td property="rdfs:comment">Streetname of the address</td>
+                        <td property="rdfs:comment">Streetname of the address.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -1911,7 +2060,7 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="BuildingGeometry"><a href="http://vocab.belgif.be/ns/building#BuildingGeometry" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#BuildingGeometry" data-placement="right">BuildingGeometry</a></h3>
+              <h3 class="h3" id="Building geometry"><a href="http://vocab.belgif.be/ns/building#BuildingGeometry" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#BuildingGeometry" data-placement="right">Building geometry</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
@@ -1921,9 +2070,9 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                     <dt>Properties</dt>
 		     
                     <dd>we have defined the following properties for this datatype:
-                      <a href="#BuildingGeometry%3AhorizontalGeometryEstimatedAccuracy">horizontalGeometryEstimatedAccuracy</a>, 
-                      <a href="#BuildingGeometry%3AreferenceGeometry">referenceGeometry</a>, 
-                      <a href="#BuildingGeometry%3AverticalGeometryEstimatedAccuracy">verticalGeometryEstimatedAccuracy</a>.</dd>
+                      <a href="#Building%20geometry%3Ahorizontal%20geometry%20estimated%20accuracy">horizontal geometry estimated accuracy</a>, 
+                      <a href="#Building%20geometry%3Areference%20geometry">reference geometry</a>, 
+                      <a href="#Building%20geometry%3Avertical%20geometry%20estimated%20accuracy">vertical geometry estimated accuracy</a>.</dd>
                     
                   </dl>
                 </div>
@@ -1943,10 +2092,10 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
 
                     <tbody class="supertype">
                       
-                      <tr id="BuildingGeometry%3AhorizontalGeometryEstimatedAccuracy" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#horizontalGeometryEstimatedAccuracy">
+                      <tr id="Building%20geometry%3Ahorizontal%20geometry%20estimated%20accuracy" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#horizontalGeometryEstimatedAccuracy">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#horizontalGeometryEstimatedAccuracy" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#horizontalGeometryEstimatedAccuracy" data-placement="right">horizontalGeometryEstimatedAccuracy</a>
+                            <a href="http://vocab.belgif.be/ns/building#horizontalGeometryEstimatedAccuracy" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#horizontalGeometryEstimatedAccuracy" data-placement="right">horizontal geometry estimated accuracy</a>
                           </code>
                         </td>
                         <td>
@@ -1958,14 +2107,14 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         </td>
 			<td>0..1</td>
                         <td property="rdfs:comment">The estimated absolute positional accuracy of the (X,Y) coordinates of the building geometry.	</td>
-                        <td property="skos:scopeNote">NOTE	</td>
+                        <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
                       
-                      <tr id="BuildingGeometry%3AreferenceGeometry" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#referenceGeometry">
+                      <tr id="Building%20geometry%3Areference%20geometry" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#referenceGeometry">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#referenceGeometry" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#referenceGeometry" data-placement="right">referenceGeometry</a>
+                            <a href="http://vocab.belgif.be/ns/building#referenceGeometry" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#referenceGeometry" data-placement="right">reference geometry</a>
                           </code>
                         </td>
                         <td>
@@ -1981,10 +2130,10 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                       
-                      <tr id="BuildingGeometry%3AverticalGeometryEstimatedAccuracy" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#verticalGeometryEstimatedAccuracy">
+                      <tr id="Building%20geometry%3Avertical%20geometry%20estimated%20accuracy" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#verticalGeometryEstimatedAccuracy">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#verticalGeometryEstimatedAccuracy" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#verticalGeometryEstimatedAccuracy" data-placement="right">verticalGeometryEstimatedAccuracy</a>
+                            <a href="http://vocab.belgif.be/ns/building#verticalGeometryEstimatedAccuracy" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#verticalGeometryEstimatedAccuracy" data-placement="right">vertical geometry estimated accuracy</a>
                           </code>
                         </td>
                         <td>
@@ -2008,7 +2157,7 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="BuildingGeometry2D"><a href="https://data.vlaanderen.be/ns/gebouw#2DGebouwgeometrie" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/gebouw#2DGebouwgeometrie" data-placement="right">BuildingGeometry2D</a></h3>
+              <h3 class="h3" id="Building geometry 2D"><a href="https://data.vlaanderen.be/ns/gebouw#2DGebouwgeometrie" data-toggle="tooltip" data-content="https://data.vlaanderen.be/ns/gebouw#2DGebouwgeometrie" data-placement="right">Building geometry 2D</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
@@ -2016,15 +2165,15 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                     
 		     
 		    <dt>Subclass of <dt><dd>
-                        <a href="#BuildingGeometry">BuildingGeometry</a>
+                        <a href="#Building geometry">Building geometry</a>
 		   </dd>
                     
                     <dt>Properties</dt>
 		     
                     <dd>we have defined the following properties for this datatype:
-                      <a href="#BuildingGeometry2D%3Ageometry">geometry</a>, 
-                      <a href="#BuildingGeometry2D%3AhorizontalGeometryReference">horizontalGeometryReference</a>, 
-                      <a href="#BuildingGeometry2D%3AverticalGeometryReference">verticalGeometryReference</a>.</dd>
+                      <a href="#Building%20geometry%202D%3Ageometry">geometry</a>, 
+                      <a href="#Building%20geometry%202D%3Ahorizontal%20geometry%20reference">horizontal geometry reference</a>, 
+                      <a href="#Building%20geometry%202D%3Avertical%20geometry%20reference">vertical geometry reference</a>.</dd>
                     
                   </dl>
                 </div>
@@ -2044,7 +2193,7 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
 
                     <tbody class="supertype">
                       
-                      <tr id="BuildingGeometry2D%3Ageometry" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#geometry">
+                      <tr id="Building%20geometry%202D%3Ageometry" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#geometry">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://vocab.belgif.be/ns/building#geometry" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#geometry" data-placement="right">geometry</a>
@@ -2063,10 +2212,10 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                       
-                      <tr id="BuildingGeometry2D%3AhorizontalGeometryReference" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#BuildingGeometry2D.horizontalGeometryReference">
+                      <tr id="Building%20geometry%202D%3Ahorizontal%20geometry%20reference" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#BuildingGeometry2D.horizontalGeometryReference">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#BuildingGeometry2D.horizontalGeometryReference" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#BuildingGeometry2D.horizontalGeometryReference" data-placement="right">horizontalGeometryReference</a>
+                            <a href="http://vocab.belgif.be/ns/building#BuildingGeometry2D.horizontalGeometryReference" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#BuildingGeometry2D.horizontalGeometryReference" data-placement="right">horizontal geometry reference</a>
                           </code>
                         </td>
                         <td>
@@ -2077,15 +2226,15 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                           
                         </td>
 			<td>1</td>
-                        <td property="rdfs:comment">Element of the building that was captured by (X,Y) coordinates</td>
+                        <td property="rdfs:comment">Element of the building that was captured by (X,Y) coordinates.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
                       
-                      <tr id="BuildingGeometry2D%3AverticalGeometryReference" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#verticalGeometryReference">
+                      <tr id="Building%20geometry%202D%3Avertical%20geometry%20reference" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#verticalGeometryReference">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#verticalGeometryReference" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#verticalGeometryReference" data-placement="right">verticalGeometryReference</a>
+                            <a href="http://vocab.belgif.be/ns/building#verticalGeometryReference" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#verticalGeometryReference" data-placement="right">vertical geometry reference</a>
                           </code>
                         </td>
                         <td>
@@ -2109,7 +2258,7 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="BuildingGeometry3DLoD"><a href="http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD" data-placement="right">BuildingGeometry3DLoD</a></h3>
+              <h3 class="h3" id="Building geometry 3D LoD"><a href="http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD" data-placement="right">Building geometry 3D LoD</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
@@ -2119,16 +2268,16 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                     
 		     
 		    <dt>Subclass of <dt><dd>
-                        <a href="#BuildingGeometry">BuildingGeometry</a>
+                        <a href="#Building geometry">Building geometry</a>
 		   </dd>
                     
                     <dt>Properties</dt>
 		     
                     <dd>we have defined the following properties for this datatype:
-                      <a href="#BuildingGeometry3DLoD%3AgeometryMultiSurface">geometryMultiSurface</a>, 
-                      <a href="#BuildingGeometry3DLoD%3AgeometrySolid">geometrySolid</a>, 
-                      <a href="#BuildingGeometry3DLoD%3AterrainIntersection">terrainIntersection</a>, 
-                      <a href="#BuildingGeometry3DLoD%3AverticalGeometryReference3DBottom">verticalGeometryReference3DBottom</a>.</dd>
+                      <a href="#Building%20geometry%203D%20LoD%3Ageometry%20multi%20surface">geometry multi surface</a>, 
+                      <a href="#Building%20geometry%203D%20LoD%3Ageometry%20solid">geometry solid</a>, 
+                      <a href="#Building%20geometry%203D%20LoD%3Aterrain%20intersection">terrain intersection</a>, 
+                      <a href="#Building%20geometry%203D%20LoD%3Avertical%20geometry%20reference%203D%20bottom">vertical geometry reference 3D bottom</a>.</dd>
                     
                   </dl>
                 </div>
@@ -2148,16 +2297,16 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
 
                     <tbody class="supertype">
                       
-                      <tr id="BuildingGeometry3DLoD%3AgeometryMultiSurface" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#geometryMultiSurface">
+                      <tr id="Building%20geometry%203D%20LoD%3Ageometry%20multi%20surface" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#geometryMultiSurface">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#geometryMultiSurface" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#geometryMultiSurface" data-placement="right">geometryMultiSurface</a>
+                            <a href="http://vocab.belgif.be/ns/building#geometryMultiSurface" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#geometryMultiSurface" data-placement="right">geometry multi surface</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#MultiSurface" data-placement="right">MultiSurface</a>
+			    <a href="#Multi surface" data-placement="right">Multi surface</a>
 			    
                           
                         </td>
@@ -2167,16 +2316,16 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                       
-                      <tr id="BuildingGeometry3DLoD%3AgeometrySolid" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#geometrySolid">
+                      <tr id="Building%20geometry%203D%20LoD%3Ageometry%20solid" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#geometrySolid">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#geometrySolid" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#geometrySolid" data-placement="right">geometrySolid</a>
+                            <a href="http://vocab.belgif.be/ns/building#geometrySolid" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#geometrySolid" data-placement="right">geometry solid</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#3Dobject" data-placement="right">3Dobject</a>
+			    <a href="#3D object" data-placement="right">3D object</a>
 			    
                           
                         </td>
@@ -2186,16 +2335,16 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                       
-                      <tr id="BuildingGeometry3DLoD%3AterrainIntersection" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#terrainIntersection">
+                      <tr id="Building%20geometry%203D%20LoD%3Aterrain%20intersection" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#terrainIntersection">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#terrainIntersection" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#terrainIntersection" data-placement="right">terrainIntersection</a>
+                            <a href="http://vocab.belgif.be/ns/building#terrainIntersection" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#terrainIntersection" data-placement="right">terrain intersection</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#MultiCurve" data-placement="right">MultiCurve</a>
+			    <a href="#Multi curve" data-placement="right">Multi curve</a>
 			    
                           
                         </td>
@@ -2205,10 +2354,10 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                         <td></td>
                       </tr>
                       
-                      <tr id="BuildingGeometry3DLoD%3AverticalGeometryReference3DBottom" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#verticalGeometryReference3DBottom">
+                      <tr id="Building%20geometry%203D%20LoD%3Avertical%20geometry%20reference%203D%20bottom" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#verticalGeometryReference3DBottom">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#verticalGeometryReference3DBottom" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#verticalGeometryReference3DBottom" data-placement="right">verticalGeometryReference3DBottom</a>
+                            <a href="http://vocab.belgif.be/ns/building#verticalGeometryReference3DBottom" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#verticalGeometryReference3DBottom" data-placement="right">vertical geometry reference 3D bottom</a>
                           </code>
                         </td>
                         <td>
@@ -2232,7 +2381,7 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="BuildingGeometry3DLoD1"><a href="http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD1" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD1" data-placement="right">BuildingGeometry3DLoD1</a></h3>
+              <h3 class="h3" id="Building geometry 3D LoD1"><a href="http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD1" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD1" data-placement="right">Building geometry 3D LoD1</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
@@ -2240,14 +2389,14 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
                     
 		     
 		    <dt>Subclass of <dt><dd>
-                        <a href="#BuildingGeometry3DLoD">BuildingGeometry3DLoD</a>
+                        <a href="#Building geometry 3D LoD">Building geometry 3D LoD</a>
 		   </dd>
                     
                     <dt>Properties</dt>
 		     
                     <dd>we have defined the following properties for this datatype:
-                      <a href="#BuildingGeometry3DLoD1%3AhorizontalGeometryReference">horizontalGeometryReference</a>, 
-                      <a href="#BuildingGeometry3DLoD1%3AverticalGeometryReference3DTop">verticalGeometryReference3DTop</a>.</dd>
+                      <a href="#Building%20geometry%203D%20LoD1%3Ahorizontal%20geometry%20reference">horizontal geometry reference</a>, 
+                      <a href="#Building%20geometry%203D%20LoD1%3Avertical%20geometry%20reference%203D%20top">vertical geometry reference 3D top</a>.</dd>
                     
                   </dl>
                 </div>
@@ -2267,10 +2416,10 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
 
                     <tbody class="supertype">
                       
-                      <tr id="BuildingGeometry3DLoD1%3AhorizontalGeometryReference" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD1.horizontalGeometryReference">
+                      <tr id="Building%20geometry%203D%20LoD1%3Ahorizontal%20geometry%20reference" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD1.horizontalGeometryReference">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD1.horizontalGeometryReference" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD1.horizontalGeometryReference" data-placement="right">horizontalGeometryReference</a>
+                            <a href="http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD1.horizontalGeometryReference" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD1.horizontalGeometryReference" data-placement="right">horizontal geometry reference</a>
                           </code>
                         </td>
                         <td>
@@ -2288,10 +2437,10 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
                         <td></td>
                       </tr>
                       
-                      <tr id="BuildingGeometry3DLoD1%3AverticalGeometryReference3DTop" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#verticalGeometryReference3DTop">
+                      <tr id="Building%20geometry%203D%20LoD1%3Avertical%20geometry%20reference%203D%20top" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#verticalGeometryReference3DTop">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#verticalGeometryReference3DTop" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#verticalGeometryReference3DTop" data-placement="right">verticalGeometryReference3DTop</a>
+                            <a href="http://vocab.belgif.be/ns/building#verticalGeometryReference3DTop" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#verticalGeometryReference3DTop" data-placement="right">vertical geometry reference 3D top</a>
                           </code>
                         </td>
                         <td>
@@ -2317,7 +2466,7 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="BuildingGeometry3DLoD2"><a href="http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD2.horizontalGeometryReference" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD2.horizontalGeometryReference" data-placement="right">BuildingGeometry3DLoD2</a></h3>
+              <h3 class="h3" id="Building geometry 3D LoD2"><a href="http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD2.horizontalGeometryReference" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD2.horizontalGeometryReference" data-placement="right">Building geometry 3D LoD2</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
@@ -2325,13 +2474,13 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
                     
 		     
 		    <dt>Subclass of <dt><dd>
-                        <a href="#BuildingGeometry3DLoD">BuildingGeometry3DLoD</a>
+                        <a href="#Building geometry 3D LoD">Building geometry 3D LoD</a>
 		   </dd>
                     
                     <dt>Properties</dt>
 		     
                     <dd>we have defined the following properties for this datatype:
-                      <a href="#BuildingGeometry3DLoD2%3AhorizontalGeometryReference">horizontalGeometryReference</a>.</dd>
+                      <a href="#Building%20geometry%203D%20LoD2%3Ahorizontal%20geometry%20reference">horizontal geometry reference</a>.</dd>
                     
                   </dl>
                 </div>
@@ -2351,10 +2500,10 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
 
                     <tbody class="supertype">
                       
-                      <tr id="BuildingGeometry3DLoD2%3AhorizontalGeometryReference" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#horizontalGeometryReference">
+                      <tr id="Building%20geometry%203D%20LoD2%3Ahorizontal%20geometry%20reference" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#horizontalGeometryReference">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#horizontalGeometryReference" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#horizontalGeometryReference" data-placement="right">horizontalGeometryReference</a>
+                            <a href="http://vocab.belgif.be/ns/building#horizontalGeometryReference" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#horizontalGeometryReference" data-placement="right">horizontal geometry reference</a>
                           </code>
                         </td>
                         <td>
@@ -2380,7 +2529,51 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="CurrentUse"><a href="http://vocab.belgif.be/ns/building#CurrentUse" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#CurrentUse" data-placement="right">CurrentUse</a></h3>
+              <h3 class="h3" id="Building geometry 3D LoD3"><a href="http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD3" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD3" data-placement="right">Building geometry 3D LoD3</a></h3>
+	      
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Description</dt><dd>Data type grouping the specific metadata attached to the 3D geometry, when provided by a LoD3 representation.</dd>
+                    
+		     
+		    <dt>Subclass of <dt><dd>
+                        <a href="#Building geometry 3D LoD">Building geometry 3D LoD</a>
+		   </dd>
+                    
+                    <dt>Properties</dt>
+		    
+                    <dd>There are no properties defined for this datatype.</dd>
+                    
+                  </dl>
+                </div>
+		
+            </div>
+            
+            <div class="region region--no-space-top">
+              
+              <h3 class="h3" id="Building geometry 3D LoD4"><a href="http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD4" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#BuildingGeometry3DLoD4" data-placement="right">Building geometry 3D LoD4</a></h3>
+	      
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Description</dt><dd>Data type grouping the specific metadata attached to the 3D geometry, when provided by a LoD4 representation.</dd>
+                    
+		     
+		    <dt>Subclass of <dt><dd>
+                        <a href="#Building geometry 3D LoD">Building geometry 3D LoD</a>
+		   </dd>
+                    
+                    <dt>Properties</dt>
+		    
+                    <dd>There are no properties defined for this datatype.</dd>
+                    
+                  </dl>
+                </div>
+		
+            </div>
+            
+            <div class="region region--no-space-top">
+              
+              <h3 class="h3" id="Current use"><a href="http://vocab.belgif.be/ns/building#CurrentUse" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#CurrentUse" data-placement="right">Current use</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
@@ -2390,8 +2583,8 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
                     <dt>Properties</dt>
 		     
                     <dd>we have defined the following properties for this datatype:
-                      <a href="#CurrentUse%3Apercentage">percentage</a>, 
-                      <a href="#CurrentUse%3Atype">type</a>.</dd>
+                      <a href="#Current%20use%3Apercentage">percentage</a>, 
+                      <a href="#Current%20use%3Atype">type</a>.</dd>
                     
                   </dl>
                 </div>
@@ -2411,7 +2604,7 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
 
                     <tbody class="supertype">
                       
-                      <tr id="CurrentUse%3Apercentage" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#percentage">
+                      <tr id="Current%20use%3Apercentage" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#percentage">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://vocab.belgif.be/ns/building#percentage" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#percentage" data-placement="right">percentage</a>
@@ -2430,7 +2623,7 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
                         <td></td>
                       </tr>
                       
-                      <tr id="CurrentUse%3Atype" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#type">
+                      <tr id="Current%20use%3Atype" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#type">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://vocab.belgif.be/ns/building#type" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#type" data-placement="right">type</a>
@@ -2439,12 +2632,12 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
                         <td>
                           
 			    
-			    <a href="#CurrentUseValue" data-placement="right">CurrentUseValue</a>
+			    <a href="#Current use value" data-placement="right">Current use value</a>
 			    
                           
                         </td>
 			<td>1</td>
-                        <td property="rdfs:comment">The current use of a building</td>
+                        <td property="rdfs:comment">The current use of a building.</td>
                         <td property="skos:scopeNote">Example: trade, entertainment, ...</td>
                         <td></td>
                       </tr>
@@ -2457,7 +2650,7 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="DateOfEvent"><a href="http://vocab.belgif.be/ns/building#DateOfEvent" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#DateOfEvent" data-placement="right">DateOfEvent</a></h3>
+              <h3 class="h3" id="Date of event"><a href="http://vocab.belgif.be/ns/building#DateOfEvent" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#DateOfEvent" data-placement="right">Date of event</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
@@ -2467,9 +2660,9 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
                     <dt>Properties</dt>
 		     
                     <dd>we have defined the following properties for this datatype:
-                      <a href="#DateOfEvent%3AanyPoint">anyPoint</a>, 
-                      <a href="#DateOfEvent%3AendDate">endDate</a>, 
-                      <a href="#DateOfEvent%3AstartDate">startDate</a>.</dd>
+                      <a href="#Date%20of%20event%3Aany%20point">any point</a>, 
+                      <a href="#Date%20of%20event%3Aend%20date">end date</a>, 
+                      <a href="#Date%20of%20event%3Astart%20date">start date</a>.</dd>
                     
                   </dl>
                 </div>
@@ -2489,10 +2682,10 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
 
                     <tbody class="supertype">
                       
-                      <tr id="DateOfEvent%3AanyPoint" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#anyPoint">
+                      <tr id="Date%20of%20event%3Aany%20point" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#anyPoint">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#anyPoint" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#anyPoint" data-placement="right">anyPoint</a>
+                            <a href="http://vocab.belgif.be/ns/building#anyPoint" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#anyPoint" data-placement="right">any point</a>
                           </code>
                         </td>
                         <td>
@@ -2508,10 +2701,10 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
                         <td></td>
                       </tr>
                       
-                      <tr id="DateOfEvent%3AendDate" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#endDate">
+                      <tr id="Date%20of%20event%3Aend%20date" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#endDate">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#endDate" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#endDate" data-placement="right">endDate</a>
+                            <a href="http://vocab.belgif.be/ns/building#endDate" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#endDate" data-placement="right">end date</a>
                           </code>
                         </td>
                         <td>
@@ -2527,10 +2720,10 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
                         <td></td>
                       </tr>
                       
-                      <tr id="DateOfEvent%3AstartDate" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#startDate">
+                      <tr id="Date%20of%20event%3Astart%20date" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#startDate">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#startDate" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#startDate" data-placement="right">startDate</a>
+                            <a href="http://vocab.belgif.be/ns/building#startDate" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#startDate" data-placement="right">start date</a>
                           </code>
                         </td>
                         <td>
@@ -2554,7 +2747,7 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="DirectPosition"><a href="http://www.opengis.net/ont/sf#DirectPosition" data-toggle="tooltip" data-content="http://www.opengis.net/ont/sf#DirectPosition" data-placement="right">DirectPosition</a></h3>
+              <h3 class="h3" id="Direct position"><a href="http://www.opengis.net/ont/sf#DirectPosition" data-toggle="tooltip" data-content="http://www.opengis.net/ont/sf#DirectPosition" data-placement="right">Direct position</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
@@ -2564,9 +2757,9 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
                     <dt>Properties</dt>
 		     
                     <dd>we have defined the following properties for this datatype:
-                      <a href="#DirectPosition%3Agml">gml</a>, 
-                      <a href="#DirectPosition%3Amethod">method</a>, 
-                      <a href="#DirectPosition%3Awkt">wkt</a>.</dd>
+                      <a href="#Direct%20position%3Agml">gml</a>, 
+                      <a href="#Direct%20position%3Amethod">method</a>, 
+                      <a href="#Direct%20position%3Awkt">wkt</a>.</dd>
                     
                   </dl>
                 </div>
@@ -2586,7 +2779,7 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
 
                     <tbody class="supertype">
                       
-                      <tr id="DirectPosition%3Agml" typeof="rdfs:Property" resource="http://www.opengis.net/ont/geosparql#asGML">
+                      <tr id="Direct%20position%3Agml" typeof="rdfs:Property" resource="http://www.opengis.net/ont/geosparql#asGML">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://www.opengis.net/ont/geosparql#asGML" data-toggle="tooltip" data-content="http://www.opengis.net/ont/geosparql#asGML" data-placement="right">gml</a>
@@ -2605,7 +2798,7 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
                         <td></td>
                       </tr>
                       
-                      <tr id="DirectPosition%3Amethod" typeof="rdfs:Property" resource="http://www.opengis.net/ont/sf#method">
+                      <tr id="Direct%20position%3Amethod" typeof="rdfs:Property" resource="http://www.opengis.net/ont/sf#method">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://www.opengis.net/ont/sf#method" data-toggle="tooltip" data-content="http://www.opengis.net/ont/sf#method" data-placement="right">method</a>
@@ -2614,7 +2807,7 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
                         <td>
                           
 			    
-			    <a href="#MeasuringMethod" data-placement="right">MeasuringMethod</a>
+			    <a href="#Measuring method" data-placement="right">Measuring method</a>
 			    
                           
                         </td>
@@ -2624,7 +2817,7 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
                         <td></td>
                       </tr>
                       
-                      <tr id="DirectPosition%3Awkt" typeof="rdfs:Property" resource="http://www.opengis.net/ont/geosparql#asWKT">
+                      <tr id="Direct%20position%3Awkt" typeof="rdfs:Property" resource="http://www.opengis.net/ont/geosparql#asWKT">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://www.opengis.net/ont/geosparql#asWKT" data-toggle="tooltip" data-content="http://www.opengis.net/ont/geosparql#asWKT" data-placement="right">wkt</a>
@@ -2664,8 +2857,8 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
 		     
                     <dd>we have defined the following properties for this datatype:
                       <a href="#Document%3Adate">date</a>, 
-                      <a href="#Document%3AdocumentDescription">documentDescription</a>, 
-                      <a href="#Document%3AsourceStatus">sourceStatus</a>.</dd>
+                      <a href="#Document%3Adocument%20description">document description</a>, 
+                      <a href="#Document%3Asource%20status">source status</a>.</dd>
                     
                   </dl>
                 </div>
@@ -2704,10 +2897,10 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
                         <td></td>
                       </tr>
                       
-                      <tr id="Document%3AdocumentDescription" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#documentDescription">
+                      <tr id="Document%3Adocument%20description" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#documentDescription">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#documentDescription" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#documentDescription" data-placement="right">documentDescription</a>
+                            <a href="http://vocab.belgif.be/ns/building#documentDescription" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#documentDescription" data-placement="right">document description</a>
                           </code>
                         </td>
                         <td>
@@ -2723,16 +2916,16 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
                         <td></td>
                       </tr>
                       
-                      <tr id="Document%3AsourceStatus" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#sourceStatus">
+                      <tr id="Document%3Asource%20status" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#sourceStatus">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#sourceStatus" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#sourceStatus" data-placement="right">sourceStatus</a>
+                            <a href="http://vocab.belgif.be/ns/building#sourceStatus" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#sourceStatus" data-placement="right">source status</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#SourceStatusValue" data-placement="right">SourceStatusValue</a>
+			    <a href="#Source status value" data-placement="right">Source status value</a>
 			    
                           
                         </td>
@@ -2760,8 +2953,8 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
                     <dt>Properties</dt>
 		     
                     <dd>we have defined the following properties for this datatype:
-                      <a href="#Elevation%3AelevationReference">elevationReference</a>, 
-                      <a href="#Elevation%3AelevationValue">elevationValue</a>.</dd>
+                      <a href="#Elevation%3Aelevation%20reference">elevation reference</a>, 
+                      <a href="#Elevation%3Aelevation%20value">elevation value</a>.</dd>
                     
                   </dl>
                 </div>
@@ -2781,10 +2974,10 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
 
                     <tbody class="supertype">
                       
-                      <tr id="Elevation%3AelevationReference" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#elevationReference">
+                      <tr id="Elevation%3Aelevation%20reference" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#elevationReference">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#elevationReference" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#elevationReference" data-placement="right">elevationReference</a>
+                            <a href="http://vocab.belgif.be/ns/building#elevationReference" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#elevationReference" data-placement="right">elevation reference</a>
                           </code>
                         </td>
                         <td>
@@ -2800,16 +2993,16 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
                         <td></td>
                       </tr>
                       
-                      <tr id="Elevation%3AelevationValue" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#elevationValue">
+                      <tr id="Elevation%3Aelevation%20value" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#elevationValue">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#elevationValue" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#elevationValue" data-placement="right">elevationValue</a>
+                            <a href="http://vocab.belgif.be/ns/building#elevationValue" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#elevationValue" data-placement="right">elevation value</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#DirectPosition" data-placement="right">DirectPosition</a>
+			    <a href="#Direct position" data-placement="right">Direct position</a>
 			    
                           
                         </td>
@@ -2827,7 +3020,7 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="EntranceLocation"><a href="http://vocab.belgif.be/ns/building#EntranceLocation" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#EntranceLocation" data-placement="right">EntranceLocation</a></h3>
+              <h3 class="h3" id="Entrance location"><a href="http://vocab.belgif.be/ns/building#EntranceLocation" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#EntranceLocation" data-placement="right">Entrance location</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
@@ -2837,8 +3030,8 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
                     <dt>Properties</dt>
 		     
                     <dd>we have defined the following properties for this datatype:
-                      <a href="#EntranceLocation%3Aaddress">address</a>, 
-                      <a href="#EntranceLocation%3Aposition">position</a>.</dd>
+                      <a href="#Entrance%20location%3Aaddress">address</a>, 
+                      <a href="#Entrance%20location%3Aposition">position</a>.</dd>
                     
                   </dl>
                 </div>
@@ -2858,7 +3051,7 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
 
                     <tbody class="supertype">
                       
-                      <tr id="EntranceLocation%3Aaddress" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#Address">
+                      <tr id="Entrance%20location%3Aaddress" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#Address">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://www.w3.org/ns/locn#Address" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#Address" data-placement="right">address</a>
@@ -2867,7 +3060,7 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
                         <td>
                           
 			    
-			    <a href="#AddressRepresentation" data-placement="right">AddressRepresentation</a>
+			    <a href="#Address representation" data-placement="right">Address representation</a>
 			    
                           
                         </td>
@@ -2877,7 +3070,7 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
                         <td></td>
                       </tr>
                       
-                      <tr id="EntranceLocation%3Aposition" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#Geometry">
+                      <tr id="Entrance%20location%3Aposition" typeof="rdfs:Property" resource="http://www.w3.org/ns/locn#Geometry">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://www.w3.org/ns/locn#Geometry" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#Geometry" data-placement="right">position</a>
@@ -2886,7 +3079,7 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
                         <td>
                           
 			    
-			    <a href="#DirectPosition" data-placement="right">DirectPosition</a>
+			    <a href="#Direct position" data-placement="right">Direct position</a>
 			    
                           
                         </td>
@@ -2904,7 +3097,7 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="ExternalReference"><a href="http://vocab.belgif.be/ns/building#ExternalReference" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#ExternalReference" data-placement="right">ExternalReference</a></h3>
+              <h3 class="h3" id="External reference"><a href="http://vocab.belgif.be/ns/building#ExternalReference" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#ExternalReference" data-placement="right">External reference</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
@@ -2914,9 +3107,9 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
                     <dt>Properties</dt>
 		     
                     <dd>we have defined the following properties for this datatype:
-                      <a href="#ExternalReference%3AinformationSystem">informationSystem</a>, 
-                      <a href="#ExternalReference%3AinformationSystemName">informationSystemName</a>, 
-                      <a href="#ExternalReference%3Areference">reference</a>.</dd>
+                      <a href="#External%20reference%3Ainformation%20system">information system</a>, 
+                      <a href="#External%20reference%3AinformationSystemName">informationSystemName</a>, 
+                      <a href="#External%20reference%3Areference">reference</a>.</dd>
                     
                   </dl>
                 </div>
@@ -2936,10 +3129,10 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
 
                     <tbody class="supertype">
                       
-                      <tr id="ExternalReference%3AinformationSystem" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#informationSystem">
+                      <tr id="External%20reference%3Ainformation%20system" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#informationSystem">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#informationSystem" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#informationSystem" data-placement="right">informationSystem</a>
+                            <a href="http://vocab.belgif.be/ns/building#informationSystem" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#informationSystem" data-placement="right">information system</a>
                           </code>
                         </td>
                         <td>
@@ -2955,7 +3148,7 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
                         <td></td>
                       </tr>
                       
-                      <tr id="ExternalReference%3AinformationSystemName" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#informationSystemName">
+                      <tr id="External%20reference%3AinformationSystemName" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#informationSystemName">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://vocab.belgif.be/ns/building#informationSystemName" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#informationSystemName" data-placement="right">informationSystemName</a>
@@ -2974,7 +3167,7 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
                         <td></td>
                       </tr>
                       
-                      <tr id="ExternalReference%3Areference" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#reference">
+                      <tr id="External%20reference%3Areference" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#reference">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://vocab.belgif.be/ns/building#reference" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#reference" data-placement="right">reference</a>
@@ -3001,7 +3194,7 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="GeographicalName"><a href="http://vocab.belgif.be/ns/building#GeographicalName" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#GeographicalName" data-placement="right">GeographicalName</a></h3>
+              <h3 class="h3" id="Geographical name"><a href="http://vocab.belgif.be/ns/building#GeographicalName" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#GeographicalName" data-placement="right">Geographical name</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
@@ -3013,10 +3206,10 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
                     <dt>Properties</dt>
 		     
                     <dd>we have defined the following properties for this datatype:
-                      <a href="#GeographicalName%3AnameStatus">nameStatus</a>, 
-                      <a href="#GeographicalName%3Anativeness">nativeness</a>, 
-                      <a href="#GeographicalName%3AsourceOfName">sourceOfName</a>, 
-                      <a href="#GeographicalName%3Aspelling">spelling</a>.</dd>
+                      <a href="#Geographical%20name%3Aname%20status">name status</a>, 
+                      <a href="#Geographical%20name%3Anativeness">nativeness</a>, 
+                      <a href="#Geographical%20name%3Asource%20of%20name">source of name</a>, 
+                      <a href="#Geographical%20name%3Aspelling">spelling</a>.</dd>
                     
                   </dl>
                 </div>
@@ -3036,10 +3229,10 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
 
                     <tbody class="supertype">
                       
-                      <tr id="GeographicalName%3AnameStatus" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#nameStatus">
+                      <tr id="Geographical%20name%3Aname%20status" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#nameStatus">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#nameStatus" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#nameStatus" data-placement="right">nameStatus</a>
+                            <a href="http://vocab.belgif.be/ns/building#nameStatus" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#nameStatus" data-placement="right">name status</a>
                           </code>
                         </td>
                         <td>
@@ -3057,7 +3250,7 @@ Concepts of this codelist should be used from the INSPIRE <a href="https://inspi
                         <td></td>
                       </tr>
                       
-                      <tr id="GeographicalName%3Anativeness" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#nativeness">
+                      <tr id="Geographical%20name%3Anativeness" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#nativeness">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://vocab.belgif.be/ns/building#nativeness" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#nativeness" data-placement="right">nativeness</a>
@@ -3076,10 +3269,10 @@ Concepts of this codelist should be used from the INSPIRE <a href="https://inspi
                         <td></td>
                       </tr>
                       
-                      <tr id="GeographicalName%3AsourceOfName" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#sourceOfName">
+                      <tr id="Geographical%20name%3Asource%20of%20name" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#sourceOfName">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#sourceOfName" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#sourceOfName" data-placement="right">sourceOfName</a>
+                            <a href="http://vocab.belgif.be/ns/building#sourceOfName" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#sourceOfName" data-placement="right">source of name</a>
                           </code>
                         </td>
                         <td>
@@ -3095,7 +3288,7 @@ Concepts of this codelist should be used from the INSPIRE <a href="https://inspi
                         <td></td>
                       </tr>
                       
-                      <tr id="GeographicalName%3Aspelling" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#spelling">
+                      <tr id="Geographical%20name%3Aspelling" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#spelling">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://vocab.belgif.be/ns/building#spelling" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#spelling" data-placement="right">spelling</a>
@@ -3182,7 +3375,7 @@ Concepts of this codelist should be used from the INSPIRE <a href="https://inspi
                         <td>
                           
 			    
-			    <a href="#MeasuringMethod" data-placement="right">MeasuringMethod</a>
+			    <a href="#Measuring method" data-placement="right">Measuring method</a>
 			    
                           
                         </td>
@@ -3219,7 +3412,7 @@ Concepts of this codelist should be used from the INSPIRE <a href="https://inspi
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="HeightAboveGround"><a href="http://vocab.belgif.be/ns/building#HeightAboveGround" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#HeightAboveGround" data-placement="right">HeightAboveGround</a></h3>
+              <h3 class="h3" id="Height above ground"><a href="http://vocab.belgif.be/ns/building#HeightAboveGround" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#HeightAboveGround" data-placement="right">Height above ground</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
@@ -3229,10 +3422,10 @@ Concepts of this codelist should be used from the INSPIRE <a href="https://inspi
                     <dt>Properties</dt>
 		     
                     <dd>we have defined the following properties for this datatype:
-                      <a href="#HeightAboveGround%3AheightReference">heightReference</a>, 
-                      <a href="#HeightAboveGround%3AlowReference">lowReference</a>, 
-                      <a href="#HeightAboveGround%3Astatus">status</a>, 
-                      <a href="#HeightAboveGround%3Avalue">value</a>.</dd>
+                      <a href="#Height%20above%20ground%3Aheight%20reference">height reference</a>, 
+                      <a href="#Height%20above%20ground%3Alow%20reference">low reference</a>, 
+                      <a href="#Height%20above%20ground%3Astatus">status</a>, 
+                      <a href="#Height%20above%20ground%3Avalue">value</a>.</dd>
                     
                   </dl>
                 </div>
@@ -3252,10 +3445,10 @@ Concepts of this codelist should be used from the INSPIRE <a href="https://inspi
 
                     <tbody class="supertype">
                       
-                      <tr id="HeightAboveGround%3AheightReference" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#heightReference">
+                      <tr id="Height%20above%20ground%3Aheight%20reference" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#heightReference">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#heightReference" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#heightReference" data-placement="right">heightReference</a>
+                            <a href="http://vocab.belgif.be/ns/building#heightReference" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#heightReference" data-placement="right">height reference</a>
                           </code>
                         </td>
                         <td>
@@ -3273,10 +3466,10 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
                         <td></td>
                       </tr>
                       
-                      <tr id="HeightAboveGround%3AlowReference" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#lowReference">
+                      <tr id="Height%20above%20ground%3Alow%20reference" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#lowReference">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#lowReference" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#lowReference" data-placement="right">lowReference</a>
+                            <a href="http://vocab.belgif.be/ns/building#lowReference" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#lowReference" data-placement="right">low reference</a>
                           </code>
                         </td>
                         <td>
@@ -3292,7 +3485,7 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
                         <td></td>
                       </tr>
                       
-                      <tr id="HeightAboveGround%3Astatus" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#status">
+                      <tr id="Height%20above%20ground%3Astatus" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#status">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://vocab.belgif.be/ns/building#status" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#status" data-placement="right">status</a>
@@ -3311,7 +3504,7 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
                         <td></td>
                       </tr>
                       
-                      <tr id="HeightAboveGround%3Avalue" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#value">
+                      <tr id="Height%20above%20ground%3Avalue" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#value">
                         <td>
                           <code property="rdfs:label">
                             <a href="http://vocab.belgif.be/ns/building#value" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#value" data-placement="right">value</a>
@@ -3338,7 +3531,7 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="ICEG-Unit"><a href="http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure" data-placement="right">ICEG-Unit</a></h3>
+              <h3 class="h3" id="ICEG-Unit"><a href="http://vocab.belgif.be/ns/building#ICEG-Unit" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#ICEG-Unit" data-placement="right">ICEG-Unit</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
@@ -3396,10 +3589,14 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
                         </td>
                         <td>
                           
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#double" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#double" data-placement="right">Double</a>
+                            
+                          
                         </td>
 			<td>1</td>
-                        <td property="rdfs:comment">Number with a scale. The value of uom (Units Of Measure) attribute is a reference to a Reference System for the amount, either a ratio or position scale.</td>
-                        <td property="skos:scopeNote">Both a codelist or qudt unit can be used</td>
+                        <td property="rdfs:comment">A property to relate a unit with a value.</td>
+                        <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
                       
@@ -3423,11 +3620,11 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
                     <dt>Properties</dt>
 		     
                     <dd>we have defined the following properties for this datatype:
-                      <a href="#Identifier%3AassignedBy">assignedBy</a>, 
-                      <a href="#Identifier%3AassignedByString">assignedByString</a>, 
-                      <a href="#Identifier%3AassignedOn">assignedOn</a>, 
+                      <a href="#Identifier%3Aassigned%20by">assigned by</a>, 
+                      <a href="#Identifier%3Aassigned%20by%20string">assigned by string</a>, 
+                      <a href="#Identifier%3Aassigned%20on">assigned on</a>, 
                       <a href="#Identifier%3Aidentifier">identifier</a>, 
-                      <a href="#Identifier%3AstructuredIdentificator">structuredIdentificator</a>.</dd>
+                      <a href="#Identifier%3Astructured%20identificator">structured identificator</a>.</dd>
                     
                   </dl>
                 </div>
@@ -3447,10 +3644,10 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
 
                     <tbody class="supertype">
                       
-                      <tr id="Identifier%3AassignedBy" typeof="rdfs:Property" resource="http://purl.org/dc/terms/creator">
+                      <tr id="Identifier%3Aassigned%20by" typeof="rdfs:Property" resource="http://purl.org/dc/terms/creator">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://purl.org/dc/terms/creator" data-toggle="tooltip" data-content="http://purl.org/dc/terms/creator" data-placement="right">assignedBy</a>
+                            <a href="http://purl.org/dc/terms/creator" data-toggle="tooltip" data-content="http://purl.org/dc/terms/creator" data-placement="right">assigned by</a>
                           </code>
                         </td>
                         <td>
@@ -3466,10 +3663,10 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
                         <td></td>
                       </tr>
                       
-                      <tr id="Identifier%3AassignedByString" typeof="rdfs:Property" resource="http://www.w3.org/ns/adms#schemaAgency">
+                      <tr id="Identifier%3Aassigned%20by%20string" typeof="rdfs:Property" resource="http://www.w3.org/ns/adms#schemaAgency">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://www.w3.org/ns/adms#schemaAgency" data-toggle="tooltip" data-content="http://www.w3.org/ns/adms#schemaAgency" data-placement="right">assignedByString</a>
+                            <a href="http://www.w3.org/ns/adms#schemaAgency" data-toggle="tooltip" data-content="http://www.w3.org/ns/adms#schemaAgency" data-placement="right">assigned by string</a>
                           </code>
                         </td>
                         <td>
@@ -3485,10 +3682,10 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
                         <td></td>
                       </tr>
                       
-                      <tr id="Identifier%3AassignedOn" typeof="rdfs:Property" resource="http://purl.org/dc/terms/issued">
+                      <tr id="Identifier%3Aassigned%20on" typeof="rdfs:Property" resource="http://purl.org/dc/terms/issued">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://purl.org/dc/terms/issued" data-toggle="tooltip" data-content="http://purl.org/dc/terms/issued" data-placement="right">assignedOn</a>
+                            <a href="http://purl.org/dc/terms/issued" data-toggle="tooltip" data-content="http://purl.org/dc/terms/issued" data-placement="right">assigned on</a>
                           </code>
                         </td>
                         <td>
@@ -3518,21 +3715,21 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
                           
                         </td>
 			<td>0..1</td>
-                        <td property="rdfs:comment">String used to uniquely identify the object. </td>
+                        <td property="rdfs:comment">String used to uniquely identify the object.</td>
                         <td property="skos:scopeNote">Type of the string refers to the identifier (incl its version), the string itself to the actual identifier.</td>
                         <td></td>
                       </tr>
                       
-                      <tr id="Identifier%3AstructuredIdentificator" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#structuredIdentificator">
+                      <tr id="Identifier%3Astructured%20identificator" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#structuredIdentificator">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#structuredIdentificator" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#structuredIdentificator" data-placement="right">structuredIdentificator</a>
+                            <a href="http://vocab.belgif.be/ns/building#structuredIdentificator" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#structuredIdentificator" data-placement="right">structured identificator</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#StructuredIdentificator" data-placement="right">StructuredIdentificator</a>
+			    <a href="#Structured identificator" data-placement="right">Structured identificator</a>
 			    
                           
                         </td>
@@ -3550,11 +3747,11 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="LangCode"><a href="http://vocab.belgif.be/ns/building#LangCode" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#LangCode" data-placement="right">LangCode</a></h3>
+              <h3 class="h3" id="Lang code"><a href="http://vocab.belgif.be/ns/building#LangCode" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#LangCode" data-placement="right">Lang code</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
-                    <dt>Description</dt><dd></dd>
+                    <dt>Description</dt><dd>The official code of the language.</dd>
                     
 		    
                     <dt>Properties</dt>
@@ -3568,7 +3765,7 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="MultiCurve"><a href="http://www.opengis.net/ont/sf#MultiCurve" data-toggle="tooltip" data-content="http://www.opengis.net/ont/sf#MultiCurve" data-placement="right">MultiCurve</a></h3>
+              <h3 class="h3" id="Multi curve"><a href="http://www.opengis.net/ont/sf#MultiCurve" data-toggle="tooltip" data-content="http://www.opengis.net/ont/sf#MultiCurve" data-placement="right">Multi curve</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
@@ -3590,11 +3787,11 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="MultiSurface"><a href="http://www.opengis.net/ont/sf#MultiSurface" data-toggle="tooltip" data-content="http://www.opengis.net/ont/sf#MultiSurface" data-placement="right">MultiSurface</a></h3>
+              <h3 class="h3" id="Multi surface"><a href="http://www.opengis.net/ont/sf#MultiSurface" data-toggle="tooltip" data-content="http://www.opengis.net/ont/sf#MultiSurface" data-placement="right">Multi surface</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
-                    <dt>Description</dt><dd> A MultiSurface is a 2-dimensional GeometryCollection whose elements are Surfaces, all using coordinates from the same coordinate reference system.</dd>
+                    <dt>Description</dt><dd>A MultiSurface is a 2-dimensional GeometryCollection whose elements are Surfaces, all using coordinates from the same coordinate reference system.</dd>
                     
 		     
 		    <dt>Subclass of <dt><dd>
@@ -3656,7 +3853,7 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="StructuredIdentificator"><a href="http://vocab.belgif.be/ns/building#StructuredIdentificator" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#StructuredIdentificator" data-placement="right">StructuredIdentificator</a></h3>
+              <h3 class="h3" id="Structured identificator"><a href="http://vocab.belgif.be/ns/building#StructuredIdentificator" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#StructuredIdentificator" data-placement="right">Structured identificator</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
@@ -3690,6 +3887,24 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
 		
             </div>
             
+            <div class="region region--no-space-top">
+              
+              <h3 class="h3" id="URI"><a href="http://www.w3.org/2001/XMLSchema#anyURI" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#anyURI" data-placement="right">URI</a></h3>
+	      
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Description</dt><dd>A URI that is technically represented as a class in RDF, but is a literal in use.</dd>
+                    
+		    
+                    <dt>Properties</dt>
+		    
+                    <dd>There are no properties defined for this datatype.</dd>
+                    
+                  </dl>
+                </div>
+		
+            </div>
+            
             
 	    
 	    <!--
@@ -3710,7 +3925,11 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
                 
                 
 <div class="region region--no-space-top">
-	<h3 class="h3" id="BuildingNatureValue">Building Nature Value</h3>
+	<h3 class="h3" id="Building%20nature%20value">Building Nature Value</h3>
+	<dl>
+		<dt>Definition</dt>
+		<dd>Values indicating the nature of a building.</dd>
+	</dl>
 	<dl>
 		<dt>PREFIX bnv:</dt>
 		<dd>http://inspire.ec.europa.eu/codelist/BuildingNatureValue/</dd>
@@ -3908,7 +4127,11 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
 </div>
 
 <div class="region region--no-space-top">
-	<h3 class="h3" id="CurrentUseValue">Current Use Value</h3>
+	<h3 class="h3" id="Current%20use%20value">Current Use Value</h3>
+	<dl>
+		<dt>Definition</dt>
+		<dd>Values indicating the current use.</dd>
+	</dl>
 	<dl>
 		<dt>PREFIX cuv:</dt>
 		<dd>https://inspire.ec.europa.eu/codelist/CurrentUseValue/</dd>
@@ -4061,9 +4284,58 @@ Concepts of this codelist should be used from the INSPIRE <a href="http://inspir
 </div>
 
 <div class="region region--no-space-top">
-	<h3 class="h3" id="MeasuringMethod">Measuring Method</h3>
+	<h3 class="h3" id="Internal%20installation%20nature%20value">Internal Installation Nature Value</h3>
+	<dl>
+		<dt>Definition</dt>
+		<dd>Code list for the possible values of the nature of an internal installation.</dd>
+	</dl>
 	There aren't top concepts defined for this list.
 </div>
+
+<div class="region region--no-space-top">
+	<h3 class="h3" id="Measuring%20method">Measuring Method</h3>
+	<dl>
+		<dt>Definition</dt>
+		<dd>The way something is measured.</dd>
+	</dl>
+	There aren't top concepts defined for this list.
+</div>
+
+<div class="region region--no-space-top">
+	<h3 class="h3" id="Source%20status%20value">Source Status Value</h3>
+	<dl>
+		<dt>Definition</dt>
+		<dd>The status of the sources.</dd>
+	</dl>
+	<dl>
+		<dt>PREFIX vbssv:</dt>
+		<dd>http://vocab.belgif.be/auth/source-status-value/</dd>
+	</dl>
+	<br/>
+	<h4>SKOS TopConcepts</h4>
+	<table class="data-table">
+		<thead>
+			<tr>
+				<th>URI</th>
+				<th>skos:prefLabel@en</th>
+				<th>skos:notation</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>vbssv:official</td>
+				<td>official</td>
+				<td>official</td>
+			</tr>
+			<tr>
+				<td>vbssv:non-official</td>
+				<td>non-official</td>
+				<td>non-official</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
 
             </div>
 		

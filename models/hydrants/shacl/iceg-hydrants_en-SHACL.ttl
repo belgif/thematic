@@ -269,7 +269,6 @@
 <https://semiceu.github.io/shacl/iceg-hydrants_en#MeasureShape> a shacl:NodeShape;
   shacl:closed false;
   shacl:property [
-    shacl:class skos:Concept;
     shacl:definition "Standard units of measurements used when accounting for stock, and expressing them in quantities."@en;
     shacl:maxCount 1;
     shacl:minCount 1;
