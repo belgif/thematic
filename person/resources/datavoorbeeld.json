@@ -1,0 +1,131 @@
+{
+	"@context": [
+		"https://data.vlaanderen.be/doc/applicatieprofiel/PersoonBasis/ontwerpstandaard/2023-06-01/context/persoon-basis.jsonld",
+		"https://data.vlaanderen.be/context/generiek-basis.jsonld",
+		"https://data.vlaanderen.be/context/adresregister.jsonld",
+		{
+			"Persoon(source).persoonsrelatie": {
+				"@reverse": "https://data.vlaanderen.be/ns/persoon#Persoonsrelatie.persoon.source"
+			},
+			"Persoon.inwonerschap2": {
+				"@reverse": "https://data.vlaanderen.be/ns/persoon#Inwonerschap.persoon"
+			}
+		}
+	],
+	"@graph": [
+		{
+			"@id": "_:pers123",
+			"@type": "GeregistreerdPersoon",
+			"GeregistreerdPersoon.registratie": {
+				"@type": "Identificator",
+				"Identificator.identificator": {
+					"@value": "x",
+					"@type": "https://example.com/concept/identificatortype/rr-rijksregisternummer"
+				}
+			},
+			"Persoon.achternaam": "Thijs",
+			"Persoon.voornaam": [
+				"Geert",
+				"Robert",
+				"Jean"
+			],
+			"Persoon.gebruikteVoornaam": "Geert",
+			"Persoon.geslacht": "http://publications.europa.eu/resource/authority/human-sex/MALE",
+			"Persoon.heeftGeboorte": {
+				"@type": "Geboorte",
+				"Persoonsgebeurtenis.datum": "1962-06-26",
+				"Persoonsgebeurtenis.plaats": {
+					"@type": "Plaats",
+					"Plaats.plaatsnaam": {
+						"@language": "nl",
+						"@value": "Lokeren"
+					}
+				},
+				"Persoonsgebeurtenis.land": {
+					"@language": "nl",
+					"@value": "België"
+				}
+			},
+			"Persoon.heeftNationaliteit": {
+				"@type": "Nationaliteit",
+				"Nationaliteit.nationaliteit": "http://publications.europa.eu/resource/authority/country/BEL"
+			},
+			"Persoon.inwonerschap2": {
+				"@type": "PermanentInwoner",
+				"Inwonerschap.jurisdictie": {
+					"@type": "Jurisdictie",
+					"Jurisdictie": {
+						"@type": "Plaats",
+						"Plaats.plaatsnaam": {
+							"@language": "nl",
+							"@value": "België"
+						}
+					}
+				},
+				"Inwonerschap.heeftVerblijfplaats": {
+					"@type": "Domicilie",
+					"Verblijfplaats.verblijfsadres": {
+						"@type": "Adresvoorstelling",
+						"Adresvoorstelling.volledigAdres": {
+							"@language": "nl",
+							"@value": "Mercatorstraat 12, 1070 Brussel"
+						}
+					}
+				}
+			},
+			"Persoon.heeftBurgerlijkeStaat": {
+				"@type": "BurgerlijkeStaat",
+				"BurgerlijkeStaat.type": "https://example.com/concept/burgerlijkestaattype/alleenstaand"
+			},
+			"Persoon(source).persoonsrelatie": [
+				{
+					"@type": "Samenwonen",
+					"Persoonsrelatie(target).persoon": "_:pers456"
+				},
+				{
+					"@type": "Afstamming",
+					"Persoonsrelatie(target).persoon": "_:pers789",
+					"Afstamming.afstammingstype": "https://example.com/concept/afstammingstype/zoon",
+					"Afstamming.datumVanAfstamming": "2008-10-27"
+				},
+				{
+					"@type": "Afstamming",
+					"Persoonsrelatie(target).persoon": "_:pers012",
+					"Afstamming.afstammingstype": "https://example.com/concept/afstammingstype/dochter",
+					"Afstamming.datumVanAfstamming": "2011-03-11"
+				},
+				{
+					"@type": "Gezinsrelatie",
+					"Persoonsrelatie(target).persoon": "_:pers456",
+					"Gezinsrelatie.gezinsrelatietype": "https://example.com/concept/gezinsrelatietype/partner"
+				},
+				{
+					"@type": "Gezinsrelatie",
+					"Persoonsrelatie(target).persoon": "_:pers789",
+					"Gezinsrelatie.gezinsrelatietype": "https://example.com/concept/gezinsrelatietype/zoon"
+				},
+				{
+					"@type": "Gezinsrelatie",
+					"Persoonsrelatie(target).persoon": "_:pers012",
+					"Gezinsrelatie.gezinsrelatietype": "https://example.com/concept/gezinsrelatietype/dochter"
+				}
+			],
+			"Persoon.isHoofdVan": {
+				"@type": "Gezin",
+				"Gezin.gezinsadres": {
+					"@type": "Adresvoorstelling",
+					"volledigAdres": {
+						"@language": "nl",
+						"@value": "Mercatorstraat 12, 1070 Brussel"
+					}
+				},
+				"Gezin.gezinslid": [
+					"_:pers123",
+					"_:pers456",
+					"_:pers789",
+					"_:pers012"
+				]
+			}
+		}
+	]
+}

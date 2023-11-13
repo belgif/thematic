@@ -1,0 +1,36 @@
+{% extends "ap2.j2" %}
+
+{% block summary %}
+<p>Het OSLO-Persoon applicatieprofiel brengt termen samen uit vocabularia over personen en in hoofdzaak uit het <a href="/ns/persoon">OSLO-Persoon vocabularium</a>.</p>
+<p>In principe heeft een applicatieprofiel een bepaalde toepassing voor ogen en met dat doel worden bijkomende constraints opgelegd zoals kardinaliteiten en voorgeschreven codelijsten. Dat is hier niet het geval en dus spreken we van een basisprofiel. Het bevat de info die binnen OSLO relevant wordt geacht voor het uitwisselen van gegevens over personen. Dat neemt niet weg dat het profiel termen samenbrengt die we voornamelijk zien in de context van een bevolkingsregister.</p>
+<p>Het profiel omvat termen die betrekking hebben op de identificatie van een persoon (naam, geslacht, geboortedatum) maar ook termen die de burgerrechtelijke kenmerken van personen beschrijven (persoonsrelaties zoals huwelijk, gezin en relaties met de staat zoals staatsburgerschap en inwonerschap/domicilie). Voor meer details verwijzen we naar het OSLO-Persoon vocabularium.</p>
+<p>Het profiel legt minimale beperkingen op, enkel de gegevens die de persoon identificeren zijn verplicht. Er zijn momenteel nog geen voorgeschreven codelijsten.</p>
+{% endblock %}
+
+{% block status %}
+<p>Dit applicatieprofiel dient om het specifieke gebruik van de entiteiten relevant voor de beschreven applicatie te verduidelijken.</p>
+<p>Dit document werd gepubliceerd als Kandidaat-standaard. De specificatie zoals in dit document beschreven doorloopt momenteel een periode van publieke review, tijdens het welke geen wijzigingen aan deze specificatie worden doorgevoerd.<br/>
+Dit document is bedoeld om uit te groeien tot een standaard in het beschreven domein. Desalniettemin heeft het op dit ogenblik geen officieel statuut en vertegenwoordigt het geen consensus binnen OSLO.</p>
+{% endblock %}
+
+{% block conformance %}
+<p>Een applicatieprofiel is een specificatie voor gegevensuitwisseling dat bijkomende beperkingen introduceert voor het toepassen van vocabularia.
+Dergelijke bijkomende beperkingen kunnen de volgende elementen bevatten:</p>
+<p>
+<ul>
+<li>verfijning van de terminologie (klassen en eigenschappen) consistent met de semantiek uit de betreffende specificaties met een welbepaald gebruik als doel;</li>
+<li>externe terminologie (klassen en eigenschappen) gebruikt voor nieuwe/extra termen die niet in de bestaande vocabularia voorkomen.</li>
+</ul>
+</p>
+<p>Om conform te zijn met dit applicatieprofiel, geldt voor een implementatie dat ze:</p>
+<p>
+<ul>
+<li>MOET Voor elke klasse steeds de eigenschappen bevatten die als minimum kardinaliteit 1 hebben.</li>
+<li>MAG NIET meer dan 1 instantie bevatten van eigenschappen die 1 als maximum kardinaliteit hebben.</li>
+<li>MAG terminologie (klassen en eigenschappen) gebruiken op een manier die consistent is met haar semantiek (definitie, gebruik, domein en bereik).</li>
+<li>MAG NIET terminologie van andere gecontroleerde vocabularia gebruiken dan diegene die gedefinieerd wordt in dit applicatieprofiel.</li>
+<li>MAG uitgebreid worden met klassen en eigenschappen van andere datamodellen (vocabularia) die niet overlappen met terminologie uit dit applicatieprofiel.</li>
+</ul>
+</p>  
+{% endblock %}
+

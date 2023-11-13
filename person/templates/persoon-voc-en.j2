@@ -1,0 +1,20 @@
+{% extends "voc2_en.j2" %}
+
+{% block summary %}
+<p>
+OSLO-Person aims at describing a natural person, this means a physical person and not an organisation. A natural person has a personal legal personality, which unlike legal entities isn't artificial. 
+</p><p>
+The vocabulary is an expansion of the existing RDF-vocabularies about persons. These are merely meant to identify a person (e.g. <a class="c2" href="https://joinup.ec.europa.eu/node/42440">ISA Core Person Vocabulary</a> models among others name, gender and birth day) or designed for specific applications (e.g. <a class="c2" href="http://xmlns.com/foaf/spec/">FOAF</a> focuses predominantly on the relations between people).
+ </p><p>
+What was lacking is a vocabulary for the type of information that typically is recorded in a national civil register. It relates to information with civil implications such as descent, birth, marriage. Recording such information in a register confirms the official character and guarantees the rights and duties of the person that is tied to the information.
+ </p><p>
+The OSLO-Person vocabulary is broader than e.g. ISA Core Person, but not modeled on a specific national register. It tries to select the civil properties that are present in all national civil registers. In order to be able to describe the details of a certain civil register, the user should further expand the data model.
+ </p><p>
+Relations between people of different kinds have been added compared to the ISA Core Person: descent, marriage, cohabitation, custodianship and family relationships. The entity Households is added, together with Marital Status and Nationality. Another addition is the elaboration of the existing relation in ISA Core Person between a person and a jurisdiction. 
+
+It relates to the relations state citizenship and residency, relations used in the OSLO-Person respectively to make a difference between state citizens and foreigners and between citizens and non-citizens. Additionally, the residence of a person and a more specific form Domicile (with corresponding official address) can now be exchanged. The address provided by ISA is part of contactinfo. 
+
+ </p><p>
+Information about property right, criminal law or social law are out of scope of the OSLO-Person vocabulary. 
+</p>	
+{% endblock %}

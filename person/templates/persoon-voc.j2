@@ -1,0 +1,26 @@
+{% extends "voc2.j2" %}
+
+{% block summary %}
+<p>
+OSLO-Persoon richt zich op het beschrijven van een natuurlijk persoon, d.w.z. een fysiek persoon en geen organisatie. Natuurlijke personen hebben een eigen rechtspersoonlijkheid, deze is niet kunstmatig zoals bij rechtspersonen.
+</p><p>
+Het vocabularium is een uitbreiding op bestaande RDF-vocabularia over personen. Die zijn immers louter bedoeld om een persoon te identificeren (bv. het <a class="c2" href="https://joinup.ec.europa.eu/node/42440">ISA Core Person Vocabulary</a> dat o.a. naam, geslacht, geboortedatum modelleert) of ze zijn ontworpen voor specifieke toepassingen (bv. <a class="c2" href="http://xmlns.com/foaf/spec/">FOAF</a> dat zich vnl. focust op relaties tussen personen).
+ </p><p>
+Wat nog ontbrak is een vocabularium voor het soort informatie dat typisch in een nationaal bevolkingsregister wordt bijgehouden. Het gaat dan om gegevens met burgerrechtelijke implicaties zoals afstamming, geboorte, huwelijk. De opname van dergelijk gegeven in een register bevestigt het officieel karakter ervan en garandeert de betrokken persoon de rechten en plichten die eraan verbonden zijn.
+ </p><p>
+Het OSLO-Persoon vocabularium is uitgebreider dan bv. ISA Core Person, maar niet gemodelleerd op een specifiek nationaal register. Getracht is om de burgerrechtelijke eigenschappen te selecteren die in alle nationale bevolkingsregister voorkomen. Om toch de details van een specifiek bevolkingsregister te beschrijven moet de gebruiker het datamodel uitbreiden.
+ </p><p>
+Ten opzichte van ISA Core Person worden persoonsrelaties van verschillende aard toegevoegd: afstamming, huwelijk, samenwonen, voogdij en gezinsrelaties. De entiteit Gezin is toegevoegd en verder ook Burgerlijke Staat en Nationaliteit. Ook nieuw is de uitwerking van de bestaande relatie in ISA Core Person tussen een persoon en een jurisdictie. Het gaat om de relaties staatsburgerschap en inwonerschap waarbij in OSLO-Persoon resp. onderscheid kan worden gemaakt tussen staatsburgers en vreemdelingen en tussen inwoners en geen inwoners. Ook de verblijfplaats van een persoon en zijn meer gespecialiseerde vorm Domicilie (met bijbehorend officieel adres) kunnen nu worden uitgewisseld. Het door ISA voorziene adres is deel van contactinfo.
+ </p><p>
+Gegevens over eigendomsrecht, strafrecht of sociaalrechtelijke gegevens vallen buiten het OSLO-Persoon vocabularium.
+</p>	
+{% endblock %}
+
+{% block status %}<p>Een lijst van de recentste vocabularia is terug te vinden op
+<a href="http://data.vlaanderen.be/ns">http://data.vlaanderen.be/ns</a>.</p><br />
+
+<p>Dit document is de specificatie van een vocabularium en biedt een gedeeld begrippenkader voor bepaalde concepten.</p>
+<p>Op 04/10/2018 werd dit document als Standaard gepubliceerd door de werkgroep Datastandaarden OSLO, bekrachtigd door het stuurorgaan Vlaams Informatie- en ICT-beleid op 03/07/2018.
+Deze standaard heeft het statuut van ‘vrijwillig toe te passen’.</p>
+
+{% endblock %}

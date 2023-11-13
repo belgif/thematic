@@ -1,0 +1,1111 @@
+{
+  "baseURI": "https://data.vlaanderen.be/ns/persoon#",
+  "classes": [
+    {
+      "EA-Guid": "{1B563855-E1D4-4337-9C32-A823CCB602A4}",
+      "name": "Afstamming",
+      "label": {
+        "nl": "Afstamming",
+        "en": "Descent"
+      },
+      "definition": {
+        "nl": "Afstamming is de dalende lijn van bloedverwantschap tussen verschillende generaties.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "De afstamming kan ook niet-biologisch zijn, bv adoptie. Afstamming kan ook in opgaande lijn worden bekeken. Het begrip is enger dan verwantschap dat oa ook huwelijk inhoudt.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{E12D29AC-62A7-4b7a-A4B5-948D6FFDB40E}",
+      "name": "Burgerlijke Staat",
+      "label": {
+        "nl": "Burgerlijke Staat",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Burgerrechtelijke toestand van een persoon.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Slaat op huwelijk, partnerregistratie, afstamming, voogdij etc. Is maw de toestand van bepaalde verhoudingen tussen personen.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{C6CF8D11-1B60-4e4c-9E3E-E6230CDF3C7C}",
+      "name": "Domicilie",
+      "label": {
+        "nl": "Domicilie",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Hoofdverblijfplaats ve persoon.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Plaats waar de persoon het grootste deel vd tijd verblijft binnen de jurisdictie waarvan hij Inwoner is. Dit wordt doorgaans officieel vastgesteld en geregistreerd ih bevolkingsregister. Kan in praktijk verschillend vd feitelijke verblijfplaats.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{15A6A4D4-BE93-4241-B5F3-3AD067938ABF}",
+      "name": "Geboorte",
+      "label": {
+        "nl": "Geboorte",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Het ter wereld komen vd persoon.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": " ",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{D3A66E70-D816-4637-95A5-14D7B52E56DB}",
+      "name": "Geen Inwoner",
+      "label": {
+        "nl": "Geen Inwoner",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Persoon die niet in een bepaalde plaats of land woont.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Plaats of land wordt hier vertegenwoordigd door de entiteit jurisdictie.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{68F9C64F-B2BC-4cdc-983F-633E88F5A446}",
+      "name": "Geregistreerd Persoon",
+      "label": {
+        "nl": "Geregistreerd Persoon",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Persoon waarvan de gegevens zijn ingeschreven in een register.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Doorgaans is dit register een bevolkingsregister maar het kan bv ook een kiesregister zijn. De ingeschreven gegevens hebben betrekking op de identeit (vb naam en voornaam) en de Verblijfplaats vd persoon en op belangrijke levensgebeurtenissen zoals geboorte, huwelijk, overlijden etc. Deze gegevens worden typisch geregistreerd door de overheid, ze bieden de ingeschreven persoon wettelijke bescherming en laten de overheid toe om basisstatistieken op te stellen over zijn bevolking.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{F747041B-2DF2-462f-BA4C-512BB880AE58}",
+      "name": "Gezin",
+      "label": {
+        "nl": "Gezin",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Samenwerkingsvorm die een herkenbare sociale eenheid vormt (bv tgv huwelijk), met al dan niet verwante personen die duurzame banden hebben en elkaar onderling steun en verzorging verlenen.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Ruimer begrip dan familie waar het gezin louter bestaat uit nabije bloedverwanten, bv een eenpersoonsgezin of living apart together. Gezinsleden hebben doorgaans dezelfde verblijfplaats.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{9ED7B2CA-5F4D-4591-B16D-8CE0398085F4}",
+      "name": "Gezinsrelatie",
+      "label": {
+        "nl": "Gezinsrelatie",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Relatie tussen leden van eenzelfde gezin.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Bv echtgenoot, zoon, schoonmoeder.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{DD46B871-D9CC-4c52-81A8-588A7AC8AA61}",
+      "name": "Huwelijk",
+      "label": {
+        "nl": "Huwelijk",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Een door burgerlijk of religieus recht geregelde samenlevingsvorm van twee personen.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Kan, net als bv samenwonen, de basis vormen van een gezin.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{AB0A9207-1FE7-48d4-8E67-F562316C6459}",
+      "name": "Inwoner",
+      "label": {
+        "nl": "Inwoner",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Persoon die in een bepaalde plaats of land woont.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Plaats of land wordt hier vertegenwoordigd door de entiteit jurisdictie.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{6F0905DA-3522-4532-9C7A-625EEB320DA9}",
+      "name": "Inwonerschap",
+      "label": {
+        "nl": "Inwonerschap",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Het feit dat een persoon verblijf houdt in een plaats of land.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{DE17DAD0-81F4-47fa-9ECE-B0D2A10A68D1}",
+      "name": "Nationaliteit",
+      "label": {
+        "nl": "Nationaliteit",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "De relatie tussen een persoon en een staat, cultuur of loyaliteit.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Merk op dat dit begrip ruimer is dan staatsburgerschap (dat zich beperkt tot de relatie met een staat). Wie de nationaliteit ve bepaald land heeft is er doorgaans ook automatisch staatsburger van. Nationaliteit wordt doorgaans autamatisch verkregen door geboorte: men krijgt hetzij de nationaliteit van zijn ouders of men krijgt deze vh land waar men Inwoner van is. Men kan een bepaalde nationaliteit ook verkrijgen door naturalisatie. In principe verliest men dan zijn oorspronkelijke nationaliteit, maar dat is niet altijd zo (meervoudige nationaliteit).",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{8762DAE0-F5E0-4016-A694-2CFBB90BF82B}",
+      "name": "Overlijden",
+      "label": {
+        "nl": "Overlijden",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Het doodgaan vd Persoon.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{E2663D91-AE45-42f7-9DCB-834357AC5793}",
+      "name": "Permanent Inwoner",
+      "label": {
+        "nl": "Permanent Inwoner",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Persoon die permanent in een bepaalde plaats of land woont.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Is een verblijfsrecht dat in principe officieel moet worden toegekend als de persoon geen staatsburger is.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{1367DABF-E383-451b-B99C-61927D8C4BB7}",
+      "name": "Persoonsgebeurtenis",
+      "label": {
+        "nl": "Persoonsgebeurtenis",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Belangrijke gebeurtenis ih leven ve persoon.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{2013EBE3-BC8D-4ee5-A850-2E6846E532F2}",
+      "name": "Persoonsrelatie",
+      "label": {
+        "nl": "Persoonsrelatie",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Relatie tussen twee of meer personen.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Typisch zijn dit burgerrechtelijke relaties (zie burgerlijke staat) maar niet noodzakelijk daartoe beperkt.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{ADF14A72-93D4-4305-BAE7-D21FF167C213}",
+      "name": "Samenwonen",
+      "label": {
+        "nl": "Samenwonen",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Regeling waarbij twee personen die niet getrouwd zijn samenleven.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Kan, net als bv een huwelijk, de basis vormen van een gezin.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{04DC9272-EFD1-4f62-B7FF-955A6269167B}",
+      "name": "Staatsburger",
+      "label": {
+        "nl": "Staatsburger",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Persoon die juridisch verbonden is met een staat.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{6F88B89C-C954-46a6-9F31-5786B2A41A25}",
+      "name": "Staatburgerschap",
+      "label": {
+        "nl": "Staatburgerschap",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Juridische band ve persoon met een staat, waaraan bepaalde rechten en plichten verbonden zijn",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Vloeit meestal voort uit de nationaliteit ve persoon. De rechten en plichten waarvan sprake zijn burgerrechten (vb godsdienstvrijheid) of van politieke (vb stemrecht) of sociale aard (bv recht op een uitkering).  ",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{98439C3E-5C04-4e2d-B2EC-B045CBD0A453}",
+      "name": "Tijdelijk Inwoner",
+      "label": {
+        "nl": "Tijdelijk Inwoner",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Persoon die tijdelijk in een plaats of land woont.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Is een verblijfsrecht dat in principe enkel wordt toegekend omwille ve zeer specifieke reden bv werken of studeren. Exclusief personen met kort verblijf, bv als toerist.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{32937993-457D-47c8-AC4E-C9A0F8C36706}",
+      "name": "Verblijfplaats",
+      "label": {
+        "nl": "Verblijfplaats",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Plaats waar een persoon al dan niet tijdelijk woont of logeert.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{6EA567A1-A34A-4a9a-B236-9462219AA989}",
+      "name": "Voogdij",
+      "label": {
+        "nl": "Voogdij",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Situatie waarbij een persoon die optreedt als voogd ve ander persoon en in die hoedanigheid instaat voor deze persoon en zijn goederen.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Dit is bv het geval voor minderjarigen die hun ouders zijn verloren of voor meerderjarigen die hun verstandelijke vermogens zijn verloren.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{9176351F-B08C-4591-8C55-643A88BE8DC5}",
+      "name": "Vreemdeling",
+      "label": {
+        "nl": "Vreemdeling",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Persoon die niet de nationaliteit bezit vh land waar hij verblijft.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Daardoor kan de persoon geen staatsburger worden genoemd. In praktijk geniet de Vreemdeling als Inwoner een subset vd burgerrechten die een Staatsbutger wel heeft. Bv wel godsdienstvrijheid maar geen stemrecht.",
+        "en": "Enter your translation here"
+      }
+    }
+  ],
+  "properties": [
+    {
+      "EA-Guid": "{4AE7B4C6-2560-4cee-AE99-65610411E1E6}",
+      "name": "volledige naam",
+      "label": {
+        "nl": "volledige naam",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "De volledige naam vd persoon, doorgaans de combinatie van voornamen en achternaam.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": " ",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{D2AEE069-1764-43f4-BD00-1D0522CC6929}",
+      "name": "verblijfsadres",
+      "label": {
+        "nl": "verblijfsadres",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Plaats waar een persoon al dan niet tijdelijk woont of logeert.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": " ",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{77F4819E-ABD2-4763-B152-8F344F31A0C6}",
+      "name": "type",
+      "label": {
+        "nl": "type",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Aard vd burgerlijke staat.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": " ",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{8571C4C8-3068-4d91-A9C7-8FFBFBA6DEA8}",
+      "name": "registratie",
+      "label": {
+        "nl": "registratie",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Identificatiecode vd persoon ih register.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": " ",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{138482A9-7C19-4b26-A1FB-B66958CB5C6F}",
+      "name": "plaats",
+      "label": {
+        "nl": "plaats",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Plaats in het land waar de gebeurtenis plaatsvond.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": " ",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{220D686C-C6E2-40cc-9EBD-35B8B5E2B8D0}",
+      "name": "nationaliteit",
+      "label": {
+        "nl": "nationaliteit",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "De nationaliteit vd persoon.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": " ",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{18F83562-4D30-484f-AF12-95CFD0990138}",
+      "name": "land",
+      "label": {
+        "nl": "land",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Land waar de gebeurtenis plaatsvond.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": " ",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{87CC66E9-3AF1-41ce-AE0D-CCB82C1DA0D1}",
+      "name": "is lid van",
+      "label": {
+        "nl": "is lid van",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Persoon die tot een gezin behoort.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{B56E5AA8-8C14-464c-9298-F486928829D7}",
+      "name": "is hoofd van",
+      "label": {
+        "nl": "is hoofd van",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Persoon die standaard het gezin vertegenwoordigt.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{00D052FB-6371-4020-8C61-CF972E16B963}",
+      "name": "heeft verblijfplaats",
+      "label": {
+        "nl": "heeft verblijfplaats",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Plaats waar een persoon verblijft.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{9CE96172-91F3-43cc-ACFE-4BAD90CCAC7B}",
+      "name": "heeft relatie met",
+      "label": {
+        "nl": "heeft relatie met",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Persoon waarmee de persoon gerelateerd is.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{67EC2722-A569-4d34-861D-B4DA184E2FFC}",
+      "name": "heeft overlijden",
+      "label": {
+        "nl": "heeft overlijden",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Verwijst naar de overlijdensgegevens vd persoon.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{CE724864-639F-423e-ABE8-C01A2FB5D229}",
+      "name": "heeft nationaliteit",
+      "label": {
+        "nl": "heeft nationaliteit",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Nationaliteit vd persoon.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{C3B22F27-C8E4-4e9d-8410-05D3AAF74920}",
+      "name": "heeft geboorte",
+      "label": {
+        "nl": "heeft geboorte",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Verwijst naar de geboortegegevens vd persoon.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{1F8E2CB9-2351-4041-B1EA-CC4611F44A58}",
+      "name": "heeft burgerlijke staat",
+      "label": {
+        "nl": "heeft burgerlijke staat",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Burgerlijke Staat vd Persoon.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{C10AF2D4-0D8D-4ce9-B0B9-D6A15EEC9455}",
+      "name": "gezinsrelatietype",
+      "label": {
+        "nl": "gezinsrelatietype",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Aard vd relatie.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Wordt typisch bepaald tov het gezinshoofd. Bv als de vader gezinshoofd is en een gezinslid is zoon, dan zou als de grootvader gezinshoofd was datzelfde gezinslid kleinzoon zijn.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{87CC66E9-3AF1-41ce-AE0D-CCB82C1DA0D1}",
+      "name": "gezinslid",
+      "label": {
+        "nl": "gezinslid",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "TODO",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{B56E5AA8-8C14-464c-9298-F486928829D7}",
+      "name": "gezinshoofd",
+      "label": {
+        "nl": "gezinshoofd",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "TODO",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{ABB83A56-6E80-4410-BA4F-DAD2A17CFE9D}",
+      "name": "gezinsadres",
+      "label": {
+        "nl": "gezinsadres",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Verblijfplaats vh gezin.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Dikwijls een criterium om te bepalen of personen deel uitmaken van eenzelfde gezin.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{D221FE11-18B1-4a0f-9C2E-82D550B07149}",
+      "name": "geslacht",
+      "label": {
+        "nl": "geslacht",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Het feit of de persoon een man of een vrouw is.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": " ",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{FB9BEC59-4ED4-4cf3-BE86-EC50EE2ED3A6}",
+      "name": "gebruikte voornaam",
+      "label": {
+        "nl": "gebruikte voornaam",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Belangrijkste vd voornamen ve persoon.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": " ",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{C6DB8F47-0BFD-4de8-9766-FE8A5442A089}",
+      "name": "datum van afstamming",
+      "label": {
+        "nl": "datum van afstamming",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "De datum waarop de afstamming wordt vastgesteld.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": " ",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{5E3A38B8-161E-437a-9F60-80474833CF8C}",
+      "name": "datum",
+      "label": {
+        "nl": "datum",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Datum waarop de gebeurtenis plaatsvond.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": " ",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{CEA9C7F8-2FB2-49e9-A606-5D8173E92303}",
+      "name": "alternatieve naam",
+      "label": {
+        "nl": "alternatieve naam",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Alternatief voor de volledige naam vd persoon.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Bv pseudoniem, titel etc.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{1FD79086-4D73-4155-AF0F-6965C9BBC949}",
+      "name": "afstammingstype",
+      "label": {
+        "nl": "afstammingstype",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Aard vd afstamming.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Bv geadopteerd, kind uit huwelijk, erkend door de vader etc.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "Derived:{6F88B89C-C954-46a6-9F31-5786B2A41A25}->{736BD0D3-141C-4607-B26B-16EBB5346A5B}",
+      "name": "persoon",
+      "label": {
+        "nl": "Persoon",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Referentie naar verbonden klasse.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "Derived:{6F88B89C-C954-46a6-9F31-5786B2A41A25}->{73CE3FB0-3B99-400e-B4E1-17FAE097200B}",
+      "name": "jurisdictie",
+      "label": {
+        "nl": "Jurisdictie",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Referentie naar verbonden klasse.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "Derived:{2013EBE3-BC8D-4ee5-A850-2E6846E532F2}->{736BD0D3-141C-4607-B26B-16EBB5346A5B}",
+      "name": "persoon (target)",
+      "label": {
+        "nl": "Persoon (target)",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Referentie naar verbonden klasse.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "Derived:{2013EBE3-BC8D-4ee5-A850-2E6846E532F2}->{736BD0D3-141C-4607-B26B-16EBB5346A5B}",
+      "name": "persoon (source)",
+      "label": {
+        "nl": "Persoon (source)",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Referentie naar verbonden klasse.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "Derived:{6F0905DA-3522-4532-9C7A-625EEB320DA9}->{736BD0D3-141C-4607-B26B-16EBB5346A5B}",
+      "name": "persoon",
+      "label": {
+        "nl": "Persoon",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Referentie naar verbonden klasse.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "Derived:{6F0905DA-3522-4532-9C7A-625EEB320DA9}->{73CE3FB0-3B99-400e-B4E1-17FAE097200B}",
+      "name": "jurisdictie",
+      "label": {
+        "nl": "Jurisdictie",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Referentie naar verbonden klasse.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "",
+        "en": "Enter your translation here"
+      }
+    }
+  ],
+  "externals": [
+    {
+      "EA-Guid": "{2B1CD9FD-A1CB-474d-9EB6-1AA173A876BA}",
+      "name": "Agent",
+      "label": {
+        "nl": "Agent",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Iemand die of iets dat kan handelen of een effect kan teweeg brengen.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{73CE3FB0-3B99-400e-B4E1-17FAE097200B}",
+      "name": "Jurisdictie",
+      "label": {
+        "nl": "Jurisdictie",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Het gebied waarover de rechtsmacht van een overheid zich uitstrekt.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Doorgaans een land of deelstaat.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{0BA05094-D6F8-4c33-A679-2DB35B14B2CD}",
+      "name": "Plaats",
+      "label": {
+        "nl": "Plaats",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Een ruimtelijk gebied of benoemde plaats.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{A6BB8D9A-1738-41b7-85A0-C9D3AF7A4271}",
+      "name": ""
+    },
+    {
+      "EA-Guid": "{B15F30FA-A41B-4fbb-B6AF-EF28FF1AC54E}",
+      "name": "",
+      "definition": {
+        "nl": "Aard vd burgerlijke staat ve persoon.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": " ",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{F7124F9C-B201-4bbd-B32A-92FDE4674124}",
+      "name": "",
+      "definition": {
+        "nl": "Aard vd gezinsrelatie tussen twee personen.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": " ",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{73CBE8CC-FD89-425f-8566-4907DDDCFAA1}",
+      "name": "",
+      "definition": {
+        "nl": "Aard vd afstamming tussen twee personen.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": " ",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{AFEADC8C-6EA5-43aa-B518-44B201827911}",
+      "name": "",
+      "definition": {
+        "nl": "Het feit of men een man of een vrouw is.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": " ",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{4A6C8CDD-BABB-414e-8D17-5C7B9E50521B}",
+      "name": "Adresvoorstelling",
+      "label": {
+        "nl": "Adresvoorstelling",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Meer leesbare voorstelling met enkel de basisgegevens van het adres, bedoeld voor het gebruik van een adres als attribuut van een ander object.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Bv als attribuut ve persoon of gebouw... De adresvoorstelling heeft niet enkel betrekking op Belgische adressen, ze kan gebruikt worden om buitenlandse adressen weer te geven (waar mogelijk andere adresaanduidingen dan huisnummer of busnummer worden gebruikt of waar adrescomponenten zoals adresgebieden voorkomen).",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{5F8AAF29-89A4-4bf1-B6F7-0DEC6171AED6}",
+      "name": "Organisatie",
+      "label": {
+        "nl": "Organisatie",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Een aantal mensen georganiseerd in een gemeenschap of andere sociale, commerciële of politieke structuur. De groep heeft een gemeenschappelijk doel of bestaansreden die de individuele leden ervan overstijgt en kan handelen als Agent. Een organisatie heeft dikwijls een hiërarchische structuur.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{736BD0D3-141C-4607-B26B-16EBB5346A5B}",
+      "name": "Persoon",
+      "label": {
+        "nl": "Persoon",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Natuurlijk persoon.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "In de rechtspraak betreft het een persoon (in de wettelijke betekenis, ttz met eigen rechtspersoonlijkheid) van de menselijke soort, ttz een fysiek persoon. Tegenhanger is de rechtspersoon, een juridische constructie die een private of publieke organisatie dezelfde rechtspersoonlijkheid geeft als een natuurlijk persoon (kan bv ook schulden hebben, contracten afsluiten, aangeklaagd worden etc).",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{131427E3-06F7-4896-B818-94795D6CD2CC}",
+      "name": "Contactinfo",
+      "label": {
+        "nl": "Contactinfo",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Informatie zoals email, telefoon, adres die toelaat om iemand of iets te contacteren.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Bvb een persoon of organisatie of dienstverlening... Mogelijke vormen van contact: bellen, mailen etc.",
+        "en": "Enter your translation here"
+      }
+    }
+  ],
+  "externalproperties": [
+    {
+      "EA-Guid": "{7140E50D-432A-462a-9EFC-5E859304C076}",
+      "name": "plaats",
+      "label": {
+        "nl": "plaats",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Ruimtelijk gebied of benoemde plaats waarmee de Jurisdictie samenvalt.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Typisch een land.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{32C99145-23F2-41a9-A925-D03726D07904}",
+      "name": "voornaam",
+      "label": {
+        "nl": "voornaam",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Naam die een kind bij geboorte wordt gegeven. Onderscheidt het kind van de andere kinderen in de familie.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": " ",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{E969EC3E-BAD8-4e66-848E-74C2D10167EE}",
+      "name": "achternaam",
+      "label": {
+        "nl": "achternaam",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Gedeelte van de volledige naam vd persoon ontvangen van de vorige generatie.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Ook wel familienaam genoemd omdat de achternaam een familiale verwantschap aanduidt.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{09B4A748-C090-4e23-B771-ACBBC8D494D0}",
+      "name": "inwonerschap",
+      "label": {
+        "nl": "inwonerschap",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Jurisdictie waarbinnen het Inwonerschap vd persoon is gedefinieerd.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{5D82C8C7-B15B-467f-B00B-54F7A99F0FC4}",
+      "name": "patroniem",
+      "label": {
+        "nl": "patroniem",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Achternaam gebaseerd op de voornaam vd vader ve persoon.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "Bv in Ijsland: Magnusdottir (dochter van Magnus).",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{2716C8D3-5306-4b0d-AAAE-F41DD04A8FE8}",
+      "name": "staatsburgerschap",
+      "label": {
+        "nl": "staatsburgerschap",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Jurisdictie waarbinnen het staatsburgerschap vd persoon is gedefinieerd.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{F68E843B-CE27-4c9f-8935-C9512F9BB6FE}",
+      "name": "geboortenaam",
+      "label": {
+        "nl": "geboortenaam",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Volledige naam vd persoon bij geboorte.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": "De namen van een persoon kunnen id loop vd tijd wijzigen, bv kan de achternaam wijzigen door huwelijk. De oorspronkelijke naam wordt echter dikwijls ook nog gebruikt.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{4EA23F99-6B40-4751-B25C-F89F2FF832B8}",
+      "name": "geometrie",
+      "label": {
+        "nl": "geometrie",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Geometrie van de plaats of het gebied.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{B56A395D-9302-40b0-8BFA-E8195836D4D9}",
+      "name": "plaatsnaam",
+      "label": {
+        "nl": "plaatsnaam",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Naam van de plaats of van het gebied.",
+        "en": "Enter your translation here"
+      }
+    },
+    {
+      "EA-Guid": "{9D300EEB-6A4C-45ec-948F-FBA9C1E28E75}",
+      "name": "contactinfo",
+      "label": {
+        "nl": "contactinfo",
+        "en": "Enter your translation here"
+      },
+      "definition": {
+        "nl": "Informatie zoals email, telefoon... die toelaat de Persoon te contacteren.",
+        "en": "Enter your translation here"
+      },
+      "usage": {
+        "nl": " ",
+        "en": "Enter your translation here"
+      }
+    }
+  ]
+}
