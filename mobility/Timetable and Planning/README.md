@@ -1,3 +1,6 @@
+# 2023-12
+The model was finalized and can be found at https://github.com/belgif/thematic/tree/master/models/public%20transport.
+
 # 2023-02
 The model has been adapted and can be found at https://github.com/belgif/thematic/tree/master/models/public%20transport.
 
