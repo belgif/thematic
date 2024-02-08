@@ -515,7 +515,7 @@
               <div class="head" role="metainfo" id="metainfo">
               <dl>
               <!--<dt>Source</dt><dd><br></dd>-->
-              <!--<dt>Changelog</dt><dd><a href="https://github.com/bertvannuffelen/semiceuthema/blob/266dbba8188ce580c0c528b05c81cd240ac30e78/CHANGELOG">https://github.com/bertvannuffelen/semiceuthema/blob/266dbba8188ce580c0c528b05c81cd240ac30e78/CHANGELOG</a></dd>-->
+              <!--<dt>Changelog</dt><dd><a href="https://github.com/bertvannuffelen/semiceuthema/blob/89e8bdc2d2bd05d339caa5b9748992d139853548/CHANGELOG">https://github.com/bertvannuffelen/semiceuthema/blob/89e8bdc2d2bd05d339caa5b9748992d139853548/CHANGELOG</a></dd>-->
               <dt>Feedback</dt><dd><a href="https://github.com/belgif/thematic/issues">https://github.com/belgif/thematic/issues</a></dd>
               <!--<dt>Registry of standards</dt><dd><a href="TODO">TODO</a></dd>-->
 
@@ -703,7 +703,7 @@
                   
 		  
                   <div class="region region--no-space-top">
-                    <p> This document describes the usage of the following datatypes for a correct usage of the Core Vocabulary:
+                    <p> This document describes the usage of the following datatypes for a correct usage of the specification:
                       <br />
                       |
                       <a href="#3D object">3D object</a> |
@@ -1444,7 +1444,7 @@ More information about the enumerations can be found on the INSPIRE <a href="htt
 			    
                           
                         </td>
-			<td>1..*</td>
+			<td>0..*</td>
                         <td property="rdfs:comment">The location where the building unit can be entered or exited.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
@@ -1824,10 +1824,10 @@ be used by external applications to reference the spatial object.</td>
                         <td></td>
                       </tr>
                       
-                      <tr id="Address%20representation%3Abox%20number" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#Adresvoorstelling.busnummer">
+                      <tr id="Address%20representation%3Abox%20number" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#boxNumber">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#Adresvoorstelling.busnummer" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#Adresvoorstelling.busnummer" data-placement="right">box number</a>
+                            <a href="http://vocab.belgif.be/ns/building#boxNumber" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#boxNumber" data-placement="right">box number</a>
                           </code>
                         </td>
                         <td>
@@ -1839,7 +1839,7 @@ be used by external applications to reference the spatial object.</td>
                         </td>
 			<td>0..1</td>
                         <td property="rdfs:comment">Officially assigned alphanumeric code added to the house number to distinguish multiple building units, pitches, moorings or plots that have the same house number.</td>
-                        <td property="skos:scopeNote"></td>
+                        <td property="skos:scopeNote">While not advisable to do according to common BeST practices, optionally the block, floor, etc. can be specified here too.</td>
                         <td></td>
                       </tr>
                       
@@ -1881,10 +1881,10 @@ be used by external applications to reference the spatial object.</td>
                         <td></td>
                       </tr>
                       
-                      <tr id="Address%20representation%3Ahousenumber" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#Adresvoorstelling.huisnummer">
+                      <tr id="Address%20representation%3Ahousenumber" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#housenumber">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#Adresvoorstelling.huisnummer" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#Adresvoorstelling.huisnummer" data-placement="right">housenumber</a>
+                            <a href="http://vocab.belgif.be/ns/building#housenumber" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#housenumber" data-placement="right">housenumber</a>
                           </code>
                         </td>
                         <td>
@@ -1896,7 +1896,7 @@ be used by external applications to reference the spatial object.</td>
                         </td>
 			<td>0..1</td>
                         <td property="rdfs:comment">Alphanumeric code officially assigned to building units, berths, pitches or parcels.</td>
-                        <td property="skos:scopeNote">This can be very broad. An option is only the house number 19, but can also include options to specify the block, floor and number of an apartment, such as A.01.001</td>
+                        <td property="skos:scopeNote">This should be either purely numerical or a series of numbers followed by a letter.</td>
                         <td></td>
                       </tr>
                       
