@@ -515,7 +515,6 @@
           "sh:definition": {
             "en": "The location where the building unit can be entered or exited."
           },
-          "sh:minCount": "1",
           "sh:name": {
             "en": "entrance location"
           },
@@ -1193,7 +1192,7 @@
           "sh:name": {
             "en": "box number"
           },
-          "sh:path": "http://vocab.belgif.be/ns/building#Adresvoorstelling.busnummer"
+          "sh:path": "http://vocab.belgif.be/ns/building#boxNumber"
         },
         {
           "sh:class": "http://vocab.belgif.be/ns/building#GeographicalName",
@@ -1226,7 +1225,7 @@
           "sh:name": {
             "en": "housenumber"
           },
-          "sh:path": "http://vocab.belgif.be/ns/building#Adresvoorstelling.huisnummer"
+          "sh:path": "http://vocab.belgif.be/ns/building#housenumber"
         },
         {
           "sh:class": "http://vocab.belgif.be/ns/building#GeographicalName",

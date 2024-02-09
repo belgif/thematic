@@ -36,6 +36,14 @@
       },
       "foaf:firstName": "Yaron",
       "foaf:lastName": "Dassonneville"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "PwC"
+      },
+      "foaf:firstName": "Jitse",
+      "foaf:lastName": "De Cock"
     }
   ],
   "contributors": [
@@ -102,6 +110,14 @@
       },
       "foaf:firstName": "Evy",
       "foaf:lastName": "Dewinter"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "paradigm.brussels"
+      },
+      "foaf:firstName": "François",
+      "foaf:lastName": "Du Mortier"
     },
     {
       "@type": "foaf:Person",
@@ -310,6 +326,14 @@
       },
       "foaf:firstName": "Christophe",
       "foaf:lastName": "Verschoore"
+    },
+    {
+      "@type": "foaf:Person",
+      "affiliation": {
+        "foaf:name": "bpost"
+      },
+      "foaf:firstName": "Jan",
+      "foaf:lastName": "Vleugels"
     },
     {
       "@type": "foaf:Person",

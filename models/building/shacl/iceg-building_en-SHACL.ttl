@@ -80,7 +80,7 @@
     shacl:definition "Officially assigned alphanumeric code added to the house number to distinguish multiple building units, pitches, moorings or plots that have the same house number."@en;
     shacl:maxCount 1;
     shacl:name "box number"@en;
-    shacl:path <http://vocab.belgif.be/ns/building#Adresvoorstelling.busnummer>
+    shacl:path <http://vocab.belgif.be/ns/building#boxNumber>
   ], [
     shacl:class <http://vocab.belgif.be/ns/building#GeographicalName>;
     shacl:definition "Country in which the address is located."@en;
@@ -98,7 +98,7 @@
     shacl:definition "Alphanumeric code officially assigned to building units, berths, pitches or parcels."@en;
     shacl:maxCount 1;
     shacl:name "housenumber"@en;
-    shacl:path <http://vocab.belgif.be/ns/building#Adresvoorstelling.huisnummer>
+    shacl:path <http://vocab.belgif.be/ns/building#housenumber>
   ], [
     shacl:class <http://vocab.belgif.be/ns/building#GeographicalName>;
     shacl:definition "Name or description of the geographic object that the address locator identifies."@en;
@@ -432,7 +432,6 @@
   ], [
     shacl:datatype <http://vocab.belgif.be/ns/building#EntranceLocation>;
     shacl:definition "The location where the building unit can be entered or exited."@en;
-    shacl:minCount 1;
     shacl:name "entrance location"@en;
     shacl:path <http://vocab.belgif.be/ns/building#entranceLocation>
   ], [
