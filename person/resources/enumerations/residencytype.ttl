@@ -1,1 +1,0 @@
-<http://vocab.belgif.be/auth/residencytype> a skos:ConceptScheme .
