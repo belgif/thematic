@@ -1,0 +1,53 @@
+{
+    "@context": {
+        "dcterms": "http://purl.org/dc/terms/",
+        "eu": "http://data.europa.eu/m8g/",
+        "iceg-person": "http://vocab.belgif.be/ns/person#",
+        "iceg-registry": "http://vocab.belgif.be/ns/registry#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
+    },
+    "@graph": [
+        {
+            "@id": "http://vocab.belgif.be/id/registry/rec/1",
+            "@type": "iceg-registry:Record",
+            "iceg-person:personNumber": {
+                "@type": "iceg-person:personNumber",
+                "@value": "xxxxxxxxxxx"
+            }
+        },
+        {
+            "@id": "http://vocab.belgif.be/id/registry/tra/1",
+            "@type": "iceg-registry:Transaction",
+            "iceg-registry:timestamp": {
+                "@type": "xsd:dateTime",
+                "@value": "2024-02-21T00:00:00"
+            },
+            "iceg-registry:operation": {
+                "@id": "http://vocab.belgif.be/id/registry/ope/1",
+                "@type": "iceg-registry:Operation",
+                "dcterms:type": {
+                    "@id": "https://vocab.belgif.be/id/concept/OperationType/ContentUpdate"
+                },
+                "iceg-registry:payload": {
+                    "@id": "http://vocab.belgif.be/id/registry/pro/1",
+                    "@type": "iceg-registry:Property",
+                    "rdf:subject": {
+                        "@id": "http://vocab.belgif.be/id/registry/rec/1"
+                    },
+                    "rdf:predicate": {
+                        "@id": "http://xmlns.com/foaf/0.1/givenName"
+                    },
+                    "rdf:object": {
+                        "@language": "nl",
+                        "@value": "Kuifje"
+                    },
+                    "iceg-registry:effectiveFrom": {
+                        "@type": "xsd:dateTime",
+                        "@value": "2024-02-22T00:00:00"
+                    }
+                }
+            }
+        }
+    ]
+}

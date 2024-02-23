@@ -1,0 +1,30 @@
+{% extends "ap2_en.j2" %}
+
+{% block summary %}
+<p>The OSLO-Person application profile merges terms from vocabularies about persons and mainly from <a href="http://data.vlaanderen.be/doc/applicatieprofiel/persoon">OSLO-Person vocabulary</a>.</p>.
+<p>In principle, an application profile is intended for a certain application. Together with the aim of the application, additional constraints such a cardinalities and prescribed code lists are present. Here, this is not the case and therefore we speak of a basic profile. It contains the info that is seen as relevant for OSLO for the exchange of information about persons. Nevertheless, the profile pools terms that are predominantly used in the context of a civil register. </p>
+<p>The profile contains terms that are related to the identification of a person (name, gender, birth day) but also terms that described the civil characteristics of people (personal relations such as marriage, family and relations with the state such as state citizenship and residency/domicile). We refer to the OSLO-Person vocabulary for more details.</p>
+<p>The profile imposes minimal limitations, only the information identifying the person are mandatory. Currently there are no prescribed code lists. </p>
+{% endblock %}
+
+{% block conformance %}
+<p>An application profile is a specification for the exchange of information that introduces additional limitations for the application of vocabularies. Such additional limitations can contain the following elements:</p>
+
+<p>
+<ul>
+<li>refinement of the terminology (classes and properties) consistent with the semantics from the concerning specifications with a specific use as aim;</li>
+<li>external terminology (classes and properties) used for new/extra terms that do not apprear in existing vocabularies.</li>
+</ul>
+</p>
+<p>In order to be in accordance with this applicationprofile, the implementation:</p>
+<p>
+<ul>
+<li>MUST always contain the properties that have cardinality 1 for every class.</li>
+<li>CAN NOT contain more than 1 instance of properties that have 1 as maximum cardinality.</li>
+<li>CAN use terminology (classes and properties) in a way that is consistent with the semantics (definition, use, domain, range).</li>
+<li>CAN NOT use terminology of other controlled vocabulary than the one which is defined in this applicationprofile.</li>
+<li>CAN be expanded with classes and properties of other data models (vocabulary) that do not overlap with the terminilogy from this applicationprofile.</li>
+</ul>
+</p>  
+{% endblock %}
+
