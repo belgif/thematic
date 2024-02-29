@@ -4,7 +4,7 @@ The ICEG specification 'Cables and Pipes' aims at facilitating the collaboration
 
 The normative documents are listed hereunder:
 
-- [ICEG Cables and Pipes - ENG](https://belgif.github.io/thematic/models/cable-pipe/index.html)
+- [ICEG Cables and Pipes - ENG](https://belgif.github.io/thematic/models/cable-pipe/index_en.html)
 - [ICEG Kabels en Leidingen - NL](https://belgif.github.io/thematic/models/cable-pipe/index_nl.html)
 - [ICEG Câbles et Conduites - FR](https://belgif.github.io/thematic/models/cable-pipe/index_fr.html)
 
