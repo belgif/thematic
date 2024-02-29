@@ -1,0 +1,1393 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix schemas: <https://schema.org/> .
+@prefix shacl: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://belgif.github.io//thematic/models/cable-pipe> <https://belgif.github.io//thematic/models/cable-pipeshapes> <https://belgif.github.io//thematic/models/cable-pipe#AnnotatieShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#UiterlijkShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#ToebehorenShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#KastShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#KabelShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#KabelEnLeidingContainerShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#AansluitingShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#DiepteShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#MaataanduidingShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#KanaalShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#ElectriciteitskabelShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#HoogteShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#MangatShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#OlieGasChemicalienPijpShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#PijpShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#PlanShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#PaalShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#BeschermdGebiedShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#ReferentieoppervlakShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#RioolpijpShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#TelecommunicatiekabelShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#ThermischePijpShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#TopografischElementShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#TorenShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#NutsvoorzieninglinkShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#NutsvoorzieninglinksequentieShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#NutsvoorzieninglinksetShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#NutsvoorzieningnetwerkShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#NutsvoorzieningnetwerkelementShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#NutsvoorzieningknoopShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#NutsvoorzieningknoopcontainerShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#VerticalePositieShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#WaterleidingShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#LengteShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#MaatShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#MeeteenheidShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#LengteeenheidShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#PositioneleNauwkeurigheidShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#AgentShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#CurveShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#PuntShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#ContainertypeShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#ZichtbaarheidstypeShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#RisicotypeShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#KleurShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#MateriaaltypeShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#SubthemaShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#NutsvoorzieningnetwerktypeShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#FaciliteitstatusShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#VerticalePositietypeShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#NutsvoorzieningleveringstypeShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#WaarschuwingstypeShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#TelecommunicatiekabelmateriaaltypeShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#OlieGasChemicalientypeShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#RioolwatertypeShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#WatertypeShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#ThermischProducttypeShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#TekenShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#ToebehorentypeShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#EconomischeActiviteittypeShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#InputoutputtypeShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#AnnotatietypeShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#TopografischElementtypeShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#DocumentmediumtypeShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#DocumenttypeShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#ReferentieoppervlaktypeShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#OpmetingsmethodeShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#BeschermdGebiedtypeShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#IdentificatorShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#AdresvoorstellingShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#GeometrieShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#ObjectShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#LocatieShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#DocumentShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#GetalShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#AdresShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#ActiviteitencomplexShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#DirectePositieShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#FunctieShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#OpmetingShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#GerichteLinkShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#GeneriekeLinkShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#LinkShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#LinksequentieShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#LinkSetShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#NetwerkShape>,
+    <https://belgif.github.io//thematic/models/cable-pipe#KnoopShape> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#AansluitingShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <http://www.w3.org/ns/locn#Address>;
+    shacl:description "Address of the Connection."@en;
+    shacl:maxCount 1;
+    shacl:name "address"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#address>
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "Appurtenance classification."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "appurtenance type"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#Connection.appurtenanceType>
+  ];
+  shacl:targetClass <https://vocab.belgif.be/ns/utility-services#Connection> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#ActiviteitencomplexShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class foaf:Document;
+    shacl:description "Reference to a Document with additional information about the complex."@en;
+    shacl:name "documentation"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#documentation>
+  ], [
+    shacl:class <https://vocab.belgif.be/ns/generic#Function>;
+    shacl:description "Activities carried out by the complex."@en;
+    shacl:minCount 1;
+    shacl:name "function"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#function>
+  ], [
+    shacl:class <http://www.w3.org/ns/locn#Geometry>;
+    shacl:description "Geometry of the complex to describe its location and size."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "geometry"@en;
+    shacl:path <http://www.w3.org/ns/locn#geometry>
+  ], [
+    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:description "External Identifier of the complex."@en;
+    shacl:minCount 1;
+    shacl:name "identifier"@en;
+    shacl:path <http://www.w3.org/ns/adms#identifier>
+  ], [
+    shacl:class <https://vocab.belgif.be/ns/utility-services#UtilityNetwork>;
+    shacl:description "Utility Network to which the Activity Complex belongs."@en;
+    shacl:minCount 1;
+    shacl:name "in network"@en;
+    shacl:path <https://vocab.belgif.be/ns/generic#ActivityComplex.inNetwork>
+  ], [
+    shacl:datatype rdf:langString;
+    shacl:description "Name by which the complex is known."@en;
+    shacl:maxCount 1;
+    shacl:name "name"@en;
+    shacl:path dc:title
+  ], [
+    shacl:class <https://vocab.belgif.be/ns/utility-services#UtilityNetworkElement>;
+    shacl:description "Utility Network Element belonging to the complex."@en;
+    shacl:name "on"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#on>
+  ];
+  shacl:targetClass <https://vocab.belgif.be/ns/generic#ActivityComplex> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#AdresShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <https://vocab.belgif.be/ns/address#Adress> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#AdresvoorstellingShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:datatype rdf:langString;
+    shacl:description "Highest Administrative Unit of the address, usually a country."@en;
+    shacl:maxCount 1;
+    shacl:name "administrative unit level 1"@en;
+    shacl:path <http://www.w3.org/ns/locn#adminUnitL1>
+  ], [
+    shacl:datatype rdf:langString;
+    shacl:description "The region of address, usually a province or state or similar area that typically includes several places."@en;
+    shacl:maxCount 1;
+    shacl:name "administrative unit level 2"@en;
+    shacl:path <http://www.w3.org/ns/locn#adminUnitL2>
+  ], [
+    shacl:datatype rdf:langString;
+    shacl:description "Name of a geographic area or place that groups a number of addressable objects to address them without the area or place being an administrative unit."@en;
+    shacl:maxCount 1;
+    shacl:name "address area"@en;
+    shacl:path <http://www.w3.org/ns/locn#addressArea>
+  ], [
+    shacl:datatype xsd:string;
+    shacl:description "Officially assigned alphanumeric code added to the house number to distinguish multiple building units, pitches, moorings or plots that have the same house number."@en;
+    shacl:maxCount 1;
+    shacl:name "box number"@en;
+    shacl:path <https://vocab.belgif.be/ns/address#AddressRepresentation.boxNumber>
+  ], [
+    shacl:datatype rdf:langString;
+    shacl:description "Municipal name from address."@en;
+    shacl:maxCount 1;
+    shacl:name "municipality name"@en;
+    shacl:path <https://vocab.belgif.be/ns/address#municipalityName>
+  ], [
+    shacl:datatype xsd:string;
+    shacl:description "Alphanumeric code officially assigned to building units, moorings, pitches or plots."@en;
+    shacl:maxCount 1;
+    shacl:name "house number"@en;
+    shacl:path <https://vocab.belgif.be/ns/address#AddressRepresentation.houseNumber>
+  ], [
+    shacl:datatype rdf:langString;
+    shacl:description "Country in which the address is located."@en;
+    shacl:maxCount 1;
+    shacl:name "country"@en;
+    shacl:path <https://vocab.belgif.be/ns/address#country>
+  ], [
+    shacl:datatype xsd:string;
+    shacl:description "Alphanumeric code that uniquely identifies the address locator within the street, administrative unit, etc."@en;
+    shacl:name "location indication"@en;
+    shacl:path <http://www.w3.org/ns/locn#locatorDesignator>
+  ], [
+    shacl:datatype rdf:langString;
+    shacl:description "Name or description of the geographic object the address locator designates."@en;
+    shacl:name "location name"@en;
+    shacl:path <http://www.w3.org/ns/locn#locatorName>
+  ], [
+    shacl:datatype xsd:string;
+    shacl:description "PO Box number in a post office."@en;
+    shacl:maxCount 1;
+    shacl:name "PO box"@en;
+    shacl:path <http://www.w3.org/ns/locn#poBox>
+  ], [
+    shacl:datatype xsd:string;
+    shacl:description "Code denoting the geographical area that groups addresses for postal purposes."@en;
+    shacl:maxCount 1;
+    shacl:name "postal code"@en;
+    shacl:path <http://www.w3.org/ns/locn#postCode>
+  ], [
+    shacl:datatype rdf:langString;
+    shacl:description "Name denoting the geographical area that groups addresses for postal purposes."@en;
+    shacl:maxCount 1;
+    shacl:name "postal name"@en;
+    shacl:path <http://www.w3.org/ns/locn#postName>
+  ], [
+    shacl:datatype rdf:langString;
+    shacl:description "Street name of address."@en;
+    shacl:maxCount 1;
+    shacl:name "street name"@en;
+    shacl:path <http://www.w3.org/ns/locn#thoroughfare>
+  ], [
+    shacl:class <https://vocab.belgif.be/ns/address#Adress>;
+    shacl:description "Address from which the address representation is derived."@en;
+    shacl:maxCount 1;
+    shacl:name "refers to"@en;
+    shacl:path <https://vocab.belgif.be/ns/address#refersTo>
+  ], [
+    shacl:datatype rdf:langString;
+    shacl:description "The complete address in one string, formatted or not."@en;
+    shacl:maxCount 1;
+    shacl:name "full address"@en;
+    shacl:path <http://www.w3.org/ns/locn#fullAddress>
+  ];
+  shacl:targetClass <http://www.w3.org/ns/locn#Address> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#AgentShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass dc:Agent .
+
+<https://belgif.github.io//thematic/models/cable-pipe#AnnotatieShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class skos:Concept;
+    shacl:description "Classification of the Annotation."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "annotation type"@en;
+    shacl:path dc11:type
+  ], [
+    shacl:class <https://vocab.belgif.be/ns/utility-services#Annotation>;
+    shacl:description "Annotation that is part of the Annotation."@en;
+    shacl:name "part"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#part>
+  ], [
+    shacl:class prov:Entity;
+    shacl:description "Object to which the Annotation refers."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "associated with"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#associatedWith>
+  ], [
+    shacl:class <https://vocab.belgif.be/ns/utility-services#Annotation>;
+    shacl:description "Annotation of which the Annotation is a part."@en;
+    shacl:name "whole"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#whole>
+  ], [
+    shacl:class <http://www.w3.org/ns/locn#Geometry>;
+    shacl:description "Geometry of the Annotation."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "location"@en;
+    shacl:path <http://www.w3.org/ns/locn#geometry>
+  ], [
+    shacl:class <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure>;
+    shacl:description "Angle by which the Annotation should be rotated when displayed."@en;
+    shacl:maxCount 1;
+    shacl:name "rotation angle"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#rotationAngle>
+  ], [
+    shacl:datatype rdf:langString;
+    shacl:description "Text of the Annotation."@en;
+    shacl:name "text"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#text>
+  ];
+  shacl:targetClass <https://vocab.belgif.be/ns/utility-services#Annotation> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#AnnotatietypeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://belgif.github.io//thematic/models/cable-pipe#BeschermdGebiedShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:datatype rdf:langString;
+    shacl:description "Description of the Protected Area."@en;
+    shacl:maxCount 1;
+    shacl:name "description"@en;
+    shacl:path dc11:description
+  ], [
+    shacl:class <http://www.w3.org/ns/locn#Geometry>;
+    shacl:description "Geometry of the Protected Area."@en;
+    shacl:maxCount 1;
+    shacl:name "geometry"@en;
+    shacl:path <http://www.w3.org/ns/locn#geometry>
+  ], [
+    shacl:class prov:Location;
+    shacl:description "Location of the Protected Area."@en;
+    shacl:maxCount 1;
+    shacl:name "location"@en;
+    shacl:path prov:atLocation
+  ], [
+    shacl:datatype rdf:langString;
+    shacl:description "Name of the Protected Area."@en;
+    shacl:maxCount 1;
+    shacl:name "name"@en;
+    shacl:path dc11:title
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "Classification of different types of protected areas."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "type"@en;
+    shacl:path dc11:type
+  ];
+  shacl:targetClass <https://vocab.belgif.be/ns/utility-services#ProtectedArea> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#BeschermdGebiedtypeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://belgif.github.io//thematic/models/cable-pipe#ContainertypeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://belgif.github.io//thematic/models/cable-pipe#CurveShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <http://www.opengis.net/ont/geosparql#Curve> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#DiepteShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure>;
+    shacl:description "Distance below the Reference Surface."@en;
+    shacl:maxCount 1;
+    shacl:name "depth"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#depth>
+  ];
+  shacl:targetClass <https://vocab.belgif.be/ns/utility-services#Depth> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#DirectePositieShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:description "Direct Position expressed in gml format."@en;
+    shacl:maxCount 1;
+    shacl:name "gml"@en;
+    shacl:path <http://www.opengis.net/ont/geosparql#asGML>
+  ], [
+    shacl:class <https://vocab.belgif.be/ns/generic#Survey>;
+    shacl:description "The way the position was determined."@en;
+    shacl:maxCount 1;
+    shacl:name "survey"@en;
+    shacl:path <https://vocab.belgif.be/ns/generic#DirectPosition.survey>
+  ], [
+    shacl:description "Direct Position expressed in wkt format."@en;
+    shacl:maxCount 1;
+    shacl:name "wkt"@en;
+    shacl:path <http://www.opengis.net/ont/geosparql#asWKT>
+  ];
+  shacl:targetClass <https://vocab.belgif.be/ns/generic#DirectPosition> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#DocumentShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:datatype rdf:langString;
+    shacl:description "Description of the Document."@en;
+    shacl:maxCount 1;
+    shacl:name "description"@en;
+    shacl:path dc11:description
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "Classification of the document."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "document type"@en;
+    shacl:path dc11:type
+  ], [
+    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:description "Identifier of the Document."@en;
+    shacl:maxCount 1;
+    shacl:name "document identifier"@en;
+    shacl:path <http://www.w3.org/ns/adms#Identifier>
+  ], [
+    shacl:datatype xsd:anyURI;
+    shacl:description "The place where the Document is stored or can be consulted."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "document location"@en;
+    shacl:path dcat:accessURL
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "Nature of the data carrier on which the Document is stored."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "document mediatype"@en;
+    shacl:path dc11:format
+  ], [
+    shacl:class prov:Entity;
+    shacl:description "Object to which the document refers."@en;
+    shacl:name "refers to"@en;
+    shacl:path dc11:relation
+  ];
+  shacl:targetClass foaf:Document .
+
+<https://belgif.github.io//thematic/models/cable-pipe#DocumentmediumtypeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://belgif.github.io//thematic/models/cable-pipe#DocumenttypeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://belgif.github.io//thematic/models/cable-pipe#EconomischeActiviteittypeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://belgif.github.io//thematic/models/cable-pipe#ElectriciteitskabelShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure>;
+    shacl:description "Voltage without load."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "nominal voltage"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#nominalVoltage>
+  ], [
+    shacl:class <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure>;
+    shacl:description "Voltage during load."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "operating voltage"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#operatingVoltage>
+  ];
+  shacl:targetClass <https://vocab.belgif.be/ns/utility-services#ElectricityCable> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#FaciliteitstatusShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://belgif.github.io//thematic/models/cable-pipe#FunctieShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class skos:Concept;
+    shacl:description "Classification of the activity."@en;
+    shacl:minCount 1;
+    shacl:name "activity"@en;
+    shacl:path <https://vocab.belgif.be/ns/generic#activity>
+  ], [
+    shacl:datatype rdf:langString;
+    shacl:description "A more detailed description of the function."@en;
+    shacl:maxCount 1;
+    shacl:name "description"@en;
+    shacl:path dc11:description
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "Input for the activity in the function."@en;
+    shacl:name "input"@en;
+    shacl:path <https://vocab.belgif.be/ns/generic#input>
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "Output the result of the activity in the function."@en;
+    shacl:name "output"@en;
+    shacl:path <https://vocab.belgif.be/ns/generic#output>
+  ];
+  shacl:targetClass <https://vocab.belgif.be/ns/generic#Function> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#GeneriekeLinkShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <https://vocab.belgif.be/ns/network#GenericLink> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#GeometrieShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:description "Geometry expressed in gml format."@en;
+    shacl:maxCount 1;
+    shacl:name "gml"@en;
+    shacl:path <http://www.opengis.net/ont/geosparql#asGML>
+  ], [
+    shacl:description "Geometry expressed in wkt format."@en;
+    shacl:maxCount 1;
+    shacl:name "wkt"@en;
+    shacl:path <http://www.opengis.net/ont/geosparql#asWKT>
+  ], [
+    shacl:class <https://vocab.belgif.be/ns/generic#Survey>;
+    shacl:description "The way the geometry was determined."@en;
+    shacl:maxCount 1;
+    shacl:name "survey"@en;
+    shacl:path <https://vocab.belgif.be/ns/generic#Geometry.survey>
+  ];
+  shacl:targetClass <http://www.w3.org/ns/locn#Geometry> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#GerichteLinkShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <https://data.vlaanderen.be/ns/netwerk#Link>;
+    shacl:description "Reference to the Link."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "link"@en;
+    shacl:path <https://vocab.belgif.be/ns/network#DirectedLink.link>
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "Indicates if the Directed Link agrees (positive) or disagrees (negative) with the positive direction of the Link."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "direction"@en;
+    shacl:path <https://vocab.belgif.be/ns/network#direction>
+  ];
+  shacl:targetClass <https://vocab.belgif.be/ns/network#DirectedLink> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#GetalShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass schemas:Number .
+
+<https://belgif.github.io//thematic/models/cable-pipe#HoogteShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure>;
+    shacl:description "Distance above the Reference Surface."@en;
+    shacl:maxCount 1;
+    shacl:name "height"@en;
+    shacl:path schemas:height
+  ];
+  shacl:targetClass <https://vocab.belgif.be/ns/utility-services#Height> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#IdentificatorShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:description "String used to uniquely identify the object."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "identifier"@en;
+    shacl:path skos:notation
+  ], [
+    shacl:class dc:Agent;
+    shacl:description "Link to the agent who assigned the identifier."@en;
+    shacl:maxCount 1;
+    shacl:name "assigned by"@en;
+    shacl:path dc:creator
+  ], [
+    shacl:datatype xsd:string;
+    shacl:description "Name from the agent who assigned the identifier."@en;
+    shacl:maxCount 1;
+    shacl:name "assigned by (String)"@en;
+    shacl:path <http://www.w3.org/ns/adms#schemaAgency>
+  ], [
+    shacl:datatype xsd:dateTime;
+    shacl:description "Time the identifier was assigned."@en;
+    shacl:maxCount 1;
+    shacl:name "assigned on"@en;
+    shacl:path dc:issued
+  ];
+  shacl:targetClass <http://www.w3.org/ns/adms#Identifier> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#InputoutputtypeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://belgif.github.io//thematic/models/cable-pipe#KabelEnLeidingContainerShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <https://vocab.belgif.be/ns/utility-services#CableAndPipeContainer> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#KabelShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure>;
+    shacl:description "Diameter of the Cable."@en;
+    shacl:maxCount 1;
+    shacl:name "cable diameter"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#cableDiameter>
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "Classification of a cable, pipe, or pipe elements according to the thematic domain to which they belong."@en;
+    shacl:maxCount 1;
+    shacl:name "subtheme"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#Cable.subtheme>
+  ];
+  shacl:targetClass <https://vocab.belgif.be/ns/utility-services#Cable> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#KanaalShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class skos:Concept;
+    shacl:description "Type of the Duct as a container."@en;
+    shacl:maxCount 1;
+    shacl:name "container type"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#Duct.containerType>
+  ], [
+    shacl:class <https://vocab.belgif.be/ns/utility-services#Cable>;
+    shacl:description "Cable located in the Duct."@en;
+    shacl:name "cable"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#Duct.cable>
+  ], [
+    shacl:class <https://vocab.belgif.be/ns/utility-services#Duct>;
+    shacl:description "Duct located in the Duct."@en;
+    shacl:name "duct"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#Duct.duct>
+  ], [
+    shacl:class <http://def.isotc211.org/iso19103/2015/MeasureTypes#Length>;
+    shacl:description "Width of the Duct."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "duct width"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#ductWidth>
+  ], [
+    shacl:class <https://vocab.belgif.be/ns/utility-services#Pipe>;
+    shacl:description "Pipe located in the Duct."@en;
+    shacl:name "pipe"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#Duct.pipe>
+  ];
+  shacl:targetClass <https://vocab.belgif.be/ns/utility-services#Duct> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#KastShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <https://vocab.belgif.be/ns/utility-services#Cabinet> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#KleurShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://belgif.github.io//thematic/models/cable-pipe#KnoopShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <https://vocab.belgif.be/ns/network#Node> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#LengteShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <http://def.isotc211.org/iso19103/2015/MeasureTypes#UomLength>;
+    shacl:description "Unit in which the Length is expressed."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "uom"@en;
+    shacl:path <http://def.isotc211.org/iso19103/2015/MeasureTypes#Length.uom>
+  ];
+  shacl:targetClass <http://def.isotc211.org/iso19103/2015/MeasureTypes#Length> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#LengteeenheidShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <http://def.isotc211.org/iso19103/2015/MeasureTypes#UomLength> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#LinkSetShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <https://vocab.belgif.be/ns/network#LinkSet> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#LinkShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <https://vocab.belgif.be/ns/network#Link> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#LinksequentieShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <https://vocab.belgif.be/ns/network#LinkSequence> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#LocatieShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass prov:Location .
+
+<https://belgif.github.io//thematic/models/cable-pipe#MaatShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <http://def.isotc211.org/iso19103/2015/MeasureTypes#UnitOfMeasure>;
+    shacl:description "Unit in which the quantity is expressed."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "uom"@en;
+    shacl:path <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure.uom>
+  ], [
+    shacl:class schemas:Number;
+    shacl:description "The amount."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "value"@en;
+    shacl:path <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure.value>
+  ];
+  shacl:targetClass <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#MaataanduidingShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <https://vocab.belgif.be/ns/utility-services#Dimension> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#MangatShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <https://vocab.belgif.be/ns/utility-services#Manhole> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#MateriaaltypeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://belgif.github.io//thematic/models/cable-pipe#MeeteenheidShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:datatype xsd:string;
+    shacl:description "Unit identifier."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "uom identifier"@en;
+    shacl:path <http://def.isotc211.org/iso19103/2015/MeasureTypes#UnitOfMeasure.uomIdentifier>
+  ];
+  shacl:targetClass <http://def.isotc211.org/iso19103/2015/MeasureTypes#UnitOfMeasure> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#NetwerkShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <https://vocab.belgif.be/ns/network#Network> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#NutsvoorzieningknoopShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <https://data.vlaanderen.be/ns/netwerk#Link>;
+    shacl:description "Link of which this Node is the start Node."@en;
+    shacl:name "begin link"@en;
+    shacl:path <https://vocab.belgif.be/ns/network#beginLink>
+  ], [
+    shacl:class <https://data.vlaanderen.be/ns/netwerk#Link>;
+    shacl:description "Link of which this Node is the end Node."@en;
+    shacl:name "end link"@en;
+    shacl:path <https://vocab.belgif.be/ns/network#endLink>
+  ], [
+    shacl:class <http://www.opengis.net/ont/sf#Point>;
+    shacl:description "Geometry of the Node."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "geometry"@en;
+    shacl:path <https://vocab.belgif.be/ns/network#Node.geometry>
+  ], [
+    shacl:class <https://vocab.belgif.be/ns/utility-services#UtilityNetwork>;
+    shacl:description "Utility Network to which the element belongs."@en;
+    shacl:minCount 1;
+    shacl:name "in network"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#inNetwork>
+  ], [
+    shacl:class <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure>;
+    shacl:description "Angle by which the symbol representing the Node on map should be rotated."@en;
+    shacl:maxCount 1;
+    shacl:name "orientation"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#UtilityNode.orientation>
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "Indicates whether the Node can be considered hazardous."@en;
+    shacl:maxCount 1;
+    shacl:name "risk"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#UtilityNode.risk>
+  ], [
+    shacl:class <https://vocab.belgif.be/ns/utility-services#Appearance>;
+    shacl:description "Appearance of the Node."@en;
+    shacl:maxCount 1;
+    shacl:name "appearance"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#UtilityNode.appearance>
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "Extent to which the Node is observable."@en;
+    shacl:maxCount 1;
+    shacl:name "visibility"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#UtilityNode.visibility>
+  ];
+  shacl:targetClass <https://vocab.belgif.be/ns/utility-services#UtilityNode> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#NutsvoorzieningknoopcontainerShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <http://www.opengis.net/ont/sf#Point>;
+    shacl:description "Geometry of the container."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "geometry"@en;
+    shacl:path <https://vocab.belgif.be/ns/network#Node.geometry>
+  ], [
+    shacl:class <https://vocab.belgif.be/ns/utility-services#UtilityNode>;
+    shacl:description "Utility Node that is contained by the Utility Node Container."@en;
+    shacl:name "node"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#node>
+  ], [
+    shacl:class <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure>;
+    shacl:description "Angle by which to rotate the symbol representing the container on a map."@en;
+    shacl:maxCount 1;
+    shacl:name "orientation"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#UtilityNodeContainer.orientation>
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "Indicates whether a Utility Node Container can be considered hazardous."@en;
+    shacl:maxCount 1;
+    shacl:name "risk"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#UtilityNodeContainer.risk>
+  ], [
+    shacl:class <https://vocab.belgif.be/ns/utility-services#Appearance>;
+    shacl:description "Appearance of the container."@en;
+    shacl:maxCount 1;
+    shacl:name "appearance"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#UtilityNodeContainer.appearance>
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "Extent to which the container is observable."@en;
+    shacl:maxCount 1;
+    shacl:name "visibility"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#UtilityNodeContainer.visibility>
+  ];
+  shacl:targetClass <https://vocab.belgif.be/ns/utility-services#UtilityNodeContainer> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#NutsvoorzieningleveringstypeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://belgif.github.io//thematic/models/cable-pipe#NutsvoorzieninglinkShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <https://data.vlaanderen.be/ns/netwerk#Knoop>;
+    shacl:description "Node that is the end of the Link."@en;
+    shacl:maxCount 1;
+    shacl:name "end node"@en;
+    shacl:path <https://vocab.belgif.be/ns/network#endNode>
+  ], [
+    shacl:class <http://www.opengis.net/ont/geosparql#Curve>;
+    shacl:description "The geometry of the centerline of the Link."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "centreline geometry"@en;
+    shacl:path <https://vocab.belgif.be/ns/network#Link.centrelineGeometry>
+  ], [
+    shacl:class <https://data.vlaanderen.be/ns/netwerk#Knoop>;
+    shacl:description "Node that starts the Link."@en;
+    shacl:maxCount 1;
+    shacl:name "start node"@en;
+    shacl:path <https://vocab.belgif.be/ns/network#beginNode>
+  ], [
+    shacl:class <https://vocab.belgif.be/ns/utility-services#UtilityNetwork>;
+    shacl:description "Utility Network to which the element belongs."@en;
+    shacl:minCount 1;
+    shacl:name "in network"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#inNetwork>
+  ];
+  shacl:targetClass <https://vocab.belgif.be/ns/utility-services#UtilityLink> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#NutsvoorzieninglinksequentieShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <https://vocab.belgif.be/ns/network#DirectedLink>;
+    shacl:description "Directed Link that is part of the Link Sequence."@en;
+    shacl:minCount 1;
+    shacl:name "link"@en;
+    shacl:path <https://vocab.belgif.be/ns/network#LinkSequence.link>
+  ], [
+    shacl:class <https://vocab.belgif.be/ns/utility-services#UtilityNetwork>;
+    shacl:description "Utility Network to which the element belongs."@en;
+    shacl:minCount 1;
+    shacl:name "in network"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#inNetwork>
+  ];
+  shacl:targetClass <https://vocab.belgif.be/ns/utility-services#UtilityLinkSequence> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#NutsvoorzieninglinksetShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <https://data.vlaanderen.be/ns/netwerk#GeneriekeLink>;
+    shacl:description "Utility Link Sequence or Utility Link that is part of the Link Set."@en;
+    shacl:minCount 1;
+    shacl:name "link"@en;
+    shacl:path <https://vocab.belgif.be/ns/network#LinkSet.link>
+  ], [
+    shacl:class <https://vocab.belgif.be/ns/utility-services#UtilityNetwork>;
+    shacl:description "Utility Network to which the element belongs."@en;
+    shacl:minCount 1;
+    shacl:name "in network"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#inNetwork>
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "Type of material that makes up the Link Set."@en;
+    shacl:maxCount 1;
+    shacl:name "material type"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#materialType>
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "Way in which the utility is delivered."@en;
+    shacl:maxCount 1;
+    shacl:name "utility delivery type"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#utilityDeliveryType>
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "Indicates whether the Link Set can be considered hazardous."@en;
+    shacl:name "risk"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#UtilityLinkSet.risk>
+  ], [
+    shacl:datatype rdf:langString;
+    shacl:description "Further specification of the Link Set."@en;
+    shacl:name "technical specification"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#technicalSpecification>
+  ], [
+    shacl:class <https://vocab.belgif.be/ns/utility-services#Appearance>;
+    shacl:description "Appearance of the Link Set."@en;
+    shacl:maxCount 1;
+    shacl:name "appearance"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#UtilityLinkSet.appearance>
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "Way to alert for the presence of the Link Set."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "warning type"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#warningType>
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "Extent to which the Link Set is observable."@en;
+    shacl:maxCount 1;
+    shacl:name "visibility"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#UtilityLinkSet.visibility>
+  ];
+  shacl:targetClass <https://vocab.belgif.be/ns/utility-services#UtilityLinkSet> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#NutsvoorzieningnetwerkShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:datatype rdf:langString;
+    shacl:description "Name by which the network is known."@en;
+    shacl:name "geographical name"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#geographicalName>
+  ], [
+    shacl:class <https://vocab.belgif.be/ns/generic#ActivityComplex>;
+    shacl:description "Activity Complex belonging to the network."@en;
+    shacl:name "activity complex reference"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#activityComplexReference>
+  ], [
+    shacl:class dc:Agent;
+    shacl:description "Parties authorized to manage, operate or own the Utility Network."@en;
+    shacl:minCount 1;
+    shacl:name "authority role"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#authorityRole>
+  ], [
+    shacl:datatype rdf:langString;
+    shacl:description "Legal text describing confidentiality clauses applying to the utility network information."@en;
+    shacl:name "disclaimer"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#disclaimer>
+  ], [
+    shacl:class foaf:Document;
+    shacl:description "Reference to a Document containing additional information about the Network."@en;
+    shacl:name "documentation"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#documentation>
+  ], [
+    shacl:class <https://vocab.belgif.be/ns/utility-services#UtilityNetworkElement>;
+    shacl:description "Utility Network Element belonging to the network."@en;
+    shacl:name "element"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#element>
+  ], [
+    shacl:class <https://vocab.belgif.be/ns/utility-services#UtilityNetwork>;
+    shacl:description "Utility Network associated with the Utility Network."@en;
+    shacl:name "network"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#network>
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "The type of utility network or the utility network theme."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "utility network type"@en;
+    shacl:path dc11:type
+  ], [
+    shacl:class <https://vocab.belgif.be/ns/utility-services#VerticalPosition>;
+    shacl:description "Default Vertical Position of elements in the network."@en;
+    shacl:name "standard vertical position detail"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#standardVerticalPositionDetail>
+  ];
+  shacl:targetClass <https://vocab.belgif.be/ns/utility-services#UtilityNetwork> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#NutsvoorzieningnetwerkelementShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:description "Element identifier."@en;
+    shacl:maxCount 1;
+    shacl:name "identifier"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#identifier>
+  ], [
+    shacl:class foaf:Document;
+    shacl:description "Reference to a Document containing additional information about the element."@en;
+    shacl:name "documentation"@en;
+    shacl:path dc11:relation
+  ], [
+    shacl:datatype xsd:dateTime;
+    shacl:description "The time from which the Utility Network Element no longer exists in the real world."@en;
+    shacl:maxCount 1;
+    shacl:name "valid to"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#validTo>
+  ], [
+    shacl:datatype xsd:dateTime;
+    shacl:description "The time when the Utility Network Element started to exist in the real world."@en;
+    shacl:maxCount 1;
+    shacl:name "valid from"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#validFrom>
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "The status of the element with respect to its completion and use."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "current status"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#currentStatus>
+  ], [
+    shacl:class <https://vocab.belgif.be/ns/utility-services#UtilityNetwork>;
+    shacl:description "Utility Network to which the element belongs."@en;
+    shacl:minCount 1;
+    shacl:name "in network"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#UtilityNetworkElement.inNetwork>
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "General indication of the Vertical Position of the element."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "vertical position"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#UtilityNetworkElement.verticalPosition>
+  ], [
+    shacl:class <https://vocab.belgif.be/ns/utility-services#VerticalPosition>;
+    shacl:name "vertical position detail"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#verticalPositionDetail>
+  ];
+  shacl:targetClass <https://vocab.belgif.be/ns/utility-services#UtilityNetworkElement> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#NutsvoorzieningnetwerktypeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://belgif.github.io//thematic/models/cable-pipe#ObjectShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass prov:Entity .
+
+<https://belgif.github.io//thematic/models/cable-pipe#OlieGasChemicalienPijpShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class skos:Concept;
+    shacl:description "The type of oil, gas or chemical product transported through the oil, gas or chemical pipe."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "oil gas chemicals product type"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#oilGasChemicalsProductType>
+  ];
+  shacl:targetClass <https://vocab.belgif.be/ns/utility-services#OilGasChemicalsPipe> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#OlieGasChemicalientypeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://belgif.github.io//thematic/models/cable-pipe#OpmetingShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:datatype xsd:dateTime;
+    shacl:description "The moment at which the Survey took place."@en;
+    shacl:maxCount 1;
+    shacl:name "date"@en;
+    shacl:path dc11:date
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "Type of the method used."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "method"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#Survey.method>
+  ], [
+    shacl:class <http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_PositionalAccuracy>;
+    shacl:description "The Positional Accuracy of the Survey."@en;
+    shacl:maxCount 1;
+    shacl:name "accuracy"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#accuracy>
+  ], [
+    shacl:class dc:Agent;
+    shacl:description "Agent who carried out the Survey."@en;
+    shacl:maxCount 1;
+    shacl:name "recorded by"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#Survey.recordedBy>
+  ];
+  shacl:targetClass <https://vocab.belgif.be/ns/generic#Survey> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#OpmetingsmethodeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://belgif.github.io//thematic/models/cable-pipe#PaalShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <http://def.isotc211.org/iso19103/2015/MeasureTypes#Length>;
+    shacl:description "The height of the Pole."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "pole height"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#poleHeight>
+  ];
+  shacl:targetClass <https://vocab.belgif.be/ns/utility-services#Pole> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#PijpShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class skos:Concept;
+    shacl:description "Type of the Pipe as a container."@en;
+    shacl:maxCount 1;
+    shacl:name "container type"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#Pipe.containerType>
+  ], [
+    shacl:class <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure>;
+    shacl:description "The maximum allowable operating pressure at which a product is transported through a Pipe."@en;
+    shacl:maxCount 1;
+    shacl:name "pressure"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#pressure>
+  ], [
+    shacl:class <https://vocab.belgif.be/ns/utility-services#Cable>;
+    shacl:description "Cable located in the Pipe."@en;
+    shacl:name "cable"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#Pipe.cable>
+  ], [
+    shacl:class <https://vocab.belgif.be/ns/utility-services#Pipe>;
+    shacl:description "Other Pipe located in the Pipe."@en;
+    shacl:name "pipe"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#Pipe.pipe>
+  ], [
+    shacl:class <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure>;
+    shacl:description "Outer diameter of the Pipe."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "pipe diameter"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#pipeDiameter>
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "Classification of the Pipe according to the thematic domain to which it belongs."@en;
+    shacl:maxCount 1;
+    shacl:name "subtheme"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#Pipe.subtheme>
+  ];
+  shacl:targetClass <https://vocab.belgif.be/ns/utility-services#Pipe> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#PlanShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <http://www.w3.org/ns/locn#Geometry>;
+    shacl:description "Geometry of the site covered by the Plan."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "location"@en;
+    shacl:path <http://www.w3.org/ns/locn#geometry>
+  ];
+  shacl:targetClass <https://vocab.belgif.be/ns/utility-services#Plan> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#PositioneleNauwkeurigheidShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <http://def.isotc211.org/iso19157/2013/DataQuality_2#DQ_PositionalAccuracy> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#PuntShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <http://www.opengis.net/ont/sf#Point> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#ReferentieoppervlakShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <http://www.w3.org/ns/locn#Geometry>;
+    shacl:description "Location of the Reference Surface."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "location"@en;
+    shacl:path <http://www.w3.org/ns/locn#geometry>
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "The type of Reference Surface."@en;
+    shacl:maxCount 1;
+    shacl:name "type"@en;
+    shacl:path dc11:type
+  ], [
+    shacl:class <https://vocab.belgif.be/ns/generic#DirectPosition>;
+    shacl:description "The Vertical Position of the ReferenceSurface as position in a vertical coordinate system."@en;
+    shacl:maxCount 1;
+    shacl:name "vertical position"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#ReferenceSurface.verticalPosition>
+  ];
+  shacl:targetClass <https://vocab.belgif.be/ns/utility-services#ReferenceSurface> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#ReferentieoppervlaktypeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://belgif.github.io//thematic/models/cable-pipe#RioolpijpShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class skos:Concept;
+    shacl:description "Type of sewer water."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "sewer water type"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#sewerWaterType>
+  ];
+  shacl:targetClass <https://vocab.belgif.be/ns/utility-services#SewerPipe> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#RioolwatertypeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://belgif.github.io//thematic/models/cable-pipe#RisicotypeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://belgif.github.io//thematic/models/cable-pipe#SubthemaShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://belgif.github.io//thematic/models/cable-pipe#TekenShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://belgif.github.io//thematic/models/cable-pipe#TelecommunicatiekabelShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class skos:Concept;
+    shacl:description "Type of cable material."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "telecommunications cable material type"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#telecommunicationsCableMaterialType>
+  ];
+  shacl:targetClass <https://vocab.belgif.be/ns/utility-services#TelecommunicationsCable> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#TelecommunicatiekabelmateriaaltypeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://belgif.github.io//thematic/models/cable-pipe#ThermischProducttypeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://belgif.github.io//thematic/models/cable-pipe#ThermischePijpShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure>;
+    shacl:description "The maximum allowable temperature of the contents of the Pipe."@en;
+    shacl:maxCount 1;
+    shacl:name "temperature"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#temperature>
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "The type of thermal product transported through the Thermal Pipe."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "thermal product type"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#thermalProductType>
+  ];
+  shacl:targetClass <https://vocab.belgif.be/ns/utility-services#ThermalPipe> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#ToebehorenShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <http://def.isotc211.org/iso19103/2015/MeasureTypes#Length>;
+    shacl:description "The height of the Appurtenance."@en;
+    shacl:maxCount 1;
+    shacl:name "height"@en;
+    shacl:path schemas:height
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "Type of Appurtenance."@en;
+    shacl:minCount 1;
+    shacl:name "appurtenance type"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#Appurtenance.appurtenanceType>
+  ];
+  shacl:targetClass <https://vocab.belgif.be/ns/utility-services#Appurtenance> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#ToebehorentypeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://belgif.github.io//thematic/models/cable-pipe#TopografischElementShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <http://www.w3.org/ns/locn#Geometry>;
+    shacl:description "Shape and position features of an object,"@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "location"@en;
+    shacl:path <http://www.w3.org/ns/locn#geometry>
+  ], [
+    shacl:class skos:Concept;
+    shacl:description "Type of the Topographical Element."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "topographical element type"@en;
+    shacl:path dc11:type
+  ];
+  shacl:targetClass <https://vocab.belgif.be/ns/utility-services#TopographicalElement> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#TopografischElementtypeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://belgif.github.io//thematic/models/cable-pipe#TorenShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <http://def.isotc211.org/iso19103/2015/MeasureTypes#Length>;
+    shacl:description "Heigt of the Tower."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "tower height"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#towerHeight>
+  ];
+  shacl:targetClass <https://vocab.belgif.be/ns/utility-services#Tower> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#UiterlijkShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class skos:Concept;
+    shacl:description "The color of the object."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "color"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#color>
+  ];
+  shacl:targetClass <https://vocab.belgif.be/ns/utility-services#Appearance> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#VerticalePositieShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure>;
+    shacl:description "The Vertical Position as distance from the Reference Surface."@en;
+    shacl:maxCount 1;
+    shacl:name "distance"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#distance>
+  ], [
+    shacl:class <http://www.w3.org/ns/locn#Geometry>;
+    shacl:description "Location for which the Vertical Position applies."@en;
+    shacl:maxCount 1;
+    shacl:name "location"@en;
+    shacl:path <http://www.w3.org/ns/locn#geometry>
+  ], [
+    shacl:class <https://vocab.belgif.be/ns/utility-services#ReferenceSurface>;
+    shacl:description "Reference to the Reference Surface."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "reference surface"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#referenceSurface>
+  ], [
+    shacl:class <https://vocab.belgif.be/ns/generic#DirectPosition>;
+    shacl:description "The Vertical Position as a position in a vertical coordinate system."@en;
+    shacl:maxCount 1;
+    shacl:name "vertical position"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#VerticalPosition.verticalPosition>
+  ];
+  shacl:targetClass <https://vocab.belgif.be/ns/utility-services#VerticalPosition> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#VerticalePositietypeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://belgif.github.io//thematic/models/cable-pipe#WaarschuwingstypeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://belgif.github.io//thematic/models/cable-pipe#WaterleidingShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property [
+    shacl:class skos:Concept;
+    shacl:description "Type of water."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "water type"@en;
+    shacl:path <https://vocab.belgif.be/ns/utility-services#waterPipe>
+  ];
+  shacl:targetClass <https://vocab.belgif.be/ns/utility-services#WaterPipe> .
+
+<https://belgif.github.io//thematic/models/cable-pipe#WatertypeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://belgif.github.io//thematic/models/cable-pipe#ZichtbaarheidstypeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
