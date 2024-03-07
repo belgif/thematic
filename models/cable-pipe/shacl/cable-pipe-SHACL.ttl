@@ -1252,7 +1252,7 @@
   shacl:closed false;
   shacl:property [
     shacl:class <http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure>;
-    shacl:description "The maximum allowable temperature of the contents of the Pipe."@en;
+    shacl:description "Temperature of the contents of the pipe."@en;
     shacl:maxCount 1;
     shacl:name "temperature"@en;
     shacl:path <https://vocab.belgif.be/ns/utility-services#temperature>
