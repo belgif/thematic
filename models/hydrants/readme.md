@@ -16,38 +16,38 @@ If you have any comments on the specification, please open an issue from [here](
 | 4 | FireHydrant | Add "located in a street or other public location, such as tunnels" into the definition. | Accepted | Added to the Usage Note that the fire hydrant is situated in a street or other public location, such as tunnels. |
 | 5 | FireHydrant.flowRate | Make cardinality optional, as certain stakeholders may be unable to provide this information. | Accepted | Cardinality made optional |
 | 6 | FireHydrant.flowRate | Change unit to L/min | Accepted |Appended to the Usage Note that the unit for Nominal FlowRate is expressed in L/min. |
-| 7 | Geometry | Adjust definition | Accepted | Adjusted definition: "Email address of the ContactPoint" |
-| 8 | Pipe.geometry | Adjust definition | Accepted | Adjusted definition: "Email address of the ContactPoint" |
-| 9 | FireHydrant.geometry | Adjust definition | Accepted | Adjusted definition: "Email address of the ContactPoint" |
-| 10 | Pipe.identifier | Adjust definition | Accepted | Adjusted definition: "Email address of the ContactPoint" |
-| 11 | FireHydrant.identifier | Adjust definition | Accepted | Adjusted definition: "Email address of the ContactPoint" |
-| 12 | FireHydrant.isOperatedBy | Adjust definition | Rejected | Adjusted definition: "Email address of the ContactPoint" |
-| 13 | FireHydrant.isSuppliedBy | Adjust definition | Rejected | Adjusted definition: "Email address of the ContactPoint" |
-| 14 | FireHydrant.isSuppliedBy  | Adjust definition | Accepted | Adjusted definition: "Email address of the ContactPoint" |
-| 15 | FireHydrant.isSuppliedBy  | Adjust definition | Accepted | Adjusted definition: "Email address of the ContactPoint" |
-| 16 | FireHydrant.isSuppliedBy  | Adjust definition | Accepted | Adjusted definition: "Email address of the ContactPoint" |
-| 17 | FireHydrant.openingKey | Adjust definition | Accepted | Adjusted definition: "Email address of the ContactPoint" |
-| 18 | ContactPoint.hasEmail | Adjust definition | Accepted | Adjusted definition: "Email address of the ContactPoint" |
-| 19 | ContactPoint.hasEmail | Adjust definition | Accepted | Adjusted definition: "Email address of the ContactPoint" |
-| 20 | ContactPoint.hasEmail | Adjust definition | Accepted | Adjusted definition: "Email address of the ContactPoint" |
-| 21 | ContactPoint.hasEmail | Adjust definition | Accepted | Adjusted definition: "Email address of the ContactPoint" |
-| 22 | ContactPoint.hasEmail | Adjust definition | Accepted | Adjusted definition: "Email address of the ContactPoint" |
-| 23 | ContactPoint.hasEmail | Adjust definition | Accepted | Adjusted definition: "Email address of the ContactPoint" |
-| 24 | ContactPoint.hasEmail | Adjust definition | Accepted | Adjusted definition: "Email address of the ContactPoint" |
-| 25 | ContactPoint.hasEmail | Adjust definition | Accepted | Adjusted definition: "Email address of the ContactPoint" |
-| 26 | ContactPoint.hasEmail | Adjust definition | Accepted | Adjusted definition: "Email address of the ContactPoint" |
-| 27 | ContactPoint.hasEmail | Adjust definition | Accepted | Adjusted definition: "Email address of the ContactPoint" |
-| 28 | ContactPoint.hasEmail | Adjust definition | Accepted | Adjusted definition: "Email address of the ContactPoint" |
-| 29 | ContactPoint.hasEmail | Adjust definition | Accepted | Adjusted definition: "Email address of the ContactPoint" |
-| 30 | ContactPoint.hasEmail | Adjust definition | Accepted | Adjusted definition: "Email address of the ContactPoint" |
-| 31 | ContactPoint.hasEmail | Adjust definition | Accepted | Adjusted definition: "Email address of the ContactPoint" |
-| 32 | ContactPoint.hasEmail | Adjust definition | Accepted | Adjusted definition: "Email address of the ContactPoint" |
-| 33 | ContactPoint.hasEmail | Adjust definition | Accepted | Adjusted definition: "Email address of the ContactPoint" |
-| 34 | ContactPoint.hasEmail | Adjust definition | Accepted | Adjusted definition: "Email address of the ContactPoint" |
-| 35 | ContactPoint.hasEmail | Adjust definition | Accepted | Adjusted definition: "Email address of the ContactPoint" |
-| 36 | ContactPoint.hasEmail | Adjust definition | Accepted | Adjusted definition: "Email address of the ContactPoint" |
-| 37 | ContactPoint.hasEmail | Adjust definition | Accepted | Adjusted definition: "Email address of the ContactPoint" |
-| 38 | ContactPoint.hasEmail | Adjust definition | Accepted | Adjusted definition: "Email address of the ContactPoint" |
-| 39 | ContactPoint.hasEmail | Adjust definition | Accepted | Adjusted definition: "Email address of the ContactPoint" |
-| 40 | ContactPoint.hasEmail | Adjust definition | Accepted | Adjusted definition: "Email address of the ContactPoint" |
-| 41 | ContactPoint.hasEmail | Adjust definition | Accepted | Adjusted definition: "Email address of the ContactPoint" |
+| 7 | Geometry | Change the reference system to Lamber72 and exclusively use this one. | Accepted | In the third webinar, the group aimed for Lambert08 adoption but acknowledged its unfeasibility in the short term. UsageNote: Examples of CRS codes (e.g., 3812) will be provided. |
+| 8 | Pipe.geometry | Change the reference system to Lamber72 and exclusively use this one | Accepted | Cardinality set to 1...* to link coordinates from various reference systems to a single pipe. |
+| 9 | FireHydrant.geometry | Change the reference system to Lamber72 and exclusively use this one | Accepted | Cardinality set to 1...* to link coordinates from various reference systems to a single hydrant |
+| 10 | Pipe.identifier | Enhance the definition of an identifier for added clarity. | Accepted | In the UsageNote, include: "Usually a combination of letters and numbers, the pipe identifier, assigned by the municipality or water authority, aids swift location and identification for emergency services like firefighters or water maintenance crews." |
+| 11 | FireHydrant.identifier | Enhance the definition of an identifier for added clarity. | Accepted | In the UsageNote, include: "Usually a combination of letters and numbers, the hydrant identifier, assigned by the municipality or water authority, aids swift location and identification for emergency services like firefighters or water maintenance crews." |
+| 12 | FireHydrant.isOperatedBy | Change to "hasInvolvedRelationship" | Rejected | The decision is to reject this change, as our wording provides a more specific description of the relationship between the classes |
+| 13 | FireHydrant.isSuppliedBy | Change to "ConnectsTo" | Rejected | The decision is to reject this change, as our wording provides a more specific description of the relationship between the classes |
+| 14 | FireHydrant.isSuppliedBy  | Include in the definition that the pipe is situated "alongside the street." | Accepted | Adjusted definition: "The pipe providing water to the fire hydrant and which is located alongside the street." |
+| 15 | FireHydrant.isSuppliedBy  | Change the datatype because an incorrect datatype was applied | Accepted | Changed to the datatype "Pipe". |
+| 16 | FireHydrant.isSuppliedBy  | Change the cardinality to ensure a hydrant can only be associated with one pipe | Accepted | Cardinality changed to 0..1 |
+| 17 | FireHydrant.openingKey | Add this attribute to the "Valve" class and remove it from the "FireHydrant" class | Accepted | Add "openingKey" as an attribute to the "Valve" class and remove from the FireHydrant class. |
+| 18 | FireHydrant.type | Removal of "wall-mounted hydrant" and "rising point" from the codelist | Awaiting input | Code list to be adjusted accordingly. |
+| 19 | Organization | Change the definition to a more appropriate one pertaining an organization. | Accepted | Adjusted definition : "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures." |
+| 20 | Organization.contactPoint |Add more information on the kind of contact person needed | Accepted | Appended to the Usage Note: ContactPoint for urgent matters during firefighting interventions |
+| 21 | Outlet | Include an attribute specifying the type of outlet for the Fire Hydrant. | Awaiting input | Incorporate an attribute with a string field and include usage notes specifying Storz and DSP |
+| 22 | Outlet | Add clarification regarding a hydrant having multiple outlets. | Accepted | Appended to Usage Note: Allows for linking multiple outlets to a specific Fire Hydrant |
+| 23 | Outlet | Change the cardinality to multiple, as a hydrant can have multiple outlets. | Accepted | Cardinality will be changed to 0..*. |
+| 24 | Pipe | Add an additional attribute "pipe.material" | Rejected | We opted not to proceed with the implementation, as already agreed upon with the group. This attribute was indicated as irrelevant. |
+| 25 | Pipe | Add additional information on whether or not all pipes in the network need to be documented according to this model. | Rejected | In the UsageNote, include "This concerns only pipes which are directly connected to a Fire Hydrant". |
+| 26 | Pipe.diameter | Provide further details on whether the gross or net diameter is used | Awaiting input | Include in the UsageNote: Only the inner/net diameter of a pipe is necessary |
+| 27 | Pipe.status | Request to adopt the exact phrasing used by water companies, e.g., "temporarily out of use." | Rejected | We opted not to proceed with the implementation, as already agreed upon with the group. |
+| 28 | Pipe.type | Add "Rough Water Pipe" to the code list as these pipes may not be used by fire fighters.  | Awaiting input | 'rough water pipe' to be added as a type of pipe. |
+| 29 | Pipe.waterType | Modify the datatype to an IMKL-provided codelist, while maintaining an open field for data owners to add additional details. | Awaiting input | Discussed with stakeholders in working groups, a consensus was reached to retain this attribute and include an open field for data providers. Ongoing consideration for referencing IMKL in the UsageNote. |
+| 30 | Pipe.supplies | Change the definition to clarify that one pipe can be connected to several hydrants. | Accepted | Definition: "The fire hydrant receiving water from the pipe. It is possible that one pipe is connected to several hydrants." |
+| 31 | Valve | Add an additional attribute "valve.model" | Rejected | This attribute was suggested during the webinars by the ICEG team but none of the stakeholders expressed the need to have them. Therefore, it will not be added to the model. |
+| 32 | Valve | Add an additional attribute "valve.brand" | Rejected |This attribute was suggested during the webinars by the ICEG team but none of the stakeholders expressed the need to have them. Therefore, it will not be added to the model. |
+| 33 | Valve.diameter | Change the definition to a shorter version. | Awaiting input | Proposed definition: "The netto diameter of the water flow regulator" |
+| 34 | AddressRepresentation | Add a clarification that the Master data of Digital Flanders should be used for Flanders to allocate addresses. | Awaiting input | UsageNote: For addresses in Flanders, the Master Data of Digital Flanders should be used for allocation purposes. |
+| 35 | ICEG Unit | Change by ucumunit | Rejected | Decision to reject this change due to internal governance within ICEG; a consistent datatype is required across all ICEG data models |
+| 36 | Cardinality of all attributes | Change the cardinalities so that only Geometry.geometryType and Pipe.diameter are mandatory. | Awaiting input | Only Geometry.geometryType and Pipe.diameter were made mandatory in the model due to the received feedback. The input showed consensus that these attributes are of importance to the model. |
+| 37 | Usage | Add information concerning the date and time on which a Fire Hydrant is used by the firefighters, and further elaborated information of the usage (e.g., why was it used). | Accepted | Added a class 'Usage' with  free text description attribute to indicate the usage. The approximate or precise location of the usage can also be indicated via the Usage.location attribute. The date and who used the hydrant can also be indicated via the Usage.date and Usage.performedBy attributes. |
+| 38 | Inspection | Add information about the findings during an inspection of a Fire Hydrant. | Accepted | Added a class 'Inspection' for which a date, description of the findings and who performed the inspection can be listed. |
+| 39 | Maintenance | Add information about the maintenance of a Fire Hydrant. | Accepted | Added a class 'Maintenance' for which a date, description of the maintenance, who performed the maintenance and who requested the maintenance can be listed. |
+| 40 | Pipe | Add a classifcation of Pipe with the following possible categorisations: primary, secondary, tertiary. | Accepted | Added a new attribute to the model "Pipe.classification" and a new codelist "Pipe.classification.ClassificationType". |
+| 41 | Notifications | Add the possibility to send notifications on usage, inspections and maintenance or any other message related to a hydrant. | Rejected | This additional modelling was not implemented as this is seen as something which is out of scope for the semantic data model. This does not exclude that the implementation of the model can or should have this functionality based on the information present in the model. |
