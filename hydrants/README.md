@@ -1,6 +1,6 @@
 # Overview of reports, slides, charter, etc.
-- [Overview in French](https://github.com/belgif/thematic/blob/master/hydrants/index_fr.html)
-- [Overview in Dutch](https://github.com/belgif/thematic/blob/master/hydrants/index_nl.html)
+- [Overview in French - HTML download](https://github.com/belgif/thematic/blob/master/hydrants/index_fr.html)
+- [Overview in Dutch - HTML download](https://github.com/belgif/thematic/blob/master/hydrants/index_nl.html)
 
 # Context
 Via this initiative, the various stakeholders propose to semantically model the different data flows and standardize the structure of the data for the following subject:
