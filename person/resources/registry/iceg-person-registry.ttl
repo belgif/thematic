@@ -1,0 +1,23 @@
+@prefix eu: <http://data.europa.eu/m8g/> .
+@prefix iceg-person: <http://vocab.belgif.be/ns/person#> .
+@prefix iceg-registry: <http://vocab.belgif.be/ns/registry#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+<http://vocab.belgif.be/id/registry/rec/1> a iceg-registry:Record ;
+    iceg-person:personNumber "xxxxxxxxxxx"^^iceg-person:personNumber .
+
+<http://vocab.belgif.be/id/registry/tra/1> a iceg-registry:Transaction ;
+    iceg-registry:timestamp "2024-02-21T00:00:00"^^xsd:dateTime ;
+    iceg-registry:operation <http://vocab.belgif.be/id/registry/ope/1> .
+
+<http://vocab.belgif.be/id/registry/ope/1> a iceg-registry:Operation ;
+    dcterms:type <https://data.vlaanderen.be/id/concept/OperationType/ContentUpdate> ;
+    iceg-registry:version <http://vocab.belgif.be/id/registry/ver/1> .
+
+<http://vocab.belgif.be/id/registry/ver/1> a iceg-registry:Version ;
+    rdf:subject <http://vocab.belgif.be/id/registry/rec/1> ;
+    rdf:predicate <http://xmlns.com/foaf/0.1/givenName> ;
+    rdf:object "Kuifje"@nl ;
+    iceg-registry:effectiveFrom "2024-02-22T00:00:00"^^xsd:dateTime .

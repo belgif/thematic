@@ -1,0 +1,19 @@
+[
+	{
+		"name": "person",
+		"type": "ap",
+		"eap": "ICEG-Person.eap",
+		"diagram": "OSLO-Persoon-Basis",
+		"template": "person.j2",
+		"title": "Person",
+		"publication-state": "For acceptance",
+		"publication-date": "2023-06-01",
+		"contributors-file": "stakeholders.csv",
+		"contributors-column": "Role",
+		"site": "site-skeleton/person",
+		"repourl": "https://github.com/belgif/ICEGthema-person/tree/main",
+		"versionurl": "https://belgif.github.io/thematic/models/person",
+		"feedbackurl": "https://github.com/belgif/ICEGthema-person/tree/main/issues",
+		"standaardregisterurl": "TODO"
+	}
+]

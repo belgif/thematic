@@ -1,3 +1,6 @@
 .vscode/
 *.ldb
 ~$*.xls*
+models/cable-pipe/index_en_working_links.html
+models/cable-pipe/index_fr_backup.html
+models/cable-pipe/index_nl_backup.html

@@ -1,3 +1,4 @@
-.vscode/
+.idea
 *.ldb
-*.xls*
+*.xlsm
+persoon*.j2
