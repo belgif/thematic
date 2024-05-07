@@ -10,5 +10,5 @@ If you have any comments on the specification, please open an issue from [here](
 
 | Nr | Concern | Request | Status | Resolution |
 | -- | ------------ | ------------ | --------- | --------------- |
-| 1 | ContactPoint |Modify the reference to the required information in the definition to enhance clarity | ReSpec Styling has been applied to the specification.| Accepted | Modified definition: "Information (i.e., e-mail address and telephone number) of a person or department through which the user can get in touch with." |
+| 1 | ContactPoint |Modify the reference to the required information in the definition to enhance clarity | Accepted | Modified definition: "Information (i.e., e-mail address and telephone number) of a person or department through which the user can get in touch with." |
 | 2 | PeriodOfTime:endtime - xsd:dateTime | PeriodOfTime:endtime - time:Instant | The URIs from W3C are used but they have the wrong range for endTime. | [#52](https://github.com/SEMICeu/CCCEV/issues/52) |
