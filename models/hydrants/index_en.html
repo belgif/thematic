@@ -11,9 +11,10 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
   <link rel="stylesheet" href="https://dij151upo6vad.cloudfront.net/2.latest/css/vlaanderen-ui.css" />
   <link rel="stylesheet" href="https://dij151upo6vad.cloudfront.net/2.latest/css/vlaanderen-ui-corporate.css" />
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 
   <link rel="icon" sizes="192x192" href="/cms/icons/DUETLogo.jpg" />
   <link rel="apple-touch-icon" href="/cms/icons/DUETLogo.jpg" />
@@ -40,7 +41,7 @@
           }   
       }
   </script> 
-
+<main class="container-fluid">
   <div style="min-height:44px;;" id="duet-header" class="header">
     <!-- insert your global header here -->
     <title>SEMIC</title>
@@ -64,8 +65,8 @@
 
               <div class="head" role="status">
               <dl>
-              <dt>Status</dt><dd>under public review</dd>
-              <dt>Published at</dt><dd>2023-07-03</dd>
+              <dt>Status</dt><dd>Under public review</dd>
+              <dt>Published at</dt><dd>2023-12-05</dd>
               <dt>This version</dt><dd><a href="https://belgif.github.io/thematic/models/hydrants/index_en.html">https://belgif.github.io/thematic/models/hydrants/index_en.html</a><br></dd>
               
               
@@ -504,7 +505,7 @@
               <div class="head" role="metainfo" id="metainfo">
               <dl>
               <!--<dt>Source</dt><dd><br></dd>-->
-              <!--<dt>Changelog</dt><dd><a href="https://github.com/bertvannuffelen/semiceuthema/blob/266dbba8188ce580c0c528b05c81cd240ac30e78/CHANGELOG">https://github.com/bertvannuffelen/semiceuthema/blob/266dbba8188ce580c0c528b05c81cd240ac30e78/CHANGELOG</a></dd>-->
+              <!--<dt>Changelog</dt><dd><a href="https://github.com/bertvannuffelen/semiceuthema/blob/b9c520161bbf7463246b112a15a9586dd67f937c/CHANGELOG">https://github.com/bertvannuffelen/semiceuthema/blob/b9c520161bbf7463246b112a15a9586dd67f937c/CHANGELOG</a></dd>-->
               <dt>Feedback</dt><dd><a href="https://github.com/belgif/thematic/issues">https://github.com/belgif/thematic/issues</a></dd>
               <!--<dt>Registry of standards</dt><dd><a href="TODO">TODO</a></dd>-->
 
@@ -531,7 +532,7 @@
                 <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">Status of this document</h2>
                 
                 <p>
-                  This model has the status of Public Review published on 2023-07-03.
+                  This model has the status of Public Review published on 2023-12-05.
 	        </p>
                 
               </section>
@@ -680,9 +681,12 @@
                       |
                       <a href="#ContactPoint">ContactPoint</a> |
                       <a href="#FireHydrant">FireHydrant</a> |
+                      <a href="#Inspection">Inspection</a> |
+                      <a href="#Maintenacne">Maintenacne</a> |
                       <a href="#Organization">Organization</a> |
                       <a href="#Outlet">Outlet</a> |
                       <a href="#Pipe">Pipe</a> |
+                      <a href="#Usage">Usage</a> |
                       <a href="#Valve">Valve</a> |
                     </p>
                   </div>
@@ -695,8 +699,8 @@
                       <a href="#AddressRepresentation">AddressRepresentation</a> |
                       <a href="#GeographicalName">GeographicalName</a> |
                       <a href="#Geometry">Geometry</a> |
-                      <a href="#ICEG-Unit">ICEG-Unit</a> |
                       <a href="#Identifier">Identifier</a> |
+                      <a href="#Measure">Measure</a> |
                     </p>
                   </div>
                   
@@ -717,7 +721,7 @@
               <h3 class="h3" id="ContactPoint"><a href="http://data.europa.eu/m8g/ContactPoint" data-toggle="tooltip" data-content="http://data.europa.eu/m8g/ContactPoint" data-placement="right">ContactPoint</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
-                    <dt>Description</dt><dd>Information (e.g. e-mail address, telephone number) of a person or department through which the user can get in touch with.</dd>
+                    <dt>Description</dt><dd>Information (i.e., e-mail address and telephone number) of a person or department through which the user can get in touch with.</dd>
                     
 		    
                     <dt>Properties</dt>
@@ -758,8 +762,8 @@
                             
                           
                         </td>
-			<td>0..*</td>
-                        <td property="rdfs:comment">An electronic address through which the Contact Point can be contacted.</td>
+			<td>0..1</td>
+                        <td property="rdfs:comment">Email address of the ContactPoint.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -779,7 +783,7 @@
                           
                         </td>
 			<td>1</td>
-                        <td property="rdfs:comment">A telephone number through which the Contact Point can be contacted.</td>
+                        <td property="rdfs:comment">A telephone number through which the ContactPoint can be contacted.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -803,11 +807,14 @@
                       <a href="#FireHydrant%3Aaddress">address</a>, 
                       <a href="#FireHydrant%3Aflow%20rate">flow rate</a>, 
                       <a href="#FireHydrant%3Ageometry">geometry</a>, 
+                      <a href="#FireHydrant%3Ahas%20inspection">has inspection</a>, 
+                      <a href="#FireHydrant%3Ahas%20maintenance">has maintenance</a>, 
+                      <a href="#FireHydrant%3Ahas%20part">has part</a>, 
+                      <a href="#FireHydrant%3Ahas%20usage">has usage</a>, 
                       <a href="#FireHydrant%3Aidentifier">identifier</a>, 
+                      <a href="#FireHydrant%3Ais%20connected%20to">is connected to</a>, 
                       <a href="#FireHydrant%3Ais%20operated%20by">is operated by</a>, 
                       <a href="#FireHydrant%3Ais%20supplied%20by">is supplied by</a>, 
-                      <a href="#FireHydrant%3Alast%20inspection%20date">last inspection date</a>, 
-                      <a href="#FireHydrant%3Aopening%20key">opening key</a>, 
                       <a href="#FireHydrant%3Astart%20date">start date</a>, 
                       <a href="#FireHydrant%3Astatus">status</a>, 
                       <a href="#FireHydrant%3Astatus%20remark">status remark</a>, 
@@ -851,23 +858,23 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="FireHydrant%3Aflow%20rate" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/hydrant#fireHydrantFlowRate">
+                      <tr id="FireHydrant%3Aflow%20rate" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/hydrant#FireHydrant.flowRate">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/hydrant#fireHydrantFlowRate" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/hydrant#fireHydrantFlowRate" data-placement="right">
+                            <a href="http://vocab.belgif.be/ns/hydrant#FireHydrant.flowRate" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/hydrant#FireHydrant.flowRate" data-placement="right">
                             flow rate</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#ICEG-Unit" data-placement="right">ICEG-Unit</a>
+			    <a href="#Measure" data-placement="right">Measure</a>
 			    
                           
                         </td>
-			<td>1</td>
+			<td>0..1</td>
                         <td property="rdfs:comment">The nominal rate at which water flows through the fire hydrant.</td>
-                        <td property="skos:scopeNote">Typically measured in liters per minute (L/min).</td>
+                        <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
                     
@@ -885,8 +892,88 @@
 			    
                           
                         </td>
-			<td>1</td>
+			<td>1..*</td>
                         <td property="rdfs:comment">The fire hydrant&#39;s location as a point, expressed using coordinates in some coordinate reference system.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="FireHydrant%3Ahas%20inspection" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/hydrant#FireHydrant.hasInspection">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/hydrant#FireHydrant.hasInspection" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/hydrant#FireHydrant.hasInspection" data-placement="right">
+                            has inspection</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Inspection" data-placement="right">Inspection</a>
+			    
+                          
+                        </td>
+			<td>0..*</td>
+                        <td property="rdfs:comment">The inspection the fire hydrants has or will receive.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="FireHydrant%3Ahas%20maintenance" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/hydrant#FireHydrant.hasMaintenance">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/hydrant#FireHydrant.hasMaintenance" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/hydrant#FireHydrant.hasMaintenance" data-placement="right">
+                            has maintenance</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Maintenacne" data-placement="right">Maintenacne</a>
+			    
+                          
+                        </td>
+			<td>0..*</td>
+                        <td property="rdfs:comment">The maintenance the fire hydrants has or will receive.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="FireHydrant%3Ahas%20part" typeof="rdfs:Property" resource="http://purl.org/dc/terms/hasPart">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://purl.org/dc/terms/hasPart" data-toggle="tooltip" data-content="http://purl.org/dc/terms/hasPart" data-placement="right">
+                            has part</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Outlet" data-placement="right">Outlet</a>
+			    
+                          
+                        </td>
+			<td>1..*</td>
+                        <td property="rdfs:comment">The outlet which is physically attached to a fire hydrant.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="FireHydrant%3Ahas%20usage" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/hydrant#FireHydrant.hasUsage">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/hydrant#FireHydrant.hasUsage" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/hydrant#FireHydrant.hasUsage" data-placement="right">
+                            has usage</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Usage" data-placement="right">Usage</a>
+			    
+                          
+                        </td>
+			<td>0..*</td>
+                        <td property="rdfs:comment">The usage of the fire hydrant by an organization.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -905,8 +992,28 @@
 			    
                           
                         </td>
-			<td>1..*</td>
+			<td>0..*</td>
                         <td property="rdfs:comment">Any identifier issued by any authority, whether a government agency or not.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="FireHydrant%3Ais%20connected%20to" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/hydrant#isConnectedTo">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/hydrant#isConnectedTo" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/hydrant#isConnectedTo" data-placement="right">
+                            is connected to</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Pipe" data-placement="right">Pipe</a>
+			    
+                          
+                        </td>
+			<td>1</td>
+                        <td property="rdfs:comment">The pipe through which the fire hydrant provides water.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -945,48 +1052,8 @@
 			    
                           
                         </td>
-			<td>1..*</td>
-                        <td property="rdfs:comment">The pipe providing water to the fire hydrant.</td>
-                        <td property="skos:scopeNote"></td>
-                        <td></td>
-                      </tr>
-                    
-                      <tr id="FireHydrant%3Alast%20inspection%20date" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/hydrant#lastInspectionDate">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/hydrant#lastInspectionDate" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/hydrant#lastInspectionDate" data-placement="right">
-                            last inspection date</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			     
-			    <a href="http://www.w3.org/2001/XMLSchema#dateTime" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#dateTime" data-placement="right">DateTime</a>
-                            
-                          
-                        </td>
 			<td>0..1</td>
-                        <td property="rdfs:comment">The date of the most recently performed inspection of a fire hydrant.</td>
-                        <td property="skos:scopeNote"></td>
-                        <td></td>
-                      </tr>
-                    
-                      <tr id="FireHydrant%3Aopening%20key" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/hydrant#openingKey">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/hydrant#openingKey" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/hydrant#openingKey" data-placement="right">
-                            opening key</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			    
-			    <a href="#OpeningKeyType" data-placement="right">OpeningKeyType</a>
-			    
-                          
-                        </td>
-			<td>0..1</td>
-                        <td property="rdfs:comment">A tool used to open a fire hydrant by removing the cover of a fire hydrant&#39;s outlet.</td>
+                        <td property="rdfs:comment">The fire hydrant receiving water from the pipe.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -1011,10 +1078,10 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="FireHydrant%3Astatus" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/hydrant#fireHydrantStatus">
+                      <tr id="FireHydrant%3Astatus" typeof="rdfs:Property" resource="http://www.w3.org/ns/adms#status">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/hydrant#fireHydrantStatus" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/hydrant#fireHydrantStatus" data-placement="right">
+                            <a href="http://www.w3.org/ns/adms#status" data-toggle="tooltip" data-content="http://www.w3.org/ns/adms#status" data-placement="right">
                             status</a>
                           </code>
                         </td>
@@ -1025,8 +1092,8 @@
 			    
                           
                         </td>
-			<td>1</td>
-                        <td property="rdfs:comment">The current operational state of a fire hydrant.</td>
+			<td>0..1</td>
+                        <td property="rdfs:comment">The condition in which a fire hydrant can be found.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -1046,15 +1113,15 @@
                           
                         </td>
 			<td>0..1</td>
-                        <td property="rdfs:comment">A comment about minor flaws affecting the fire hydrant.</td>
+                        <td property="rdfs:comment">A comment about minor flows affecting the fire hydrant despite being operational.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
                     
-                      <tr id="FireHydrant%3Atype" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/hydrant#fireHydrantType">
+                      <tr id="FireHydrant%3Atype" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/hydrant#FireHydrant.type">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/hydrant#fireHydrantType" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/hydrant#fireHydrantType" data-placement="right">
+                            <a href="http://vocab.belgif.be/ns/hydrant#FireHydrant.type" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/hydrant#FireHydrant.type" data-placement="right">
                             type</a>
                           </code>
                         </td>
@@ -1066,7 +1133,224 @@
                           
                         </td>
 			<td>1</td>
-                        <td property="rdfs:comment">The classification or category of a fire hydrant.</td>
+                        <td property="rdfs:comment">The particular kind of fire hydrant.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
+            </div>
+            
+              <div class="region region--no-space-top">
+              <h3 class="h3" id="Inspection"><a href="http://vocab.belgif.be/ns/hydrant#Inspection" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/hydrant#Inspection" data-placement="right">Inspection</a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Description</dt><dd>The act of looking at something carefully in order to discover information.</dd>
+                    
+		    
+                    <dt>Properties</dt>
+		     
+                    <dd>For this entity the following properties are defined:
+                      <a href="#Inspection%3Adate">date</a>, 
+                      <a href="#Inspection%3Adescription">description</a>, 
+                      <a href="#Inspection%3Aperformed%20by">performed by</a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Property</th>
+                        <th class="data-table__header-title--sortable">Expected Range</th>
+			<th class="data-table__header-title--sortable">Cardinality</th>
+                        <th class="data-table__header-title--sortable">Description</th>
+                        <th class="data-table__header-title--sortable">Usage</th>
+                        <th class="data-table__header-title--sortable">Codelist</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="Inspection%3Adate" typeof="rdfs:Property" resource="http://purl.org/dc/terms/date">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://purl.org/dc/terms/date" data-toggle="tooltip" data-content="http://purl.org/dc/terms/date" data-placement="right">
+                            date</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#dateTime" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#dateTime" data-placement="right">DateTime</a>
+                            
+                          
+                        </td>
+			<td>0..1</td>
+                        <td property="rdfs:comment">The date and time of the inspection.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Inspection%3Adescription" typeof="rdfs:Property" resource="http://purl.org/dc/terms/description">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://purl.org/dc/terms/description" data-toggle="tooltip" data-content="http://purl.org/dc/terms/description" data-placement="right">
+                            description</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-toggle="tooltip" data-content="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-placement="right">LangString</a>
+                            
+                          
+                        </td>
+			<td>0..*</td>
+                        <td property="rdfs:comment">A textual explanation about who performed the  inspection of a particular Object and what was observed.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Inspection%3Aperformed%20by" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/hydrant#Inspection.performedBy">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/hydrant#Inspection.performedBy" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/hydrant#Inspection.performedBy" data-placement="right">
+                            performed by</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Organization" data-placement="right">Organization</a>
+			    
+                          
+                        </td>
+			<td>0..1</td>
+                        <td property="rdfs:comment">The organisation that performed the inspection.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
+            </div>
+            
+              <div class="region region--no-space-top">
+              <h3 class="h3" id="Maintenacne"><a href="http://vocab.belgif.be/ns/hydrant#Maintenance" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/hydrant#Maintenance" data-placement="right">Maintenacne</a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Description</dt><dd>The work needed to keep something in good condition</dd>
+                    
+		    
+                    <dt>Properties</dt>
+		     
+                    <dd>For this entity the following properties are defined:
+                      <a href="#Maintenacne%3Adate">date</a>, 
+                      <a href="#Maintenacne%3Adescription">description</a>, 
+                      <a href="#Maintenacne%3Aperformed%20by">performed by</a>, 
+                      <a href="#Maintenacne%3Arequested%20by">requested by</a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Property</th>
+                        <th class="data-table__header-title--sortable">Expected Range</th>
+			<th class="data-table__header-title--sortable">Cardinality</th>
+                        <th class="data-table__header-title--sortable">Description</th>
+                        <th class="data-table__header-title--sortable">Usage</th>
+                        <th class="data-table__header-title--sortable">Codelist</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="Maintenacne%3Adate" typeof="rdfs:Property" resource="http://purl.org/dc/terms/date">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://purl.org/dc/terms/date" data-toggle="tooltip" data-content="http://purl.org/dc/terms/date" data-placement="right">
+                            date</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#dateTime" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#dateTime" data-placement="right">DateTime</a>
+                            
+                          
+                        </td>
+			<td>0..1</td>
+                        <td property="rdfs:comment">The date and time of the maintenance.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Maintenacne%3Adescription" typeof="rdfs:Property" resource="http://purl.org/dc/terms/description">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://purl.org/dc/terms/description" data-toggle="tooltip" data-content="http://purl.org/dc/terms/description" data-placement="right">
+                            description</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-toggle="tooltip" data-content="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-placement="right">LangString</a>
+                            
+                          
+                        </td>
+			<td>0..*</td>
+                        <td property="rdfs:comment">A textual explanation about who performed the  maintenance of a particular Object and what was done to the Object in order to warrant a good condition.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Maintenacne%3Aperformed%20by" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/hydrant#Maintenance.performedBy">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/hydrant#Maintenance.performedBy" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/hydrant#Maintenance.performedBy" data-placement="right">
+                            performed by</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Organization" data-placement="right">Organization</a>
+			    
+                          
+                        </td>
+			<td>0..1</td>
+                        <td property="rdfs:comment">The organisation that performed the maintenance.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Maintenacne%3Arequested%20by" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/hydrant#Maintenance.requestedBy">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/hydrant#Maintenance.requestedBy" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/hydrant#Maintenance.requestedBy" data-placement="right">
+                            requested by</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Organization" data-placement="right">Organization</a>
+			    
+                          
+                        </td>
+			<td>0..1</td>
+                        <td property="rdfs:comment">The organisation that requested the maintenance.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -1081,7 +1365,7 @@
               <h3 class="h3" id="Organization"><a href="http://www.w3.org/ns/org#Organization" data-toggle="tooltip" data-content="http://www.w3.org/ns/org#Organization" data-placement="right">Organization</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
-                    <dt>Description</dt><dd>The legally recognised name of the organization</dd>
+                    <dt>Description</dt><dd>Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.</dd>
                     
 		    
                     <dt>Properties</dt>
@@ -1144,7 +1428,7 @@
                           
                         </td>
 			<td>1</td>
-                        <td property="rdfs:comment">The legally recognised name of the organization.</td>
+                        <td property="rdfs:comment">The legally recognised name of the organization</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -1163,7 +1447,7 @@
                             
                           
                         </td>
-			<td>1</td>
+			<td>0..1</td>
                         <td property="rdfs:comment">The distinction between whether an organisation is a private or public entity.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
@@ -1179,7 +1463,7 @@
               <h3 class="h3" id="Outlet"><a href="http://vocab.belgif.be/ns/hydrant#Outlet" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/hydrant#Outlet" data-placement="right">Outlet</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
-                    <dt>Description</dt><dd>A circular opening through which water can be discharged from a fire hydrant. </dd>
+                    <dt>Description</dt><dd>A circular opening through which water can be discharged from a fire hydrant.</dd>
                     
 		    
                     <dt>Properties</dt>
@@ -1216,7 +1500,7 @@
                         <td>
                           
 			    
-			    <a href="#ICEG-Unit" data-placement="right">ICEG-Unit</a>
+			    <a href="#Measure" data-placement="right">Measure</a>
 			    
                           
                         </td>
@@ -1226,10 +1510,10 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Outlet%3Ais%20part%20of" typeof="rdfs:Property" resource=" http://purl.org/dc/terms/isPartOf">
+                      <tr id="Outlet%3Ais%20part%20of" typeof="rdfs:Property" resource="http://purl.org/dc/terms/isPartOf">
                         <td>
                           <code property="rdfs:label">
-                            <a href=" http://purl.org/dc/terms/isPartOf" data-toggle="tooltip" data-content=" http://purl.org/dc/terms/isPartOf" data-placement="right">
+                            <a href="http://purl.org/dc/terms/isPartOf" data-toggle="tooltip" data-content="http://purl.org/dc/terms/isPartOf" data-placement="right">
                             is part of</a>
                           </code>
                         </td>
@@ -1263,11 +1547,13 @@
 		     
                     <dd>For this entity the following properties are defined:
                       <a href="#Pipe%3Aaddress">address</a>, 
+                      <a href="#Pipe%3Aclassification">classification</a>, 
                       <a href="#Pipe%3Adiameter">diameter</a>, 
                       <a href="#Pipe%3Aflow%20pressure">flow pressure</a>, 
+                      <a href="#Pipe%3Aflow%20rate">flow rate</a>, 
                       <a href="#Pipe%3Ageometry">geometry</a>, 
                       <a href="#Pipe%3Aidentifier">identifier</a>, 
-                      <a href="#Pipe%3Ais%20connected">is connected</a>, 
+                      <a href="#Pipe%3Ais%20connected%20to">is connected to</a>, 
                       <a href="#Pipe%3Ais%20operated%20by">is operated by</a>, 
                       <a href="#Pipe%3Astatus">status</a>, 
                       <a href="#Pipe%3Asupplies">supplies</a>, 
@@ -1312,21 +1598,41 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Pipe%3Adiameter" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/hydrant#pipeDiameter">
+                      <tr id="Pipe%3Aclassification" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/hydrant#Pipe.classification">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/hydrant#pipeDiameter" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/hydrant#pipeDiameter" data-placement="right">
+                            <a href="http://vocab.belgif.be/ns/hydrant#Pipe.classification" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/hydrant#Pipe.classification" data-placement="right">
+                            classification</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#pipe classification type" data-placement="right">pipe classification type</a>
+			    
+                          
+                        </td>
+			<td>0..1</td>
+                        <td property="rdfs:comment">The categorisation of pipes.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Pipe%3Adiameter" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/hydrant#Pipe.diameter">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/hydrant#Pipe.diameter" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/hydrant#Pipe.diameter" data-placement="right">
                             diameter</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#ICEG-Unit" data-placement="right">ICEG-Unit</a>
+			    <a href="#Measure" data-placement="right">Measure</a>
 			    
                           
                         </td>
-			<td>1</td>
+			<td>0..1</td>
                         <td property="rdfs:comment">The nominal diameter of the underground water pipe going along the street.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
@@ -1342,13 +1648,33 @@
                         <td>
                           
 			    
-			    <a href="#ICEG-Unit" data-placement="right">ICEG-Unit</a>
+			    <a href="#Measure" data-placement="right">Measure</a>
 			    
                           
                         </td>
-			<td>1</td>
+			<td>0..1</td>
                         <td property="rdfs:comment">The amount of force with which water moves to a pipe.</td>
-                        <td property="skos:scopeNote">Typically measured in Bar.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Pipe%3Aflow%20rate" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/hydrant#Pipe.flowRate">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/hydrant#Pipe.flowRate" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/hydrant#Pipe.flowRate" data-placement="right">
+                            flow rate</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Measure" data-placement="right">Measure</a>
+			    
+                          
+                        </td>
+			<td>0..1</td>
+                        <td property="rdfs:comment">The nominal rate at which water flows through the pipe.</td>
+                        <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
                     
@@ -1366,7 +1692,7 @@
 			    
                           
                         </td>
-			<td>1</td>
+			<td>1..*</td>
                         <td property="rdfs:comment">The pipe&#39;s location as a point, expressed using coordinates in some coordinate reference system.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
@@ -1386,17 +1712,17 @@
 			    
                           
                         </td>
-			<td>1..*</td>
+			<td>0..*</td>
                         <td property="rdfs:comment">Any identifier issued by any authority, whether a government agency or not. It captures the identifier itself, the type of identifier, and details of the issuing authority, the date on which the identifier was issued.</td>
-                        <td property="skos:scopeNote">It captures the identifier itself, the type of identifier, and details of the issuing authority, the date on which the identifier was issued.</td>
+                        <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
                     
-                      <tr id="Pipe%3Ais%20connected" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/hydrant#isConnected">
+                      <tr id="Pipe%3Ais%20connected%20to" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/hydrant#isConnectedTo">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/hydrant#isConnected" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/hydrant#isConnected" data-placement="right">
-                            is connected</a>
+                            <a href="http://vocab.belgif.be/ns/hydrant#isConnectedTo" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/hydrant#isConnectedTo" data-placement="right">
+                            is connected to</a>
                           </code>
                         </td>
                         <td>
@@ -1432,10 +1758,10 @@
                         <td></td>
                       </tr>
                     
-                      <tr id="Pipe%3Astatus" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/hydrant#pipeStatus">
+                      <tr id="Pipe%3Astatus" typeof="rdfs:Property" resource="http://www.w3.org/ns/adms#status">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/hydrant#pipeStatus" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/hydrant#pipeStatus" data-placement="right">
+                            <a href="http://www.w3.org/ns/adms#status" data-toggle="tooltip" data-content="http://www.w3.org/ns/adms#status" data-placement="right">
                             status</a>
                           </code>
                         </td>
@@ -1446,8 +1772,8 @@
 			    
                           
                         </td>
-			<td>1</td>
-                        <td property="rdfs:comment">The current operational state of a pipe.</td>
+			<td>0..1</td>
+                        <td property="rdfs:comment">The condition in which a pipe can be found.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -1467,16 +1793,15 @@
                           
                         </td>
 			<td>0..*</td>
-                        <td property="rdfs:comment">The fire hydrant receiving water from the pipe
-.</td>
+                        <td property="rdfs:comment">The pipe providing water to the fire hydrant. It is possible that one pipe is connected to several hydrants.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
                     
-                      <tr id="Pipe%3Atype" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/hydrant#pipeType">
+                      <tr id="Pipe%3Atype" typeof="rdfs:Property" resource="http://purl.org/dc/terms/type">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/hydrant#pipeType" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/hydrant#pipeType" data-placement="right">
+                            <a href="http://purl.org/dc/terms/type" data-toggle="tooltip" data-content="http://purl.org/dc/terms/type" data-placement="right">
                             type</a>
                           </code>
                         </td>
@@ -1488,7 +1813,7 @@
                           
                         </td>
 			<td>0..1</td>
-                        <td property="rdfs:comment">The classification or category of a pipe.</td>
+                        <td property="rdfs:comment">The particular kind of pipe.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -1508,7 +1833,126 @@
                           
                         </td>
 			<td>0..*</td>
-                        <td property="rdfs:comment">The classification or category of water.</td>
+                        <td property="rdfs:comment">The particular kind of liquid which is running through a pipe.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                    </tbody>
+                  </table>
+                </div>
+      			  
+            </div>
+            
+              <div class="region region--no-space-top">
+              <h3 class="h3" id="Usage"><a href="http://vocab.belgif.be/ns/hydrant#Usage" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/hydrant#Usage" data-placement="right">Usage</a></h3>
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Description</dt><dd>The use of something.</dd>
+                    
+		    
+                    <dt>Properties</dt>
+		     
+                    <dd>For this entity the following properties are defined:
+                      <a href="#Usage%3Adate">date</a>, 
+                      <a href="#Usage%3Adescription">description</a>, 
+                      <a href="#Usage%3Alocation">location</a>, 
+                      <a href="#Usage%3Aperformed%20by">performed by</a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Property</th>
+                        <th class="data-table__header-title--sortable">Expected Range</th>
+			<th class="data-table__header-title--sortable">Cardinality</th>
+                        <th class="data-table__header-title--sortable">Description</th>
+                        <th class="data-table__header-title--sortable">Usage</th>
+                        <th class="data-table__header-title--sortable">Codelist</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                    
+                      <tr id="Usage%3Adate" typeof="rdfs:Property" resource="http://purl.org/dc/terms/date">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://purl.org/dc/terms/date" data-toggle="tooltip" data-content="http://purl.org/dc/terms/date" data-placement="right">
+                            date</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#dateTime" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#dateTime" data-placement="right">DateTime</a>
+                            
+                          
+                        </td>
+			<td>0..1</td>
+                        <td property="rdfs:comment">The time and date on which a Fire Hydrant was used during an emergency intervention.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Usage%3Adescription" typeof="rdfs:Property" resource="http://purl.org/dc/terms/description">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://purl.org/dc/terms/description" data-toggle="tooltip" data-content="http://purl.org/dc/terms/description" data-placement="right">
+                            description</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-toggle="tooltip" data-content="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-placement="right">LangString</a>
+                            
+                          
+                        </td>
+			<td>0..*</td>
+                        <td property="rdfs:comment">A textual explanation about who used the Object, the purpose and other relevant details to mention.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Usage%3Alocation" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/hydrant#Usage.location">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/hydrant#Usage.location" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/hydrant#Usage.location" data-placement="right">
+                            location</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Geometry" data-placement="right">Geometry</a>
+			    
+                          
+                        </td>
+			<td>0..1</td>
+                        <td property="rdfs:comment">The approximate or precise location of the usage of something.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Usage%3Aperformed%20by" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/hydrant#Usage.performedBy">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/hydrant#Usage.performedBy" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/hydrant#Usage.performedBy" data-placement="right">
+                            performed by</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#Organization" data-placement="right">Organization</a>
+			    
+                          
+                        </td>
+			<td>0..1</td>
+                        <td property="rdfs:comment">The organisation that used the Object.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -1530,7 +1974,8 @@
 		     
                     <dd>For this entity the following properties are defined:
                       <a href="#Valve%3Adiameter">diameter</a>, 
-                      <a href="#Valve%3Ais%20part%20of">is part of</a>.</dd>
+                      <a href="#Valve%3Ais%20part%20of">is part of</a>, 
+                      <a href="#Valve%3Aopening%20key">opening key</a>.</dd>
                     
                   </dl>
                 </div>
@@ -1550,30 +1995,30 @@
 
                     <tbody class="supertype">
                     
-                      <tr id="Valve%3Adiameter" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/hydrant#valveDiameter">
+                      <tr id="Valve%3Adiameter" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/hydrant#Valve.diameter">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/hydrant#valveDiameter" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/hydrant#valveDiameter" data-placement="right">
+                            <a href="http://vocab.belgif.be/ns/hydrant#Valve.diameter" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/hydrant#Valve.diameter" data-placement="right">
                             diameter</a>
                           </code>
                         </td>
                         <td>
                           
 			    
-			    <a href="#ICEG-Unit" data-placement="right">ICEG-Unit</a>
+			    <a href="#Measure" data-placement="right">Measure</a>
 			    
                           
                         </td>
-			<td>1</td>
+			<td>0..1</td>
                         <td property="rdfs:comment">The measurement of the circular opening through which the water flow, pressure or volume can be controlled in a fire hydrant.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
                     
-                      <tr id="Valve%3Ais%20part%20of" typeof="rdfs:Property" resource=" http://purl.org/dc/terms/isPartOf">
+                      <tr id="Valve%3Ais%20part%20of" typeof="rdfs:Property" resource="http://purl.org/dc/terms/isPartOf">
                         <td>
                           <code property="rdfs:label">
-                            <a href=" http://purl.org/dc/terms/isPartOf" data-toggle="tooltip" data-content=" http://purl.org/dc/terms/isPartOf" data-placement="right">
+                            <a href="http://purl.org/dc/terms/isPartOf" data-toggle="tooltip" data-content="http://purl.org/dc/terms/isPartOf" data-placement="right">
                             is part of</a>
                           </code>
                         </td>
@@ -1585,7 +2030,27 @@
                           
                         </td>
 			<td>1</td>
-                        <td property="rdfs:comment">The fire hydrant to which the valve is part of.</td>
+                        <td property="rdfs:comment">The fire hydrant to which the valve is physically attached.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                    
+                      <tr id="Valve%3Aopening%20key" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/hydrant#openingKey">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/hydrant#openingKey" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/hydrant#openingKey" data-placement="right">
+                            opening key</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			    
+			    <a href="#opening key type" data-placement="right">opening key type</a>
+			    
+                          
+                        </td>
+			<td>0..1</td>
+                        <td property="rdfs:comment">A tool used to open a fire hydrant by removing the cover of a fire hydrant&#39;s outlet.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -1765,7 +2230,7 @@
                         <td>
                           
 			    
-			    <a href="#NameStatusValue" data-placement="right">NameStatusValue</a>
+			    <a href="#name status value" data-placement="right">name status value</a>
 			    
                           
                         </td>
@@ -1786,7 +2251,7 @@ Concepts of this codelist should be used from the INSPIRE <a href="https://inspi
                         <td>
                           
 			    
-			    <a href="#NativenessValue" data-placement="right">NativenessValue</a>
+			    <a href="#nativeness value" data-placement="right">nativeness value</a>
 			    
                           
                         </td>
@@ -1842,7 +2307,7 @@ Concepts of this codelist should be used from the INSPIRE <a href="https://inspi
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="Geometry"><a href="https://www.w3.org/ns/locn#Geometry" data-toggle="tooltip" data-content="https://www.w3.org/ns/locn#Geometry" data-placement="right">Geometry</a></h3>
+              <h3 class="h3" id="Geometry"><a href="http://www.w3.org/ns/locn#Geometry" data-toggle="tooltip" data-content="http://www.w3.org/ns/locn#Geometry" data-placement="right">Geometry</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
@@ -1892,8 +2357,8 @@ Concepts of this codelist should be used from the INSPIRE <a href="https://inspi
                           
                         </td>
 			<td>0..1</td>
-                        <td property="rdfs:comment">	A list of geographic coordinates that define the extent of the Geometry.</td>
-                        <td property="skos:scopeNote">Can be expressed as longitude, latitude, elevation.</td>
+                        <td property="rdfs:comment">The coordinate list.</td>
+                        <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
                       
@@ -1912,7 +2377,7 @@ Concepts of this codelist should be used from the INSPIRE <a href="https://inspi
                         </td>
 			<td>0..1</td>
                         <td property="rdfs:comment">An identifier for the coordinate reference system.</td>
-                        <td property="skos:scopeNote">Can be a coordinate-based local, regional or global system used to locate geographical entities.</td>
+                        <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
                       
@@ -1929,9 +2394,9 @@ Concepts of this codelist should be used from the INSPIRE <a href="https://inspi
                             
                           
                         </td>
-			<td>0..1</td>
-                        <td property="rdfs:comment">The classification of the Geometry.</td>
-                        <td property="skos:scopeNote">Can be a point, line or polygon.</td>
+			<td>1</td>
+                        <td property="rdfs:comment">The geometry type, e.g. point, line or polygon.</td>
+                        <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
                       
@@ -2019,96 +2484,22 @@ Concepts of this codelist should be used from the INSPIRE <a href="https://inspi
             
             <div class="region region--no-space-top">
               
-              <h3 class="h3" id="ICEG-Unit"><a href="http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure" data-toggle="tooltip" data-content="http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure" data-placement="right">ICEG-Unit</a></h3>
-	      
-                <div class="region region--no-space-top">
-                  <dl>
-                    <dt>Description</dt><dd>A representation of a unit.</dd>
-                    
-		    
-                    <dt>Properties</dt>
-		     
-                    <dd>we have defined the following properties for this datatype:
-                      <a href="#ICEG-Unit%3Auom">uom</a>, 
-                      <a href="#ICEG-Unit%3Avalue">value</a>.</dd>
-                    
-                  </dl>
-                </div>
-		 
-                <div class="u-table-overflow">
-                  <table class="data-table">
-                    <thead>
-                      <tr class="data-table__header">
-                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Property</th>
-                        <th class="data-table__header-title--sortable">Expects Type</th>
-			<th class="data-table__header-title--sortable">Cardinality</th>
-                        <th class="data-table__header-title--sortable">Description</th>
-                        <th class="data-table__header-title--sortable">Usage</th>
-                        <th class="data-table__header-title--sortable">Codelist</th>
-                      </tr>
-                    </thead>
-
-                    <tbody class="supertype">
-                      
-                      <tr id="ICEG-Unit%3Auom" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#uom">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#uom" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#uom" data-placement="right">uom</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-                        </td>
-			<td>1</td>
-                        <td property="rdfs:comment">Standard units of measurements used when accounting for stock, and expressing them in quantities.</td>
-                        <td property="skos:scopeNote">Concepts of this codelist should be used from the EU Vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/measurement-unit">Measurement unit</a>.</td>
-                        <td></td>
-                      </tr>
-                      
-                      <tr id="ICEG-Unit%3Avalue" typeof="rdfs:Property" resource="https://qudt.org/schema/qudt/value">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="https://qudt.org/schema/qudt/value" data-toggle="tooltip" data-content="https://qudt.org/schema/qudt/value" data-placement="right">value</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			     
-			    <a href="http://www.w3.org/2000/01/rdf-schema#Literal" data-toggle="tooltip" data-content="http://www.w3.org/2000/01/rdf-schema#Literal" data-placement="right">Literal</a>
-                            
-                          
-                        </td>
-			<td>1</td>
-                        <td property="rdfs:comment">Number with a scale. The value of uom (Units Of Measure) attribute is a reference to a Reference System for the amount, either a ratio or position scale.</td>
-                        <td property="skos:scopeNote"></td>
-                        <td></td>
-                      </tr>
-                      
-                    </tbody>
-                  </table>
-                </div>
-                
-            </div>
-            
-            <div class="region region--no-space-top">
-              
               <h3 class="h3" id="Identifier"><a href="http://www.w3.org/ns/adms#Identifier" data-toggle="tooltip" data-content="http://www.w3.org/ns/adms#Identifier" data-placement="right">Identifier</a></h3>
 	      
                 <div class="region region--no-space-top">
                   <dl>
-                    <dt>Description</dt><dd>A structured reference that identifies an entity.</dd>
-                    
-                    <dt>Usage</dt><dd>The Identifier class is based on the UN/CEFACT class of the same name and is defined under the ADMS namespace.</dd>
+                    <dt>Description</dt><dd>The Identifier class represents any identifier issued by any authority, whether a government agency or not. It captures the identifier itself, the type of identifier, and details of the issuing authority, the date on which the identifier was issued.</dd>
                     
 		    
                     <dt>Properties</dt>
 		     
                     <dd>we have defined the following properties for this datatype:
-                      <a href="#Identifier%3Aassigned%20by">assigned by</a>, 
-                      <a href="#Identifier%3Aassigned%20by%20string">assigned by string</a>, 
-                      <a href="#Identifier%3Aassigned%20on">assigned on</a>, 
+                      <a href="#Identifier%3AdateOfIssue">dateOfIssue</a>, 
                       <a href="#Identifier%3Aidentifier">identifier</a>, 
-                      <a href="#Identifier%3Astructured%20identificator">structured identificator</a>.</dd>
+                      <a href="#Identifier%3AissuingAuthorityName">issuingAuthorityName</a>, 
+                      <a href="#Identifier%3AissuingAuthorityURI">issuingAuthorityURI</a>, 
+                      <a href="#Identifier%3AschemeName">schemeName</a>, 
+                      <a href="#Identifier%3AschemeURI">schemeURI</a>.</dd>
                     
                   </dl>
                 </div>
@@ -2128,48 +2519,10 @@ Concepts of this codelist should be used from the INSPIRE <a href="https://inspi
 
                     <tbody class="supertype">
                       
-                      <tr id="Identifier%3Aassigned%20by" typeof="rdfs:Property" resource="http://purl.org/dc/terms/creator">
+                      <tr id="Identifier%3AdateOfIssue" typeof="rdfs:Property" resource="http://purl.org/dc/terms/issued">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://purl.org/dc/terms/creator" data-toggle="tooltip" data-content="http://purl.org/dc/terms/creator" data-placement="right">assigned by</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			     
-			    <a href="http://purl.org/dc/terms/Agent" data-toggle="tooltip" data-content="http://purl.org/dc/terms/Agent" data-placement="right">Agent</a>
-                            
-                          
-                        </td>
-			<td>0..1</td>
-                        <td property="rdfs:comment">	Link to the agent who issued the identifier</td>
-                        <td property="skos:scopeNote"></td>
-                        <td></td>
-                      </tr>
-                      
-                      <tr id="Identifier%3Aassigned%20by%20string" typeof="rdfs:Property" resource="http://www.w3.org/ns/adms#schemeAgency">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="http://www.w3.org/ns/adms#schemeAgency" data-toggle="tooltip" data-content="http://www.w3.org/ns/adms#schemeAgency" data-placement="right">assigned by string</a>
-                          </code>
-                        </td>
-                        <td>
-                          
-			     
-			    <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-toggle="tooltip" data-content="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString" data-placement="right">LangString</a>
-                            
-                          
-                        </td>
-			<td>0..1</td>
-                        <td property="rdfs:comment">	Name of the agent who assigned the identifier.</td>
-                        <td property="skos:scopeNote"></td>
-                        <td></td>
-                      </tr>
-                      
-                      <tr id="Identifier%3Aassigned%20on" typeof="rdfs:Property" resource="http://purl.org/dc/terms/issued">
-                        <td>
-                          <code property="rdfs:label">
-                            <a href="http://purl.org/dc/terms/issued" data-toggle="tooltip" data-content="http://purl.org/dc/terms/issued" data-placement="right">assigned on</a>
+                            <a href="http://purl.org/dc/terms/issued" data-toggle="tooltip" data-content="http://purl.org/dc/terms/issued" data-placement="right">dateOfIssue</a>
                           </code>
                         </td>
                         <td>
@@ -2180,7 +2533,7 @@ Concepts of this codelist should be used from the INSPIRE <a href="https://inspi
                           
                         </td>
 			<td>0..1</td>
-                        <td property="rdfs:comment">Time when the identifier was issued.</td>
+                        <td property="rdfs:comment">The date on which the Identifier was assigned.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -2198,27 +2551,153 @@ Concepts of this codelist should be used from the INSPIRE <a href="https://inspi
                             
                           
                         </td>
-			<td>0..1</td>
-                        <td property="rdfs:comment">String used to uniquely identify the object.</td>
-                        <td property="skos:scopeNote">Type of the string refers to the identifier (incl its version), the string itself to the actual identifier.</td>
+			<td>0..*</td>
+                        <td property="rdfs:comment">The value of this property is the Identifier itself.</td>
+                        <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
                       
-                      <tr id="Identifier%3Astructured%20identificator" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#structuredIdentificator">
+                      <tr id="Identifier%3AissuingAuthorityName" typeof="rdfs:Property" resource="http://www.w3.org/ns/adms#schemeAgency">
                         <td>
                           <code property="rdfs:label">
-                            <a href="http://vocab.belgif.be/ns/building#structuredIdentificator" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#structuredIdentificator" data-placement="right">structured identificator</a>
+                            <a href="http://www.w3.org/ns/adms#schemeAgency" data-toggle="tooltip" data-content="http://www.w3.org/ns/adms#schemeAgency" data-placement="right">issuingAuthorityName</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+                        </td>
+			<td>0..1</td>
+                        <td property="rdfs:comment">The name of the agency responsible for issuing the Identifier.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="Identifier%3AissuingAuthorityURI" typeof="rdfs:Property" resource="http://purl.org/dc/terms/creator">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://purl.org/dc/terms/creator" data-toggle="tooltip" data-content="http://purl.org/dc/terms/creator" data-placement="right">issuingAuthorityURI</a>
                           </code>
                         </td>
                         <td>
                           
 			     
-			    <a href="http://vocab.belgif.be/ns/building#StructuredIdentificator" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#StructuredIdentificator" data-placement="right">StructuredIdentificator</a>
+			    <a href="http://www.w3.org/2001/XMLSchema#anyURI" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#anyURI" data-placement="right">URI</a>
                             
                           
                         </td>
 			<td>0..1</td>
-                        <td property="rdfs:comment">Identifier of the object broken down into its parts.</td>
+                        <td property="rdfs:comment">The URI of the issuing authority.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="Identifier%3AschemeName" typeof="rdfs:Property" resource="http://purl.org/dc/terms/conformsTo">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://purl.org/dc/terms/conformsTo" data-toggle="tooltip" data-content="http://purl.org/dc/terms/conformsTo" data-placement="right">schemeName</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+                        </td>
+			<td>0..1</td>
+                        <td property="rdfs:comment">Name of the scheme used to construct the identifier.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="Identifier%3AschemeURI" typeof="rdfs:Property" resource="http://purl.org/dc/terms/conformsTo">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://purl.org/dc/terms/conformsTo" data-toggle="tooltip" data-content="http://purl.org/dc/terms/conformsTo" data-placement="right">schemeURI</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2001/XMLSchema#anyURI" data-toggle="tooltip" data-content="http://www.w3.org/2001/XMLSchema#anyURI" data-placement="right">URI</a>
+                            
+                          
+                        </td>
+			<td>0..1</td>
+                        <td property="rdfs:comment">URI of the scheme used to construct the identifier.</td>
+                        <td property="skos:scopeNote"></td>
+                        <td></td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                </div>
+                
+            </div>
+            
+            <div class="region region--no-space-top">
+              
+              <h3 class="h3" id="Measure"><a href="http://inspire.ec.europa.eu/ont/base#Measure" data-toggle="tooltip" data-content="http://inspire.ec.europa.eu/ont/base#Measure" data-placement="right">Measure</a></h3>
+	      
+                <div class="region region--no-space-top">
+                  <dl>
+                    <dt>Description</dt><dd>A representation of a measure value. The decimal value is followed by a space and the unit of the measure.</dd>
+                    
+		    
+                    <dt>Properties</dt>
+		     
+                    <dd>we have defined the following properties for this datatype:
+                      <a href="#Measure%3Auom">uom</a>, 
+                      <a href="#Measure%3Avalue">value</a>.</dd>
+                    
+                  </dl>
+                </div>
+		 
+                <div class="u-table-overflow">
+                  <table class="data-table">
+                    <thead>
+                      <tr class="data-table__header">
+                        <th class="data-table__header-title--sortable data-table__header-title--sortable-active">Property</th>
+                        <th class="data-table__header-title--sortable">Expects Type</th>
+			<th class="data-table__header-title--sortable">Cardinality</th>
+                        <th class="data-table__header-title--sortable">Description</th>
+                        <th class="data-table__header-title--sortable">Usage</th>
+                        <th class="data-table__header-title--sortable">Codelist</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="supertype">
+                      
+                      <tr id="Measure%3Auom" typeof="rdfs:Property" resource="http://vocab.belgif.be/ns/building#uom">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="http://vocab.belgif.be/ns/building#uom" data-toggle="tooltip" data-content="http://vocab.belgif.be/ns/building#uom" data-placement="right">uom</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2004/02/skos/core#Concept" data-toggle="tooltip" data-content="http://www.w3.org/2004/02/skos/core#Concept" data-placement="right">Concept</a>
+                            
+                          
+                        </td>
+			<td>1</td>
+                        <td property="rdfs:comment">Standard units of measurements used when accounting for stock, and expressing them in quantities.</td>
+                        <td property="skos:scopeNote">Concepts of this codelist should be used from the EU Vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/measurement-unit">Measurement unit</a>.</td>
+                        <td></td>
+                      </tr>
+                      
+                      <tr id="Measure%3Avalue" typeof="rdfs:Property" resource="https://qudt.org/schema/qudt/value">
+                        <td>
+                          <code property="rdfs:label">
+                            <a href="https://qudt.org/schema/qudt/value" data-toggle="tooltip" data-content="https://qudt.org/schema/qudt/value" data-placement="right">value</a>
+                          </code>
+                        </td>
+                        <td>
+                          
+			     
+			    <a href="http://www.w3.org/2000/01/rdf-schema#Literal" data-toggle="tooltip" data-content="http://www.w3.org/2000/01/rdf-schema#Literal" data-placement="right">Literal</a>
+                            
+                          
+                        </td>
+			<td>1</td>
+                        <td property="rdfs:comment">Number with a scale. The value of uom (Units Of Measure) attribute is a reference to a Reference System for the amount, either a ratio or position scale.</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -2289,10 +2768,10 @@ Concepts of this codelist should be used from the INSPIRE <a href="https://inspi
 	</table>
 </div>
 <div class="region region--no-space-top">
-	<h3 class="h3" id="NameStatusType">NameStatusType</h3>
+	<h3 class="h3" id="NameStatusType">NameStatusValue</h3>
 	<dl>
 		<dt>PREFIX vbnst:</dt>
-		<dd>http://vocab.belgif.be/auth/namestatustype/</dd>
+		<dd>http://vocab.belgif.be/auth/namestatusvalue/</dd>
 	</dl>
 	<br/>
 	<h4>SKOS TopConcepts</h4>
@@ -2347,14 +2826,14 @@ Concepts of this codelist should be used from the INSPIRE <a href="https://inspi
 		</thead>
 		<tbody>
 			<tr>
-				<td>vbnv:exonym</td>
-				<td>exonym</td>
-				<td>exonym</td>
-			</tr>
-			<tr>
 				<td>vbnv:endonym</td>
 				<td>endonym</td>
 				<td>endonym</td>
+			</tr>
+			<tr>
+				<td>vbnv:exonym</td>
+				<td>exonym</td>
+				<td>exonym</td>
 			</tr>
 		</tbody>
 	</table>
@@ -2458,6 +2937,73 @@ Concepts of this codelist should be used from the INSPIRE <a href="https://inspi
 	</table>
 </div>
 
+<div class="region region--no-space-top">
+	<h3 class="h3" id="OpeningKeyType">OpeningKeyType</h3>
+	<dl>
+		<dt>PREFIX vbs:</dt>
+		<dd>http://vocab.belgif.be/auth/openingkeytype/</dd>
+	</dl>
+	<br/>
+	<h4>SKOS TopConcepts</h4>
+	<table class="data-table">
+		<thead>
+			<tr>
+				<th>URI</th>
+				<th>skos:prefLabel@en</th>
+				<th>skos:notation</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>vbs:R20mm</td>
+				<td>R20mm</td>
+				<td>R20mm</td>
+			</tr>
+			<tr>
+				<td>vbs:R30mm</td>
+				<td>R30mm</td>
+				<td>R30mm</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+<div class="region region--no-space-top">
+	<h3 class="h3" id="PipeClassificationType">PipeClassificationType</h3>
+	<dl>
+		<dt>PREFIX vbs:</dt>
+		<dd>http://vocab.belgif.be/auth/pipeclassificationtype/</dd>
+	</dl>
+	<br/>
+	<h4>SKOS TopConcepts</h4>
+	<table class="data-table">
+		<thead>
+			<tr>
+				<th>URI</th>
+				<th>skos:prefLabel@en</th>
+				<th>skos:notation</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>vbs:primary</td>
+				<td>primary</td>
+				<td>primary</td>
+			</tr>
+			<tr>
+				<td>vbs:secondary</td>
+				<td>secondary</td>
+				<td>secondary</td>
+			</tr>
+			<tr>
+				<td>vbs:tertiary</td>
+				<td>tertiary</td>
+				<td>tertiary</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
 
             </div>
 		
@@ -2539,7 +3085,7 @@ No changelog defined.
     </div>
   </div>
   </div>
-
+</main>
   <script src="https://dij151upo6vad.cloudfront.net/2.latest/js/vlaanderen-ui.js"></script>
   <script type="text/javascript">
       function iframeLoaded() {
@@ -2551,13 +3097,6 @@ No changelog defined.
           }   
       }
   </script> 
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-  <script>
-  $( function() {
-    $( "#tabs" ).tabs();
-  } );
-  </script>
   <style>
     @media screen {  /* hide from IE3 */
       a[href]:hover { background: #ffa }

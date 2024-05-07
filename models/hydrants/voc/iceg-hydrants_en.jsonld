@@ -316,19 +316,50 @@
   "license": "https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic",
   "issued": "TODO",
   "navigation": {},
-  "publication-state": "under public review",
-  "publication-date": "2023-07-03",
+  "publication-state": "Under public review",
+  "publication-date": "2023-12-05",
   "classes": [
+    {
+      "@id": "http://vocab.belgif.be/ns/hydrant#Inspection",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "definition": {
+        "en": "The act of looking at something carefully in order to discover information."
+      },
+      "parents": []
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/hydrant#Maintenance",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "definition": {
+        "en": "The work needed to keep something in good condition"
+      },
+      "parents": []
+    },
     {
       "@id": "http://vocab.belgif.be/ns/hydrant#Outlet",
       "@type": "http://www.w3.org/2002/07/owl#Class",
       "definition": {
-        "en": "A circular opening through which water can be discharged from a fire hydrant. "
+        "en": "A circular opening through which water can be discharged from a fire hydrant."
+      },
+      "parents": []
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/hydrant#Usage",
+      "@type": "http://www.w3.org/2002/07/owl#Class",
+      "definition": {
+        "en": "The use of something."
       },
       "parents": []
     }
   ],
   "externals": [
+    {
+      "name": {
+        "en": "Measure"
+      },
+      "@id": "http://inspire.ec.europa.eu/ont/base#Measure",
+      "@type": "rdfs:Class"
+    },
     {
       "name": {
         "en": "HydrantType"
@@ -352,7 +383,14 @@
     },
     {
       "name": {
-        "en": "OpeningKeyType"
+        "en": "opening key type"
+      },
+      "@id": "http://www.w3.org/2004/02/skos/core#Concept",
+      "@type": "rdfs:Class"
+    },
+    {
+      "name": {
+        "en": "pipe classification type"
       },
       "@id": "http://www.w3.org/2004/02/skos/core#Concept",
       "@type": "rdfs:Class"
@@ -360,27 +398,24 @@
   ],
   "properties": [
     {
-      "@id": "http://vocab.belgif.be/ns/hydrant#fireHydrantFlowRate",
+      "@id": "http://vocab.belgif.be/ns/hydrant#FireHydrant.flowRate",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "definition": {
         "en": "The nominal rate at which water flows through the fire hydrant."
       },
-      "usage": {
-        "en": "Typically measured in liters per minute (L/min)."
-      },
       "domain": [
         "https://saref.etsi.org/saref4watr/FireHydrant"
       ],
       "range": [
-        "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure"
+        "http://inspire.ec.europa.eu/ont/base#Measure"
       ],
       "generalization": []
     },
     {
-      "@id": "http://vocab.belgif.be/ns/hydrant#fireHydrantStatus",
+      "@id": "http://vocab.belgif.be/ns/hydrant#FireHydrant.type",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "definition": {
-        "en": "The current operational state of a fire hydrant."
+        "en": "The particular kind of fire hydrant."
       },
       "domain": [
         "https://saref.etsi.org/saref4watr/FireHydrant"
@@ -391,16 +426,128 @@
       "generalization": []
     },
     {
-      "@id": "http://vocab.belgif.be/ns/hydrant#fireHydrantType",
+      "@id": "http://vocab.belgif.be/ns/hydrant#Inspection.performedBy",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "definition": {
-        "en": "The classification or category of a fire hydrant."
+        "en": "The organisation that performed the inspection."
       },
       "domain": [
-        "https://saref.etsi.org/saref4watr/FireHydrant"
+        "http://vocab.belgif.be/ns/hydrant#Inspection"
+      ],
+      "range": [
+        "http://www.w3.org/ns/org#Organization"
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/hydrant#Maintenance.performedBy",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "definition": {
+        "en": "The organisation that performed the maintenance."
+      },
+      "domain": [
+        "http://vocab.belgif.be/ns/hydrant#Maintenance"
+      ],
+      "range": [
+        "http://www.w3.org/ns/org#Organization"
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/hydrant#Maintenance.requestedBy",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "definition": {
+        "en": "The organisation that requested the maintenance."
+      },
+      "domain": [
+        "http://vocab.belgif.be/ns/hydrant#Maintenance"
+      ],
+      "range": [
+        "http://www.w3.org/ns/org#Organization"
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/hydrant#Pipe.classification",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "definition": {
+        "en": "The categorisation of pipes."
+      },
+      "domain": [
+        "https://saref.etsi.org/saref4watr/Pipe"
       ],
       "range": [
         "http://www.w3.org/2004/02/skos/core#Concept"
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/hydrant#Pipe.diameter",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "definition": {
+        "en": "The nominal diameter of the underground water pipe going along the street."
+      },
+      "domain": [
+        "https://saref.etsi.org/saref4watr/Pipe"
+      ],
+      "range": [
+        "http://inspire.ec.europa.eu/ont/base#Measure"
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/hydrant#Pipe.flowRate",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "definition": {
+        "en": "The nominal rate at which water flows through the pipe."
+      },
+      "domain": [
+        "https://saref.etsi.org/saref4watr/Pipe"
+      ],
+      "range": [
+        "http://inspire.ec.europa.eu/ont/base#Measure"
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/hydrant#Usage.location",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "definition": {
+        "en": "The approximate or precise location of the usage of something."
+      },
+      "domain": [
+        "http://vocab.belgif.be/ns/hydrant#Usage"
+      ],
+      "range": [
+        "http://www.w3.org/ns/locn#Geometry"
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/hydrant#Usage.performedBy",
+      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
+      "definition": {
+        "en": "The organisation that used the Object."
+      },
+      "domain": [
+        "http://vocab.belgif.be/ns/hydrant#Usage"
+      ],
+      "range": [
+        "http://www.w3.org/ns/org#Organization"
+      ],
+      "generalization": []
+    },
+    {
+      "@id": "http://vocab.belgif.be/ns/hydrant#Valve.diameter",
+      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
+      "definition": {
+        "en": "The measurement of the circular opening through which the water flow, pressure or volume can be controlled in a fire hydrant."
+      },
+      "domain": [
+        "https://saref.etsi.org/saref4watr/Valve"
+      ],
+      "range": [
+        "http://inspire.ec.europa.eu/ont/base#Measure"
       ],
       "generalization": []
     },
@@ -410,28 +557,11 @@
       "definition": {
         "en": "The amount of force with which water moves to a pipe."
       },
-      "usage": {
-        "en": "Typically measured in Bar."
-      },
       "domain": [
         "https://saref.etsi.org/saref4watr/Pipe"
       ],
       "range": [
-        "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure"
-      ],
-      "generalization": []
-    },
-    {
-      "@id": "http://vocab.belgif.be/ns/hydrant#lastInspectionDate",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "definition": {
-        "en": "The date of the most recently performed inspection of a fire hydrant."
-      },
-      "domain": [
-        "https://saref.etsi.org/saref4watr/FireHydrant"
-      ],
-      "range": [
-        "http://www.w3.org/2001/XMLSchema#dateTime"
+        "http://inspire.ec.europa.eu/ont/base#Measure"
       ],
       "generalization": []
     },
@@ -442,7 +572,7 @@
         "en": "A tool used to open a fire hydrant by removing the cover of a fire hydrant's outlet."
       },
       "domain": [
-        "https://saref.etsi.org/saref4watr/FireHydrant"
+        "https://saref.etsi.org/saref4watr/Valve"
       ],
       "range": [
         "http://www.w3.org/2004/02/skos/core#Concept"
@@ -459,49 +589,7 @@
         "http://vocab.belgif.be/ns/hydrant#Outlet"
       ],
       "range": [
-        "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure"
-      ],
-      "generalization": []
-    },
-    {
-      "@id": "http://vocab.belgif.be/ns/hydrant#pipeDiameter",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "definition": {
-        "en": "The nominal diameter of the underground water pipe going along the street."
-      },
-      "domain": [
-        "https://saref.etsi.org/saref4watr/Pipe"
-      ],
-      "range": [
-        "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure"
-      ],
-      "generalization": []
-    },
-    {
-      "@id": "http://vocab.belgif.be/ns/hydrant#pipeStatus",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "definition": {
-        "en": "The current operational state of a pipe."
-      },
-      "domain": [
-        "https://saref.etsi.org/saref4watr/Pipe"
-      ],
-      "range": [
-        "http://www.w3.org/2004/02/skos/core#Concept"
-      ],
-      "generalization": []
-    },
-    {
-      "@id": "http://vocab.belgif.be/ns/hydrant#pipeType",
-      "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
-      "definition": {
-        "en": "The classification or category of a pipe."
-      },
-      "domain": [
-        "https://saref.etsi.org/saref4watr/Pipe"
-      ],
-      "range": [
-        "http://www.w3.org/2004/02/skos/core#Concept"
+        "http://inspire.ec.europa.eu/ont/base#Measure"
       ],
       "generalization": []
     },
@@ -523,7 +611,7 @@
       "@id": "http://vocab.belgif.be/ns/hydrant#statusRemark",
       "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
       "definition": {
-        "en": "A comment about minor flaws affecting the fire hydrant."
+        "en": "A comment about minor flows affecting the fire hydrant despite being operational."
       },
       "domain": [
         "https://saref.etsi.org/saref4watr/FireHydrant"
@@ -534,24 +622,10 @@
       "generalization": []
     },
     {
-      "@id": "http://vocab.belgif.be/ns/hydrant#valveDiameter",
-      "@type": "http://www.w3.org/2002/07/owl#DatatypeProperty",
-      "definition": {
-        "en": "The measurement of the circular opening through which the water flow, pressure or volume can be controlled in a fire hydrant."
-      },
-      "domain": [
-        "https://saref.etsi.org/saref4watr/Valve"
-      ],
-      "range": [
-        "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure"
-      ],
-      "generalization": []
-    },
-    {
       "@id": "http://vocab.belgif.be/ns/hydrant#waterType",
       "@type": "http://www.w3.org/2002/07/owl#ObjectProperty",
       "definition": {
-        "en": "The classification or category of water."
+        "en": "The particular kind of liquid which is running through a pipe."
       },
       "domain": [
         "https://saref.etsi.org/saref4watr/Pipe"
@@ -562,7 +636,64 @@
       "generalization": []
     }
   ],
-  "externalproperties": [],
+  "externalproperties": [
+    {
+      "name": {
+        "en": "date"
+      },
+      "@id": "http://purl.org/dc/terms/date",
+      "@type": "rdf:Property"
+    },
+    {
+      "name": {
+        "en": "date"
+      },
+      "@id": "http://purl.org/dc/terms/date",
+      "@type": "rdf:Property"
+    },
+    {
+      "name": {
+        "en": "date"
+      },
+      "@id": "http://purl.org/dc/terms/date",
+      "@type": "rdf:Property"
+    },
+    {
+      "name": {
+        "en": "description"
+      },
+      "@id": "http://purl.org/dc/terms/description",
+      "@type": "rdf:Property"
+    },
+    {
+      "name": {
+        "en": "description"
+      },
+      "@id": "http://purl.org/dc/terms/description",
+      "@type": "rdf:Property"
+    },
+    {
+      "name": {
+        "en": "description"
+      },
+      "@id": "http://purl.org/dc/terms/description",
+      "@type": "rdf:Property"
+    },
+    {
+      "name": {
+        "en": "uom"
+      },
+      "@id": "http://vocab.belgif.be/ns/building#uom",
+      "@type": "rdf:Property"
+    },
+    {
+      "name": {
+        "en": "value"
+      },
+      "@id": "https://qudt.org/schema/qudt/value",
+      "@type": "rdf:Property"
+    }
+  ],
   "@context": {
     "owl": "http://www.w3.org/2002/07/owl#",
     "void": "http://rdfs.org/ns/void#",

@@ -19,7 +19,6 @@
     },
     "ContactPoint": "http://data.europa.eu/m8g/ContactPoint",
     "ContactPoint.hasEmail": {
-      "@container": "@set",
       "@id": "http://data.europa.eu/m8g/email",
       "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
@@ -34,11 +33,32 @@
       "@type": "@id"
     },
     "FireHydrant.flowRate": {
-      "@id": "http://vocab.belgif.be/ns/hydrant#fireHydrantFlowRate",
-      "@type": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure"
+      "@id": "http://vocab.belgif.be/ns/hydrant#FireHydrant.flowRate",
+      "@type": "http://inspire.ec.europa.eu/ont/base#Measure"
     },
     "FireHydrant.geometry": {
+      "@container": "@set",
       "@id": "http://www.w3.org/ns/locn#geometry",
+      "@type": "@id"
+    },
+    "FireHydrant.hasInspection": {
+      "@container": "@set",
+      "@id": "http://vocab.belgif.be/ns/hydrant#FireHydrant.hasInspection",
+      "@type": "@id"
+    },
+    "FireHydrant.hasMaintenance": {
+      "@container": "@set",
+      "@id": "http://vocab.belgif.be/ns/hydrant#FireHydrant.hasMaintenance",
+      "@type": "@id"
+    },
+    "FireHydrant.hasPart": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/hasPart",
+      "@type": "@id"
+    },
+    "FireHydrant.hasUsage": {
+      "@container": "@set",
+      "@id": "http://vocab.belgif.be/ns/hydrant#FireHydrant.hasUsage",
       "@type": "@id"
     },
     "FireHydrant.identifier": {
@@ -46,21 +66,16 @@
       "@id": "http://www.w3.org/ns/adms#identifier",
       "@type": "@id"
     },
+    "FireHydrant.isConnectedTo": {
+      "@id": "http://vocab.belgif.be/ns/hydrant#isConnectedTo",
+      "@type": "@id"
+    },
     "FireHydrant.isOperatedBy": {
       "@id": "http://vocab.belgif.be/ns/hydrant#isOperatedBy",
       "@type": "@id"
     },
     "FireHydrant.isSuppliedBy": {
-      "@container": "@set",
       "@id": "http://vocab.belgif.be/ns/hydrant#isSuppliedBy",
-      "@type": "@id"
-    },
-    "FireHydrant.lastInspectionDate": {
-      "@id": "http://vocab.belgif.be/ns/hydrant#lastInspectionDate",
-      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
-    },
-    "FireHydrant.openingKey": {
-      "@id": "http://vocab.belgif.be/ns/hydrant#openingKey",
       "@type": "@id"
     },
     "FireHydrant.startDate": {
@@ -68,7 +83,7 @@
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "FireHydrant.status": {
-      "@id": "http://vocab.belgif.be/ns/hydrant#fireHydrantStatus",
+      "@id": "http://www.w3.org/ns/adms#status",
       "@type": "@id"
     },
     "FireHydrant.statusRemark": {
@@ -76,7 +91,7 @@
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
     "FireHydrant.type": {
-      "@id": "http://vocab.belgif.be/ns/hydrant#fireHydrantType",
+      "@id": "http://vocab.belgif.be/ns/hydrant#FireHydrant.type",
       "@type": "@id"
     },
     "GeographicalName": "http://vocab.belgif.be/ns/building#GeographicalName",
@@ -96,7 +111,7 @@
       "@id": "http://vocab.belgif.be/ns/building#spelling",
       "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
     },
-    "Geometry": "https://www.w3.org/ns/locn#Geometry",
+    "Geometry": "http://www.w3.org/ns/locn#Geometry",
     "Geometry.coordinates": {
       "@id": "https://www.w3.org/ns/locn#coordinates",
       "@type": "http://www.w3.org/2001/XMLSchema#string"
@@ -126,35 +141,72 @@
       "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
     "HydrantType": "http://www.w3.org/2004/02/skos/core#Concept",
-    "IcegUnit": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure",
-    "IcegUnit.uom": {
-      "@id": "http://vocab.belgif.be/ns/building#uom",
-      "@type": ""
-    },
-    "IcegUnit.value": {
-      "@id": "https://qudt.org/schema/qudt/value",
-      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
-    },
     "Identifier": "http://www.w3.org/ns/adms#Identifier",
-    "Identifier.assignedBy": {
-      "@id": "http://purl.org/dc/terms/creator",
-      "@type": "@id"
-    },
-    "Identifier.assignedByString": {
-      "@id": "http://www.w3.org/ns/adms#schemeAgency",
-      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
-    },
-    "Identifier.assignedOn": {
+    "Identifier.dateOfIssue": {
       "@id": "http://purl.org/dc/terms/issued",
       "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "Identifier.identifier": {
+      "@container": "@set",
       "@id": "http://www.w3.org/2004/02/skos/core#notation",
       "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
-    "Identifier.structuredIdentificator": {
-      "@id": "http://vocab.belgif.be/ns/building#structuredIdentificator",
+    "Identifier.issuingAuthorityName": {
+      "@id": "http://www.w3.org/ns/adms#schemeAgency",
+      "@type": ""
+    },
+    "Identifier.issuingAuthorityUri": {
+      "@id": "http://purl.org/dc/terms/creator",
+      "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "Identifier.schemeName": {
+      "@id": "http://purl.org/dc/terms/conformsTo",
+      "@type": ""
+    },
+    "Identifier.schemeUri": {
+      "@id": "http://purl.org/dc/terms/conformsTo",
+      "@type": "http://www.w3.org/2001/XMLSchema#anyURI"
+    },
+    "Inspection": "http://vocab.belgif.be/ns/hydrant#Inspection",
+    "Inspection.date": {
+      "@id": "http://purl.org/dc/terms/date",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Inspection.description": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/description",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "Inspection.performedBy": {
+      "@id": "http://vocab.belgif.be/ns/hydrant#Inspection.performedBy",
       "@type": "@id"
+    },
+    "Maintenacne": "http://vocab.belgif.be/ns/hydrant#Maintenance",
+    "Maintenacne.date": {
+      "@id": "http://purl.org/dc/terms/date",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Maintenacne.description": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/description",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "Maintenacne.performedBy": {
+      "@id": "http://vocab.belgif.be/ns/hydrant#Maintenance.performedBy",
+      "@type": "@id"
+    },
+    "Maintenacne.requestedBy": {
+      "@id": "http://vocab.belgif.be/ns/hydrant#Maintenance.requestedBy",
+      "@type": "@id"
+    },
+    "Measure": "http://inspire.ec.europa.eu/ont/base#Measure",
+    "Measure.uom": {
+      "@id": "http://vocab.belgif.be/ns/building#uom",
+      "@type": "@id"
+    },
+    "Measure.value": {
+      "@id": "https://qudt.org/schema/qudt/value",
+      "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
     },
     "NameStatusValue": "http://www.w3.org/2004/02/skos/core#Concept",
     "NativenessValue": "http://www.w3.org/2004/02/skos/core#Concept",
@@ -176,10 +228,10 @@
     "Outlet": "http://vocab.belgif.be/ns/hydrant#Outlet",
     "Outlet.diameter": {
       "@id": "http://vocab.belgif.be/ns/hydrant#outletDiameter",
-      "@type": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure"
+      "@type": "http://inspire.ec.europa.eu/ont/base#Measure"
     },
     "Outlet.isPartOf": {
-      "@id": " http://purl.org/dc/terms/isPartOf",
+      "@id": "http://purl.org/dc/terms/isPartOf",
       "@type": "@id"
     },
     "Pipe": "https://saref.etsi.org/saref4watr/Pipe",
@@ -188,15 +240,24 @@
       "@id": "http://w3.org/ns/locn#address",
       "@type": "@id"
     },
+    "Pipe.classification": {
+      "@id": "http://vocab.belgif.be/ns/hydrant#Pipe.classification",
+      "@type": "@id"
+    },
     "Pipe.diameter": {
-      "@id": "http://vocab.belgif.be/ns/hydrant#pipeDiameter",
-      "@type": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure"
+      "@id": "http://vocab.belgif.be/ns/hydrant#Pipe.diameter",
+      "@type": "http://inspire.ec.europa.eu/ont/base#Measure"
     },
     "Pipe.flowPressure": {
       "@id": "http://vocab.belgif.be/ns/hydrant#flowPressure",
-      "@type": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure"
+      "@type": "http://inspire.ec.europa.eu/ont/base#Measure"
+    },
+    "Pipe.flowRate": {
+      "@id": "http://vocab.belgif.be/ns/hydrant#Pipe.flowRate",
+      "@type": "http://inspire.ec.europa.eu/ont/base#Measure"
     },
     "Pipe.geometry": {
+      "@container": "@set",
       "@id": "http://www.w3.org/ns/locn#geometry",
       "@type": "@id"
     },
@@ -205,9 +266,9 @@
       "@id": "http://www.w3.org/ns/adms#identifier",
       "@type": "@id"
     },
-    "Pipe.isConnected": {
+    "Pipe.isConnectedTo": {
       "@container": "@set",
-      "@id": "http://vocab.belgif.be/ns/hydrant#isConnected",
+      "@id": "http://vocab.belgif.be/ns/hydrant#isConnectedTo",
       "@type": "@id"
     },
     "Pipe.isOperatedBy": {
@@ -215,7 +276,7 @@
       "@type": "@id"
     },
     "Pipe.status": {
-      "@id": "http://vocab.belgif.be/ns/hydrant#pipeStatus",
+      "@id": "http://www.w3.org/ns/adms#status",
       "@type": "@id"
     },
     "Pipe.supplies": {
@@ -224,7 +285,7 @@
       "@type": "@id"
     },
     "Pipe.type": {
-      "@id": "http://vocab.belgif.be/ns/hydrant#pipeType",
+      "@id": "http://purl.org/dc/terms/type",
       "@type": "@id"
     },
     "Pipe.waterType": {
@@ -232,15 +293,38 @@
       "@id": "http://vocab.belgif.be/ns/hydrant#waterType",
       "@type": "@id"
     },
+    "PipeClassificationType": "http://www.w3.org/2004/02/skos/core#Concept",
     "PipeType": "http://www.w3.org/2004/02/skos/core#Concept",
     "Status": "http://www.w3.org/2004/02/skos/core#Concept",
+    "Usage": "http://vocab.belgif.be/ns/hydrant#Usage",
+    "Usage.date": {
+      "@id": "http://purl.org/dc/terms/date",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Usage.description": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/description",
+      "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "Usage.location": {
+      "@id": "http://vocab.belgif.be/ns/hydrant#Usage.location",
+      "@type": "@id"
+    },
+    "Usage.performedBy": {
+      "@id": "http://vocab.belgif.be/ns/hydrant#Usage.performedBy",
+      "@type": "@id"
+    },
     "Valve": "https://saref.etsi.org/saref4watr/Valve",
     "Valve.diameter": {
-      "@id": "http://vocab.belgif.be/ns/hydrant#valveDiameter",
-      "@type": "http://def.isotc211.org/iso19103/2015/MeasureTypes#Measure"
+      "@id": "http://vocab.belgif.be/ns/hydrant#Valve.diameter",
+      "@type": "http://inspire.ec.europa.eu/ont/base#Measure"
     },
     "Valve.isPartOf": {
-      "@id": " http://purl.org/dc/terms/isPartOf",
+      "@id": "http://purl.org/dc/terms/isPartOf",
+      "@type": "@id"
+    },
+    "Valve.openingKey": {
+      "@id": "http://vocab.belgif.be/ns/hydrant#openingKey",
       "@type": "@id"
     }
   }
