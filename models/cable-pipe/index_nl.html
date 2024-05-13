@@ -2250,6 +2250,7 @@
                     <a href="#UtilityNetworkElement%3AcurrentStatus">huidigeStatus</a>,
                     <a href="#UtilityNetworkElement%3Aidentifier">identificator</a>,
                     <a href="#UtilityNetworkElement%3AinNetwork">in netwerk</a>,
+                    <a href="#UtilityNetworkElement%3AutilityFacilityReference">nutsvoorzieningInrichtingReferentie</a>,
                     <a href="#UtilityNetworkElement%3AverticalPosition">verticale positie</a>,
                     <a href="#UtilityNetworkElement%3AverticalPositionDetail">verticale positiedetail</a>.
                   </dd>
@@ -2326,7 +2327,7 @@
 
 
                       </td>
-                      <td>0..1</td>
+                      <td>1</td>
                       <td property="rdfs:comment">Tijdstip vanaf wanneer het element in de werkelijkheid bestond.</td>
                       <td property="skos:scopeNote"></td>
                       <td></td>
@@ -2388,6 +2389,26 @@
                       </td>
                       <td>1..*</td>
                       <td property="rdfs:comment">Nutsvoorzieningnetwerk waartoe het element behoort.</td>
+                      <td property="skos:scopeNote"></td>
+                      <td></td>
+                    </tr>
+
+                    <tr id="UtilityNetworkElement%3AutilityFacilityReference" typeof="rdfs:Eigenschap" resource="https://vocab.belgif.be/ns/utility-services#nutsvoorzieningInrichtingReferentie">
+                      <td>
+                        <code property="rdfs:label">
+                            <a href="https://vocab.belgif.be/ns/utility-services#nutsvoorzieningInrichtingReferentie" data-toggle="tooltip" data-content="https://vocab.belgif.be/ns/utility-services#nutsvoorzieningInrichtingReferentie" data-placement="right">
+                            nutsvoorzieningInrichtingReferentie</a>
+                          </code>
+                      </td>
+                      <td>
+
+
+                        <a href="#Activiteitencomplex" data-placement="right">Activiteitencomplex</a>
+
+
+                      </td>
+                      <td>0..*</td>
+                      <td property="rdfs:comment">Verwijzing naar een activiteitencomplex verbonden aan dit nutsvoorzieningnetwerk.</td>
                       <td property="skos:scopeNote"></td>
                       <td></td>
                     </tr>
@@ -3292,13 +3313,14 @@
                   <dt>Eigenschappen</dt>
 
                   <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
-                    <a href="#UtilityNetwork%3AactivityComplexReference">activiteitencomplexreferentie</a>,
+                    <a href="#UtilityNetwork%3AprotectedArea">beschermdGebied</a>,
                     <a href="#UtilityNetwork%3AauthorityRole">bevoegdePartij</a>,
                     <a href="#UtilityNetwork%3Adisclaimer">disclaimer</a>,
                     <a href="#UtilityNetwork%3Adocumentation">documentatie</a>,
                     <a href="#UtilityNetwork%3Aelement">element</a>,
                     <a href="#UtilityNetwork%3AgeographicalName">geografischeNaam</a>,
                     <a href="#UtilityNetwork%3Anetwork">netwerk</a>,
+                    <a href="#UtilityNetwork%3AutilityFacilityReference">nutsvoorzieningInrichtingReferentie</a>,
                     <a href="#UtilityNetwork%3AutilityNetworkType">nutsvoorzieningnetwerktype</a>,
                     <a href="#UtilityNetwork%3AstandardVerticalPositionDetail">standaardVerticalePositiedetail</a>.
                   </dd>
@@ -3321,22 +3343,22 @@
 
                   <tbody class="supertype">
 
-                    <tr id="UtilityNetwork%3AactivityComplexReference" typeof="rdfs:Eigenschap" resource="https://vocab.belgif.be/ns/utility-services#activityComplexReference">
+                    <tr id="UtilityNetwork%3AprotectedArea" typeof="rdfs:Eigenschap" resource="https://vocab.belgif.be/ns/utility-services#protectedArea">
                       <td>
                         <code property="rdfs:label">
-                            <a data-toggle="tooltip" data-content="https://vocab.belgif.be/ns/utility-services#activityComplexReference" data-placement="right">
-                            activiteitencomplexreferentie</a>
+                            <a href="https://vocab.belgif.be/ns/utility-services#protectedArea" data-toggle="tooltip" data-content="https://vocab.belgif.be/ns/utility-services#protectedArea" data-placement="right">
+                            beschermdGebied</a>
                           </code>
                       </td>
                       <td>
 
 
-                        <a href="#ActivityComplex" data-placement="right">Activiteitencomplex</a>
+                        <a href="#Beschermd Gebied" data-placement="right">Beschermd Gebied</a>
 
 
                       </td>
                       <td>0..*</td>
-                      <td property="rdfs:comment">Activiteitencomplex dat tot het netwerk behoort.</td>
+                      <td property="rdfs:comment">Gebied waarbinnen bepaalde voorschriften gelden bij het uitvoeren van werkzaamheden.</td>
                       <td property="skos:scopeNote"></td>
                       <td></td>
                     </tr>
@@ -3457,6 +3479,26 @@
                       </td>
                       <td>0..*</td>
                       <td property="rdfs:comment">Nutsvoorzieningnetwerk dat met het Nutsvoorzieningnetwerk is geassocieerd.</td>
+                      <td property="skos:scopeNote"></td>
+                      <td></td>
+                    </tr>
+
+                    <tr id="UtilityNetwork%3AutilityFacilityReference" typeof="rdfs:Eigenschap" resource="https://vocab.belgif.be/ns/utility-services#utilityFacilityReference">
+                      <td>
+                        <code property="rdfs:label">
+                            <a href="https://vocab.belgif.be/ns/utility-services#utilityFacilityReference" data-toggle="tooltip" data-content="https://vocab.belgif.be/ns/utility-services#utilityFacilityReference" data-placement="right">
+                            nutsvoorzieningInrichtingReferentie</a>
+                          </code>
+                      </td>
+                      <td>
+
+
+                        <a href="#Activiteitencomplex" data-placement="right">Activiteitencomplex</a>
+
+
+                      </td>
+                      <td>0..*</td>
+                      <td property="rdfs:comment">Activiteitencomplex dat tot het netwerk behoort.</td>
                       <td property="skos:scopeNote"></td>
                       <td></td>
                     </tr>
@@ -4143,6 +4185,7 @@
 
                   <dd>Voor deze entiteit zijn de volgende eigenschappen gedefinieerd:
                     <a href="#Appurtenance%3Aheight">hoogte</a>,
+                    <a href="#Appurtenance%3Asubtheme">subthema</a>,
                     <a href="#Appurtenance%3AappurtenanceType">toebehorentype</a>.
                   </dd>
 
@@ -4180,6 +4223,26 @@
                       </td>
                       <td>0..1</td>
                       <td property="rdfs:comment">De hoogte van het Toebehoren.</td>
+                      <td property="skos:scopeNote"></td>
+                      <td></td>
+                    </tr>
+
+                    <tr id="Appurtenance%3Asubtheme" typeof="rdfs:Eigenschap" resource="https://vocab.belgif.be/ns/utility-services#Appurtenance.subtheme">
+                      <td>
+                        <code property="rdfs:label">
+                            <a href="https://vocab.belgif.be/ns/utility-services#Appurtenance.subtheme" data-toggle="tooltip" data-content="https://vocab.belgif.be/ns/utility-services#Appurtenance.subtheme" data-placement="right">
+                            subthema</a>
+                          </code>
+                      </td>
+                      <td>
+
+
+                        <a href="#Subthema" data-placement="right">Subthema</a>
+
+
+                      </td>
+                      <td>1</td>
+                      <td property="rdfs:comment">Classificatie van een Toebehoren volgens het thematisch domein waar deze toe behoort.</td>
                       <td property="skos:scopeNote"></td>
                       <td></td>
                     </tr>

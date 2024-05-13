@@ -562,6 +562,7 @@
                         <div class="region region--no-space-top typography" id="summary">
                             <h2 class="h2" aria-level="1" role="heading" id="h2_sotd">Summary</h2>
 
+                            <p>ATTENTION: Make sure your automated translation is disabled in your browser.</p>
                             <p>The ICEG Cables and Pipes application profile shows how terms from the associated <a href="https://data.vlaanderen.be/ns/nutsvoorzieningen">vocabulary</a> should be used to describe cables and pipes/ducts. This application model is based on the IMKL Cables and Pipes Information Model.</p>
                             <p>These can be located both above and below ground. As far as the underground cables and pipes or ducts are concerned, the description is such that all elements are present that contribute to limiting excavation damage.</p>
                             <p>The model builds on <a href="https://knowledge-base.inspire.ec.europa.eu/utility-and-governmental-services_en">INSPIRE Utility Services</a> and models on which that model is based, mainly INSPIRE Networks.</p>
@@ -1126,7 +1127,8 @@
 
                                     <dd>For this entity the following properties are defined:
                                         <a href="#Appurtenance%3AappurtenanceType">appurtenance type</a>,
-                                        <a href="#Appurtenance%3Aheight">height</a>.
+                                        <a href="#Appurtenance%3Aheight">height</a>,
+                                        <a href="#Appurtenance%3Asubtheme">subtheme</a>.
                                     </dd>
 
                                 </dl>
@@ -1183,6 +1185,26 @@
                                             </td>
                                             <td>0..1</td>
                                             <td property="rdfs:comment">The height of the Appurtenance.</td>
+                                            <td property="skos:scopeNote"></td>
+                                            <td></td>
+                                        </tr>
+
+                                        <tr id="Appurtenance%3Asubtheme" typeof="rdfs:Property" resource="https://vocab.belgif.be/ns/utility-services#Appurtenance.subtheme">
+                                            <td>
+                                                <code property="rdfs:label">
+                                                  <a href="https://vocab.belgif.be/ns/utility-services#Appurtenance.subtheme" data-toggle="tooltip" data-content="https://vocab.belgif.be/ns/utility-services#Appurtenance.subtheme" data-placement="right">
+                                                  subtheme</a>
+                                                </code>
+                                            </td>
+                                            <td>
+
+
+                                                <a href="#Subtheme Value" data-placement="right">Subtheme Value</a>
+
+
+                                            </td>
+                                            <td>1</td>
+                                            <td property="rdfs:comment">Classification of a Appurtunance according to the thematic domain to which they belong.</td>
                                             <td property="skos:scopeNote"></td>
                                             <td></td>
                                         </tr>
@@ -3548,14 +3570,15 @@
                                     <dt>Properties</dt>
 
                                     <dd>For this entity the following properties are defined:
-                                        <a href="#UtilityNetwork%3AactivityComplexReference">activity complex reference</a>,
                                         <a href="#UtilityNetwork%3AauthorityRole">authority role</a>,
                                         <a href="#UtilityNetwork%3Adisclaimer">disclaimer</a>,
                                         <a href="#UtilityNetwork%3Adocumentation">documentation</a>,
                                         <a href="#UtilityNetwork%3Aelement">element</a>,
                                         <a href="#UtilityNetwork%3AgeographicalName">geographical name</a>,
                                         <a href="#UtilityNetwork%3Anetwork">network</a>,
+                                        <a href="#UtilityNetwork%3AprotectedArea">protected area</a>,
                                         <a href="#UtilityNetwork%3AstandardVerticalPositionDetail">standard vertical position detail</a>,
+                                        <a href="#UtilityNetwork%3AutilityFacilityReference">utility facility reference</a>,
                                         <a href="#UtilityNetwork%3AutilityNetworkType">utility network type</a>.
                                     </dd>
 
@@ -3577,11 +3600,11 @@
 
                                     <tbody class="supertype">
 
-                                        <tr id="UtilityNetwork%3AactivityComplexReference" typeof="rdfs:Property" resource="https://vocab.belgif.be/ns/utility-services#activityComplexReference">
+                                        <tr id="UtilityNetwork%3AutilityFacilityReference" typeof="rdfs:Property" resource="https://vocab.belgif.be/ns/utility-services#utilityFacilityReference">
                                             <td>
                                                 <code property="rdfs:label">
-                            <a data-toggle="tooltip" data-content="https://vocab.belgif.be/ns/utility-services#activityComplexReference" data-placement="right">
-                            activity complex reference</a>
+                            <a data-toggle="tooltip" data-content="https://vocab.belgif.be/ns/utility-services#utilityFacilityReference" data-placement="right">
+                            utility facility reference</a>
                           </code>
                                             </td>
                                             <td>
@@ -3717,6 +3740,26 @@
                                             <td></td>
                                         </tr>
 
+                                        <tr id="UtilityNetwork%3AprotectedArea" typeof="rdfs:Property" resource="https://vocab.belgif.be/ns/utility-services#protectedArea">
+                                            <td>
+                                                <code property="rdfs:label">
+                                                  <a href="https://vocab.belgif.be/ns/utility-services#protectedArea" data-toggle="tooltip" data-content="https://vocab.belgif.be/ns/utility-services#protectedArea" data-placement="right">
+                                                  protected area</a>
+                                                </code>
+                                            </td>
+                                            <td>
+
+
+                                                <a href="#Protected Area" data-placement="right">Protected Area</a>
+
+
+                                            </td>
+                                            <td>0..*</td>
+                                            <td property="rdfs:comment">Area within which certain regulations apply when carrying out works.</td>
+                                            <td property="skos:scopeNote"></td>
+                                            <td></td>
+                                        </tr>
+
                                         <tr id="UtilityNetwork%3AstandardVerticalPositionDetail" typeof="rdfs:Property" resource="https://vocab.belgif.be/ns/utility-services#standardVerticalPositionDetail">
                                             <td>
                                                 <code property="rdfs:label">
@@ -3734,6 +3777,26 @@
                                             <td>0..*</td>
                                             <td property="rdfs:comment">Default Vertical Position of elements in the network.</td>
                                             <td property="skos:scopeNote">For example the default Depth at which the elements are located.</td>
+                                            <td></td>
+                                        </tr>
+
+                                        <tr id="UtilityNetwork%3AutilityFacilityReference" typeof="rdfs:Property" resource="https://vocab.belgif.be/ns/utility-services#utilityFacilityReference">
+                                            <td>
+                                                <code property="rdfs:label">
+                                                  <a href="https://vocab.belgif.be/ns/utility-services#utilityFacilityReference" data-toggle="tooltip" data-content="https://vocab.belgif.be/ns/utility-services#utilityFacilityReference" data-placement="right">
+                                                  utility facility reference</a>
+                                                </code>
+                                            </td>
+                                            <td>
+
+
+                                                <a href="#Activity Complex" data-placement="right">Activity Complex</a>
+
+
+                                            </td>
+                                            <td>0..*</td>
+                                            <td property="rdfs:comment">Activity Complex belonging to the network.</td>
+                                            <td property="skos:scopeNote"></td>
                                             <td></td>
                                         </tr>
 
@@ -3781,6 +3844,7 @@
                                         <a href="#UtilityNetworkElement%3Adocumentation">documentation</a>,
                                         <a href="#UtilityNetworkElement%3Aidentifier">identifier</a>,
                                         <a href="#UtilityNetworkElement%3AinNetwork">in network</a>,
+                                        <a href="#UtilityNetworkElement%3AutilityFacilityReference">utility facility reference</a>,
                                         <a href="#UtilityNetworkElement%3AvalidFrom">valid from</a>,
                                         <a href="#UtilityNetworkElement%3AvalidTo">valid to</a>,
                                         <a href="#UtilityNetworkElement%3AverticalPosition">vertical position</a>,
@@ -3885,6 +3949,26 @@
                                             <td></td>
                                         </tr>
 
+                                        <tr id="UtilityNetworkElement%3AutilityFacilityReference" typeof="rdfs:Property" resource="https://vocab.belgif.be/ns/utility-services#nutsvoorzieningInrichtingReferentie">
+                                            <td>
+                                                <code property="rdfs:label">
+                                                  <a href="https://vocab.belgif.be/ns/utility-services#nutsvoorzieningInrichtingReferentie" data-toggle="tooltip" data-content="https://vocab.belgif.be/ns/utility-services#nutsvoorzieningInrichtingReferentie" data-placement="right">
+                                                  utility facility reference</a>
+                                                </code>
+                                            </td>
+                                            <td>
+
+
+                                                <a href="#Activity Complex" data-placement="right">Activity Complex</a>
+
+
+                                            </td>
+                                            <td>0..*</td>
+                                            <td property="rdfs:comment">Reference to a complex of activities related to this (element of a) utility network.</td>
+                                            <td property="skos:scopeNote"></td>
+                                            <td></td>
+                                        </tr>
+
                                         <tr id="UtilityNetworkElement%3AvalidFrom" typeof="rdfs:Property" resource="https://vocab.belgif.be/ns/utility-services#validFrom">
                                             <td>
                                                 <code property="rdfs:label">
@@ -3899,7 +3983,7 @@
 
 
                                             </td>
-                                            <td>0..1</td>
+                                            <td>1</td>
                                             <td property="rdfs:comment">The time when the Utility Network Element started to exist in the real world.</td>
                                             <td property="skos:scopeNote"></td>
                                             <td></td>
