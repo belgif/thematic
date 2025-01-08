@@ -14,7 +14,7 @@
 	<dc:title xml:lang="en">Catalog of FPS Justice</dc:title>
 	<dc:description xml:lang="en">Initial version of catalog of FPS Justice</dc:description>
 	<dc:publisher rdf:resource="https://org.belgif.be/id/CbeRegisteredEntity/0308357753"/>
-	<dc:spatial rdf:resource="http://sws.geonames.org/2802361/"/>
+	<dc:spatial rdf:resource="https://sws.geonames.org/2802361/"/>
 
 	<dcat:dataset>
 		<dcat:Dataset rdf:about="http://data.gov.be/dataset/fpsjustice/munabbrev">
@@ -45,7 +45,7 @@
 		
 			<dc:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
 
-			<dc:spatial rdf:resource="http://sws.geonames.org/2802361/"/>
+			<dc:spatial rdf:resource="https://sws.geonames.org/2802361/"/>
 			
 			<dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-24</dc:modified>
 
@@ -113,7 +113,7 @@
 			<dc:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
 			<dc:license rdf:resource="http://publications.europa.eu/resource/authority/licence/CC0"/>
 					
-			<dc:spatial rdf:resource="http://sws.geonames.org/2802361/"/>
+			<dc:spatial rdf:resource="https://sws.geonames.org/2802361/"/>
 	
 			<dc:temporal>
 				<dc:PeriodOfTime>
@@ -168,7 +168,7 @@
 			<dc:accessRights rdf:resource="http://publications.europa.eu/resource/authority/access-right/PUBLIC"/>
 			<dc:license rdf:resource="http://publications.europa.eu/resource/authority/licence/CC0"/>
 					
-			<dc:spatial rdf:resource="http://sws.geonames.org/2802361/"/>
+			<dc:spatial rdf:resource="https://sws.geonames.org/2802361/"/>
 	
 			<dc:temporal>
 				<dc:PeriodOfTime>
@@ -213,7 +213,7 @@
 	<skos:prefLabel xml:lang="en">Government and public sector</skos:prefLabel>
 </skos:Concept>
 
-<skos:Concept rdf:about="http://sws.geonames.org/2802361/">
+<skos:Concept rdf:about="https://sws.geonames.org/2802361/">
  	<rdf:type rdf:resource="http://purl.org/dc/terms/Location"/>
 	<skos:prefLabel xml:lang="nl">België</skos:prefLabel>
 	<skos:prefLabel xml:lang="fr">Belgique</skos:prefLabel>
