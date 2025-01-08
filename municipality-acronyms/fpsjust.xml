@@ -19,10 +19,10 @@
 	<dcat:dataset>
 		<dcat:Dataset rdf:about="http://data.gov.be/dataset/fpsjustice/munabbrev">
 			<dc:identifier>fpsjust-munabbrev</dc:identifier>
-			<dc:title xml:lang="nl">Afkortingen gemeentes</dc:title>
-			<dc:title xml:lang="fr">Abréviations municipalités</dc:title>
-			<dc:description xml:lang="nl">Afkortingen van gemeentenamen, zoals gebruikt wordt door de FOD Justitie.</dc:description>
-			<dc:description xml:lang="fr">Abréviations des noms des communes, telles qu'utilisées par le SPF Justice.</dc:description>
+			<dc:title xml:lang="nl">Afkortingen steden en gemeenten</dc:title>
+			<dc:title xml:lang="fr">Abréviations villes et communes</dc:title>
+			<dc:description xml:lang="nl">De referentielijst in België voor alle unieke acroniemen (afkortingen) van alle Belgische steden en gemeenten. De lijst wordt beheerd door FOD Justitie. Deze mag gebruikt worden door alle overheidsinstellingen en de private sector.</dc:description>
+			<dc:description xml:lang="fr">La liste de référence en Belgique pour tous les acronymes uniques (abréviations) de toutes les villes et communes belges. La liste est gérée par le SPF Justice. Elle peut être utilisée par toutes les institutions publiques et le secteur privé.</dc:description>
 			<dc:language rdf:resource="http://publications.europa.eu/resource/authority/language/NLD"/>
 			<dc:language rdf:resource="http://publications.europa.eu/resource/authority/language/FRA"/>
 
@@ -47,15 +47,15 @@
 
 			<dc:spatial rdf:resource="http://sws.geonames.org/2802361/"/>
 			
-			<dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-10-30</dc:modified>
+			<dc:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-12-24</dc:modified>
 
 			<dcat:distribution>
 				<dcat:Distribution rdf:about="http://data.gov.be/dist/fpsjustice/munabbrev/xls">
-					<dc:title xml:lang="nl">Afkortingen gemeentes</dc:title>
-					<dc:title xml:lang="fr">Abréviations municipalités</dc:title>
+					<dc:title xml:lang="nl">Afkortingen steden en gemeentes</dc:title>
+					<dc:title xml:lang="fr">Abréviations villes et communes</dc:title>
 					
 					<dcat:accessURL rdf:resource="https://github.com/belgif/thematic/tree/master/municipality-acronyms"/>
-					<dcat:downloadURL rdf:resource="https://github.com/belgif/thematic/raw/refs/heads/master/municipality-acronyms/JustReference_StedenGemeentes_Acroniemen_IH_MASTER_08122023.xlsx"/>
+					<dcat:downloadURL rdf:resource="https://github.com/belgif/thematic/raw/refs/heads/master/municipality-acronyms/JustReference_StedenGemeentes_Acroniemen_IH_MASTER_19122024.xlsx"/>
 
 					<dcat:mediaType rdf:resource="https://www.iana.org/assignments/media-types/application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
 					<dc:format rdf:resource="http://publications.europa.eu/resource/authority/file-type/XLSX"/>
