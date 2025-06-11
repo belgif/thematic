@@ -11,8 +11,8 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://dij151upo6vad.cloudfront.net/2.latest/css/vlaanderen-ui.css" />
-  <link rel="stylesheet" href="https://dij151upo6vad.cloudfront.net/2.latest/css/vlaanderen-ui-corporate.css" />
+  <link rel="stylesheet" href="https://ui.vlaanderen.be/2.latest/css/vlaanderen-ui.css" />
+  <link rel="stylesheet" href="https://ui.vlaanderen.be/2.latest/css/vlaanderen-ui-corporate.css" />
 
   <link rel="icon" sizes="192x192" href="/cms/icons/DUETLogo.jpg" />
   <link rel="apple-touch-icon" href="/cms/icons/DUETLogo.jpg" />
@@ -890,7 +890,8 @@ In other words, a Business Event groups together a number of public services tha
                         <td property="skos:scopeNote">The value should follow the flexible format defined for schema.org's opening hours property.
 Following that structure, days of the week are represented by two letter codes (Mo,Tu, We, Th, Fr, Sa, Su).  Lists should be comma separated (for example: Mo, We, Fr) and periods separated by a hyphen (for example: Mo-Fr).
 
-If it is appropriate to add opening hours then this follows the day so if a phone service is available 08:00-20:00 Monday to Saturday and 08:00-18:00 on Sundays that would be encoded as Mo-Sa 08:00-20:00, Su 08:00-18:00.</td>
+If it is appropriate to add opening hours then this follows the day so if a phone service is available 08:00-20:00 Monday to Saturday and 08:00-18:00 on Sundays that would be encoded as Mo-Sa 08:00-20:00, Su 08:00-18:00.
+</td>
                         <td></td>
                       </tr>
                     
@@ -1354,7 +1355,8 @@ The cost breakdown property is not to be confused with the description property 
                           
                         </td>
 			<td>0..*</td>
-                        <td property="rdfs:comment">This property links the Cost class with one or more instances of the Public Organization class. This property indicates which Public Organization is the Competent Authority for defining the costs associated with the delivery of a particular Public Service.</td>
+                        <td property="rdfs:comment">This property links the Cost class with one or more instances of the Public Organization class. This property indicates which Public Organization is the Competent Authority for defining the costs associated with the delivery of a particular Public Service.
+</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -1389,7 +1391,8 @@ The cost breakdown property is not to be confused with the description property 
               <h3 class="h3" id="Event"><a href="http://data.europa.eu/m8g/Event" data-toggle="tooltip" data-content="http://data.europa.eu/m8g/Event" data-placement="right">Event</a></h3>
                 <div class="region region--no-space-top">
                   <dl>
-                    <dt>Description</dt><dd>This class represents an event that can be of any type that triggers, makes use of, or in some way is related to, a Public Service. It is not expected to be used directly, rather, one or other of its subclasses should be used. The properties of the class are, of course, inherited by those subclasses.
+                    <dt>Description</dt><dd>This class represents an event that can be of any type that triggers, makes use of, or in some way is related to, a Public Service. It is not expected to be used directly, rather, one or other of its subclasses should be used. The properties of the class are, of course, inherited by those subclasses.
+
 
 The Event class is used as a hook either to a single related Public Service, such as diagnosis of illness being related to application for sickness benefit ;
 or to a group of Public Services, such as all those related to the establishment of a new business.</dd>
@@ -1538,7 +1541,8 @@ or to a group of Public Services, such as all those related to the establishment
 
 Evidence can be any resource - document, artefact - anything needed for executing the Public Service. In the context of Public Services, Evidence is usually administrative documents or completed application forms. A specific Public Service may require the presence of certain Evidence or combinations of Evidence in order to be delivered.
 
-In some cases, the Output of one service will be Evidence for another service. Such relationships should be described in the associated Rule(s).</dd>
+In some cases, the Output of one service will be Evidence for another service. Such relationships should be described in the associated Rule(s).
+</dd>
                     
 		    
                     <dt>Properties</dt>
@@ -2334,7 +2338,8 @@ this is an extension mechanism for the CSPV-AP, the controlled vocabulary should
                   <dl>
                     <dt>Description</dt><dd>Any Organization that is defined as being part of the public sector by a legal framework at any level.</dd>
                     
-                    <dt>Usage</dt><dd>Within this model the following properties are mandatory: preferred label and spatial. The value of the latter should be a URI from the Administrative Territorial Units Named Authority List maintained by the Publications Office's Metadata Registry.</dd>
+                    <dt>Usage</dt><dd>Within this model the following properties are mandatory: preferred label and spatial. The value of the latter should be a URI from the Administrative Territorial Units Named Authority List maintained by the Publications Office's Metadata Registry.
+</dd>
                     
 		    
                     <dt>Properties</dt>
@@ -2643,7 +2648,8 @@ thereof.</td>
                           
                         </td>
 			<td>0..*</td>
-                        <td property="rdfs:comment">The Has Legal Resource property links a Public Service to a Legal Resource. It indicates the Legal Resource (e.g. legislation) to which the Public Service relates, operates or has its legal basis.</td>
+                        <td property="rdfs:comment">The Has Legal Resource property links a Public Service to a Legal Resource. It indicates the Legal Resource (e.g. legislation) to which the Public Service relates, operates or has its legal basis.
+</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -2704,7 +2710,8 @@ thereof.</td>
                         </td>
 			<td>0..*</td>
                         <td property="rdfs:comment">The term Competent Authority is defined in the Services Directive (2006/123/EC) in the following way: &quot;Any body or authority which has a supervisory or regulatory role in a Member State in relation to service activities, including, in particular, administrative authorities,
-including courts acting as such, professional bodies, and those professional associations or other professional organisations which, in the exercise of their legal autonomy, regulate in a collective manner access to service activities or the exercise thereof.&quot;</td>
+including courts acting as such, professional bodies, and those professional associations or other professional organisations which, in the exercise of their legal autonomy, regulate in a collective manner access to service activities or the exercise thereof.&quot;
+</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -2825,7 +2832,8 @@ Public Services may be associated with a particular Event and, likewise, the sam
                           
                         </td>
 			<td>0..*</td>
-                        <td property="rdfs:comment">This property represents the language(s) in which the Public Service is available. This could be one language or multiple languages, for instance in countries with more than one official language. The possible values for this property are described in a controlled vocabulary. The recommended controlled vocabularies are listed in section 4.</td>
+                        <td property="rdfs:comment">This property represents the language(s) in which the Public Service is available. This could be one language or multiple languages, for instance in countries with more than one official language. The possible values for this property are described in a controlled vocabulary. The recommended controlled vocabularies are listed in section 4.
+</td>
                         <td property="skos:scopeNote"></td>
                         <td></td>
                       </tr>
@@ -3483,7 +3491,8 @@ Each purpose can have one or more preferred channels, and one or more "deprecate
 Instances of the Rule class are FRBR (Functional Requirements for Bibliographic Records) Expressions, that is, a concrete expression such
 as a document, of the more abstract concept of the rules themselves.This model does not envisage instances of the Rule class as machine-readable business rules.
 
-Detailed modelling of the rules related to Public Services is out of scope of this model.</dd>
+Detailed modelling of the rules related to Public Services is out of scope of this model.
+</dd>
                     
 		    
                     <dt>Properties</dt>
@@ -3763,7 +3772,7 @@ No changelog defined.
 			      -->
                           </ul>
                       </div>
-                  </div>
+               https://ui.vlaanderen.be
               </nav>
           </div>
     <!-- End page content -->
