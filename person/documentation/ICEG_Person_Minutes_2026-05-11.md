@@ -14,7 +14,7 @@ tags:
 
 # Kick-off Meeting - ICEG Person
 
-> [!info] Working conventions
+> **ℹ️ Info: Working conventions**
 > To keep the meetings running smoothly, please raise your hand or post your question in the chat. For quick polls:
 > - **+1** : agree
 > - **−1** : disagree
@@ -64,7 +64,7 @@ Personal data is currently fragmented across administrations, with different str
 
 **Goal:** establish one shared semantic ICEG Person model.
 
-![[Pasted image 20260515105855.png]]
+![Pasted image 20260515105855.png](Pasted%20image%2020260515105855.png.md)
 
 ---
 
@@ -86,14 +86,14 @@ A clarification surfaced that needs to be carried forward:
 Argument *for* including some registration timestamps: when someone moves, they declare the move at the municipality and obtain a temporary address; this becomes the official address only after the local police officer's visit, which can be 2 days, 2 weeks, or 2 months later and the address is then validated retroactively to the date of declaration. The inception/creation date can therefore explain why correspondence ended up at the wrong address. So while pure storage timestamps are implementation-specific, business-relevant temporal attributes (declaration date, validity date, validation date) may need to be modelled.
 
 
-> [!todo] Open question
+> **📌 Todo: Open question**
 > Distinguish historical reality (in scope) from registration audit trail (out of scope), while still capturing business-relevant validity dates explicitly.
 ### 4.3 Domain-specific attributes that surface as cross-domain
 The charter currently lists domain-specific profiles (health, social security, taxation) as out of scope. Some attributes blur that line, i.e. gender :
 - The National Register holds primarily the administrative gender.
 - Healthcare typically requires the biological / birth gender.
 
-> [!todo] Open question
+> **📌 Todo: Open question**
 > Decide whether attributes that are domain-specific in source but cross-domain in use belong in the base model.
 ### 4.4 Person ↔ Person and Person ↔ Organisation relations
 Relations between persons (family composition, parent-child, etc.) should be included. The relation between a person and an organisation (e.g. the function a person performs within a company) is more ambiguous, it leans toward authorisation mechanisms, which the charter places out of scope.
@@ -115,7 +115,7 @@ The approach is **iterative and consensus-based**, following the decision rule o
 - **Working group / community group**: engaged to bring expertise, formulate suggestions, and validate the model through the workshops.
 - **ICEG Review Committee**: involved in the initiative and follows progress.
 
-![[Pasted image 20260515175832.png]]
+![Pasted image 20260515175832.png](Pasted%20image%2020260515175832.png.md)
 
 ---
 
@@ -153,6 +153,6 @@ The approach is **iterative and consensus-based**, following the decision rule o
 ---
 
 ## Related notes
-- [[ICEG Person - Charter and Scope]]
-- [[ICEG Person — Business Workshop preparation]]
+- [ICEG Person - Charter and Scope](ICEG%20Person%20-%20Charter%20and%20Scope.md)
+- [ICEG Person — Business Workshop preparation](ICEG%20Person%20—%20Business%20Workshop%20preparation.md)
 
