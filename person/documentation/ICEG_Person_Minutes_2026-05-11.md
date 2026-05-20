@@ -14,7 +14,7 @@ tags:
 
 # Kick-off Meeting - ICEG Person
 
-> [!info] Working conventions
+> **ℹ️ Info: Working conventions**
 > To keep the meetings running smoothly, please raise your hand or post your question in the chat. For quick polls:
 > - **+1** : agree
 > - **−1** : disagree
@@ -32,29 +32,29 @@ tags:
 
 ## 1. Welcome and Presentations
 
-| Name                    | Organisation        |
-| ----------------------- | ------------------- |
-| Bart Hanssens           | FOD BOSA (DGVD)     |
-| Pauline De Wolf         | Digitaal Vlaanderen |
-| Nicolas Duval           | BCED                |
-| Jonas De Meulenaere     | KSZ-BCSS            |
-| Dominique Le Grelle      | Paradigm            |
-| Liesbet D'hondt        | FOD BOSA (DGVD)     |
-| Marc Bruyland           | FOD BOSA (DGVD)     |
-| Peter Van den Bosch       | SMALS               |
-| Jean-Christophe Trigaux | SPW Digital / BCED  |
-| Dylan Van Assche         | Digitaal Vlaanderen |
-| Lieven Verreycken        | Digitaal Vlaanderen |
-| Vincent Turine          | KSZ-BCSS            |
-| Vincent Vandenkerckhove | IBZ                 |
-| Bart Vrancken           | IBZ                 |
-| Eveline Vlassenroot     | Digitaal Vlaanderen |
+| Name                    | Organisation        | Role                                                                                    |
+| ----------------------- | ------------------- | --------------------------------------------------------------------------------------- |
+| Bart Hanssens           | FOD BOSA (DGVD)     | Semantic standards (SEMIC: CPSV-AP, DCAT-AP); manages the Belgif portal                 |
+| Pauline De Wolf         | Digitaal Vlaanderen | Team lead Data Standards                                                                |
+| Nicolas Duval           | BCED                | Project manager, Walloon integrator                                                     |
+| Jonas De Meulenaere     | KSZ-BCSS            | Analyst-developer, team lead registers (person services)                                |
+| Dominique Legrelle      | Paradigm            | Product manager Fidus, Brussels regional integrator                                     |
+| Liesbeth d'Hondt        | FOD BOSA (DGVD)     | Analyst person services; member ICEG Review Committee                                   |
+| Marc Bruyland           | FOD BOSA (DGVD)     | IT business analyst; member ICEG Review Committee                                       |
+| Peter Vandenbosch       | SMALS               | Architect; organiser of Belgif REST-services standardisation working groups             |
+| Jean-Christophe Trigaux | SPW Digital / BCED  | Data architect, Walloon integrator                                                      |
+| Dylan Vanassche         | Digitaal Vlaanderen | Semantic expert, data standards                                                         |
+| Lieven Verrycken        | Digitaal Vlaanderen | Architect MAGDA platform; specialist in person-related services                         |
+| Vincent Turine          | KSZ-BCSS            |                                                                                         |
+| Vincent Vandenkerckhove | IBZ                 | Responsible for client management — National Register                                   |
+| Bart Vrancken           | IBZ                 | Responsible for data governance, DG Identity / Citizen Affairs                          |
+| Eveline Vlassenroot     | Digitaal Vlaanderen | Member of the Interoperability Centre of Expertise; member of the ICEG Review Committee |
 
 ---
 
 ## 2. What is ICEG?
 
-**ICEG** promotes inter-federal cooperation between the entities involved in coordinating an intra-Belgian digital strategy. A key part of this work is the standardisation of semantic models for the Belgian government, where federal and regional administrations collaborate on shared reference models. These models are published on [**belgif.be**]([Belgian Interoperability Framework · GitHub](https://github.com/belgif)) as open and reusable resources, building on previous initiatives such as [**Hydrants]([thematic/hydrants at master · belgif/thematic · GitHub](https://github.com/belgif/thematic/tree/master/hydrants)). The work is aligned with the **[European Interoperability Framework (EIF)**]([The European Interoperability Framework in detail | Interoperable Europe Portal](https://interoperable-europe.ec.europa.eu/collection/iopeu-monitoring/european-interoperability-framework-detail)) and **[SEMIC (Semantic Interoperability Community)]([SEMIC Support Centre | Interoperable Europe Portal](https://interoperable-europe.ec.europa.eu/collection/semic-support-centre))**.
+**ICEG** promotes inter-federal cooperation between the entities involved in coordinating an intra-Belgian digital strategy. A key part of this work is the standardisation of semantic models for the Belgian government, where federal and regional administrations collaborate on shared reference models. These models are published on [**belgif.be**](https://github.com/belgif) as open and reusable resources, building on previous initiatives such as [**Hydrants**](https://github.com/belgif/thematic/tree/master/hydrants). The work is aligned with the [**European Interoperability Framework (EIF)**](https://interoperable-europe.ec.europa.eu/collection/iopeu-monitoring/european-interoperability-framework-detail) and [**SEMIC (Semantic Interoperability Community)**](https://interoperable-europe.ec.europa.eu/collection/semic-support-centre).
 
 ---
 
@@ -64,7 +64,7 @@ Personal data is currently fragmented across administrations, with different str
 
 **Goal:** establish one shared semantic ICEG Person model.
 
-![[Pasted image 20260515105855.png]]
+![Pasted image 20260515105855.png](Pasted%20image%2020260515105855.png)
 
 ---
 
@@ -74,7 +74,7 @@ Personal data is currently fragmented across administrations, with different str
 
 The scope discussion surfaced several recurring themes. No final scoping decisions were taken in this session, these inputs feed the use-case analysis and the Business Workshop.
 ### 4.1 All information types vs. a basic data set
-The opening question was how to bound the scope: should the track examine **[all information types (ITs)]([Lijst van de informatietypes | IBZ - FOD Binnenlandse Zaken](https://www.ibz.rrn.fgov.be/nl/professioneel/rijksregister/onderrichtingen/lijst-van-de-informatietypes))** that exist, or focus on basic data such as name, address, family relations and is there room for items like identity cards and work permits?
+The opening question was how to bound the scope: should the track examine [**all information types (ITs)**](https://www.ibz.rrn.fgov.be/nl/professioneel/rijksregister/onderrichtingen/lijst-van-de-informatietypes) that exist, or focus on basic data such as name, address, family relations and is there room for items like identity cards and work permits?
 
 A complementary view: at minimum, all ITs of the National Register should be examined, to verify that the semantic model can express most of them. ITs not covered today should still be evaluated rather than excluded by default.
 ### 4.2 Historical data: two different "histories"
@@ -86,14 +86,14 @@ A clarification surfaced that needs to be carried forward:
 Argument *for* including some registration timestamps: when someone moves, they declare the move at the municipality and obtain a temporary address; this becomes the official address only after the local police officer's visit, which can be 2 days, 2 weeks, or 2 months later and the address is then validated retroactively to the date of declaration. The inception/creation date can therefore explain why correspondence ended up at the wrong address. So while pure storage timestamps are implementation-specific, business-relevant temporal attributes (declaration date, validity date, validation date) may need to be modelled.
 
 
-> [!todo] Open question
+> **☑️ To-Do: Open question**
 > Distinguish historical reality (in scope) from registration audit trail (out of scope), while still capturing business-relevant validity dates explicitly.
 ### 4.3 Domain-specific attributes that surface as cross-domain
 The charter currently lists domain-specific profiles (health, social security, taxation) as out of scope. Some attributes blur that line, i.e. gender :
 - The National Register holds primarily the administrative gender.
 - Healthcare typically requires the biological / birth gender.
 
-> [!todo] Open question
+> **☑️ To-Do: Open question**
 > Decide whether attributes that are domain-specific in source but cross-domain in use belong in the base model.
 ### 4.4 Person ↔ Person and Person ↔ Organisation relations
 Relations between persons (family composition, parent-child, etc.) should be included. The relation between a person and an organisation (e.g. the function a person performs within a company) is more ambiguous, it leans toward authorisation mechanisms, which the charter places out of scope.
@@ -115,7 +115,7 @@ The approach is **iterative and consensus-based**, following the decision rule o
 - **Working group / community group**: engaged to bring expertise, formulate suggestions, and validate the model through the workshops.
 - **ICEG Review Committee**: involved in the initiative and follows progress.
 
-![[Pasted image 20260515175832.png]]
+![Pasted image 20260515175832.png](Pasted%20image%2020260515175832.png)
 
 ---
 
@@ -130,17 +130,17 @@ The approach is **iterative and consensus-based**, following the decision rule o
 |---|---|
 | May 2026 | Business Workshop |
 | June 2026 | Thematic Workshop 1 |
-| September - November 2026 | Thematic Workshops 2, 3, 4 |
+| September – November 2026 | Thematic Workshops 2, 3, 4 |
 | December 2026 | First iteration (v1) of the Person model |
 
 ### To-Do's
 
-| #   | Action                                                                                     |
-| --- | ------------------------------------------------------------------------------------------ |
-| A1  | Gather existing documentation of the current (AS-IS) person model used to serve as input   |
-| A2  | Prepare potential use cases                                                                |
-| A3  | Define a core-team member per administration/organisation                                  |
-| A4  | Complete the list of experts to invite to the Business Workshop and the Thematic Workshops |
+| #   | Action                                                                                     | Owner                   |
+| --- | ------------------------------------------------------------------------------------------ | ----------------------- |
+| A1  | Gather existing documentation of the current (AS-IS) person model used to serve as input   | All organisations       |
+| A2  | Prepare potential use cases                                                                | All organisations       |
+| A3  | Define a core-team member per administration/organisation                                  | Each organisation       |
+| A4  | Complete the list of experts to invite to the Business Workshop and the Thematic Workshops | Core team / facilitator |
 
 ---
 
@@ -150,5 +150,9 @@ The approach is **iterative and consensus-based**, following the decision rule o
 - **Belgian / Foreign / EU registrations**: we take registrations of persons registered in Belgium (RNN, BCE). Open question: do we also include registrations from other European countries (registration numbers from other countries), or limit ourselves to registrations within Belgium?
 - **Link register**: KSZ is working on a link register connecting the Belgian identifier (national-register number and BIS register) with all known foreign identifiers (foreign ID numbers, passport numbers, identity-card numbers) so that when a person returns, they can be re-registered via that number. A similar link register already exists in Luxembourg. Flagged as a nice-to-have to consider in scope.
 
+---
 
+## Related notes
+- [ICEG Person - Charter and Scope](ICEG%20Person%20-%20Charter%20and%20Scope.md)
+- [ICEG Person — Business Workshop preparation](ICEG%20Person%20—%20Business%20Workshop%20preparation.md)
 
