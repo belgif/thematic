@@ -32,23 +32,23 @@ tags:
 
 ## 1. Welcome and Presentations
 
-| Name                    | Organisation        | Role                                                                                    |
-| ----------------------- | ------------------- | --------------------------------------------------------------------------------------- |
-| Bart Hanssens           | FOD BOSA (DGVD)     | Semantic standards (SEMIC: CPSV-AP, DCAT-AP); manages the Belgif portal                 |
-| Pauline De Wolf         | Digitaal Vlaanderen | Team lead Data Standards                                                                |
-| Nicolas Duval           | BCED                | Project manager, Walloon integrator                                                     |
-| Jonas De Meulenaere     | KSZ-BCSS            | Analyst-developer, team lead registers (person services)                                |
-| Dominique Legrelle      | Paradigm            | Product manager Fidus, Brussels regional integrator                                     |
-| Liesbeth d'Hondt        | FOD BOSA (DGVD)     | Analyst person services; member ICEG Review Committee                                   |
-| Marc Bruyland           | FOD BOSA (DGVD)     | IT business analyst; member ICEG Review Committee                                       |
-| Peter Vandenbosch       | SMALS               | Architect; organiser of Belgif REST-services standardisation working groups             |
-| Jean-Christophe Trigaux | SPW Digital / BCED  | Data architect, Walloon integrator                                                      |
-| Dylan Vanassche         | Digitaal Vlaanderen | Semantic expert, data standards                                                         |
-| Lieven Verrycken        | Digitaal Vlaanderen | Architect MAGDA platform; specialist in person-related services                         |
-| Vincent Turine          | KSZ-BCSS            |                                                                                         |
-| Vincent Vandenkerckhove | IBZ                 | Responsible for client management — National Register                                   |
-| Bart Vrancken           | IBZ                 | Responsible for data governance, DG Identity / Citizen Affairs                          |
-| Eveline Vlassenroot     | Digitaal Vlaanderen | Member of the Interoperability Centre of Expertise; member of the ICEG Review Committee |
+| Name                    | Organisation        |
+| ----------------------- | ------------------- | 
+| Bart Hanssens           | FOD BOSA (DGVD)     | 
+| Pauline De Wolf         | Digitaal Vlaanderen |
+| Nicolas Duval           | BCED                | 
+| Jonas De Meulenaere     | KSZ-BCSS            |
+| Dominique Legrelle      | Paradigm            |
+| Liesbeth d'Hondt        | FOD BOSA (DGVD)     |
+| Marc Bruyland           | FOD BOSA (DGVD)     | 
+| Peter Vandenbosch       | SMALS               | 
+| Jean-Christophe Trigaux | SPW Digital / BCED  | 
+| Dylan Vanassche         | Digitaal Vlaanderen |
+| Lieven Verrycken        | Digitaal Vlaanderen |
+| Vincent Turine          | KSZ-BCSS            |
+| Vincent Vandenkerckhove | IBZ                 |
+| Bart Vrancken           | IBZ                 |
+| Eveline Vlassenroot     | Digitaal Vlaanderen |
 
 ---
 
@@ -64,7 +64,7 @@ Personal data is currently fragmented across administrations, with different str
 
 **Goal:** establish one shared semantic ICEG Person model.
 
-![Pasted image 20260515105855.png](Pasted%20image%2020260515105855.png)
+![Pasted image 20260515105855.png](images/Pasted%20image%2020260515105855.png)
 
 ---
 
@@ -95,12 +95,15 @@ The charter currently lists domain-specific profiles (health, social security, t
 
 > **☑️ To-Do: Open question**
 > Decide whether attributes that are domain-specific in source but cross-domain in use belong in the base model.
+
 ### 4.4 Person ↔ Person and Person ↔ Organisation relations
 Relations between persons (family composition, parent-child, etc.) should be included. The relation between a person and an organisation (e.g. the function a person performs within a company) is more ambiguous, it leans toward authorisation mechanisms, which the charter places out of scope.
 
 Reference point: the KBO/CBE already records function-holders, but only via the INSZ/NISS number.
+
 ### 4.5 Prioritisation: semantics first, implementation later
 Strong recommendation to prioritise the conceptual/semantic layer first, and only afterwards look at how things are registered today. Reasoning: anchoring discussions to current implementations (e.g. registration dates as modelled in existing systems) risks pulling implementation constraints into the semantic discussion and complicating consensus.
+
 ### 4.6 Authentic source per concept and per relation
 Open question: will the authentic source of each concept and each relation be discussed within scope? It is sometimes hard to define, but the authentic source typically has the final word on the data format, making it important to capture in the semantic model.
 
@@ -115,7 +118,7 @@ The approach is **iterative and consensus-based**, following the decision rule o
 - **Working group / community group**: engaged to bring expertise, formulate suggestions, and validate the model through the workshops.
 - **ICEG Review Committee**: involved in the initiative and follows progress.
 
-![Pasted image 20260515175832.png](Pasted%20image%2020260515175832.png)
+![Pasted image 20260515175832.png](images/Pasted%20image%2020260515175832.png)
 
 ---
 
@@ -135,12 +138,12 @@ The approach is **iterative and consensus-based**, following the decision rule o
 
 ### To-Do's
 
-| #   | Action                                                                                     | Owner                   |
-| --- | ------------------------------------------------------------------------------------------ | ----------------------- |
-| A1  | Gather existing documentation of the current (AS-IS) person model used to serve as input   | All organisations       |
-| A2  | Prepare potential use cases                                                                | All organisations       |
-| A3  | Define a core-team member per administration/organisation                                  | Each organisation       |
-| A4  | Complete the list of experts to invite to the Business Workshop and the Thematic Workshops | Core team / facilitator |
+| #   | Action                                                                                     |
+| --- | ------------------------------------------------------------------------------------------ |
+| A1  | Gather existing documentation of the current (AS-IS) person model used to serve as input   |
+| A2  | Prepare potential use cases                                                                |
+| A3  | Define a core-team member per administration/organisation                                  |
+| A4  | Complete the list of experts to invite to the Business Workshop and the Thematic Workshops |
 
 ---
 
@@ -151,8 +154,4 @@ The approach is **iterative and consensus-based**, following the decision rule o
 - **Link register**: KSZ is working on a link register connecting the Belgian identifier (national-register number and BIS register) with all known foreign identifiers (foreign ID numbers, passport numbers, identity-card numbers) so that when a person returns, they can be re-registered via that number. A similar link register already exists in Luxembourg. Flagged as a nice-to-have to consider in scope.
 
 ---
-
-## Related notes
-- [ICEG Person - Charter and Scope](ICEG%20Person%20-%20Charter%20and%20Scope.md)
-- [ICEG Person — Business Workshop preparation](ICEG%20Person%20—%20Business%20Workshop%20preparation.md)
 
