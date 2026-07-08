@@ -71,3 +71,5 @@ Address
 | ---- | ------- | ------- | -----------| ------------ | ------ | ------- |
 | A123 | 1       | current | 2026-01-01 | 2026-07-01   | S456   | 3       |
 | A123 | 2       | current | 2026-07-01 | NULL         | S456   | 4       |
+
+(to be verified if there is a retired or not)
