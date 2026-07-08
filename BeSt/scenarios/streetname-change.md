@@ -1,0 +1,45 @@
+# Scenario: street name is changed
+
+## Before
+
+Street
+| ID   | Version | Name           | Status  | From       | Till |
+| ---- | ------- | -------------- | ------- | ---------- | ---- |
+| S456 | 3       | Rue du Marché  | current | 1984-01-01 | NULL |
+
+Address
+| ID   | Version | Status  | From       | Till   | Street | StreetV |
+| ---- | ------- | ------- | -----------| ------ | ------ | ------- |
+| A123 | 1       | current | 2026-01-01 | NULL   | S456   | 3       |
+
+## After (INSPIRE)
+
+Street
+| ID   | Version | Name            | Status  | From       | Till       |
+| ---- | ------- | --------------- | ------- | ---------- | ---------- |
+| S456 | 3       | Rue du Marché   | current | 1984-01-01 | 2026-07-01 |
+| S456 | 4       | Avenue Gertrude | current | 2026-07-01 | NULL       |
+
+Address
+| ID   | Version | Status  | From       | Till         | Street | StreetV |
+| ---- | ------- | ------- | -----------| ------------ | ------ | ------- |
+| A123 | 1       | current | 2026-01-01 | 2026-07-01   | S456   | 3       |
+| A123 | 2       | current | 2026-07-01 | NULL         | S456   | 4       |
+
+
+## After (Bruxelles ?)
+
+Street
+| ID   | Version | Name            | Status  | From       | Till       |
+| ---- | ------- | --------------- | ------- | ---------- | ---------- |
+| S456 | 3       | Rue du Marché   | current | 1984-01-01 | 2026-07-01 |
+| S456 | 4       | Rue du Marché   | retired | 2026-07-01 | NULL       |
+| S789 | 1       | Avenue Gertrude | current | 2026-07-01 | NULL       |
+
+Address
+| ID   | Version | Status  | From       | Till         | Street | StreetV |
+| ---- | ------- | ------- | -----------| ------------ | ------ | ------- |
+| A123 | 1       | current | 2026-01-01 | 2026-07-01   | S456   | 3       |
+| A123 | 2       | current | 2026-07-01 | NULL         | S789   | 1       |
+
+
