@@ -20,7 +20,7 @@ Street
 | ID   | Version | Name            | Status  | From       | Till       |
 | ---- | ------- | --------------- | ------- | ---------- | ---------- |
 | S456 | 3       | Rue du Marché   | current | 1984-01-01 | 2026-07-01 |
-| S456 | 4       | Rue du Marché   | retired | 1984-01-01 | 2026-07-01 |
+| S456 | 4       | Rue du Marché   | retired | 2026-07-01 | NULL |
 | S567 | 1       | Avenue Gertrude | current | 1984-01-01 | NULL |
 
 Address
