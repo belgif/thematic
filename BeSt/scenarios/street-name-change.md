@@ -42,7 +42,7 @@ Address
 | A123 | 1       | current | 2026-01-01 | 2026-07-01   | S456   | 3       |
 | A123 | 2       | current | 2026-07-01 | NULL         | S789   | 1       |
 
-## After (Flanders ?)
+## After (Flanders)
 
 Streetname
 | ID   | Version | Name            | Status  | From       | Till       |
@@ -50,7 +50,7 @@ Streetname
 | S456 | 3       | Rue du Marché   | current | 1984-01-01 | 2026-07-01 |
 | S789 | 1       | Avenue Gertrude | current | 2026-07-01 | NULL       |
 
-(check BOSA: is a "retired" added or not")
+(check BOSA: is a "retired" added or not": in GRAR "gehistoreerd", does BOSA add a record or not)
 
 Address
 | ID   | Version | Status  | From       | Till         | Street | StreetV |
