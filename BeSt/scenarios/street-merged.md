@@ -1,4 +1,4 @@
-# Scenario: two streets are merged into one
+# Scenario: two streets are merged into one, keeping name of one of the streets
 
 ## Before
 
