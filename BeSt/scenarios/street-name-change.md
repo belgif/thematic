@@ -27,7 +27,7 @@ Address
 | A123 | 2       | current | 2026-07-01 | NULL         | S456   | 4       |
 
 
-## After (Brussels ?)
+## After (Brussels)
 
 Streetname
 | ID   | Version | Name            | Status  | From       | Till       |
