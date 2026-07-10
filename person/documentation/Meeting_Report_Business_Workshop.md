@@ -144,7 +144,7 @@ Legal Information Types:
 | Embedded business data | Gender and birth date encoded in the number leads to replacements when these change |
 | Administrative impact | Changes trigger number replacements with cascading effects on all connected systems |
 
-For more information we refer to the consolidated slidedeck on slide X-Y
+**For more information we refer to the consolidated slidedeck on slide: 2-11**
 
 ### 2. Crossroads Bank for Social Security (BCSS) - Vincent Turine
 
@@ -178,7 +178,9 @@ Use Cases Presented:
 - Population determination (breast cancer screening, mandatory schooling, integration pathways)
 - EIDAS integration for European identification
 - eGov 3.0: Relationship determination between persons
-For more information we refer to the consolidated slidedeck on slide:
+
+**For more information we refer to the consolidated slidedeck on slide: 12-22**
+
 
 ### 3. Crossroads Bank for Enterprises (CBE) - Miguel Discart
 
@@ -188,7 +190,9 @@ CBE functions as a data consumer, accessing person data via BOSA services withou
 - Exception: Creation of "Bis Person" via BOSA DTO Person web service
 - CBE acts mainly as a data consumer
 - Administrative access to entity data: name, surname, address (from National Register)
-For more information we refer to the consolidated slidedeck on slide:
+
+**For more information we refer to the consolidated slidedeck on slide: 23-27**
+
 
 ### 4. BOSA - Liesbet D'hondt
 
@@ -210,7 +214,9 @@ Context-Specific Services:
 - RemoteSigning IBZ: Verify if a person can sign in their own name
 - VotingEligibility: Determine petition rights and administrative municipality
 - InternetGamingValidation: National Lottery age verification
-For more information we refer to the consolidated slidedeck on slide:
+
+**For more information we refer to the consolidated slidedeck on slide: 28-32**
+
 
 ### 5. MAGDA / Digitaal Vlaanderen - Lieven Verreycken
 
@@ -223,7 +229,9 @@ Services Available:
 - Consultations: Persoon, HistoriekPersoon, Gezin, HistoriekGezin
 - Mutations: Same scope as consultations
 - Linked Data: OSLO REST Person service in development
-For more information we refer to the consolidated slidedeck on slide:
+
+**For more information we refer to the consolidated slidedeck on slide: 33-41**
+
 
 ### 6. FIDUS / Paradigm Brussels - Corentin Lesjours
 
@@ -236,7 +244,10 @@ ICEG Business Needs:
 
 - Primary Identification: SSIN, Name/First name, Address, Date of birth, Date of death, Nationality, Gender
 - Complementary Data: Household composition, Official documents (acts/certificates)
-### 7. BCED (Wallonia-Brussels Federation) - NOT PRESENTED
+
+**For more information we refer to the consolidated slidedeck on slide: 42-49**
+
+### 7. BCED (Wallonia-Brussels Federation) - Nicolas Duval (absent)
 
 BCED re-exposes BCSS web services for Wallonia and the Federation, supporting ~500 active data streams. High-volume consumers include ETNIC's "Mon Espace" portal, Walloon personal space, FOREM employment services, AVIQ disability files, and SPW Finance tax assessments. Priority data follows a hierarchy: administrator-level types (name, birth, death, civil status, address) first, then identification data (birthplace, nationality, gender, register).
 
@@ -254,7 +265,8 @@ BCED re-exposes BCSS web services for Wallonia and the Federation, supporting ~5
 
 - Administrator ITs: 010, 101, 150, 120, 020 & 001
 - Identification ITs: 100, 031, 002, 210 & 123
-For more information we refer to the consolidated slidedeck on slide:
+
+**For more information we refer to the consolidated slidedeck on slide: 50-55**
 
 ### 8. Smals - Peter Van den Bosch
 
@@ -265,7 +277,8 @@ Common Issues Identified:
 - Overloaded "nationality" concept (NIS-code vs RRN-specific code for refugees)
 - SSIN includes business data leading to unnecessary replacements
 - Ambiguous "(sub)registers" notion mixing different concepts
-For more information we refer to the consolidated slidedeck on slide:
+
+**For more information we refer to the consolidated slidedeck on slide: 56-57**
 
 ## Next Steps:
 
