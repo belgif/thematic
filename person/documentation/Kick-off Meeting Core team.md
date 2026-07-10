@@ -1,16 +1,3 @@
----
-title: "ICEG Person: Kick-off Minutes"
-date: 2026-05-11
-trajectory: ICEG-Person
-type: meeting-minutes
-status: draft-for-review
-tags:
-  - ICEG
-  - ICEG_Person
-  - semantics
-  - minutes
-  - kickoff
----
 
 # Kick-off Meeting - ICEG Person
 
