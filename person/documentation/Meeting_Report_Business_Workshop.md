@@ -117,40 +117,23 @@ The National Registry maintains legal information, but not all carry equal relia
 The National Registry presented the comprehensive list of the main legal information types (TI) registered for each person in Belgium. The key categories include:
 
 Legal Information Types:
-
-Name and first names (TI 010)
-
-Place and date of birth (TI 100, 101)
-
-Gender (TI 004)
-
-Nationality (TI 031)
-
-Main residence (TI 020)
-
-Place and date of death (TI 150)
-
-Profession (TI 070)
-
-Civil status (TI 120)
-
-Family composition (TI 140, 141)
-
-Registry mention (TI 210)
-
-Administrative status (TI 206)
-
-Identity certificate existence (TI 180)
-
-Legal cohabitation (TI 123)
-
-Residence situation for foreigners (TI 195)
-
-Ascending lineage - father/mother (TI 110) - since 2015
-
-Descending lineage - first degree children (TI 114) - since 2015
-
-Contact data (TI 247) - new
+- Name and first names (TI 010)
+- Place and date of birth (TI 100, 101)
+- Gender (TI 004)
+- Nationality (TI 031)
+- Main residence (TI 020)
+- Place and date of death (TI 150)
+- Profession (TI 070)
+- Civil status (TI 120)
+- Family composition (TI 140, 141)
+- Registry mention (TI 210)
+- Administrative status (TI 206)
+- Identity certificate existence (TI 180)
+- Legal cohabitation (TI 123)
+- Residence situation for foreigners (TI 195)
+- Ascending lineage - father/mother (TI 110) - since 2015
+- Descending lineage - first degree children (TI 114) - since 2015
+- Contact data (TI 247) - new
 
 #### Key Issues Raised – The National Number
 
