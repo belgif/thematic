@@ -164,7 +164,6 @@ BCSS Registers:
 | Annulated Register | Persons with annulled files without reference to another file |
 
 Data Available in BCSS Registers:
-
 - Name/First name
 - Birth information
 - Gender
