@@ -288,11 +288,11 @@ Common Issues Identified:
 ## Planning: Thematic Workshops
 
 | **Workshop** | **Tentative Date** | **Theme** |
-| --- | --- | --- |
-| Thematic Workshop 1 | August Option 1: Monday 24/8 (10-12) Option 2: Tuesday 25/8 (10-12) Option 3: Thursday 27/8 (10-12) | Core Identity |
-| Thematic Workshop 2 | September Option 1: Monday 21/9 (10-12) Option 2: Tuesday 22/9 (10-12) Option 3: Thursday 24/9 (10-12) | Address & Residence |
-| Thematic Workshop 3 | October Option 1: Monday 19/10 (10-12) Option 2: Tuesday 20/10 (10-12) Option 3: Thursday 22/10 (10-12) | Family & Relations |
-| Thematic Workshop 4 | November Option 1: Monday 16/11 (10-12) Option 2: Tuesday 17/11 (10-12) Option 3: Thursday 19/11 (10-12) | Status & Registers |
+|---|---|---|
+| Thematic Workshop 1 | August<br>Option 1: Tuesday 18/8 (9:30-12:00)<br>Option 2: Wednesday 19/8 (9:30-12:00)<br>Option 3: Thursday 20/8 (9:30-12:00) | Core Identity |
+| Thematic Workshop 2 | September<br>Option 1: Monday 21/9 (9:30-12:00)<br>Option 2: Tuesday 22/9 (9:30-12:00)<br>Option 3: Thursday 24/9 (9:30-12:00) | Address & Residence |
+| Thematic Workshop 3 | October<br>Option 1: Monday 19/10 (9:30-12:00)<br>Option 2: Tuesday 20/10 (9:30-12:00)<br>Option 3: Thursday 22/10 (9:30-12:00) | Family & Relations |
+| Thematic Workshop 4 | November<br>Option 1: Tuesday 17/11 (9:30-12:00)<br>Option 2: Thursday 19/11 (9:30-12:00)<br>Option 3: Friday 20/11 (9:30-12:00) | Status & Registers |
 
 #### Theme 1: Core Person Identification
 
