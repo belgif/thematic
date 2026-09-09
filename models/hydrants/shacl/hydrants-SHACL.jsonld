@@ -1,0 +1,4783 @@
+[
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#",
+"http://www.w3.org/2000/01/rdf-schema#member": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#MaintenanceShape"
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#UsageShape"
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#InspectionShape"
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#UnitShape"
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#FireHydrantShape"
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#PipeShape"
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#OrganizationShape"
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#ContactPointShape"
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#ValveShape"
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#OutletShape"
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#StringShape"
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#GeometryShape"
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#DateTimeShape"
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#QuantityValueShape"
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#AddressRepresentationShape"
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#IdentifierShape"
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#URIShape"
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#GeographicalNameShape"
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#LangStringShape"
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#ConceptShape"
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#NameStatusValueShape"
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#PipeClassificationTypeShape"
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#WaterTypeValueShape"
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#HydrantTypeShape"
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#PipeTypeShape"
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#StatusShape"
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#OpeningKeyTypeShape"
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#NativenessValueShape"
+}
+]
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#AddressRepresentationShape",
+"@type": [
+"http://www.w3.org/ns/shacl#NodeShape"
+],
+"http://purl.org/vocab/vann/usageNote": [
+{
+"@language": "en",
+"@value": "For addresses in Flanders, the Master Data of Digital Flanders should be used for allocation purposes."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "More readable representation with only the basic data of the address, intended to use an address as an attribute of another object."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "AddressRepresentation"
+}
+],
+"http://www.w3.org/ns/shacl#closed": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#boolean",
+"@value": "false"
+}
+],
+"http://www.w3.org/ns/shacl#property": [
+{
+"@id": "_:df_2_8"
+},
+{
+"@id": "_:df_2_9"
+},
+{
+"@id": "_:df_2_45"
+},
+{
+"@id": "_:df_2_46"
+}
+],
+"http://www.w3.org/ns/shacl#targetClass": [
+{
+"@id": "http://www.w3.org/ns/locn#Address"
+}
+]
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#ContactPointShape",
+"@type": [
+"http://www.w3.org/ns/shacl#NodeShape"
+],
+"http://purl.org/vocab/vann/usageNote": [
+{
+"@language": "en",
+"@value": "ContactPoint for urgent matters during firefighting interventions."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "Emergency information (like e-mail address and telephone number) of a person or department for Fire Hydrants through which the user can get in touch with."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "ContactPoint"
+}
+],
+"http://www.w3.org/ns/shacl#closed": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#boolean",
+"@value": "false"
+}
+],
+"http://www.w3.org/ns/shacl#property": [
+{
+"@id": "_:df_2_48"
+},
+{
+"@id": "_:df_2_49"
+}
+],
+"http://www.w3.org/ns/shacl#targetClass": [
+{
+"@id": "http://data.europa.eu/m8g/ContactPoint"
+}
+]
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#DateTimeShape",
+"@type": [
+"http://www.w3.org/ns/shacl#NodeShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@value": "DateTime"
+}
+],
+"http://www.w3.org/ns/shacl#closed": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#boolean",
+"@value": "false"
+}
+],
+"http://www.w3.org/ns/shacl#targetClass": [
+{
+"@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+}
+]
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#FireHydrantShape",
+"@type": [
+"http://www.w3.org/ns/shacl#NodeShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "A fire hydrant is a fitting in a location with a nozzle by which a fire hose may be attached to a water main."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "FireHydrant"
+}
+],
+"http://www.w3.org/ns/shacl#closed": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#boolean",
+"@value": "false"
+}
+],
+"http://www.w3.org/ns/shacl#property": [
+{
+"@id": "_:df_2_7"
+},
+{
+"@id": "_:df_2_18"
+},
+{
+"@id": "_:df_2_31"
+},
+{
+"@id": "_:df_2_34"
+},
+{
+"@id": "_:df_2_37"
+},
+{
+"@id": "_:df_2_38"
+},
+{
+"@id": "_:df_2_39"
+},
+{
+"@id": "_:df_2_51"
+},
+{
+"@id": "_:df_2_56"
+},
+{
+"@id": "_:df_2_58"
+},
+{
+"@id": "_:df_2_59"
+},
+{
+"@id": "_:df_2_60"
+},
+{
+"@id": "_:df_2_61"
+},
+{
+"@id": "_:df_2_64"
+},
+{
+"@id": "_:df_2_67"
+}
+],
+"http://www.w3.org/ns/shacl#targetClass": [
+{
+"@id": "https://saref.etsi.org/saref4watr/FireHydrant"
+}
+]
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#GeographicalNameShape",
+"@type": [
+"http://www.w3.org/ns/shacl#NodeShape"
+],
+"http://purl.org/vocab/vann/usageNote": [
+{
+"@language": "en",
+"@value": "This can be substituted by LangString."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "Proper noun applied to a real world entity."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "GeographicalName"
+}
+],
+"http://www.w3.org/ns/shacl#closed": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#boolean",
+"@value": "false"
+}
+],
+"http://www.w3.org/ns/shacl#property": [
+{
+"@id": "_:df_2_15"
+},
+{
+"@id": "_:df_2_16"
+},
+{
+"@id": "_:df_2_53"
+},
+{
+"@id": "_:df_2_54"
+}
+],
+"http://www.w3.org/ns/shacl#targetClass": [
+{
+"@id": "http://vocab.belgif.be/ns/building#GeographicalName"
+}
+]
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#GeometryShape",
+"@type": [
+"http://www.w3.org/ns/shacl#NodeShape"
+],
+"http://purl.org/vocab/vann/usageNote": [
+{
+"@language": "en",
+"@value": "This property contains the CRS code of the coordinate reference system used for the geometry. A closed list of reference systems is supported: Lambert72, Lambert 2008, and WGS84. Lambert72 is currently applied in practice (like CRS code “3812”), while Lambert 2008 is included as the preferred target system in view of a planned transition."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The Geometry class provides the means to identify a Location as a point, line, polygon, etc. expressed using coordinates in some coordinate reference system."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "Geometry"
+}
+],
+"http://www.w3.org/ns/shacl#closed": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#boolean",
+"@value": "false"
+}
+],
+"http://www.w3.org/ns/shacl#property": [
+{
+"@id": "_:df_2_1"
+},
+{
+"@id": "_:df_2_5"
+}
+],
+"http://www.w3.org/ns/shacl#targetClass": [
+{
+"@id": "http://www.w3.org/ns/locn#Geometry"
+}
+]
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#IdentifierShape",
+"@type": [
+"http://www.w3.org/ns/shacl#NodeShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The Identifier class represents any identifier issued by any authority, whether a government agency or not. It captures the identifier itself, the type of identifier, and details of the issuing authority, the date on which the identifier was issued."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "Identifier"
+}
+],
+"http://www.w3.org/ns/shacl#closed": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#boolean",
+"@value": "false"
+}
+],
+"http://www.w3.org/ns/shacl#property": [
+{
+"@id": "_:df_2_10"
+},
+{
+"@id": "_:df_2_11"
+},
+{
+"@id": "_:df_2_12"
+},
+{
+"@id": "_:df_2_13"
+},
+{
+"@id": "_:df_2_14"
+},
+{
+"@id": "_:df_2_47"
+}
+],
+"http://www.w3.org/ns/shacl#targetClass": [
+{
+"@id": "http://www.w3.org/ns/adms#Identifier"
+}
+]
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#InspectionShape",
+"@type": [
+"http://www.w3.org/ns/shacl#NodeShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The act of looking at something carefully in order to discover information."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "Inspection"
+}
+],
+"http://www.w3.org/ns/shacl#closed": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#boolean",
+"@value": "false"
+}
+],
+"http://www.w3.org/ns/shacl#property": [
+{
+"@id": "_:df_2_2"
+},
+{
+"@id": "_:df_2_24"
+},
+{
+"@id": "_:df_2_25"
+}
+],
+"http://www.w3.org/ns/shacl#targetClass": [
+{
+"@id": "http://vocab.belgif.be/ns/hydrant#Inspection"
+}
+]
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#LangStringShape",
+"@type": [
+"http://www.w3.org/ns/shacl#NodeShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@value": "LangString"
+}
+],
+"http://www.w3.org/ns/shacl#closed": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#boolean",
+"@value": "false"
+}
+],
+"http://www.w3.org/ns/shacl#targetClass": [
+{
+"@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+}
+]
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#MaintenanceShape",
+"@type": [
+"http://www.w3.org/ns/shacl#NodeShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The work needed to keep something in good condition."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "Maintenance"
+}
+],
+"http://www.w3.org/ns/shacl#closed": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#boolean",
+"@value": "false"
+}
+],
+"http://www.w3.org/ns/shacl#property": [
+{
+"@id": "_:df_2_3"
+},
+{
+"@id": "_:df_2_21"
+},
+{
+"@id": "_:df_2_26"
+},
+{
+"@id": "_:df_2_41"
+}
+],
+"http://www.w3.org/ns/shacl#targetClass": [
+{
+"@id": "http://vocab.belgif.be/ns/hydrant#Maintenance"
+}
+]
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#OrganizationShape",
+"@type": [
+"http://www.w3.org/ns/shacl#NodeShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "Organization"
+}
+],
+"http://www.w3.org/ns/shacl#closed": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#boolean",
+"@value": "false"
+}
+],
+"http://www.w3.org/ns/shacl#property": [
+{
+"@id": "_:df_2_17"
+},
+{
+"@id": "_:df_2_33"
+},
+{
+"@id": "_:df_2_65"
+}
+],
+"http://www.w3.org/ns/shacl#targetClass": [
+{
+"@id": "http://www.w3.org/ns/org#Organization"
+}
+]
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#OutletShape",
+"@type": [
+"http://www.w3.org/ns/shacl#NodeShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "A circular opening through which water can be discharged from a fire hydrant."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "Outlet"
+}
+],
+"http://www.w3.org/ns/shacl#closed": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#boolean",
+"@value": "false"
+}
+],
+"http://www.w3.org/ns/shacl#property": [
+{
+"@id": "_:df_2_0"
+},
+{
+"@id": "_:df_2_36"
+},
+{
+"@id": "_:df_2_57"
+}
+],
+"http://www.w3.org/ns/shacl#targetClass": [
+{
+"@id": "http://vocab.belgif.be/ns/hydrant#Outlet"
+}
+]
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#PipeShape",
+"@type": [
+"http://www.w3.org/ns/shacl#NodeShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "A pipe is a passage of water flowing in a closed conduit (meaning it is not subject to atmospheric pressure)."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "Pipe"
+}
+],
+"http://www.w3.org/ns/shacl#closed": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#boolean",
+"@value": "false"
+}
+],
+"http://www.w3.org/ns/shacl#property": [
+{
+"@id": "_:df_2_19"
+},
+{
+"@id": "_:df_2_20"
+},
+{
+"@id": "_:df_2_30"
+},
+{
+"@id": "_:df_2_32"
+},
+{
+"@id": "_:df_2_35"
+},
+{
+"@id": "_:df_2_42"
+},
+{
+"@id": "_:df_2_43"
+},
+{
+"@id": "_:df_2_44"
+},
+{
+"@id": "_:df_2_50"
+},
+{
+"@id": "_:df_2_52"
+},
+{
+"@id": "_:df_2_62"
+},
+{
+"@id": "_:df_2_63"
+},
+{
+"@id": "_:df_2_66"
+}
+],
+"http://www.w3.org/ns/shacl#targetClass": [
+{
+"@id": "https://saref.etsi.org/saref4watr/Pipe"
+}
+]
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#QuantityValueShape",
+"@type": [
+"http://www.w3.org/ns/shacl#NodeShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "A Quantity Value."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "QuantityValue"
+}
+],
+"http://www.w3.org/ns/shacl#closed": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#boolean",
+"@value": "false"
+}
+],
+"http://www.w3.org/ns/shacl#property": [
+{
+"@id": "_:df_2_6"
+},
+{
+"@id": "_:df_2_29"
+}
+],
+"http://www.w3.org/ns/shacl#targetClass": [
+{
+"@id": "http://qudt.org/schema/qudt/QuantityValue"
+}
+]
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#StringShape",
+"@type": [
+"http://www.w3.org/ns/shacl#NodeShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@value": "String"
+}
+],
+"http://www.w3.org/ns/shacl#closed": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#boolean",
+"@value": "false"
+}
+],
+"http://www.w3.org/ns/shacl#targetClass": [
+{
+"@id": "http://www.w3.org/2001/XMLSchema#string"
+}
+]
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#UnitShape",
+"@type": [
+"http://www.w3.org/ns/shacl#NodeShape"
+],
+"http://purl.org/vocab/vann/usageNote": [
+{
+"@language": "en",
+"@value": "To be used instead of a Concept when a predefined unit from QUDT is available, for example <a href=\"http://qudt.org/vocab/unit/M\">meter</a>. See <a href=\"https://www.qudt.org/doc/DOC_VOCAB-UNITS.html\">QUDT-units</a>  for more information."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "A unit of measure, or unit, is a particular quantity value that has been chosen as a scale for measuring other quantities the same kind (more generally of equivalent dimension)."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "Unit"
+}
+],
+"http://www.w3.org/ns/shacl#closed": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#boolean",
+"@value": "false"
+}
+],
+"http://www.w3.org/ns/shacl#targetClass": [
+{
+"@id": "http://qudt.org/schema/qudt/Unit"
+}
+]
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#URIShape",
+"@type": [
+"http://www.w3.org/ns/shacl#NodeShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@value": "URI"
+}
+],
+"http://www.w3.org/ns/shacl#closed": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#boolean",
+"@value": "false"
+}
+],
+"http://www.w3.org/ns/shacl#targetClass": [
+{
+"@id": "http://www.w3.org/2001/XMLSchema#anyURI"
+}
+]
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#UsageShape",
+"@type": [
+"http://www.w3.org/ns/shacl#NodeShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The use of something."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "Usage"
+}
+],
+"http://www.w3.org/ns/shacl#closed": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#boolean",
+"@value": "false"
+}
+],
+"http://www.w3.org/ns/shacl#property": [
+{
+"@id": "_:df_2_4"
+},
+{
+"@id": "_:df_2_23"
+},
+{
+"@id": "_:df_2_27"
+},
+{
+"@id": "_:df_2_28"
+}
+],
+"http://www.w3.org/ns/shacl#targetClass": [
+{
+"@id": "http://vocab.belgif.be/ns/hydrant#Usage"
+}
+]
+},
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#ValveShape",
+"@type": [
+"http://www.w3.org/ns/shacl#NodeShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "A valve is a device designed to control water flow, pressure or volume."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "Valve"
+}
+],
+"http://www.w3.org/ns/shacl#closed": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#boolean",
+"@value": "false"
+}
+],
+"http://www.w3.org/ns/shacl#property": [
+{
+"@id": "_:df_2_22"
+},
+{
+"@id": "_:df_2_40"
+},
+{
+"@id": "_:df_2_55"
+}
+],
+"http://www.w3.org/ns/shacl#targetClass": [
+{
+"@id": "https://saref.etsi.org/saref4watr/Valve"
+}
+]
+},
+{
+"@id": "_:df_2_0",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "Type of physical outlet of a fire hydrant to which a hose or coupling can be connected for the withdrawal of firefighting water."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "type outlet"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Outlet.TypeOutlet"
+}
+],
+"http://www.w3.org/ns/shacl#datatype": [
+{
+"@id": "http://www.w3.org/2001/XMLSchema#string"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "Type of physical outlet of a fire hydrant to which a hose or coupling can be connected for the withdrawal of firefighting water."
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "type outlet"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://vocab.belgif.be/ns/hydrant#type"
+}
+]
+},
+{
+"@id": "_:df_2_1",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://purl.org/vocab/vann/usageNote": [
+{
+"@language": "en",
+"@value": "Use \"http://www.opengis.net/ont/geosparql#gmlLiteral\" as type for the literal."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The geometry written in Geography Markup Language."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "gml"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Geometry.Gml"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The geometry written in Geography Markup Language."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "gml"
+}
+],
+"http://www.w3.org/ns/shacl#nodeKind": [
+{
+"@id": "http://www.w3.org/ns/shacl#Literal"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://www.opengis.net/ont/geosparql#asGML"
+}
+]
+},
+{
+"@id": "_:df_2_10",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The date on which the Identifier was assigned."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "dateOfIssue"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Identifier.DateOfIssue"
+}
+],
+"http://www.w3.org/ns/shacl#datatype": [
+{
+"@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The date on which the Identifier was assigned."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "dateOfIssue"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://purl.org/dc/terms/issued"
+}
+]
+},
+{
+"@id": "_:df_2_11",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The name of the agency responsible for issuing the Identifier."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "issuingAuthorityName"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Identifier.IssuingAuthorityName"
+}
+],
+"http://www.w3.org/ns/shacl#datatype": [
+{
+"@id": "http://www.w3.org/2001/XMLSchema#string"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The name of the agency responsible for issuing the Identifier."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "issuingAuthorityName"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://www.w3.org/ns/adms#schemeAgency"
+}
+]
+},
+{
+"@id": "_:df_2_12",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The URI of the issuing authority."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "issuingAuthorityURI"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Identifier.IssuingAuthorityURI"
+}
+],
+"http://www.w3.org/ns/shacl#datatype": [
+{
+"@id": "http://www.w3.org/2001/XMLSchema#anyURI"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The URI of the issuing authority."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "issuingAuthorityURI"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://purl.org/dc/terms/creator"
+}
+]
+},
+{
+"@id": "_:df_2_13",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "Name of the scheme used to construct the identifier."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "schemeName"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Identifier.SchemeName"
+}
+],
+"http://www.w3.org/ns/shacl#datatype": [
+{
+"@id": "http://www.w3.org/2001/XMLSchema#string"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "Name of the scheme used to construct the identifier."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "schemeName"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://purl.org/dc/terms/conformsTo"
+}
+]
+},
+{
+"@id": "_:df_2_14",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "URI of the scheme used to construct the identifier."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "schemeURI"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Identifier.SchemeURI"
+}
+],
+"http://www.w3.org/ns/shacl#datatype": [
+{
+"@id": "http://www.w3.org/2001/XMLSchema#anyURI"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "URI of the scheme used to construct the identifier."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "schemeURI"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://purl.org/dc/terms/conformsTo"
+}
+]
+},
+{
+"@id": "_:df_2_15",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "Original data source from which the geographical name is taken from and integrated in the data set providing/publishing it. For some named spatial objects it might refer again to the publishing data set if no other information is available."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "sourceOfName"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#GeographicalName.SourceOfName"
+}
+],
+"http://www.w3.org/ns/shacl#datatype": [
+{
+"@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "Original data source from which the geographical name is taken from and integrated in the data set providing/publishing it. For some named spatial objects it might refer again to the publishing data set if no other information is available."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "sourceOfName"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://vocab.belgif.be/ns/building#sourceOfName"
+}
+]
+},
+{
+"@id": "_:df_2_16",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "A proper way of writing the geographical name."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "spelling"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#GeographicalName.Spelling"
+}
+],
+"http://www.w3.org/ns/shacl#datatype": [
+{
+"@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "A proper way of writing the geographical name."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "spelling"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://vocab.belgif.be/ns/building#spelling"
+}
+]
+},
+{
+"@id": "_:df_2_17",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The legally recognised name of the organization."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "name"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Organization.Name"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#LangString"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The legally recognised name of the organization."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#minCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "name"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://www.w3.org/2004/02/skos/core#prefLabel"
+}
+]
+},
+{
+"@id": "_:df_2_18",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "A comment about minor flows affecting the fire hydrant despite being operational."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "status remark"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#FireHydrant.StatusRemark"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#LangString"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "A comment about minor flows affecting the fire hydrant despite being operational."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "status remark"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://vocab.belgif.be/ns/hydrant#statusRemark"
+}
+]
+},
+{
+"@id": "_:df_2_19",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The nominal rate at which water flows through the pipe."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "flow rate"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Pipe.FlowRate"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "http://qudt.org/schema/qudt/QuantityValue"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The nominal rate at which water flows through the pipe."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "null"
+}
+],
+"http://www.w3.org/ns/shacl#minCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "flow rate"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://vocab.belgif.be/ns/hydrant#Pipe.flowRate"
+}
+]
+},
+{
+"@id": "_:df_2_2",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The date and time of the inspection."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "date"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Inspection.Date"
+}
+],
+"http://www.w3.org/ns/shacl#datatype": [
+{
+"@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The date and time of the inspection."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "date"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://purl.org/dc/terms/date"
+}
+]
+},
+{
+"@id": "_:df_2_20",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The categorisation of pipes."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "classification"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Pipe.Classification"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The categorisation of pipes."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "classification"
+}
+],
+"http://www.w3.org/ns/shacl#or": [
+{
+"@id": "_:df_4_22"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://vocab.belgif.be/ns/hydrant#Pipe.classification"
+}
+]
+},
+{
+"@id": "_:df_2_21",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The organisation that requested the maintenance."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "requested by"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Maintenance.RequestedBy"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "http://www.w3.org/ns/org#Organization"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The organisation that requested the maintenance."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "requested by"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://vocab.belgif.be/ns/hydrant#Maintenance.requestedBy"
+}
+]
+},
+{
+"@id": "_:df_2_22",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "A tool used to open a fire hydrant by removing the cover of a fire hydrant's outlet."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "opening key"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Valve.OpeningKey"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "A tool used to open a fire hydrant by removing the cover of a fire hydrant's outlet."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "opening key"
+}
+],
+"http://www.w3.org/ns/shacl#or": [
+{
+"@id": "_:df_4_27"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://vocab.belgif.be/ns/hydrant#openingKey"
+}
+]
+},
+{
+"@id": "_:df_2_23",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The organisation that used the Object."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "performed by"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Usage.PerformedBy"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "http://www.w3.org/ns/org#Organization"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The organisation that used the Object."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "performed by"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://vocab.belgif.be/ns/hydrant#Usage.performedBy"
+}
+]
+},
+{
+"@id": "_:df_2_24",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "A textual explanation about who performed the  inspection of a particular Object and what was observed."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "description"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Inspection.Description"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#LangString"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "A textual explanation about who performed the  inspection of a particular Object and what was observed."
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "description"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://purl.org/dc/terms/description"
+}
+]
+},
+{
+"@id": "_:df_2_25",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The organisation that performed the inspection."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "performed by"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Inspection.PerformedBy"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "http://www.w3.org/ns/org#Organization"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The organisation that performed the inspection."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "performed by"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://vocab.belgif.be/ns/hydrant#Inspection.performedBy"
+}
+]
+},
+{
+"@id": "_:df_2_26",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "A textual explanation about who performed the  maintenance of a particular Object and what was done to the Object in order to warrant a good condition."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "description"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Maintenance.Description"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#LangString"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "A textual explanation about who performed the  maintenance of a particular Object and what was done to the Object in order to warrant a good condition."
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "description"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://purl.org/dc/terms/description"
+}
+]
+},
+{
+"@id": "_:df_2_27",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "A textual explanation about who used the Object, the purpose and other relevant details to mention."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "description"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Usage.Description"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#LangString"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "A textual explanation about who used the Object, the purpose and other relevant details to mention."
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "description"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://purl.org/dc/terms/description"
+}
+]
+},
+{
+"@id": "_:df_2_28",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The approximate or precise location of the usage of something."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "location"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Usage.Location"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "http://www.w3.org/ns/locn#Geometry"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The approximate or precise location of the usage of something."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "location"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://vocab.belgif.be/ns/hydrant#Usage.location"
+}
+]
+},
+{
+"@id": "_:df_2_29",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "Relates a factor unit to its unit or system of units with a unit of measure that is either: defined by the system, accepted for use by the system and is convertible to a unit of equivalent dimension that is defined by the system, a reference to the unit of measure of a quantity (variable or constant) of interest."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "Unit QuantityValue"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#QuantityValue.UnitQuantityValue"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "http://qudt.org/schema/qudt/Unit"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "Relates a factor unit to its unit or system of units with a unit of measure that is either: defined by the system, accepted for use by the system and is convertible to a unit of equivalent dimension that is defined by the system, a reference to the unit of measure of a quantity (variable or constant) of interest."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#minCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "Unit QuantityValue"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://qudt.org/schema/qudt/hasUnit"
+}
+]
+},
+{
+"@id": "_:df_2_3",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The date and time of the maintenance."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "date"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Maintenance.Date"
+}
+],
+"http://www.w3.org/ns/shacl#datatype": [
+{
+"@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The date and time of the maintenance."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "date"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://purl.org/dc/terms/date"
+}
+]
+},
+{
+"@id": "_:df_2_30",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The amount of force with which water moves to a pipe."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "flow pressure"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Pipe.FlowPressure"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "http://qudt.org/schema/qudt/QuantityValue"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The amount of force with which water moves to a pipe."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "flow pressure"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://vocab.belgif.be/ns/hydrant#flowPressure"
+}
+]
+},
+{
+"@id": "_:df_2_31",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The particular kind of fire hydrant."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "type"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#FireHydrant.Type"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The particular kind of fire hydrant."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#minCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "type"
+}
+],
+"http://www.w3.org/ns/shacl#or": [
+{
+"@id": "_:df_4_39"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://purl.org/dc/terms/type"
+}
+]
+},
+{
+"@id": "_:df_2_32",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The particular kind of pipe."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "type"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Pipe.Type"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The particular kind of pipe."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "type"
+}
+],
+"http://www.w3.org/ns/shacl#or": [
+{
+"@id": "_:df_4_43"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://purl.org/dc/terms/type"
+}
+]
+},
+{
+"@id": "_:df_2_33",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The distinction between whether an organisation is a private or public entity."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "type"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Organization.Type"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The distinction between whether an organisation is a private or public entity."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "type"
+}
+],
+"http://www.w3.org/ns/shacl#or": [
+{
+"@id": "_:df_4_47"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://www.w3.org/ns/org#classification"
+}
+]
+},
+{
+"@id": "_:df_2_34",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "Any identifier issued by any authority, whether a government agency or not."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "identifier"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#FireHydrant.Identifier"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "http://www.w3.org/ns/adms#Identifier"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "Any identifier issued by any authority, whether a government agency or not."
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "identifier"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://www.w3.org/ns/adms#identifier"
+}
+]
+},
+{
+"@id": "_:df_2_35",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The particular kind of liquid which is running through a pipe."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "water type"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Pipe.WaterType"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The particular kind of liquid which is running through a pipe."
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "water type"
+}
+],
+"http://www.w3.org/ns/shacl#or": [
+{
+"@id": "_:df_4_52"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://vocab.belgif.be/ns/hydrant#waterType"
+}
+]
+},
+{
+"@id": "_:df_2_36",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The measurement of the circular opening through which water can be discharged from a fire hydrant."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "diameter"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Outlet.Diameter"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "http://qudt.org/schema/qudt/QuantityValue"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The measurement of the circular opening through which water can be discharged from a fire hydrant."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#minCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "diameter"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://vocab.belgif.be/ns/hydrant#outletDiameter"
+}
+]
+},
+{
+"@id": "_:df_2_37",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The nominal rate at which water flows through the fire hydrant."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "flow rate"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#FireHydrant.FlowRate"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "http://qudt.org/schema/qudt/QuantityValue"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The nominal rate at which water flows through the fire hydrant."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "flow rate"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://vocab.belgif.be/ns/hydrant#FireHydrant.flowRate"
+}
+]
+},
+{
+"@id": "_:df_2_38",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The condition in which a fire hydrant can be found."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "status"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#FireHydrant.Status"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The condition in which a fire hydrant can be found."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "status"
+}
+],
+"http://www.w3.org/ns/shacl#or": [
+{
+"@id": "_:df_4_58"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://www.w3.org/ns/adms#status"
+}
+]
+},
+{
+"@id": "_:df_2_39",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The fire hydrant's location as a point, expressed using coordinates in some coordinate reference system."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "geometry"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#FireHydrant.Geometry"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "http://www.w3.org/ns/locn#Geometry"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The fire hydrant's location as a point, expressed using coordinates in some coordinate reference system."
+}
+],
+"http://www.w3.org/ns/shacl#minCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "geometry"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://www.w3.org/ns/locn#geometry"
+}
+]
+},
+{
+"@id": "_:df_2_4",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The time and date on which a Fire Hydrant was used during an emergency intervention."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "date"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Usage.Date"
+}
+],
+"http://www.w3.org/ns/shacl#datatype": [
+{
+"@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The time and date on which a Fire Hydrant was used during an emergency intervention."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "date"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://purl.org/dc/terms/date"
+}
+]
+},
+{
+"@id": "_:df_2_40",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The netto diameter of the water flow regulator."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "diameter"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Valve.Diameter"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "http://qudt.org/schema/qudt/QuantityValue"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The netto diameter of the water flow regulator."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "diameter"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://vocab.belgif.be/ns/hydrant#Valve.diameter"
+}
+]
+},
+{
+"@id": "_:df_2_41",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The organisation that performed the maintenance."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "performed by"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Maintenance.PerformedBy"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "http://www.w3.org/ns/org#Organization"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The organisation that performed the maintenance."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "performed by"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://vocab.belgif.be/ns/hydrant#Maintenance.performedBy"
+}
+]
+},
+{
+"@id": "_:df_2_42",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The condition in which a pipe can be found."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "status"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Pipe.Status"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The condition in which a pipe can be found."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "status"
+}
+],
+"http://www.w3.org/ns/shacl#or": [
+{
+"@id": "_:df_4_65"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://www.w3.org/ns/adms#status"
+}
+]
+},
+{
+"@id": "_:df_2_43",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The pipe's location as a point, expressed using coordinates in some coordinate reference system."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "geometry"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Pipe.Geometry"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "http://www.w3.org/ns/locn#Geometry"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The pipe's location as a point, expressed using coordinates in some coordinate reference system."
+}
+],
+"http://www.w3.org/ns/shacl#minCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "geometry"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://www.w3.org/ns/locn#geometry"
+}
+]
+},
+{
+"@id": "_:df_2_44",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://purl.org/vocab/vann/usageNote": [
+{
+"@language": "en",
+"@value": "Only the inner/net diameter of a pipe is necessary."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The nominal diameter of the underground water pipe going along the street."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "diameter"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Pipe.Diameter"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "http://qudt.org/schema/qudt/QuantityValue"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The nominal diameter of the underground water pipe going along the street."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#minCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "diameter"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://vocab.belgif.be/ns/hydrant#Pipe.diameter"
+}
+]
+},
+{
+"@id": "_:df_2_45",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "Streetname of the address."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "streetname"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#AddressRepresentation.Streetname"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "http://vocab.belgif.be/ns/building#GeographicalName"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "Streetname of the address."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "streetname"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://www.w3.org/ns/locn#thoroughfare"
+}
+]
+},
+{
+"@id": "_:df_2_46",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "Municipal name of the address."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "municipalityName"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#AddressRepresentation.MunicipalityName"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "http://vocab.belgif.be/ns/building#GeographicalName"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "Municipal name of the address."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "municipalityName"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://vocab.belgif.be/ns/building#municipalityName"
+}
+]
+},
+{
+"@id": "_:df_2_47",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The value of this property is the Identifier itself."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "identifier"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Identifier.Identifier"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The value of this property is the Identifier itself."
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "identifier"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://www.w3.org/2004/02/skos/core#notation"
+}
+]
+},
+{
+"@id": "_:df_2_48",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "Email address of the ContactPoint."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "has email"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#ContactPoint.HasEmail"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "Email address of the ContactPoint."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "has email"
+}
+],
+"http://www.w3.org/ns/shacl#nodeKind": [
+{
+"@id": "http://www.w3.org/ns/shacl#Literal"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://data.europa.eu/m8g/email"
+}
+]
+},
+{
+"@id": "_:df_2_49",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "A telephone number through which the ContactPoint can be contacted."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "has telephone"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#ContactPoint.HasTelephone"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "A telephone number through which the ContactPoint can be contacted."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#minCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "has telephone"
+}
+],
+"http://www.w3.org/ns/shacl#nodeKind": [
+{
+"@id": "http://www.w3.org/ns/shacl#Literal"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://data.europa.eu/m8g/telephone"
+}
+]
+},
+{
+"@id": "_:df_2_5",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://purl.org/vocab/vann/usageNote": [
+{
+"@language": "en",
+"@value": "Use \"http://www.opengis.net/ont/geosparql#wktLiteral\" as type for the literal."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The well-known text representation string describing the point, line or polygon."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "wkt"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Geometry.Wkt"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The well-known text representation string describing the point, line or polygon."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "wkt"
+}
+],
+"http://www.w3.org/ns/shacl#nodeKind": [
+{
+"@id": "http://www.w3.org/ns/shacl#Literal"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://www.opengis.net/ont/geosparql#asWKT"
+}
+]
+},
+{
+"@id": "_:df_2_50",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://purl.org/vocab/vann/usageNote": [
+{
+"@language": "en",
+"@value": "Usually a combination of letters and numbers, the pipe identifier, assigned by the municipality or water authority, aids swift location and identification for emergency services like firefighters or water maintenance crews."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "Any identifier issued by any authority, whether a government agency or not. It captures the identifier itself, the type of identifier, and details of the issuing authority, the date on which the identifier was issued."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "identifier"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Pipe.Identifier"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "http://www.w3.org/ns/adms#Identifier"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "Any identifier issued by any authority, whether a government agency or not. It captures the identifier itself, the type of identifier, and details of the issuing authority, the date on which the identifier was issued."
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "identifier"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://www.w3.org/ns/adms#identifier"
+}
+]
+},
+{
+"@id": "_:df_2_51",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The address representation that corresponds to the fire hydrant."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "address"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#FireHydrant.Address"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "http://www.w3.org/ns/locn#Address"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The address representation that corresponds to the fire hydrant."
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "address"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://www.w3.org/ns/locn#Address"
+}
+]
+},
+{
+"@id": "_:df_2_52",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The address representation that corresponds to the pipe."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "address"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Pipe.Address"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "http://www.w3.org/ns/locn#Address"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The address representation that corresponds to the pipe."
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "address"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://www.w3.org/ns/locn#Address"
+}
+]
+},
+{
+"@id": "_:df_2_53",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://purl.org/vocab/vann/usageNote": [
+{
+"@language": "en",
+"@value": "The Geographical Names application schema does not explicitly make a preference between different names (like official endonyms) of a specific real world entity. The necessary information for making the preference (like the linguistic status of the administrative or geographic area in question), for a certain use case, must be obtained from other data or information sources. For example, the status of the language of the name may be known through queries on the geometries of named places against the geometry of administrative units recorded in a certain source with the language statuses information. \r\n\r\nConcepts of this codelist should be used from the INSPIRE <a href=\"https://inspire.ec.europa.eu/codelist/NameStatusValue\">Name Status</a> code list."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "Qualitative information enabling to discern which credit should be given to the name with respect to its standardisation and/or its topicality."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "nameStatus"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#GeographicalName.NameStatus"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "Qualitative information enabling to discern which credit should be given to the name with respect to its standardisation and/or its topicality."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "nameStatus"
+}
+],
+"http://www.w3.org/ns/shacl#or": [
+{
+"@id": "_:df_4_79"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://vocab.belgif.be/ns/building#nameStatus"
+}
+]
+},
+{
+"@id": "_:df_2_54",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://purl.org/vocab/vann/usageNote": [
+{
+"@language": "en",
+"@value": "Concepts of this codelist should be used from the INSPIRE <a href=\"http://inspire.ec.europa.eu/codelist/NativenessValue\">Nativeness</a> code list."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "Information enabling to acknowledge if the name is the one that is/was used in the area where the spatial object is situated at the instant when the name is/was in use."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "nativeness"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#GeographicalName.Nativeness"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "Information enabling to acknowledge if the name is the one that is/was used in the area where the spatial object is situated at the instant when the name is/was in use."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "nativeness"
+}
+],
+"http://www.w3.org/ns/shacl#or": [
+{
+"@id": "_:df_4_83"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://vocab.belgif.be/ns/building#nativeness"
+}
+]
+},
+{
+"@id": "_:df_2_55",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The fire hydrant to which the valve is physically attached."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "is part of"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Valve.IsPartOf"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "https://saref.etsi.org/saref4watr/FireHydrant"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The fire hydrant to which the valve is physically attached."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#minCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "is part of"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://purl.org/dc/terms/isPartOf"
+}
+]
+},
+{
+"@id": "_:df_2_56",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The outlet which is physically attached to a fire hydrant."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "has part"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#FireHydrant.HasPart"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "http://vocab.belgif.be/ns/hydrant#Outlet"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The outlet which is physically attached to a fire hydrant."
+}
+],
+"http://www.w3.org/ns/shacl#minCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "has part"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://purl.org/dc/terms/hasPart"
+}
+]
+},
+{
+"@id": "_:df_2_57",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The fire hydrant to which the outlet is physically attached."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "is part of"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Outlet.IsPartOf"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "https://saref.etsi.org/saref4watr/FireHydrant"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The fire hydrant to which the outlet is physically attached."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#minCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "is part of"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://purl.org/dc/terms/isPartOf"
+}
+]
+},
+{
+"@id": "_:df_2_58",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The maintenance the fire hydrants has or will receive."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "has maintenance"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#FireHydrant.HasMaintenance"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "http://vocab.belgif.be/ns/hydrant#Maintenance"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The maintenance the fire hydrants has or will receive."
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "has maintenance"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://vocab.belgif.be/ns/hydrant#FireHydrant.hasMaintenance"
+}
+]
+},
+{
+"@id": "_:df_2_59",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The usage of the fire hydrant by an organization."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "has usage"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#FireHydrant.HasUsage"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "http://vocab.belgif.be/ns/hydrant#Usage"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The usage of the fire hydrant by an organization."
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "has usage"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://vocab.belgif.be/ns/hydrant#FireHydrant.hasUsage"
+}
+]
+},
+{
+"@id": "_:df_2_6",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "A property to relate an observable thing with a value expressed as a decimal."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "Value"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#QuantityValue.Value"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "A property to relate an observable thing with a value expressed as a decimal."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#minCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "Value"
+}
+],
+"http://www.w3.org/ns/shacl#nodeKind": [
+{
+"@id": "http://www.w3.org/ns/shacl#Literal"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://qudt.org/schema/qudt/value"
+}
+]
+},
+{
+"@id": "_:df_2_60",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The inspection the fire hydrants has or will receive."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "has inspection"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#FireHydrant.HasInspection"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "http://vocab.belgif.be/ns/hydrant#Inspection"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The inspection the fire hydrants has or will receive."
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "has inspection"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://vocab.belgif.be/ns/hydrant#FireHydrant.hasInspection"
+}
+]
+},
+{
+"@id": "_:df_2_61",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The fire hydrant receiving water from the pipe. It is possible that one pipe is connected to several hydrants."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "is supplied by"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#FireHydrant.IsSuppliedBy"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "https://saref.etsi.org/saref4watr/Pipe"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The fire hydrant receiving water from the pipe. It is possible that one pipe is connected to several hydrants."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "is supplied by"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://vocab.belgif.be/ns/hydrant#isSuppliedBy"
+}
+]
+},
+{
+"@id": "_:df_2_62",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The pipe providing water to the fire hydrant and which is located alongside the street. It is possible that one pipe is connected to several hydrants."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "supplies"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Pipe.Supplies"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "https://saref.etsi.org/saref4watr/FireHydrant"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The pipe providing water to the fire hydrant and which is located alongside the street. It is possible that one pipe is connected to several hydrants."
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "supplies"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://vocab.belgif.be/ns/hydrant#supplies"
+}
+]
+},
+{
+"@id": "_:df_2_63",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "A pipe can be attached to other pipes."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "is connected to"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Pipe.IsConnectedTo"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "https://saref.etsi.org/saref4watr/Pipe"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "A pipe can be attached to other pipes."
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "is connected to"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://www.w3.org/ns/prov#wasAssociatedWith"
+}
+]
+},
+{
+"@id": "_:df_2_64",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The pipe through which the fire hydrant provides water."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "is connected to"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#FireHydrant.IsConnectedTo"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "https://saref.etsi.org/saref4watr/Pipe"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The pipe through which the fire hydrant provides water."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#minCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "is connected to"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://vocab.belgif.be/ns/hydrant#isConnectedTo"
+}
+]
+},
+{
+"@id": "_:df_2_65",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The main contact information of the resource."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "contact point"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Organization.ContactPoint"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "http://data.europa.eu/m8g/ContactPoint"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The main contact information of the resource."
+}
+],
+"http://www.w3.org/ns/shacl#minCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "contact point"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://data.europa.eu/m8g/contactPoint"
+}
+]
+},
+{
+"@id": "_:df_2_66",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The organization in charge of controlling and maintaining the pipe."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "is operated by"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#Pipe.IsOperatedBy"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "http://www.w3.org/ns/org#Organization"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The organization in charge of controlling and maintaining the pipe."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#minCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "is operated by"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://www.w3.org/ns/prov#wasAssociatedWith"
+}
+]
+},
+{
+"@id": "_:df_2_67",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The organization in charge of controlling and maintaining the fire hydrant."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "isOperatedBy"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#FireHydrant.IsOperatedBy"
+}
+],
+"http://www.w3.org/ns/shacl#class": [
+{
+"@id": "http://www.w3.org/ns/org#Organization"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The organization in charge of controlling and maintaining the fire hydrant."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#minCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "isOperatedBy"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://www.w3.org/ns/prov#wasAssociatedWith"
+}
+]
+},
+{
+"@id": "_:df_2_7",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "The date on which the current version of the area or object starts to be used."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "start date"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#FireHydrant.StartDate"
+}
+],
+"http://www.w3.org/ns/shacl#datatype": [
+{
+"@id": "http://www.w3.org/2001/XMLSchema#dateTime"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "The date on which the current version of the area or object starts to be used."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "start date"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://vocab.belgif.be/ns/hydrant#startDate"
+}
+]
+},
+{
+"@id": "_:df_2_8",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "Alphanumeric code officially assigned to building units, berths, pitches or parcels."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "houseNumber"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#AddressRepresentation.HouseNumber"
+}
+],
+"http://www.w3.org/ns/shacl#datatype": [
+{
+"@id": "http://www.w3.org/2001/XMLSchema#string"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "Alphanumeric code officially assigned to building units, berths, pitches or parcels."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "houseNumber"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://vocab.belgif.be/ns/building#housenumber"
+}
+]
+},
+{
+"@id": "_:df_2_9",
+"@type": [
+"http://www.w3.org/ns/shacl#PropertyShape"
+],
+"http://www.w3.org/2000/01/rdf-schema#comment": [
+{
+"@language": "en",
+"@value": "Code designating the geographical area that groups addresses for postal purposes."
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#label": [
+{
+"@language": "en",
+"@value": "postalcode"
+}
+],
+"http://www.w3.org/2000/01/rdf-schema#seeAlso": [
+{
+"@id": "https://belgif.github.io/thematic/models/hydrants#AddressRepresentation.Postalcode"
+}
+],
+"http://www.w3.org/ns/shacl#datatype": [
+{
+"@id": "http://www.w3.org/2001/XMLSchema#string"
+}
+],
+"http://www.w3.org/ns/shacl#description": [
+{
+"@language": "en",
+"@value": "Code designating the geographical area that groups addresses for postal purposes."
+}
+],
+"http://www.w3.org/ns/shacl#maxCount": [
+{
+"@type": "http://www.w3.org/2001/XMLSchema#integer",
+"@value": "1"
+}
+],
+"http://www.w3.org/ns/shacl#name": [
+{
+"@language": "en",
+"@value": "postalcode"
+}
+],
+"http://www.w3.org/ns/shacl#path": [
+{
+"@id": "http://www.w3.org/ns/locn#postCode"
+}
+]
+},
+{
+"@id": "_:df_4_20",
+"http://www.w3.org/ns/shacl#nodeKind": [
+{
+"@id": "http://www.w3.org/2004/02/skos/core#Concept"
+}
+]
+},
+{
+"@id": "_:df_4_21",
+"http://www.w3.org/ns/shacl#nodeKind": [
+{
+"@id": "http://qudt.org/schema/qudt/Unit"
+}
+]
+},
+{
+"@id": "_:df_4_22",
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+{
+"@id": "_:df_4_20"
+}
+],
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+{
+"@id": "_:df_4_23"
+}
+]
+},
+{
+"@id": "_:df_4_23",
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+{
+"@id": "_:df_4_21"
+}
+],
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+{
+"@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+}
+]
+},
+{
+"@id": "_:df_4_25",
+"http://www.w3.org/ns/shacl#nodeKind": [
+{
+"@id": "http://www.w3.org/2004/02/skos/core#Concept"
+}
+]
+},
+{
+"@id": "_:df_4_26",
+"http://www.w3.org/ns/shacl#nodeKind": [
+{
+"@id": "http://qudt.org/schema/qudt/Unit"
+}
+]
+},
+{
+"@id": "_:df_4_27",
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+{
+"@id": "_:df_4_25"
+}
+],
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+{
+"@id": "_:df_4_28"
+}
+]
+},
+{
+"@id": "_:df_4_28",
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+{
+"@id": "_:df_4_26"
+}
+],
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+{
+"@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+}
+]
+},
+{
+"@id": "_:df_4_37",
+"http://www.w3.org/ns/shacl#nodeKind": [
+{
+"@id": "http://www.w3.org/2004/02/skos/core#Concept"
+}
+]
+},
+{
+"@id": "_:df_4_38",
+"http://www.w3.org/ns/shacl#nodeKind": [
+{
+"@id": "http://qudt.org/schema/qudt/Unit"
+}
+]
+},
+{
+"@id": "_:df_4_39",
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+{
+"@id": "_:df_4_37"
+}
+],
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+{
+"@id": "_:df_4_40"
+}
+]
+},
+{
+"@id": "_:df_4_40",
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+{
+"@id": "_:df_4_38"
+}
+],
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+{
+"@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+}
+]
+},
+{
+"@id": "_:df_4_41",
+"http://www.w3.org/ns/shacl#nodeKind": [
+{
+"@id": "http://www.w3.org/2004/02/skos/core#Concept"
+}
+]
+},
+{
+"@id": "_:df_4_42",
+"http://www.w3.org/ns/shacl#nodeKind": [
+{
+"@id": "http://qudt.org/schema/qudt/Unit"
+}
+]
+},
+{
+"@id": "_:df_4_43",
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+{
+"@id": "_:df_4_41"
+}
+],
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+{
+"@id": "_:df_4_44"
+}
+]
+},
+{
+"@id": "_:df_4_44",
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+{
+"@id": "_:df_4_42"
+}
+],
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+{
+"@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+}
+]
+},
+{
+"@id": "_:df_4_45",
+"http://www.w3.org/ns/shacl#nodeKind": [
+{
+"@id": "http://www.w3.org/2004/02/skos/core#Concept"
+}
+]
+},
+{
+"@id": "_:df_4_46",
+"http://www.w3.org/ns/shacl#nodeKind": [
+{
+"@id": "http://qudt.org/schema/qudt/Unit"
+}
+]
+},
+{
+"@id": "_:df_4_47",
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+{
+"@id": "_:df_4_45"
+}
+],
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+{
+"@id": "_:df_4_48"
+}
+]
+},
+{
+"@id": "_:df_4_48",
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+{
+"@id": "_:df_4_46"
+}
+],
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+{
+"@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+}
+]
+},
+{
+"@id": "_:df_4_50",
+"http://www.w3.org/ns/shacl#nodeKind": [
+{
+"@id": "http://www.w3.org/2004/02/skos/core#Concept"
+}
+]
+},
+{
+"@id": "_:df_4_51",
+"http://www.w3.org/ns/shacl#nodeKind": [
+{
+"@id": "http://qudt.org/schema/qudt/Unit"
+}
+]
+},
+{
+"@id": "_:df_4_52",
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+{
+"@id": "_:df_4_50"
+}
+],
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+{
+"@id": "_:df_4_53"
+}
+]
+},
+{
+"@id": "_:df_4_53",
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+{
+"@id": "_:df_4_51"
+}
+],
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+{
+"@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+}
+]
+},
+{
+"@id": "_:df_4_56",
+"http://www.w3.org/ns/shacl#nodeKind": [
+{
+"@id": "http://www.w3.org/2004/02/skos/core#Concept"
+}
+]
+},
+{
+"@id": "_:df_4_57",
+"http://www.w3.org/ns/shacl#nodeKind": [
+{
+"@id": "http://qudt.org/schema/qudt/Unit"
+}
+]
+},
+{
+"@id": "_:df_4_58",
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+{
+"@id": "_:df_4_56"
+}
+],
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+{
+"@id": "_:df_4_59"
+}
+]
+},
+{
+"@id": "_:df_4_59",
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+{
+"@id": "_:df_4_57"
+}
+],
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+{
+"@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+}
+]
+},
+{
+"@id": "_:df_4_63",
+"http://www.w3.org/ns/shacl#nodeKind": [
+{
+"@id": "http://www.w3.org/2004/02/skos/core#Concept"
+}
+]
+},
+{
+"@id": "_:df_4_64",
+"http://www.w3.org/ns/shacl#nodeKind": [
+{
+"@id": "http://qudt.org/schema/qudt/Unit"
+}
+]
+},
+{
+"@id": "_:df_4_65",
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+{
+"@id": "_:df_4_63"
+}
+],
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+{
+"@id": "_:df_4_66"
+}
+]
+},
+{
+"@id": "_:df_4_66",
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+{
+"@id": "_:df_4_64"
+}
+],
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+{
+"@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+}
+]
+},
+{
+"@id": "_:df_4_77",
+"http://www.w3.org/ns/shacl#nodeKind": [
+{
+"@id": "http://www.w3.org/2004/02/skos/core#Concept"
+}
+]
+},
+{
+"@id": "_:df_4_78",
+"http://www.w3.org/ns/shacl#nodeKind": [
+{
+"@id": "http://qudt.org/schema/qudt/Unit"
+}
+]
+},
+{
+"@id": "_:df_4_79",
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+{
+"@id": "_:df_4_77"
+}
+],
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+{
+"@id": "_:df_4_80"
+}
+]
+},
+{
+"@id": "_:df_4_80",
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+{
+"@id": "_:df_4_78"
+}
+],
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+{
+"@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+}
+]
+},
+{
+"@id": "_:df_4_81",
+"http://www.w3.org/ns/shacl#nodeKind": [
+{
+"@id": "http://www.w3.org/2004/02/skos/core#Concept"
+}
+]
+},
+{
+"@id": "_:df_4_82",
+"http://www.w3.org/ns/shacl#nodeKind": [
+{
+"@id": "http://qudt.org/schema/qudt/Unit"
+}
+]
+},
+{
+"@id": "_:df_4_83",
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+{
+"@id": "_:df_4_81"
+}
+],
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+{
+"@id": "_:df_4_84"
+}
+]
+},
+{
+"@id": "_:df_4_84",
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#first": [
+{
+"@id": "_:df_4_82"
+}
+],
+"http://www.w3.org/1999/02/22-rdf-syntax-ns#rest": [
+{
+"@id": "http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"
+}
+]
+}
+]

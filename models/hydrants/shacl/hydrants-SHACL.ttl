@@ -1,0 +1,851 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix shacl: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://belgif.github.io/thematic/models/hydrants#> rdfs:member <https://belgif.github.io/thematic/models/hydrants#MaintenanceShape>,
+    <https://belgif.github.io/thematic/models/hydrants#UsageShape>,
+    <https://belgif.github.io/thematic/models/hydrants#InspectionShape>,
+    <https://belgif.github.io/thematic/models/hydrants#UnitShape>,
+    <https://belgif.github.io/thematic/models/hydrants#FireHydrantShape>,
+    <https://belgif.github.io/thematic/models/hydrants#PipeShape>,
+    <https://belgif.github.io/thematic/models/hydrants#OrganizationShape>,
+    <https://belgif.github.io/thematic/models/hydrants#ContactPointShape>,
+    <https://belgif.github.io/thematic/models/hydrants#ValveShape>,
+    <https://belgif.github.io/thematic/models/hydrants#OutletShape>,
+    <https://belgif.github.io/thematic/models/hydrants#StringShape>,
+    <https://belgif.github.io/thematic/models/hydrants#GeometryShape>,
+    <https://belgif.github.io/thematic/models/hydrants#DateTimeShape>,
+    <https://belgif.github.io/thematic/models/hydrants#QuantityValueShape>,
+    <https://belgif.github.io/thematic/models/hydrants#AddressRepresentationShape>,
+    <https://belgif.github.io/thematic/models/hydrants#IdentifierShape>,
+    <https://belgif.github.io/thematic/models/hydrants#URIShape>,
+    <https://belgif.github.io/thematic/models/hydrants#GeographicalNameShape>,
+    <https://belgif.github.io/thematic/models/hydrants#LangStringShape>,
+    <https://belgif.github.io/thematic/models/hydrants#ConceptShape>,
+    <https://belgif.github.io/thematic/models/hydrants#NameStatusValueShape>,
+    <https://belgif.github.io/thematic/models/hydrants#PipeClassificationTypeShape>,
+    <https://belgif.github.io/thematic/models/hydrants#WaterTypeValueShape>,
+    <https://belgif.github.io/thematic/models/hydrants#HydrantTypeShape>,
+    <https://belgif.github.io/thematic/models/hydrants#PipeTypeShape>,
+    <https://belgif.github.io/thematic/models/hydrants#StatusShape>,
+    <https://belgif.github.io/thematic/models/hydrants#OpeningKeyTypeShape>,
+    <https://belgif.github.io/thematic/models/hydrants#NativenessValueShape> .
+
+<https://belgif.github.io/thematic/models/hydrants#AddressRepresentationShape> a shacl:NodeShape;
+  rdfs:label "AddressRepresentation"@en;
+  <http://purl.org/vocab/vann/usageNote> "For addresses in Flanders, the Master Data of Digital Flanders should be used for allocation purposes."@en;
+  rdfs:comment "More readable representation with only the basic data of the address, intended to use an address as an attribute of another object."@en;
+  shacl:closed false;
+  shacl:property [
+    a shacl:PropertyShape;
+    rdfs:label "houseNumber"@en;
+    rdfs:comment "Alphanumeric code officially assigned to building units, berths, pitches or parcels."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#AddressRepresentation.HouseNumber>;
+    shacl:datatype xsd:string;
+    shacl:description "Alphanumeric code officially assigned to building units, berths, pitches or parcels."@en;
+    shacl:maxCount 1;
+    shacl:name "houseNumber"@en;
+    shacl:path <http://vocab.belgif.be/ns/building#housenumber>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "postalcode"@en;
+    rdfs:comment "Code designating the geographical area that groups addresses for postal purposes."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#AddressRepresentation.Postalcode>;
+    shacl:datatype xsd:string;
+    shacl:description "Code designating the geographical area that groups addresses for postal purposes."@en;
+    shacl:maxCount 1;
+    shacl:name "postalcode"@en;
+    shacl:path <http://www.w3.org/ns/locn#postCode>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "streetname"@en;
+    rdfs:comment "Streetname of the address."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#AddressRepresentation.Streetname>;
+    shacl:class <http://vocab.belgif.be/ns/building#GeographicalName>;
+    shacl:description "Streetname of the address."@en;
+    shacl:maxCount 1;
+    shacl:name "streetname"@en;
+    shacl:path <http://www.w3.org/ns/locn#thoroughfare>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "municipalityName"@en;
+    rdfs:comment "Municipal name of the address."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#AddressRepresentation.MunicipalityName>;
+    shacl:class <http://vocab.belgif.be/ns/building#GeographicalName>;
+    shacl:description "Municipal name of the address."@en;
+    shacl:maxCount 1;
+    shacl:name "municipalityName"@en;
+    shacl:path <http://vocab.belgif.be/ns/building#municipalityName>
+  ];
+  shacl:targetClass <http://www.w3.org/ns/locn#Address> .
+
+<https://belgif.github.io/thematic/models/hydrants#ContactPointShape> a shacl:NodeShape;
+  rdfs:label "ContactPoint"@en;
+  <http://purl.org/vocab/vann/usageNote> "ContactPoint for urgent matters during firefighting interventions."@en;
+  rdfs:comment "Emergency information (like e-mail address and telephone number) of a person or department for Fire Hydrants through which the user can get in touch with."@en;
+  shacl:closed false;
+  shacl:property [
+    a shacl:PropertyShape;
+    rdfs:label "has email"@en;
+    rdfs:comment "Email address of the ContactPoint."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#ContactPoint.HasEmail>;
+    shacl:description "Email address of the ContactPoint."@en;
+    shacl:maxCount 1;
+    shacl:name "has email"@en;
+    shacl:nodeKind shacl:Literal;
+    shacl:path <http://data.europa.eu/m8g/email>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "has telephone"@en;
+    rdfs:comment "A telephone number through which the ContactPoint can be contacted."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#ContactPoint.HasTelephone>;
+    shacl:description "A telephone number through which the ContactPoint can be contacted."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "has telephone"@en;
+    shacl:nodeKind shacl:Literal;
+    shacl:path <http://data.europa.eu/m8g/telephone>
+  ];
+  shacl:targetClass <http://data.europa.eu/m8g/ContactPoint> .
+
+<https://belgif.github.io/thematic/models/hydrants#DateTimeShape> a shacl:NodeShape;
+  rdfs:label "DateTime";
+  shacl:closed false;
+  shacl:targetClass xsd:dateTime .
+
+<https://belgif.github.io/thematic/models/hydrants#FireHydrantShape> a shacl:NodeShape;
+  rdfs:label "FireHydrant"@en;
+  rdfs:comment "A fire hydrant is a fitting in a location with a nozzle by which a fire hose may be attached to a water main."@en;
+  shacl:closed false;
+  shacl:property [
+    a shacl:PropertyShape;
+    rdfs:label "start date"@en;
+    rdfs:comment "The date on which the current version of the area or object starts to be used."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#FireHydrant.StartDate>;
+    shacl:datatype xsd:dateTime;
+    shacl:description "The date on which the current version of the area or object starts to be used."@en;
+    shacl:maxCount 1;
+    shacl:name "start date"@en;
+    shacl:path <http://vocab.belgif.be/ns/hydrant#startDate>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "status remark"@en;
+    rdfs:comment "A comment about minor flows affecting the fire hydrant despite being operational."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#FireHydrant.StatusRemark>;
+    shacl:class rdf:LangString;
+    shacl:description "A comment about minor flows affecting the fire hydrant despite being operational."@en;
+    shacl:maxCount 1;
+    shacl:name "status remark"@en;
+    shacl:path <http://vocab.belgif.be/ns/hydrant#statusRemark>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "type"@en;
+    rdfs:comment "The particular kind of fire hydrant."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#FireHydrant.Type>;
+    shacl:description "The particular kind of fire hydrant."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "type"@en;
+    shacl:or ([shacl:nodeKind skos:Concept] [shacl:nodeKind <http://qudt.org/schema/qudt/Unit>]);
+    shacl:path dc:type
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "identifier"@en;
+    rdfs:comment "Any identifier issued by any authority, whether a government agency or not."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#FireHydrant.Identifier>;
+    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:description "Any identifier issued by any authority, whether a government agency or not."@en;
+    shacl:name "identifier"@en;
+    shacl:path <http://www.w3.org/ns/adms#identifier>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "flow rate"@en;
+    rdfs:comment "The nominal rate at which water flows through the fire hydrant."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#FireHydrant.FlowRate>;
+    shacl:class <http://qudt.org/schema/qudt/QuantityValue>;
+    shacl:description "The nominal rate at which water flows through the fire hydrant."@en;
+    shacl:maxCount 1;
+    shacl:name "flow rate"@en;
+    shacl:path <http://vocab.belgif.be/ns/hydrant#FireHydrant.flowRate>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "status"@en;
+    rdfs:comment "The condition in which a fire hydrant can be found."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#FireHydrant.Status>;
+    shacl:description "The condition in which a fire hydrant can be found."@en;
+    shacl:maxCount 1;
+    shacl:name "status"@en;
+    shacl:or ([shacl:nodeKind skos:Concept] [shacl:nodeKind <http://qudt.org/schema/qudt/Unit>]);
+    shacl:path <http://www.w3.org/ns/adms#status>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "geometry"@en;
+    rdfs:comment "The fire hydrant's location as a point, expressed using coordinates in some coordinate reference system."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#FireHydrant.Geometry>;
+    shacl:class <http://www.w3.org/ns/locn#Geometry>;
+    shacl:description "The fire hydrant's location as a point, expressed using coordinates in some coordinate reference system."@en;
+    shacl:minCount 1;
+    shacl:name "geometry"@en;
+    shacl:path <http://www.w3.org/ns/locn#geometry>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "address"@en;
+    rdfs:comment "The address representation that corresponds to the fire hydrant."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#FireHydrant.Address>;
+    shacl:class <http://www.w3.org/ns/locn#Address>;
+    shacl:description "The address representation that corresponds to the fire hydrant."@en;
+    shacl:name "address"@en;
+    shacl:path <http://www.w3.org/ns/locn#Address>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "has part"@en;
+    rdfs:comment "The outlet which is physically attached to a fire hydrant."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#FireHydrant.HasPart>;
+    shacl:class <http://vocab.belgif.be/ns/hydrant#Outlet>;
+    shacl:description "The outlet which is physically attached to a fire hydrant."@en;
+    shacl:minCount 1;
+    shacl:name "has part"@en;
+    shacl:path dc:hasPart
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "has maintenance"@en;
+    rdfs:comment "The maintenance the fire hydrants has or will receive."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#FireHydrant.HasMaintenance>;
+    shacl:class <http://vocab.belgif.be/ns/hydrant#Maintenance>;
+    shacl:description "The maintenance the fire hydrants has or will receive."@en;
+    shacl:name "has maintenance"@en;
+    shacl:path <http://vocab.belgif.be/ns/hydrant#FireHydrant.hasMaintenance>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "has usage"@en;
+    rdfs:comment "The usage of the fire hydrant by an organization."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#FireHydrant.HasUsage>;
+    shacl:class <http://vocab.belgif.be/ns/hydrant#Usage>;
+    shacl:description "The usage of the fire hydrant by an organization."@en;
+    shacl:name "has usage"@en;
+    shacl:path <http://vocab.belgif.be/ns/hydrant#FireHydrant.hasUsage>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "has inspection"@en;
+    rdfs:comment "The inspection the fire hydrants has or will receive."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#FireHydrant.HasInspection>;
+    shacl:class <http://vocab.belgif.be/ns/hydrant#Inspection>;
+    shacl:description "The inspection the fire hydrants has or will receive."@en;
+    shacl:name "has inspection"@en;
+    shacl:path <http://vocab.belgif.be/ns/hydrant#FireHydrant.hasInspection>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "is supplied by"@en;
+    rdfs:comment "The fire hydrant receiving water from the pipe. It is possible that one pipe is connected to several hydrants."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#FireHydrant.IsSuppliedBy>;
+    shacl:class <https://saref.etsi.org/saref4watr/Pipe>;
+    shacl:description "The fire hydrant receiving water from the pipe. It is possible that one pipe is connected to several hydrants."@en;
+    shacl:maxCount 1;
+    shacl:name "is supplied by"@en;
+    shacl:path <http://vocab.belgif.be/ns/hydrant#isSuppliedBy>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "is connected to"@en;
+    rdfs:comment "The pipe through which the fire hydrant provides water."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#FireHydrant.IsConnectedTo>;
+    shacl:class <https://saref.etsi.org/saref4watr/Pipe>;
+    shacl:description "The pipe through which the fire hydrant provides water."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "is connected to"@en;
+    shacl:path <http://vocab.belgif.be/ns/hydrant#isConnectedTo>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "isOperatedBy"@en;
+    rdfs:comment "The organization in charge of controlling and maintaining the fire hydrant."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#FireHydrant.IsOperatedBy>;
+    shacl:class org:Organization;
+    shacl:description "The organization in charge of controlling and maintaining the fire hydrant."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "isOperatedBy"@en;
+    shacl:path prov:wasAssociatedWith
+  ];
+  shacl:targetClass <https://saref.etsi.org/saref4watr/FireHydrant> .
+
+<https://belgif.github.io/thematic/models/hydrants#GeographicalNameShape> a shacl:NodeShape;
+  rdfs:label "GeographicalName"@en;
+  <http://purl.org/vocab/vann/usageNote> "This can be substituted by LangString."@en;
+  rdfs:comment "Proper noun applied to a real world entity."@en;
+  shacl:closed false;
+  shacl:property [
+    a shacl:PropertyShape;
+    rdfs:label "sourceOfName"@en;
+    rdfs:comment "Original data source from which the geographical name is taken from and integrated in the data set providing/publishing it. For some named spatial objects it might refer again to the publishing data set if no other information is available."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#GeographicalName.SourceOfName>;
+    shacl:datatype rdf:langString;
+    shacl:description "Original data source from which the geographical name is taken from and integrated in the data set providing/publishing it. For some named spatial objects it might refer again to the publishing data set if no other information is available."@en;
+    shacl:maxCount 1;
+    shacl:name "sourceOfName"@en;
+    shacl:path <http://vocab.belgif.be/ns/building#sourceOfName>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "spelling"@en;
+    rdfs:comment "A proper way of writing the geographical name."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#GeographicalName.Spelling>;
+    shacl:datatype rdf:langString;
+    shacl:description "A proper way of writing the geographical name."@en;
+    shacl:maxCount 1;
+    shacl:name "spelling"@en;
+    shacl:path <http://vocab.belgif.be/ns/building#spelling>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "nameStatus"@en;
+    <http://purl.org/vocab/vann/usageNote> """The Geographical Names application schema does not explicitly make a preference between different names (like official endonyms) of a specific real world entity. The necessary information for making the preference (like the linguistic status of the administrative or geographic area in question), for a certain use case, must be obtained from other data or information sources. For example, the status of the language of the name may be known through queries on the geometries of named places against the geometry of administrative units recorded in a certain source with the language statuses information. 
+
+Concepts of this codelist should be used from the INSPIRE <a href=\"https://inspire.ec.europa.eu/codelist/NameStatusValue\">Name Status</a> code list."""@en;
+    rdfs:comment "Qualitative information enabling to discern which credit should be given to the name with respect to its standardisation and/or its topicality."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#GeographicalName.NameStatus>;
+    shacl:description "Qualitative information enabling to discern which credit should be given to the name with respect to its standardisation and/or its topicality."@en;
+    shacl:maxCount 1;
+    shacl:name "nameStatus"@en;
+    shacl:or ([shacl:nodeKind skos:Concept] [shacl:nodeKind <http://qudt.org/schema/qudt/Unit>]);
+    shacl:path <http://vocab.belgif.be/ns/building#nameStatus>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "nativeness"@en;
+    <http://purl.org/vocab/vann/usageNote> "Concepts of this codelist should be used from the INSPIRE <a href=\"http://inspire.ec.europa.eu/codelist/NativenessValue\">Nativeness</a> code list."@en;
+    rdfs:comment "Information enabling to acknowledge if the name is the one that is/was used in the area where the spatial object is situated at the instant when the name is/was in use."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#GeographicalName.Nativeness>;
+    shacl:description "Information enabling to acknowledge if the name is the one that is/was used in the area where the spatial object is situated at the instant when the name is/was in use."@en;
+    shacl:maxCount 1;
+    shacl:name "nativeness"@en;
+    shacl:or ([shacl:nodeKind skos:Concept] [shacl:nodeKind <http://qudt.org/schema/qudt/Unit>]);
+    shacl:path <http://vocab.belgif.be/ns/building#nativeness>
+  ];
+  shacl:targetClass <http://vocab.belgif.be/ns/building#GeographicalName> .
+
+<https://belgif.github.io/thematic/models/hydrants#GeometryShape> a shacl:NodeShape;
+  rdfs:label "Geometry"@en;
+  <http://purl.org/vocab/vann/usageNote> "This property contains the CRS code of the coordinate reference system used for the geometry. A closed list of reference systems is supported: Lambert72, Lambert 2008, and WGS84. Lambert72 is currently applied in practice (like CRS code “3812”), while Lambert 2008 is included as the preferred target system in view of a planned transition."@en;
+  rdfs:comment "The Geometry class provides the means to identify a Location as a point, line, polygon, etc. expressed using coordinates in some coordinate reference system."@en;
+  shacl:closed false;
+  shacl:property [
+    a shacl:PropertyShape;
+    rdfs:label "gml"@en;
+    <http://purl.org/vocab/vann/usageNote> "Use \"http://www.opengis.net/ont/geosparql#gmlLiteral\" as type for the literal."@en;
+    rdfs:comment "The geometry written in Geography Markup Language."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Geometry.Gml>;
+    shacl:description "The geometry written in Geography Markup Language."@en;
+    shacl:maxCount 1;
+    shacl:name "gml"@en;
+    shacl:nodeKind shacl:Literal;
+    shacl:path <http://www.opengis.net/ont/geosparql#asGML>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "wkt"@en;
+    <http://purl.org/vocab/vann/usageNote> "Use \"http://www.opengis.net/ont/geosparql#wktLiteral\" as type for the literal."@en;
+    rdfs:comment "The well-known text representation string describing the point, line or polygon."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Geometry.Wkt>;
+    shacl:description "The well-known text representation string describing the point, line or polygon."@en;
+    shacl:maxCount 1;
+    shacl:name "wkt"@en;
+    shacl:nodeKind shacl:Literal;
+    shacl:path <http://www.opengis.net/ont/geosparql#asWKT>
+  ];
+  shacl:targetClass <http://www.w3.org/ns/locn#Geometry> .
+
+<https://belgif.github.io/thematic/models/hydrants#IdentifierShape> a shacl:NodeShape;
+  rdfs:label "Identifier"@en;
+  rdfs:comment "The Identifier class represents any identifier issued by any authority, whether a government agency or not. It captures the identifier itself, the type of identifier, and details of the issuing authority, the date on which the identifier was issued."@en;
+  shacl:closed false;
+  shacl:property [
+    a shacl:PropertyShape;
+    rdfs:label "dateOfIssue"@en;
+    rdfs:comment "The date on which the Identifier was assigned."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Identifier.DateOfIssue>;
+    shacl:datatype xsd:dateTime;
+    shacl:description "The date on which the Identifier was assigned."@en;
+    shacl:maxCount 1;
+    shacl:name "dateOfIssue"@en;
+    shacl:path dc:issued
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "issuingAuthorityName"@en;
+    rdfs:comment "The name of the agency responsible for issuing the Identifier."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Identifier.IssuingAuthorityName>;
+    shacl:datatype xsd:string;
+    shacl:description "The name of the agency responsible for issuing the Identifier."@en;
+    shacl:maxCount 1;
+    shacl:name "issuingAuthorityName"@en;
+    shacl:path <http://www.w3.org/ns/adms#schemeAgency>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "issuingAuthorityURI"@en;
+    rdfs:comment "The URI of the issuing authority."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Identifier.IssuingAuthorityURI>;
+    shacl:datatype xsd:anyURI;
+    shacl:description "The URI of the issuing authority."@en;
+    shacl:maxCount 1;
+    shacl:name "issuingAuthorityURI"@en;
+    shacl:path dc:creator
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "schemeName"@en;
+    rdfs:comment "Name of the scheme used to construct the identifier."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Identifier.SchemeName>;
+    shacl:datatype xsd:string;
+    shacl:description "Name of the scheme used to construct the identifier."@en;
+    shacl:maxCount 1;
+    shacl:name "schemeName"@en;
+    shacl:path dc:conformsTo
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "schemeURI"@en;
+    rdfs:comment "URI of the scheme used to construct the identifier."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Identifier.SchemeURI>;
+    shacl:datatype xsd:anyURI;
+    shacl:description "URI of the scheme used to construct the identifier."@en;
+    shacl:maxCount 1;
+    shacl:name "schemeURI"@en;
+    shacl:path dc:conformsTo
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "identifier"@en;
+    rdfs:comment "The value of this property is the Identifier itself."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Identifier.Identifier>;
+    shacl:description "The value of this property is the Identifier itself."@en;
+    shacl:name "identifier"@en;
+    shacl:path skos:notation
+  ];
+  shacl:targetClass <http://www.w3.org/ns/adms#Identifier> .
+
+<https://belgif.github.io/thematic/models/hydrants#InspectionShape> a shacl:NodeShape;
+  rdfs:label "Inspection"@en;
+  rdfs:comment "The act of looking at something carefully in order to discover information."@en;
+  shacl:closed false;
+  shacl:property [
+    a shacl:PropertyShape;
+    rdfs:label "date"@en;
+    rdfs:comment "The date and time of the inspection."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Inspection.Date>;
+    shacl:datatype xsd:dateTime;
+    shacl:description "The date and time of the inspection."@en;
+    shacl:maxCount 1;
+    shacl:name "date"@en;
+    shacl:path dc:date
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "description"@en;
+    rdfs:comment "A textual explanation about who performed the  inspection of a particular Object and what was observed."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Inspection.Description>;
+    shacl:class rdf:LangString;
+    shacl:description "A textual explanation about who performed the  inspection of a particular Object and what was observed."@en;
+    shacl:name "description"@en;
+    shacl:path dc:description
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "performed by"@en;
+    rdfs:comment "The organisation that performed the inspection."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Inspection.PerformedBy>;
+    shacl:class org:Organization;
+    shacl:description "The organisation that performed the inspection."@en;
+    shacl:maxCount 1;
+    shacl:name "performed by"@en;
+    shacl:path <http://vocab.belgif.be/ns/hydrant#Inspection.performedBy>
+  ];
+  shacl:targetClass <http://vocab.belgif.be/ns/hydrant#Inspection> .
+
+<https://belgif.github.io/thematic/models/hydrants#LangStringShape> a shacl:NodeShape;
+  rdfs:label "LangString";
+  shacl:closed false;
+  shacl:targetClass rdf:langString .
+
+<https://belgif.github.io/thematic/models/hydrants#MaintenanceShape> a shacl:NodeShape;
+  rdfs:label "Maintenance"@en;
+  rdfs:comment "The work needed to keep something in good condition."@en;
+  shacl:closed false;
+  shacl:property [
+    a shacl:PropertyShape;
+    rdfs:label "date"@en;
+    rdfs:comment "The date and time of the maintenance."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Maintenance.Date>;
+    shacl:datatype xsd:dateTime;
+    shacl:description "The date and time of the maintenance."@en;
+    shacl:maxCount 1;
+    shacl:name "date"@en;
+    shacl:path dc:date
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "requested by"@en;
+    rdfs:comment "The organisation that requested the maintenance."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Maintenance.RequestedBy>;
+    shacl:class org:Organization;
+    shacl:description "The organisation that requested the maintenance."@en;
+    shacl:maxCount 1;
+    shacl:name "requested by"@en;
+    shacl:path <http://vocab.belgif.be/ns/hydrant#Maintenance.requestedBy>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "description"@en;
+    rdfs:comment "A textual explanation about who performed the  maintenance of a particular Object and what was done to the Object in order to warrant a good condition."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Maintenance.Description>;
+    shacl:class rdf:LangString;
+    shacl:description "A textual explanation about who performed the  maintenance of a particular Object and what was done to the Object in order to warrant a good condition."@en;
+    shacl:name "description"@en;
+    shacl:path dc:description
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "performed by"@en;
+    rdfs:comment "The organisation that performed the maintenance."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Maintenance.PerformedBy>;
+    shacl:class org:Organization;
+    shacl:description "The organisation that performed the maintenance."@en;
+    shacl:maxCount 1;
+    shacl:name "performed by"@en;
+    shacl:path <http://vocab.belgif.be/ns/hydrant#Maintenance.performedBy>
+  ];
+  shacl:targetClass <http://vocab.belgif.be/ns/hydrant#Maintenance> .
+
+<https://belgif.github.io/thematic/models/hydrants#OrganizationShape> a shacl:NodeShape;
+  rdfs:label "Organization"@en;
+  rdfs:comment "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures."@en;
+  shacl:closed false;
+  shacl:property [
+    a shacl:PropertyShape;
+    rdfs:label "name"@en;
+    rdfs:comment "The legally recognised name of the organization."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Organization.Name>;
+    shacl:class rdf:LangString;
+    shacl:description "The legally recognised name of the organization."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "name"@en;
+    shacl:path skos:prefLabel
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "type"@en;
+    rdfs:comment "The distinction between whether an organisation is a private or public entity."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Organization.Type>;
+    shacl:description "The distinction between whether an organisation is a private or public entity."@en;
+    shacl:maxCount 1;
+    shacl:name "type"@en;
+    shacl:or ([shacl:nodeKind skos:Concept] [shacl:nodeKind <http://qudt.org/schema/qudt/Unit>]);
+    shacl:path org:classification
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "contact point"@en;
+    rdfs:comment "The main contact information of the resource."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Organization.ContactPoint>;
+    shacl:class <http://data.europa.eu/m8g/ContactPoint>;
+    shacl:description "The main contact information of the resource."@en;
+    shacl:minCount 1;
+    shacl:name "contact point"@en;
+    shacl:path <http://data.europa.eu/m8g/contactPoint>
+  ];
+  shacl:targetClass org:Organization .
+
+<https://belgif.github.io/thematic/models/hydrants#OutletShape> a shacl:NodeShape;
+  rdfs:label "Outlet"@en;
+  rdfs:comment "A circular opening through which water can be discharged from a fire hydrant."@en;
+  shacl:closed false;
+  shacl:property [
+    a shacl:PropertyShape;
+    rdfs:label "type outlet"@en;
+    rdfs:comment "Type of physical outlet of a fire hydrant to which a hose or coupling can be connected for the withdrawal of firefighting water."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Outlet.TypeOutlet>;
+    shacl:datatype xsd:string;
+    shacl:description "Type of physical outlet of a fire hydrant to which a hose or coupling can be connected for the withdrawal of firefighting water."@en;
+    shacl:name "type outlet"@en;
+    shacl:path <http://vocab.belgif.be/ns/hydrant#type>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "diameter"@en;
+    rdfs:comment "The measurement of the circular opening through which water can be discharged from a fire hydrant."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Outlet.Diameter>;
+    shacl:class <http://qudt.org/schema/qudt/QuantityValue>;
+    shacl:description "The measurement of the circular opening through which water can be discharged from a fire hydrant."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "diameter"@en;
+    shacl:path <http://vocab.belgif.be/ns/hydrant#outletDiameter>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "is part of"@en;
+    rdfs:comment "The fire hydrant to which the outlet is physically attached."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Outlet.IsPartOf>;
+    shacl:class <https://saref.etsi.org/saref4watr/FireHydrant>;
+    shacl:description "The fire hydrant to which the outlet is physically attached."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "is part of"@en;
+    shacl:path dc:isPartOf
+  ];
+  shacl:targetClass <http://vocab.belgif.be/ns/hydrant#Outlet> .
+
+<https://belgif.github.io/thematic/models/hydrants#PipeShape> a shacl:NodeShape;
+  rdfs:label "Pipe"@en;
+  rdfs:comment "A pipe is a passage of water flowing in a closed conduit (meaning it is not subject to atmospheric pressure)."@en;
+  shacl:closed false;
+  shacl:property [
+    a shacl:PropertyShape;
+    rdfs:label "flow rate"@en;
+    rdfs:comment "The nominal rate at which water flows through the pipe."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Pipe.FlowRate>;
+    shacl:class <http://qudt.org/schema/qudt/QuantityValue>;
+    shacl:description "The nominal rate at which water flows through the pipe."@en;
+    shacl:maxCount "null"^^xsd:integer;
+    shacl:minCount 1;
+    shacl:name "flow rate"@en;
+    shacl:path <http://vocab.belgif.be/ns/hydrant#Pipe.flowRate>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "classification"@en;
+    rdfs:comment "The categorisation of pipes."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Pipe.Classification>;
+    shacl:description "The categorisation of pipes."@en;
+    shacl:maxCount 1;
+    shacl:name "classification"@en;
+    shacl:or ([shacl:nodeKind skos:Concept] [shacl:nodeKind <http://qudt.org/schema/qudt/Unit>]);
+    shacl:path <http://vocab.belgif.be/ns/hydrant#Pipe.classification>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "flow pressure"@en;
+    rdfs:comment "The amount of force with which water moves to a pipe."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Pipe.FlowPressure>;
+    shacl:class <http://qudt.org/schema/qudt/QuantityValue>;
+    shacl:description "The amount of force with which water moves to a pipe."@en;
+    shacl:maxCount 1;
+    shacl:name "flow pressure"@en;
+    shacl:path <http://vocab.belgif.be/ns/hydrant#flowPressure>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "type"@en;
+    rdfs:comment "The particular kind of pipe."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Pipe.Type>;
+    shacl:description "The particular kind of pipe."@en;
+    shacl:maxCount 1;
+    shacl:name "type"@en;
+    shacl:or ([shacl:nodeKind skos:Concept] [shacl:nodeKind <http://qudt.org/schema/qudt/Unit>]);
+    shacl:path dc:type
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "water type"@en;
+    rdfs:comment "The particular kind of liquid which is running through a pipe."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Pipe.WaterType>;
+    shacl:description "The particular kind of liquid which is running through a pipe."@en;
+    shacl:name "water type"@en;
+    shacl:or ([shacl:nodeKind skos:Concept] [shacl:nodeKind <http://qudt.org/schema/qudt/Unit>]);
+    shacl:path <http://vocab.belgif.be/ns/hydrant#waterType>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "status"@en;
+    rdfs:comment "The condition in which a pipe can be found."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Pipe.Status>;
+    shacl:description "The condition in which a pipe can be found."@en;
+    shacl:maxCount 1;
+    shacl:name "status"@en;
+    shacl:or ([shacl:nodeKind skos:Concept] [shacl:nodeKind <http://qudt.org/schema/qudt/Unit>]);
+    shacl:path <http://www.w3.org/ns/adms#status>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "geometry"@en;
+    rdfs:comment "The pipe's location as a point, expressed using coordinates in some coordinate reference system."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Pipe.Geometry>;
+    shacl:class <http://www.w3.org/ns/locn#Geometry>;
+    shacl:description "The pipe's location as a point, expressed using coordinates in some coordinate reference system."@en;
+    shacl:minCount 1;
+    shacl:name "geometry"@en;
+    shacl:path <http://www.w3.org/ns/locn#geometry>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "diameter"@en;
+    <http://purl.org/vocab/vann/usageNote> "Only the inner/net diameter of a pipe is necessary."@en;
+    rdfs:comment "The nominal diameter of the underground water pipe going along the street."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Pipe.Diameter>;
+    shacl:class <http://qudt.org/schema/qudt/QuantityValue>;
+    shacl:description "The nominal diameter of the underground water pipe going along the street."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "diameter"@en;
+    shacl:path <http://vocab.belgif.be/ns/hydrant#Pipe.diameter>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "identifier"@en;
+    <http://purl.org/vocab/vann/usageNote> "Usually a combination of letters and numbers, the pipe identifier, assigned by the municipality or water authority, aids swift location and identification for emergency services like firefighters or water maintenance crews."@en;
+    rdfs:comment "Any identifier issued by any authority, whether a government agency or not. It captures the identifier itself, the type of identifier, and details of the issuing authority, the date on which the identifier was issued."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Pipe.Identifier>;
+    shacl:class <http://www.w3.org/ns/adms#Identifier>;
+    shacl:description "Any identifier issued by any authority, whether a government agency or not. It captures the identifier itself, the type of identifier, and details of the issuing authority, the date on which the identifier was issued."@en;
+    shacl:name "identifier"@en;
+    shacl:path <http://www.w3.org/ns/adms#identifier>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "address"@en;
+    rdfs:comment "The address representation that corresponds to the pipe."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Pipe.Address>;
+    shacl:class <http://www.w3.org/ns/locn#Address>;
+    shacl:description "The address representation that corresponds to the pipe."@en;
+    shacl:name "address"@en;
+    shacl:path <http://www.w3.org/ns/locn#Address>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "supplies"@en;
+    rdfs:comment "The pipe providing water to the fire hydrant and which is located alongside the street. It is possible that one pipe is connected to several hydrants."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Pipe.Supplies>;
+    shacl:class <https://saref.etsi.org/saref4watr/FireHydrant>;
+    shacl:description "The pipe providing water to the fire hydrant and which is located alongside the street. It is possible that one pipe is connected to several hydrants."@en;
+    shacl:name "supplies"@en;
+    shacl:path <http://vocab.belgif.be/ns/hydrant#supplies>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "is connected to"@en;
+    rdfs:comment "A pipe can be attached to other pipes."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Pipe.IsConnectedTo>;
+    shacl:class <https://saref.etsi.org/saref4watr/Pipe>;
+    shacl:description "A pipe can be attached to other pipes."@en;
+    shacl:name "is connected to"@en;
+    shacl:path prov:wasAssociatedWith
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "is operated by"@en;
+    rdfs:comment "The organization in charge of controlling and maintaining the pipe."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Pipe.IsOperatedBy>;
+    shacl:class org:Organization;
+    shacl:description "The organization in charge of controlling and maintaining the pipe."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "is operated by"@en;
+    shacl:path prov:wasAssociatedWith
+  ];
+  shacl:targetClass <https://saref.etsi.org/saref4watr/Pipe> .
+
+<https://belgif.github.io/thematic/models/hydrants#QuantityValueShape> a shacl:NodeShape;
+  rdfs:label "QuantityValue"@en;
+  rdfs:comment "A Quantity Value."@en;
+  shacl:closed false;
+  shacl:property [
+    a shacl:PropertyShape;
+    rdfs:label "Value"@en;
+    rdfs:comment "A property to relate an observable thing with a value expressed as a decimal."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#QuantityValue.Value>;
+    shacl:description "A property to relate an observable thing with a value expressed as a decimal."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "Value"@en;
+    shacl:nodeKind shacl:Literal;
+    shacl:path <http://qudt.org/schema/qudt/value>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "Unit QuantityValue"@en;
+    rdfs:comment "Relates a factor unit to its unit or system of units with a unit of measure that is either: defined by the system, accepted for use by the system and is convertible to a unit of equivalent dimension that is defined by the system, a reference to the unit of measure of a quantity (variable or constant) of interest."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#QuantityValue.UnitQuantityValue>;
+    shacl:class <http://qudt.org/schema/qudt/Unit>;
+    shacl:description "Relates a factor unit to its unit or system of units with a unit of measure that is either: defined by the system, accepted for use by the system and is convertible to a unit of equivalent dimension that is defined by the system, a reference to the unit of measure of a quantity (variable or constant) of interest."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "Unit QuantityValue"@en;
+    shacl:path <http://qudt.org/schema/qudt/hasUnit>
+  ];
+  shacl:targetClass <http://qudt.org/schema/qudt/QuantityValue> .
+
+<https://belgif.github.io/thematic/models/hydrants#StringShape> a shacl:NodeShape;
+  rdfs:label "String";
+  shacl:closed false;
+  shacl:targetClass xsd:string .
+
+<https://belgif.github.io/thematic/models/hydrants#URIShape> a shacl:NodeShape;
+  rdfs:label "URI";
+  shacl:closed false;
+  shacl:targetClass xsd:anyURI .
+
+<https://belgif.github.io/thematic/models/hydrants#UnitShape> a shacl:NodeShape;
+  rdfs:label "Unit"@en;
+  <http://purl.org/vocab/vann/usageNote> "To be used instead of a Concept when a predefined unit from QUDT is available, for example <a href=\"http://qudt.org/vocab/unit/M\">meter</a>. See <a href=\"https://www.qudt.org/doc/DOC_VOCAB-UNITS.html\">QUDT-units</a>  for more information."@en;
+  rdfs:comment "A unit of measure, or unit, is a particular quantity value that has been chosen as a scale for measuring other quantities the same kind (more generally of equivalent dimension)."@en;
+  shacl:closed false;
+  shacl:targetClass <http://qudt.org/schema/qudt/Unit> .
+
+<https://belgif.github.io/thematic/models/hydrants#UsageShape> a shacl:NodeShape;
+  rdfs:label "Usage"@en;
+  rdfs:comment "The use of something."@en;
+  shacl:closed false;
+  shacl:property [
+    a shacl:PropertyShape;
+    rdfs:label "date"@en;
+    rdfs:comment "The time and date on which a Fire Hydrant was used during an emergency intervention."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Usage.Date>;
+    shacl:datatype xsd:dateTime;
+    shacl:description "The time and date on which a Fire Hydrant was used during an emergency intervention."@en;
+    shacl:maxCount 1;
+    shacl:name "date"@en;
+    shacl:path dc:date
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "performed by"@en;
+    rdfs:comment "The organisation that used the Object."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Usage.PerformedBy>;
+    shacl:class org:Organization;
+    shacl:description "The organisation that used the Object."@en;
+    shacl:maxCount 1;
+    shacl:name "performed by"@en;
+    shacl:path <http://vocab.belgif.be/ns/hydrant#Usage.performedBy>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "description"@en;
+    rdfs:comment "A textual explanation about who used the Object, the purpose and other relevant details to mention."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Usage.Description>;
+    shacl:class rdf:LangString;
+    shacl:description "A textual explanation about who used the Object, the purpose and other relevant details to mention."@en;
+    shacl:name "description"@en;
+    shacl:path dc:description
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "location"@en;
+    rdfs:comment "The approximate or precise location of the usage of something."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Usage.Location>;
+    shacl:class <http://www.w3.org/ns/locn#Geometry>;
+    shacl:description "The approximate or precise location of the usage of something."@en;
+    shacl:maxCount 1;
+    shacl:name "location"@en;
+    shacl:path <http://vocab.belgif.be/ns/hydrant#Usage.location>
+  ];
+  shacl:targetClass <http://vocab.belgif.be/ns/hydrant#Usage> .
+
+<https://belgif.github.io/thematic/models/hydrants#ValveShape> a shacl:NodeShape;
+  rdfs:label "Valve"@en;
+  rdfs:comment "A valve is a device designed to control water flow, pressure or volume."@en;
+  shacl:closed false;
+  shacl:property [
+    a shacl:PropertyShape;
+    rdfs:label "opening key"@en;
+    rdfs:comment "A tool used to open a fire hydrant by removing the cover of a fire hydrant's outlet."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Valve.OpeningKey>;
+    shacl:description "A tool used to open a fire hydrant by removing the cover of a fire hydrant's outlet."@en;
+    shacl:maxCount 1;
+    shacl:name "opening key"@en;
+    shacl:or ([shacl:nodeKind skos:Concept] [shacl:nodeKind <http://qudt.org/schema/qudt/Unit>]);
+    shacl:path <http://vocab.belgif.be/ns/hydrant#openingKey>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "diameter"@en;
+    rdfs:comment "The netto diameter of the water flow regulator."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Valve.Diameter>;
+    shacl:class <http://qudt.org/schema/qudt/QuantityValue>;
+    shacl:description "The netto diameter of the water flow regulator."@en;
+    shacl:maxCount 1;
+    shacl:name "diameter"@en;
+    shacl:path <http://vocab.belgif.be/ns/hydrant#Valve.diameter>
+  ], [
+    a shacl:PropertyShape;
+    rdfs:label "is part of"@en;
+    rdfs:comment "The fire hydrant to which the valve is physically attached."@en;
+    rdfs:seeAlso <https://belgif.github.io/thematic/models/hydrants#Valve.IsPartOf>;
+    shacl:class <https://saref.etsi.org/saref4watr/FireHydrant>;
+    shacl:description "The fire hydrant to which the valve is physically attached."@en;
+    shacl:maxCount 1;
+    shacl:minCount 1;
+    shacl:name "is part of"@en;
+    shacl:path dc:isPartOf
+  ];
+  shacl:targetClass <https://saref.etsi.org/saref4watr/Valve> .
